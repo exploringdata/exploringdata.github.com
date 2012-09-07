@@ -1,0 +1,7 @@
+Options All -Indexes
+
+DirectoryIndex index.html
+
+# 301 redirects
+Redirect 301 /gallery/visualization-of-programming-language-influence-by-paradigm/ /visualizations/programming-language-influence-by-paradigm-gallery/
+Redirect 301 /www.hostmonster.com http://www.tkqlhce.com/3o98vpyvpxCIMMHLJMCEDLEEJLI

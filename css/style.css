@@ -1,0 +1,165 @@
+body {
+position: relative;
+padding-top: 60px;
+}
+body,p,li {
+font-size:105%;
+line-height:130%;
+font-family:'Play', sans;
+}
+code {
+font-size:85%;
+}
+pre {
+font-size:90%;
+line-height:125%;
+}
+h1 {
+font-size:1.7em;
+line-height:1.7em;
+}
+h2 {
+font-size:1.5em;
+line-height:1.5em;
+}
+h3 {
+font-size:1.3em;
+line-height:1.3em;
+}
+h4 {
+font-size:1.1em;
+line-height:1.1em;
+}
+h1, h2, h3, h4, h5, h6 {
+margin:.1em 0 .3em 0;
+}
+figure {margin:0;font-size:.9em;}
+#footer {
+text-align:center;
+border-top:1px solid #ddd;
+margin-top:1em;
+padding-top:1em;
+font-size:.9em;
+}
+figcaption {
+font-weight:bold;
+}
+cite {
+font-style:italic;
+}
+.hcaption {
+font-size:1.2em;
+line-height:1.2em;
+}
+.small {
+font-size:.85em;
+}
+.post_image {
+margin:.4em 1em 1em 0;
+float:left;
+}
+.spacer5 {clear:both;height:5px;}
+.centered {text-align:center;}
+.clearfix {clear:both;}
+
+.lidx a {color:inherit;}
+
+.label a {
+color: #fff;
+}
+
+/* nav */
+.navbar {
+font-family:'Orbitron', monospace;
+}
+.navbar .brand {
+color:#0d0;
+font-size: 1.8em;
+letter-spacing:.08em;
+height:34px;
+background: url('../img/marsattacks.png') no-repeat 0 5px;
+padding:.4em 0 .1em 1.6em;
+margin-left:0;
+}
+.navbar .nav {
+/*float:right;*/
+}
+.navbar .nav > li {
+padding:.4em 0 0 0;
+margin-left:.5em;
+font-size:1em;
+font-weight:bold;
+}
+.navbar .nav > li > a {
+color:#0d0;
+}
+.navbar .nav > li > a.share {
+padding:0 0 .5em 0;
+}
+.caret {
+opacity:.8;
+}
+.navbar ul.share button {
+width:140px;
+margin:.3em 1em .3em;
+font-size:.8em;
+}
+
+/* lists */
+.flatlist {list-style:none;margin:0;}
+
+/* indexes */
+.index_title {text-transform:capitalize;}
+
+/* posts */
+.postinfo {font-size:.9em;}
+
+/* book review */
+#book_meta {font-size:.85em;}
+#book_meta li {margin:.35em 0;}
+#book_meta img {display:block;margin:1em auto;}
+#book_meta .btn {display:block;color:#333;margin-top:1em;}
+
+/* social */
+.socialbutton {float:left;margin:0 2em 0 0;}
+
+/* lists */
+.programmerlist {font-size:.9em;}
+.programmerlist td:nth-child(1) {width:6em;}
+.programmerlist td:nth-child(2) {width:9em;}
+.attribution {font-size:.8em;margin:.2em;}
+
+.z3lproduct {
+text-align:center;
+line-height:150%;
+}
+/* code list */
+.relative {position: relative;}
+.topright {
+position: absolute;
+top: .5em;
+right:.5em;
+}
+.topright button {
+margin-left:.5em;
+}
+/* hero */
+.hero-unit {
+margin-top: 20px;
+}
+.hero-unit h1 {
+font-size: 2.0em;
+margin-bottom:.5em;
+}
+.hero-unit .preview {
+float:left;
+margin-right:2em;
+}
+.hero {background:#fff;}
+.hero header {text-align:center;padding-top:1em;}
+.hero .box {float:left;}
+.hero .box .inset1 {padding:1em;}
+.hero3 .box {width:33%;}
+.hero2 .box {width:50%;}
+
+.mr1 {margin-right:.5em;}
