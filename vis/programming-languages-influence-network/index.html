@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Programming Languages Influence Network | Exploring Data</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="Ramiro Gómez">
+    <link rel="canonical" href="http://exploringdata.github.com/vis/programming-languages-influence-network/"/>
+    <link href="/vendor/zocial/zocial.css" rel="stylesheet"/>
+    <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/vendor/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet">
+    
+        <link href="/css/programming-languages-influence-network.css" rel="stylesheet">
+    
+    <!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link rel="shortcut icon" href="/favicon.ico">
+    
+      
+        <link rel="alternate" type="application/rss+xml" title="Exploring Data main RSS feed" href="http://exploringdata.github.com/rss.xml" />
+      
+    
+  </head>
+  <body>
+    <div class="navbar navbar-inverse">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="/">Exploring Data</a>
+          <div class="nav-collapse">
+            
+<ul class="nav">
+  <li><a class="showhelp" href="">Help</a></li>
+  <li class="dropdown">
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Language Paradigm <b class="caret"></b></a>
+    <ul class="dropdown-menu" id="paradigms"></ul>
+  </li>
+</ul>
+
+            <ul class="nav pull-right">
+              <li id="sharemenu" class="dropdown">
+  <a href="#" class="share dropdown-toggle" data-toggle="dropdown"><button class="btn btn-small btn-warning"><i class="icon-share"></i> </button></a>
+  <ul class="share dropdown-menu">
+    <li><button href="/rss.xml" class="zocial rss">RSS Feed</button></li>
+    <li><button href="https://twitter.com/share?url=http%3A%2F%2Fexploringdata.github.com%2Fvis%2Fprogramming-languages-influence-network%2F" class="zocial popup twitter">Twitter</button></li>
+    <li><button href="http://reddit.com/submit?url=http%3A%2F%2Fexploringdata.github.com%2Fvis%2Fprogramming-languages-influence-network%2F&title=Programming+Languages+Influence+Network" class="zocial reddit">Reddit</button></li>
+    <li><button href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fexploringdata.github.com%2Fvis%2Fprogramming-languages-influence-network%2F&t=Programming+Languages+Influence+Network" class="zocial popup facebook">Facebook</button></li>
+    <li><button href="https://plus.google.com/share?url=http%3A%2F%2Fexploringdata.github.com%2Fvis%2Fprogramming-languages-influence-network%2F" class="zocial popup googleplus">Google+</button></li>
+    <li><button href="http://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Fexploringdata.github.com%2Fvis%2Fprogramming-languages-influence-network%2F&title=Programming+Languages+Influence+Network" class="zocial popup linkedin">LinkedIn</button></li>
+    <li><button href="http://www.stumbleupon.com/submit?url=http%3A%2F%2Fexploringdata.github.com%2Fvis%2Fprogramming-languages-influence-network%2F&title=Programming+Languages+Influence+Network" class="zocial popup stumbleupon">Stumble</button></li>
+  </ul>
+</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="wrapper" class="container">
+      <div class="row"><div class="span12">
+        
+<div class="sigma-parent">
+  <div class="sigma-expand" id="sig"></div>
+</div>
+
+<div id="help" class="modal hide fade">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+      <h3>Help</h3>
+  </div>
+  <div class="modal-body">
+    <h4>Graph Navigation</h4>
+    <p>You can zoom in and out the graph with the mouse wheel. You can move the graph by clicking and holding the left mouse button and moving the mouse.</p>
+    <h4>Language Highlighting</h4>
+    <p>Move the mouse over a language to highlight its connections. Languages in red influenced the highlighted language and blue ones were influenced by it.</p>
+    <h4>Paradigm Highlighting</h4>
+    <p>Choose and click on a paradigm from the <strong>Language Paradigm</strong> menu to only show languages within this paradigm.</p>
+  </div>
+  <div class="modal-footer">
+    <a href="#" class="close" data-dismiss="modal" class="btn">Close</a>
+  </div>
+</div>
+
+      </div></div>
+
+      <div id="footer" class="row">
+        <div class="span12 small">
+          <footer>
+            <p class="centered">This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US">Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a>.</p>
+          </footer>
+        </div>
+      </div>
+    </div>
+
+    <script src="http://code.jquery.com/jquery-1.8.1.min.js"></script>
+    <script src="/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/js/script.js"></script>
+    
+      
+          <script src="http://sigmajs.org/js/sigma.min.js"></script>
+      
+          <script src="/js/programming-languages-influence-network/graph.js"></script>
+      
+          <script src="/js/programming-languages-influence-network/script.js"></script>
+      
+    
+    <script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-5102014-10']);
+_gaq.push(['_setDomainName', '.geeksta.net']);
+_gaq.push(['_trackPageview']);
+(function() {
+  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+
+$(function() {
+  $('.rssbutton').click(function(e){
+    _gaq.push(['_trackEvent', 'subscribe', 'rss',,, false]);
+  });
+});
+</script>
+  </body>
+</html>

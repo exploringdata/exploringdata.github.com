@@ -1,17 +1,3 @@
-(function($) {
-  var k = '38384040373937396665', input = '', f = function(i){return i}, last = [];
-  $(document).keyup(function(e) {
-    input += '/' + e.keyCode;
-    last = input.split('/').slice(-10).filter(f);
-    input = last.join('/');
-    last.join('') == k && $(document).trigger('konami');
-  });
-})(jQuery);
-
-$(document).bind('konami', function() {
-  document.location.href = '/tools/tweet-shirt-generator/#u/konami';
-});
-
 $(function(){
   $('#sharemenu .zocial').click(function(e){
     var b = $(this);
@@ -28,19 +14,4 @@ $(function(){
       document.location.href = url;
     }
   });
-
-  var s = $('#social');
-  if (s) {
-    var t = $('#social').offset().top;
-    var wh = $(window).height();
-    if (wh < t) {
-      s.hide();
-      $(window).scroll(function(){
-        if (t < $(window).scrollTop() + wh - 100) {
-          s.show('slow');
-        }
-      });
-    }
-  }
 });
-
