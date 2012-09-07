@@ -1,5 +1,4 @@
 var Graph = {
-  freebaseapi: 'https://usercontent.googleapis.com/freebase/v1/',
   defaultColor: '#eee',
   srcColor: '#67A9CF',
   dstColor: '#EF8A62',

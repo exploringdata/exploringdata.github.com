@@ -9,6 +9,18 @@ Language highlighting via search field with autocomplete?
 
 Cache http request data in sessionStorage
 */
+var hlang = null;
+var langinfo = function(data) {
+  var sl = $('#showlang');
+  sl.find('h3').text(hlang.label);
+  var influenced = [];
+  $.each(hlang.attr.influenced, function(idx, item){
+    influenced.push(item.name);
+  });
+  sl.find('.modal-body').html('<div>' + data.result + '... <a href="http://www.freebase.com/view/' + hlang.id + '">view on Freebase</a><h4>Languages Influenced</h4><p>' + influenced.join(', ') + '</p><hr><p>Search for ' + hlang.label + ' books on <a href="http://www.amazon.com/gp/search?ie=UTF8&camp=1789&creative=9325&index=books&keywords=' + encodeURIComponent(hlang.label) + '&linkCode=ur2&tag=xpdt-20">Amazon.com</a></p></div>');
+  sl.modal();
+};
+
 $(function(){
   var paradigmmenu = $('#paradigms');
 
@@ -38,20 +50,13 @@ $(function(){
   });
 
   Graph.sig.bind('upnodes', function(event){
-    var hlang = Graph.sig.getNodes(event.content)[0];
-    var texturl = Graph.freebaseapi + 'text' + hlang.id;
-    $.getJSON(texturl, function(data){
-      var sl = $('#showlang');
-      sl.find('h3').text(hlang.label);
-      var influenced = [];
-      $.each(hlang.attr.influenced, function(idx, item){
-        influenced.push(item.name);
-      });
-      sl.find('.modal-body').html('<div>' + data.result + '... <a href="http://www.freebase.com/view/' + hlang.id + '">view on Freebase</a><h4>Languages Influenced</h4><p>' + influenced.join(', ') + '</p><hr><p>Search for ' + hlang.label + ' books on <a href="http://www.amazon.com/gp/search?ie=UTF8&camp=1789&creative=9325&index=books&keywords=' + encodeURIComponent(hlang.label) + '&linkCode=ur2&tag=xpdt-20">Amazon.com</a></p></div>');
-      sl.modal();
-    });
+    hlang = Graph.sig.getNodes(event.content)[0];
+    var script = document.createElement('script');
+    script.src = 'https://usercontent.googleapis.com/freebase/v1/text' + hlang.id + '?callback=langinfo';
+    script.type = 'text/javascript';
+    document.getElementsByTagName('head')[0].appendChild(script);
   }).bind('overnodes',function(event){
-    var hlang = Graph.sig.getNodes(event.content)[0];
+    hlang = Graph.sig.getNodes(event.content)[0];
     if (0 == hlang.degree) return;
     Graph.hlLang(hlang);
   }).bind('outnodes',function(event){
