@@ -2,11 +2,11 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>About Geeksta | Geeksta</title>
+    <title>About Geeksta | Exploring Data</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <meta name="author" content="Ramiro Gómez">
-    <link rel="canonical" href="http://exploringdata.github.com//about/"/>
+    <link rel="canonical" href="http://exploringdata.github.com/about/"/>
     <link href="/vendor/zocial/zocial.css" rel="stylesheet"/>
     <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="/vendor/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
@@ -18,7 +18,7 @@
     <link rel="shortcut icon" href="/favicon.ico">
     
       
-        <link rel="alternate" type="application/rss+xml" title="Exploring Data main RSS feed" href="http://exploringdata.github.com//rss.xml" />
+        <link rel="alternate" type="application/rss+xml" title="Exploring Data main RSS feed" href="http://exploringdata.github.com/rss.xml" />
       
     
   </head>
@@ -36,15 +36,15 @@
             
             <ul class="nav pull-right">
               <li id="sharemenu" class="dropdown">
-  <a href="#" class="share dropdown-toggle" data-toggle="dropdown"><button class="btn btn-warning"><i class="icon-share"></i> </button></a>
+  <a href="#" class="share dropdown-toggle" data-toggle="dropdown"><button class="btn btn-small btn-warning"><i class="icon-share"></i> </button></a>
   <ul class="share dropdown-menu">
     <li><button href="/rss.xml" class="zocial rss">RSS Feed</button></li>
-    <li><button href="https://twitter.com/share?url=http%3A%2F%2Fexploringdata.github.com%2F%2Fabout%2F" class="zocial popup twitter">Twitter</button></li>
-    <li><button href="http://reddit.com/submit?url=http%3A%2F%2Fexploringdata.github.com%2F%2Fabout%2F&title=About+Geeksta" class="zocial reddit">Reddit</button></li>
-    <li><button href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fexploringdata.github.com%2F%2Fabout%2F&t=About+Geeksta" class="zocial popup facebook">Facebook</button></li>
-    <li><button href="https://plus.google.com/share?url=http%3A%2F%2Fexploringdata.github.com%2F%2Fabout%2F" class="zocial popup googleplus">Google+</button></li>
-    <li><button href="http://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Fexploringdata.github.com%2F%2Fabout%2F&title=About+Geeksta" class="zocial popup linkedin">LinkedIn</button></li>
-    <li><button href="http://www.stumbleupon.com/submit?url=http%3A%2F%2Fexploringdata.github.com%2F%2Fabout%2F&title=About+Geeksta" class="zocial popup stumbleupon">Stumble</button></li>
+    <li><button href="https://twitter.com/share?url=http%3A%2F%2Fexploringdata.github.com%2Fabout%2F" class="zocial popup twitter">Twitter</button></li>
+    <li><button href="http://reddit.com/submit?url=http%3A%2F%2Fexploringdata.github.com%2Fabout%2F&title=About+Geeksta" class="zocial reddit">Reddit</button></li>
+    <li><button href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fexploringdata.github.com%2Fabout%2F&t=About+Geeksta" class="zocial popup facebook">Facebook</button></li>
+    <li><button href="https://plus.google.com/share?url=http%3A%2F%2Fexploringdata.github.com%2Fabout%2F" class="zocial popup googleplus">Google+</button></li>
+    <li><button href="http://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Fexploringdata.github.com%2Fabout%2F&title=About+Geeksta" class="zocial popup linkedin">LinkedIn</button></li>
+    <li><button href="http://www.stumbleupon.com/submit?url=http%3A%2F%2Fexploringdata.github.com%2Fabout%2F&title=About+Geeksta" class="zocial popup stumbleupon">Stumble</button></li>
   </ul>
 </li>
             </ul>
@@ -74,7 +74,7 @@
       <div id="footer" class="row">
         <div class="span12 small">
           <footer>
-            <p class="centered"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US"><img alt="Creative Commons License" src="http://i.creativecommons.org/l/by-nc-sa/3.0/80x15.png" /></a><br>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US">Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a>.</p>
+            <p class="centered">This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US">Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a>.</p>
           </footer>
         </div>
       </div>
@@ -82,23 +82,17 @@
 
     <script src="http://code.jquery.com/jquery-1.8.1.min.js"></script>
     <script src="/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/js/script.js"></script>
     
     <script type="text/javascript">
-var _gaq = _gaq || [];
-_gaq.push(['_setAccount', 'UA-5102014-10']);
-_gaq.push(['_setDomainName', '.geeksta.net']);
-_gaq.push(['_trackPageview']);
-(function() {
-  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-})();
-
-$(function() {
-  $('.rssbutton').click(function(e){
-    _gaq.push(['_trackEvent', 'subscribe', 'rss',,, false]);
-  });
-});
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-5102014-13']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
 </script>
   </body>
 </html>
