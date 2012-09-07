@@ -1,4 +1,5 @@
 var Graph = {
+  freebaseapi: 'https://usercontent.googleapis.com/freebase/v1/',
   defaultColor: '#eee',
   srcColor: '#67A9CF',
   dstColor: '#EF8A62',
@@ -130,22 +131,7 @@ var Graph = {
         }
       });
     });
-    Graph.events();
     Graph.sig.draw();
-  },
-
-  events: function() {
-    Graph.sig.bind('overnodes',function(event){
-      var hlang = Graph.sig.getNodes(event.content)[0];
-      if (0 == hlang.degree) return;
-      Graph.hlLang(hlang);
-    }).bind('outnodes',function(event){
-      if (Graph.pid && Graph.pid != Graph.defaultPid) {
-        Graph.hlParadigm(Graph.pid);
-      } else {
-        Graph.reset();
-      }
-    });
   }
 
 };
