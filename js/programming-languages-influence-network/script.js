@@ -10,6 +10,7 @@ Language highlighting via search field with autocomplete?
 Cache http request data in sessionStorage
 */
 var hlang = null;
+// langinfo must be accessible from the external freebase text service script
 var langinfo = function(data) {
   var sl = $('#showlang');
   sl.find('h3').text(hlang.label);
@@ -51,6 +52,7 @@ $(function(){
 
   Graph.sig.bind('upnodes', function(event){
     hlang = Graph.sig.getNodes(event.content)[0];
+    // add script with callback to avoid cross-origin request issues
     var script = document.createElement('script');
     script.src = 'https://usercontent.googleapis.com/freebase/v1/text' + hlang.id + '?callback=langinfo';
     script.type = 'text/javascript';
