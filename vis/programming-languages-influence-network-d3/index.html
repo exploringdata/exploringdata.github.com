@@ -2,17 +2,19 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Data Mining and Data Visualization | Exploring Data</title>
+    <title>Programming Languages Influence Network D3 | Exploring Data</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-      <meta name="description" content="Exploring Data is a site about data mining and visualization.">
+      <meta name="description" content="An network graph showing the connections of programming languages based on their influences created with the JavaScript library D3.">
     
     <meta name="author" content="Ramiro Gómez">
-    <link rel="canonical" href="http://exploringdata.github.com/"/>
+    <link rel="canonical" href="http://exploringdata.github.com/vis/programming-languages-influence-network-d3/"/>
     <link href="/vendor/zocial/zocial.css" rel="stylesheet"/>
     <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="/vendor/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
     <link href="/css/style.css" rel="stylesheet">
+    
+        <link href="/css/programming-languages-influence-network-d3.css" rel="stylesheet">
     
     <!--[if lt IE 9]>
       <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -41,12 +43,12 @@
   <a href="#" class="share dropdown-toggle" data-toggle="dropdown"><button class="btn btn-small btn-warning"><i class="icon-share"></i> </button></a>
   <ul class="share dropdown-menu">
     <li><button href="/rss.xml" class="zocial rss">RSS Feed</button></li>
-    <li><button href="https://twitter.com/share?url=http%3A%2F%2Fexploringdata.github.com%2F" class="zocial popup twitter">Twitter</button></li>
-    <li><button href="http://reddit.com/submit?url=http%3A%2F%2Fexploringdata.github.com%2F&title=Data+Mining+and+Data+Visualization" class="zocial reddit">Reddit</button></li>
-    <li><button href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fexploringdata.github.com%2F&t=Data+Mining+and+Data+Visualization" class="zocial popup facebook">Facebook</button></li>
-    <li><button href="https://plus.google.com/share?url=http%3A%2F%2Fexploringdata.github.com%2F" class="zocial popup googleplus">Google+</button></li>
-    <li><button href="http://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Fexploringdata.github.com%2F&title=Data+Mining+and+Data+Visualization" class="zocial popup linkedin">LinkedIn</button></li>
-    <li><button href="http://www.stumbleupon.com/submit?url=http%3A%2F%2Fexploringdata.github.com%2F&title=Data+Mining+and+Data+Visualization" class="zocial popup stumbleupon">Stumble</button></li>
+    <li><button href="https://twitter.com/share?url=http%3A%2F%2Fexploringdata.github.com%2Fvis%2Fprogramming-languages-influence-network-d3%2F" class="zocial popup twitter">Twitter</button></li>
+    <li><button href="http://reddit.com/submit?url=http%3A%2F%2Fexploringdata.github.com%2Fvis%2Fprogramming-languages-influence-network-d3%2F&title=Programming+Languages+Influence+Network+D3" class="zocial reddit">Reddit</button></li>
+    <li><button href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fexploringdata.github.com%2Fvis%2Fprogramming-languages-influence-network-d3%2F&t=Programming+Languages+Influence+Network+D3" class="zocial popup facebook">Facebook</button></li>
+    <li><button href="https://plus.google.com/share?url=http%3A%2F%2Fexploringdata.github.com%2Fvis%2Fprogramming-languages-influence-network-d3%2F" class="zocial popup googleplus">Google+</button></li>
+    <li><button href="http://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Fexploringdata.github.com%2Fvis%2Fprogramming-languages-influence-network-d3%2F&title=Programming+Languages+Influence+Network+D3" class="zocial popup linkedin">LinkedIn</button></li>
+    <li><button href="http://www.stumbleupon.com/submit?url=http%3A%2F%2Fexploringdata.github.com%2Fvis%2Fprogramming-languages-influence-network-d3%2F&title=Programming+Languages+Influence+Network+D3" class="zocial popup stumbleupon">Stumble</button></li>
   </ul>
 </li>
             </ul>
@@ -57,21 +59,9 @@
 
     <div id="wrapper" class="container">
       
-<div class="row">
+<div class="row"><div class="span12" id="vis">
 
-
-<div class="span4"><div class="well">
-  <h5><a href="/vis/programming-languages-influence-network-d3/">Programming Languages Influence Network D3</a></h5>
-  <a href="/vis/programming-languages-influence-network-d3/"><img src="/img/preview/programming-languages-influence-network-d3.jpg" alt="Programming Languages Influence Network D3"></a>
 </div></div>
-
-<div class="span4"><div class="well">
-  <h5><a href="/vis/programming-languages-influence-network/">Programming Languages Influence Network</a></h5>
-  <a href="/vis/programming-languages-influence-network/"><img src="/img/preview/programming-languages-influence-network.jpg" alt="Programming Languages Influence Network"></a>
-</div></div>
-
-
-</div>
 
 
       <div id="footer" class="row"><div class="span12">
@@ -84,6 +74,12 @@
     <script src="http://code.jquery.com/jquery-1.8.1.min.js"></script>
     <script src="/vendor/bootstrap/js/bootstrap.min.js"></script>
     <script src="/js/script.js"></script>
+    
+      
+          <script src="http://d3js.org/d3.v2.min.js"></script>
+      
+          <script src="/js/programming-languages-influence-network/d3graph.js"></script>
+      
     
     <script type="text/javascript">
   var _gaq = _gaq || [];
