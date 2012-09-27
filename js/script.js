@@ -14,4 +14,8 @@ $(function(){
       document.location.href = url;
     }
   });
+  $('.showhelp').click(function(e){
+    e.preventDefault();
+    $('#help').modal();
+  });
 });

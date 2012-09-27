@@ -1,14 +1,3 @@
-/*
-TODOs
-Language highlighting via search field with autocomplete?
-          <div class="nav-collapse collapse">
-            <form class="navbar-search pull-left">
-              <input type="text" class="search-query" placeholder="Highlight Language">
-            </form>
-          </div>
-
-Cache http request data in sessionStorage
-*/
 var hlang = null;
 // langinfo must be accessible from the external freebase text service script
 var langinfo = function(data) {
@@ -26,10 +15,6 @@ $(function(){
   var paradigmmenu = $('#paradigms');
 
   Graph.init('sig');
-  $('.showhelp').click(function(e){
-    e.preventDefault();
-    $('#help').modal();
-  });
 
   $.getJSON('/js/programming-languages-influence-network/data.json', function(data) {
     paradigmmenu.append('<li class="active"><a href="' + Graph.defaultPid + '">All languages (' + data.langs.length + ')</a></li>');

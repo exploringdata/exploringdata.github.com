@@ -2,13 +2,13 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Programming Languages Influence Network | Exploring Data</title>
+    <title>Human Disease Network | Exploring Data</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-      <meta name="description" content="An interactive network graph showing the connections of programming languages based on their influences with language and language paradigm highlighting.">
+      <meta name="description" content="An interactive network of disorders and disease genes linked by known disorder–gene associations based on the study The Human Disease Network, Goh K-I, Cusick ME, Valle D, Childs B, Vidal M, Barabási A-L (2007), Proc Natl Acad Sci USA 104:8685-8690.">
     
     <meta name="author" content="Ramiro Gómez">
-    <link rel="canonical" href="http://exploringdata.github.com/vis/programming-languages-influence-network/"/>
+    <link rel="canonical" href="http://exploringdata.github.com/vis/human-disease-network/"/>
     <link href="/vendor/zocial/zocial.css" rel="stylesheet"/>
     <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="/vendor/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
@@ -40,26 +40,20 @@
             
 <ul class="nav">
   <li><a class="showhelp" href="">Help</a></li>
-  <li class="dropdown">
-    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Language Paradigm <b class="caret"></b></a>
-    <ul class="dropdown-menu" id="paradigms"></ul>
-  </li>
 </ul>
 
             <ul class="nav pull-right">
-              
-               <li><a href="https://github.com/exploringdata/programming-languages-influence">Code</a></li>
               
               <li id="sharemenu" class="dropdown">
   <a href="#" class="share dropdown-toggle" data-toggle="dropdown"><button class="btn btn-small btn-warning"><i class="icon-share"></i> </button></a>
   <ul class="share dropdown-menu">
     <li><button href="/rss.xml" class="zocial rss">RSS Feed</button></li>
-    <li><button href="https://twitter.com/share?url=http%3A%2F%2Fexploringdata.github.com%2Fvis%2Fprogramming-languages-influence-network%2F" class="zocial popup twitter">Twitter</button></li>
-    <li><button href="http://reddit.com/submit?url=http%3A%2F%2Fexploringdata.github.com%2Fvis%2Fprogramming-languages-influence-network%2F&title=Programming+Languages+Influence+Network" class="zocial reddit">Reddit</button></li>
-    <li><button href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fexploringdata.github.com%2Fvis%2Fprogramming-languages-influence-network%2F&t=Programming+Languages+Influence+Network" class="zocial popup facebook">Facebook</button></li>
-    <li><button href="https://plus.google.com/share?url=http%3A%2F%2Fexploringdata.github.com%2Fvis%2Fprogramming-languages-influence-network%2F" class="zocial popup googleplus">Google+</button></li>
-    <li><button href="http://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Fexploringdata.github.com%2Fvis%2Fprogramming-languages-influence-network%2F&title=Programming+Languages+Influence+Network" class="zocial popup linkedin">LinkedIn</button></li>
-    <li><button href="http://www.stumbleupon.com/submit?url=http%3A%2F%2Fexploringdata.github.com%2Fvis%2Fprogramming-languages-influence-network%2F&title=Programming+Languages+Influence+Network" class="zocial popup stumbleupon">Stumble</button></li>
+    <li><button href="https://twitter.com/share?url=http%3A%2F%2Fexploringdata.github.com%2Fvis%2Fhuman-disease-network%2F" class="zocial popup twitter">Twitter</button></li>
+    <li><button href="http://reddit.com/submit?url=http%3A%2F%2Fexploringdata.github.com%2Fvis%2Fhuman-disease-network%2F&title=Human+Disease+Network" class="zocial reddit">Reddit</button></li>
+    <li><button href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fexploringdata.github.com%2Fvis%2Fhuman-disease-network%2F&t=Human+Disease+Network" class="zocial popup facebook">Facebook</button></li>
+    <li><button href="https://plus.google.com/share?url=http%3A%2F%2Fexploringdata.github.com%2Fvis%2Fhuman-disease-network%2F" class="zocial popup googleplus">Google+</button></li>
+    <li><button href="http://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Fexploringdata.github.com%2Fvis%2Fhuman-disease-network%2F&title=Human+Disease+Network" class="zocial popup linkedin">LinkedIn</button></li>
+    <li><button href="http://www.stumbleupon.com/submit?url=http%3A%2F%2Fexploringdata.github.com%2Fvis%2Fhuman-disease-network%2F&title=Human+Disease+Network" class="zocial popup stumbleupon">Stumble</button></li>
   </ul>
 </li>
             </ul>
@@ -77,8 +71,8 @@
 </div></div>
 
 <div id="visfooter" class="row"><div class="span12">
-  <h1>Programming Languages Influence Network</h1>
-  <p>This network graph visualization was created with data from the <a href="http://www.freebase.com/view/computer/programming_language">Freebase Programming Language collection</a> and the <a href="http://sigmajs.org/">JavaScript library sigma.js</a>.</p>
+  <h1>Human Disease Network</h1>
+  <p>This network graph visualization was created using the <a href="http://gephi.org/datasets/diseasome.gexf.zip">Diseasome dataset</a> from the study <a href="http://www.pnas.org/content/104/21/8685">The Human Disease Network</a>, Goh K-I, Cusick ME, Valle D, Childs B, Vidal M, Barabási A-L (2007), Proc Natl Acad Sci USA 104:8685-8690 and the <a href="http://sigmajs.org/">JavaScript library sigma.js</a>.</p>
 </div></div>
 
 <div id="help" class="modal hide fade">
@@ -88,13 +82,9 @@
   </div>
   <div class="modal-body">
     <h4>Graph Navigation</h4>
-    <p>You can zoom in and out the graph with the mouse wheel. You can move the graph by clicking and holding the left mouse button and moving the mouse.</p>
-    <h4>Language Information</h4>
-    <p>When you click on a language node in the graph a modal window with information about the language will be displayed.</p>
-    <h4>Language Highlighting</h4>
-    <p>Move the mouse over a language to highlight its connections. Languages in red influenced the highlighted language and blue ones were influenced by it.</p>
-    <h4>Paradigm Highlighting</h4>
-    <p>Choose and click on a paradigm from the <strong>Language Paradigm</strong> menu to only show languages within this paradigm.</p>
+    <p>You can zoom in and out the graph with the mouse wheel. You can move the graph by clicking and holding the left mouse button and moving the mouse. When you zoom into the graph more disease names will be shown.</p>
+    <h4>Disease Highlighting</h4>
+    <p>Move the mouse over a node to highlight the connections of the disease and zoom into the graph for more detail.</p>
   </div>
   <div class="modal-footer">
     <a href="#" class="close" data-dismiss="modal" class="btn">Close</a>
@@ -129,9 +119,9 @@
       
           <script src="http://sigmajs.org/js/sigma.min.js"></script>
       
-          <script src="/js/programming-languages-influence-network/graph.js"></script>
+          <script src="/vendor/sigma/sigma.parseGexf.js"></script>
       
-          <script src="/js/programming-languages-influence-network/script.js"></script>
+          <script src="/js/human-disease-network/script.js"></script>
       
     
     <script type="text/javascript">

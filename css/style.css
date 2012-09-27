@@ -1,3 +1,8 @@
+body {
+position: relative;
+padding-top: 60px;
+}
+
 .spacer5 {clear:both;height:5px;}
 .centered {text-align:center;}
 .clearfix {clear:both;}
@@ -21,4 +26,7 @@ font-size:.8em;
 }
 footer {
 margin-top:1em;
+}
+#visfooter h1 {
+font-size:1.6em;
 }
