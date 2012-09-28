@@ -1,6 +1,8 @@
 $(function(){
   $('#sharemenu .zocial').click(function(e){
     var b = $(this);
+    var action = $.trim(b.attr('class').replace('zocial', '').replace('popup', ''));
+    _gaq.push(['_trackEvent', 'Sharemenu', action]);
     var url = b.attr('href');
     var win = $(window);
     if (b.hasClass('popup') && win.width() >= 400) {
