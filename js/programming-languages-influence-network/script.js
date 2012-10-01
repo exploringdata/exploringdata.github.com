@@ -40,6 +40,18 @@ $(function(){
     }
   });
 
+  var graphlayout = $('.graphlayout');
+  graphlayout.click(function(e){
+    e.preventDefault();
+    if ('Start Layout' == graphlayout.text()) {
+      Graph.sig.startForceAtlas2();
+      graphlayout.text('Stop Layout');
+    } else {
+      Graph.sig.stopForceAtlas2();
+      graphlayout.text('Start Layout');
+    }
+  });
+
   Graph.sig.bind('upnodes', function(event){
     hlang = Graph.sig.getNodes(event.content)[0];
     // add script with callback to avoid cross-origin request issues
