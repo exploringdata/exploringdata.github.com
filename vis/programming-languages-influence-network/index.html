@@ -5,7 +5,7 @@
     <title>Programming Languages Influence Network | Exploring Data</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-      <meta name="description" content="An interactive network graph showing the connections of programming languages based on their influences with language and language paradigm highlighting.">
+      <meta name="description" content="An interactive network graph showing the connections of programming languages based on their influences with language and language paradigm highlighting rendered with sigma.js and preprocessed with Gephi.">
     
     <meta name="author" content="Ramiro Gómez">
     <link rel="canonical" href="http://exploringdata.github.com/vis/programming-languages-influence-network/"/>
@@ -45,16 +45,22 @@
     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Language Paradigm <b class="caret"></b></a>
     <ul class="dropdown-menu" id="paradigms"></ul>
   </li>
-  <li><a class="graphlayout" href="">Start Layout</a></li>
+  <li class="dropdown">
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Choose Layout <b class="caret"></b></a>
+    <ul class="dropdown-menu" id="layout">
+      <li class="active"><a href="#forceatlas2">Force Atlas 2</a></li>
+      <li><a href="#random">Random</a></li>
+    </ul>
+  </li>
+  <li><a class="showposter" href="http://www.zazzle.com/programming_languages_influence_network_poster-228947989414708643?rf=238355915198956003">Poster</a></li>
+<!--  <li><a class="graphlayout" href="">Start Layout</a></li> -->
 </ul>
 
             <ul class="nav pull-right">
               
-               <li><a href="https://github.com/exploringdata/programming-languages-influence">Code</a></li>
-              
-              
                <li><a href="#comments">Comments</a></li>
               
+              <li><a href="https://github.com/exploringdata">Code</a></li>
               <li id="sharemenu" class="dropdown">
   <a href="#" class="share dropdown-toggle" data-toggle="dropdown"><button class="btn btn-small btn-warning"><i class="icon-share"></i> </button></a>
   <ul class="share dropdown-menu">
@@ -111,9 +117,21 @@
 <div id="showlang" class="modal hide fade">
   <div class="modal-header">
     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-      <h3></h3>
+    <h3></h3>
+  </div>
+  <div class="modal-body"></div>
+  <div class="modal-footer">
+    <a href="#" class="close" data-dismiss="modal" class="btn">Close</a>
+  </div>
+</div>
+
+<div id="showposter" class="modal hide fade">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+    <h3>Programming Languages Poster</h3>
   </div>
   <div class="modal-body">
+<div style="text-align:center;line-height:150%"> <a href="http://www.zazzle.com/programming_languages_influence_network_poster-228662769327592116?rf=238355915198956003"> <img src="http://rlv.zcache.com/programming_languages_influence_network_poster-r7f09b1cf54ed4d3788dfbb802e31b925_805r_325.jpg" alt="Programming Languages Influence Network Poster" style="border:0;" /> </a> <br /> <a href="http://www.zazzle.com/programming_languages_influence_network_poster-228662769327592116?rf=238355915198956003">Programming Languages Influence Network Poster</a> by <a href="http://www.zazzle.com/geeksta*">geeksta</a> <br /> See other <a href="http://www.zazzle.com/art?rf=238355915198956003">framed artwork</a> on Zazzle </div>
   </div>
   <div class="modal-footer">
     <a href="#" class="close" data-dismiss="modal" class="btn">Close</a>
@@ -161,9 +179,11 @@ dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
       
           <script src="http://sigmajs.org/js/sigma.min.js"></script>
       
+          <script src="/vendor/sigma/sigma.parseGexf.js"></script>
+      
           <script src="/vendor/sigma/sigma.forceatlas2.js"></script>
       
-          <script src="/js/programming-languages-influence-network/graph.js"></script>
+          <script src="/js/visgexf.js"></script>
       
           <script src="/js/programming-languages-influence-network/script.js"></script>
       
