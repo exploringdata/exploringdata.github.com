@@ -17,12 +17,6 @@ left:0;
 left:37%;
 width:70%;
 }
-#showlang .modal-body{
-max-height:500px;
-}
-.modal.fade.in {
-top: 44%;
-}
 #visinfo, #comments, footer {
 color:#999;
 }
