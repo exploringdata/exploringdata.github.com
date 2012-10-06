@@ -89,7 +89,11 @@
 
 <div id="visinfo" class="row"><div class="span12">
   <h1>Programming Languages Influence Network</h1>
-  <p>This network graph visualization was created with data from the <a href="http://www.freebase.com/view/computer/programming_language">Freebase Programming Language collection</a> and the <a href="http://sigmajs.org/">JavaScript library sigma.js</a>.</p>
+  <p>This interactive visualization shows a network graph of programming language influences. The graph consists of 1170 programming language nodes and 908 edges that signify an influence relation.</p>
+  <p>The size of a node is determined by its out degree. The more influential a language is across all languages in the network, the bigger is the corresponding node in the network.</p>
+  <p>There are several ways of interaction: you can restrict the network to languages within a programming paradigm; you can choose between a Force Atlas 2 and a random graph layout; and you can highlight the connections of a language by moving the mouse over its node. For more details click on the help link in the top menu.</p>
+  <p>This network graph visualization was created with data from the <a href="http://www.freebase.com/view/computer/programming_language">Freebase Programming Language collection</a> and is rendered with the <a href="http://sigmajs.org/">JavaScript library sigma.js</a>. The Force Atlas 2 layout was preprocessed using the <a href="https://gephi.org/">Gephi visualization platform</a>.</p>
+  <p>You find the Python code to retrieve the data from Freebase and generate json and gexf files in this <a href="https://github.com/expacloringdata/programming-languages-influence">GitHub repository</a>. The data was last updated October 5 2012. Feel free to leave feedback in the comments and share this visualization with your friends.</p>
 </div></div>
 
 <div id="help" class="modal hide fade">
@@ -107,7 +111,7 @@
     <h4>Paradigm Highlighting</h4>
     <p>Choose and click on a paradigm from the <strong>Language Paradigm</strong> menu to only show languages within this paradigm.</p>
     <h4>Graph Layout</h4>
-    <p>You can apply a Force Atlas 2 layout to the graph by clicking on <code>Start Layout</code>. Stop the layout by clicking on <code>Stop Layout</code>, before you further interact with the graph, e. g. highlight a language or paradigm.</p>
+    <p>You can choose between a Force Atlas 2 and a random layout. When you change the layout all languages will be shown.</p>
   </div>
   <div class="modal-footer">
     <a href="#" class="close" data-dismiss="modal" class="btn">Close</a>
@@ -180,8 +184,6 @@ dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
           <script src="http://sigmajs.org/js/sigma.min.js"></script>
       
           <script src="/vendor/sigma/sigma.parseGexf.js"></script>
-      
-          <script src="/vendor/sigma/sigma.forceatlas2.js"></script>
       
           <script src="/js/visgexf.js"></script>
       
