@@ -68,7 +68,26 @@ var nodeClick = function(Graph) {
 };
 
 $(function(){
-  var G = visgexf.init('sig', '/gexf/plin_forceatlas2.gexf');
+  var props = {
+    drawing: {
+      defaultLabelColor: '#fff',
+      defaultLabelSize: 12,
+      defaultLabelBGColor: '#fff',
+      defaultLabelHoverColor: '#000',
+      labelThreshold: 3,
+      defaultEdgeType: 'curve'
+    },
+    graph: {
+      minNodeSize: .5,
+      maxNodeSize: 25,
+      minEdgeSize: 1,
+      maxEdgeSize: 1
+    },
+    forceLabel: 1,
+    type: 'directed'
+  }
+
+  var G = visgexf.init('sig', '/gexf/plin_forceatlas2.gexf', props);
   var filterid = 0;
   var filters = G.getFilters([filterid]);
   nodeClick(G);
@@ -101,7 +120,7 @@ $(function(){
         }).draw(2,2,2);
       } else {
         visgexf.clear();
-        nodeClick(visgexf.init('sig', '/gexf/plin_forceatlas2.gexf'));
+        nodeClick(visgexf.init('sig', '/gexf/plin_forceatlas2.gexf', props));
       }
     }
   });

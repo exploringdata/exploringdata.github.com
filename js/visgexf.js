@@ -4,28 +4,19 @@ var visgexf = {
   sig: null,
   filters: {},
   graph: null,
+  props: null,
   activeFilterId: null,
   activeFilterVal: null,
   sourceColor: '#67A9CF',
   targetColor: '#EF8A62',
-  init: function(visid, filename) {
+  init: function(visid, filename, props) {
     visgexf.visid = visid;
     visgexf.filename = filename;
-    visgexf.sig = sigma.init(document.getElementById(visid)).drawingProperties({
-      defaultLabelColor: '#fff',
-      defaultLabelSize: 12,
-      defaultLabelBGColor: '#fff',
-      defaultLabelHoverColor: '#000',
-      labelThreshold: 3,
-      defaultEdgeType: 'curve'
-    }).graphProperties({
-      minNodeSize: .5,
-      maxNodeSize: 25,
-      minEdgeSize: 1,
-      maxEdgeSize: 1
-    }).mouseProperties({
-      maxRatio: 128
-    });
+    visgexf.props = props;
+    visgexf.sig = sigma.init(document.getElementById(visid))
+      .drawingProperties(props['drawing'])
+      .graphProperties(props['graph'])
+      .mouseProperties({maxRatio: 128});
     visgexf.sig.parseGexf(filename);
     visgexf.sig.draw();
     visgexf.events();
@@ -34,6 +25,9 @@ var visgexf = {
 
   // set the color of node or edge
   setColor: function(o, c) {
+    // don't change node an edge colors of undirected graphs
+    if ('undirected' == visgexf.props.type) return;
+    type: 'directed'
     o.attr.hl = true;
     o.attr.color = o.color;
     o.color = c;
@@ -102,12 +96,10 @@ var visgexf = {
 
   // show node with optional color, check if it satisfies possibly set filter
   nodeShow: function(node, color) {
-    if (visgexf.filteredOut(node)) {
-      return;
-    }
+    if (visgexf.filteredOut(node)) return;
     if (color) visgexf.setColor(node, color);
+    if (visgexf.props.forceLabel) node.forceLabel = 1;
     node.hidden = 0;
-    node.forceLabel = 1;
   },
 
   events: function() {
@@ -146,9 +138,7 @@ var visgexf = {
         }
         n.hidden = 0;
         n.forceLabel = 0;
-        if (visgexf.filteredOut(n)) {
-          n.hidden = 1;
-        }
+        if (visgexf.filteredOut(n)) n.hidden = 1;
       }).iterEdges(function(e){
         if (e.attr.hl) {
           e.color = e.attr.color;
