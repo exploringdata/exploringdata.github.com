@@ -12,7 +12,7 @@ var langinfo = function(data) {
       influenced = item.val.split('|').sort().join(', ');
     }
   });
-  var desc = data.result + '... <a href="http://www.freebase.com/view/' + hlang.id + '">view on Freebase</a>';
+  var desc = data.result + '... <a href="http://www.freebase.com/view' + hlang.id + '">view on Freebase</a>';
 
   // in case of Ruby include Matz tweet
   if ('Ruby' === hlang.label) {

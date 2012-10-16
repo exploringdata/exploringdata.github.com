@@ -9,7 +9,7 @@ var nodeinfo = function(data) {
       desc += '<h4>James Bond films starred</h4><p>' + item.val.split('|').sort().join(', ') + '</p>';
     }
   });
-  desc += '<h4>Bio</h4>' + data.result + '... <a href="http://www.freebase.com/view/' + hnode.id + '">view on Freebase</a>';
+  desc += '<h4>Bio</h4>' + data.result + '... <a href="http://www.freebase.com/view' + hnode.id + '">view on Freebase</a>';
 
   sl.find('.modal-body').html(desc);
   sl.modal();
