@@ -1,6 +1,6 @@
 // nodeinfo must be accessible from the external freebase text service script
 var nodeinfo = function(data) {
-  var sl = $('#showlang');
+  var sl = $('#shownode');
   sl.find('h3').text(hnode.label);
 
   var desc = '<img src="https://usercontent.googleapis.com/freebase/v1/image' + hnode.id + '?maxwidth=200&maxheight=150" class="img-polaroid pull-right" alt="photo">';
