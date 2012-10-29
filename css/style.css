@@ -16,13 +16,16 @@ border-radius:0;
 .navbar .nav > li > a.share {
 padding:0 0 .5em 0;
 }
-.caret {
-opacity:.8;
-}
 .navbar ul.share button {
 width:140px;
 margin:.3em 1em .3em;
 font-size:.8em;
+}
+.caret {
+opacity:.8;
+}
+.small {
+font-size:.85em;
 }
 footer {
 margin-top:1em;
