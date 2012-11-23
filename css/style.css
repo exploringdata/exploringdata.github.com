@@ -13,8 +13,8 @@ border:0;
 -moz-border-radius:0;
 border-radius:0;
 }
-.navbar .nav > li > a.share {
-padding:0 0 .5em 0;
+.navbar .nav > li > a.menubutton {
+padding:2px 0 0 10px;
 }
 .navbar ul.share button {
 width:140px;
@@ -29,8 +29,5 @@ font-size:.85em;
 }
 footer {
 margin-top:1em;
-}
-#visinfo h1 {
-font-size:1.6em;
 }
 button a {color:inherit;}

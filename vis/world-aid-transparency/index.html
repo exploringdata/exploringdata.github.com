@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html xmlns:fb="http://ogp.me/ns/fb#" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>World Aid Flow, Transparency, Development | Exploring Data</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+      <meta property="og:image" content="http://exploringdata.github.com/img/preview/world-aid-transparency.jpg">
+    
+    <meta name="author" content="Ramiro Gómez">
+    <link rel="canonical" href="http://exploringdata.github.com/vis/world-aid-transparency/">
+    <link href="/vendor/zocial/zocial.css" rel="stylesheet">
+    <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/vendor/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet">
+    
+        <link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    
+        <link href="/css/world-aid-transparency.css" rel="stylesheet">
+    
+    <!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link rel="shortcut icon" href="/favicon.ico">
+    
+      
+        <link rel="alternate" type="application/rss+xml" title="Exploring Data main RSS feed" href="http://exploringdata.github.com/rss.xml">
+      
+    
+  </head>
+  <body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="/">Exploring Data</a>
+          <div class="nav-collapse">
+            
+<ul class="nav">
+  <li class="active"><a href="" id="norelate" class="relate">Total Amounts</a></li>
+  <li><a href="" id="SP.POP.TOTL" class="relate" title="Population, total">By Population</a></li>
+  <li><a href="" id="NY.GDP.MKTP.CD" class="relate" title="GDP (current US$)">By GDP</a></li>
+  <li class="divider-vertical"></li>
+  <li class="expand"><a href="" id="expand" class="menubutton menulimit" title="Expand bar charts and show more countries in scatterplot"><button class="btn btn-small"><i class="icon-plus"></i></button></a></li>
+  <li class="reduce"><a href="" id="reduce" class="menubutton menulimit" title="Reduce bar charts and show fewer countries in scatterplot"><button class="btn btn-small"><i class="icon-minus"></i></button></a></li>
+</ul>
+
+
+            <ul class="nav pull-right">
+              
+               <li><a href="#comments">Comments</a></li>
+              
+              <li><a href="https://github.com/exploringdata">Code</a></li>
+              <li class="divider-vertical"></li>
+              <li id="sharemenu" class="dropdown">
+  <a href="#" class="menubutton dropdown-toggle" data-toggle="dropdown"><button class="btn btn-small btn-success"><i class="icon-share"></i> </button></a>
+  <ul class="share dropdown-menu">
+    <li><button href="/rss.xml" class="zocial rss">RSS Feed</button></li>
+    <li><button href="https://twitter.com/share?url=http%3A%2F%2Fexploringdata.github.com%2Fvis%2Fworld-aid-transparency%2F" class="zocial popup twitter">Twitter</button></li>
+    <li><button href="http://reddit.com/submit?url=http%3A%2F%2Fexploringdata.github.com%2Fvis%2Fworld-aid-transparency%2F&title=World+Aid+Flow%2C+Transparency%2C+Development" class="zocial reddit">Reddit</button></li>
+    <li><button href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fexploringdata.github.com%2Fvis%2Fworld-aid-transparency%2F&t=World+Aid+Flow%2C+Transparency%2C+Development" class="zocial popup facebook">Facebook</button></li>
+    <li><button href="https://plus.google.com/share?url=http%3A%2F%2Fexploringdata.github.com%2Fvis%2Fworld-aid-transparency%2F" class="zocial popup googleplus">Google+</button></li>
+    <li><button href="http://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Fexploringdata.github.com%2Fvis%2Fworld-aid-transparency%2F&title=World+Aid+Flow%2C+Transparency%2C+Development" class="zocial popup linkedin">LinkedIn</button></li>
+    <li><button href="http://www.stumbleupon.com/submit?url=http%3A%2F%2Fexploringdata.github.com%2Fvis%2Fworld-aid-transparency%2F&title=World+Aid+Flow%2C+Transparency%2C+Development" class="zocial popup stumbleupon">Stumble</button></li>
+  </ul>
+</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="wrapper" class="container">
+      
+
+<div class="row">
+  <div class="span7">
+    <h4>World aid flow</h4>
+    <div id="map" class="RdBu"></div>
+  </div>
+  <div class="span5 sidebar">
+    <div class="bar donors">
+      <h4>Donors by aid sums</h4>
+      <div id="aiddonors"></div>
+      <div class="legend">Ranking of countries by aid donations given in USD.</div>
+    </div>
+    <div class="bar donors">
+      <h4>Aid Transparency Index</h4>
+      <div id="donorstransparency"></div>
+      <div class="legend">Aid Transparency Index ratings for countries giving aid money.</div>
+    </div>
+  </div>
+</div>
+
+<div id="aidcharts" class="row">
+  <div class="span7">
+    <div class="bar">
+      <h4>How aid received compares to 
+        <select id="indicators" class="headingselect"></select>
+      </h4>
+      <div class="scatterplot" id="aidrelations"></div>
+      <div class="legend">Aid donations compared to selected world development indicators.</div>
+    </div>
+  </div>
+  <div class="span5 sidebar">
+    <div class="bar recipients">
+      <h4>Recipients by aid sums</h4>
+      <div id="aidrecipients"></div>
+      <div class="legend">Ranking by aid donations received from countries in USD.</div>
+    </div>
+    <div class="bar recipients">
+      <h4>CPIA transparency Rating</h4>
+      <div id="recipientstransparency"></div>
+      <div class="legend">CPIA transparency, accountability, and corruption ratings (1=low to 6=high).</div>
+    </div>
+  </div>
+</div>
+
+<div class="modal hide fade" id="country-aid">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+    <h3></h3>
+  </div>
+  <div class="modal-body" id="country-aid-chart" style="width:480px;"></div>
+  <div class="modal-footer">
+    <a href="#" class="btn" data-dismiss="modal">Close</a>
+  </div>
+</div>
+
+<div id="visinfo" class="row"><div class="span12">
+<hr>
+<h1>World Aid Flow, Transparency, Development</h1><p>Which countries give or receive bilateral aid donations, how transparent are aid organizations, does aid received relate to spending on health or education, does it affect the flow of information? Questions like these arise when asked to visualize world aid flow and aid transparency.</p>
+<p>To tackle these questions I looked at data from the <a href="http://data.worldbank.org/">World Bank</a>, <a href="http://www.publishwhatyoufund.org/">Publish What You Fund</a>, and <a href="http://www.google.com/transparencyreport/userdatarequests/data/">Google's Transparency Report</a> and created this interactive visualization. The numbers shown are from the year 2010, which is the most recent year with data available on both bilateral aid and aid transparency at the time of creation.</p>
+<h2>How Data is Displayed</h2>
+<p>Bilateral aid flow is shown on the choropleth map on top. Countries colored in red received aid and those in blue donated. The darker the colors the higher are the total aid amounts or aid amounts in relation to population or GDP.</p>
+<p>Connections between countries are displayed as arcs when the mouse is moved over a country, their thickness corresponds to the aid money given or received. When you click on a country on the map a bar chart with details on aid flow between this and connected countries is displayed.</p>
+<p>Next to the map there are two bar charts, one ranking donating countries by aid given and one showing the corresponding <em>Aid Transparency Assessments</em> from Publish What You Fund.</p>
+<p>The lower part of the visualization shows more information about countries receiving aid. The scatter plot compares aid money to selected world development indicators from areas like health, education, and communication.</p>
+<p>Then again one bar chart ranks countries by aid received and the other one shows corresponding <em>CPIA transparency, accountability, and corruption</em> ratings if available.</p>
+<p>From the menu on top you can choose to display total aid amounts (default) or aid in relation to population or GDP. The plus/minus button increases or decreases the number of countries shown in bar charts and scatter plots. By default the top 20 sorted by donations are displayed. For readability reasons the number of countries in scatter plots has an upper limit of 50.</p>
+<h2>What does it Tell?</h2>
+<p>One goal of this visualization is to show which countries give and receive aid money and how givers and takers are connected. Moreover, it provides information on how much money flows between countries in terms of total amounts taken by themselves or in relation to country populations or GDP.</p>
+<p>Regarding transparency the numbers from the 2010 Aid Transparency Assessment and the CPIA ratings are abstractions that hide the details of how they are composed. While they don't tell what concrete steps need to be taken to improve the effectiveness of aid, the figures do imply that there was a grave lack of transparency. <a href="http://www.publishwhatyoufund.org/index/2012-index/">More recent numbers</a> suggest that organization level transparency slightly improves, but there is still a way to go.</p>
+<p>Finally you can compare aid received to different development indicators like mortality rate, life expectancy, money spent on health, education, and military as well as prevalence of communication technologies indicated by telephone lines, Internet users, and mobile subscriptions.</p>
+<p>Same as with aid rankings relating total amounts to population or GDP drastically changes the picture. While some indicators seem loosely correlated to aid in relation to population, e. g. spending on education, life expectancy, or number of Internet users, I cannot make out general patterns or get a better idea of how aid money is spent and what effects aid has.</p>
+<h2>Limitations</h2>
+<p>One important part of world aid, i. e. multilateral aid from international organizations like the World Bank or UNICEF, is completely omitted, which limits the informative value of the presented data.</p>
+<p>Moreover, data availability varies across countries, see missing CPIA ratings for example. Also I'd prefer to look at more recent figures, the information from Publish What You Fund is more comprehensive for 2011 and 2012, but there is no data yet on bilateral aid in the World Bank dataset for these years.</p>
+<h2>Motivation</h2>
+<p>In a recent post the Guardian Data Blog asked <a href="http://www.guardian.co.uk/news/datablog/2012/oct/01/aid-transparency-google-data-viz-competition">how transparent is world aid data</a> and together with Google started a competition open for submissions until 29 Nov 2012. The task is to visualize the world of aid.</p>
+<p>Aid transparency was also the topic of last week's assignment in the highly recommended online course <a href="http://open.journalismcourses.org/">Introduction to Infographics and Data Visualization</a> taught by Alberto Cairo.</p>
+<p>As if this wasn't enough motivation the implementation part was a welcome opportunity to again work with the awesome <a href="http://d3js.org/">JavaScript library D3</a>.</p>
+<h2>Conclusion</h2>
+<p>Creating this visualization was a valuable experience for me. Regarding my initial questions I have more insights into the world of aid than before, but I also have more questions about it.</p>
+<p>Without doubt aid is necessary and aid needs to be more transparent. People who care are interested in how aid is put into practice, how money is spent and how much of it reaches the target. The goals of more aid transparency should by to make aid more accessible, reduce objections and improve aid effectiveness.</p>
+<h2>Data Sources</h2>
+<ul>
+<li><a href="http://data.worldbank.org/data-catalog/world-development-indicators">World Bank: World Development Indicators</a></li>
+<li><a href="http://www.publishwhatyoufund.org/index/aid-transparency-assessment-2010/">Publish What You Fund: Aid Transparency Assessment 2010</a></li>
+<li><a href="http://www.google.com/transparencyreport/userdatarequests/data/">Google Transparency Report: User Data Requests</a></li>
+</ul>
+</div></div>
+
+
+      
+        <div id="comments" class="row"><div class="span12">
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+var disqus_shortname = 'exploringdata';
+var disqus_url = 'http://exploringdata.github.com/vis/world-aid-transparency/';
+(function() {
+var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div></div>
+      
+
+      <div id="footer" class="row"><div class="span12">
+        <footer>
+          <p class="centered">Exploring Data is a site about data mining and visualization created by Ramiro Gómez, <a href="/about/">learn more</a>.<br>Except where otherwise noted, the works on this site are licensed under a<br><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US">Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a>.<br><a href="http://flattr.com/thing/952509/Exploring-Data"><img src="http://api.flattr.com/button/flattr-badge-large.png" alt="Flattr this" title="Flattr this" /></a></p>
+        </footer>
+      </div></div>
+    </div>
+    <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-5102014-13']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+    <script src="http://code.jquery.com/jquery-1.8.1.min.js"></script>
+    <script src="/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/js/script.js"></script>
+    
+      
+          <script src="/vendor/d3/d3.v3.min.js"></script>
+      
+          <script src="/js/world-aid-transparency/countryinfo.js"></script>
+      
+          <script src="/js/world-aid-transparency/countrystats.js"></script>
+      
+          <script src="/js/world-aid-transparency/graphs.js"></script>
+      
+          <script src="/js/world-aid-transparency/script.js"></script>
+      
+    
+  </body>
+</html>

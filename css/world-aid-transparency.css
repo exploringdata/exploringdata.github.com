@@ -1,0 +1,119 @@
+h4 {
+margin-top:0;
+font-size:1.1em;
+}
+.info {
+cursor: help;
+}
+.legend {
+font-size:.8em;
+line-height:1.4em;
+width:90%;
+}
+.headingselect,
+.headingselect:focus {
+width:auto;
+margin-top:8px;
+font-weight:bold;
+padding:1px;
+border-color:#ddd;
+outline:none;
+}
+.reduce {
+display:none;
+}
+/* chart general */
+.fillblue {
+fill: #08C;
+opacity:.5;
+}
+.axis path,
+.axis line {
+fill: none;
+stroke: #666;
+shape-rendering: crispEdges;
+}
+.axis text {
+font-family: sans-serif;
+font-size: 11px;
+}
+.legend,
+text {
+font-family: 'Open Sans', sans-serif;
+}
+/* bar charts */
+.bar text {
+font-size:.82em;
+fill:#333;
+}
+.bar h4 i {
+margin:.2em 1em 0 0;
+cursor:pointer;
+}
+.bar .rule {
+font-size:.7em;
+}
+.sidebar div.bar {
+width:50%;
+float:left;
+}
+/* map */
+.background {
+fill: none;
+pointer-events: all;
+}
+#countries {
+fill: #ddd;
+stroke: #fff;
+stroke-width: 1px;
+}
+#countries path {
+cursor:pointer;
+}
+.bglegend {
+fill: white;
+}
+/* map legend */
+#legend {
+font: .8em sans-serif;
+fill: #333;
+}
+/* map links */
+path.link {
+opacity:.6;
+stroke: #51A351;
+fill: none;
+}
+/* scatterplot */
+circle.fillblue {
+stroke:#ccc;
+}
+text.scatterplot {
+font-size:8.2px;
+}
+.axis text {
+font-size:9px;
+}
+/* colorbrewer */
+.RdBu .q0-11{fill:rgb(103,0,31)}
+.RdBu .q1-11{fill:rgb(178,24,43)}
+.RdBu .q2-11{fill:rgb(214,96,77)}
+.RdBu .q3-11{fill:rgb(244,165,130)}
+.RdBu .q4-11{fill:rgb(253,219,199)}
+.RdBu .q5-11{fill:rgb(247,247,247)}
+.RdBu .q6-11{fill:rgb(209,229,240)}
+.RdBu .q7-11{fill:rgb(146,197,222)}
+.RdBu .q8-11{fill:rgb(67,147,195)}
+.RdBu .q9-11{fill:rgb(33,102,172)}
+.RdBu .q10-11{fill:rgb(5,48,97)}
+.RdBu line.q0-11{stroke:rgb(103,0,31)}
+.RdBu line.q1-11{stroke:rgb(178,24,43)}
+.RdBu line.q2-11{stroke:rgb(214,96,77)}
+.RdBu line.q3-11{stroke:rgb(244,165,130)}
+.RdBu line.q4-11{stroke:rgb(253,219,199)}
+.RdBu line.q5-11{stroke:rgb(247,247,247)}
+.RdBu line.q6-11{stroke:rgb(209,229,240)}
+.RdBu line.q7-11{stroke:rgb(146,197,222)}
+.RdBu line.q8-11{stroke:rgb(67,147,195)}
+.RdBu line.q9-11{stroke:rgb(33,102,172)}
+.RdBu line.q10-11{stroke:rgb(5,48,97)}
