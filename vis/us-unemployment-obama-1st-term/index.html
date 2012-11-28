@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html xmlns:fb="http://ogp.me/ns/fb#" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>US Unemployment During Obama's 1st Term | Exploring Data</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+      <meta name="description" content="An interactive visualization showing unemployment in the US under President Obama between 2008 and 2012 created with the D3 JavaScript library.">
+    
+    
+      <meta property="og:image" content="http://exploringdata.github.com/img/preview/us-unemployment-obama-1st-termscript.jpg">
+    
+    <meta name="author" content="Ramiro Gómez">
+    <link rel="canonical" href="http://exploringdata.github.com/vis/us-unemployment-obama-1st-term/">
+    <link href="/vendor/zocial/zocial.css" rel="stylesheet">
+    <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/vendor/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet">
+    
+        <link href="/css/us-unemployment-obama-1st-term.css" rel="stylesheet">
+    
+        <link href="/css/colorbrewer.css" rel="stylesheet">
+    
+    <!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link rel="shortcut icon" href="/favicon.ico">
+    
+      
+        <link rel="alternate" type="application/rss+xml" title="Exploring Data main RSS feed" href="http://exploringdata.github.com/rss.xml">
+      
+    
+  </head>
+  <body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="/">Exploring Data</a>
+          <div class="nav-collapse">
+            
+            <ul class="nav pull-right">
+              
+               <li><a href="#comments">Comments</a></li>
+              
+              <li><a href="https://github.com/exploringdata">Code</a></li>
+              <li class="divider-vertical"></li>
+              <li id="sharemenu" class="dropdown">
+  <a href="#" class="menubutton dropdown-toggle" data-toggle="dropdown"><button class="btn btn-small btn-success"><i class="icon-share"></i> </button></a>
+  <ul class="share dropdown-menu">
+    <li><button href="/rss.xml" class="zocial rss">RSS Feed</button></li>
+    <li><button href="https://twitter.com/share?url=http%3A%2F%2Fexploringdata.github.com%2Fvis%2Fus-unemployment-obama-1st-term%2F" class="zocial popup twitter">Twitter</button></li>
+    <li><button href="http://reddit.com/submit?url=http%3A%2F%2Fexploringdata.github.com%2Fvis%2Fus-unemployment-obama-1st-term%2F&title=US+Unemployment+During+Obama%27s+1st+Term" class="zocial reddit">Reddit</button></li>
+    <li><button href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fexploringdata.github.com%2Fvis%2Fus-unemployment-obama-1st-term%2F&t=US+Unemployment+During+Obama%27s+1st+Term" class="zocial popup facebook">Facebook</button></li>
+    <li><button href="https://plus.google.com/share?url=http%3A%2F%2Fexploringdata.github.com%2Fvis%2Fus-unemployment-obama-1st-term%2F" class="zocial popup googleplus">Google+</button></li>
+    <li><button href="http://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Fexploringdata.github.com%2Fvis%2Fus-unemployment-obama-1st-term%2F&title=US+Unemployment+During+Obama%27s+1st+Term" class="zocial popup linkedin">LinkedIn</button></li>
+    <li><button href="http://www.stumbleupon.com/submit?url=http%3A%2F%2Fexploringdata.github.com%2Fvis%2Fus-unemployment-obama-1st-term%2F&title=US+Unemployment+During+Obama%27s+1st+Term" class="zocial popup stumbleupon">Stumble</button></li>
+  </ul>
+</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="wrapper" class="container">
+      
+<div class="row">
+  <div class="span6">
+    <h4>US Unemployment Rates from September 2012</h4>
+    <div id="map" class="Reds"></div>
+  </div>
+  <div class="span6 sidebar">
+    <h4>Select States</h4>
+    <div id="selectstates" class="Reds col col4"></div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="span12">
+    <h4>Unemployment Rates of Selected States during Term</h4>
+    <div id="timeline"></div>
+  </div>
+</div>
+
+<div id="visinfo" class="row"><div class="span12">
+<hr>
+<h1>US Unemployment During Obama's 1st Term</h1>http://bl.ocks.org/3883245
+
+<h2>Data Sources</h2>
+<ul>
+<li><a href="http://www.guardian.co.uk/news/datablog/2011/oct/07/us-jobless-unemployment-data">US jobless data: how has unemployment changed under Obama?</a></li>
+<li><a href="https://github.com/mbostock/d3/blob/master/examples/data/us-states.json">GeoJSON Data from D3's Examples Directory</a></li>
+</ul>
+</div></div>
+
+
+      
+        <div id="comments" class="row"><div class="span12">
+<hr>
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+var disqus_shortname = 'exploringdata';
+var disqus_url = 'http://exploringdata.github.com/vis/us-unemployment-obama-1st-term/';
+(function() {
+var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div></div>
+      
+
+      <div id="footer" class="row"><div class="span12">
+        <footer>
+          <p class="centered">Exploring Data is a site about data mining and visualization created by Ramiro Gómez, <a href="/about/">learn more</a>.<br>Except where otherwise noted, the works on this site are licensed under a<br><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US">Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a>.<br><a href="http://flattr.com/thing/952509/Exploring-Data"><img src="http://api.flattr.com/button/flattr-badge-large.png" alt="Flattr this" title="Flattr this" /></a></p>
+        </footer>
+      </div></div>
+    </div>
+    <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-5102014-13']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+    <script src="http://code.jquery.com/jquery-1.8.1.min.js"></script>
+    <script src="/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/js/script.js"></script>
+    
+      
+          <script src="/vendor/d3/d3.v3.min.js"></script>
+      
+          <script src="/vendor/d3/queue.v1.min.js"></script>
+      
+          <script src="/js/us-unemployment-obama-1st-termscript/script.js"></script>
+      
+    
+  </body>
+</html>
