@@ -30,7 +30,7 @@
     
   </head>
   <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container">
           <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
@@ -42,22 +42,19 @@
           <div class="nav-collapse">
             
 <ul class="nav">
-  <li><a href="#visinfo">Info</a></li>
   <li><a class="showhelp" href="">Help</a></li>
   <li class="dropdown">
     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Choose Film <b class="caret"></b></a>
     <ul class="dropdown-menu" id="paradigms"></ul>
   </li>
-<!--  <li><a class="showposter" href="http://www.zazzle.com/programming_languages_influence_network_poster-228947989414708643?rf=238355915198956003">Poster</a></li>-->
 </ul>
 
             <ul class="nav pull-right">
-              
-               <li><a href="#comments">Comments</a></li>
-              
-              <li><a href="https://github.com/exploringdata">Code</a></li>
-              <li class="divider-vertical"></li>
-              <li id="sharemenu" class="dropdown">
+            
+              <li><a href="#info" class="menubutton"><button class="btn btn-small"><i class="icon-info-sign"></i> </button></a></li>
+              <li><a href="#comments" class="menubutton"><button class="btn btn-small"><i class="icon-comment"></i> </button></a></li>
+            
+            <li id="sharemenu" class="dropdown">
   <a href="#" class="menubutton dropdown-toggle" data-toggle="dropdown"><button class="btn btn-small btn-success"><i class="icon-share"></i> </button></a>
   <ul class="share dropdown-menu">
     <li><button href="/rss.xml" class="zocial rss">RSS Feed</button></li>
@@ -78,29 +75,26 @@
     <div id="wrapper" class="container">
       
 <div class="row"><div class="span12">
-<div class="sigma-parent">
-  <div class="sigma-expand" id="sig"></div>
-</div>
+<div class="sigma-parent"><div class="sigma-expand" id="sig"></div></div>
 </div></div>
 
-<div id="visinfo" class="row"><div class="span12">
-  <h1>James Bond Actors Network</h1>
-  <p>An interactive network graph showing the connections of actors that appeared together in 23 James Bond movies excluding the 2 Casino Royal films from 1954 and 1967 and Never Say Never Again from 1983. The latest not yet released James Bond film called Skyfall is included.</p>
-  <p>The graph consists of 300 nodes and 3319 edges. The size of a node in the graph is determined by the number of James Bond films an actor appeared in, the more appearances the bigger the circle. Two nodes are connected by an edge, if the 2 actors appeared together in at least 1 James Bond film.</p>
-  <p>You can restrict the displayed network graph to a specific film by selecting one from the Choose Film menu and you can highlight the connections of a single actor by moving the mouse over its node. For more details click on the help link in the top menu.</p>
-  <p>This network graph visualization was created with data from the <a href="http://www.freebase.com/view/en/james_bond_film_series/-/film/film_series/films_in_series">James Bond Film Series collection</a>. The Freebase data is far from being complete regarding the actors that apeared in James Bond movies. There are more comprehensive data sources, but those I found either don't offer an API or employ too restrictive content policies.</p>
+      
+<div id="info">
+<div class="row"><div class="span12"><hr></div></div>
+<div class="row">
+  <div class="span9"><h1>James Bond Actors Network</h1><p>An interactive network graph showing the connections of actors that appeared together in 23 James Bond movies excluding the 2 Casino Royal films from 1954 and 1967 and Never Say Never Again from 1983. The latest not yet released James Bond film called Skyfall is included.</p>
+<p>The graph consists of 300 nodes and 3319 edges. The size of a node in the graph is determined by the number of James Bond films an actor appeared in, the more appearances the bigger the circle. Two nodes are connected by an edge, if the 2 actors appeared together in at least 1 James Bond film.</p>
+<p>You can restrict the displayed network graph to a specific film by selecting one from the Choose Film menu and you can highlight the connections of a single actor by moving the mouse over its node. For more details click on the help link in the top menu.</p>
+<p>This network graph visualization was created with data from the <a href="http://www.freebase.com/view/en/james_bond_film_series/-/film/film_series/films_in_series">James Bond Film Series collection</a>. The Freebase data is far from being complete regarding the actors that apeared in James Bond movies. There are more comprehensive data sources, but those I found either don't offer an API or employ too restrictive content policies.</p>
 <p>The graph is rendered with the <a href="http://sigmajs.org/">JavaScript library sigma.js</a>. The Fruchterman-Reingold layout was preprocessed using the <a href="https://gephi.org/">Gephi visualization platform</a>.</p>
-  <p>You find the Python code to retrieve the data from Freebase and generate the gexf file in this <a href="https://github.com/exploringdata/james-bond-actors">GitHub repository</a>. The data was last updated October 16 2012. Feel free to leave feedback in the comments and share this visualization with your friends.</p>
-</div></div>
+<p>You find the Python code to retrieve the data from Freebase and generate the gexf file in this <a href="https://github.com/exploringdata/james-bond-actors">GitHub repository</a>. The data was last updated October 16 2012. Feel free to leave feedback in the comments and share this visualization with your friends.</p>
 
-<div class="row"><div class="span12">
 <div class="well ad">
 <h3>James Bond Film Collections on Amazon.com</h3>
 <a href="http://www.amazon.com/gp/product/B006U1J5ZY/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B006U1J5ZY&linkCode=as2&tag=xpdt-20">Bond 50: The Complete 22 Film Collection [Blu-ray]</a><br>
 <a href="http://www.amazon.com/gp/product/B006U1JD5G/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B006U1JD5G&linkCode=as2&tag=xpdt-20">Bond 50: The Complete 22 Film Collection [DVD]</a>
 <span class="adhint pull-right">Advertisment</span>
 </div>
-</div></div>
 
 <div id="help" class="modal hide fade">
   <div class="modal-header">
@@ -131,12 +125,37 @@
   <div class="modal-footer">
     <a href="#" class="close" data-dismiss="modal" class="btn">Close</a>
   </div>
+</div></div>
+  <div class="span3">
+    
+<div class="postinfo">
+<h3>Meta</h3>
+<p>This visualization was created by Ramiro Gómez and published on October 16, 2012.</p>
+
+<h3>Tags</h3>
+<div class="tags">
+
+<span class="label label-info"><a href="/tags/network-graph/">network graph</a></span>
+
+<span class="label label-info"><a href="/tags/film/">film</a></span>
+
+<span class="label label-info"><a href="/tags/sigmajs/">sigmajs</a></span>
+
+<span class="label label-info"><a href="/tags/gephi/">gephi</a></span>
+
 </div>
 
+</div>
 
-
-      
-        <div id="comments" class="row"><div class="span12">
+    <h3>Keep Exploring</h3>
+    <ul class="unstyled btn-list">
+      <li><a href="/rss.xml"><button class="zocial rss">Subscribe to RSS Feed</button></a></li>
+      <li><a href="https://twitter.com/yaph"><button class="zocial twitter">Follow me on Twitter</button></a></li>
+    </ul>
+  </div>
+</div>
+</div>
+<div id="comments" class="row"><div class="span12">
 <hr>
 <div id="disqus_thread"></div>
 <script type="text/javascript">
@@ -150,11 +169,11 @@ dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
 </script>
 <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
 </div></div>
-      
 
       <div id="footer" class="row"><div class="span12">
+        <hr>
         <footer>
-          <p class="centered">Exploring Data is a site about data mining and visualization created by Ramiro Gómez, <a href="/about/">learn more</a>.<br>Except where otherwise noted, the works on this site are licensed under a<br><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US">Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a>.<br><a href="http://flattr.com/thing/952509/Exploring-Data"><img src="http://api.flattr.com/button/flattr-badge-large.png" alt="Flattr this" title="Flattr this" /></a></p>
+          <p class="centered">Exploring Data is a site about data mining and visualization <a href="/about/">learn more</a>.<br>Except where otherwise noted, the works on this site are licensed under a<br><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US">Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a>.<br><a href="http://flattr.com/thing/952509/Exploring-Data"><img src="http://api.flattr.com/button/flattr-badge-large.png" alt="Flattr this" title="Flattr this" /></a></p>
         </footer>
       </div></div>
     </div>

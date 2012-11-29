@@ -2,17 +2,18 @@ body {
 position: relative;
 padding-top: 60px;
 }
+h1 {
+font-size: 2.6em;
+}
+footer {
+margin-top:1em;
+}
+button a {color:inherit;}
 
 .spacer5 {clear:both;height:5px;}
 .centered {text-align:center;}
 .clearfix {clear:both;}
 
-.navbar-inner {
-border:0;
--webkit-border-radius:0;
--moz-border-radius:0;
-border-radius:0;
-}
 .navbar .nav > li > a.menubutton {
 padding:2px 0 0 10px;
 }
@@ -27,7 +28,14 @@ opacity:.8;
 .small {
 font-size:.85em;
 }
-footer {
-margin-top:1em;
+.btn-list li {
+margin-bottom:.5em;
 }
-button a {color:inherit;}
+.tags span {
+padding:.4em;
+margin-bottom:.5em;
+font-size:1.1em;
+}
+.tags a {
+color:#fff;
+}

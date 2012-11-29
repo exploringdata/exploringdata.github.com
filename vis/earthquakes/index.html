@@ -30,7 +30,7 @@
     
   </head>
   <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container">
           <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
@@ -42,12 +42,11 @@
           <div class="nav-collapse">
             
             <ul class="nav pull-right">
-              
-               <li><a href="#comments">Comments</a></li>
-              
-              <li><a href="https://github.com/exploringdata">Code</a></li>
-              <li class="divider-vertical"></li>
-              <li id="sharemenu" class="dropdown">
+            
+              <li><a href="#info" class="menubutton"><button class="btn btn-small"><i class="icon-info-sign"></i> </button></a></li>
+              <li><a href="#comments" class="menubutton"><button class="btn btn-small"><i class="icon-comment"></i> </button></a></li>
+            
+            <li id="sharemenu" class="dropdown">
   <a href="#" class="menubutton dropdown-toggle" data-toggle="dropdown"><button class="btn btn-small btn-success"><i class="icon-share"></i> </button></a>
   <ul class="share dropdown-menu">
     <li><button href="/rss.xml" class="zocial rss">RSS Feed</button></li>
@@ -67,24 +66,36 @@
 
     <div id="wrapper" class="container">
       
-<div class="row">
-  <div class="span12">
-    <div id="map"></div>
-  </div>
-</div>
+<div class="row"><div class="span12">
+<div id="map"></div>
+</div></div>
 
-<div id="visinfo" class="row"><div class="span12">
-<hr>
-<h1>World Map of Earthquakes</h1><h2>Data Sources</h2>
+      
+<div id="info">
+<div class="row"><div class="span12"><hr></div></div>
+<div class="row">
+  <div class="span9"><h1>World Map of Earthquakes</h1><h2>Data Sources</h2>
 <ul>
 <li><a href="http://earthquake.usgs.gov/earthquakes/feed/">USGS Earthquakes Real-time Feeds &amp; Data</a></li>
 <li><a href="https://github.com/johan/world.geo.json">GeoJSON data for countries</a></li>
-</ul>
-</div></div>
+</ul></div>
+  <div class="span3">
+    
+<div class="postinfo">
+<h3>Meta</h3>
+<p>This visualization was created by Ramiro Gómez and published on November 26, 2012.</p>
 
+</div>
 
-      
-        <div id="comments" class="row"><div class="span12">
+    <h3>Keep Exploring</h3>
+    <ul class="unstyled btn-list">
+      <li><a href="/rss.xml"><button class="zocial rss">Subscribe to RSS Feed</button></a></li>
+      <li><a href="https://twitter.com/yaph"><button class="zocial twitter">Follow me on Twitter</button></a></li>
+    </ul>
+  </div>
+</div>
+</div>
+<div id="comments" class="row"><div class="span12">
 <hr>
 <div id="disqus_thread"></div>
 <script type="text/javascript">
@@ -98,11 +109,11 @@ dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
 </script>
 <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
 </div></div>
-      
 
       <div id="footer" class="row"><div class="span12">
+        <hr>
         <footer>
-          <p class="centered">Exploring Data is a site about data mining and visualization created by Ramiro Gómez, <a href="/about/">learn more</a>.<br>Except where otherwise noted, the works on this site are licensed under a<br><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US">Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a>.<br><a href="http://flattr.com/thing/952509/Exploring-Data"><img src="http://api.flattr.com/button/flattr-badge-large.png" alt="Flattr this" title="Flattr this" /></a></p>
+          <p class="centered">Exploring Data is a site about data mining and visualization <a href="/about/">learn more</a>.<br>Except where otherwise noted, the works on this site are licensed under a<br><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US">Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a>.<br><a href="http://flattr.com/thing/952509/Exploring-Data"><img src="http://api.flattr.com/button/flattr-badge-large.png" alt="Flattr this" title="Flattr this" /></a></p>
         </footer>
       </div></div>
     </div>

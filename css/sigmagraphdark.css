@@ -17,10 +17,9 @@ left:0;
 left:37%;
 width:70%;
 }
-#visinfo, #comments, footer {
+#info, #comments, footer {
 color:#999;
 }
-
 .ad {
 background-color:#333;
 color:#999;
