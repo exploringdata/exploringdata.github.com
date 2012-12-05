@@ -2,8 +2,10 @@
 <html xmlns:fb="http://ogp.me/ns/fb#" lang="en">
   <head>
     <meta charset="utf-8">
-    <title>World Map of Earthquakes | Exploring Data</title>
+    <title>Real-Time World Map of Earthquakes | Exploring Data</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+      <meta name="description" content="A geographic map of the world showing real-time data for recent earthquakes rendered with the D3 JavaScript library.">
     
     
       <meta property="og:image" content="http://exploringdata.github.com/img/preview/earthquakes.jpg">
@@ -16,8 +18,6 @@
     <link href="/css/style.css" rel="stylesheet">
     
         <link href="/css/earthquakes.css" rel="stylesheet">
-    
-        <link href="/css/colorbrewer.css" rel="stylesheet">
     
     <!--[if lt IE 9]>
       <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -41,6 +41,28 @@
           <a class="brand" href="/">Exploring Data</a>
           <div class="nav-collapse">
             
+<ul class="nav">
+  <li class="dropdown">
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Choose time and magnitude range <b class="caret"></b></a>
+    <ul class="dropdown-menu" id="eqranges">
+      <li><a href="http://earthquake.usgs.gov/earthquakes/feed/geojsonp/1.0/hour">Past hour M1+ earthquakes</a></li>
+      <li><a href="http://earthquake.usgs.gov/earthquakes/feed/geojsonp/all/hour">Past hour all earthquakes</a></li>
+      <li><a href="http://earthquake.usgs.gov/earthquakes/feed/geojsonp/significant/day">Past day significant earthquakes</a></li>
+      <li><a href="http://earthquake.usgs.gov/earthquakes/feed/geojsonp/2.5/day">Past day M2.5+ earthquakes</a></li>
+      <li><a href="http://earthquake.usgs.gov/earthquakes/feed/geojsonp/1.0/day">Past day M1+ earthquakes</a></li>
+      <li><a href="http://earthquake.usgs.gov/earthquakes/feed/geojsonp/all/day">Past day all earthquakes</a></li>
+      <li><a href="http://earthquake.usgs.gov/earthquakes/feed/geojsonp/significant/week">Past 7 days significant earthquakes</a></li>
+      <li><a href="http://earthquake.usgs.gov/earthquakes/feed/geojsonp/4.5/week">Past 7 days M4.5+ earthquakes</a></li>
+      <li><a href="http://earthquake.usgs.gov/earthquakes/feed/geojsonp/2.5/week">Past 7 days M2.5+ earthquakes</a></li>
+      <li><a href="http://earthquake.usgs.gov/earthquakes/feed/geojsonp/1.0/week">Past 7 days M1+ earthquakes</a></li>
+      <li><a href="http://earthquake.usgs.gov/earthquakes/feed/geojsonp/significant/month">Past 30 days significant earthquakes</a></li>
+      <li><a href="http://earthquake.usgs.gov/earthquakes/feed/geojsonp/4.5/month">Past 30 days M4.5+ earthquakes</a></li>
+      <li><a href="http://earthquake.usgs.gov/earthquakes/feed/geojsonp/2.5/month">Past 30 days M2.5+ earthquakes</a></li>
+    </ul>
+  </li>
+  <li><label id="refresh" class="checkbox"><input type="checkbox"> Auto update data</label></li>
+</ul>
+
             <ul class="nav pull-right">
             
               <li><a href="#info" class="menubutton"><button class="btn btn-small"><i class="icon-info-sign"></i> </button></a></li>
@@ -51,11 +73,11 @@
   <ul class="share dropdown-menu">
     <li><button href="/rss.xml" class="zocial rss">RSS Feed</button></li>
     <li><button href="https://twitter.com/share?url=http%3A%2F%2Fexploringdata.github.com%2Fvis%2Fearthquakes%2F" class="zocial popup twitter">Twitter</button></li>
-    <li><button href="http://reddit.com/submit?url=http%3A%2F%2Fexploringdata.github.com%2Fvis%2Fearthquakes%2F&title=World+Map+of+Earthquakes" class="zocial reddit">Reddit</button></li>
-    <li><button href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fexploringdata.github.com%2Fvis%2Fearthquakes%2F&t=World+Map+of+Earthquakes" class="zocial popup facebook">Facebook</button></li>
+    <li><button href="http://reddit.com/submit?url=http%3A%2F%2Fexploringdata.github.com%2Fvis%2Fearthquakes%2F&title=Real-Time+World+Map+of+Earthquakes" class="zocial reddit">Reddit</button></li>
+    <li><button href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fexploringdata.github.com%2Fvis%2Fearthquakes%2F&t=Real-Time+World+Map+of+Earthquakes" class="zocial popup facebook">Facebook</button></li>
     <li><button href="https://plus.google.com/share?url=http%3A%2F%2Fexploringdata.github.com%2Fvis%2Fearthquakes%2F" class="zocial popup googleplus">Google+</button></li>
-    <li><button href="http://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Fexploringdata.github.com%2Fvis%2Fearthquakes%2F&title=World+Map+of+Earthquakes" class="zocial popup linkedin">LinkedIn</button></li>
-    <li><button href="http://www.stumbleupon.com/submit?url=http%3A%2F%2Fexploringdata.github.com%2Fvis%2Fearthquakes%2F&title=World+Map+of+Earthquakes" class="zocial popup stumbleupon">Stumble</button></li>
+    <li><button href="http://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Fexploringdata.github.com%2Fvis%2Fearthquakes%2F&title=Real-Time+World+Map+of+Earthquakes" class="zocial popup linkedin">LinkedIn</button></li>
+    <li><button href="http://www.stumbleupon.com/submit?url=http%3A%2F%2Fexploringdata.github.com%2Fvis%2Fearthquakes%2F&title=Real-Time+World+Map+of+Earthquakes" class="zocial popup stumbleupon">Stumble</button></li>
   </ul>
 </li>
             </ul>
@@ -67,6 +89,7 @@
     <div id="wrapper" class="container">
       
 <div class="row"><div class="span12">
+<h2 id="eqtitle"></h2>
 <div id="map"></div>
 </div></div>
 
@@ -74,16 +97,25 @@
 <div id="info">
 <div class="row"><div class="span12"><hr></div></div>
 <div class="row">
-  <div class="span9"><h1>World Map of Earthquakes</h1><h2>Data Sources</h2>
-<ul>
-<li><a href="http://earthquake.usgs.gov/earthquakes/feed/">USGS Earthquakes Real-time Feeds &amp; Data</a></li>
-<li><a href="https://github.com/johan/world.geo.json">GeoJSON data for countries</a></li>
-</ul></div>
+  <div class="span9"><h1>Real-Time World Map of Earthquakes</h1><p>This map of the world displays recent earthquakes as red circles. The circle sizes correspond to the magnitudes of the earthquakes taking into account that the <a href="https://en.wikipedia.org/wiki/Richter_magnitude_scale">Richter magnitude scale</a> is a logarithmic scale, where an earthquake that measures 5.0 has a shaking amplitude 10 times larger than one that measures 4.0.</p>
+<p>Earthquake data is retrieved via <a href="http://earthquake.usgs.gov/earthquakes/feed/">real-time feeds</a> from the U.S. Geological Survey (USGS). By default data is loaded once. When Auto update data in the top menu is checked, data will be refreshed every minute. Moreover, you can choose different time and earthquake magnitude ranges from the select list in the top menu.</p>
+<p>You can zoom in and out the map with the mouse wheel and drag it around with the mouse button clicked. When you move the mouse over a circle a tooltip with magnitude and location information is displayed, when you click on a circle you are sent to the earthquake's corresponding detail page on the USGS Web site.</p>
+<p>The visualization is rendered with the <a href="http://d3js.org/">D3 JavaScript library</a> using <a href="https://github.com/johan/world.geo.json">GeoJSON data for countries</a>.</p></div>
   <div class="span3">
     
 <div class="postinfo">
 <h3>Meta &amp; Tags</h3>
-<p>This visualization was created by Ramiro Gómez and published on November 26, 2012.</p>
+<p>This visualization was created by Ramiro Gómez and published on December 05, 2012.</p>
+
+<div class="tags">
+
+<span class="label label-info"><a href="/tags/map/">map</a></span>
+
+<span class="label label-info"><a href="/tags/d3/">d3</a></span>
+
+<span class="label label-info"><a href="/tags/earthquakes/">earthquakes</a></span>
+
+</div>
 
 </div>
 

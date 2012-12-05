@@ -1,3 +1,8 @@
+// adapt containerwidth to screen size
+var containerwidth = function(selector) {
+  return parseInt($(selector).width())
+};
+
 $(function(){
   $('#sharemenu .zocial').click(function(e){
     var b = $(this);

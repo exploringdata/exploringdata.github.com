@@ -1,8 +1,3 @@
-// adapt containerwidth to screen size
-var containerwidth = function(selector) {
-  return parseInt(d3.select(selector).style('width'))
-};
-
 var mapselect = '#map',
   width = containerwidth(mapselect),
   height = width * .6,

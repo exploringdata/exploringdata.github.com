@@ -1,11 +1,18 @@
 .countries {
-fill:#eaeaea;
-stroke: #fff;
-stroke-width: 1.5px;
+fill:#021030;
+stroke: #000;
+stroke-width:.5px;
 }
-
 .earthquake {
-fill:red;
-stroke: red;
-stroke-width: 1.5px;
+fill:#cc0000;
+stroke:#ce0000;
+stroke-width:1.5px;
+opacity:.36;
+}
+body {
+background:#000018;
+color:#ccc;
+}
+#refresh {
+padding:10px 0 0 30px;
 }
