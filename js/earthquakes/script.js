@@ -2,7 +2,7 @@ var current_feed = null,
   timer = null;
 
 var eqradius = function(feature, index) {
-  return d3.scale.pow().exponent(10).domain([0, 10]).range([.5, 200])(feature.properties.mag)
+  return d3.scale.pow().exponent(10).domain([0, 10]).range([.8, 300])(feature.properties.mag)
 }
 
 var mapselect = '#map',
