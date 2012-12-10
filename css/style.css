@@ -9,6 +9,7 @@ footer {
 margin-top:1em;
 }
 button a {color:inherit;}
+cite {font-style:italic;}
 
 .spacer5 {clear:both;height:5px;}
 .centered {text-align:center;}
