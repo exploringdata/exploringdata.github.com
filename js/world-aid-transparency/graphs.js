@@ -16,7 +16,7 @@ var tf = function() {
 var rescale = function() {
   svg.attr('transform', 'translate(' + d3.event.translate + ')'
     + ' scale(' + d3.event.scale + ')')
-}
+};
 
 /************** SVG stuff **************/
 var svg = d3.select(mapselect).append('svg')
