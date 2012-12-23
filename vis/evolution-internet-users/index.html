@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html xmlns:fb="http://ogp.me/ns/fb#" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Evolution of Internet Users from 1990 - 2011 | Exploring Data</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+      <meta name="description" content="An animated evolution of Internet users across the worlds countries created with the D3 JavaScript library.">
+    
+    
+      <meta property="og:image" content="http://exploringdata.github.com/img/preview/evolution-internet-users.jpg">
+    
+    <meta name="author" content="Ramiro Gómez">
+    <link rel="canonical" href="http://exploringdata.github.com/vis/evolution-internet-users/">
+    <link href="/vendor/zocial/zocial.css" rel="stylesheet">
+    <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/vendor/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet">
+    
+        <link href="/css/evolution-internet-users.css" rel="stylesheet">
+    
+    <!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link rel="shortcut icon" href="/favicon.ico">
+    
+      
+        <link rel="alternate" type="application/rss+xml" title="Exploring Data main RSS feed" href="http://exploringdata.github.com/rss.xml">
+      
+    
+  </head>
+  <body>
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="/">Exploring Data</a>
+          <div class="nav-collapse">
+            
+            <ul class="nav pull-right">
+            
+              <li><a href="#info" class="menubutton"><button class="btn btn-small"><i class="icon-info-sign"></i> </button></a></li>
+              <li><a href="#comments" class="menubutton"><button class="btn btn-small"><i class="icon-comment"></i> </button></a></li>
+            
+            <li id="sharemenu" class="dropdown">
+  <a href="#" class="menubutton dropdown-toggle" data-toggle="dropdown"><button class="btn btn-small btn-success"><i class="icon-share"></i> </button></a>
+  <ul class="share dropdown-menu">
+    <li><button href="/rss.xml" class="zocial rss">RSS Feed</button></li>
+    <li><button href="https://twitter.com/share?url=http%3A%2F%2Fexploringdata.github.com%2Fvis%2Fevolution-internet-users%2F" class="zocial popup twitter">Twitter</button></li>
+    <li><button href="http://reddit.com/submit?url=http%3A%2F%2Fexploringdata.github.com%2Fvis%2Fevolution-internet-users%2F&title=Evolution+of+Internet+Users+from+1990+-+2011" class="zocial reddit">Reddit</button></li>
+    <li><button href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fexploringdata.github.com%2Fvis%2Fevolution-internet-users%2F&t=Evolution+of+Internet+Users+from+1990+-+2011" class="zocial popup facebook">Facebook</button></li>
+    <li><button href="https://plus.google.com/share?url=http%3A%2F%2Fexploringdata.github.com%2Fvis%2Fevolution-internet-users%2F" class="zocial popup googleplus">Google+</button></li>
+    <li><button href="http://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Fexploringdata.github.com%2Fvis%2Fevolution-internet-users%2F&title=Evolution+of+Internet+Users+from+1990+-+2011" class="zocial popup linkedin">LinkedIn</button></li>
+    <li><button href="http://www.stumbleupon.com/submit?url=http%3A%2F%2Fexploringdata.github.com%2Fvis%2Fevolution-internet-users%2F&title=Evolution+of+Internet+Users+from+1990+-+2011" class="zocial popup stumbleupon">Stumble</button></li>
+  </ul>
+</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="wrapper" class="container">
+      
+      
+<div class="row"><div class="span12" id="vis"></div></div>
+
+      
+<div id="info">
+<div class="row"><div class="span12"><hr></div></div>
+<div class="row">
+  <div class="span9"><h1>Evolution of Internet Users from 1990 - 2011</h1><p>An animated data visualization showing the percentage of Internet users in relation to the Gross Domestic Product (GDP) per capita for the worlds countries from 1990 to 2011.</p>
+<p>This visualization is based on <a href="http://bost.ocks.org/mike/nations/">Mike Bostock's recreation</a> of Gapminder's <a href="http://gapminder.org/world/">The Wealth and Health of nations</a> made famous by Hans Rosling in his <a href="http://www.ted.com/talks/hans_rosling_shows_the_best_stats_you_ve_ever_seen.html">inspiring TED talk</a>.</p>
+<p>The data is retrieved from the <a href="http://data.worldbank.org/data-catalog/world-development-indicators">World Bank's World Development Indicators</a> and rendered using the <a href="http://d3js.org/">JavaScript library D3</a>.</p></div>
+  <div class="span3">
+    
+<div class="postinfo">
+<h3>Meta &amp; Tags</h3>
+<p>Published on December 23, 2012 by Ramiro Gómez.</p>
+
+<div class="tags">
+
+<span class="label label-info"><a href="/tags/internet/">internet</a></span>
+
+<span class="label label-info"><a href="/tags/d3/">d3</a></span>
+
+<span class="label label-info"><a href="/tags/history/">history</a></span>
+
+<span class="label label-info"><a href="/tags/animation/">animation</a></span>
+
+</div>
+
+</div>
+
+<h3>Keep Exploring</h3>
+<ul class="unstyled btn-list">
+<li class="pull-left"><a href="/rss.xml"><button class="zocial rss">Subscribe</button></a></li>
+<li class="pull-right"><a href="https://twitter.com/yaph"><button class="zocial twitter">Follow me</button></a></li>
+</ul>
+<div id="mc_embed_signup" class="clearfix well">
+<form action="http://github.us6.list-manage.com/subscribe/post?u=6e91c5ec6f31498a21bc80826&amp;id=bb7db2c23d" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="form validate" target="_blank" novalidate>
+<label for="mce-EMAIL">Subscribe to the <strong>Datavis Weekly Newsletter</strong></label>
+<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+<div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn"></div>
+</form>
+</div>
+  </div>
+</div>
+</div>
+<div id="comments" class="row"><div class="span12">
+<hr>
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+var disqus_shortname = 'exploringdata';
+var disqus_url = 'http://exploringdata.github.com/vis/evolution-internet-users/';
+(function() {
+var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div></div>
+
+      <div id="footer" class="row"><div class="span12">
+        <hr>
+        <footer>
+          <p class="centered">Exploring Data is a site about data mining and visualization <a href="/about/">learn more</a>.<br>Except where otherwise noted, the works on this site are licensed under a<br><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US">Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a>.<br><a href="http://flattr.com/thing/952509/Exploring-Data"><img src="http://api.flattr.com/button/flattr-badge-large.png" alt="Flattr this" title="Flattr this" /></a></p>
+        </footer>
+      </div></div>
+    </div>
+    <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-5102014-13']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+    <script src="http://code.jquery.com/jquery-1.8.1.min.js"></script>
+    <script src="/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/js/script.js"></script>
+    
+      
+          <script src="/vendor/d3/d3.v3.min.js"></script>
+      
+          <script src="/js/evolution-internet-users/script.js"></script>
+      
+    
+  </body>
+</html>
