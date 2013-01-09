@@ -126,6 +126,4 @@ $(function(){
   });
 
   $('.showposter').click(function(e){e.preventDefault();$('#showposter').modal();});
-
-
 });
