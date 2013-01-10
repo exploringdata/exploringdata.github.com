@@ -18,6 +18,9 @@ cite {font-style:italic;}
 .navbar .nav > li > a.menubutton {
 padding:2px 0 0 10px;
 }
+.navbar .nav .menuitem {
+margin:.4em 0 0 0;
+}
 .navbar ul.share button {
 width:140px;
 margin:.3em 1em .3em;

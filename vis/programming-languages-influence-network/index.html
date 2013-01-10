@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html xmlns:fb="http://ogp.me/ns/fb#" lang="en">
   <head>
@@ -16,9 +15,9 @@
     <link href="/vendor/zocial/zocial.css" rel="stylesheet">
     <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="/vendor/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
-    <link href="/css/style.css?v=1" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet">
     
-        <link href="/css/sigmagraphdark.css?v=1" rel="stylesheet">
+        <link href="/css/sigmagraphdark.css" rel="stylesheet">
     
     <!--[if lt IE 9]>
       <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -43,10 +42,10 @@
           <div class="nav-collapse">
             
 <ul class="nav">
-  <li><a class="showhelp" href="">Help</a></li>
+  <li><input class="menuitem typeahead" type="text" data-provide="typeahead" placeholder="Search nodes"></li>
   <li class="dropdown">
     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Language Paradigm <b class="caret"></b></a>
-    <ul class="dropdown-menu" id="paradigms"></ul>
+    <ul class="dropdown-menu graphfilter" id="paradigms"></ul>
   </li>
   <li class="dropdown">
     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Choose Layout <b class="caret"></b></a>
@@ -55,6 +54,7 @@
       <li><a href="#random">Random</a></li>
     </ul>
   </li>
+  <li><a class="showhelp" href="">Help</a></li>
   <li><a class="showposter" href="http://www.zazzle.com/programming_languages_influence_network_poster-228947989414708643?rf=238355915198956003">Poster</a></li>
 </ul>
 
@@ -94,7 +94,7 @@
 <div class="row">
   <div class="span9"><h1>Programming Languages Influence Network</h1><p>This interactive visualization shows a network graph of programming language influences. The graph consists of 1169 programming language nodes and 908 edges that signify an influence relation.</p>
 <p>The size of a node is determined by its out degree. The more influential a language is across all languages in the network, the bigger is the corresponding node in the network.</p>
-<p>There are several ways of interaction: you can restrict the network to languages within a programming paradigm; you can choose between a Force Atlas 2 and a random graph layout; and you can highlight the connections of a language by moving the mouse over its node. For more details click on the help link in the top menu.</p>
+<p>There are several ways of interaction: you can restrict the network to languages within a programming paradigm; you can choose between a Force Atlas 2 and a random graph layout; and you can highlight the connections of a language by searching for its name in the top menu. For more details click on the help link in the top menu.</p>
 <p>This network graph visualization was created with data from the <a href="http://www.freebase.com/view/computer/programming_language">Freebase Programming Language collection</a> and is rendered with the <a href="http://sigmajs.org/">JavaScript library sigma.js</a>. The Force Atlas 2 layout was preprocessed using the <a href="https://gephi.org/">Gephi visualization platform</a>.</p>
 <p>You find the Python code to retrieve the data from Freebase and generate json and gexf files in this <a href="https://github.com/expacloringdata/programming-languages-influence">GitHub repository</a>. The data was last updated October 5 2012. Feel free to leave feedback in the comments and share this visualization with your friends.</p>
 
@@ -108,8 +108,8 @@
     <p>You can zoom in and out the graph with the mouse wheel. You can move the graph by clicking and holding the left mouse button and moving the mouse.</p>
     <h4>Language Information</h4>
     <p>When you click on a language node in the graph a modal window with information about the language will be displayed.</p>
-    <h4>Language Highlighting</h4>
-    <p>Move the mouse over a language to highlight its connections. Languages in red influenced the highlighted language and blue ones were influenced by it.</p>
+    <h4>Language Search</h4>
+    <p>Search for a language name from the top menu to highlight its connections. Languages in red influenced the highlighted language and blue ones were influenced by it.</p>
     <h4>Paradigm Highlighting</h4>
     <p>Choose and click on a paradigm from the <strong>Language Paradigm</strong> menu to only show languages within this paradigm.</p>
     <h4>Graph Layout</h4>
@@ -212,16 +212,16 @@ dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
 </script>
     <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
     <script src="/vendor/bootstrap/js/bootstrap.min.js"></script>
-    <script src="/js/script.js?v=1"></script>
+    <script src="/js/script.js"></script>
     
       
-          <script src="http://sigmajs.org/js/sigma.min.js?v=1"></script>
+          <script src="/vendor/sigma/sigma.min.js"></script>
       
-          <script src="/vendor/sigma/sigma.parseGexf.js?v=1"></script>
+          <script src="/vendor/sigma/sigma.parseGexf.js"></script>
       
-          <script src="/js/visgexf.js?v=1"></script>
+          <script src="/js/visgexf.js"></script>
       
-          <script src="/js/programming-languages-influence-network/script.js?v=1"></script>
+          <script src="/js/programming-languages-influence-network/script.js"></script>
       
     
   </body>

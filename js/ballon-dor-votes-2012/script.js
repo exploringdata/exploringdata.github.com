@@ -60,7 +60,8 @@ $(function(){
     forceLabel: 0,
     type: 'directed'
   }
-  var G = visgexf.init('sig', '/gexf/ballon-dor-2012-votes-fruchterman.gexf', props);
+  visgexf
+    .init('sig', '/gexf/ballon-dor-2012-votes-fruchterman.gexf', props)
+    .sig.bind('overnodes', showNodeInfo).bind('outnodes', hideNodeInfo).draw();
   $('.showposter').click(function(e){e.preventDefault();$('#showposter').modal();});
-  visgexf.sig.bind('overnodes', showNodeInfo).bind('outnodes', hideNodeInfo).draw();
 });
