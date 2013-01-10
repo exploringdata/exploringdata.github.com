@@ -1523,13 +1523,13 @@
           <attvalue for="0" value="Player" />
         </attvalues>
       </node>
-      <node id="Ibrahimovic ́ Zlatan" label="Ibrahimovic ́ Zlatan">
-        <ns0:color b="48" g="48" r="218" />
+      <node id="Geniy Tulegenov" label="Geniy Tulegenov">
+        <ns0:color b="218" g="218" r="48" />
         <ns0:size value="8.0" />
-        <ns0:position x="-1552.4672" y="-636.25665" z="0.0" />
+        <ns0:position x="-353.10947" y="-841.7986" z="0.0" />
         <attvalues>
-          <attvalue for="0" value="Captain" />
-          <attvalue for="1" value="Xavi|Pirlo Andrea|Messi Lionel" />
+          <attvalue for="0" value="Media" />
+          <attvalue for="1" value="Iniesta Andrés|Messi Lionel|Drogba Didier" />
         </attvalues>
       </node>
       <node id="Bobby Williamson Robert" label="Bobby Williamson Robert">
@@ -3095,7 +3095,8 @@
         <ns0:size value="25.067833" />
         <ns0:position x="1902.1812" y="-17.003067" z="0.0" />
         <attvalues>
-          <attvalue for="0" value="Player" />
+          <attvalue for="0" value="Captain" />
+          <attvalue for="1" value="Xavi|Pirlo Andrea|Messi Lionel" />
         </attvalues>
       </node>
       <node id="Del Bosque Vicente" label="Del Bosque Vicente">
@@ -4234,15 +4235,6 @@
           <attvalue for="1" value="Messi Lionel|Cristiano Ronaldo|Falcao Radamel" />
         </attvalues>
       </node>
-      <node id="Geniy Tulegenov" label="Geniy Tulegenov">
-        <ns0:color b="218" g="218" r="48" />
-        <ns0:size value="8.0" />
-        <ns0:position x="-353.10947" y="-841.7986" z="0.0" />
-        <attvalues>
-          <attvalue for="0" value="Media" />
-          <attvalue for="1" value="Iniesta Andrés|Messi Lionel|Drogba Didier" />
-        </attvalues>
-      </node>
       <node id="Selçuk Manav" label="Selçuk Manav">
         <ns0:color b="218" g="218" r="48" />
         <ns0:size value="8.0" />
@@ -4946,9 +4938,9 @@
       <edge id="228" source="Erdenebat Baljinnyam" target="van Persie Robin" weight="1.0" />
       <edge id="229" source="Erdenebat Baljinnyam" target="Iniesta Andrés" weight="3.0" />
       <edge id="230" source="Erdenebat Baljinnyam" target="Messi Lionel" weight="5.0" />
-      <edge id="1192" source="Winfried Schaefer" target="Iniesta Andrés" weight="3.0" />
-      <edge id="1193" source="Winfried Schaefer" target="Busquets Sergio" weight="5.0" />
-      <edge id="1194" source="Winfried Schaefer" target="Cristiano Ronaldo" weight="1.0" />
+      <edge id="1195" source="Winfried Schaefer" target="Iniesta Andrés" weight="3.0" />
+      <edge id="1196" source="Winfried Schaefer" target="Busquets Sergio" weight="5.0" />
+      <edge id="1197" source="Winfried Schaefer" target="Cristiano Ronaldo" weight="1.0" />
       <edge id="234" source="Keshi Stephen" target="Drogba Didier" weight="3.0" />
       <edge id="235" source="Keshi Stephen" target="van Persie Robin" weight="1.0" />
       <edge id="236" source="Keshi Stephen" target="Touré Yaya" weight="5.0" />
@@ -5141,9 +5133,9 @@
       <edge id="426" source="Ashley Williams" target="Xavi" weight="3.0" />
       <edge id="427" source="Ashley Williams" target="van Persie Robin" weight="1.0" />
       <edge id="428" source="Ashley Williams" target="Messi Lionel" weight="5.0" />
-      <edge id="1252" source="Khin Maung Lwin" target="Casillas Iker" weight="5.0" />
-      <edge id="1253" source="Khin Maung Lwin" target="Falcao Radamel" weight="1.0" />
-      <edge id="1254" source="Khin Maung Lwin" target="Messi Lionel" weight="3.0" />
+      <edge id="1255" source="Khin Maung Lwin" target="Casillas Iker" weight="5.0" />
+      <edge id="1256" source="Khin Maung Lwin" target="Falcao Radamel" weight="1.0" />
+      <edge id="1257" source="Khin Maung Lwin" target="Messi Lionel" weight="3.0" />
       <edge id="429" source="Jean Robert Yelou" target="Drogba Didier" weight="1.0" />
       <edge id="430" source="Jean Robert Yelou" target="Cristiano Ronaldo" weight="3.0" />
       <edge id="431" source="Jean Robert Yelou" target="Messi Lionel" weight="5.0" />
@@ -5210,9 +5202,9 @@
       <edge id="492" source="Phiri Kinnah" target="Falcao Radamel" weight="1.0" />
       <edge id="493" source="Phiri Kinnah" target="Cristiano Ronaldo" weight="3.0" />
       <edge id="494" source="Phiri Kinnah" target="Messi Lionel" weight="5.0" />
-      <edge id="495" source="Ibrahimovic ́ Zlatan" target="Xavi" weight="5.0" />
-      <edge id="496" source="Ibrahimovic ́ Zlatan" target="Messi Lionel" weight="1.0" />
-      <edge id="497" source="Ibrahimovic ́ Zlatan" target="Pirlo Andrea" weight="3.0" />
+      <edge id="495" source="Geniy Tulegenov" target="Drogba Didier" weight="1.0" />
+      <edge id="496" source="Geniy Tulegenov" target="Iniesta Andrés" weight="5.0" />
+      <edge id="497" source="Geniy Tulegenov" target="Messi Lionel" weight="3.0" />
       <edge id="498" source="Bobby Williamson Robert" target="Falcao Radamel" weight="1.0" />
       <edge id="499" source="Bobby Williamson Robert" target="Messi Lionel" weight="3.0" />
       <edge id="500" source="Bobby Williamson Robert" target="Cristiano Ronaldo" weight="5.0" />
@@ -5709,369 +5701,369 @@
       <edge id="997" source="Lagerback Lars" target="Ibrahimovic Zlatan" weight="1.0" />
       <edge id="998" source="Lagerback Lars" target="Alonso Xabi" weight="3.0" />
       <edge id="999" source="Lagerback Lars" target="Messi Lionel" weight="5.0" />
-      <edge id="1000" source="Del Bosque Vicente" target="Casillas Iker" weight="5.0" />
-      <edge id="1001" source="Del Bosque Vicente" target="Xavi" weight="3.0" />
-      <edge id="1002" source="Del Bosque Vicente" target="Iniesta Andrés" weight="1.0" />
-      <edge id="1003" source="Michael Bascombe" target="van Persie Robin" weight="5.0" />
-      <edge id="1004" source="Michael Bascombe" target="Cristiano Ronaldo" weight="1.0" />
-      <edge id="1005" source="Michael Bascombe" target="Messi Lionel" weight="3.0" />
-      <edge id="1006" source="Antar Roda" target="Falcao Radamel" weight="1.0" />
-      <edge id="1007" source="Antar Roda" target="Cristiano Ronaldo" weight="3.0" />
-      <edge id="1008" source="Antar Roda" target="Messi Lionel" weight="5.0" />
-      <edge id="1009" source="Kim Pan Gon" target="Alonso Xabi" weight="1.0" />
-      <edge id="1010" source="Kim Pan Gon" target="Cristiano Ronaldo" weight="3.0" />
-      <edge id="1011" source="Kim Pan Gon" target="Messi Lionel" weight="5.0" />
-      <edge id="1012" source="Tshosane Stanley" target="van Persie Robin" weight="1.0" />
-      <edge id="1013" source="Tshosane Stanley" target="Cristiano Ronaldo" weight="3.0" />
-      <edge id="1014" source="Tshosane Stanley" target="Messi Lionel" weight="5.0" />
-      <edge id="1015" source="Williams Jan Michael" target="Iniesta Andrés" weight="1.0" />
-      <edge id="1016" source="Williams Jan Michael" target="Cristiano Ronaldo" weight="3.0" />
-      <edge id="1017" source="Williams Jan Michael" target="Messi Lionel" weight="5.0" />
-      <edge id="1018" source="Besnik Dizdari" target="Iniesta Andrés" weight="3.0" />
-      <edge id="1019" source="Besnik Dizdari" target="Cristiano Ronaldo" weight="1.0" />
-      <edge id="1020" source="Besnik Dizdari" target="Messi Lionel" weight="5.0" />
-      <edge id="1021" source="Urai Patoommawatana" target="Iniesta Andrés" weight="1.0" />
-      <edge id="1022" source="Urai Patoommawatana" target="Cristiano Ronaldo" weight="3.0" />
-      <edge id="1023" source="Urai Patoommawatana" target="Messi Lionel" weight="5.0" />
-      <edge id="1024" source="Sui Wing Leung" target="Messi Lionel" weight="3.0" />
-      <edge id="1025" source="Sui Wing Leung" target="Cristiano Ronaldo" weight="5.0" />
-      <edge id="1026" source="Sui Wing Leung" target="Pirlo Andrea" weight="1.0" />
+      <edge id="1000" source="Ibrahimovic Zlatan" target="Xavi" weight="5.0" />
+      <edge id="1001" source="Ibrahimovic Zlatan" target="Messi Lionel" weight="1.0" />
+      <edge id="1002" source="Ibrahimovic Zlatan" target="Pirlo Andrea" weight="3.0" />
+      <edge id="1003" source="Del Bosque Vicente" target="Casillas Iker" weight="5.0" />
+      <edge id="1004" source="Del Bosque Vicente" target="Xavi" weight="3.0" />
+      <edge id="1005" source="Del Bosque Vicente" target="Iniesta Andrés" weight="1.0" />
+      <edge id="1006" source="Michael Bascombe" target="van Persie Robin" weight="5.0" />
+      <edge id="1007" source="Michael Bascombe" target="Cristiano Ronaldo" weight="1.0" />
+      <edge id="1008" source="Michael Bascombe" target="Messi Lionel" weight="3.0" />
+      <edge id="1009" source="Antar Roda" target="Falcao Radamel" weight="1.0" />
+      <edge id="1010" source="Antar Roda" target="Cristiano Ronaldo" weight="3.0" />
+      <edge id="1011" source="Antar Roda" target="Messi Lionel" weight="5.0" />
+      <edge id="1012" source="Kim Pan Gon" target="Alonso Xabi" weight="1.0" />
+      <edge id="1013" source="Kim Pan Gon" target="Cristiano Ronaldo" weight="3.0" />
+      <edge id="1014" source="Kim Pan Gon" target="Messi Lionel" weight="5.0" />
+      <edge id="1015" source="Tshosane Stanley" target="van Persie Robin" weight="1.0" />
+      <edge id="1016" source="Tshosane Stanley" target="Cristiano Ronaldo" weight="3.0" />
+      <edge id="1017" source="Tshosane Stanley" target="Messi Lionel" weight="5.0" />
+      <edge id="1018" source="Williams Jan Michael" target="Iniesta Andrés" weight="1.0" />
+      <edge id="1019" source="Williams Jan Michael" target="Cristiano Ronaldo" weight="3.0" />
+      <edge id="1020" source="Williams Jan Michael" target="Messi Lionel" weight="5.0" />
+      <edge id="1021" source="Besnik Dizdari" target="Iniesta Andrés" weight="3.0" />
+      <edge id="1022" source="Besnik Dizdari" target="Cristiano Ronaldo" weight="1.0" />
+      <edge id="1023" source="Besnik Dizdari" target="Messi Lionel" weight="5.0" />
+      <edge id="1024" source="Urai Patoommawatana" target="Iniesta Andrés" weight="1.0" />
+      <edge id="1025" source="Urai Patoommawatana" target="Cristiano Ronaldo" weight="3.0" />
+      <edge id="1026" source="Urai Patoommawatana" target="Messi Lionel" weight="5.0" />
+      <edge id="1027" source="Sui Wing Leung" target="Messi Lionel" weight="3.0" />
+      <edge id="1028" source="Sui Wing Leung" target="Cristiano Ronaldo" weight="5.0" />
+      <edge id="1029" source="Sui Wing Leung" target="Pirlo Andrea" weight="1.0" />
       <edge id="201" source="Sadikhov Rashad" target="Iniesta Andrés" weight="1.0" />
       <edge id="202" source="Sadikhov Rashad" target="Cristiano Ronaldo" weight="3.0" />
       <edge id="203" source="Sadikhov Rashad" target="Messi Lionel" weight="5.0" />
-      <edge id="1030" source="Curtis Thomas" target="Iniesta Andrés" weight="1.0" />
-      <edge id="1031" source="Curtis Thomas" target="Messi Lionel" weight="3.0" />
-      <edge id="1032" source="Curtis Thomas" target="Cristiano Ronaldo" weight="5.0" />
-      <edge id="1033" source="Gumbo Ruhman" target="van Persie Robin" weight="1.0" />
-      <edge id="1034" source="Gumbo Ruhman" target="Iniesta Andrés" weight="5.0" />
-      <edge id="1035" source="Gumbo Ruhman" target="Messi Lionel" weight="3.0" />
-      <edge id="1036" source="Gyan Asamoah" target="Rooney Wayne" weight="1.0" />
-      <edge id="1037" source="Gyan Asamoah" target="Messi Lionel" weight="5.0" />
-      <edge id="1038" source="Gyan Asamoah" target="Touré Yaya" weight="3.0" />
-      <edge id="1039" source="Bandara Nipuna" target="Neymar" weight="3.0" />
-      <edge id="1040" source="Bandara Nipuna" target="van Persie Robin" weight="1.0" />
-      <edge id="1041" source="Bandara Nipuna" target="Messi Lionel" weight="5.0" />
-      <edge id="1042" source="Tabarez Oscar Washington" target="Iniesta Andrés" weight="1.0" />
-      <edge id="1043" source="Tabarez Oscar Washington" target="Cristiano Ronaldo" weight="3.0" />
-      <edge id="1044" source="Tabarez Oscar Washington" target="Messi Lionel" weight="5.0" />
-      <edge id="1045" source="Ahmed Buric" target="Drogba Didier" weight="3.0" />
-      <edge id="1046" source="Ahmed Buric" target="Cristiano Ronaldo" weight="1.0" />
-      <edge id="1047" source="Ahmed Buric" target="Messi Lionel" weight="5.0" />
-      <edge id="1048" source="Truong Anh Ngoc" target="Cristiano Ronaldo" weight="3.0" />
-      <edge id="1049" source="Truong Anh Ngoc" target="Messi Lionel" weight="5.0" />
-      <edge id="1050" source="Truong Anh Ngoc" target="Pirlo Andrea" weight="1.0" />
-      <edge id="1051" source="Ricardo Pineyrua" target="Falcao Radamel" weight="1.0" />
-      <edge id="1052" source="Ricardo Pineyrua" target="Messi Lionel" weight="5.0" />
-      <edge id="1053" source="Ricardo Pineyrua" target="Pirlo Andrea" weight="3.0" />
-      <edge id="1054" source="Neil Davidson" target="van Persie Robin" weight="1.0" />
-      <edge id="1055" source="Neil Davidson" target="Messi Lionel" weight="3.0" />
-      <edge id="1056" source="Neil Davidson" target="Cristiano Ronaldo" weight="5.0" />
-      <edge id="1057" source="Engels Gerts" target="Messi Lionel" weight="3.0" />
-      <edge id="1058" source="Engels Gerts" target="Cristiano Ronaldo" weight="5.0" />
-      <edge id="1059" source="Engels Gerts" target="Özil Mesut" weight="1.0" />
-      <edge id="1060" source="Djeparov Server" target="Iniesta Andrés" weight="3.0" />
-      <edge id="1061" source="Djeparov Server" target="Cristiano Ronaldo" weight="1.0" />
-      <edge id="1062" source="Djeparov Server" target="Messi Lionel" weight="5.0" />
-      <edge id="1066" source="Ahmed Arid" target="Falcao Radamel" weight="1.0" />
-      <edge id="1067" source="Ahmed Arid" target="Cristiano Ronaldo" weight="3.0" />
-      <edge id="1068" source="Ahmed Arid" target="Messi Lionel" weight="5.0" />
-      <edge id="1069" source="Tshering Pasang" target="Iniesta Andrés" weight="1.0" />
-      <edge id="1070" source="Tshering Pasang" target="Cristiano Ronaldo" weight="3.0" />
-      <edge id="1071" source="Tshering Pasang" target="Messi Lionel" weight="5.0" />
-      <edge id="1072" source="Hipp Michal" target="Iniesta Andrés" weight="1.0" />
-      <edge id="1073" source="Hipp Michal" target="Cristiano Ronaldo" weight="3.0" />
-      <edge id="1074" source="Hipp Michal" target="Messi Lionel" weight="5.0" />
-      <edge id="1075" source="Olsen Lars" target="Ibrahimovic Zlatan" weight="1.0" />
-      <edge id="1076" source="Olsen Lars" target="Cristiano Ronaldo" weight="3.0" />
-      <edge id="1077" source="Olsen Lars" target="Messi Lionel" weight="5.0" />
-      <edge id="1078" source="Almeida Almada Ever Hugo" target="Casillas Iker" weight="3.0" />
-      <edge id="1079" source="Almeida Almada Ever Hugo" target="Messi Lionel" weight="1.0" />
-      <edge id="1080" source="Almeida Almada Ever Hugo" target="Cristiano Ronaldo" weight="5.0" />
-      <edge id="1081" source="Mahamat Oumar Yaya" target="Iniesta Andrés" weight="1.0" />
-      <edge id="1082" source="Mahamat Oumar Yaya" target="Cristiano Ronaldo" weight="3.0" />
-      <edge id="1083" source="Mahamat Oumar Yaya" target="Messi Lionel" weight="5.0" />
-      <edge id="1084" source="Abd al aziz al-Attia" target="Buffon Gianluigi" weight="1.0" />
-      <edge id="1085" source="Abd al aziz al-Attia" target="Cristiano Ronaldo" weight="3.0" />
-      <edge id="1086" source="Abd al aziz al-Attia" target="Messi Lionel" weight="5.0" />
-      <edge id="1087" source="Fletcher Darren" target="van Persie Robin" weight="1.0" />
-      <edge id="1088" source="Fletcher Darren" target="Messi Lionel" weight="3.0" />
-      <edge id="1089" source="Fletcher Darren" target="Cristiano Ronaldo" weight="5.0" />
-      <edge id="1090" source="Alifa Hissein Atti" target="Ibrahimovic Zlatan" weight="1.0" />
-      <edge id="1091" source="Alifa Hissein Atti" target="Cristiano Ronaldo" weight="3.0" />
-      <edge id="1092" source="Alifa Hissein Atti" target="Messi Lionel" weight="5.0" />
-      <edge id="1093" source="Ali Mbae" target="Xavi" weight="5.0" />
-      <edge id="1094" source="Ali Mbae" target="Iniesta Andrés" weight="3.0" />
-      <edge id="1095" source="Ali Mbae" target="Neymar" weight="1.0" />
-      <edge id="1096" source="Avramovic Radojko" target="Cristiano Ronaldo" weight="3.0" />
-      <edge id="1097" source="Avramovic Radojko" target="Messi Lionel" weight="5.0" />
-      <edge id="1098" source="Avramovic Radojko" target="Pirlo Andrea" weight="1.0" />
-      <edge id="1099" source="Da Silva Thiago Emiliano" target="Ibrahimovic Zlatan" weight="1.0" />
-      <edge id="1100" source="Da Silva Thiago Emiliano" target="Cristiano Ronaldo" weight="3.0" />
-      <edge id="1101" source="Da Silva Thiago Emiliano" target="Messi Lionel" weight="5.0" />
-      <edge id="1102" source="Gorkšs Kaspars" target="van Persie Robin" weight="3.0" />
-      <edge id="1103" source="Gorkšs Kaspars" target="Iniesta Andrés" weight="1.0" />
-      <edge id="1104" source="Gorkšs Kaspars" target="Messi Lionel" weight="5.0" />
-      <edge id="1105" source="Kimura Kokichi" target="van Persie Robin" weight="1.0" />
-      <edge id="1106" source="Kimura Kokichi" target="Cristiano Ronaldo" weight="3.0" />
-      <edge id="1107" source="Kimura Kokichi" target="Messi Lionel" weight="5.0" />
-      <edge id="1108" source="Samm Audu" target="Falcao Radamel" weight="1.0" />
-      <edge id="1109" source="Samm Audu" target="Cristiano Ronaldo" weight="3.0" />
-      <edge id="1110" source="Samm Audu" target="Messi Lionel" weight="5.0" />
-      <edge id="1111" source="Casillas Iker" target="Xavi" weight="1.0" />
-      <edge id="1112" source="Casillas Iker" target="Ramos Sergio" weight="5.0" />
-      <edge id="1113" source="Casillas Iker" target="Cristiano Ronaldo" weight="3.0" />
-      <edge id="1114" source="Nurdin Saleh" target="Iniesta Andrés" weight="1.0" />
-      <edge id="1115" source="Nurdin Saleh" target="Cristiano Ronaldo" weight="3.0" />
-      <edge id="1116" source="Nurdin Saleh" target="Messi Lionel" weight="5.0" />
-      <edge id="1117" source="Aljneibi Ismaeil Matar" target="Xavi" weight="3.0" />
-      <edge id="1118" source="Aljneibi Ismaeil Matar" target="Iniesta Andrés" weight="5.0" />
-      <edge id="1119" source="Aljneibi Ismaeil Matar" target="Pirlo Andrea" weight="1.0" />
-      <edge id="1120" source="De Biasi Giovanni" target="Alonso Xabi" weight="1.0" />
-      <edge id="1121" source="De Biasi Giovanni" target="Cristiano Ronaldo" weight="3.0" />
-      <edge id="1122" source="De Biasi Giovanni" target="Messi Lionel" weight="5.0" />
-      <edge id="1123" source="Mendes Junior" target="Iniesta Andrés" weight="3.0" />
-      <edge id="1124" source="Mendes Junior" target="Cristiano Ronaldo" weight="1.0" />
-      <edge id="1125" source="Mendes Junior" target="Messi Lionel" weight="5.0" />
-      <edge id="1126" source="Solorzano David" target="Agüero Sergio" weight="1.0" />
-      <edge id="1127" source="Solorzano David" target="Xavi" weight="3.0" />
-      <edge id="1128" source="Solorzano David" target="Messi Lionel" weight="5.0" />
-      <edge id="1132" source="Lalogafuafua Iofi" target="Agüero Sergio" weight="1.0" />
-      <edge id="1133" source="Lalogafuafua Iofi" target="Cristiano Ronaldo" weight="3.0" />
-      <edge id="1134" source="Lalogafuafua Iofi" target="Messi Lionel" weight="5.0" />
-      <edge id="1135" source="O'neill Michael" target="Cristiano Ronaldo" weight="3.0" />
-      <edge id="1136" source="O'neill Michael" target="Messi Lionel" weight="5.0" />
-      <edge id="1137" source="O'neill Michael" target="Pirlo Andrea" weight="1.0" />
-      <edge id="1138" source="Inas Mazhar" target="Iniesta Andrés" weight="1.0" />
-      <edge id="1139" source="Inas Mazhar" target="Messi Lionel" weight="3.0" />
-      <edge id="1140" source="Inas Mazhar" target="Cristiano Ronaldo" weight="5.0" />
-      <edge id="1141" source="Kaanjuka Bernhard" target="Drogba Didier" weight="5.0" />
-      <edge id="1142" source="Kaanjuka Bernhard" target="Iniesta Andrés" weight="1.0" />
-      <edge id="1143" source="Kaanjuka Bernhard" target="Messi Lionel" weight="3.0" />
-      <edge id="1144" source="Smith J. Kaetu" target="Drogba Didier" weight="1.0" />
-      <edge id="1145" source="Smith J. Kaetu" target="Cristiano Ronaldo" weight="3.0" />
-      <edge id="1146" source="Smith J. Kaetu" target="Messi Lionel" weight="5.0" />
-      <edge id="1147" source="Vucinic Mirko" target="Buffon Gianluigi" weight="5.0" />
-      <edge id="1148" source="Vucinic Mirko" target="Ibrahimovic Zlatan" weight="1.0" />
-      <edge id="1149" source="Vucinic Mirko" target="Pirlo Andrea" weight="3.0" />
-      <edge id="1150" source="Caras Ion" target="Iniesta Andrés" weight="1.0" />
-      <edge id="1151" source="Caras Ion" target="Cristiano Ronaldo" weight="3.0" />
-      <edge id="1152" source="Caras Ion" target="Messi Lionel" weight="5.0" />
-      <edge id="1153" source="Barbe Denis" target="Falcao Radamel" weight="1.0" />
-      <edge id="1154" source="Barbe Denis" target="Cristiano Ronaldo" weight="3.0" />
-      <edge id="1155" source="Barbe Denis" target="Messi Lionel" weight="5.0" />
-      <edge id="1156" source="Salpingidis Dimitrios" target="Falcao Radamel" weight="1.0" />
-      <edge id="1157" source="Salpingidis Dimitrios" target="Cristiano Ronaldo" weight="3.0" />
-      <edge id="1158" source="Salpingidis Dimitrios" target="Messi Lionel" weight="5.0" />
-      <edge id="1159" source="Hojageldiyev Yazguly" target="Ibrahimovic Zlatan" weight="1.0" />
-      <edge id="1160" source="Hojageldiyev Yazguly" target="Cristiano Ronaldo" weight="3.0" />
-      <edge id="1161" source="Hojageldiyev Yazguly" target="Messi Lionel" weight="5.0" />
-      <edge id="1162" source="Paatelainen Mixu" target="Xavi" weight="3.0" />
-      <edge id="1163" source="Paatelainen Mixu" target="Cristiano Ronaldo" weight="1.0" />
-      <edge id="1164" source="Paatelainen Mixu" target="Messi Lionel" weight="5.0" />
-      <edge id="1165" source="Olsen Egil" target="Ibrahimovic Zlatan" weight="1.0" />
-      <edge id="1166" source="Olsen Egil" target="Falcao Radamel" weight="3.0" />
-      <edge id="1167" source="Olsen Egil" target="Messi Lionel" weight="5.0" />
-      <edge id="1168" source="Giampaolo Mazza" target="Drogba Didier" weight="3.0" />
-      <edge id="1169" source="Giampaolo Mazza" target="Cristiano Ronaldo" weight="1.0" />
-      <edge id="1170" source="Giampaolo Mazza" target="Pirlo Andrea" weight="5.0" />
-      <edge id="1171" source="Mostafa Badri" target="Xavi" weight="1.0" />
-      <edge id="1172" source="Mostafa Badri" target="Messi Lionel" weight="3.0" />
-      <edge id="1173" source="Mostafa Badri" target="Cristiano Ronaldo" weight="5.0" />
-      <edge id="1174" source="Campo Elias Estrada" target="Xavi" weight="1.0" />
-      <edge id="1175" source="Campo Elias Estrada" target="Cristiano Ronaldo" weight="3.0" />
-      <edge id="1176" source="Campo Elias Estrada" target="Messi Lionel" weight="5.0" />
-      <edge id="1177" source="Rueda Rivera Reinaldo" target="Neuer Manuel" weight="1.0" />
-      <edge id="1178" source="Rueda Rivera Reinaldo" target="Messi Lionel" weight="3.0" />
-      <edge id="1179" source="Rueda Rivera Reinaldo" target="Falcao Radamel" weight="5.0" />
-      <edge id="1180" source="Kenneth Dlamini" target="Casillas Iker" weight="1.0" />
-      <edge id="1181" source="Kenneth Dlamini" target="Iniesta Andrés" weight="3.0" />
-      <edge id="1182" source="Kenneth Dlamini" target="Messi Lionel" weight="5.0" />
-      <edge id="1183" source="Hamad Adnan" target="Iniesta Andrés" weight="1.0" />
-      <edge id="1184" source="Hamad Adnan" target="Cristiano Ronaldo" weight="3.0" />
-      <edge id="1185" source="Hamad Adnan" target="Messi Lionel" weight="5.0" />
-      <edge id="1186" source="Yobo Joseph" target="Neymar" weight="1.0" />
-      <edge id="1187" source="Yobo Joseph" target="Cristiano Ronaldo" weight="3.0" />
-      <edge id="1188" source="Yobo Joseph" target="Messi Lionel" weight="5.0" />
-      <edge id="1189" source="Valery Karpoushkin" target="Iniesta Andrés" weight="3.0" />
-      <edge id="1190" source="Valery Karpoushkin" target="Cristiano Ronaldo" weight="1.0" />
-      <edge id="1191" source="Valery Karpoushkin" target="Messi Lionel" weight="5.0" />
-      <edge id="1129" source="Craig Foster" target="Iniesta Andrés" weight="3.0" />
-      <edge id="1130" source="Craig Foster" target="Cristiano Ronaldo" weight="1.0" />
-      <edge id="1131" source="Craig Foster" target="Messi Lionel" weight="5.0" />
-      <edge id="1195" source="Kazunori Ohara" target="Casillas Iker" weight="3.0" />
-      <edge id="1196" source="Kazunori Ohara" target="Cristiano Ronaldo" weight="1.0" />
-      <edge id="1197" source="Kazunori Ohara" target="Messi Lionel" weight="5.0" />
-      <edge id="1027" source="Chhetri Sunil" target="Iniesta Andrés" weight="5.0" />
-      <edge id="1028" source="Chhetri Sunil" target="Cristiano Ronaldo" weight="1.0" />
-      <edge id="1029" source="Chhetri Sunil" target="Messi Lionel" weight="3.0" />
+      <edge id="1033" source="Curtis Thomas" target="Iniesta Andrés" weight="1.0" />
+      <edge id="1034" source="Curtis Thomas" target="Messi Lionel" weight="3.0" />
+      <edge id="1035" source="Curtis Thomas" target="Cristiano Ronaldo" weight="5.0" />
+      <edge id="1036" source="Gumbo Ruhman" target="van Persie Robin" weight="1.0" />
+      <edge id="1037" source="Gumbo Ruhman" target="Iniesta Andrés" weight="5.0" />
+      <edge id="1038" source="Gumbo Ruhman" target="Messi Lionel" weight="3.0" />
+      <edge id="1039" source="Gyan Asamoah" target="Rooney Wayne" weight="1.0" />
+      <edge id="1040" source="Gyan Asamoah" target="Messi Lionel" weight="5.0" />
+      <edge id="1041" source="Gyan Asamoah" target="Touré Yaya" weight="3.0" />
+      <edge id="1042" source="Bandara Nipuna" target="Neymar" weight="3.0" />
+      <edge id="1043" source="Bandara Nipuna" target="van Persie Robin" weight="1.0" />
+      <edge id="1044" source="Bandara Nipuna" target="Messi Lionel" weight="5.0" />
+      <edge id="1045" source="Tabarez Oscar Washington" target="Iniesta Andrés" weight="1.0" />
+      <edge id="1046" source="Tabarez Oscar Washington" target="Cristiano Ronaldo" weight="3.0" />
+      <edge id="1047" source="Tabarez Oscar Washington" target="Messi Lionel" weight="5.0" />
+      <edge id="1048" source="Ahmed Buric" target="Drogba Didier" weight="3.0" />
+      <edge id="1049" source="Ahmed Buric" target="Cristiano Ronaldo" weight="1.0" />
+      <edge id="1050" source="Ahmed Buric" target="Messi Lionel" weight="5.0" />
+      <edge id="1051" source="Truong Anh Ngoc" target="Cristiano Ronaldo" weight="3.0" />
+      <edge id="1052" source="Truong Anh Ngoc" target="Messi Lionel" weight="5.0" />
+      <edge id="1053" source="Truong Anh Ngoc" target="Pirlo Andrea" weight="1.0" />
+      <edge id="1054" source="Ricardo Pineyrua" target="Falcao Radamel" weight="1.0" />
+      <edge id="1055" source="Ricardo Pineyrua" target="Messi Lionel" weight="5.0" />
+      <edge id="1056" source="Ricardo Pineyrua" target="Pirlo Andrea" weight="3.0" />
+      <edge id="1057" source="Neil Davidson" target="van Persie Robin" weight="1.0" />
+      <edge id="1058" source="Neil Davidson" target="Messi Lionel" weight="3.0" />
+      <edge id="1059" source="Neil Davidson" target="Cristiano Ronaldo" weight="5.0" />
+      <edge id="1060" source="Engels Gerts" target="Messi Lionel" weight="3.0" />
+      <edge id="1061" source="Engels Gerts" target="Cristiano Ronaldo" weight="5.0" />
+      <edge id="1062" source="Engels Gerts" target="Özil Mesut" weight="1.0" />
+      <edge id="1063" source="Djeparov Server" target="Iniesta Andrés" weight="3.0" />
+      <edge id="1064" source="Djeparov Server" target="Cristiano Ronaldo" weight="1.0" />
+      <edge id="1065" source="Djeparov Server" target="Messi Lionel" weight="5.0" />
+      <edge id="1069" source="Ahmed Arid" target="Falcao Radamel" weight="1.0" />
+      <edge id="1070" source="Ahmed Arid" target="Cristiano Ronaldo" weight="3.0" />
+      <edge id="1071" source="Ahmed Arid" target="Messi Lionel" weight="5.0" />
+      <edge id="1072" source="Tshering Pasang" target="Iniesta Andrés" weight="1.0" />
+      <edge id="1073" source="Tshering Pasang" target="Cristiano Ronaldo" weight="3.0" />
+      <edge id="1074" source="Tshering Pasang" target="Messi Lionel" weight="5.0" />
+      <edge id="1075" source="Hipp Michal" target="Iniesta Andrés" weight="1.0" />
+      <edge id="1076" source="Hipp Michal" target="Cristiano Ronaldo" weight="3.0" />
+      <edge id="1077" source="Hipp Michal" target="Messi Lionel" weight="5.0" />
+      <edge id="1078" source="Olsen Lars" target="Ibrahimovic Zlatan" weight="1.0" />
+      <edge id="1079" source="Olsen Lars" target="Cristiano Ronaldo" weight="3.0" />
+      <edge id="1080" source="Olsen Lars" target="Messi Lionel" weight="5.0" />
+      <edge id="1081" source="Almeida Almada Ever Hugo" target="Casillas Iker" weight="3.0" />
+      <edge id="1082" source="Almeida Almada Ever Hugo" target="Messi Lionel" weight="1.0" />
+      <edge id="1083" source="Almeida Almada Ever Hugo" target="Cristiano Ronaldo" weight="5.0" />
+      <edge id="1084" source="Mahamat Oumar Yaya" target="Iniesta Andrés" weight="1.0" />
+      <edge id="1085" source="Mahamat Oumar Yaya" target="Cristiano Ronaldo" weight="3.0" />
+      <edge id="1086" source="Mahamat Oumar Yaya" target="Messi Lionel" weight="5.0" />
+      <edge id="1087" source="Abd al aziz al-Attia" target="Buffon Gianluigi" weight="1.0" />
+      <edge id="1088" source="Abd al aziz al-Attia" target="Cristiano Ronaldo" weight="3.0" />
+      <edge id="1089" source="Abd al aziz al-Attia" target="Messi Lionel" weight="5.0" />
+      <edge id="1090" source="Fletcher Darren" target="van Persie Robin" weight="1.0" />
+      <edge id="1091" source="Fletcher Darren" target="Messi Lionel" weight="3.0" />
+      <edge id="1092" source="Fletcher Darren" target="Cristiano Ronaldo" weight="5.0" />
+      <edge id="1093" source="Alifa Hissein Atti" target="Ibrahimovic Zlatan" weight="1.0" />
+      <edge id="1094" source="Alifa Hissein Atti" target="Cristiano Ronaldo" weight="3.0" />
+      <edge id="1095" source="Alifa Hissein Atti" target="Messi Lionel" weight="5.0" />
+      <edge id="1096" source="Ali Mbae" target="Xavi" weight="5.0" />
+      <edge id="1097" source="Ali Mbae" target="Iniesta Andrés" weight="3.0" />
+      <edge id="1098" source="Ali Mbae" target="Neymar" weight="1.0" />
+      <edge id="1099" source="Avramovic Radojko" target="Cristiano Ronaldo" weight="3.0" />
+      <edge id="1100" source="Avramovic Radojko" target="Messi Lionel" weight="5.0" />
+      <edge id="1101" source="Avramovic Radojko" target="Pirlo Andrea" weight="1.0" />
+      <edge id="1102" source="Da Silva Thiago Emiliano" target="Ibrahimovic Zlatan" weight="1.0" />
+      <edge id="1103" source="Da Silva Thiago Emiliano" target="Cristiano Ronaldo" weight="3.0" />
+      <edge id="1104" source="Da Silva Thiago Emiliano" target="Messi Lionel" weight="5.0" />
+      <edge id="1105" source="Gorkšs Kaspars" target="van Persie Robin" weight="3.0" />
+      <edge id="1106" source="Gorkšs Kaspars" target="Iniesta Andrés" weight="1.0" />
+      <edge id="1107" source="Gorkšs Kaspars" target="Messi Lionel" weight="5.0" />
+      <edge id="1108" source="Kimura Kokichi" target="van Persie Robin" weight="1.0" />
+      <edge id="1109" source="Kimura Kokichi" target="Cristiano Ronaldo" weight="3.0" />
+      <edge id="1110" source="Kimura Kokichi" target="Messi Lionel" weight="5.0" />
+      <edge id="1111" source="Samm Audu" target="Falcao Radamel" weight="1.0" />
+      <edge id="1112" source="Samm Audu" target="Cristiano Ronaldo" weight="3.0" />
+      <edge id="1113" source="Samm Audu" target="Messi Lionel" weight="5.0" />
+      <edge id="1114" source="Casillas Iker" target="Xavi" weight="1.0" />
+      <edge id="1115" source="Casillas Iker" target="Ramos Sergio" weight="5.0" />
+      <edge id="1116" source="Casillas Iker" target="Cristiano Ronaldo" weight="3.0" />
+      <edge id="1117" source="Nurdin Saleh" target="Iniesta Andrés" weight="1.0" />
+      <edge id="1118" source="Nurdin Saleh" target="Cristiano Ronaldo" weight="3.0" />
+      <edge id="1119" source="Nurdin Saleh" target="Messi Lionel" weight="5.0" />
+      <edge id="1120" source="Aljneibi Ismaeil Matar" target="Xavi" weight="3.0" />
+      <edge id="1121" source="Aljneibi Ismaeil Matar" target="Iniesta Andrés" weight="5.0" />
+      <edge id="1122" source="Aljneibi Ismaeil Matar" target="Pirlo Andrea" weight="1.0" />
+      <edge id="1123" source="De Biasi Giovanni" target="Alonso Xabi" weight="1.0" />
+      <edge id="1124" source="De Biasi Giovanni" target="Cristiano Ronaldo" weight="3.0" />
+      <edge id="1125" source="De Biasi Giovanni" target="Messi Lionel" weight="5.0" />
+      <edge id="1126" source="Mendes Junior" target="Iniesta Andrés" weight="3.0" />
+      <edge id="1127" source="Mendes Junior" target="Cristiano Ronaldo" weight="1.0" />
+      <edge id="1128" source="Mendes Junior" target="Messi Lionel" weight="5.0" />
+      <edge id="1129" source="Solorzano David" target="Agüero Sergio" weight="1.0" />
+      <edge id="1130" source="Solorzano David" target="Xavi" weight="3.0" />
+      <edge id="1131" source="Solorzano David" target="Messi Lionel" weight="5.0" />
+      <edge id="1135" source="Lalogafuafua Iofi" target="Agüero Sergio" weight="1.0" />
+      <edge id="1136" source="Lalogafuafua Iofi" target="Cristiano Ronaldo" weight="3.0" />
+      <edge id="1137" source="Lalogafuafua Iofi" target="Messi Lionel" weight="5.0" />
+      <edge id="1138" source="O'neill Michael" target="Cristiano Ronaldo" weight="3.0" />
+      <edge id="1139" source="O'neill Michael" target="Messi Lionel" weight="5.0" />
+      <edge id="1140" source="O'neill Michael" target="Pirlo Andrea" weight="1.0" />
+      <edge id="1141" source="Inas Mazhar" target="Iniesta Andrés" weight="1.0" />
+      <edge id="1142" source="Inas Mazhar" target="Messi Lionel" weight="3.0" />
+      <edge id="1143" source="Inas Mazhar" target="Cristiano Ronaldo" weight="5.0" />
+      <edge id="1144" source="Kaanjuka Bernhard" target="Drogba Didier" weight="5.0" />
+      <edge id="1145" source="Kaanjuka Bernhard" target="Iniesta Andrés" weight="1.0" />
+      <edge id="1146" source="Kaanjuka Bernhard" target="Messi Lionel" weight="3.0" />
+      <edge id="1147" source="Smith J. Kaetu" target="Drogba Didier" weight="1.0" />
+      <edge id="1148" source="Smith J. Kaetu" target="Cristiano Ronaldo" weight="3.0" />
+      <edge id="1149" source="Smith J. Kaetu" target="Messi Lionel" weight="5.0" />
+      <edge id="1150" source="Vucinic Mirko" target="Buffon Gianluigi" weight="5.0" />
+      <edge id="1151" source="Vucinic Mirko" target="Ibrahimovic Zlatan" weight="1.0" />
+      <edge id="1152" source="Vucinic Mirko" target="Pirlo Andrea" weight="3.0" />
+      <edge id="1153" source="Caras Ion" target="Iniesta Andrés" weight="1.0" />
+      <edge id="1154" source="Caras Ion" target="Cristiano Ronaldo" weight="3.0" />
+      <edge id="1155" source="Caras Ion" target="Messi Lionel" weight="5.0" />
+      <edge id="1156" source="Barbe Denis" target="Falcao Radamel" weight="1.0" />
+      <edge id="1157" source="Barbe Denis" target="Cristiano Ronaldo" weight="3.0" />
+      <edge id="1158" source="Barbe Denis" target="Messi Lionel" weight="5.0" />
+      <edge id="1159" source="Salpingidis Dimitrios" target="Falcao Radamel" weight="1.0" />
+      <edge id="1160" source="Salpingidis Dimitrios" target="Cristiano Ronaldo" weight="3.0" />
+      <edge id="1161" source="Salpingidis Dimitrios" target="Messi Lionel" weight="5.0" />
+      <edge id="1162" source="Hojageldiyev Yazguly" target="Ibrahimovic Zlatan" weight="1.0" />
+      <edge id="1163" source="Hojageldiyev Yazguly" target="Cristiano Ronaldo" weight="3.0" />
+      <edge id="1164" source="Hojageldiyev Yazguly" target="Messi Lionel" weight="5.0" />
+      <edge id="1165" source="Paatelainen Mixu" target="Xavi" weight="3.0" />
+      <edge id="1166" source="Paatelainen Mixu" target="Cristiano Ronaldo" weight="1.0" />
+      <edge id="1167" source="Paatelainen Mixu" target="Messi Lionel" weight="5.0" />
+      <edge id="1168" source="Olsen Egil" target="Ibrahimovic Zlatan" weight="1.0" />
+      <edge id="1169" source="Olsen Egil" target="Falcao Radamel" weight="3.0" />
+      <edge id="1170" source="Olsen Egil" target="Messi Lionel" weight="5.0" />
+      <edge id="1171" source="Giampaolo Mazza" target="Drogba Didier" weight="3.0" />
+      <edge id="1172" source="Giampaolo Mazza" target="Cristiano Ronaldo" weight="1.0" />
+      <edge id="1173" source="Giampaolo Mazza" target="Pirlo Andrea" weight="5.0" />
+      <edge id="1174" source="Mostafa Badri" target="Xavi" weight="1.0" />
+      <edge id="1175" source="Mostafa Badri" target="Messi Lionel" weight="3.0" />
+      <edge id="1176" source="Mostafa Badri" target="Cristiano Ronaldo" weight="5.0" />
+      <edge id="1177" source="Campo Elias Estrada" target="Xavi" weight="1.0" />
+      <edge id="1178" source="Campo Elias Estrada" target="Cristiano Ronaldo" weight="3.0" />
+      <edge id="1179" source="Campo Elias Estrada" target="Messi Lionel" weight="5.0" />
+      <edge id="1180" source="Rueda Rivera Reinaldo" target="Neuer Manuel" weight="1.0" />
+      <edge id="1181" source="Rueda Rivera Reinaldo" target="Messi Lionel" weight="3.0" />
+      <edge id="1182" source="Rueda Rivera Reinaldo" target="Falcao Radamel" weight="5.0" />
+      <edge id="1183" source="Kenneth Dlamini" target="Casillas Iker" weight="1.0" />
+      <edge id="1184" source="Kenneth Dlamini" target="Iniesta Andrés" weight="3.0" />
+      <edge id="1185" source="Kenneth Dlamini" target="Messi Lionel" weight="5.0" />
+      <edge id="1186" source="Hamad Adnan" target="Iniesta Andrés" weight="1.0" />
+      <edge id="1187" source="Hamad Adnan" target="Cristiano Ronaldo" weight="3.0" />
+      <edge id="1188" source="Hamad Adnan" target="Messi Lionel" weight="5.0" />
+      <edge id="1189" source="Yobo Joseph" target="Neymar" weight="1.0" />
+      <edge id="1190" source="Yobo Joseph" target="Cristiano Ronaldo" weight="3.0" />
+      <edge id="1191" source="Yobo Joseph" target="Messi Lionel" weight="5.0" />
+      <edge id="1192" source="Valery Karpoushkin" target="Iniesta Andrés" weight="3.0" />
+      <edge id="1193" source="Valery Karpoushkin" target="Cristiano Ronaldo" weight="1.0" />
+      <edge id="1194" source="Valery Karpoushkin" target="Messi Lionel" weight="5.0" />
+      <edge id="1132" source="Craig Foster" target="Iniesta Andrés" weight="3.0" />
+      <edge id="1133" source="Craig Foster" target="Cristiano Ronaldo" weight="1.0" />
+      <edge id="1134" source="Craig Foster" target="Messi Lionel" weight="5.0" />
+      <edge id="1198" source="Kazunori Ohara" target="Casillas Iker" weight="3.0" />
+      <edge id="1199" source="Kazunori Ohara" target="Cristiano Ronaldo" weight="1.0" />
+      <edge id="1200" source="Kazunori Ohara" target="Messi Lionel" weight="5.0" />
+      <edge id="1030" source="Chhetri Sunil" target="Iniesta Andrés" weight="5.0" />
+      <edge id="1031" source="Chhetri Sunil" target="Cristiano Ronaldo" weight="1.0" />
+      <edge id="1032" source="Chhetri Sunil" target="Messi Lionel" weight="3.0" />
       <edge id="811" source="Buffon Gianluigi" target="Cristiano Ronaldo" weight="1.0" />
       <edge id="812" source="Buffon Gianluigi" target="Messi Lionel" weight="3.0" />
       <edge id="813" source="Buffon Gianluigi" target="Pirlo Andrea" weight="5.0" />
-      <edge id="1198" source="Akono Jean Paul" target="Iniesta Andrés" weight="1.0" />
-      <edge id="1199" source="Akono Jean Paul" target="Cristiano Ronaldo" weight="3.0" />
-      <edge id="1200" source="Akono Jean Paul" target="Messi Lionel" weight="5.0" />
-      <edge id="1201" source="Thabang Matjama" target="Drogba Didier" weight="3.0" />
-      <edge id="1202" source="Thabang Matjama" target="Iniesta Andrés" weight="5.0" />
-      <edge id="1203" source="Thabang Matjama" target="Touré Yaya" weight="1.0" />
-      <edge id="1204" source="Zurab Potskhveria Vakhtang Bzikadze" target="Falcao Radamel" weight="1.0" />
-      <edge id="1205" source="Zurab Potskhveria Vakhtang Bzikadze" target="Messi Lionel" weight="3.0" />
-      <edge id="1206" source="Zurab Potskhveria Vakhtang Bzikadze" target="Cristiano Ronaldo" weight="5.0" />
-      <edge id="1207" source="Davis Steve" target="Iniesta Andrés" weight="1.0" />
-      <edge id="1208" source="Davis Steve" target="Cristiano Ronaldo" weight="3.0" />
-      <edge id="1209" source="Davis Steve" target="Messi Lionel" weight="5.0" />
-      <edge id="1210" source="Klopp Reid" target="Alonso Xabi" weight="1.0" />
-      <edge id="1211" source="Klopp Reid" target="Cristiano Ronaldo" weight="3.0" />
-      <edge id="1212" source="Klopp Reid" target="Messi Lionel" weight="5.0" />
-      <edge id="1213" source="Luo Ming" target="Iniesta Andrés" weight="5.0" />
-      <edge id="1214" source="Luo Ming" target="Messi Lionel" weight="1.0" />
-      <edge id="1215" source="Luo Ming" target="Cristiano Ronaldo" weight="3.0" />
-      <edge id="1216" source="Mohamed Silimane Ganoua" target="Casillas Iker" weight="3.0" />
-      <edge id="1217" source="Mohamed Silimane Ganoua" target="Iniesta Andrés" weight="1.0" />
-      <edge id="1218" source="Mohamed Silimane Ganoua" target="Messi Lionel" weight="5.0" />
-      <edge id="1219" source="Bishaw Sewnet" target="Xavi" weight="1.0" />
-      <edge id="1220" source="Bishaw Sewnet" target="Messi Lionel" weight="3.0" />
-      <edge id="1221" source="Bishaw Sewnet" target="Cristiano Ronaldo" weight="5.0" />
-      <edge id="1222" source="Andrej Stare" target="Messi Lionel" weight="3.0" />
-      <edge id="1223" source="Andrej Stare" target="Cristiano Ronaldo" weight="5.0" />
-      <edge id="1224" source="Andrej Stare" target="Pirlo Andrea" weight="1.0" />
-      <edge id="1225" source="Mohamed Iraqi" target="van Persie Robin" weight="1.0" />
-      <edge id="1226" source="Mohamed Iraqi" target="Messi Lionel" weight="3.0" />
-      <edge id="1227" source="Mohamed Iraqi" target="Cristiano Ronaldo" weight="5.0" />
-      <edge id="1228" source="Dokunengo Olivier" target="Falcao Radamel" weight="1.0" />
-      <edge id="1229" source="Dokunengo Olivier" target="Messi Lionel" weight="3.0" />
-      <edge id="1230" source="Dokunengo Olivier" target="Cristiano Ronaldo" weight="5.0" />
-      <edge id="1231" source="Mckenna Kevin" target="Xavi" weight="1.0" />
-      <edge id="1232" source="Mckenna Kevin" target="Cristiano Ronaldo" weight="3.0" />
-      <edge id="1233" source="Mckenna Kevin" target="Messi Lionel" weight="5.0" />
-      <edge id="1234" source="Mathlouthi Aymen" target="van Persie Robin" weight="3.0" />
-      <edge id="1235" source="Mathlouthi Aymen" target="Cristiano Ronaldo" weight="1.0" />
-      <edge id="1236" source="Mathlouthi Aymen" target="Messi Lionel" weight="5.0" />
-      <edge id="1237" source="White Gary" target="Alonso Xabi" weight="3.0" />
-      <edge id="1238" source="White Gary" target="Cristiano Ronaldo" weight="1.0" />
-      <edge id="1239" source="White Gary" target="Messi Lionel" weight="5.0" />
-      <edge id="1240" source="Veremko Siarhei" target="Xavi" weight="1.0" />
-      <edge id="1241" source="Veremko Siarhei" target="Cristiano Ronaldo" weight="3.0" />
-      <edge id="1242" source="Veremko Siarhei" target="Messi Lionel" weight="5.0" />
-      <edge id="1243" source="Shuichi Tamura" target="Iniesta Andrés" weight="3.0" />
-      <edge id="1244" source="Shuichi Tamura" target="Messi Lionel" weight="1.0" />
-      <edge id="1245" source="Shuichi Tamura" target="Cristiano Ronaldo" weight="5.0" />
-      <edge id="1246" source="Moisander Niklas" target="Ibrahimovic Zlatan" weight="1.0" />
-      <edge id="1247" source="Moisander Niklas" target="Cristiano Ronaldo" weight="3.0" />
-      <edge id="1248" source="Moisander Niklas" target="Messi Lionel" weight="5.0" />
-      <edge id="1249" source="Suarez Luis" target="Iniesta Andrés" weight="1.0" />
-      <edge id="1250" source="Suarez Luis" target="Messi Lionel" weight="5.0" />
-      <edge id="1251" source="Suarez Luis" target="Pirlo Andrea" weight="3.0" />
+      <edge id="1201" source="Akono Jean Paul" target="Iniesta Andrés" weight="1.0" />
+      <edge id="1202" source="Akono Jean Paul" target="Cristiano Ronaldo" weight="3.0" />
+      <edge id="1203" source="Akono Jean Paul" target="Messi Lionel" weight="5.0" />
+      <edge id="1204" source="Thabang Matjama" target="Drogba Didier" weight="3.0" />
+      <edge id="1205" source="Thabang Matjama" target="Iniesta Andrés" weight="5.0" />
+      <edge id="1206" source="Thabang Matjama" target="Touré Yaya" weight="1.0" />
+      <edge id="1207" source="Zurab Potskhveria Vakhtang Bzikadze" target="Falcao Radamel" weight="1.0" />
+      <edge id="1208" source="Zurab Potskhveria Vakhtang Bzikadze" target="Messi Lionel" weight="3.0" />
+      <edge id="1209" source="Zurab Potskhveria Vakhtang Bzikadze" target="Cristiano Ronaldo" weight="5.0" />
+      <edge id="1210" source="Davis Steve" target="Iniesta Andrés" weight="1.0" />
+      <edge id="1211" source="Davis Steve" target="Cristiano Ronaldo" weight="3.0" />
+      <edge id="1212" source="Davis Steve" target="Messi Lionel" weight="5.0" />
+      <edge id="1213" source="Klopp Reid" target="Alonso Xabi" weight="1.0" />
+      <edge id="1214" source="Klopp Reid" target="Cristiano Ronaldo" weight="3.0" />
+      <edge id="1215" source="Klopp Reid" target="Messi Lionel" weight="5.0" />
+      <edge id="1216" source="Luo Ming" target="Iniesta Andrés" weight="5.0" />
+      <edge id="1217" source="Luo Ming" target="Messi Lionel" weight="1.0" />
+      <edge id="1218" source="Luo Ming" target="Cristiano Ronaldo" weight="3.0" />
+      <edge id="1219" source="Mohamed Silimane Ganoua" target="Casillas Iker" weight="3.0" />
+      <edge id="1220" source="Mohamed Silimane Ganoua" target="Iniesta Andrés" weight="1.0" />
+      <edge id="1221" source="Mohamed Silimane Ganoua" target="Messi Lionel" weight="5.0" />
+      <edge id="1222" source="Bishaw Sewnet" target="Xavi" weight="1.0" />
+      <edge id="1223" source="Bishaw Sewnet" target="Messi Lionel" weight="3.0" />
+      <edge id="1224" source="Bishaw Sewnet" target="Cristiano Ronaldo" weight="5.0" />
+      <edge id="1225" source="Andrej Stare" target="Messi Lionel" weight="3.0" />
+      <edge id="1226" source="Andrej Stare" target="Cristiano Ronaldo" weight="5.0" />
+      <edge id="1227" source="Andrej Stare" target="Pirlo Andrea" weight="1.0" />
+      <edge id="1228" source="Mohamed Iraqi" target="van Persie Robin" weight="1.0" />
+      <edge id="1229" source="Mohamed Iraqi" target="Messi Lionel" weight="3.0" />
+      <edge id="1230" source="Mohamed Iraqi" target="Cristiano Ronaldo" weight="5.0" />
+      <edge id="1231" source="Dokunengo Olivier" target="Falcao Radamel" weight="1.0" />
+      <edge id="1232" source="Dokunengo Olivier" target="Messi Lionel" weight="3.0" />
+      <edge id="1233" source="Dokunengo Olivier" target="Cristiano Ronaldo" weight="5.0" />
+      <edge id="1234" source="Mckenna Kevin" target="Xavi" weight="1.0" />
+      <edge id="1235" source="Mckenna Kevin" target="Cristiano Ronaldo" weight="3.0" />
+      <edge id="1236" source="Mckenna Kevin" target="Messi Lionel" weight="5.0" />
+      <edge id="1237" source="Mathlouthi Aymen" target="van Persie Robin" weight="3.0" />
+      <edge id="1238" source="Mathlouthi Aymen" target="Cristiano Ronaldo" weight="1.0" />
+      <edge id="1239" source="Mathlouthi Aymen" target="Messi Lionel" weight="5.0" />
+      <edge id="1240" source="White Gary" target="Alonso Xabi" weight="3.0" />
+      <edge id="1241" source="White Gary" target="Cristiano Ronaldo" weight="1.0" />
+      <edge id="1242" source="White Gary" target="Messi Lionel" weight="5.0" />
+      <edge id="1243" source="Veremko Siarhei" target="Xavi" weight="1.0" />
+      <edge id="1244" source="Veremko Siarhei" target="Cristiano Ronaldo" weight="3.0" />
+      <edge id="1245" source="Veremko Siarhei" target="Messi Lionel" weight="5.0" />
+      <edge id="1246" source="Shuichi Tamura" target="Iniesta Andrés" weight="3.0" />
+      <edge id="1247" source="Shuichi Tamura" target="Messi Lionel" weight="1.0" />
+      <edge id="1248" source="Shuichi Tamura" target="Cristiano Ronaldo" weight="5.0" />
+      <edge id="1249" source="Moisander Niklas" target="Ibrahimovic Zlatan" weight="1.0" />
+      <edge id="1250" source="Moisander Niklas" target="Cristiano Ronaldo" weight="3.0" />
+      <edge id="1251" source="Moisander Niklas" target="Messi Lionel" weight="5.0" />
+      <edge id="1252" source="Suarez Luis" target="Iniesta Andrés" weight="1.0" />
+      <edge id="1253" source="Suarez Luis" target="Messi Lionel" weight="5.0" />
+      <edge id="1254" source="Suarez Luis" target="Pirlo Andrea" weight="3.0" />
       <edge id="1462" source="Agger Daniel" target="Iniesta Andrés" weight="3.0" />
       <edge id="1463" source="Agger Daniel" target="Messi Lionel" weight="1.0" />
       <edge id="1464" source="Agger Daniel" target="Pirlo Andrea" weight="5.0" />
-      <edge id="1255" source="Sochetra Hok" target="Neymar" weight="3.0" />
-      <edge id="1256" source="Sochetra Hok" target="Rooney Wayne" weight="1.0" />
-      <edge id="1257" source="Sochetra Hok" target="Messi Lionel" weight="5.0" />
-      <edge id="1258" source="Sheefeni Nikodemus" target="Iniesta Andrés" weight="3.0" />
-      <edge id="1259" source="Sheefeni Nikodemus" target="Cristiano Ronaldo" weight="1.0" />
-      <edge id="1260" source="Sheefeni Nikodemus" target="Messi Lionel" weight="5.0" />
-      <edge id="1261" source="Gerrard Steven" target="Alonso Xabi" weight="1.0" />
-      <edge id="1262" source="Gerrard Steven" target="Cristiano Ronaldo" weight="3.0" />
-      <edge id="1263" source="Gerrard Steven" target="Messi Lionel" weight="5.0" />
-      <edge id="1264" source="Castillo Juan De Dios" target="Falcao Radamel" weight="1.0" />
-      <edge id="1265" source="Castillo Juan De Dios" target="Cristiano Ronaldo" weight="3.0" />
-      <edge id="1266" source="Castillo Juan De Dios" target="Messi Lionel" weight="5.0" />
-      <edge id="1267" source="Hitzfeld Ottmar" target="Iniesta Andrés" weight="3.0" />
-      <edge id="1268" source="Hitzfeld Ottmar" target="Cristiano Ronaldo" weight="1.0" />
-      <edge id="1269" source="Hitzfeld Ottmar" target="Messi Lionel" weight="5.0" />
-      <edge id="1270" source="Coulibaly Adama" target="Drogba Didier" weight="5.0" />
-      <edge id="1271" source="Coulibaly Adama" target="Ibrahimovic Zlatan" weight="3.0" />
-      <edge id="1272" source="Coulibaly Adama" target="Messi Lionel" weight="1.0" />
-      <edge id="1273" source="Mosa Xx" target="Neymar" weight="3.0" />
-      <edge id="1274" source="Mosa Xx" target="Messi Lionel" weight="1.0" />
-      <edge id="1275" source="Mosa Xx" target="Cristiano Ronaldo" weight="5.0" />
-      <edge id="1276" source="Grigoriy Rtveladze" target="Iniesta Andrés" weight="3.0" />
-      <edge id="1277" source="Grigoriy Rtveladze" target="Falcao Radamel" weight="1.0" />
-      <edge id="1278" source="Grigoriy Rtveladze" target="Messi Lionel" weight="5.0" />
-      <edge id="1279" source="Rajoarimanana Yvan" target="Xavi" weight="5.0" />
-      <edge id="1280" source="Rajoarimanana Yvan" target="Iniesta Andrés" weight="1.0" />
-      <edge id="1281" source="Rajoarimanana Yvan" target="Messi Lionel" weight="3.0" />
-      <edge id="1282" source="Raihan Mahamud" target="Falcao Radamel" weight="1.0" />
-      <edge id="1283" source="Raihan Mahamud" target="Cristiano Ronaldo" weight="3.0" />
-      <edge id="1284" source="Raihan Mahamud" target="Messi Lionel" weight="5.0" />
-      <edge id="1285" source="Alban Colombel" target="Casillas Iker" weight="1.0" />
-      <edge id="1286" source="Alban Colombel" target="van Persie Robin" weight="3.0" />
-      <edge id="1287" source="Alban Colombel" target="Messi Lionel" weight="5.0" />
-      <edge id="1288" source="Pinto Jorge Luis" target="Alonso Xabi" weight="3.0" />
-      <edge id="1289" source="Pinto Jorge Luis" target="Iniesta Andrés" weight="1.0" />
-      <edge id="1290" source="Pinto Jorge Luis" target="Falcao Radamel" weight="5.0" />
-      <edge id="1291" source="Manos Staramopoulos" target="Casillas Iker" weight="5.0" />
-      <edge id="1292" source="Manos Staramopoulos" target="Iniesta Andrés" weight="3.0" />
-      <edge id="1293" source="Manos Staramopoulos" target="Messi Lionel" weight="1.0" />
-      <edge id="1294" source="Sneijder Wesley" target="van Persie Robin" weight="5.0" />
-      <edge id="1295" source="Sneijder Wesley" target="Cristiano Ronaldo" weight="1.0" />
-      <edge id="1296" source="Sneijder Wesley" target="Messi Lionel" weight="3.0" />
-      <edge id="1297" source="Gera Zoltán" target="van Persie Robin" weight="1.0" />
-      <edge id="1298" source="Gera Zoltán" target="Messi Lionel" weight="3.0" />
-      <edge id="1299" source="Gera Zoltán" target="Cristiano Ronaldo" weight="5.0" />
-      <edge id="1300" source="Amisone Liatama" target="Agüero Sergio" weight="1.0" />
-      <edge id="1301" source="Amisone Liatama" target="Messi Lionel" weight="3.0" />
-      <edge id="1302" source="Amisone Liatama" target="Cristiano Ronaldo" weight="5.0" />
-      <edge id="1303" source="Michel Dubois" target="Iniesta Andrés" weight="3.0" />
-      <edge id="1304" source="Michel Dubois" target="Cristiano Ronaldo" weight="1.0" />
-      <edge id="1305" source="Michel Dubois" target="Messi Lionel" weight="5.0" />
-      <edge id="1306" source="Dafrallah Mouadhen" target="Drogba Didier" weight="1.0" />
-      <edge id="1307" source="Dafrallah Mouadhen" target="Xavi" weight="3.0" />
-      <edge id="1308" source="Dafrallah Mouadhen" target="Messi Lionel" weight="5.0" />
-      <edge id="1309" source="Waqa Taniela" target="Falcao Radamel" weight="1.0" />
-      <edge id="1310" source="Waqa Taniela" target="Cristiano Ronaldo" weight="3.0" />
-      <edge id="1311" source="Waqa Taniela" target="Messi Lionel" weight="5.0" />
-      <edge id="1312" source="Muta David" target="van Persie Robin" weight="1.0" />
-      <edge id="1313" source="Muta David" target="Cristiano Ronaldo" weight="3.0" />
-      <edge id="1314" source="Muta David" target="Messi Lionel" weight="5.0" />
-      <edge id="1315" source="Mroivili Mahamoud" target="Ramos Sergio" weight="3.0" />
-      <edge id="1316" source="Mroivili Mahamoud" target="Iniesta Andrés" weight="5.0" />
-      <edge id="1317" source="Mroivili Mahamoud" target="van Persie Robin" weight="1.0" />
-      <edge id="1318" source="Baten Raymond" target="Busquets Sergio" weight="1.0" />
-      <edge id="1319" source="Baten Raymond" target="Iniesta Andrés" weight="5.0" />
-      <edge id="1320" source="Baten Raymond" target="Özil Mesut" weight="3.0" />
-      <edge id="1321" source="Mateus Goncalves" target="Falcao Radamel" weight="1.0" />
-      <edge id="1322" source="Mateus Goncalves" target="Messi Lionel" weight="3.0" />
-      <edge id="1323" source="Mateus Goncalves" target="Cristiano Ronaldo" weight="5.0" />
-      <edge id="1324" source="Avci Abdullah" target="Messi Lionel" weight="3.0" />
-      <edge id="1325" source="Avci Abdullah" target="Cristiano Ronaldo" weight="5.0" />
-      <edge id="1326" source="Avci Abdullah" target="Özil Mesut" weight="1.0" />
-      <edge id="1327" source="Van Gaal Louis" target="Falcao Radamel" weight="1.0" />
-      <edge id="1328" source="Van Gaal Louis" target="Cristiano Ronaldo" weight="3.0" />
-      <edge id="1329" source="Van Gaal Louis" target="Messi Lionel" weight="5.0" />
-      <edge id="1330" source="Francisco Blavia" target="Falcao Radamel" weight="1.0" />
-      <edge id="1331" source="Francisco Blavia" target="Cristiano Ronaldo" weight="3.0" />
-      <edge id="1332" source="Francisco Blavia" target="Messi Lionel" weight="5.0" />
-      <edge id="1333" source="Ibrahima Diallo" target="Casillas Iker" weight="1.0" />
-      <edge id="1334" source="Ibrahima Diallo" target="Cristiano Ronaldo" weight="3.0" />
-      <edge id="1335" source="Ibrahima Diallo" target="Messi Lionel" weight="5.0" />
-      <edge id="1336" source="Ri Myong Guk" target="Drogba Didier" weight="3.0" />
-      <edge id="1337" source="Ri Myong Guk" target="Messi Lionel" weight="5.0" />
-      <edge id="1338" source="Ri Myong Guk" target="Özil Mesut" weight="1.0" />
-      <edge id="1339" source="Rafael Joao" target="Drogba Didier" weight="3.0" />
-      <edge id="1340" source="Rafael Joao" target="Neymar" weight="1.0" />
-      <edge id="1341" source="Rafael Joao" target="Cristiano Ronaldo" weight="5.0" />
-      <edge id="1342" source="Koller Marcel" target="Iniesta Andrés" weight="3.0" />
-      <edge id="1343" source="Koller Marcel" target="Cristiano Ronaldo" weight="1.0" />
-      <edge id="1344" source="Koller Marcel" target="Messi Lionel" weight="5.0" />
-      <edge id="1345" source="Alaveddine Bouriev" target="Casillas Iker" weight="1.0" />
-      <edge id="1346" source="Alaveddine Bouriev" target="Messi Lionel" weight="3.0" />
-      <edge id="1347" source="Alaveddine Bouriev" target="Cristiano Ronaldo" weight="5.0" />
-      <edge id="1348" source="Epureanu Alexandru" target="Iniesta Andrés" weight="1.0" />
-      <edge id="1349" source="Epureanu Alexandru" target="Cristiano Ronaldo" weight="3.0" />
-      <edge id="1350" source="Epureanu Alexandru" target="Messi Lionel" weight="5.0" />
-      <edge id="1351" source="Neves Fernando" target="Drogba Didier" weight="3.0" />
-      <edge id="1352" source="Neves Fernando" target="Messi Lionel" weight="1.0" />
-      <edge id="1353" source="Neves Fernando" target="Cristiano Ronaldo" weight="5.0" />
-      <edge id="1354" source="Penev Lyuboslav" target="Iniesta Andrés" weight="5.0" />
-      <edge id="1355" source="Penev Lyuboslav" target="Falcao Radamel" weight="1.0" />
-      <edge id="1356" source="Penev Lyuboslav" target="Messi Lionel" weight="3.0" />
-      <edge id="1357" source="Hodgson Roy" target="Falcao Radamel" weight="1.0" />
-      <edge id="1358" source="Hodgson Roy" target="Cristiano Ronaldo" weight="3.0" />
-      <edge id="1359" source="Hodgson Roy" target="Messi Lionel" weight="5.0" />
-      <edge id="1360" source="Geniy Tulegenov" target="Drogba Didier" weight="1.0" />
-      <edge id="1361" source="Geniy Tulegenov" target="Iniesta Andrés" weight="5.0" />
-      <edge id="1362" source="Geniy Tulegenov" target="Messi Lionel" weight="3.0" />
+      <edge id="1258" source="Sochetra Hok" target="Neymar" weight="3.0" />
+      <edge id="1259" source="Sochetra Hok" target="Rooney Wayne" weight="1.0" />
+      <edge id="1260" source="Sochetra Hok" target="Messi Lionel" weight="5.0" />
+      <edge id="1261" source="Sheefeni Nikodemus" target="Iniesta Andrés" weight="3.0" />
+      <edge id="1262" source="Sheefeni Nikodemus" target="Cristiano Ronaldo" weight="1.0" />
+      <edge id="1263" source="Sheefeni Nikodemus" target="Messi Lionel" weight="5.0" />
+      <edge id="1264" source="Gerrard Steven" target="Alonso Xabi" weight="1.0" />
+      <edge id="1265" source="Gerrard Steven" target="Cristiano Ronaldo" weight="3.0" />
+      <edge id="1266" source="Gerrard Steven" target="Messi Lionel" weight="5.0" />
+      <edge id="1267" source="Castillo Juan De Dios" target="Falcao Radamel" weight="1.0" />
+      <edge id="1268" source="Castillo Juan De Dios" target="Cristiano Ronaldo" weight="3.0" />
+      <edge id="1269" source="Castillo Juan De Dios" target="Messi Lionel" weight="5.0" />
+      <edge id="1270" source="Hitzfeld Ottmar" target="Iniesta Andrés" weight="3.0" />
+      <edge id="1271" source="Hitzfeld Ottmar" target="Cristiano Ronaldo" weight="1.0" />
+      <edge id="1272" source="Hitzfeld Ottmar" target="Messi Lionel" weight="5.0" />
+      <edge id="1273" source="Coulibaly Adama" target="Drogba Didier" weight="5.0" />
+      <edge id="1274" source="Coulibaly Adama" target="Ibrahimovic Zlatan" weight="3.0" />
+      <edge id="1275" source="Coulibaly Adama" target="Messi Lionel" weight="1.0" />
+      <edge id="1276" source="Mosa Xx" target="Neymar" weight="3.0" />
+      <edge id="1277" source="Mosa Xx" target="Messi Lionel" weight="1.0" />
+      <edge id="1278" source="Mosa Xx" target="Cristiano Ronaldo" weight="5.0" />
+      <edge id="1279" source="Grigoriy Rtveladze" target="Iniesta Andrés" weight="3.0" />
+      <edge id="1280" source="Grigoriy Rtveladze" target="Falcao Radamel" weight="1.0" />
+      <edge id="1281" source="Grigoriy Rtveladze" target="Messi Lionel" weight="5.0" />
+      <edge id="1282" source="Rajoarimanana Yvan" target="Xavi" weight="5.0" />
+      <edge id="1283" source="Rajoarimanana Yvan" target="Iniesta Andrés" weight="1.0" />
+      <edge id="1284" source="Rajoarimanana Yvan" target="Messi Lionel" weight="3.0" />
+      <edge id="1285" source="Raihan Mahamud" target="Falcao Radamel" weight="1.0" />
+      <edge id="1286" source="Raihan Mahamud" target="Cristiano Ronaldo" weight="3.0" />
+      <edge id="1287" source="Raihan Mahamud" target="Messi Lionel" weight="5.0" />
+      <edge id="1288" source="Alban Colombel" target="Casillas Iker" weight="1.0" />
+      <edge id="1289" source="Alban Colombel" target="van Persie Robin" weight="3.0" />
+      <edge id="1290" source="Alban Colombel" target="Messi Lionel" weight="5.0" />
+      <edge id="1291" source="Pinto Jorge Luis" target="Alonso Xabi" weight="3.0" />
+      <edge id="1292" source="Pinto Jorge Luis" target="Iniesta Andrés" weight="1.0" />
+      <edge id="1293" source="Pinto Jorge Luis" target="Falcao Radamel" weight="5.0" />
+      <edge id="1294" source="Manos Staramopoulos" target="Casillas Iker" weight="5.0" />
+      <edge id="1295" source="Manos Staramopoulos" target="Iniesta Andrés" weight="3.0" />
+      <edge id="1296" source="Manos Staramopoulos" target="Messi Lionel" weight="1.0" />
+      <edge id="1297" source="Sneijder Wesley" target="van Persie Robin" weight="5.0" />
+      <edge id="1298" source="Sneijder Wesley" target="Cristiano Ronaldo" weight="1.0" />
+      <edge id="1299" source="Sneijder Wesley" target="Messi Lionel" weight="3.0" />
+      <edge id="1300" source="Gera Zoltán" target="van Persie Robin" weight="1.0" />
+      <edge id="1301" source="Gera Zoltán" target="Messi Lionel" weight="3.0" />
+      <edge id="1302" source="Gera Zoltán" target="Cristiano Ronaldo" weight="5.0" />
+      <edge id="1303" source="Amisone Liatama" target="Agüero Sergio" weight="1.0" />
+      <edge id="1304" source="Amisone Liatama" target="Messi Lionel" weight="3.0" />
+      <edge id="1305" source="Amisone Liatama" target="Cristiano Ronaldo" weight="5.0" />
+      <edge id="1306" source="Michel Dubois" target="Iniesta Andrés" weight="3.0" />
+      <edge id="1307" source="Michel Dubois" target="Cristiano Ronaldo" weight="1.0" />
+      <edge id="1308" source="Michel Dubois" target="Messi Lionel" weight="5.0" />
+      <edge id="1309" source="Dafrallah Mouadhen" target="Drogba Didier" weight="1.0" />
+      <edge id="1310" source="Dafrallah Mouadhen" target="Xavi" weight="3.0" />
+      <edge id="1311" source="Dafrallah Mouadhen" target="Messi Lionel" weight="5.0" />
+      <edge id="1312" source="Waqa Taniela" target="Falcao Radamel" weight="1.0" />
+      <edge id="1313" source="Waqa Taniela" target="Cristiano Ronaldo" weight="3.0" />
+      <edge id="1314" source="Waqa Taniela" target="Messi Lionel" weight="5.0" />
+      <edge id="1315" source="Muta David" target="van Persie Robin" weight="1.0" />
+      <edge id="1316" source="Muta David" target="Cristiano Ronaldo" weight="3.0" />
+      <edge id="1317" source="Muta David" target="Messi Lionel" weight="5.0" />
+      <edge id="1318" source="Mroivili Mahamoud" target="Ramos Sergio" weight="3.0" />
+      <edge id="1319" source="Mroivili Mahamoud" target="Iniesta Andrés" weight="5.0" />
+      <edge id="1320" source="Mroivili Mahamoud" target="van Persie Robin" weight="1.0" />
+      <edge id="1321" source="Baten Raymond" target="Busquets Sergio" weight="1.0" />
+      <edge id="1322" source="Baten Raymond" target="Iniesta Andrés" weight="5.0" />
+      <edge id="1323" source="Baten Raymond" target="Özil Mesut" weight="3.0" />
+      <edge id="1324" source="Mateus Goncalves" target="Falcao Radamel" weight="1.0" />
+      <edge id="1325" source="Mateus Goncalves" target="Messi Lionel" weight="3.0" />
+      <edge id="1326" source="Mateus Goncalves" target="Cristiano Ronaldo" weight="5.0" />
+      <edge id="1327" source="Avci Abdullah" target="Messi Lionel" weight="3.0" />
+      <edge id="1328" source="Avci Abdullah" target="Cristiano Ronaldo" weight="5.0" />
+      <edge id="1329" source="Avci Abdullah" target="Özil Mesut" weight="1.0" />
+      <edge id="1330" source="Van Gaal Louis" target="Falcao Radamel" weight="1.0" />
+      <edge id="1331" source="Van Gaal Louis" target="Cristiano Ronaldo" weight="3.0" />
+      <edge id="1332" source="Van Gaal Louis" target="Messi Lionel" weight="5.0" />
+      <edge id="1333" source="Francisco Blavia" target="Falcao Radamel" weight="1.0" />
+      <edge id="1334" source="Francisco Blavia" target="Cristiano Ronaldo" weight="3.0" />
+      <edge id="1335" source="Francisco Blavia" target="Messi Lionel" weight="5.0" />
+      <edge id="1336" source="Ibrahima Diallo" target="Casillas Iker" weight="1.0" />
+      <edge id="1337" source="Ibrahima Diallo" target="Cristiano Ronaldo" weight="3.0" />
+      <edge id="1338" source="Ibrahima Diallo" target="Messi Lionel" weight="5.0" />
+      <edge id="1339" source="Ri Myong Guk" target="Drogba Didier" weight="3.0" />
+      <edge id="1340" source="Ri Myong Guk" target="Messi Lionel" weight="5.0" />
+      <edge id="1341" source="Ri Myong Guk" target="Özil Mesut" weight="1.0" />
+      <edge id="1342" source="Rafael Joao" target="Drogba Didier" weight="3.0" />
+      <edge id="1343" source="Rafael Joao" target="Neymar" weight="1.0" />
+      <edge id="1344" source="Rafael Joao" target="Cristiano Ronaldo" weight="5.0" />
+      <edge id="1345" source="Koller Marcel" target="Iniesta Andrés" weight="3.0" />
+      <edge id="1346" source="Koller Marcel" target="Cristiano Ronaldo" weight="1.0" />
+      <edge id="1347" source="Koller Marcel" target="Messi Lionel" weight="5.0" />
+      <edge id="1348" source="Alaveddine Bouriev" target="Casillas Iker" weight="1.0" />
+      <edge id="1349" source="Alaveddine Bouriev" target="Messi Lionel" weight="3.0" />
+      <edge id="1350" source="Alaveddine Bouriev" target="Cristiano Ronaldo" weight="5.0" />
+      <edge id="1351" source="Epureanu Alexandru" target="Iniesta Andrés" weight="1.0" />
+      <edge id="1352" source="Epureanu Alexandru" target="Cristiano Ronaldo" weight="3.0" />
+      <edge id="1353" source="Epureanu Alexandru" target="Messi Lionel" weight="5.0" />
+      <edge id="1354" source="Neves Fernando" target="Drogba Didier" weight="3.0" />
+      <edge id="1355" source="Neves Fernando" target="Messi Lionel" weight="1.0" />
+      <edge id="1356" source="Neves Fernando" target="Cristiano Ronaldo" weight="5.0" />
+      <edge id="1357" source="Penev Lyuboslav" target="Iniesta Andrés" weight="5.0" />
+      <edge id="1358" source="Penev Lyuboslav" target="Falcao Radamel" weight="1.0" />
+      <edge id="1359" source="Penev Lyuboslav" target="Messi Lionel" weight="3.0" />
+      <edge id="1360" source="Hodgson Roy" target="Falcao Radamel" weight="1.0" />
+      <edge id="1361" source="Hodgson Roy" target="Cristiano Ronaldo" weight="3.0" />
+      <edge id="1362" source="Hodgson Roy" target="Messi Lionel" weight="5.0" />
       <edge id="1363" source="Selçuk Manav" target="Casillas Iker" weight="3.0" />
       <edge id="1364" source="Selçuk Manav" target="Iniesta Andrés" weight="5.0" />
       <edge id="1365" source="Selçuk Manav" target="Cristiano Ronaldo" weight="1.0" />
@@ -6156,9 +6148,9 @@
       <edge id="1441" source="Ketjijere Ronald" target="Drogba Didier" weight="5.0" />
       <edge id="1442" source="Ketjijere Ronald" target="Alonso Xabi" weight="1.0" />
       <edge id="1443" source="Ketjijere Ronald" target="Cristiano Ronaldo" weight="3.0" />
-      <edge id="1063" source="Carteron Patrice" target="Drogba Didier" weight="5.0" />
-      <edge id="1064" source="Carteron Patrice" target="Ibrahimovic Zlatan" weight="3.0" />
-      <edge id="1065" source="Carteron Patrice" target="Messi Lionel" weight="1.0" />
+      <edge id="1066" source="Carteron Patrice" target="Drogba Didier" weight="5.0" />
+      <edge id="1067" source="Carteron Patrice" target="Ibrahimovic Zlatan" weight="3.0" />
+      <edge id="1068" source="Carteron Patrice" target="Messi Lionel" weight="1.0" />
       <edge id="1447" source="Pekerman José" target="Cristiano Ronaldo" weight="1.0" />
       <edge id="1448" source="Pekerman José" target="Falcao Radamel" weight="3.0" />
       <edge id="1449" source="Pekerman José" target="Messi Lionel" weight="5.0" />
