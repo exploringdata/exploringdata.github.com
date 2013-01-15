@@ -9,5 +9,8 @@
 jQuery(function($){
   //$('#gcse-data').submit(function)
   var query = decodeURIComponent(document.location.search.replace(/\?.*q=/, '')).replace(/\+/g, ' ');
-  if (query) $('#q').val(query);
+  if (query) {
+    $('#gsc-search').removeClass('hidden');
+    $('#q').val(query);
+  }
 });
