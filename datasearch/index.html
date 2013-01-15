@@ -2,16 +2,20 @@
 <html xmlns:fb="http://ogp.me/ns/fb#" lang="en">
   <head>
     <meta charset="utf-8">
-    <title>About Exploring Data | Exploring Data</title>
+    <title>Search for Public Data on the Web | Exploring Data</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+      <meta name="description" content="A Google custom search engine, that searches sites that host public data.">
     
     
     <meta name="author" content="Ramiro Gómez">
-    <link rel="canonical" href="http://exploringdata.github.com/about/">
+    <link rel="canonical" href="http://exploringdata.github.com/datasearch/">
     <link href="/vendor/zocial/zocial.css" rel="stylesheet">
     <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="/vendor/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
     <link href="/css/style.css" rel="stylesheet">
+    
+        <link href="/css/customsearch.css" rel="stylesheet">
     
     <!--[if lt IE 9]>
       <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -50,12 +54,12 @@
   <a href="#" class="menubutton dropdown-toggle" data-toggle="dropdown"><button class="btn btn-small btn-success"><i class="icon-share"></i> </button></a>
   <ul class="share dropdown-menu">
     <li><button href="/rss.xml" class="zocial rss">RSS Feed</button></li>
-    <li><button href="https://twitter.com/share?url=http%3A%2F%2Fexploringdata.github.com%2Fabout%2F" class="zocial popup twitter">Twitter</button></li>
-    <li><button href="http://reddit.com/submit?url=http%3A%2F%2Fexploringdata.github.com%2Fabout%2F&title=About+Exploring+Data" class="zocial reddit">Reddit</button></li>
-    <li><button href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fexploringdata.github.com%2Fabout%2F&t=About+Exploring+Data" class="zocial popup facebook">Facebook</button></li>
-    <li><button href="https://plus.google.com/share?url=http%3A%2F%2Fexploringdata.github.com%2Fabout%2F" class="zocial popup googleplus">Google+</button></li>
-    <li><button href="http://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Fexploringdata.github.com%2Fabout%2F&title=About+Exploring+Data" class="zocial popup linkedin">LinkedIn</button></li>
-    <li><button href="http://www.stumbleupon.com/submit?url=http%3A%2F%2Fexploringdata.github.com%2Fabout%2F&title=About+Exploring+Data" class="zocial popup stumbleupon">Stumble</button></li>
+    <li><button href="https://twitter.com/share?url=http%3A%2F%2Fexploringdata.github.com%2Fdatasearch%2F" class="zocial popup twitter">Twitter</button></li>
+    <li><button href="http://reddit.com/submit?url=http%3A%2F%2Fexploringdata.github.com%2Fdatasearch%2F&title=Search+for+Public+Data+on+the+Web" class="zocial reddit">Reddit</button></li>
+    <li><button href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fexploringdata.github.com%2Fdatasearch%2F&t=Search+for+Public+Data+on+the+Web" class="zocial popup facebook">Facebook</button></li>
+    <li><button href="https://plus.google.com/share?url=http%3A%2F%2Fexploringdata.github.com%2Fdatasearch%2F" class="zocial popup googleplus">Google+</button></li>
+    <li><button href="http://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Fexploringdata.github.com%2Fdatasearch%2F&title=Search+for+Public+Data+on+the+Web" class="zocial popup linkedin">LinkedIn</button></li>
+    <li><button href="http://www.stumbleupon.com/submit?url=http%3A%2F%2Fexploringdata.github.com%2Fdatasearch%2F&title=Search+for+Public+Data+on+the+Web" class="zocial popup stumbleupon">Stumble</button></li>
   </ul>
 </li>
             </ul>
@@ -70,10 +74,7 @@
       
 <div id="info">
 <div class="row">
-  <div class="span9"><h1>About Exploring Data</h1><p>Exploring Data is about mining and visualizing public data with open source tools created by Ramiro Gómez. To be informed about updates <a href="http://exploringdata.github.com/rss.xml">subscribe to the RSS feed</a> or follow me on <a href="https://twitter.com/yaph">Twitter</a> or <a href="http://bit.ly/plusramiro">Google+</a>.</p>
-<h2>What Runs this Site</h2>
-<p>This Web site is built using several fine open source software tools and libraries, including <a href="http://jquery.com/">jQuery</a>, <a href="http://twitter.github.com/bootstrap/">Twitter bootstrap</a>, <a href="http://d3js.org/">D3.js</a>, and <a href="http://sigmajs.org/">sigma.js</a>.</p>
-<p>The site is created with <a href="http://yaph.github.com/logya/">Logya</a> a static generator written in <a href="http://python.org/">Python</a>.</p></div>
+  <div class="span9"><h1>Search for Public Data on the Web</h1><div id="gsc-search"><gcse:searchbox></gcse:searchbox><gcse:searchresults></gcse:searchresults></div></div>
   <div class="span3">
     <h3>Keep Exploring</h3>
 <ul class="unstyled btn-list">
@@ -111,6 +112,10 @@
     <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
     <script src="/vendor/bootstrap/js/bootstrap.min.js"></script>
     <script src="/js/script.js"></script>
+    
+      
+          <script src="/js/customsearch.js"></script>
+      
     
   </body>
 </html>

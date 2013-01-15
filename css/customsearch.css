@@ -1,0 +1,17 @@
+#gsc-search form {line-height:0;}
+#gsc-search input {
+-webkit-box-shadow: none;
+-moz-box-shadow: none;
+box-shadow: none;
+webkit-border-radius:0;
+-moz-border-radius:0;
+border-radius:0;
+}
+#gsc-search .gsc-cursor-box {
+text-align:center;
+}
+#gsc-search .gsc-cursor-page {
+font-size:1.1em;
+margin-right:20px;
+}
+
