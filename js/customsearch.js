@@ -5,3 +5,9 @@
       '//www.google.com/cse/cse.js?cx=' + cx;
   var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gcse, s);
 })();
+
+jQuery(function($){
+  //$('#gcse-data').submit(function)
+  var query = decodeURIComponent(document.location.search.replace(/\?.*q=/, '')).replace(/\+/g, ' ');
+  if (query) $('#q').val(query);
+});
