@@ -43,3 +43,10 @@ font-size:1.1em;
 .tags a {
 color:#fff;
 }
+#site-name {
+background: url('../img/exploring-data.png') no-repeat center left;
+padding-left:40px;
+font-size:1.6em;
+font-family:Impact, fantasy;
+color:#bbb;
+}
