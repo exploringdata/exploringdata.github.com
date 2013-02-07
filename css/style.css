@@ -8,23 +8,27 @@ font-size: 2.6em;
 footer {
 margin-top:1em;
 }
-button a {color:inherit;}
+
 cite {font-style:italic;}
 
 .spacer5 {clear:both;height:5px;}
 .centered {text-align:center;}
 .clearfix {clear:both;}
 
-.navbar .nav > li > a.menubutton {
-padding:2px 0 0 10px;
+/* navbar */
+.navbar .btn-group {
+margin-left:4px;
 }
-.navbar .nav .menuitem {
+.navbar .btn {
+padding: 4px 12px;
+font-size:18px;
+}
+.navbar .nav .typeahead {
 margin:.4em 0 0 0;
 }
-.navbar ul.share button {
-width:140px;
-margin:.3em 1em .3em;
-font-size:.8em;
+.navbar .share .btn {
+margin:.3em .5em .3em;
+font-size:1.2em;
 }
 .caret {
 opacity:.8;
@@ -32,8 +36,9 @@ opacity:.8;
 .small {
 font-size:.85em;
 }
-.btn-list li {
-margin-bottom:.5em;
+.share.big a {
+font-size:1.6em;
+margin-bottom:8px;
 }
 .tags span {
 padding:.4em;
@@ -48,6 +53,6 @@ background: url('../img/exploring-data.png') no-repeat center left;
 padding-left:40px;
 font-size:1.6em;
 font-family:Impact, fantasy;
-color:#bbb;
+color:#8ce;
 margin-left:0;
 }

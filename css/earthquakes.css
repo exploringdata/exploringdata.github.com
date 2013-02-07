@@ -1,16 +1,16 @@
-.countries {
-fill:#060606;
+#map .country {
+fill: #060606;
 stroke: #3d3d3d;
 stroke-width:.5px;
 }
-.earthquake {
+#map .earthquake {
 fill:#cc0000;
 stroke:#f00;
 stroke-width:.5px;
 opacity:.8;
 }
 #map {
-background:#fff;
+background-color:#fff;
 color:#ccc;
 }
 #refresh {

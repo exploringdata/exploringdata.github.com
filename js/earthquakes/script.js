@@ -30,8 +30,8 @@ var svg = d3.select(mapselect).append('svg')
     .append('svg:g');
 
 var contriesgroup = svg.append('g')
-    .attr('transform', tf)
-    .attr('class', 'countries');
+  .attr('transform', tf)
+  .attr('class', 'countries');
 
 var eqgroup = svg.append('g')
   .attr('transform', tf)
@@ -80,10 +80,11 @@ queue()
   .defer(d3.json, '/json/countries.geo.json')
   .await(ready);
 
-function ready(error, countries) {
+function ready(countries) {
   contriesgroup.selectAll('path')
     .data(countries.features)
   .enter().append('path')
+    .attr('class', 'country')
     .attr('d', path);
 }
 

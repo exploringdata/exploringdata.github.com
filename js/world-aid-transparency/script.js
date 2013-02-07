@@ -105,7 +105,7 @@ var getQuantize = function() {
   return function(d) {
     var val;
     var rel = 1;
-    var maxval = 10; //RdBu 0 = red, 10 = blue 
+    var maxval = 10; //RdBu 0 = red, 10 = blue
     if ('undefined' !== typeof countrystats[year][d.id]) {
       if (relation && 'norelate' != relation) {
         // if relation can't be calculated return null to not colorite country
@@ -282,19 +282,16 @@ $('.relate').click(function(e){
 // expand / reduce bar charts
 $('.menulimit').click(function(e) {
   e.preventDefault();
-  var button = $(this);
-  var bid = button.attr('id');
-  var text = $('li.active a.relate').text();
-  if ('expand' == bid) {
-    $('.expand').hide();
-    $('.reduce').show();
+  var b = $(this);
+  b.addClass('disabled');
+  if ('expand' == b.attr('id')) {
+    $('#reduce').removeClass('disabled');
     doLimit = false;
   } else {
-    $('.reduce').hide();
-    $('.expand').show();
+    $('#expand').removeClass('disabled');
     doLimit = true;
   }
-  showGraphs(text);
+  showGraphs($('li.active a.relate').text());
 });
 
 })();

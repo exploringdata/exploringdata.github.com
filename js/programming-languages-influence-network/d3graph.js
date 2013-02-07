@@ -25,7 +25,7 @@ svg.append('svg:defs').selectAll('marker')
   .append('svg:path')
     .attr('d', 'M0,-5L10,0L0,5');
 
-d3.json('/js/programming-languages-influence-network/data.json', function(json) {
+d3.json('/js/programming-languages-influence-network/data.json', function(error, json) {
   var nodes = [];
   var links = [];
   var langs = {};
