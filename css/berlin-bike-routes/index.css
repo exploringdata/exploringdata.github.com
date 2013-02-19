@@ -1,0 +1,6 @@
+body {padding-top:41px;}
+#vis {height:600px;}
+#vis .olControlLayerSwitcher {width:300px;}
+#vis .olControlLayerSwitcher input.olButton {float:left;margin-right:10px;}
+#vis .olControlLayerSwitcher br {display:none;}
+#vis .baseLbl, #vis .baseLayersDiv, #vis .dataLbl {display:none;}

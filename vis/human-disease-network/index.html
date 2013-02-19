@@ -16,9 +16,9 @@
     <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="/vendor/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
     <link href="/vendor/fontawesome/css/font-awesome.min.css" rel="stylesheet">
-    <link href="/css/style.css?v=1" rel="stylesheet">
+    <link href="/css/style.css?v=2" rel="stylesheet">
     
-      <link href="/css/sigmagraphdark.css?v=1" rel="stylesheet">
+      <link href="/css/sigmagraphdark.css?v=2" rel="stylesheet">
     
     <!--[if lt IE 9]>
       <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -30,56 +30,121 @@
       
     
   </head>
-  <body>
-    <div class="navbar navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
-          <a id="site-name" class="brand" href="/">Exploring Data</a>
-          <div class="nav-collapse">
-            
+  <body class="full">
+    
+<div id="navbar" class="navbar navbar-inverse navbar-fixed-top">
+  <div class="navbar-inner">
+    <a id="site-name" class="brand" href="/">Exploring Data</a>
+    <div class="nav-collapse">
+      
 <ul class="nav">
   <li><input class="typeahead" type="text" data-provide="typeahead" placeholder="Search nodes"></li>
   <li><a class="showhelp" href="#">Help</a></li>
 </ul>
 
-            <ul class="nav pull-right">
-              <div class="btn-group">
-  <a href="#" class="btn dropdown-toggle" data-toggle="dropdown"><i class="icon-share"></i></a>
-  <ul class="share dropdown-menu">
-    <li><a class="btn" href="/rss.xml"><i class="icon-rss"></i> RSS Feed</a></li>
-    <li><a class="btn" href="https://twitter.com/share?url=http%3A%2F%2Fexploringdata.github.com%2Fvis%2Fhuman-disease-network%2F"><i class="icon-twitter"></i> Twitter</a></li>
-    <li><a class="btn" href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fexploringdata.github.com%2Fvis%2Fhuman-disease-network%2F&t=Human+Disease+Network"><i class="icon-facebook"></i> Facebook</a></li>
-    <li><a class="btn" href="https://plus.google.com/share?url=http%3A%2F%2Fexploringdata.github.com%2Fvis%2Fhuman-disease-network%2F"><i class="icon-google-plus"></i> Google+</a></li>
-    <li><a class="btn" href="http://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Fexploringdata.github.com%2Fvis%2Fhuman-disease-network%2F&title=Human+Disease+Network"><i class="icon-linkedin"></i> LinkedIn</a></li>
-  </ul>
-</div>
-            </ul>
-            <div class="pull-right">
-              
-                <a href="#info" class="btn"><i class="icon-info-sign"></i> </a>
-                <a href="#comments" class="btn"><i class="icon-comment"></i> </a>
-              
-            </div>
-          </div>
-        </div>
+      <div class="pull-right modalmenu">
+        <a href="#info" class="btn"><i class="icon-info-sign"></i> </a>
+        <a href="#comments" class="btn"><i class="icon-comment"></i> </a>
       </div>
     </div>
+  </div>
+</div>
 
-    <div id="wrapper" class="container">
-      
-      
-<div class="row"><div class="span12">
-<div class="sigma-parent"><div class="sigma-expand" id="sig"></div></div>
-</div></div>
+    
+    
+<div id="vis" class="sigma-parent"><div id="sig" class="sigma-expand"></div></div>
 
-      
-<div id="info">
-<div class="row"><div class="span12"><hr></div></div>
-<div class="row">
-  <div class="span9"><h1>Human Disease Network</h1><p>This network graph visualization was created using the <a href="http://gephi.org/datasets/diseasome.gexf.zip">gexf dataset</a> from the <a href="http://diseasome.eu/">Diseasome project</a> and is rendered with the <a href="http://sigmajs.org/">JavaScript library sigma.js</a>.</p>
+    
+<div id="info" class="modal hide fade modal-large">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+    <h3>Human Disease Network</h3>
+  </div>
+  <div class="modal-body">
+    <div class="row">
+      <div class="span7">
+        <p>This network graph visualization was created using the <a href="http://gephi.org/datasets/diseasome.gexf.zip">gexf dataset</a> from the <a href="http://diseasome.eu/">Diseasome project</a> and is rendered with the <a href="http://sigmajs.org/">JavaScript library sigma.js</a>.</p>
 <p>Diseasome is a research project for exploring relationships of diseases/disorders based on the study <a href="http://www.pnas.org/content/104/21/8685">The Human Disease Network</a>, Goh K-I, Cusick ME, Valle D, Childs B, Vidal M, Barabási A-L (2007), Proc Natl Acad Sci USA 104:8685-8690.</p>
 <p>The beautiful graph was created by the Diseasome researchers using the <a href="https://gephi.org/">gaph visualization software Gephi</a> and the <a href="http://www.barabasilab.com/pubs/CCNR-ALB_Publications/200705-14_PNAS-HumanDisease/Suppl/index.htm">original dataset</a> from the study.</p>
+        <hr>
+        <p><i class="icon-calendar"></i> September 27, 2012 by <a href="http://ramiro.org/">Ramiro Gómez</a>.</p>
 
+<div class="tags">
+
+<span class="label label-info"><a href="/tags/network-graph/">network graph</a></span>
+
+<span class="label label-info"><a href="/tags/sigmajs/">sigmajs</a></span>
+
+<span class="label label-info"><a href="/tags/gephi/">gephi</a></span>
+
+</div>
+
+        <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://exploringdata.github.com/vis/human-disease-network/" data-via="yaph" data-size="large">Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+<div class="g-plusone" data-href="="http://exploringdata.github.com/vis/human-disease-network/" "></div>
+<script type="text/javascript">
+(function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+})();
+</script>
+      </div>
+      <div class="span3">
+        <h3>Keep Exploring</h3>
+<div class="share big">
+<a href="/rss.xml" class="btn btn-warning"><i class="icon-rss"> Subscribe to Feed</i></a>
+<a href="https://twitter.com/yaph" class="btn btn-info"><i class="icon-twitter"></i> Follow me on Twitter</a>
+</div>
+<div id="mc_embed_signup" class="clearfix well">
+<form action="http://github.us6.list-manage.com/subscribe/post?u=6e91c5ec6f31498a21bc80826&amp;id=bb7db2c23d" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="form validate" target="_blank" novalidate>
+<label for="mce-EMAIL">Subscribe to the <strong>Datavis Weekly Newsletter</strong></label>
+<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+<div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-success"></div>
+</form>
+</div>
+      </div>
+    </div>
+  </div>
+  <div class="modal-footer">
+    <a href="#" class="btn" data-dismiss="modal">Close</a>
+  </div>
+</div>
+
+    
+<div id="comments" class="modal hide fade modal-large">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+    <h3>Comments</h3>
+  </div>
+  <div class="modal-body">
+    <div id="disqus_thread"></div>
+<script type="text/javascript">
+var disqus_shortname = 'exploringdata';
+var disqus_url = 'http://exploringdata.github.com/vis/human-disease-network/';
+(function() {
+var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+  </div>
+  <div class="modal-footer">
+    <a href="#" class="btn" data-dismiss="modal">Close</a>
+  </div>
+</div>
+
+    
+    <div id="footer" class="container">
+      <div class="row"><div class="span12">
+        <footer>
+          <p class="centered">Exploring Data is a site about data mining and visualization <a href="/about/">learn more</a>.<br>Except where otherwise noted, the works on this site are licensed under a<br><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US">Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a>.<br><a href="http://flattr.com/thing/952509/Exploring-Data"><img src="http://api.flattr.com/button/flattr-badge-large.png" alt="Flattr this" title="Flattr this" /></a></p>
+        </footer>
+      </div></div>
+    </div>
+    
+    
 <div id="help" class="modal hide fade">
   <div class="modal-header">
     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
@@ -106,62 +171,9 @@
   <div class="modal-footer">
     <a href="#" class="close" data-dismiss="modal" class="btn">Close</a>
   </div>
-</div></div>
-  <div class="span3">
-    
-<div class="postinfo">
-<h3>Meta &amp; Tags</h3>
-<p><i class="icon-calendar"></i> September 27, 2012 by <a href="http://ramiro.org/">Ramiro Gómez</a>.</p>
-
-<div class="tags">
-
-<span class="label label-info"><a href="/tags/network-graph/">network graph</a></span>
-
-<span class="label label-info"><a href="/tags/sigmajs/">sigmajs</a></span>
-
-<span class="label label-info"><a href="/tags/gephi/">gephi</a></span>
-
 </div>
 
-</div>
 
-    <h3>Keep Exploring</h3>
-<div class="share big">
-<a href="/rss.xml" class="btn btn-warning"><i class="icon-rss"> Subscribe to Feed</i></a>
-<a href="https://twitter.com/yaph" class="btn btn-info"><i class="icon-twitter"></i> Follow me on Twitter</a>
-</div>
-<div id="mc_embed_signup" class="clearfix well">
-<form action="http://github.us6.list-manage.com/subscribe/post?u=6e91c5ec6f31498a21bc80826&amp;id=bb7db2c23d" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="form validate" target="_blank" novalidate>
-<label for="mce-EMAIL">Subscribe to the <strong>Datavis Weekly Newsletter</strong></label>
-<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
-<div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-success"></div>
-</form>
-</div>
-  </div>
-</div>
-</div>
-<div id="comments" class="row"><div class="span12">
-<hr>
-<div id="disqus_thread"></div>
-<script type="text/javascript">
-var disqus_shortname = 'exploringdata';
-var disqus_url = 'http://exploringdata.github.com/vis/human-disease-network/';
-(function() {
-var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
-(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-})();
-</script>
-<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-</div></div>
-
-      <div id="footer" class="row"><div class="span12">
-        <hr>
-        <footer>
-          <p class="centered">Exploring Data is a site about data mining and visualization <a href="/about/">learn more</a>.<br>Except where otherwise noted, the works on this site are licensed under a<br><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US">Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a>.<br><a href="http://flattr.com/thing/952509/Exploring-Data"><img src="http://api.flattr.com/button/flattr-badge-large.png" alt="Flattr this" title="Flattr this" /></a></p>
-        </footer>
-      </div></div>
-    </div>
     <script type="text/javascript">
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-5102014-13']);
@@ -172,19 +184,34 @@ dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
 </script>
-    <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
     <script src="/vendor/bootstrap/js/bootstrap.min.js"></script>
-    <script src="/js/script.js?v=1"></script>
+    <script src="/js/script.js?v=2"></script>
     
       
-          <script src="/vendor/sigma/sigma.min.js?v=1"></script>
+          <script src="/vendor/sigma/sigma.min.js?v=2"></script>
       
-          <script src="/vendor/sigma/sigma.parseGexf.js?v=1"></script>
+          <script src="/vendor/sigma/sigma.parseGexf.js?v=2"></script>
       
-          <script src="/js/visgexf.js?v=1"></script>
+          <script src="/js/visgexf.js?v=2"></script>
       
-          <script src="/js/human-disease-network/script.js?v=1"></script>
+          <script src="/js/human-disease-network/script.js?v=2"></script>
       
     
+
+    
+<script>
+$(function(){
+    var h = $(window).height() - $('#navbar').height();
+    $('#vis').height(h);
+    if (canvas = $('#vis canvas')) {
+        canvas.height(h-20);
+    }
+    $('.modalmenu a').click(function(){
+        $($(this).attr('href')).modal();
+    });
+});
+</script>
+
   </body>
 </html>

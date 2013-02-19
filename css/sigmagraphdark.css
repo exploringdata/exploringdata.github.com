@@ -1,10 +1,13 @@
 body {
 background:#222;
+padding-top:41px;
+}
+#vis {
+height:600px;
 }
 .sigma-parent {
 position:relative;
 background:#222;
-height:800px;
 }
 .sigma-expand {
 position:absolute;
@@ -16,17 +19,6 @@ left:0;
 #showlang {
 left:37%;
 width:70%;
-}
-#info, #comments, footer {
-color:#999;
-}
-.ad {
-background-color:#333;
-color:#999;
-border-color:#999;
-}
-.adhint {
-font-size:.9em;
 }
 .ad h3 {
 font-size:1.2em;

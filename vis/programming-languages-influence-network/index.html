@@ -16,9 +16,9 @@
     <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="/vendor/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
     <link href="/vendor/fontawesome/css/font-awesome.min.css" rel="stylesheet">
-    <link href="/css/style.css?v=1" rel="stylesheet">
+    <link href="/css/style.css?v=2" rel="stylesheet">
     
-      <link href="/css/sigmagraphdark.css?v=1" rel="stylesheet">
+      <link href="/css/sigmagraphdark.css?v=2" rel="stylesheet">
     
     <!--[if lt IE 9]>
       <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -30,13 +30,13 @@
       
     
   </head>
-  <body>
-    <div class="navbar navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
-          <a id="site-name" class="brand" href="/">Exploring Data</a>
-          <div class="nav-collapse">
-            
+  <body class="full">
+    
+<div id="navbar" class="navbar navbar-inverse navbar-fixed-top">
+  <div class="navbar-inner">
+    <a id="site-name" class="brand" href="/">Exploring Data</a>
+    <div class="nav-collapse">
+      
 <ul class="nav">
   <li><input class="typeahead" type="text" data-provide="typeahead" placeholder="Search nodes"></li>
   <li class="dropdown">
@@ -54,46 +54,113 @@
   <li><a class="showposter" href="http://www.zazzle.com/programming_languages_influence_network_poster-228947989414708643?rf=238355915198956003">Poster</a></li>
 </ul>
 
-            <ul class="nav pull-right">
-              <div class="btn-group">
-  <a href="#" class="btn dropdown-toggle" data-toggle="dropdown"><i class="icon-share"></i></a>
-  <ul class="share dropdown-menu">
-    <li><a class="btn" href="/rss.xml"><i class="icon-rss"></i> RSS Feed</a></li>
-    <li><a class="btn" href="https://twitter.com/share?url=http%3A%2F%2Fexploringdata.github.com%2Fvis%2Fprogramming-languages-influence-network%2F"><i class="icon-twitter"></i> Twitter</a></li>
-    <li><a class="btn" href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fexploringdata.github.com%2Fvis%2Fprogramming-languages-influence-network%2F&t=Programming+Languages+Influence+Network"><i class="icon-facebook"></i> Facebook</a></li>
-    <li><a class="btn" href="https://plus.google.com/share?url=http%3A%2F%2Fexploringdata.github.com%2Fvis%2Fprogramming-languages-influence-network%2F"><i class="icon-google-plus"></i> Google+</a></li>
-    <li><a class="btn" href="http://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Fexploringdata.github.com%2Fvis%2Fprogramming-languages-influence-network%2F&title=Programming+Languages+Influence+Network"><i class="icon-linkedin"></i> LinkedIn</a></li>
-  </ul>
-</div>
-            </ul>
-            <div class="pull-right">
-              
-                <a href="#info" class="btn"><i class="icon-info-sign"></i> </a>
-                <a href="#comments" class="btn"><i class="icon-comment"></i> </a>
-              
-            </div>
-          </div>
-        </div>
+      <div class="pull-right modalmenu">
+        <a href="#info" class="btn"><i class="icon-info-sign"></i> </a>
+        <a href="#comments" class="btn"><i class="icon-comment"></i> </a>
       </div>
     </div>
+  </div>
+</div>
 
-    <div id="wrapper" class="container">
-      
-      
-<div class="row"><div class="span12">
-<div class="sigma-parent"><div class="sigma-expand" id="sig"></div></div>
-</div></div>
+    
+    
+<div id="vis" class="sigma-parent"><div id="sig" class="sigma-expand"></div></div>
 
-      
-<div id="info">
-<div class="row"><div class="span12"><hr></div></div>
-<div class="row">
-  <div class="span9"><h1>Programming Languages Influence Network</h1><p>This interactive visualization shows a network graph of programming language influences. The graph consists of 1169 programming language nodes and 908 edges that signify an influence relation.</p>
+    
+<div id="info" class="modal hide fade modal-large">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+    <h3>Programming Languages Influence Network</h3>
+  </div>
+  <div class="modal-body">
+    <div class="row">
+      <div class="span7">
+        <p>This interactive visualization shows a network graph of programming language influences. The graph consists of 1169 programming language nodes and 908 edges that signify an influence relation.</p>
 <p>The size of a node is determined by its out degree. The more influential a language is across all languages in the network, the bigger is the corresponding node in the network.</p>
 <p>There are several ways of interaction: you can restrict the network to languages within a programming paradigm; you can choose between a Force Atlas 2 and a random graph layout; and you can highlight the connections of a language by searching for its name in the top menu. For more details click on the help link in the top menu.</p>
 <p>This network graph visualization was created with data from the <a href="http://www.freebase.com/view/computer/programming_language">Freebase Programming Language collection</a> and is rendered with the <a href="http://sigmajs.org/">JavaScript library sigma.js</a>. The Force Atlas 2 layout was preprocessed using the <a href="https://gephi.org/">Gephi visualization platform</a>.</p>
 <p>You find the Python code to retrieve the data from Freebase and generate json and gexf files in this <a href="https://github.com/exploringdata/programming-languages-influence">GitHub repository</a>. The data was last updated October 5 2012. Feel free to leave feedback in the comments and share this visualization with your friends.</p>
+        <hr>
+        <p><i class="icon-calendar"></i> September 07, 2012 by <a href="http://ramiro.org/">Ramiro Gómez</a>.</p>
 
+<div class="tags">
+
+<span class="label label-info"><a href="/tags/network-graph/">network graph</a></span>
+
+<span class="label label-info"><a href="/tags/programming-languages/">programming languages</a></span>
+
+<span class="label label-info"><a href="/tags/sigmajs/">sigmajs</a></span>
+
+<span class="label label-info"><a href="/tags/gephi/">gephi</a></span>
+
+</div>
+
+        <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://exploringdata.github.com/vis/programming-languages-influence-network/" data-via="yaph" data-size="large">Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+<div class="g-plusone" data-href="="http://exploringdata.github.com/vis/programming-languages-influence-network/" "></div>
+<script type="text/javascript">
+(function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+})();
+</script>
+      </div>
+      <div class="span3">
+        <h3>Keep Exploring</h3>
+<div class="share big">
+<a href="/rss.xml" class="btn btn-warning"><i class="icon-rss"> Subscribe to Feed</i></a>
+<a href="https://twitter.com/yaph" class="btn btn-info"><i class="icon-twitter"></i> Follow me on Twitter</a>
+</div>
+<div id="mc_embed_signup" class="clearfix well">
+<form action="http://github.us6.list-manage.com/subscribe/post?u=6e91c5ec6f31498a21bc80826&amp;id=bb7db2c23d" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="form validate" target="_blank" novalidate>
+<label for="mce-EMAIL">Subscribe to the <strong>Datavis Weekly Newsletter</strong></label>
+<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+<div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-success"></div>
+</form>
+</div>
+      </div>
+    </div>
+  </div>
+  <div class="modal-footer">
+    <a href="#" class="btn" data-dismiss="modal">Close</a>
+  </div>
+</div>
+
+    
+<div id="comments" class="modal hide fade modal-large">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+    <h3>Comments</h3>
+  </div>
+  <div class="modal-body">
+    <div id="disqus_thread"></div>
+<script type="text/javascript">
+var disqus_shortname = 'exploringdata';
+var disqus_url = 'http://exploringdata.github.com/vis/programming-languages-influence-network/';
+(function() {
+var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+  </div>
+  <div class="modal-footer">
+    <a href="#" class="btn" data-dismiss="modal">Close</a>
+  </div>
+</div>
+
+    
+    <div id="footer" class="container">
+      <div class="row"><div class="span12">
+        <footer>
+          <p class="centered">Exploring Data is a site about data mining and visualization <a href="/about/">learn more</a>.<br>Except where otherwise noted, the works on this site are licensed under a<br><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US">Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a>.<br><a href="http://flattr.com/thing/952509/Exploring-Data"><img src="http://api.flattr.com/button/flattr-badge-large.png" alt="Flattr this" title="Flattr this" /></a></p>
+        </footer>
+      </div></div>
+    </div>
+    
+    
 <div id="help" class="modal hide fade">
   <div class="modal-header">
     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
@@ -138,64 +205,9 @@
   <div class="modal-footer">
     <a href="#" class="close" data-dismiss="modal" class="btn">Close</a>
   </div>
-</div></div>
-  <div class="span3">
-    
-<div class="postinfo">
-<h3>Meta &amp; Tags</h3>
-<p><i class="icon-calendar"></i> September 07, 2012 by <a href="http://ramiro.org/">Ramiro Gómez</a>.</p>
-
-<div class="tags">
-
-<span class="label label-info"><a href="/tags/network-graph/">network graph</a></span>
-
-<span class="label label-info"><a href="/tags/programming-languages/">programming languages</a></span>
-
-<span class="label label-info"><a href="/tags/sigmajs/">sigmajs</a></span>
-
-<span class="label label-info"><a href="/tags/gephi/">gephi</a></span>
-
 </div>
 
-</div>
 
-    <h3>Keep Exploring</h3>
-<div class="share big">
-<a href="/rss.xml" class="btn btn-warning"><i class="icon-rss"> Subscribe to Feed</i></a>
-<a href="https://twitter.com/yaph" class="btn btn-info"><i class="icon-twitter"></i> Follow me on Twitter</a>
-</div>
-<div id="mc_embed_signup" class="clearfix well">
-<form action="http://github.us6.list-manage.com/subscribe/post?u=6e91c5ec6f31498a21bc80826&amp;id=bb7db2c23d" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="form validate" target="_blank" novalidate>
-<label for="mce-EMAIL">Subscribe to the <strong>Datavis Weekly Newsletter</strong></label>
-<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
-<div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-success"></div>
-</form>
-</div>
-  </div>
-</div>
-</div>
-<div id="comments" class="row"><div class="span12">
-<hr>
-<div id="disqus_thread"></div>
-<script type="text/javascript">
-var disqus_shortname = 'exploringdata';
-var disqus_url = 'http://exploringdata.github.com/vis/programming-languages-influence-network/';
-(function() {
-var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
-(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-})();
-</script>
-<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-</div></div>
-
-      <div id="footer" class="row"><div class="span12">
-        <hr>
-        <footer>
-          <p class="centered">Exploring Data is a site about data mining and visualization <a href="/about/">learn more</a>.<br>Except where otherwise noted, the works on this site are licensed under a<br><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US">Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a>.<br><a href="http://flattr.com/thing/952509/Exploring-Data"><img src="http://api.flattr.com/button/flattr-badge-large.png" alt="Flattr this" title="Flattr this" /></a></p>
-        </footer>
-      </div></div>
-    </div>
     <script type="text/javascript">
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-5102014-13']);
@@ -206,19 +218,34 @@ dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
 </script>
-    <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
     <script src="/vendor/bootstrap/js/bootstrap.min.js"></script>
-    <script src="/js/script.js?v=1"></script>
+    <script src="/js/script.js?v=2"></script>
     
       
-          <script src="/vendor/sigma/sigma.min.js?v=1"></script>
+          <script src="/vendor/sigma/sigma.min.js?v=2"></script>
       
-          <script src="/vendor/sigma/sigma.parseGexf.js?v=1"></script>
+          <script src="/vendor/sigma/sigma.parseGexf.js?v=2"></script>
       
-          <script src="/js/visgexf.js?v=1"></script>
+          <script src="/js/visgexf.js?v=2"></script>
       
-          <script src="/js/programming-languages-influence-network/script.js?v=1"></script>
+          <script src="/js/programming-languages-influence-network/script.js?v=2"></script>
       
     
+
+    
+<script>
+$(function(){
+    var h = $(window).height() - $('#navbar').height();
+    $('#vis').height(h);
+    if (canvas = $('#vis canvas')) {
+        canvas.height(h);
+    }
+    $('.modalmenu a').click(function(){
+        $($(this).attr('href')).modal();
+    });
+});
+</script>
+
   </body>
 </html>

@@ -14,7 +14,7 @@
     <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="/vendor/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
     <link href="/vendor/fontawesome/css/font-awesome.min.css" rel="stylesheet">
-    <link href="/css/style.css?v=1" rel="stylesheet">
+    <link href="/css/style.css?v=2" rel="stylesheet">
     
     <!--[if lt IE 9]>
       <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -26,8 +26,9 @@
       
     
   </head>
-  <body>
-    <div class="navbar navbar-fixed-top">
+  <body class="">
+    
+    <div id="navbar" class="navbar navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container">
           <a id="site-name" class="brand" href="/">Exploring Data</a>
@@ -63,12 +64,14 @@
         </div>
       </div>
     </div>
+    
+    
+<div id="wrapper" class="container">
+    <div class="row"><header class="span12"><h1>See Why Spain Won Euro 2012</h1></header></div>
+</div>
 
-    <div id="wrapper" class="container">
-      
-<div class="row"><header class="span12"><h1>See Why Spain Won Euro 2012</h1></header></div>
-
-      
+    
+<div class="container">
 <div class="tabbable">
   <ul class="nav nav-tabs">
     <li class="active"><a href="#goals" data-toggle="tab">Goals</a></li>
@@ -105,10 +108,10 @@
     </div>
   </div>
 </div>
+</div>
 
-      
-<div id="info">
-<div class="row"><div class="span12"><hr></div></div>
+    
+<div id="info" class="container">
 <div class="row">
   <div class="span9"><h1>See Why Spain Won Euro 2012</h1><p>Spain did not convince all so-called football experts during the group stage of UEFA Euro 2012. Even though they finished 1st, many expected France to kick them out of the tournament in the quarter-finals. France did not and neither did Portugal, though the result was much tighter with their semi-final only decided in penalty shoot-out.</p>
 <p>Before the Euro 2012 final many experts expected a tight game again between Spain and Italy, similar to their 1st clash during group stage. It wasn't. <cite>Italy were brushed aside by a rampant Spain</cite> as Scott Murray <a href="http://www.guardian.co.uk/football/2012/jul/01/euro-2012-spain-italy-live-mbm">wrote in the Guardian</a>. Spain eventually convinced the critics and finished the tournament with the impression to have deserved the title of European Champions.</p>
@@ -125,6 +128,7 @@
 </ul></div>
   <div class="span3">
     
+      
 <div class="postinfo">
 <h3>Meta &amp; Tags</h3>
 <p><i class="icon-calendar"></i> December 10, 2012 by <a href="http://ramiro.org/">Ramiro Gómez</a>.</p>
@@ -143,6 +147,7 @@
 
 </div>
 
+    
     <h3>Keep Exploring</h3>
 <div class="share big">
 <a href="/rss.xml" class="btn btn-warning"><i class="icon-rss"> Subscribe to Feed</i></a>
@@ -158,8 +163,10 @@
   </div>
 </div>
 </div>
-<div id="comments" class="row"><div class="span12">
-<hr>
+
+    
+<div id="comments" class="container">
+<div class="row"><div class="span12">
 <div id="disqus_thread"></div>
 <script type="text/javascript">
 var disqus_shortname = 'exploringdata';
@@ -172,14 +179,18 @@ dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
 </script>
 <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
 </div></div>
+</div>
 
-      <div id="footer" class="row"><div class="span12">
-        <hr>
+    
+    <div id="footer" class="container">
+      <div class="row"><div class="span12">
         <footer>
           <p class="centered">Exploring Data is a site about data mining and visualization <a href="/about/">learn more</a>.<br>Except where otherwise noted, the works on this site are licensed under a<br><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US">Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a>.<br><a href="http://flattr.com/thing/952509/Exploring-Data"><img src="http://api.flattr.com/button/flattr-badge-large.png" alt="Flattr this" title="Flattr this" /></a></p>
         </footer>
       </div></div>
     </div>
+    
+
     <script type="text/javascript">
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-5102014-13']);
@@ -190,9 +201,11 @@ dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
 </script>
-    <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
     <script src="/vendor/bootstrap/js/bootstrap.min.js"></script>
-    <script src="/js/script.js?v=1"></script>
+    <script src="/js/script.js?v=2"></script>
+    
+
     
   </body>
 </html>
