@@ -9,7 +9,7 @@
       <meta name="description" content="A map of Berlin, Germany showing 14 different biking routes through and around the city. Created with OpenLayers, Open Street Map and data from Senatsverwaltung für Stadtentwicklung und Umwelt.">
     
     
-      <meta property="og:image" content="http://exploringdata.github.com/img/preview/earthquakes.jpg">
+      <meta property="og:image" content="http://exploringdata.github.com/img/preview/berlin-bike-routes.jpg">
     
     <meta name="author" content="Ramiro Gómez">
     <link rel="canonical" href="http://exploringdata.github.com/vis/berlin-bike-routes/">
@@ -60,10 +60,10 @@
   <div class="modal-body">
     <div class="row">
       <div class="span7">
-        <p>This is a map of Berlin, Germany showing 14 different biking routes through and around the city. By default 1 route is shown, Wansee-Route RR1. Routes can be added or removed from the map after clicking on the plus icon on the top right. The map can be zoomed and navigated using the controls on the left or the mouse.</p>
+        <p>This is a map of Berlin, Germany showing 14 different biking routes through and around the city. By default 1 route is shown, Wansee-Route RR1. Routes can be added or removed from the map after clicking on the plus icon <img src="http://www.openlayers.org/api/img/layer-switcher-maximize.png" alt="layer switcher"> on the top right. The map can be zoomed and navigated using the controls on the left or the mouse.</p>
 <p>The map is created with <a href="http://www.openstreetmap.org/">OpenStreetMap</a> and the <a href="http://www.openlayers.org/">OpenLayers</a> JavaScript library. Bike route data is read from GPX files obtained from Berlin's <a href="http://www.stadtentwicklung.berlin.de/verkehr/mobil/fahrrad/radrouten/de/gps_tracks/index.shtml">Senatsverwaltung für Stadtentwicklung und Umwelt</a>.</p>
         <hr>
-        <p><i class="icon-calendar"></i> February 18, 2013 by <a href="http://ramiro.org/">Ramiro Gómez</a>.</p>
+        <p><i class="icon-calendar"></i> February 19, 2013 by <a href="http://ramiro.org/">Ramiro Gómez</a>.</p>
 
 <div class="tags">
 
@@ -173,7 +173,7 @@ $(function(){
     var h = $(window).height() - $('#navbar').height();
     $('#vis').height(h);
     if (canvas = $('#vis canvas')) {
-        canvas.height(h);
+        canvas.height(h-20);
     }
     $('.modalmenu a').click(function(){
         $($(this).attr('href')).modal();

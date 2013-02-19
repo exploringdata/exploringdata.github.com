@@ -224,7 +224,7 @@ $(function(){
     var h = $(window).height() - $('#navbar').height();
     $('#vis').height(h);
     if (canvas = $('#vis canvas')) {
-        canvas.height(h);
+        canvas.height(h-20);
     }
     $('.modalmenu a').click(function(){
         $($(this).attr('href')).modal();
