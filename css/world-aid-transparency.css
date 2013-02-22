@@ -80,6 +80,7 @@ path.link {
 opacity:.6;
 stroke: #51A351;
 fill: none;
+pointer-events:none;
 }
 /* scatterplot */
 circle.fillblue {

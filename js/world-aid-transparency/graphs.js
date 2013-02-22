@@ -56,19 +56,10 @@ var drawmap = function(geocountries, colorize, showLinks) {
       .on('mouseout', function(d) {
         var t = d3.select(this);
         t.style('fill', t.style('origfill'));
+        garcs.selectAll('path.link').remove();
       })
       .append('title')
         .text(function(d) {return d.properties.name});
-
-  // only remove links when map area is left to avoid link removal when mouse is
-  // over a link, which had an annoying flickering effect
-  // FIXME doesn't work perfect yet, maybe use mousemove and position instead
-  d3.select(mapselect).on('mouseout', function() {
-    var tid = window.event.relatedTarget.id;
-    var tname = window.event.toElement.nodeName.toLowerCase();
-    if ((tid && 'map' == tid) || (tname && 'div' == tname))
-      garcs.selectAll('path.link').remove()
-    })
 };
 
 var drawlinks = function(links, maxamount) {
