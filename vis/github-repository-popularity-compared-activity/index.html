@@ -69,7 +69,7 @@
 <div id="info" class="container">
 <div class="row">
   <div class="span9"><h1>Github Repository Popularity Compared to Activity</h1>SELECT repository_url, repository_forks, repository_watchers , COUNT(payload_commit_id) as cnt
-FROM [publicdata:samples.github_timeline] 
+FROM [publicdata:samples.github_timeline]
 WHERE payload_commit_id != ''
 GROUP BY repository_url, repository_forks, repository_watchers
 ORDER BY cnt DESC</div>
