@@ -150,13 +150,16 @@ var visgexf = {
     });
     // reset graph on empty input
     visgexf.searchInput.on('change', function(event) {
-      if ('' == $(event.target).val().trim()) {
+      if ('' == $(event.target).val().trim())
         visgexf.resetSearch();
-      }
     });
+    if (document.location.hash) {
+      visgexf.nodeSearch(document.location.hash.replace(/^#/, ''));
+    }
   },
 
   nodeSearch: function(query) {
+    document.location.hash = query;
     visgexf.resetFilter();
     if (node = visgexf.sig.getNodes(visgexf.nodemap[query])) {
       visgexf.highlightNode(node);
