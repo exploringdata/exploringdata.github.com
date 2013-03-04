@@ -27,6 +27,7 @@ var visgexf = {
       visgexf.nodelabels.push(n.label);
       visgexf.nodemap[n.label] = n.id;
     });
+    visgexf.nodelabels.sort();
     visgexf.initSearch();
     return visgexf;
   },
