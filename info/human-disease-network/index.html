@@ -3,12 +3,16 @@
 <html xmlns:fb="http://ogp.me/ns/fb#" lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Tags:   Football | Exploring Data</title>
+    <title>A Network Graph of Human Diseases | Exploring Data</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
+      <meta name="description" content="The human disease network graph is a visualization based on a study that explored relations of diseases and human genes by Goh K-I, Cusick ME, Valle D, Childs B, Vidal M, Barabási A-L (2007).">
+    
+    
+      <meta property="og:image" content="http://exploringdata.github.com/img/preview/human-disease-network.jpg">
     
     <meta name="author" content="Ramiro Gómez">
-    <link rel="canonical" href="http://exploringdata.github.com/tags/football/">
+    <link rel="canonical" href="http://exploringdata.github.com/info/human-disease-network/">
     <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="/vendor/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
     <link href="/vendor/fontawesome/css/font-awesome.min.css" rel="stylesheet">
@@ -20,9 +24,8 @@
     <link rel="shortcut icon" href="/favicon.ico">
     
       
-    <link rel="alternate" type="application/rss+xml" title="Exploring Data main RSS feed" href="/rss.xml" />
-    <link rel="alternate" type="application/rss+xml" title="Exploring Data tags/football RSS feed" href="http://exploringdata.github.com/tags/football/rss.xml" />
-  
+        <link rel="alternate" type="application/rss+xml" title="Exploring Data main RSS feed" href="http://exploringdata.github.com/rss.xml">
+      
     
   </head>
   <body class="">
@@ -46,14 +49,17 @@
   <a href="#" class="btn dropdown-toggle" data-toggle="dropdown"><i class="icon-share"></i></a>
   <ul class="share dropdown-menu">
     <li><a class="btn" href="/rss.xml"><i class="icon-rss"></i> RSS Feed</a></li>
-    <li><a class="btn" href="https://twitter.com/share?url=http%3A%2F%2Fexploringdata.github.com%2Ftags%2Ffootball%2F"><i class="icon-twitter"></i> Twitter</a></li>
-    <li><a class="btn" href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fexploringdata.github.com%2Ftags%2Ffootball%2F&t=Tags+-+Football"><i class="icon-facebook"></i> Facebook</a></li>
-    <li><a class="btn" href="https://plus.google.com/share?url=http%3A%2F%2Fexploringdata.github.com%2Ftags%2Ffootball%2F"><i class="icon-google-plus"></i> Google+</a></li>
-    <li><a class="btn" href="http://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Fexploringdata.github.com%2Ftags%2Ffootball%2F&title=Tags+-+Football"><i class="icon-linkedin"></i> LinkedIn</a></li>
+    <li><a class="btn" href="https://twitter.com/share?url=http%3A%2F%2Fexploringdata.github.com%2Finfo%2Fhuman-disease-network%2F"><i class="icon-twitter"></i> Twitter</a></li>
+    <li><a class="btn" href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fexploringdata.github.com%2Finfo%2Fhuman-disease-network%2F&t=A+Network+Graph+of+Human+Diseases"><i class="icon-facebook"></i> Facebook</a></li>
+    <li><a class="btn" href="https://plus.google.com/share?url=http%3A%2F%2Fexploringdata.github.com%2Finfo%2Fhuman-disease-network%2F"><i class="icon-google-plus"></i> Google+</a></li>
+    <li><a class="btn" href="http://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Fexploringdata.github.com%2Finfo%2Fhuman-disease-network%2F&title=A+Network+Graph+of+Human+Diseases"><i class="icon-linkedin"></i> LinkedIn</a></li>
   </ul>
 </div>
             </ul>
             <div class="pull-right">
+              
+                <a href="#info" class="btn"><i class="icon-info-sign"></i> </a>
+                <a href="#comments" class="btn"><i class="icon-comment"></i> </a>
               
             </div>
           </div>
@@ -64,18 +70,31 @@
     
     
     
-<div id="info" class="container"><div class="row">
-  <div class="span9">
-    <h1 class="index_title">Tags:   Football</h1>
-    <ul class="unstyled index_list flatlist">
-    
-      <li class="index_item"><h2><a href="/info/ballon-dor-votes-2012/">Who Voted for Whom at Ballon d'Or 2012</a></h2><p>The Ballon d'Or 2012 visualization shows an interactive network graph of voters and voted players related based on votes cast for the male FIFA Ballon d'Or award in 2012.</p></li>
-    
-      <li class="index_item"><h2><a href="/story/see-why-spain-won-euro-2012/">See Why Spain Won Euro 2012</a></h2><p>A data story about Spain's performance at the UEFA Euro 2012 including charts created with the Datawrapper visualization tool.</p></li>
-    
-    </ul>
-  </div>
+<div id="info" class="container">
+<div class="row">
+  <div class="span9"><h1>A Network Graph of Human Diseases</h1><p>The <a href="/vis/human-disease-network/">human disease network graph visualization</a> was created using the <a href="http://gephi.org/datasets/diseasome.gexf.zip">gexf dataset</a> from the <a href="http://diseasome.eu/">Diseasome project</a> and is rendered with the <a href="http://sigmajs.org/">JavaScript library sigma.js</a>.</p>
+<p>Diseasome is a research project for exploring relationships of diseases/disorders based on the study <a href="http://www.pnas.org/content/104/21/8685">The Human Disease Network</a>, Goh K-I, Cusick ME, Valle D, Childs B, Vidal M, Barabási A-L (2007), Proc Natl Acad Sci USA 104:8685-8690.</p>
+<p>The beautiful graph was created by the Diseasome researchers using the <a href="https://gephi.org/">gaph visualization software Gephi</a> and the <a href="http://www.barabasilab.com/pubs/CCNR-ALB_Publications/200705-14_PNAS-HumanDisease/Suppl/index.htm">original dataset</a> from the study.</p></div>
   <div class="span3">
+    
+      
+<div class="postinfo">
+<h3>Meta &amp; Tags</h3>
+<p><i class="icon-calendar"></i> September 27, 2012 by <a href="http://ramiro.org/">Ramiro Gómez</a>.</p>
+
+<div class="tags">
+
+<span class="label label-info"><a href="/tags/network-graph/">network graph</a></span>
+
+<span class="label label-info"><a href="/tags/sigmajs/">sigmajs</a></span>
+
+<span class="label label-info"><a href="/tags/gephi/">gephi</a></span>
+
+</div>
+
+</div>
+
+    
     <h3>Keep Exploring</h3>
 <div class="share big">
 <a href="/rss.xml" class="btn btn-warning"><i class="icon-rss"> Subscribe to Feed</i></a>
@@ -89,9 +108,26 @@
 </form>
 </div>
   </div>
-</div></div>
+</div>
+</div>
 
     
+<div id="comments" class="container">
+<div class="row"><div class="span12">
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+var disqus_shortname = 'exploringdata';
+var disqus_url = 'http://exploringdata.github.com/info/human-disease-network/';
+(function() {
+var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div></div>
+</div>
+
     
     <div id="footer" class="container">
       <div class="row"><div class="span12">

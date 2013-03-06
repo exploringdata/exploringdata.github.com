@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
+<url><loc><![CDATA[http://exploringdata.github.com/info/programmers-search-relations/]]></loc><lastmod>2013-03-06</lastmod></url>
+
 <url><loc><![CDATA[http://exploringdata.github.com/vis/programmers-search-relations/]]></loc><lastmod>2013-03-06</lastmod></url>
 
 <url><loc><![CDATA[http://exploringdata.github.com/data-visualization-books/ddj/]]></loc><lastmod>2013-02-26</lastmod></url>
@@ -15,9 +17,13 @@
 
 <url><loc><![CDATA[http://exploringdata.github.com/vis/berlin-bike-routes/]]></loc><lastmod>2013-02-19</lastmod></url>
 
+<url><loc><![CDATA[http://exploringdata.github.com/info/berlin-bike-routes/]]></loc><lastmod>2013-02-19</lastmod></url>
+
 <url><loc><![CDATA[http://exploringdata.github.com/what-others-say/]]></loc><lastmod>2013-02-07</lastmod></url>
 
 <url><loc><![CDATA[http://exploringdata.github.com/datasearch/]]></loc><lastmod>2013-01-15</lastmod></url>
+
+<url><loc><![CDATA[http://exploringdata.github.com/info/ballon-dor-votes-2012/]]></loc><lastmod>2013-01-09</lastmod></url>
 
 <url><loc><![CDATA[http://exploringdata.github.com/vis/ballon-dor-votes-2012/]]></loc><lastmod>2013-01-09</lastmod></url>
 
@@ -33,7 +39,13 @@
 
 <url><loc><![CDATA[http://exploringdata.github.com/vis/james-bond-actors-network/]]></loc><lastmod>2012-10-16</lastmod></url>
 
+<url><loc><![CDATA[http://exploringdata.github.com/info/james-bond-actors-network/]]></loc><lastmod>2012-10-16</lastmod></url>
+
 <url><loc><![CDATA[http://exploringdata.github.com/vis/human-disease-network/]]></loc><lastmod>2012-09-27</lastmod></url>
+
+<url><loc><![CDATA[http://exploringdata.github.com/info/human-disease-network/]]></loc><lastmod>2012-09-27</lastmod></url>
+
+<url><loc><![CDATA[http://exploringdata.github.com/info/programming-languages-influence-network/]]></loc><lastmod>2012-09-07</lastmod></url>
 
 <url><loc><![CDATA[http://exploringdata.github.com/vis/programming-languages-influence-network/]]></loc><lastmod>2012-09-07</lastmod></url>
 
