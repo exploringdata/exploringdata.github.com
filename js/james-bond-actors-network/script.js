@@ -3,7 +3,7 @@ var nodeinfo = function(data) {
   var sl = $('#shownode');
   sl.find('h3').text(hnode.label);
 
-  var desc = '<img src="https://usercontent.googleapis.com/freebase/v1/image' + hnode.id + '?maxwidth=200&maxheight=150" class="img-polaroid pull-right" alt="photo">';
+  var desc = '<img src="https://usercontent.googleapis.com/freebase/v1/image' + hnode.id + '?maxwidth=200&maxheight=150" class="img-polaroid pull-right" alt="Photo of ' + hnode.label + '">';
   $.each(hnode.attr.attributes, function(idx, item) {
     if(0 == item.attr) {
       desc += '<h4>James Bond films starred</h4><p>' + item.val.split('|').sort().join(', ') + '</p>';

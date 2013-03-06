@@ -24,3 +24,10 @@ width:70%;
 font-size:1.2em;
 margin:-.5em 0 0 0;
 }
+#search-reset{
+margin-left: -1.5em;
+position: absolute;
+top: 1em;
+cursor:pointer;
+opacity:.8;
+}

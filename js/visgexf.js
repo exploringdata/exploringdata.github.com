@@ -113,7 +113,7 @@ var visgexf = {
   },
 
   highlightNode: function(node) {
-    var zoomratio = visgexf.sig.graphProperties().position().ratio;
+    //visgexf.sig.zoomTo(node.displayX, node.displayY, 5);
     var sources = {},
         targets = {};
     visgexf.sig.iterEdges(function(e){
@@ -154,15 +154,31 @@ var visgexf = {
       if ('' == $(event.target).val().trim())
         visgexf.resetSearch();
     });
-    if (document.location.hash) {
+    if (document.location.hash)
       visgexf.nodeSearch(document.location.hash.replace(/^#/, ''));
-    }
+    // search on hash change, unless it should trigger info or comments view
+    $(window).bind('hashchange', function(event) {
+      var h = document.location.hash.replace(/^#/, '');
+      if ('comments' != h && 'info' != h) {
+        $('.modal').modal('hide');
+        visgexf.nodeSearch(h);
+      }
+    });
+    $('#search-reset').on('click', function(event) {
+      visgexf.resetSearch();
+    });
+  },
+
+  queryHasResult: function(q) {
+    return -1 !== visgexf.nodelabels.indexOf(q);
   },
 
   nodeSearch: function(query) {
-    document.location.hash = query;
     visgexf.resetFilter();
-    if (node = visgexf.sig.getNodes(visgexf.nodemap[query])) {
+    if (visgexf.queryHasResult(query)) {
+      document.location.hash = query;
+      visgexf.searchInput.val(query);
+      node = visgexf.sig.getNodes(visgexf.nodemap[query])
       visgexf.highlightNode(node);
       return query;
     }
@@ -187,7 +203,8 @@ var visgexf = {
   },
 
   resetSearch: function() {
-    visgexf.searchInput.attr('value', '');
+    document.location.hash = '';
+    visgexf.searchInput.val('');
     visgexf.resetNodes();
   },
 
@@ -202,7 +219,7 @@ var visgexf = {
   reset: function() {
     visgexf.activeFilterId = null;
     visgexf.activeFilterVal = null;
-    visgexf.searchInput.attr('value', '');
+    visgexf.searchInput.val('');
     $('.graphfilter li').removeClass('active');
     visgexf.resetNodes();
   }

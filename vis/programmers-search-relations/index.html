@@ -1,0 +1,227 @@
+
+<!DOCTYPE html>
+<html xmlns:fb="http://ogp.me/ns/fb#" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Programmers related by Google Searches | Exploring Data</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+      <meta name="description" content="An interactive network graph showing the relations of programmers based on Google searches as shown in knowledge graph information.">
+    
+    
+      <meta property="og:image" content="http://exploringdata.github.com/img/preview/programmers-search-relations.jpg">
+    
+    <meta name="author" content="Ramiro Gómez">
+    <link rel="canonical" href="http://exploringdata.github.com/vis/programmers-search-relations/">
+    <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/vendor/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="/vendor/fontawesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/css/style.css?v=2" rel="stylesheet">
+    
+      <link href="/css/sigmagraphdark.css?v=2" rel="stylesheet">
+    
+    <!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link rel="shortcut icon" href="/favicon.ico">
+    
+      
+        <link rel="alternate" type="application/rss+xml" title="Exploring Data main RSS feed" href="http://exploringdata.github.com/rss.xml">
+      
+    
+  </head>
+  <body class="full">
+    
+<div id="navbar" class="navbar navbar-inverse navbar-fixed-top">
+  <div class="navbar-inner">
+    <a id="site-name" class="brand" href="/">Exploring Data</a>
+    <div class="nav-collapse">
+      
+<ul class="nav">
+  <li><input class="typeahead" type="text" data-provide="typeahead" placeholder="Search nodes"><i id="search-reset" class="icon-remove"></i></li>
+  <li><a class="showposter" href="http://www.zazzle.com/programmers_search_relations_network-228503413374727207?gl=geeksta&rf=238355915198956003">Poster</a></li>
+</ul>
+
+      <div class="pull-right modalmenu">
+        <a href="#info" class="btn"><i class="icon-info-sign"></i> </a>
+        <a href="#comments" class="btn"><i class="icon-comment"></i> </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+    
+<div id="vis" class="sigma-parent"><div id="sig" class="sigma-expand"></div></div>
+
+    
+<div id="info" class="modal hide fade modal-large">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+    <h3>Programmers related by Google Searches</h3>
+  </div>
+  <div class="modal-body">
+    <div class="row">
+      <div class="span7">
+        <p>An interactive network graph showing the connections of programmers based on searches performed on Google. The graph consists of 561 nodes and 1311 edges. To be included a person's search result page on Google needed to have knowledge graph information indicating the person being a programmer.</p>
+<h2>Methodology</h2>
+<p>About 10 months ago <a href="http://googleblog.blogspot.com/2012/05/introducing-knowledge-graph-things-not.html">Google introduced</a> the knowledge graph to enrich their search results for a subset of search queries they receive. If you look for a person with knowledge graph information you may also see a <em>People also search for</em> box with related searches.</p>
+<p>For this programmer network graph, the creators of the top programming languages according to GitHub served as seed values, i. e. Brendan Eich (JavaScript), Yukihiro Matsumoto (Ruby), James Gosling (Java), Guido van Rossum (Python), Stephen R. Bourne (Bourne shell), William Nelson Joy (C shell), Rasmus Lerdorf (PHP), Dennis Ritchie (C), Bjarne Stroustrup (C++), Larry Wall (Perl), and Brad Cox (Objective-C).</p>
+<p>If a search result included knowledge graph information indicating the person is a programmer (or hacker or computer scientist) it was included as a node. Information on related searches is the basis for connections in this graph. A link between the current and a related search query was established if both of them were recognized as programmers.</p>
+<p>After collecting the data, I generated a gexf file for further processing with the <a href="https://gephi.org/">Gephi visualization platform</a>. I applied Force Atlas 2 and label adjust layouts and sized the nodes based on their calculated Page Ranks &mdash; what else to use as a metric when looking at Google search data. To colorize nodes and edges I had Gephi calculate modularity and assign colors based on modularity classes. This interactive version is rendered with the <a href="http://sigmajs.org/">JavaScript library sigma.js</a>.</p>
+<h2>Interpretation of Results</h2>
+<p>First of all this graph certainly does not contain all programmers Google shows knowledge graph information for. Thus, no claim to completeness. Moreover, only the up to 5 related searches on the 1st search result page for a query where considered, even though there may be more related searches for a term.</p>
+<p>When 1st looking at the data in Gephi I was surprised by the highest connected node, Shafi Goldwasser (degree 18), an MIT computer science professor I honestly never heard of before. Without wanting to play down her importance in the field I doubt that she is searched for far more frequently than Guido van Rossum (degree 6) for example. Thus, I conclude that neither degree nor PageRank in this graph are indicators for search frequency.</p>
+<p>Looking at different communities you can make out in the graph is less surprising though. On the right colored in green you see many programmers that are involved with scripting languages and the Web as a platform, e. g. Larry Wall, Yukihiro Matsumoto, Guido van Rossum, Rasmus Lerdorf, and Brendan Eich.</p>
+<p>The pink community in the lower center around Edsger W. Dijkstra is comprised of several pioneers in the computer science field, e. g. Donald Knuth, Grace Hopper, and John Backus.</p>
+<p>On the top right the blue community around Robert Tappan Morris consists of programmers who were tempted by the dark side once or several times in their lives, a.k.a. computer security experts. Notable hacker examples you find here are Kevin Mitnick, Kevin Poulsen, and of course <a href="http://www.mugshots.org/misc/bill-gates.html">Bill Gates</a>.</p>
+<h2>Summary</h2>
+<p>Google's knowledge graph, which among others is built on top of Wikipedia/Freebase data, is a rich source of information worth exploring in more detail. Regarding the programmers network I expected those that served as seed values to be more prominent and less high degree nodes that I never heard of before. The communities within the graph on the other hand, mostly make sense to me.</p>
+<p>While gathering data for the next topic, I'm curious to learn about your interpretation of this network as well as feedback and suggestions.</p>
+        <hr>
+        <p><i class="icon-calendar"></i> March 06, 2013 by <a href="http://ramiro.org/">Ramiro Gómez</a>.</p>
+
+<div class="tags">
+
+<span class="label label-info"><a href="/tags/network-graph/">network graph</a></span>
+
+<span class="label label-info"><a href="/tags/programmers/">programmers</a></span>
+
+<span class="label label-info"><a href="/tags/sigmajs/">sigmajs</a></span>
+
+<span class="label label-info"><a href="/tags/gephi/">gephi</a></span>
+
+</div>
+
+        <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://exploringdata.github.com/vis/programmers-search-relations/" data-via="yaph" data-size="large">Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+<div class="g-plusone" data-href="="http://exploringdata.github.com/vis/programmers-search-relations/" "></div>
+<script type="text/javascript">
+(function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+})();
+</script>
+      </div>
+      <div class="span3">
+        <h3>Keep Exploring</h3>
+<div class="share big">
+<a href="/rss.xml" class="btn btn-warning"><i class="icon-rss"> Subscribe to Feed</i></a>
+<a href="https://twitter.com/yaph" class="btn btn-info"><i class="icon-twitter"></i> Follow me on Twitter</a>
+</div>
+<div id="mc_embed_signup" class="clearfix well">
+<form action="http://github.us6.list-manage.com/subscribe/post?u=6e91c5ec6f31498a21bc80826&amp;id=bb7db2c23d" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="form validate" target="_blank" novalidate>
+<label for="mce-EMAIL">Subscribe to the <strong>Datavis Weekly Newsletter</strong></label>
+<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+<div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-success"></div>
+</form>
+</div>
+      </div>
+    </div>
+  </div>
+  <div class="modal-footer">
+    <a href="#" class="btn" data-dismiss="modal">Close</a>
+  </div>
+</div>
+
+    
+<div id="comments" class="modal hide fade modal-large">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+    <h3>Comments</h3>
+  </div>
+  <div class="modal-body">
+    <div id="disqus_thread"></div>
+<script type="text/javascript">
+var disqus_shortname = 'exploringdata';
+var disqus_url = 'http://exploringdata.github.com/vis/programmers-search-relations/';
+(function() {
+var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+  </div>
+  <div class="modal-footer">
+    <a href="#" class="btn" data-dismiss="modal">Close</a>
+  </div>
+</div>
+
+    
+    <div id="footer" class="container">
+      <div class="row"><div class="span12">
+        <footer>
+          <p class="centered">Exploring Data is a site about data mining and visualization <a href="/about/">learn more</a>.<br>Except where otherwise noted, the works on this site are licensed under a<br><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US">Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a>.<br><a href="http://flattr.com/thing/952509/Exploring-Data"><img src="http://api.flattr.com/button/flattr-badge-large.png" alt="Flattr this" title="Flattr this" /></a></p>
+        </footer>
+      </div></div>
+    </div>
+    
+    
+<div id="showposter" class="modal hide fade">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+    <h3>Programmers Search Relations Poster</h3>
+  </div>
+  <div class="modal-body">
+     <div style="text-align:center;line-height:150%"> <a href="http://www.zazzle.com/programmers_search_relations_network-228503413374727207?gl=geeksta&rf=238355915198956003"> <img src="http://rlv.zcache.com/programmers_search_relations_network-r7614d870ea2e401d9fe2ce54fa02cc6a_1sv_325.jpg" alt="Programmers Search Relations Network" style="border:0;" /> </a> <br /> <a href="http://www.zazzle.com/programmers_search_relations_network-228503413374727207?gl=geeksta&rf=238355915198956003">Programmers Search Relations Network</a> by <a href="http://www.zazzle.com/geeksta*">geeksta</a> <br /> Look at other Network Posters at <a href="http://www.zazzle.com/network+posters?rf=238355915198956003">zazzle.com</a> </div>
+  </div>
+  <div class="modal-footer">
+    <a href="#" class="close" data-dismiss="modal" class="btn">Close</a>
+  </div>
+</div>
+
+<div id="shownode" class="modal hide fade">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+    <h3></h3>
+  </div>
+  <div class="modal-body"></div>
+  <div class="modal-footer">
+    <a href="#" class="close" data-dismiss="modal" class="btn">Close</a>
+  </div>
+</div>
+
+
+    <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-5102014-13']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/js/script.js?v=2"></script>
+    
+      
+          <script src="/vendor/sigma/sigma.min.js?v=2"></script>
+      
+          <script src="/vendor/sigma/sigma.parseGexf.js?v=2"></script>
+      
+          <script src="/js/visgexf.js?v=2"></script>
+      
+          <script src="/js/programmers-search-relations/script.js?v=2"></script>
+      
+    
+
+    
+<script>
+$(function(){
+    var h = $(window).height() - $('#navbar').height();
+    $('#vis').height(h);
+    if (canvas = $('#vis canvas')) {
+        canvas.height(h-20);
+    }
+    $('.modalmenu a').click(function(){
+        $($(this).attr('href')).modal();
+    });
+});
+</script>
+
+  </body>
+</html>
