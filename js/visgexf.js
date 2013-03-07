@@ -27,10 +27,17 @@ var visgexf = {
       visgexf.sig.iterNodes(function(n){
         visgexf.nodelabels.push(n.label);
         visgexf.nodemap[n.label] = n.id;
+        n.attr.label = n.label;// needed for highlighting
       });
       visgexf.nodelabels.sort();
     }
     visgexf.initSearch();
+    visgexf.sig.bind('upnodes', function(event){
+      hnode = visgexf.sig.getNodes(event.content)[0];
+      visgexf.highlightNode(hnode, false);
+      hnode.label = hnode.attr.label;
+      visgexf.searchInput.val(hnode.label);
+    });
     return visgexf;
   },
 
@@ -38,7 +45,6 @@ var visgexf = {
   setColor: function(o, c) {
     // don't change node an edge colors of undirected graphs
     if ('undirected' == visgexf.props.type) return;
-    type: 'directed'
     o.attr.hl = true;
     o.attr.color = o.color;
     o.color = c;
@@ -136,7 +142,7 @@ var visgexf = {
   resetNode: function(node, forceLabel) {
     node.hidden = 0;
     node.forceLabel = forceLabel;
-    if (!node.label) node.label = node.attr['label'];
+    if (!node.label) node.label = node.attr.label;
     visgexf.setOpacity(node, 1);
   },
 
@@ -147,9 +153,11 @@ var visgexf = {
     visgexf.resetNode(node, 0);
   },
 
-  highlightNode: function(node) {
-    visgexf.sig.goTo(node.displayX, node.displayY, 4);
-    visgexf.sig.position(0,0,1);
+  highlightNode: function(node, move) {
+    if (false !== move) {
+      visgexf.sig.goTo(node.displayX, node.displayY, 4);
+      visgexf.sig.position(0,0,1);
+    }
     var sources = {},
         targets = {};
     visgexf.sig.iterEdges(function(e){
@@ -158,9 +166,11 @@ var visgexf = {
       } else if (e.source == node.id) {
         targets[e.target] = true;
         visgexf.setColor(e, visgexf.sourceColor);
+        e.hidden = 0;
       } else if (e.target == node.id) {
         visgexf.setColor(e, visgexf.targetColor);
         sources[e.source] = true;
+        e.hidden = 0;
       }
     }).iterNodes(function(n){
       if (n.id == node.id) {
@@ -171,9 +181,7 @@ var visgexf = {
         visgexf.nodeShow(n, visgexf.sourceColor);
       } else {
         visgexf.setOpacity(n, .05);
-        if (n.label)
-          n.attr['label'] = n.label;
-        n.label='';
+        n.label=null;
       }
     }).draw(2,2,2);
   },
