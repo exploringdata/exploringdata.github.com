@@ -148,7 +148,8 @@ var visgexf = {
   },
 
   highlightNode: function(node) {
-    //visgexf.sig.zoomTo(node.displayX, node.displayY, 5);
+    visgexf.sig.goTo(node.displayX, node.displayY, 4);
+    visgexf.sig.position(0,0,1);
     var sources = {},
         targets = {};
     visgexf.sig.iterEdges(function(e){
