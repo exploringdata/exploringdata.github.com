@@ -16,7 +16,14 @@ var visgexf = {
     visgexf.visid = visid;
     visgexf.filename = filename;
     visgexf.props = props;
-    visgexf.sig = sigma.init(document.getElementById(visid))
+    viscontainer = document.getElementById(visid);
+    // adjust height of graph to screen
+    var h_win = $(window).height() - $('#navbar').height();
+    var h_vis = $(viscontainer).height();
+    if (h_win > 400) {
+      $(viscontainer).height(h_win);
+    }
+    visgexf.sig = sigma.init(viscontainer)
       .drawingProperties(props['drawing'])
       .graphProperties(props['graph'])
       .mouseProperties({maxRatio: 128});
