@@ -47,8 +47,6 @@ $(function(){
     drawing: {
       defaultLabelColor: '#fff',
       defaultLabelSize: 12,
-      defaultLabelBGColor: '#fff',
-      defaultLabelHoverColor: '#000',
       labelThreshold: 5,
       defaultEdgeType: 'curve'
     },

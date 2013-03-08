@@ -35,8 +35,7 @@ var visgexf = {
     visgexf.sig.bind('upnodes', function(event){
       hnode = visgexf.sig.getNodes(event.content)[0];
       visgexf.highlightNode(hnode, false);
-      hnode.label = hnode.attr.label;
-      visgexf.searchInput.val(hnode.label);
+      visgexf.searchInput.val(hnode.attr.label);
     });
     return visgexf;
   },
@@ -181,7 +180,7 @@ var visgexf = {
         visgexf.nodeShow(n, visgexf.sourceColor);
       } else {
         visgexf.setOpacity(n, .05);
-        n.label=null;
+        n.label = null;
       }
     }).draw(2,2,2);
   },
