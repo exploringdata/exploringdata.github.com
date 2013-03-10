@@ -44,8 +44,8 @@ $(function(){
     graph: {
       minNodeSize: 1,
       maxNodeSize: 20,
-      minEdgeSize: 1,
-      maxEdgeSize: 1
+      minEdgeSize: .5,
+      maxEdgeSize: 2.5
     },
     forceLabel: 0,
     type: 'undirected'

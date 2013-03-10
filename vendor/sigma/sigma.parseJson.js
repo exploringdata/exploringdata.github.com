@@ -3,7 +3,7 @@
 // based on parseGexf from Mathieu Jacomy @ Sciences Po Médialab & WebAtlas
 sigma.publicPrototype.parseJson = function(jsonPath,callback) {
 	var sigmaInstance = this;
-    var edgeId = 0;
+	var edgeId = 0;
 	jQuery.getJSON(jsonPath, function(data) {
 		for (i=0; i<data.nodes.length; i++){
 			var id=data.nodes[i].id;
