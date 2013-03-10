@@ -12,7 +12,7 @@ var visgexf = {
   activeFilterVal: null,
   sourceColor: '#67A9CF',
   targetColor: '#EF8A62',
-  init: function(visid, filename, props) {
+  init: function(visid, filename, props, callback) {
     visgexf.visid = visid;
     visgexf.filename = filename;
     visgexf.props = props;
@@ -27,18 +27,21 @@ var visgexf = {
       .drawingProperties(props['drawing'])
       .graphProperties(props['graph'])
       .mouseProperties({maxRatio: 128});
-    visgexf.sig.parseGexf(filename);
-    visgexf.sig.draw();
-    // create array of node labels used for auto complete once
-    if (0==visgexf.nodelabels.length) {
-      visgexf.sig.iterNodes(function(n){
-        visgexf.nodelabels.push(n.label);
-        visgexf.nodemap[n.label] = n.id;
-        n.attr.label = n.label;// needed for highlighting
-      });
-      visgexf.nodelabels.sort();
-    }
-    visgexf.initSearch();
+    visgexf.sig.parseJson(filename, function(){
+      visgexf.sig.draw();
+      // create array of node labels used for auto complete once
+      if (0==visgexf.nodelabels.length) {
+        visgexf.sig.iterNodes(function(n){
+          visgexf.nodelabels.push(n.label);
+          visgexf.nodemap[n.label] = n.id;
+          n.attr.label = n.label;// needed for highlighting
+        });
+        visgexf.nodelabels.sort();
+      }
+      visgexf.initSearch();
+      // call callback after json is parsed
+      if (callback) callback();
+    });
     visgexf.sig.bind('upnodes', function(event){
       hnode = visgexf.sig.getNodes(event.content)[0];
       visgexf.highlightNode(hnode, false);
@@ -86,9 +89,10 @@ var visgexf = {
   // called with array of ids of attributes to use as filters
   getFilters: function(attrids) {
     visgexf.sig.iterNodes(function(n) {
-      n.attr.attributes.map(function(node) {
-        if (-1 !== attrids.indexOf(parseInt(node.attr))) {
-          var vals = node.val.split('|');
+      for (i in attrids) {
+        var aname = attrids[i];
+        if (n.attr.attributes.hasOwnProperty(aname)) {
+          var vals = n.attr.attributes[aname].split('|');
           for (v in vals) {
             val = vals[v];
             if (!visgexf.filters.hasOwnProperty(val)) {
@@ -97,7 +101,7 @@ var visgexf = {
             visgexf.filters[val]++;
           }
         }
-      });
+      }
     });
     // sort by frequencies of filter attributes
     var sorted = [];
@@ -109,17 +113,7 @@ var visgexf = {
   },
 
   nodeHasFilter: function(node, filterid, filterval) {
-    var hasFilter = false;
-    for (i in node.attr.attributes) {
-      var item = node.attr.attributes[i];
-      if (filterid === parseInt(item.attr)) {
-        if (-1 !== item.val.indexOf(filterval)) {
-          hasFilter = true;
-          break;
-        }
-      }
-    }
-    return hasFilter;
+    return node.attr.attributes.hasOwnProperty(filterid) && -1 !== node.attr.attributes[filterid].indexOf(filterval)
   },
 
   // show only nodes that match filter

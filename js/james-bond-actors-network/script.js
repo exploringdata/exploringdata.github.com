@@ -2,15 +2,9 @@
 var nodeinfo = function(data) {
   var sl = $('#shownode');
   sl.find('h3').text(hnode.label);
-
   var desc = '<img src="https://usercontent.googleapis.com/freebase/v1/image' + hnode.id + '?maxwidth=200&maxheight=150" class="img-polaroid pull-right" alt="Photo of ' + hnode.label + '">';
-  $.each(hnode.attr.attributes, function(idx, item) {
-    if(0 == item.attr) {
-      desc += '<h4>James Bond films starred</h4><p>' + item.val.split('|').sort().join(', ') + '</p>';
-    }
-  });
+  desc += '<h4>James Bond films starred</h4><p>' + hnode.attr.attributes.films.split('|').sort().join(', ') + '</p>';
   desc += '<h4>Bio</h4>' + data.result + '... <a href="http://www.freebase.com/view' + hnode.id + '">view on Freebase</a>';
-
   sl.find('.modal-body').html(desc);
   sl.modal();
 };
@@ -57,18 +51,19 @@ $(function(){
     type: 'undirected'
   }
 
-  var G = visgexf.init('sig', '/gexf/jamesbond_fr.gexf', props);
-  var filterid = 0;
-  var filters = G.getFilters([filterid]);
-  nodeClick(G);
+  visgexf.init('sig', '/gexf/jamesbond_fr.json', props, function(){
+    var filterid = 'films';
+    var filters = visgexf.getFilters([filterid]);
+    nodeClick(visgexf);
 
-  var pmenu = $('#paradigms');
-  pmenu.append('<li class="active"><a href="#">All Films (' + G.sig.getNodesCount() + ')</a></li>');
-  $.each(filters, function(idx, item) {
-    pmenu.append('<li><a href="#' + item[0] + '">' + item[0] + ' (' + item[1] + ')</a></li>');
-  });
-  pmenu.click(function(event){
-    if (t = menuclick(pmenu, event))
-      visgexf.setFilter(filterid, t.attr('href').replace('#', ''));
+    var pmenu = $('#paradigms');
+    pmenu.append('<li class="active"><a href="#">All Films (' + visgexf.sig.getNodesCount() + ')</a></li>');
+    $.each(filters, function(idx, item) {
+      pmenu.append('<li><a href="#' + item[0] + '">' + item[0] + ' (' + item[1] + ')</a></li>');
+    });
+    pmenu.click(function(event){
+      if (t = menuclick(pmenu, event))
+        visgexf.setFilter(filterid, t.attr('href').replace('#', ''));
+    });
   });
 });

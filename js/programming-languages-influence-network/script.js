@@ -2,16 +2,8 @@
 var langinfo = function(data) {
   var sl = $('#showlang');
   sl.find('h3').text(hlang.label);
-  var influenced = '';
-  var influencedby = '';
-  $.each(hlang.attr.attributes, function(idx, item){
-    if (1 == item.attr) {
-      influencedby = item.val.split('|').sort().join(', ');
-    }
-    if (2 == item.attr) {
-      influenced = item.val.split('|').sort().join(', ');
-    }
-  });
+  var influenced = 'undefined' !== typeof hlang.attr.attributes.influenced ? hlang.attr.attributes.influenced.split('|').sort().join(', ') : false;
+  var influencedby = 'undefined' !== typeof hlang.attr.attributes.influencedby ? hlang.attr.attributes.influencedby.split('|').sort().join(', ') : false;
   var desc = data.result + '... <a href="http://www.freebase.com/view' + hlang.id + '">view on Freebase</a>';
 
   // in case of Ruby include Matz tweet
@@ -87,42 +79,43 @@ $(function(){
     type: 'directed'
   }
 
-  var G = visgexf.init('sig', '/gexf/plin_forceatlas2.gexf', props);
-  var filterid = 0;
-  var filters = G.getFilters([filterid]);
-  nodeClick(G);
+  visgexf.init('sig', '/gexf/plin_forceatlas2.json', props, function() {
+    var filterid = 'paradigms';
+    var filters = visgexf.getFilters([filterid]);
+    nodeClick(visgexf);
 
-  var pmenu = $('#paradigms');
-  pmenu.append('<li class="active"><a href="#">All languages (' + G.sig.getNodesCount() + ')</a></li>');
-  $.each(filters, function(idx, item) {
-    pmenu.append('<li><a href="#' + item[0] + '">' + item[0] + ' (' + item[1] + ')</a></li>');
-  });
-  pmenu.click(function(event){
-    if (t = menuclick(pmenu, event))
-      visgexf.setFilter(filterid, t.attr('href').replace('#', ''));
-  });
+    var pmenu = $('#paradigms');
+    pmenu.append('<li class="active"><a href="#">All languages (' + visgexf.sig.getNodesCount() + ')</a></li>');
+    $.each(filters, function(idx, item) {
+      pmenu.append('<li><a href="#' + item[0] + '">' + item[0] + ' (' + item[1] + ')</a></li>');
+    });
+    pmenu.click(function(event){
+      if (t = menuclick(pmenu, event))
+        visgexf.setFilter(filterid, t.attr('href').replace('#', ''));
+    });
 
-  var lmenu = $('#layout');
-  lmenu.click(function(event){
-    if (t = menuclick(lmenu, event)) {
-      // reset paradigm menu
-      var lis = pmenu.find('li');
-      lis.removeClass('active');
-      lis.first().addClass('active');
+    var lmenu = $('#layout');
+    lmenu.click(function(event){
+      if (t = menuclick(lmenu, event)) {
+        // reset paradigm menu
+        var lis = pmenu.find('li');
+        lis.removeClass('active');
+        lis.first().addClass('active');
 
-      var action = t.attr('href').replace('#', '');
-      if ('random' == action) {
-        visgexf.reset();
-        visgexf.sig.iterNodes(function(n){
-          n.x = Math.random();
-          n.y = Math.random();
-          n.color = randomNodeColor(n.outDegree);
-        }).draw(2,2,2);
-      } else {
-        visgexf.clear();
-        nodeClick(visgexf.init('sig', '/gexf/plin_forceatlas2.gexf', props));
+        var action = t.attr('href').replace('#', '');
+        if ('random' == action) {
+          visgexf.reset();
+          visgexf.sig.iterNodes(function(n){
+            n.x = Math.random();
+            n.y = Math.random();
+            n.color = randomNodeColor(n.outDegree);
+          }).draw(2,2,2);
+        } else {
+          visgexf.clear();
+          nodeClick(visgexf.init('sig', '/gexf/plin_forceatlas2.json', props));
+        }
       }
-    }
+    });
   });
 
   $('.showposter').click(function(e){e.preventDefault();$('#showposter').modal();});

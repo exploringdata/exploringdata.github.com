@@ -35,7 +35,7 @@ var nodeinfo = function(dataid, data) {
 var nodeClick = function(Graph) {
   Graph.sig.bind('upnodes', function(event){
     hnode = Graph.sig.getNodes(event.content)[0];
-    var dataid = hnode.attr.attributes[0].val;
+    var dataid = hnode.attr.attributes.dataid;
     $.getJSON('/json/programmers/' + dataid + '.json', function(data){
         nodeinfo(dataid, data);
     });
@@ -60,7 +60,7 @@ $(function(){
     type: 'undirected'
   }
 
-  var G = visgexf.init('sig', '/gexf/programmers_forceatlas2.gexf', props);
+  var G = visgexf.init('sig', '/gexf/programmers_forceatlas2.json', props);
   nodeClick(G);
   $('.showposter').click(function(e){e.preventDefault();$('#showposter').modal();});
 });
