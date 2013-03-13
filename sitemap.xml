@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
+<url><loc><![CDATA[http://exploringdata.github.com/info/footballers-search-relations/]]></loc><lastmod>2013-03-13</lastmod></url>
+
+<url><loc><![CDATA[http://exploringdata.github.com/vis/footballers-search-relations/]]></loc><lastmod>2013-03-13</lastmod></url>
+
 <url><loc><![CDATA[http://exploringdata.github.com/info/programmers-search-relations/]]></loc><lastmod>2013-03-06</lastmod></url>
 
 <url><loc><![CDATA[http://exploringdata.github.com/vis/programmers-search-relations/]]></loc><lastmod>2013-03-06</lastmod></url>

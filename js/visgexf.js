@@ -39,6 +39,7 @@ var visgexf = {
         visgexf.nodelabels.sort();
       }
       visgexf.initSearch();
+      visgexf.searchInput.focus();
       // call callback after json is parsed
       if (callback) callback();
     });
