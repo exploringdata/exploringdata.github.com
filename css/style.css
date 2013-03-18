@@ -35,10 +35,6 @@ opacity:.8;
 .small {
 font-size:.85em;
 }
-.share.big a {
-font-size:1.6em;
-margin-bottom:8px;
-}
 .tags span {
 padding:.4em;
 margin-bottom:.5em;
@@ -70,4 +66,9 @@ body.full #footer {display:none;}
 .modal-large {
 width:76%;
 margin-left:-38%;
+}
+/* front gallery */
+.span4 h5 {
+height: 1.4em;
+overflow: hidden;
 }
