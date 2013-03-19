@@ -9,8 +9,7 @@ $(function(){
     var b = $(this);
     var action = $.trim(b.find('i').attr('class').replace('icon-', ''));
     _gaq.push(['_trackEvent', 'Sharemenu', action]);
-    var url = b.attr('href');
-    document.location.href = url;
+    window.open(b.attr('href'));
   });
   $('.showhelp').click(function(e){
     e.preventDefault();

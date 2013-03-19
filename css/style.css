@@ -67,6 +67,15 @@ body.full #footer {display:none;}
 width:76%;
 margin-left:-38%;
 }
+/* share menu to the left */
+#sharemenu .dropdown-menu {
+right:0;
+left:auto;
+}
+/* newsletter */
+#mce-EMAIL {
+width:90%;
+}
 /* front gallery */
 .span4 h5 {
 height: 1.4em;
