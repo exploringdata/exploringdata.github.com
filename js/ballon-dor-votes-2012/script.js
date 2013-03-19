@@ -2,9 +2,9 @@
 var popUp;
 
 function getVotes(node) {
-  if ('undefined' === typeof node.attr.attributes[1])
+  if (!node.attr.attributes.hasOwnProperty('votes'))
     return false;
-  votes = node.attr.attributes[1].val.split('|');
+  votes = node.attr.attributes.votes.split('|');
   content = 'Votes given to:<br>';
   for (i in votes) {
     pos = parseInt(i) + 1;
