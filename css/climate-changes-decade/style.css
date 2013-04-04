@@ -1,0 +1,11 @@
+.nvd3 .nv-axis line {stroke:#bbb;}
+.nv-legend text {font-size:1em;}
+.bar svg {height:480px;}
+#vis h2 {font-size:1.5em;}
+#queryinfo {font-size:1.1em;}
+#history svg {height:480px;}
+#history rect {cursor:pointer;}
+#articles .article {margin:0 0 .5em 0;padding:0;}
+#articles .article .image {margin-left:0;}
+#articles .article .meta {font-size:.85em;}
+#articles hr {width:70%;margin:3px auto 8px;padding:0;}
