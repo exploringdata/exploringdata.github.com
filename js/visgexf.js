@@ -45,8 +45,7 @@ var visgexf = {
     });
     visgexf.sig.bind('upnodes', function(event){
       hnode = visgexf.sig.getNodes(event.content)[0];
-      visgexf.highlightNode(hnode, false);
-      visgexf.searchInput.val(hnode.attr.label);
+      document.location.hash = hnode.attr.label;
     });
     return visgexf;
   },
@@ -119,7 +118,6 @@ var visgexf = {
 
   // show only nodes that match filter
   setFilter: function(filterid, filterval) {
-    visgexf.resetSearch();
     visgexf.activeFilterId = filterid;
     visgexf.activeFilterVal = filterval;
     visgexf.sig.iterNodes(function(n){
@@ -154,11 +152,11 @@ var visgexf = {
     visgexf.resetNode(node, 0);
   },
 
-  highlightNode: function(node, move) {
-    if (false !== move) {
-      visgexf.sig.goTo(node.displayX, node.displayY, 4);
-      visgexf.sig.position(0,0,1);
-    }
+  highlightNode: function(node) {
+    visgexf.sig.position(0,0,1);
+    visgexf.sig.goTo(node.displayX, node.displayY, 2);
+    visgexf.sig.position(0,0,1);
+
     var sources = {},
         targets = {};
     visgexf.sig.iterEdges(function(e){
@@ -195,26 +193,28 @@ var visgexf = {
   initSearch: function() {
     visgexf.searchInput.typeahead({
       'source': visgexf.nodelabels,
-      'updater': visgexf.nodeSearch
+      'updater': visgexf.redirectHash
     });
-    // reset graph on empty input
-    visgexf.searchInput.on('change', function(event) {
-      if ('' == $(event.target).val().trim())
-        visgexf.resetSearch();
-    });
-    if (document.location.hash)
-      visgexf.nodeSearch(document.location.hash.replace(/^#/, ''));
+    if (document.location.hash) {
+      visgexf.redirectHash();
+    }
     // search on hash change, unless it should trigger info or comments view
     $(window).bind('hashchange', function(event) {
-      var h = document.location.hash.replace(/^#/, '');
-      if ('comments' != h && 'info' != h) {
-        $('.modal').modal('hide');
-        visgexf.nodeSearch(h);
-      }
+      visgexf.redirectHash();
     });
     $('#search-reset').on('click', function(event) {
       visgexf.resetSearch();
     });
+  },
+
+  redirectHash: function(q) {
+    if (q) {
+      document.location.hash = q;
+      return;
+    }
+    var h = document.location.hash.replace(/^#/, '');
+    $('.modal').modal('hide');
+    visgexf.nodeSearch(h);
   },
 
   queryHasResult: function(q) {
@@ -250,8 +250,7 @@ var visgexf = {
   },
 
   resetSearch: function() {
-    visgexf.searchInput.val('');
-    visgexf.resetNodes();
+    document.location.href = document.location.pathname;
   },
 
   resetFilter: function() {

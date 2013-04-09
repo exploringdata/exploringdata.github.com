@@ -1,0 +1,63 @@
+var twitter_list = function(heading, screen_names) {
+  var html = '';
+  if (screen_names.length > 0) {
+    list = [];
+    for(i in screen_names) {
+      var sn = screen_names[i];
+      // make sure this is a node in the graph, could still be a rejected query
+      if (visgexf.queryHasResult(sn))
+        list.push('<a href="#' + sn + '">' + sn + '</a>')
+    }
+    html += '<h4>' + heading + '</h4>' + list.join(' - ');
+  }
+  return html;
+};
+
+var nodeinfo = function(data) {
+  var sl = $('#shownode');
+  sl.find('h3').text(data.name);
+  var desc = '<div><img src="' + data.profile_image_url + '" class="img-polaroid pull-right" alt="Photo of ' + hnode.name + '">';
+  desc += '<blockquote><p>' + data.description + '</p></blockquote><div>';
+  desc += '<p><i class="icon-twitter"></i> <a href="https://twitter.com/' + data.screen_name + '">Twitter Profile</a>';
+  if (data.url.length > 0)
+    desc += ' | <i class="icon-home"></i> <a href="' + data.url + '">Homepage</a>';
+  desc += '</p>';
+  desc += twitter_list('Twitter Friends from Census', data.friends_census);
+  desc += twitter_list('Twitter Followers from Census', data.followers_census);
+  sl.find('.modal-body').html(desc);
+  sl.modal();
+};
+
+var nodeClick = function(Graph) {
+  Graph.sig.bind('upnodes', function(event){
+    hnode = Graph.sig.getNodes(event.content)[0];
+    $.getJSON('/json/visualisingdata-census-twitter/' + hnode.id + '.json', function(data){
+      nodeinfo(data);
+    });
+  });
+};
+
+$(function(){
+  var props = {
+    drawing: {
+      defaultLabelColor: '#fff',
+      defaultLabelSize: 12,
+      defaultLabelBGColor: '#fff',
+      defaultLabelHoverColor: '#000',
+      labelThreshold: 6,
+      defaultEdgeType: 'curve'
+    },
+    graph: {
+      minNodeSize: .5,
+      maxNodeSize: 40,
+      minEdgeSize: 1,
+      maxEdgeSize: 1
+    },
+    forceLabel: 1,
+    type: 'directed'
+  }
+
+  visgexf.init('sig', '/gexf/visualisingdata-census-twitter-processed.json', props, function() {
+    nodeClick(visgexf);
+  });
+});
