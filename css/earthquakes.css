@@ -8,6 +8,7 @@ fill:#cc0000;
 stroke:#f00;
 stroke-width:.5px;
 opacity:.8;
+cursor:pointer;
 }
 #map {
 background-color:#fff;
