@@ -3,16 +3,16 @@
 <html xmlns:fb="http://ogp.me/ns/fb#" lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Human Disease Network | Exploring Data</title>
+    <title>Ballon d'Or 2012 Votes Network | Exploring Data</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-      <meta name="description" content="An interactive network of disorders and disease genes linked by known disorder–gene associations based on the study The Human Disease Network, Goh K-I, Cusick ME, Valle D, Childs B, Vidal M, Barabási A-L (2007), Proc Natl Acad Sci USA 104:8685-8690.">
+      <meta name="description" content="An interactive network graph showing the connections between voters and voted players from the male FIFA Ballon d'Or vote 2012.">
     
     
-      <meta property="og:image" content="http://exploringdata.github.io/img/preview/human-disease-network.jpg">
+      <meta property="og:image" content="http://exploringdata.github.io/img/preview/ballon-dor-votes-2012.jpg">
     
     <meta name="author" content="Ramiro Gómez">
-    <link rel="canonical" href="http://exploringdata.github.io/vis/human-disease-network/">
+    <link rel="canonical" href="http://exploringdata.github.io/vis/ballon-dor-votes-2012/">
     <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="/vendor/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
     <link href="/vendor/fontawesome/css/font-awesome.min.css" rel="stylesheet">
@@ -40,6 +40,8 @@
 <ul class="nav">
   <li><input class="typeahead" type="text" data-provide="typeahead" placeholder="Highlight node"><i id="search-reset" class="icon-remove"></i></li>
   
+    <li><a class="showposter" href="http://www.zazzle.com/network_of_ballon_dor_2012_votes-228597563002551181?rf=238355915198956003">Poster</a></li>
+  
 </ul>
 
       <div id="sharemenu" class="nav pull-right">
@@ -47,16 +49,16 @@
   <a href="#" class="btn btn-success dropdown-toggle" data-toggle="dropdown"><i class="icon-share"></i></a>
   <ul class="share dropdown-menu">
     <li><a class="btn" href="/rss.xml"><i class="icon-rss"></i> RSS Feed</a></li>
-    <li><a class="btn" href="https://twitter.com/share?url=http%3A%2F%2Fexploringdata.github.io%2Fvis%2Fhuman-disease-network%2F"><i class="icon-twitter"></i> Tweet this</a></li>
-    <li><a class="btn" href="https://flattr.com/submit/auto?user_id=rg&url=http%3A%2F%2Fexploringdata.github.io%2Fvis%2Fhuman-disease-network%2F&title=Human+Disease+Network&language=en_GB&category=software"><i class="icon-sign-blank"></i> Flattr this</a></li>
-    <li><a class="btn" href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fexploringdata.github.io%2Fvis%2Fhuman-disease-network%2F&t=Human+Disease+Network"><i class="icon-facebook"></i> Facebook</a></li>
-    <li><a class="btn" href="https://plus.google.com/share?url=http%3A%2F%2Fexploringdata.github.io%2Fvis%2Fhuman-disease-network%2F"><i class="icon-google-plus"></i> Google+</a></li>
-    <li><a class="btn" href="http://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Fexploringdata.github.io%2Fvis%2Fhuman-disease-network%2F&title=Human+Disease+Network"><i class="icon-linkedin"></i> LinkedIn</a></li>
+    <li><a class="btn" href="https://twitter.com/share?url=http%3A%2F%2Fexploringdata.github.io%2Fvis%2Fballon-dor-votes-2012%2F"><i class="icon-twitter"></i> Tweet this</a></li>
+    <li><a class="btn" href="https://flattr.com/submit/auto?user_id=rg&url=http%3A%2F%2Fexploringdata.github.io%2Fvis%2Fballon-dor-votes-2012%2F&title=Ballon+d%27Or+2012+Votes+Network&language=en_GB&category=software"><i class="icon-sign-blank"></i> Flattr this</a></li>
+    <li><a class="btn" href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fexploringdata.github.io%2Fvis%2Fballon-dor-votes-2012%2F&t=Ballon+d%27Or+2012+Votes+Network"><i class="icon-facebook"></i> Facebook</a></li>
+    <li><a class="btn" href="https://plus.google.com/share?url=http%3A%2F%2Fexploringdata.github.io%2Fvis%2Fballon-dor-votes-2012%2F"><i class="icon-google-plus"></i> Google+</a></li>
+    <li><a class="btn" href="http://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Fexploringdata.github.io%2Fvis%2Fballon-dor-votes-2012%2F&title=Ballon+d%27Or+2012+Votes+Network"><i class="icon-linkedin"></i> LinkedIn</a></li>
   </ul>
 </div>
 </div>
       <div class="pull-right">
-        <a href="/info/human-disease-network/" class="btn btn-info"><i class="icon-info-sign"></i> </a>
+        <a href="/info/ballon-dor-votes-2012/" class="btn btn-info"><i class="icon-info-sign"></i> </a>
       </div>
     </div>
   </div>
@@ -92,6 +94,19 @@
 </div>
 
 
+<div id="showposter" class="modal hide fade">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+    <h3>Ballon d'Or Votes 2012 Poster</h3>
+  </div>
+  <div class="modal-body">
+    <div style="text-align:center;line-height:150%"> <a href="http://www.zazzle.com/network_of_ballon_dor_2012_votes-228597563002551181?rf=238355915198956003"> <img src="http://rlv.zcache.com/network_of_ballon_dor_2012_votes-r61afaf94b98747cabb3d8dd138f69d8f_w2u_325.jpg" alt="Network of Ballon d&#39;Or 2012 Votes" style="border:0;" /> </a> <br /> <a href="http://www.zazzle.com/network_of_ballon_dor_2012_votes-228597563002551181?rf=238355915198956003">Ballon d'Or Votes 2012 Poster</a> by <a href="http://www.zazzle.com/geeksta*">geeksta</a></div>
+  </div>
+  <div class="modal-footer">
+    <a href="#" class="close" data-dismiss="modal" class="btn">Close</a>
+  </div>
+</div>
+
 
 
 
@@ -116,7 +131,7 @@
       
           <script src="/js/visgexf.js?v=8"></script>
       
-          <script src="/js/human-disease-network/script.js?v=8"></script>
+          <script src="/js/ballon-dor-votes-2012/script.js?v=8"></script>
       
     
 

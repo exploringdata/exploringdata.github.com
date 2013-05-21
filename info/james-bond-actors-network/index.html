@@ -1,0 +1,167 @@
+
+<!DOCTYPE html>
+<html xmlns:fb="http://ogp.me/ns/fb#" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Relations of James Bond Film Actors based on Common Appearance | Exploring Data</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+      <meta name="description" content="The James Bond Actors visualization is an interactive network graph showing the connections of actors who appeared together in 23 James Bond movies including the latest in the series called Skyfall.">
+    
+    
+      <meta property="og:image" content="http://exploringdata.github.io/img/preview/james-bond-actors-network.jpg">
+    
+    <meta name="author" content="Ramiro Gómez">
+    <link rel="canonical" href="http://exploringdata.github.io/info/james-bond-actors-network/">
+    <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/vendor/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="/vendor/fontawesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/css/style.css?v=8" rel="stylesheet">
+    
+    <!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link rel="shortcut icon" href="/favicon.ico">
+    
+      
+        <link rel="alternate" type="application/rss+xml" title="Exploring Data main RSS feed" href="http://exploringdata.github.io/rss.xml">
+      
+    
+  </head>
+  <body class="">
+    
+    <div id="navbar" class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a id="site-name" class="brand" href="/">Exploring Data</a>
+          <div class="nav-collapse">
+            
+<ul class="nav">
+  <li><a href="/story/"><i class="icon-edit"></i> Data Stories</a></li>
+  <li><a href="/datasearch/"><i class="icon-search"></i> Data Search</a></li>
+  <li><a href="/data-visualization-books/"><i class="icon-book"></i> Data Books</a></li>
+</ul>
+
+            <div id="sharemenu" class="nav pull-right">
+<div class="btn-group">
+  <a href="#" class="btn btn-success dropdown-toggle" data-toggle="dropdown"><i class="icon-share"></i></a>
+  <ul class="share dropdown-menu">
+    <li><a class="btn" href="/rss.xml"><i class="icon-rss"></i> RSS Feed</a></li>
+    <li><a class="btn" href="https://twitter.com/share?url=http%3A%2F%2Fexploringdata.github.io%2Finfo%2Fjames-bond-actors-network%2F"><i class="icon-twitter"></i> Tweet this</a></li>
+    <li><a class="btn" href="https://flattr.com/submit/auto?user_id=rg&url=http%3A%2F%2Fexploringdata.github.io%2Finfo%2Fjames-bond-actors-network%2F&title=Relations+of+James+Bond+Film+Actors+based+on+Common+Appearance&language=en_GB&category=software"><i class="icon-sign-blank"></i> Flattr this</a></li>
+    <li><a class="btn" href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fexploringdata.github.io%2Finfo%2Fjames-bond-actors-network%2F&t=Relations+of+James+Bond+Film+Actors+based+on+Common+Appearance"><i class="icon-facebook"></i> Facebook</a></li>
+    <li><a class="btn" href="https://plus.google.com/share?url=http%3A%2F%2Fexploringdata.github.io%2Finfo%2Fjames-bond-actors-network%2F"><i class="icon-google-plus"></i> Google+</a></li>
+    <li><a class="btn" href="http://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Fexploringdata.github.io%2Finfo%2Fjames-bond-actors-network%2F&title=Relations+of+James+Bond+Film+Actors+based+on+Common+Appearance"><i class="icon-linkedin"></i> LinkedIn</a></li>
+  </ul>
+</div>
+</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+    
+<div id="info" class="container">
+<div class="row">
+  <div class="span9"><h1>Relations of James Bond Film Actors based on Common Appearance</h1>
+  <p>The <a href="/vis/james-bond-actors-network/">James Bond Actors visualization</a> is an interactive network graph showing the connections of actors that appeared together in 23 James Bond movies excluding the 2 Casino Royal films from 1954 and 1967 and Never Say Never Again from 1983. The latest not yet released James Bond film called Skyfall is included.</p>
+<p>The graph consists of 300 nodes and 3319 edges. The size of a node in the graph is determined by the number of James Bond films an actor appeared in, the more appearances the bigger the circle. Two nodes are connected by an edge, if the 2 actors appeared together in at least 1 James Bond film.</p>
+<p>You can restrict the displayed network graph to a specific film by selecting one from the Choose Film menu and you can highlight the connections of a single actor by searching for the name in the top menu. For more details click on the help link in the top menu.</p>
+<p>This network graph visualization was created with data from the <a href="http://www.freebase.com/view/en/james_bond_film_series/-/film/film_series/films_in_series">James Bond Film Series collection</a>. The Freebase data is far from being complete regarding the actors that apeared in James Bond movies. There are more comprehensive data sources, but those I found either don't offer an API or employ too restrictive content policies.</p>
+<p>The graph is rendered with the <a href="http://sigmajs.org/">JavaScript library sigma.js</a>. The Fruchterman-Reingold layout was preprocessed using the <a href="https://gephi.org/">Gephi visualization platform</a>.</p>
+<p>You find the Python code to retrieve the data from Freebase and generate the gexf file in this <a href="https://github.com/exploringdata/james-bond-actors">GitHub repository</a>. The data was last updated October 16 2012. Feel free to leave feedback in the comments and share this visualization with your friends.</p>
+  
+    
+<div class="postinfo">
+<hr>
+<p><i class="icon-calendar"></i> October 16, 2012 by <a href="http://ramiro.org/">Ramiro Gómez</a>.</p>
+
+<div class="tags">
+
+<span class="label label-info"><a href="/tags/network-graph/">network graph</a></span>
+
+<span class="label label-info"><a href="/tags/film/">film</a></span>
+
+<span class="label label-info"><a href="/tags/sigmajs/">sigmajs</a></span>
+
+<span class="label label-info"><a href="/tags/gephi/">gephi</a></span>
+
+<span class="label label-info"><a href="/tags/networkx/">networkx</a></span>
+
+</div>
+
+</div>
+
+  
+  </div>
+  <div class="span3">
+    
+      <h3>Visualization</h3>
+      <a href="/vis/james-bond-actors-network/"><img src="/img/preview/james-bond-actors-network.jpg" alt="visualization preview"></a>
+    
+    <h3>Keep Exploring</h3>
+<div class="share big">
+<a href="/rss.xml" class="btn btn-warning"><i class="icon-rss"> Subscribe to Feed</i></a>
+<a href="https://twitter.com/yaph" class="btn btn-info"><i class="icon-twitter"></i> Follow me on Twitter</a>
+</div>
+<div id="mc_embed_signup" class="clearfix well">
+<form action="http://github.us6.list-manage.com/subscribe/post?u=6e91c5ec6f31498a21bc80826&amp;id=bb7db2c23d" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="form validate" target="_blank" novalidate>
+<label for="mce-EMAIL">Subscribe to the <strong>Datavis Weekly Newsletter</strong></label>
+<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+<div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-success"></div>
+</form>
+</div>
+  </div>
+</div>
+</div>
+
+    
+<div id="comments" class="container">
+<div class="row"><div class="span12">
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+var disqus_shortname = 'exploringdata';
+var disqus_url = 'http://exploringdata.github.io/info/james-bond-actors-network/';
+(function() {
+var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div></div>
+</div>
+
+    
+    <div id="footer" class="container">
+      <div class="row"><div class="span12">
+        <footer>
+          <p class="centered">Exploring Data is a site about data mining and visualization <a href="/about/">learn more</a>.<br>
+          Except where otherwise noted, the works on this site are licensed under a<br><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US">Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a>.<br>
+          <a href="/what-others-say/"><i class="icon-comments"></i> What Others Say</a> | <a href="/sitemap/"><i class="icon-sitemap"></i> Sitemap</a></p>
+        </footer>
+      </div></div>
+    </div>
+    
+    
+
+    <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-5102014-13']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/js/script.js?v=8"></script>
+    
+
+    
+  </body>
+</html>

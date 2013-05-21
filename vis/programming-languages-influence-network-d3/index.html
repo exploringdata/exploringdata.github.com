@@ -1,0 +1,162 @@
+
+<!DOCTYPE html>
+<html xmlns:fb="http://ogp.me/ns/fb#" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Programming Languages Influence Network D3 | Exploring Data</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+      <meta name="description" content="An network graph showing the connections of programming languages based on their influences created with the JavaScript library D3.">
+    
+    
+      <meta property="og:image" content="http://exploringdata.github.io/img/preview/programming-languages-influence-network-d3.jpg">
+    
+    <meta name="author" content="Ramiro Gómez">
+    <link rel="canonical" href="http://exploringdata.github.io/vis/programming-languages-influence-network-d3/">
+    <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/vendor/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="/vendor/fontawesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/css/style.css?v=8" rel="stylesheet">
+    
+      <link href="/css/d3graph.css?v=8" rel="stylesheet">
+    
+    <!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link rel="shortcut icon" href="/favicon.ico">
+    
+      
+        <link rel="alternate" type="application/rss+xml" title="Exploring Data main RSS feed" href="http://exploringdata.github.io/rss.xml">
+      
+    
+  </head>
+  <body class="">
+    
+    <div id="navbar" class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a id="site-name" class="brand" href="/">Exploring Data</a>
+          <div class="nav-collapse">
+            
+            <div id="sharemenu" class="nav pull-right">
+<div class="btn-group">
+  <a href="#" class="btn btn-success dropdown-toggle" data-toggle="dropdown"><i class="icon-share"></i></a>
+  <ul class="share dropdown-menu">
+    <li><a class="btn" href="/rss.xml"><i class="icon-rss"></i> RSS Feed</a></li>
+    <li><a class="btn" href="https://twitter.com/share?url=http%3A%2F%2Fexploringdata.github.io%2Fvis%2Fprogramming-languages-influence-network-d3%2F"><i class="icon-twitter"></i> Tweet this</a></li>
+    <li><a class="btn" href="https://flattr.com/submit/auto?user_id=rg&url=http%3A%2F%2Fexploringdata.github.io%2Fvis%2Fprogramming-languages-influence-network-d3%2F&title=Programming+Languages+Influence+Network+D3&language=en_GB&category=software"><i class="icon-sign-blank"></i> Flattr this</a></li>
+    <li><a class="btn" href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fexploringdata.github.io%2Fvis%2Fprogramming-languages-influence-network-d3%2F&t=Programming+Languages+Influence+Network+D3"><i class="icon-facebook"></i> Facebook</a></li>
+    <li><a class="btn" href="https://plus.google.com/share?url=http%3A%2F%2Fexploringdata.github.io%2Fvis%2Fprogramming-languages-influence-network-d3%2F"><i class="icon-google-plus"></i> Google+</a></li>
+    <li><a class="btn" href="http://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Fexploringdata.github.io%2Fvis%2Fprogramming-languages-influence-network-d3%2F&title=Programming+Languages+Influence+Network+D3"><i class="icon-linkedin"></i> LinkedIn</a></li>
+  </ul>
+</div>
+</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+<div class="container">
+<div class="row"><div class="span12" id="vis"></div></div>
+</div>
+
+    
+<div id="info" class="container">
+<div class="row">
+  <div class="span9"><h1>Programming Languages Influence Network D3</h1>
+  <p>A network graph showing the connections of programming languages based on their influences. Please see the <a href="/vis/programming-languages-influence-network/">interactive programming language network</a> for more information.</p>
+<p>The graph is created with data from the <a href="http://www.freebase.com/view/computer/programming_language">Freebase Programming Language collection</a> and is rendered with the <a href="http://d3js.org/">JavaScript library D3</a> using a Force Atlas layout.</p>
+  
+    
+<div class="postinfo">
+<hr>
+<p><i class="icon-calendar"></i> September 04, 2012 by <a href="http://ramiro.org/">Ramiro Gómez</a>.</p>
+
+<div class="tags">
+
+<span class="label label-info"><a href="/tags/network-graph/">network graph</a></span>
+
+<span class="label label-info"><a href="/tags/programming-languages/">programming languages</a></span>
+
+<span class="label label-info"><a href="/tags/d3/">d3</a></span>
+
+</div>
+
+</div>
+
+  
+  </div>
+  <div class="span3">
+    
+    <h3>Keep Exploring</h3>
+<div class="share big">
+<a href="/rss.xml" class="btn btn-warning"><i class="icon-rss"> Subscribe to Feed</i></a>
+<a href="https://twitter.com/yaph" class="btn btn-info"><i class="icon-twitter"></i> Follow me on Twitter</a>
+</div>
+<div id="mc_embed_signup" class="clearfix well">
+<form action="http://github.us6.list-manage.com/subscribe/post?u=6e91c5ec6f31498a21bc80826&amp;id=bb7db2c23d" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="form validate" target="_blank" novalidate>
+<label for="mce-EMAIL">Subscribe to the <strong>Datavis Weekly Newsletter</strong></label>
+<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+<div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-success"></div>
+</form>
+</div>
+  </div>
+</div>
+</div>
+
+    
+<div id="comments" class="container">
+<div class="row"><div class="span12">
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+var disqus_shortname = 'exploringdata';
+var disqus_url = 'http://exploringdata.github.io/vis/programming-languages-influence-network-d3/';
+(function() {
+var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div></div>
+</div>
+
+    
+    <div id="footer" class="container">
+      <div class="row"><div class="span12">
+        <footer>
+          <p class="centered">Exploring Data is a site about data mining and visualization <a href="/about/">learn more</a>.<br>
+          Except where otherwise noted, the works on this site are licensed under a<br><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US">Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a>.<br>
+          <a href="/what-others-say/"><i class="icon-comments"></i> What Others Say</a> | <a href="/sitemap/"><i class="icon-sitemap"></i> Sitemap</a></p>
+        </footer>
+      </div></div>
+    </div>
+    
+    
+
+    <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-5102014-13']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/js/script.js?v=8"></script>
+    
+      
+          <script src="/vendor/d3/d3.v3.min.js?v=8"></script>
+      
+          <script src="/js/programming-languages-influence-network/d3graph.js?v=8"></script>
+      
+    
+
+    
+  </body>
+</html>

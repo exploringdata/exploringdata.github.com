@@ -3,22 +3,24 @@
 <html xmlns:fb="http://ogp.me/ns/fb#" lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Human Disease Network | Exploring Data</title>
+    <title>Berlin Bike Routes Map | Exploring Data</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-      <meta name="description" content="An interactive network of disorders and disease genes linked by known disorder–gene associations based on the study The Human Disease Network, Goh K-I, Cusick ME, Valle D, Childs B, Vidal M, Barabási A-L (2007), Proc Natl Acad Sci USA 104:8685-8690.">
+      <meta name="description" content="A map of Berlin, Germany showing 14 different biking routes through and around the city. Created with OpenLayers, Open Street Map and data from Senatsverwaltung für Stadtentwicklung und Umwelt.">
     
     
-      <meta property="og:image" content="http://exploringdata.github.io/img/preview/human-disease-network.jpg">
+      <meta property="og:image" content="http://exploringdata.github.io/img/preview/berlin-bike-routes.jpg">
     
     <meta name="author" content="Ramiro Gómez">
-    <link rel="canonical" href="http://exploringdata.github.io/vis/human-disease-network/">
+    <link rel="canonical" href="http://exploringdata.github.io/vis/berlin-bike-routes/">
     <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="/vendor/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
     <link href="/vendor/fontawesome/css/font-awesome.min.css" rel="stylesheet">
     <link href="/css/style.css?v=8" rel="stylesheet">
     
-      <link href="/css/sigmagraphdark.css?v=8" rel="stylesheet">
+      <link href="http://openlayers.org/dev/theme/default/style.css" rel="stylesheet">
+    
+      <link href="/css/berlin-bike-routes/index.css?v=8" rel="stylesheet">
     
     <!--[if lt IE 9]>
       <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -37,26 +39,21 @@
     <a id="site-name" class="brand" href="/">Exploring Data</a>
     <div class="nav-collapse">
       
-<ul class="nav">
-  <li><input class="typeahead" type="text" data-provide="typeahead" placeholder="Highlight node"><i id="search-reset" class="icon-remove"></i></li>
-  
-</ul>
-
       <div id="sharemenu" class="nav pull-right">
 <div class="btn-group">
   <a href="#" class="btn btn-success dropdown-toggle" data-toggle="dropdown"><i class="icon-share"></i></a>
   <ul class="share dropdown-menu">
     <li><a class="btn" href="/rss.xml"><i class="icon-rss"></i> RSS Feed</a></li>
-    <li><a class="btn" href="https://twitter.com/share?url=http%3A%2F%2Fexploringdata.github.io%2Fvis%2Fhuman-disease-network%2F"><i class="icon-twitter"></i> Tweet this</a></li>
-    <li><a class="btn" href="https://flattr.com/submit/auto?user_id=rg&url=http%3A%2F%2Fexploringdata.github.io%2Fvis%2Fhuman-disease-network%2F&title=Human+Disease+Network&language=en_GB&category=software"><i class="icon-sign-blank"></i> Flattr this</a></li>
-    <li><a class="btn" href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fexploringdata.github.io%2Fvis%2Fhuman-disease-network%2F&t=Human+Disease+Network"><i class="icon-facebook"></i> Facebook</a></li>
-    <li><a class="btn" href="https://plus.google.com/share?url=http%3A%2F%2Fexploringdata.github.io%2Fvis%2Fhuman-disease-network%2F"><i class="icon-google-plus"></i> Google+</a></li>
-    <li><a class="btn" href="http://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Fexploringdata.github.io%2Fvis%2Fhuman-disease-network%2F&title=Human+Disease+Network"><i class="icon-linkedin"></i> LinkedIn</a></li>
+    <li><a class="btn" href="https://twitter.com/share?url=http%3A%2F%2Fexploringdata.github.io%2Fvis%2Fberlin-bike-routes%2F"><i class="icon-twitter"></i> Tweet this</a></li>
+    <li><a class="btn" href="https://flattr.com/submit/auto?user_id=rg&url=http%3A%2F%2Fexploringdata.github.io%2Fvis%2Fberlin-bike-routes%2F&title=Berlin+Bike+Routes+Map&language=en_GB&category=software"><i class="icon-sign-blank"></i> Flattr this</a></li>
+    <li><a class="btn" href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fexploringdata.github.io%2Fvis%2Fberlin-bike-routes%2F&t=Berlin+Bike+Routes+Map"><i class="icon-facebook"></i> Facebook</a></li>
+    <li><a class="btn" href="https://plus.google.com/share?url=http%3A%2F%2Fexploringdata.github.io%2Fvis%2Fberlin-bike-routes%2F"><i class="icon-google-plus"></i> Google+</a></li>
+    <li><a class="btn" href="http://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Fexploringdata.github.io%2Fvis%2Fberlin-bike-routes%2F&title=Berlin+Bike+Routes+Map"><i class="icon-linkedin"></i> LinkedIn</a></li>
   </ul>
 </div>
 </div>
       <div class="pull-right">
-        <a href="/info/human-disease-network/" class="btn btn-info"><i class="icon-info-sign"></i> </a>
+        <a href="/info/berlin-bike-routes/" class="btn btn-info"><i class="icon-info-sign"></i> </a>
       </div>
     </div>
   </div>
@@ -64,7 +61,7 @@
 
     
     
-<div id="vis" class="sigma-parent"><div id="sig" class="sigma-expand"></div></div>
+<div id="vis"></div>
 
     
     
@@ -80,20 +77,6 @@
     </div>
     
     
-<div id="shownode" class="modal hide fade">
-  <div class="modal-header">
-    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-    <h3></h3>
-  </div>
-  <div class="modal-body"></div>
-  <div class="modal-footer">
-    <a href="#" class="close" data-dismiss="modal" class="btn">Close</a>
-  </div>
-</div>
-
-
-
-
 
     <script type="text/javascript">
   var _gaq = _gaq || [];
@@ -110,13 +93,11 @@
     <script src="/js/script.js?v=8"></script>
     
       
-          <script src="/vendor/sigma/sigma.min.js?v=8"></script>
+          <script src="http://www.openlayers.org/api/OpenLayers.js"></script>
       
-          <script src="/vendor/sigma/sigma.parseJson.js?v=8"></script>
+          <script src="http://www.openstreetmap.org/openlayers/OpenStreetMap.js"></script>
       
-          <script src="/js/visgexf.js?v=8"></script>
-      
-          <script src="/js/human-disease-network/script.js?v=8"></script>
+          <script src="/js/berlin-bike-routes/index.js?v=8"></script>
       
     
 
