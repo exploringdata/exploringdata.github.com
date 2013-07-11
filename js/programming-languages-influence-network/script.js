@@ -1,3 +1,5 @@
+var gexf = '/gexf/plin_forceatlas2.json';
+
 // langinfo must be accessible from the external freebase text service script
 var langinfo = function(data) {
   var sl = $('#showlang');
@@ -79,7 +81,7 @@ $(function(){
     type: 'directed'
   }
 
-  visgexf.init('sig', '/gexf/plin_forceatlas2.json', props, function() {
+  visgexf.init('sig', gexf, props, function() {
     var filterid = 'paradigms';
     var filters = visgexf.getFilters([filterid]);
     nodeClick(visgexf);
@@ -112,7 +114,7 @@ $(function(){
           }).draw(2,2,2);
         } else {
           visgexf.clear();
-          nodeClick(visgexf.init('sig', '/gexf/plin_forceatlas2.json', props));
+          nodeClick(visgexf.init('sig', gexf, props));
         }
       }
     });
