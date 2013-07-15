@@ -31,3 +31,12 @@ top: 1em;
 cursor:pointer;
 opacity:.8;
 }
+#loading {
+position:absolute;
+left:30%;
+top:25%;
+width:40%;
+color:#fff;
+font-size:2em;
+display:none;
+}

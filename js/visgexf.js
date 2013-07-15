@@ -13,6 +13,7 @@ var visgexf = {
   sourceColor: '#67A9CF',
   targetColor: '#EF8A62',
   init: function(visid, filename, props, callback) {
+    $('#loading').show();
     visgexf.visid = visid;
     visgexf.filename = filename;
     visgexf.props = props;
@@ -42,6 +43,7 @@ var visgexf = {
       visgexf.searchInput.focus();
       // call callback after json is parsed
       if (callback) callback();
+      $('#loading').hide();
     });
     visgexf.sig.bind('upnodes', function(event){
       hnode = visgexf.sig.getNodes(event.content)[0];

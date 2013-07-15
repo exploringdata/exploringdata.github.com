@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
+<url><loc><![CDATA[http://exploringdata.github.io/info/npm-packages-dependencies/]]></loc><lastmod>2013-07-15</lastmod></url>
+
+<url><loc><![CDATA[http://exploringdata.github.io/vis/npm-top-packages-dependencies/]]></loc><lastmod>2013-07-15</lastmod></url>
+
+<url><loc><![CDATA[http://exploringdata.github.io/vis/npm-packages-dependencies/]]></loc><lastmod>2013-07-15</lastmod></url>
+
 <url><loc><![CDATA[http://exploringdata.github.io/vis/ip-location-maps/]]></loc><lastmod>2013-06-11</lastmod></url>
 
 <url><loc><![CDATA[http://exploringdata.github.io/info/visualisingdata-census-twitter-network/]]></loc><lastmod>2013-04-09</lastmod></url>

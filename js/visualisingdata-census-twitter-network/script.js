@@ -50,8 +50,8 @@ $(function(){
     graph: {
       minNodeSize: .5,
       maxNodeSize: 40,
-      minEdgeSize: 1,
-      maxEdgeSize: 1
+      minEdgeSize: .3,
+      maxEdgeSize: .3
     },
     forceLabel: 1,
     type: 'directed'

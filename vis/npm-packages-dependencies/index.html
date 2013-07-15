@@ -1,0 +1,145 @@
+
+<!DOCTYPE html>
+<html xmlns:fb="http://ogp.me/ns/fb#" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>npm Packages Dependencies Graph | Exploring Data</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+      <meta name="description" content="An interactive network graph showing the dependencies between npm packages as of July 12, 2013 rendered with sigma.js and preprocessed with Gephi.">
+    
+    
+      <meta property="og:image" content="http://exploringdata.github.io/img/preview/npm-packages-dependencies.jpg">
+    
+    <meta name="author" content="Ramiro Gómez">
+    <link rel="canonical" href="http://exploringdata.github.io/vis/npm-packages-dependencies/">
+    <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/vendor/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="/vendor/fontawesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/css/style.css?v=8" rel="stylesheet">
+    
+      <link href="/css/sigmagraphdark.css?v=8" rel="stylesheet">
+    
+    
+    <!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link rel="shortcut icon" href="/favicon.ico">
+    
+      
+        <link rel="alternate" type="application/rss+xml" title="Exploring Data main RSS feed" href="http://exploringdata.github.io/rss.xml">
+      
+    
+  </head>
+  <body class="full">
+    
+<div id="navbar" class="navbar navbar-inverse navbar-fixed-top">
+  <div class="navbar-inner">
+    <a id="site-name" class="brand" href="/">Exploring Data</a>
+    <div class="nav-collapse">
+      
+<ul class="nav">
+  <li><input class="typeahead" type="text" data-provide="typeahead" placeholder="Highlight node"><i id="search-reset" class="icon-remove"></i></li>
+</ul>
+
+      <div id="sharemenu" class="nav pull-right">
+<div class="btn-group">
+  <a href="#" class="btn btn-success dropdown-toggle" data-toggle="dropdown"><i class="icon-share"></i></a>
+  <ul class="share dropdown-menu">
+    <li><a class="btn" href="/rss.xml"><i class="icon-rss"></i> RSS Feed</a></li>
+    <li><a class="btn" href="https://twitter.com/share?url=http%3A%2F%2Fexploringdata.github.io%2Fvis%2Fnpm-packages-dependencies%2F"><i class="icon-twitter"></i> Tweet this</a></li>
+    <li><a class="btn" href="https://flattr.com/submit/auto?user_id=rg&url=http%3A%2F%2Fexploringdata.github.io%2Fvis%2Fnpm-packages-dependencies%2F&title=npm+Packages+Dependencies+Graph&language=en_GB&category=software"><i class="icon-sign-blank"></i> Flattr this</a></li>
+    <li><a class="btn" href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fexploringdata.github.io%2Fvis%2Fnpm-packages-dependencies%2F&t=npm+Packages+Dependencies+Graph"><i class="icon-facebook"></i> Facebook</a></li>
+    <li><a class="btn" href="https://plus.google.com/share?url=http%3A%2F%2Fexploringdata.github.io%2Fvis%2Fnpm-packages-dependencies%2F"><i class="icon-google-plus"></i> Google+</a></li>
+    <li><a class="btn" href="http://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Fexploringdata.github.io%2Fvis%2Fnpm-packages-dependencies%2F&title=npm+Packages+Dependencies+Graph"><i class="icon-linkedin"></i> LinkedIn</a></li>
+  </ul>
+</div>
+</div>
+      <div class="pull-right">
+        <a href="/info/npm-packages-dependencies/" class="btn btn-info"><i class="icon-info-sign"></i> </a>
+      </div>
+      
+  
+  <ul class="nav pull-right">
+    <li><div class="btn-group"><a class="btn btn-primary showposter" href="http://www.zazzle.com/graph_of_npm_packages_dependencies_poster-228483208232302752?rf=238355915198956003">Get the Poster</a></div></li>
+  </ul>
+  
+
+    </div>
+  </div>
+</div>
+
+    
+    
+<div id="vis" class="sigma-parent"><div id="loading">Loading the data may take a while, please be patient...</div><div id="sig" class="sigma-expand"></div></div>
+
+    
+    
+    
+    <div id="footer" class="container">
+      <div class="row"><div class="span12">
+        <footer>
+          <p class="centered">Exploring Data is a site about data mining and visualization by <a href="http://ramiro.org/">Ramiro Gómez</a>.<br>
+          Except where otherwise noted, the works on this site are licensed under a<br><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US">Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a>.<br>
+          <a href="/about/"><i class="icon-info-sign"></i> About</a> | <a href="/what-others-say/"><i class="icon-comments"></i> What Others Say</a> | <a href="/sitemap/"><i class="icon-sitemap"></i> Sitemap</a></p>
+        </footer>
+      </div></div>
+    </div>
+    
+    
+<div id="shownode" class="modal hide fade">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+    <h3></h3>
+  </div>
+  <div class="modal-body"></div>
+  <div class="modal-footer">
+    <a href="#" class="close" data-dismiss="modal" class="btn">Close</a>
+  </div>
+</div>
+
+
+<div id="showposter" class="modal hide fade">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+    <h3>npm Packages Dependencies Poster</h3>
+  </div>
+  <div class="modal-body">
+    <div style="text-align:center;line-height:150%"> <a href="http://www.zazzle.com/graph_of_npm_packages_dependencies_poster-228483208232302752?rf=238355915198956003"> <img src="http://rlv.zcache.com/graph_of_npm_packages_dependencies_poster-rbaabc0e8cd0b4958a9d2df341fcf4fdc_wvo_8byvr_325.jpg" alt="Network of Ballon d&#39;Or 2012 Votes" style="border:0;" /> </a> <br /> <a href="http://www.zazzle.com/graph_of_npm_packages_dependencies_poster-228483208232302752?rf=238355915198956003">npm Packages Dependencies Poster</a> by <a href="http://www.zazzle.com/geeksta*">geeksta</a></div>
+  </div>
+  <div class="modal-footer">
+    <a href="#" class="close" data-dismiss="modal" class="btn">Close</a>
+  </div>
+</div>
+
+
+
+
+    <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-5102014-13']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/js/script.js?v=8"></script>
+    
+      
+          <script src="/vendor/sigma/sigma.min.js?v=8"></script>
+      
+          <script src="/vendor/sigma/sigma.parseJson.js?v=8"></script>
+      
+          <script src="/js/visgexf.js?v=8"></script>
+      
+          <script src="/js/npmdepgraph.js?v=8"></script>
+      
+    
+
+    
+  </body>
+</html>

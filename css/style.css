@@ -16,7 +16,7 @@ cite {font-style:italic;}
 
 /* navbar */
 #navbar .btn-group {
-margin-left:4px;
+margin:5px;
 }
 #navbar .btn {
 padding: 4px 12px;
@@ -80,4 +80,8 @@ width:90%;
 .span4 h5 {
 height: 1.4em;
 overflow: hidden;
+}
+/* info pages */
+.vis-preview {
+margin-bottom:1em;
 }
