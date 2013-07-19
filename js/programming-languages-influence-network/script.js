@@ -2,7 +2,7 @@ var gexf = '/gexf/plin_forceatlas2.json';
 
 // langinfo must be accessible from the external freebase text service script
 var langinfo = function(data) {
-  var sl = $('#showlang');
+  var sl = $('#shownode');
   sl.find('h3').text(hlang.label);
   var influenced = 'undefined' !== typeof hlang.attr.attributes.influenced ? hlang.attr.attributes.influenced.split('|').sort().join(', ') : false;
   var influencedby = 'undefined' !== typeof hlang.attr.attributes.influencedby ? hlang.attr.attributes.influencedby.split('|').sort().join(', ') : false;
