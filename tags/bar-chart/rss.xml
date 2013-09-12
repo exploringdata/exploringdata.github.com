@@ -3,9 +3,17 @@
 <channel><title>Tags - Bar-Chart</title>
     <link>http://exploringdata.github.io/tags/bar-chart/rss.xml</link>
     <description>tags/bar-chart</description>
-    <lastBuildDate>Thu, 12 Sep 2013 17:17:10 </lastBuildDate>
+    <lastBuildDate>Thu, 12 Sep 2013 19:52:22 </lastBuildDate>
     <generator>Logya</generator>
     <docs>http://blogs.law.harvard.edu/tech/rss</docs>
+    
+    <item>
+        <title>Rail Suicides in Europe: Absolute vs. Relative</title>
+        <link>http://exploringdata.github.io/story/rail-suicides-europe/</link>
+        <description>A look at rail suicides data for Europe from 2008 to 2011 highlighting the importance of relating numbers.</description>
+        <guid>http://exploringdata.github.io/story/rail-suicides-europe/</guid>
+        <pubDate>Thu, 12 Sep 2013 11:39:40 </pubDate>
+    </item>
     
     <item>
         <title>A Decade of Climate Change in the Guardian</title>
