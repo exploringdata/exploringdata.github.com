@@ -1,2 +1,18 @@
-<?xml version="1.0" encoding="iso-8859-1"?>
-<rss version="2.0"><channel><title>Tags - Ip-Locations</title><link>http://exploringdata.github.io/tags/ip-locations/rss.xml</link><description>tags/ip-locations</description><lastBuildDate>Sat, 20 Jul 2013 00:37:19 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Geo Maps Drawn from IP Locations</title><link>http://exploringdata.github.io/vis/ip-location-maps/</link><description>Geographic maps of the world and most continents drawn based on an IP location dataset with 419433 records.</description><guid>http://exploringdata.github.io/vis/ip-location-maps/</guid><pubDate>Tue, 11 Jun 2013 00:00:00 GMT</pubDate></item></channel></rss>
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel><title>Tags - Ip-Locations</title>
+    <link>http://exploringdata.github.io/tags/ip-locations/rss.xml</link>
+    <description>tags/ip-locations</description>
+    <lastBuildDate>Thu, 12 Sep 2013 14:14:30 </lastBuildDate>
+    <generator>Logya</generator>
+    <docs>http://blogs.law.harvard.edu/tech/rss</docs>
+    
+    <item>
+        <title>Geo Maps Drawn from IP Locations</title>
+        <link>http://localhost:8080/vis/ip-location-maps/</link>
+        <description>Geographic maps of the world and most continents drawn based on an IP location dataset with 419433 records.</description>
+        <guid>http://localhost:8080/vis/ip-location-maps/</guid>
+        <pubDate>Tue, 11 Jun 2013 00:00:00 </pubDate>
+    </item>
+    
+</channel></rss>

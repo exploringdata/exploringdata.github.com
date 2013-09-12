@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel><title>Tags - Europe</title>
+    <link>http://exploringdata.github.io/tags/europe/rss.xml</link>
+    <description>tags/europe</description>
+    <lastBuildDate>Thu, 12 Sep 2013 14:14:30 </lastBuildDate>
+    <generator>Logya</generator>
+    <docs>http://blogs.law.harvard.edu/tech/rss</docs>
+    
+    <item>
+        <title>Rail Suicides in Europe 2008 - 2011</title>
+        <link>http://localhost:8080/story/rail-suicides-europe/</link>
+        <description>None</description>
+        <guid>http://localhost:8080/story/rail-suicides-europe/</guid>
+        <pubDate>Thu, 12 Sep 2013 11:39:40 </pubDate>
+    </item>
+    
+</channel></rss>

@@ -1,2 +1,18 @@
-<?xml version="1.0" encoding="iso-8859-1"?>
-<rss version="2.0"><channel><title>Tags - History</title><link>http://exploringdata.github.io/tags/history/rss.xml</link><description>tags/history</description><lastBuildDate>Sat, 20 Jul 2013 00:37:19 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Evolution of Internet Users from 1990 - 2011</title><link>http://exploringdata.github.io/vis/evolution-internet-users/</link><description>An animated evolution of Internet users across the worlds countries created with the D3 JavaScript library.</description><guid>http://exploringdata.github.io/vis/evolution-internet-users/</guid><pubDate>Sun, 23 Dec 2012 22:27:39 GMT</pubDate></item></channel></rss>
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel><title>Tags - History</title>
+    <link>http://exploringdata.github.io/tags/history/rss.xml</link>
+    <description>tags/history</description>
+    <lastBuildDate>Thu, 12 Sep 2013 14:14:30 </lastBuildDate>
+    <generator>Logya</generator>
+    <docs>http://blogs.law.harvard.edu/tech/rss</docs>
+    
+    <item>
+        <title>Evolution of Internet Users from 1990 - 2011</title>
+        <link>http://localhost:8080/vis/evolution-internet-users/</link>
+        <description>An animated evolution of Internet users across the worlds countries created with the D3 JavaScript library.</description>
+        <guid>http://localhost:8080/vis/evolution-internet-users/</guid>
+        <pubDate>Sun, 23 Dec 2012 22:27:39 </pubDate>
+    </item>
+    
+</channel></rss>

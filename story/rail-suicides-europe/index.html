@@ -1,0 +1,189 @@
+
+<!DOCTYPE html>
+<html xmlns:fb="http://ogp.me/ns/fb#" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Rail Suicides in Europe 2008 - 2011 | Exploring Data</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    <meta name="author" content="Ramiro Gómez">
+    <link rel="canonical" href="http://localhost:8080/story/rail-suicides-europe/">
+    <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/vendor/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="/vendor/fontawesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/css/style.css?v=9" rel="stylesheet">
+    
+    
+    <!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link rel="shortcut icon" href="/favicon.ico">
+    
+      
+        <link rel="alternate" type="application/rss+xml" title="Exploring Data main RSS feed" href="http://localhost:8080/rss.xml">
+      
+    
+  </head>
+  <body class="">
+    
+    <div id="navbar" class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a id="site-name" class="brand" href="/">Exploring Data</a>
+          <div class="nav-collapse">
+            
+<ul class="nav">
+  <li><a href="/story/"><i class="icon-edit"></i> Data Stories</a></li>
+  <li><a href="/datasearch/"><i class="icon-search"></i> Data Search</a></li>
+  <li><a href="/data-visualization-books/"><i class="icon-book"></i> Data Books</a></li>
+</ul>
+
+            <div id="sharemenu" class="nav pull-right">
+<div class="btn-group">
+  <a href="#" class="btn btn-success dropdown-toggle" data-toggle="dropdown"><i class="icon-share"></i></a>
+  <ul class="share dropdown-menu">
+    <li><a class="btn" href="/rss.xml"><i class="icon-rss"></i> RSS Feed</a></li>
+    <li><a class="btn" href="https://twitter.com/share?url=http%3A%2F%2Flocalhost%3A8080%2Fstory%2Frail-suicides-europe%2F"><i class="icon-twitter"></i> Tweet this</a></li>
+    <li><a class="btn" href="https://flattr.com/submit/auto?user_id=rg&url=http%3A%2F%2Flocalhost%3A8080%2Fstory%2Frail-suicides-europe%2F&title=Rail+Suicides+in+Europe+2008+-+2011&language=en_GB&category=software"><i class="icon-sign-blank"></i> Flattr this</a></li>
+    <li><a class="btn" href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Fstory%2Frail-suicides-europe%2F&t=Rail+Suicides+in+Europe+2008+-+2011"><i class="icon-facebook"></i> Facebook</a></li>
+    <li><a class="btn" href="https://plus.google.com/share?url=http%3A%2F%2Flocalhost%3A8080%2Fstory%2Frail-suicides-europe%2F"><i class="icon-google-plus"></i> Google+</a></li>
+    <li><a class="btn" href="http://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A8080%2Fstory%2Frail-suicides-europe%2F&title=Rail+Suicides+in+Europe+2008+-+2011"><i class="icon-linkedin"></i> LinkedIn</a></li>
+  </ul>
+</div>
+</div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+    
+<div id="info" class="container">
+<div class="row">
+  <div class="span9"><h1>Rail Suicides in Europe 2008 - 2011</h1>
+  <p>Yesterday the Guardian published an article about
+<a href="http://www.theguardian.com/news/datablog/2013/sep/11/uk-rail-suicides-decade-data">rail suicides</a>
+in the UK and Europe. It ends with the chart series below, which shows the total
+number of rail suicides in several European countries from 2008 to 2011.</p>
+<iframe src="http://cf.datawrapper.de/XefBI/1/" frameborder="0" allowtransparency="true" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen width="700" height="408"></iframe>
+
+<p>This got me stuck, because of the huge gap between Germany and the other
+countries. Is it because Germany has a bigger
+<a href="https://en.wikipedia.org/wiki/List_of_countries_by_rail_transport_network_size">rail transport network</a>
+than all other European countries? This is probably a factor, but it doesn't
+explain these huge differences.</p>
+<p>Looking back at the Guardian chart the Netherlands had 215 suicides in 2011
+compared to 853 in Germany, but the Netherlands have about 17 million
+inhabitants and Germany about 80 million.</p>
+<p>So does it make sense to look at the absolute numbers alone? I think it doesn't
+in this case and created the new chart below, which takes the population of the
+countries into account.</p>
+<iframe src="http://cf.datawrapper.de/vTXHj/1/" frameborder="0" allowtransparency="true" allowfullscreen="allowfullscreen" webkitallowfullscreen="webkitallowfullscreen" mozallowfullscreen="mozallowfullscreen" oallowfullscreen="oallowfullscreen" msallowfullscreen="msallowfullscreen" width="700" height="418"></iframe>
+
+<p>The new chart tells a different story showing the number of suicides by 100,000
+inhabitants for each country. It turns out that the Czech Republic is the country
+with the highest ratio, then with a considerable gap we see follow-up countries
+like Hungary, Luxembourg, Austria, the Netherlands, and Germany.</p>
+<p>The UK (GB in my chart), which ranked in the top 3 to 5 in the Guardian charts
+actually has a rather low rail suicide rate. Which of course doesn't mean that
+this is not a problem.</p>
+<p>Another more technical difference regarding the charts is that I chose to use
+the same scale across all years, a nice feature <a href="http://datawrapper.de/">datawrapper</a>
+offers. This way it becomes more clear that rail suicides are an increasing
+problem in Europe.</p>
+<p>As mentioned before the railway density would be another factor to consider.
+The main point is to show how important it is to provide context,
+especially when doing comparisons. Absolute and relative numbers often tell
+very different stories.</p>
+  
+    
+<div class="postinfo">
+<hr>
+<p><i class="icon-calendar"></i> September 12, 2013 by <a href="http://ramiro.org/">Ramiro Gómez</a>.</p>
+
+<div class="tags">
+
+<span class="label label-info"><a href="/tags/data-story/">data story</a></span>
+
+<span class="label label-info"><a href="/tags/datawrapper/">datawrapper</a></span>
+
+<span class="label label-info"><a href="/tags/guardian/">guardian</a></span>
+
+<span class="label label-info"><a href="/tags/europe/">europe</a></span>
+
+</div>
+
+</div>
+
+  
+  </div>
+  <div class="span3">
+    
+    
+    <h3>Keep Exploring</h3>
+<div class="share big">
+<a href="/rss.xml" class="btn btn-warning"><i class="icon-rss"> Subscribe to Feed</i></a>
+<a href="https://twitter.com/yaph" class="btn btn-info"><i class="icon-twitter"></i> Follow me on Twitter</a>
+</div>
+<div id="mc_embed_signup" class="clearfix well">
+<form action="http://github.us6.list-manage.com/subscribe/post?u=6e91c5ec6f31498a21bc80826&amp;id=bb7db2c23d" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="form validate" target="_blank" novalidate>
+<label for="mce-EMAIL">Subscribe to the <strong>Datavis Weekly Newsletter</strong></label>
+<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+<div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-success"></div>
+</form>
+</div>
+  </div>
+</div>
+</div>
+
+    
+<div id="comments" class="container">
+<div class="row"><div class="span12">
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+var disqus_shortname = 'exploringdata';
+var disqus_url = 'http://localhost:8080/story/rail-suicides-europe/';
+(function() {
+var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div></div>
+</div>
+
+    
+    <div id="footer" class="container">
+      <div class="row"><div class="span12">
+        <footer>
+          <p class="centered">Exploring Data is a site about data mining and visualization by <a href="http://ramiro.org/">Ramiro Gómez</a>.<br>
+          Except where otherwise noted, the works on this site are licensed under a<br><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US">Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a>.<br>
+          <a href="/about/"><i class="icon-info-sign"></i> About</a> | <a href="/what-others-say/"><i class="icon-comments"></i> What Others Say</a> | <a href="/sitemap/"><i class="icon-sitemap"></i> Sitemap</a></p>
+        </footer>
+      </div></div>
+    </div>
+    
+    
+
+    <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-5102014-13']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/js/script.js?v=9"></script>
+    
+
+    
+  </body>
+</html>
