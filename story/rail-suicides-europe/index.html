@@ -3,14 +3,14 @@
 <html xmlns:fb="http://ogp.me/ns/fb#" lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Rail Suicides in Europe: Absolute vs Relative | Exploring Data</title>
+    <title>Rail Suicides in Europe: Absolute vs. Relative | Exploring Data</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
       <meta name="description" content="A look at rail suicides data for Europe from 2008 to 2011 highlighting the importance of relating numbers.">
     
     
     <meta name="author" content="Ramiro Gómez">
-    <link rel="canonical" href="http://exploringdata.github.io/story/rail-suicides-europe/">
+    <link rel="canonical" href="http://localhost:8080/story/rail-suicides-europe/">
     <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="/vendor/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
     <link href="/vendor/fontawesome/css/font-awesome.min.css" rel="stylesheet">
@@ -23,7 +23,7 @@
     <link rel="shortcut icon" href="/favicon.ico">
     
       
-        <link rel="alternate" type="application/rss+xml" title="Exploring Data main RSS feed" href="http://exploringdata.github.io/rss.xml">
+        <link rel="alternate" type="application/rss+xml" title="Exploring Data main RSS feed" href="http://localhost:8080/rss.xml">
       
     
   </head>
@@ -46,11 +46,11 @@
   <a href="#" class="btn btn-success dropdown-toggle" data-toggle="dropdown"><i class="icon-share"></i></a>
   <ul class="share dropdown-menu">
     <li><a class="btn" href="/rss.xml"><i class="icon-rss"></i> RSS Feed</a></li>
-    <li><a class="btn" href="https://twitter.com/share?url=http%3A%2F%2Fexploringdata.github.io%2Fstory%2Frail-suicides-europe%2F"><i class="icon-twitter"></i> Tweet this</a></li>
-    <li><a class="btn" href="https://flattr.com/submit/auto?user_id=rg&url=http%3A%2F%2Fexploringdata.github.io%2Fstory%2Frail-suicides-europe%2F&title=Rail+Suicides+in+Europe%3A+Absolute+vs+Relative&language=en_GB&category=software"><i class="icon-sign-blank"></i> Flattr this</a></li>
-    <li><a class="btn" href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fexploringdata.github.io%2Fstory%2Frail-suicides-europe%2F&t=Rail+Suicides+in+Europe%3A+Absolute+vs+Relative"><i class="icon-facebook"></i> Facebook</a></li>
-    <li><a class="btn" href="https://plus.google.com/share?url=http%3A%2F%2Fexploringdata.github.io%2Fstory%2Frail-suicides-europe%2F"><i class="icon-google-plus"></i> Google+</a></li>
-    <li><a class="btn" href="http://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Fexploringdata.github.io%2Fstory%2Frail-suicides-europe%2F&title=Rail+Suicides+in+Europe%3A+Absolute+vs+Relative"><i class="icon-linkedin"></i> LinkedIn</a></li>
+    <li><a class="btn" href="https://twitter.com/share?url=http%3A%2F%2Flocalhost%3A8080%2Fstory%2Frail-suicides-europe%2F"><i class="icon-twitter"></i> Tweet this</a></li>
+    <li><a class="btn" href="https://flattr.com/submit/auto?user_id=rg&url=http%3A%2F%2Flocalhost%3A8080%2Fstory%2Frail-suicides-europe%2F&title=Rail+Suicides+in+Europe%3A+Absolute+vs.+Relative&language=en_GB&category=software"><i class="icon-sign-blank"></i> Flattr this</a></li>
+    <li><a class="btn" href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Fstory%2Frail-suicides-europe%2F&t=Rail+Suicides+in+Europe%3A+Absolute+vs.+Relative"><i class="icon-facebook"></i> Facebook</a></li>
+    <li><a class="btn" href="https://plus.google.com/share?url=http%3A%2F%2Flocalhost%3A8080%2Fstory%2Frail-suicides-europe%2F"><i class="icon-google-plus"></i> Google+</a></li>
+    <li><a class="btn" href="http://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A8080%2Fstory%2Frail-suicides-europe%2F&title=Rail+Suicides+in+Europe%3A+Absolute+vs.+Relative"><i class="icon-linkedin"></i> LinkedIn</a></li>
   </ul>
 </div>
 </div>
@@ -65,7 +65,7 @@
     
 <div id="info" class="container">
 <div class="row">
-  <div class="span9"><h1>Rail Suicides in Europe: Absolute vs Relative</h1>
+  <div class="span9"><h1>Rail Suicides in Europe: Absolute vs. Relative</h1>
   <p>Yesterday the Guardian published an article about
 <a href="http://www.theguardian.com/news/datablog/2013/sep/11/uk-rail-suicides-decade-data">rail suicides</a>
 in the UK and Europe. It ends with the chart series below, which shows the total
@@ -100,6 +100,15 @@ problem in Europe.</p>
 The main point, however, is to show how important it is to provide context,
 especially when doing comparisons. Absolute and relative numbers often tell
 very different stories.</p>
+<h2>References and Data Sources</h2>
+<ul>
+<li><a href="http://www.theguardian.com/news/datablog/2013/sep/11/uk-rail-suicides-decade-data">UK rail suicides: a decade of data</a>
+  the article published by the Guardian</li>
+<li><a href="http://data.worldbank.org/indicator/SP.POP.TOTL">Population, total</a>
+  a datset provided by the World Bank</li>
+<li><a href="https://github.com/exploringdata/rail-suicides">Data munging code</a>
+  the source code to calculate the suicide ratios for each year and country</li>
+</ul>
   
     
 <div class="postinfo">
@@ -126,11 +135,12 @@ very different stories.</p>
     
     
     <h3>Keep Exploring</h3>
-<div class="share big">
-<a href="/rss.xml" class="btn btn-warning"><i class="icon-rss"> Subscribe to Feed</i></a>
-<a href="https://twitter.com/yaph" class="btn btn-info"><i class="icon-twitter"></i> Follow me on Twitter</a>
+<div class="btn-group">
+<a href="/rss.xml" class="btn btn-large btn-warning"><i class="icon-rss"> News feed</i></a>
+<a href="https://twitter.com/yaph" class="btn btn-large btn-info"><i class="icon-twitter"></i> Follow</a>
 </div>
-<div id="mc_embed_signup" class="clearfix well">
+
+<div id="mc_embed_signup" class="clearfix well voffset">
 <form action="http://github.us6.list-manage.com/subscribe/post?u=6e91c5ec6f31498a21bc80826&amp;id=bb7db2c23d" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="form validate" target="_blank" novalidate>
 <label for="mce-EMAIL">Subscribe to the <strong>Datavis Weekly Newsletter</strong></label>
 <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
@@ -147,7 +157,7 @@ very different stories.</p>
 <div id="disqus_thread"></div>
 <script type="text/javascript">
 var disqus_shortname = 'exploringdata';
-var disqus_url = 'http://exploringdata.github.io/story/rail-suicides-europe/';
+var disqus_url = 'http://localhost:8080/story/rail-suicides-europe/';
 (function() {
 var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
 dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';

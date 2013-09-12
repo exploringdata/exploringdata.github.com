@@ -3,87 +3,87 @@
 <channel><title>Tags</title>
     <link>http://exploringdata.github.io/tags/rss.xml</link>
     <description>tags</description>
-    <lastBuildDate>Thu, 12 Sep 2013 15:03:46 </lastBuildDate>
+    <lastBuildDate>Thu, 12 Sep 2013 15:44:12 </lastBuildDate>
     <generator>Logya</generator>
     <docs>http://blogs.law.harvard.edu/tech/rss</docs>
     
     <item>
-        <title>Rail Suicides in Europe: Absolute vs Relative</title>
-        <link>http://exploringdata.github.io/story/rail-suicides-europe/</link>
+        <title>Rail Suicides in Europe: Absolute vs. Relative</title>
+        <link>http://localhost:8080/story/rail-suicides-europe/</link>
         <description>A look at rail suicides data for Europe from 2008 to 2011 highlighting the importance of relating numbers.</description>
-        <guid>http://exploringdata.github.io/story/rail-suicides-europe/</guid>
+        <guid>http://localhost:8080/story/rail-suicides-europe/</guid>
         <pubDate>Thu, 12 Sep 2013 11:39:40 </pubDate>
     </item>
     
     <item>
-        <title>Rail Suicides in Europe: Absolute vs Relative</title>
-        <link>http://exploringdata.github.io/story/rail-suicides-europe/</link>
+        <title>Rail Suicides in Europe: Absolute vs. Relative</title>
+        <link>http://localhost:8080/story/rail-suicides-europe/</link>
         <description>A look at rail suicides data for Europe from 2008 to 2011 highlighting the importance of relating numbers.</description>
-        <guid>http://exploringdata.github.io/story/rail-suicides-europe/</guid>
+        <guid>http://localhost:8080/story/rail-suicides-europe/</guid>
         <pubDate>Thu, 12 Sep 2013 11:39:40 </pubDate>
     </item>
     
     <item>
-        <title>Rail Suicides in Europe: Absolute vs Relative</title>
-        <link>http://exploringdata.github.io/story/rail-suicides-europe/</link>
+        <title>Rail Suicides in Europe: Absolute vs. Relative</title>
+        <link>http://localhost:8080/story/rail-suicides-europe/</link>
         <description>A look at rail suicides data for Europe from 2008 to 2011 highlighting the importance of relating numbers.</description>
-        <guid>http://exploringdata.github.io/story/rail-suicides-europe/</guid>
+        <guid>http://localhost:8080/story/rail-suicides-europe/</guid>
         <pubDate>Thu, 12 Sep 2013 11:39:40 </pubDate>
     </item>
     
     <item>
-        <title>Rail Suicides in Europe: Absolute vs Relative</title>
-        <link>http://exploringdata.github.io/story/rail-suicides-europe/</link>
+        <title>Rail Suicides in Europe: Absolute vs. Relative</title>
+        <link>http://localhost:8080/story/rail-suicides-europe/</link>
         <description>A look at rail suicides data for Europe from 2008 to 2011 highlighting the importance of relating numbers.</description>
-        <guid>http://exploringdata.github.io/story/rail-suicides-europe/</guid>
+        <guid>http://localhost:8080/story/rail-suicides-europe/</guid>
         <pubDate>Thu, 12 Sep 2013 11:39:40 </pubDate>
     </item>
     
     <item>
         <title>How npm Packages are Linked by Dependencies</title>
-        <link>http://exploringdata.github.io/info/npm-packages-dependencies/</link>
+        <link>http://localhost:8080/info/npm-packages-dependencies/</link>
         <description>2 Interactive graph visualizations that show how npm packages are linked by dependency relations, the smaller one is limited to packages with at least 10 dependent packages. Graphs were pre-processed with Gephi and are rendered with sigma.js.</description>
-        <guid>http://exploringdata.github.io/info/npm-packages-dependencies/</guid>
+        <guid>http://localhost:8080/info/npm-packages-dependencies/</guid>
         <pubDate>Mon, 15 Jul 2013 16:03:34 </pubDate>
     </item>
     
     <item>
         <title>How npm Packages are Linked by Dependencies</title>
-        <link>http://exploringdata.github.io/info/npm-packages-dependencies/</link>
+        <link>http://localhost:8080/info/npm-packages-dependencies/</link>
         <description>2 Interactive graph visualizations that show how npm packages are linked by dependency relations, the smaller one is limited to packages with at least 10 dependent packages. Graphs were pre-processed with Gephi and are rendered with sigma.js.</description>
-        <guid>http://exploringdata.github.io/info/npm-packages-dependencies/</guid>
+        <guid>http://localhost:8080/info/npm-packages-dependencies/</guid>
         <pubDate>Mon, 15 Jul 2013 16:03:34 </pubDate>
     </item>
     
     <item>
         <title>How npm Packages are Linked by Dependencies</title>
-        <link>http://exploringdata.github.io/info/npm-packages-dependencies/</link>
+        <link>http://localhost:8080/info/npm-packages-dependencies/</link>
         <description>2 Interactive graph visualizations that show how npm packages are linked by dependency relations, the smaller one is limited to packages with at least 10 dependent packages. Graphs were pre-processed with Gephi and are rendered with sigma.js.</description>
-        <guid>http://exploringdata.github.io/info/npm-packages-dependencies/</guid>
+        <guid>http://localhost:8080/info/npm-packages-dependencies/</guid>
         <pubDate>Mon, 15 Jul 2013 16:03:34 </pubDate>
     </item>
     
     <item>
         <title>How npm Packages are Linked by Dependencies</title>
-        <link>http://exploringdata.github.io/info/npm-packages-dependencies/</link>
+        <link>http://localhost:8080/info/npm-packages-dependencies/</link>
         <description>2 Interactive graph visualizations that show how npm packages are linked by dependency relations, the smaller one is limited to packages with at least 10 dependent packages. Graphs were pre-processed with Gephi and are rendered with sigma.js.</description>
-        <guid>http://exploringdata.github.io/info/npm-packages-dependencies/</guid>
+        <guid>http://localhost:8080/info/npm-packages-dependencies/</guid>
         <pubDate>Mon, 15 Jul 2013 16:03:34 </pubDate>
     </item>
     
     <item>
         <title>How npm Packages are Linked by Dependencies</title>
-        <link>http://exploringdata.github.io/info/npm-packages-dependencies/</link>
+        <link>http://localhost:8080/info/npm-packages-dependencies/</link>
         <description>2 Interactive graph visualizations that show how npm packages are linked by dependency relations, the smaller one is limited to packages with at least 10 dependent packages. Graphs were pre-processed with Gephi and are rendered with sigma.js.</description>
-        <guid>http://exploringdata.github.io/info/npm-packages-dependencies/</guid>
+        <guid>http://localhost:8080/info/npm-packages-dependencies/</guid>
         <pubDate>Mon, 15 Jul 2013 16:03:34 </pubDate>
     </item>
     
     <item>
         <title>Geo Maps Drawn from IP Locations</title>
-        <link>http://exploringdata.github.io/vis/ip-location-maps/</link>
+        <link>http://localhost:8080/vis/ip-location-maps/</link>
         <description>Geographic maps of the world and most continents drawn based on an IP location dataset with 419433 records.</description>
-        <guid>http://exploringdata.github.io/vis/ip-location-maps/</guid>
+        <guid>http://localhost:8080/vis/ip-location-maps/</guid>
         <pubDate>Tue, 11 Jun 2013 00:00:00 </pubDate>
     </item>
     

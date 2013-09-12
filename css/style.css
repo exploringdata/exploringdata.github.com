@@ -13,6 +13,7 @@ cite {font-style:italic;}
 .spacer5 {clear:both;height:5px;}
 .centered {text-align:center;}
 .clearfix {clear:both;}
+.voffset {margin:.5em 0;}
 
 /* navbar */
 #navbar .btn-group {
