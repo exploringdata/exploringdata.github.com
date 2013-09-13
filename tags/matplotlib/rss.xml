@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0">
-<channel><title>Tags - Ip-Locations</title>
-    <link>http://exploringdata.github.io/tags/ip-locations/rss.xml</link>
-    <description>tags/ip-locations</description>
+<channel><title>Tags - Matplotlib</title>
+    <link>http://exploringdata.github.io/tags/matplotlib/rss.xml</link>
+    <description>tags/matplotlib</description>
     <lastBuildDate>Fri, 13 Sep 2013 11:38:58 </lastBuildDate>
     <generator>Logya</generator>
     <docs>http://blogs.law.harvard.edu/tech/rss</docs>
