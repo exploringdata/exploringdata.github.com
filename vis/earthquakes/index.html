@@ -92,7 +92,7 @@
     
 <div id="info" class="container">
 <div class="row">
-  <div class="span9"><h1>Real-Time World Map of Earthquakes</h1>
+  <div class="span8"><h1>Real-Time World Map of Earthquakes</h1>
   <p>This map of the world displays recent earthquakes as red circles. The circle sizes correspond to the magnitudes of the earthquakes taking into account that the <a href="https://en.wikipedia.org/wiki/Richter_magnitude_scale">Richter magnitude scale</a> is a logarithmic scale, where an earthquake that measures 5.0 has a shaking amplitude 10 times larger than one that measures 4.0.</p>
 <p>Earthquake data is retrieved via <a href="http://earthquake.usgs.gov/earthquakes/feed/">real-time feeds</a> from the U.S. Geological Survey (USGS). By default data is loaded once. When Auto update data in the top menu is checked, data will be refreshed every minute. Moreover, you can choose different time and earthquake magnitude ranges from the select list in the top menu.</p>
 <p>You can zoom in and out the map with the mouse wheel and drag it around with the mouse button clicked. When you move the mouse over a circle a tooltip with magnitude and location information is displayed, when you click on a circle you are sent to the earthquake's corresponding detail page on the USGS Web site.</p>
@@ -117,7 +117,7 @@
 
   
   </div>
-  <div class="span3">
+  <div class="span4">
     
     
     
@@ -185,12 +185,15 @@ dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
 </script>
     <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
     <script src="/vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    
+
     <script src="/js/script.js?v=10"></script>
     
       
           <script src="/vendor/d3/d3.v2.min.js?v=10"></script>
       
-          <script src="/vendor/d3/queue.min.js?v=10"></script>
+          <script src="/vendor/d3/queue.v1.min.js?v=10"></script>
       
           <script src="/js/earthquakes/script.js?v=10"></script>
       

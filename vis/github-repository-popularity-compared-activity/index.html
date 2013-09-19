@@ -63,7 +63,7 @@
     
 <div id="info" class="container">
 <div class="row">
-  <div class="span9"><h1>Github Repository Popularity Compared to Activity</h1>
+  <div class="span8"><h1>Github Repository Popularity Compared to Activity</h1>
   SELECT repository_url, repository_forks, repository_watchers , COUNT(payload_commit_id) as cnt
 FROM [publicdata:samples.github_timeline]
 WHERE payload_commit_id != ''
@@ -73,7 +73,7 @@ ORDER BY cnt DESC
     
   
   </div>
-  <div class="span3">
+  <div class="span4">
     
     
     
@@ -125,6 +125,9 @@ ORDER BY cnt DESC
 </script>
     <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
     <script src="/vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    
+
     <script src="/js/script.js?v=10"></script>
     
 

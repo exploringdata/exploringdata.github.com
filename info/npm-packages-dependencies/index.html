@@ -9,6 +9,8 @@
       <meta name="description" content="2 Interactive graph visualizations that show how npm packages are linked by dependency relations, the smaller one is limited to packages with at least 10 dependent packages. Graphs were pre-processed with Gephi and are rendered with sigma.js.">
     
     
+      <meta property="og:image" content="http://exploringdata.github.io/img/preview/npm-packages-dependencies.jpg">
+    
     <meta name="author" content="Ramiro Gómez">
     <link rel="canonical" href="http://exploringdata.github.io/info/npm-packages-dependencies/">
     <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -65,7 +67,7 @@
     
 <div id="info" class="container">
 <div class="row">
-  <div class="span9"><h1>How npm Packages are Linked by Dependencies</h1>
+  <div class="span8"><h1>How npm Packages are Linked by Dependencies</h1>
   <p>I created 2 graph visualizations based on data from the <a href="https://npmjs.org/">npm registry</a> for Node Packaged Modules. A graph with <a href="http://exploringdata.github.io/vis/npm-packages-dependencies/">all retrievable packages</a> (WARNING: slow and may crash your browser) and <a href="http://exploringdata.github.io/vis/npm-top-packages-dependencies/">one with packages</a>, that have at least 10 dependent packages. Data for both graphs was collected on July 12, 2013.</p>
 <p>Packages that can be installed via npm often rely on other packages, that need to be installed as well. Information about the registered packages and their dependencies can be queried using the <a href="https://npmjs.org/package/npm">npm package</a>. <a href="https://github.com/yaph/npmdepgraph">See the code</a> I used to gather the data.</p>
 <p>Nodes are sized by their in-degree, i.e. the number of packages dependent on them. A small number of libraries clearly stand out, most prominently <a href="http://exploringdata.github.io/vis/npm-top-packages-dependencies/#underscore">underscore</a> with 3,283 dependent packages followed by the <a href="http://exploringdata.github.io/vis/npm-top-packages-dependencies/#async">async</a> (2,401) and <a href="http://exploringdata.github.io/vis/npm-top-packages-dependencies/#request">request</a> (2,106) packages.</p>
@@ -97,7 +99,7 @@
 
   
   </div>
-  <div class="span3">
+  <div class="span4">
     
     
         <h3>Visualizations</h3>
@@ -172,6 +174,9 @@ dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
 </script>
     <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
     <script src="/vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    
+
     <script src="/js/script.js?v=10"></script>
     
 

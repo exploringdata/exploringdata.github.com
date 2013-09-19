@@ -3,16 +3,48 @@
 <channel><title>Tags</title>
     <link>http://exploringdata.github.io/tags/rss.xml</link>
     <description>tags</description>
-    <lastBuildDate>Mon, 16 Sep 2013 12:50:00 </lastBuildDate>
+    <lastBuildDate>Fri, 20 Sep 2013 00:38:32 </lastBuildDate>
     <generator>Logya</generator>
     <docs>http://blogs.law.harvard.edu/tech/rss</docs>
     
     <item>
-        <title>Rail Suicides in Europe: Absolute vs. Relative</title>
-        <link>http://exploringdata.github.io/story/rail-suicides-europe/</link>
-        <description>A look at rail suicides data for Europe from 2008 to 2011 highlighting the importance of relating numbers.</description>
-        <guid>http://exploringdata.github.io/story/rail-suicides-europe/</guid>
-        <pubDate>Thu, 12 Sep 2013 11:39:40 </pubDate>
+        <title>Where in the World Happen Most Murders</title>
+        <link>http://exploringdata.github.io/info/intentional-homicides/</link>
+        <description>A series of maps of the world showing where in the world the least and the most murders happen for the years 1995 to 2011.</description>
+        <guid>http://exploringdata.github.io/info/intentional-homicides/</guid>
+        <pubDate>Fri, 20 Sep 2013 00:03:53 </pubDate>
+    </item>
+    
+    <item>
+        <title>Where in the World Happen Most Murders</title>
+        <link>http://exploringdata.github.io/info/intentional-homicides/</link>
+        <description>A series of maps of the world showing where in the world the least and the most murders happen for the years 1995 to 2011.</description>
+        <guid>http://exploringdata.github.io/info/intentional-homicides/</guid>
+        <pubDate>Fri, 20 Sep 2013 00:03:53 </pubDate>
+    </item>
+    
+    <item>
+        <title>Where in the World Happen Most Murders</title>
+        <link>http://exploringdata.github.io/info/intentional-homicides/</link>
+        <description>A series of maps of the world showing where in the world the least and the most murders happen for the years 1995 to 2011.</description>
+        <guid>http://exploringdata.github.io/info/intentional-homicides/</guid>
+        <pubDate>Fri, 20 Sep 2013 00:03:53 </pubDate>
+    </item>
+    
+    <item>
+        <title>Where in the World Happen Most Murders</title>
+        <link>http://exploringdata.github.io/info/intentional-homicides/</link>
+        <description>A series of maps of the world showing where in the world the least and the most murders happen for the years 1995 to 2011.</description>
+        <guid>http://exploringdata.github.io/info/intentional-homicides/</guid>
+        <pubDate>Fri, 20 Sep 2013 00:03:53 </pubDate>
+    </item>
+    
+    <item>
+        <title>Where in the World Happen Most Murders</title>
+        <link>http://exploringdata.github.io/info/intentional-homicides/</link>
+        <description>A series of maps of the world showing where in the world the least and the most murders happen for the years 1995 to 2011.</description>
+        <guid>http://exploringdata.github.io/info/intentional-homicides/</guid>
+        <pubDate>Fri, 20 Sep 2013 00:03:53 </pubDate>
     </item>
     
     <item>
@@ -53,38 +85,6 @@
         <description>A look at rail suicides data for Europe from 2008 to 2011 highlighting the importance of relating numbers.</description>
         <guid>http://exploringdata.github.io/story/rail-suicides-europe/</guid>
         <pubDate>Thu, 12 Sep 2013 11:39:40 </pubDate>
-    </item>
-    
-    <item>
-        <title>How npm Packages are Linked by Dependencies</title>
-        <link>http://exploringdata.github.io/info/npm-packages-dependencies/</link>
-        <description>2 Interactive graph visualizations that show how npm packages are linked by dependency relations, the smaller one is limited to packages with at least 10 dependent packages. Graphs were pre-processed with Gephi and are rendered with sigma.js.</description>
-        <guid>http://exploringdata.github.io/info/npm-packages-dependencies/</guid>
-        <pubDate>Mon, 15 Jul 2013 16:03:34 </pubDate>
-    </item>
-    
-    <item>
-        <title>How npm Packages are Linked by Dependencies</title>
-        <link>http://exploringdata.github.io/info/npm-packages-dependencies/</link>
-        <description>2 Interactive graph visualizations that show how npm packages are linked by dependency relations, the smaller one is limited to packages with at least 10 dependent packages. Graphs were pre-processed with Gephi and are rendered with sigma.js.</description>
-        <guid>http://exploringdata.github.io/info/npm-packages-dependencies/</guid>
-        <pubDate>Mon, 15 Jul 2013 16:03:34 </pubDate>
-    </item>
-    
-    <item>
-        <title>How npm Packages are Linked by Dependencies</title>
-        <link>http://exploringdata.github.io/info/npm-packages-dependencies/</link>
-        <description>2 Interactive graph visualizations that show how npm packages are linked by dependency relations, the smaller one is limited to packages with at least 10 dependent packages. Graphs were pre-processed with Gephi and are rendered with sigma.js.</description>
-        <guid>http://exploringdata.github.io/info/npm-packages-dependencies/</guid>
-        <pubDate>Mon, 15 Jul 2013 16:03:34 </pubDate>
-    </item>
-    
-    <item>
-        <title>How npm Packages are Linked by Dependencies</title>
-        <link>http://exploringdata.github.io/info/npm-packages-dependencies/</link>
-        <description>2 Interactive graph visualizations that show how npm packages are linked by dependency relations, the smaller one is limited to packages with at least 10 dependent packages. Graphs were pre-processed with Gephi and are rendered with sigma.js.</description>
-        <guid>http://exploringdata.github.io/info/npm-packages-dependencies/</guid>
-        <pubDate>Mon, 15 Jul 2013 16:03:34 </pubDate>
     </item>
     
 </channel></rss>

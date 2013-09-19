@@ -2,6 +2,9 @@
 var containerwidth = function(selector) {
   return parseInt($(selector).width())
 };
+function containerDim(selector, dim) {
+    return parseInt(d3.select(selector).style(dim))
+}
 $(function(){
   $('.nav a[href="'+document.location.pathname+'"]').parent('li').attr('class', 'active');
   $('.share a').click(function(e){

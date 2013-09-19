@@ -3,9 +3,25 @@
 <channel><title>Exploring Data News Feed</title>
     <link>http://exploringdata.github.io/rss.xml</link>
     <description></description>
-    <lastBuildDate>Mon, 16 Sep 2013 12:50:00 </lastBuildDate>
+    <lastBuildDate>Fri, 20 Sep 2013 00:38:32 </lastBuildDate>
     <generator>Logya</generator>
     <docs>http://blogs.law.harvard.edu/tech/rss</docs>
+    
+    <item>
+        <title>Where in the World Happen Most Murders</title>
+        <link>http://exploringdata.github.io/info/intentional-homicides/</link>
+        <description>A series of maps of the world showing where in the world the least and the most murders happen for the years 1995 to 2011.</description>
+        <guid>http://exploringdata.github.io/info/intentional-homicides/</guid>
+        <pubDate>Fri, 20 Sep 2013 00:03:53 </pubDate>
+    </item>
+    
+    <item>
+        <title>World Map of Intentional Homicides</title>
+        <link>http://exploringdata.github.io/map/world/intentional-homicides/</link>
+        <description>A series of geographic Choropleth maps showing the number of intentional homicides by country per 100,000 people. Created using World Bank data and D3.js.</description>
+        <guid>http://exploringdata.github.io/map/world/intentional-homicides/</guid>
+        <pubDate>Thu, 19 Sep 2013 23:37:53 </pubDate>
+    </item>
     
     <item>
         <title>Rail Suicides in Europe: Absolute vs. Relative</title>
@@ -69,22 +85,6 @@
         <description>Explore a decade of climate change, global warming, natural disaster, extreme weather, pollution and deforestation in the articles published by the Guardian.</description>
         <guid>http://exploringdata.github.io/vis/climate-changes-decade/</guid>
         <pubDate>Fri, 05 Apr 2013 00:56:02 </pubDate>
-    </item>
-    
-    <item>
-        <title>How Footballers Relate based on Google Searches</title>
-        <link>http://exploringdata.github.io/info/footballers-search-relations/</link>
-        <description>The footballers search relations visualization shows a network graph of former and current football players and managers related by Google searches with results containing knowledge graph information.</description>
-        <guid>http://exploringdata.github.io/info/footballers-search-relations/</guid>
-        <pubDate>Wed, 13 Mar 2013 01:28:01 </pubDate>
-    </item>
-    
-    <item>
-        <title>Footballers Search Relations Network</title>
-        <link>http://exploringdata.github.io/vis/footballers-search-relations/</link>
-        <description>An interactive network graph showing the relations of footballers based on Google searches as shown in knowledge graph information.</description>
-        <guid>http://exploringdata.github.io/vis/footballers-search-relations/</guid>
-        <pubDate>Wed, 13 Mar 2013 01:28:01 </pubDate>
     </item>
     
 </channel></rss>
