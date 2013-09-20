@@ -3,15 +3,15 @@
 <channel><title>Tags - Nodejs</title>
     <link>http://exploringdata.github.io/tags/nodejs/rss.xml</link>
     <description>tags/nodejs</description>
-    <lastBuildDate>Fri, 20 Sep 2013 00:38:32 </lastBuildDate>
+    <lastBuildDate>Fri, 20 Sep 2013 00:42:26 </lastBuildDate>
     <generator>Logya</generator>
     <docs>http://blogs.law.harvard.edu/tech/rss</docs>
     
     <item>
         <title>How npm Packages are Linked by Dependencies</title>
-        <link>http://exploringdata.github.io/info/npm-packages-dependencies/</link>
+        <link>http://localhost:8080/info/npm-packages-dependencies/</link>
         <description>2 Interactive graph visualizations that show how npm packages are linked by dependency relations, the smaller one is limited to packages with at least 10 dependent packages. Graphs were pre-processed with Gephi and are rendered with sigma.js.</description>
-        <guid>http://exploringdata.github.io/info/npm-packages-dependencies/</guid>
+        <guid>http://localhost:8080/info/npm-packages-dependencies/</guid>
         <pubDate>Mon, 15 Jul 2013 16:03:34 </pubDate>
     </item>
     

@@ -3,15 +3,15 @@
 <channel><title>Map</title>
     <link>http://exploringdata.github.io/map/rss.xml</link>
     <description>map</description>
-    <lastBuildDate>Fri, 20 Sep 2013 00:38:32 </lastBuildDate>
+    <lastBuildDate>Fri, 20 Sep 2013 00:42:26 </lastBuildDate>
     <generator>Logya</generator>
     <docs>http://blogs.law.harvard.edu/tech/rss</docs>
     
     <item>
         <title>World Map of Intentional Homicides</title>
-        <link>http://exploringdata.github.io/map/world/intentional-homicides/</link>
+        <link>http://localhost:8080/map/world/intentional-homicides/</link>
         <description>A series of geographic Choropleth maps showing the number of intentional homicides by country per 100,000 people. Created using World Bank data and D3.js.</description>
-        <guid>http://exploringdata.github.io/map/world/intentional-homicides/</guid>
+        <guid>http://localhost:8080/map/world/intentional-homicides/</guid>
         <pubDate>Thu, 19 Sep 2013 23:37:53 </pubDate>
     </item>
     
