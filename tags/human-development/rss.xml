@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel><title>Tags - Human-Development</title>
+    <link>http://exploringdata.github.io/tags/human-development/rss.xml</link>
+    <description>tags/human-development</description>
+    <lastBuildDate>Wed, 25 Sep 2013 17:16:05 </lastBuildDate>
+    <generator>Logya</generator>
+    <docs>http://blogs.law.harvard.edu/tech/rss</docs>
+    
+    <item>
+        <title>World Aid Flow, Transparency, Development</title>
+        <link>http://exploringdata.github.io/vis/world-aid-transparency/</link>
+        <description>An interactive visualization looking at world aid flow, aid transparency, and development in receiving countries created with the D3 JavaScript library.</description>
+        <guid>http://exploringdata.github.io/vis/world-aid-transparency/</guid>
+        <pubDate>Fri, 23 Nov 2012 13:46:48 </pubDate>
+    </item>
+    
+</channel></rss>

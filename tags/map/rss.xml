@@ -3,47 +3,47 @@
 <channel><title>Tags - Map</title>
     <link>http://exploringdata.github.io/tags/map/rss.xml</link>
     <description>tags/map</description>
-    <lastBuildDate>Fri, 20 Sep 2013 00:42:26 </lastBuildDate>
+    <lastBuildDate>Wed, 25 Sep 2013 17:16:05 </lastBuildDate>
     <generator>Logya</generator>
     <docs>http://blogs.law.harvard.edu/tech/rss</docs>
     
     <item>
         <title>Where in the World Happen Most Murders</title>
-        <link>http://localhost:8080/info/intentional-homicides/</link>
+        <link>http://exploringdata.github.io/info/intentional-homicides/</link>
         <description>A series of maps of the world showing where in the world the least and the most murders happen for the years 1995 to 2011.</description>
-        <guid>http://localhost:8080/info/intentional-homicides/</guid>
+        <guid>http://exploringdata.github.io/info/intentional-homicides/</guid>
         <pubDate>Fri, 20 Sep 2013 00:03:53 </pubDate>
     </item>
     
     <item>
         <title>Geo Maps Drawn from IP Locations</title>
-        <link>http://localhost:8080/vis/ip-location-maps/</link>
+        <link>http://exploringdata.github.io/vis/ip-location-maps/</link>
         <description>Geographic maps of the world and most continents drawn based on an IP location dataset with 419433 records.</description>
-        <guid>http://localhost:8080/vis/ip-location-maps/</guid>
+        <guid>http://exploringdata.github.io/vis/ip-location-maps/</guid>
         <pubDate>Tue, 11 Jun 2013 00:00:00 </pubDate>
     </item>
     
     <item>
         <title>A Map of Bike Routes in Berlin, Germany</title>
-        <link>http://localhost:8080/info/berlin-bike-routes/</link>
+        <link>http://exploringdata.github.io/info/berlin-bike-routes/</link>
         <description>The bike routes map for Berlin, Germany shows 14 different biking routes through and around the city. Created with OpenLayers, Open Street Map and data from Senatsverwaltung für Stadtentwicklung und Umwelt.</description>
-        <guid>http://localhost:8080/info/berlin-bike-routes/</guid>
+        <guid>http://exploringdata.github.io/info/berlin-bike-routes/</guid>
         <pubDate>Tue, 19 Feb 2013 02:02:03 </pubDate>
     </item>
     
     <item>
         <title>Real-Time World Map of Earthquakes</title>
-        <link>http://localhost:8080/vis/earthquakes/</link>
+        <link>http://exploringdata.github.io/vis/earthquakes/</link>
         <description>A geographic map of the world showing real-time data for recent earthquakes rendered with the D3 JavaScript library.</description>
-        <guid>http://localhost:8080/vis/earthquakes/</guid>
+        <guid>http://exploringdata.github.io/vis/earthquakes/</guid>
         <pubDate>Wed, 05 Dec 2012 23:37:53 </pubDate>
     </item>
     
     <item>
         <title>World Aid Flow, Transparency, Development</title>
-        <link>http://localhost:8080/vis/world-aid-transparency/</link>
+        <link>http://exploringdata.github.io/vis/world-aid-transparency/</link>
         <description>An interactive visualization looking at world aid flow, aid transparency, and development in receiving countries created with the D3 JavaScript library.</description>
-        <guid>http://localhost:8080/vis/world-aid-transparency/</guid>
+        <guid>http://exploringdata.github.io/vis/world-aid-transparency/</guid>
         <pubDate>Fri, 23 Nov 2012 13:46:48 </pubDate>
     </item>
     
