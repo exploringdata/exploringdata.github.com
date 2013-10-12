@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0">
 <channel><title>Tags - Twitter</title>
-    <link>http://exploringdata.github.io/tags/twitter/rss.xml</link>
+    <link>http://exploringdata.github.io</link>
     <description>tags/twitter</description>
-    <lastBuildDate>Wed, 25 Sep 2013 17:16:05 </lastBuildDate>
+    <lastBuildDate>Sat, 12 Oct 2013 21:10:38 </lastBuildDate>
     <generator>Logya</generator>
     <docs>http://blogs.law.harvard.edu/tech/rss</docs>
     
