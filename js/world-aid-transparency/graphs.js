@@ -10,7 +10,7 @@ var mapselect = '#map',
   path = d3.geo.path().projection(projection);
 
 var tf = function() {
-  return 'translate(' + width / 2 + ',' + height / 1.8 + ')'
+  return 'translate(' + width / 2 + ',' + height / 1.8 + ')scale(' + 100 / width + ')'
 };
 
 var rescale = function() {
