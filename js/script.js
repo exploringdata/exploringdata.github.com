@@ -18,4 +18,5 @@ $(function(){
     e.preventDefault();
     $('#help').modal();
   });
+  $('a[href*="http"]').attr('target', '_top');
 });
