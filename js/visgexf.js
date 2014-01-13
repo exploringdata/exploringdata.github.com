@@ -214,7 +214,7 @@ var visgexf = {
       document.location.hash = q;
       return;
     }
-    var h = document.location.hash.replace(/^#/, '');
+    var h = decodeURIComponent(document.location.hash.replace(/^#/, ''));
     $('.modal').modal('hide');
     visgexf.nodeSearch(h);
   },

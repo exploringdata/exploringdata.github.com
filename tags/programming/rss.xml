@@ -3,31 +3,31 @@
 <channel><title>Tags - Programming</title>
     <link>http://exploringdata.github.io</link>
     <description>tags/programming</description>
-    <lastBuildDate>Mon, 13 Jan 2014 21:54:58 </lastBuildDate>
+    <lastBuildDate>Tue, 14 Jan 2014 00:09:36 </lastBuildDate>
     <generator>Logya</generator>
     <docs>http://blogs.law.harvard.edu/tech/rss</docs>
     
     <item>
         <title>How npm Packages are Linked by Dependencies</title>
-        <link>http://exploringdata.github.io/info/npm-packages-dependencies/</link>
+        <link>http://localhost:8080/info/npm-packages-dependencies/</link>
         <description>2 Interactive graph visualizations that show how npm packages are linked by dependency relations, the smaller one is limited to packages with at least 10 dependent packages. Graphs were pre-processed with Gephi and are rendered with sigma.js.</description>
-        <guid>http://exploringdata.github.io/info/npm-packages-dependencies/</guid>
+        <guid>http://localhost:8080/info/npm-packages-dependencies/</guid>
         <pubDate>Mon, 15 Jul 2013 16:03:34 </pubDate>
     </item>
     
     <item>
         <title>How Programmers Relate based on Google Searches</title>
-        <link>http://exploringdata.github.io/info/programmers-search-relations/</link>
+        <link>http://localhost:8080/info/programmers-search-relations/</link>
         <description>The programmers search relations visualization shows a network graph of programmers related by Google searches with results containing knowledge graph information.</description>
-        <guid>http://exploringdata.github.io/info/programmers-search-relations/</guid>
+        <guid>http://localhost:8080/info/programmers-search-relations/</guid>
         <pubDate>Wed, 06 Mar 2013 15:25:03 </pubDate>
     </item>
     
     <item>
         <title>How Programming Languages Influenced Each Other</title>
-        <link>http://exploringdata.github.io/info/programming-languages-influence-network/</link>
+        <link>http://localhost:8080/info/programming-languages-influence-network/</link>
         <description>The programming languages influence network is an interactive graph visualization where languages are connected by influence relations based on data from Freebase.</description>
-        <guid>http://exploringdata.github.io/info/programming-languages-influence-network/</guid>
+        <guid>http://localhost:8080/info/programming-languages-influence-network/</guid>
         <pubDate>Fri, 07 Sep 2012 18:57:46 </pubDate>
     </item>
     

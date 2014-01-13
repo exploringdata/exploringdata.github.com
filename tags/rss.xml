@@ -3,87 +3,87 @@
 <channel><title>Tags</title>
     <link>http://exploringdata.github.io</link>
     <description>tags</description>
-    <lastBuildDate>Mon, 13 Jan 2014 21:54:58 </lastBuildDate>
+    <lastBuildDate>Tue, 14 Jan 2014 00:09:36 </lastBuildDate>
     <generator>Logya</generator>
     <docs>http://blogs.law.harvard.edu/tech/rss</docs>
     
     <item>
-        <title>Who Voted for Whom at Ballon d'Or 2013</title>
-        <link>http://exploringdata.github.io/info/ballon-dor-male-players-votes-2013/</link>
+        <title>Falcao and Iniesta the top players in 2013 according to Ronaldo and Messi</title>
+        <link>http://localhost:8080/info/ballon-dor-male-players-votes-2013/</link>
         <description>The Ballon d'Or 2013 visualization shows an interactive network graph of voters and voted football players related based on votes cast for the male FIFA Ballon d'Or award in 2013.</description>
-        <guid>http://exploringdata.github.io/info/ballon-dor-male-players-votes-2013/</guid>
+        <guid>http://localhost:8080/info/ballon-dor-male-players-votes-2013/</guid>
         <pubDate>Mon, 13 Jan 2014 21:50:20 </pubDate>
     </item>
     
     <item>
-        <title>Who Voted for Whom at Ballon d'Or 2013</title>
-        <link>http://exploringdata.github.io/info/ballon-dor-male-players-votes-2013/</link>
+        <title>Falcao and Iniesta the top players in 2013 according to Ronaldo and Messi</title>
+        <link>http://localhost:8080/info/ballon-dor-male-players-votes-2013/</link>
         <description>The Ballon d'Or 2013 visualization shows an interactive network graph of voters and voted football players related based on votes cast for the male FIFA Ballon d'Or award in 2013.</description>
-        <guid>http://exploringdata.github.io/info/ballon-dor-male-players-votes-2013/</guid>
+        <guid>http://localhost:8080/info/ballon-dor-male-players-votes-2013/</guid>
         <pubDate>Mon, 13 Jan 2014 21:50:20 </pubDate>
     </item>
     
     <item>
-        <title>Who Voted for Whom at Ballon d'Or 2013</title>
-        <link>http://exploringdata.github.io/info/ballon-dor-male-players-votes-2013/</link>
+        <title>Falcao and Iniesta the top players in 2013 according to Ronaldo and Messi</title>
+        <link>http://localhost:8080/info/ballon-dor-male-players-votes-2013/</link>
         <description>The Ballon d'Or 2013 visualization shows an interactive network graph of voters and voted football players related based on votes cast for the male FIFA Ballon d'Or award in 2013.</description>
-        <guid>http://exploringdata.github.io/info/ballon-dor-male-players-votes-2013/</guid>
+        <guid>http://localhost:8080/info/ballon-dor-male-players-votes-2013/</guid>
         <pubDate>Mon, 13 Jan 2014 21:50:20 </pubDate>
     </item>
     
     <item>
-        <title>Who Voted for Whom at Ballon d'Or 2013</title>
-        <link>http://exploringdata.github.io/info/ballon-dor-male-players-votes-2013/</link>
+        <title>Falcao and Iniesta the top players in 2013 according to Ronaldo and Messi</title>
+        <link>http://localhost:8080/info/ballon-dor-male-players-votes-2013/</link>
         <description>The Ballon d'Or 2013 visualization shows an interactive network graph of voters and voted football players related based on votes cast for the male FIFA Ballon d'Or award in 2013.</description>
-        <guid>http://exploringdata.github.io/info/ballon-dor-male-players-votes-2013/</guid>
+        <guid>http://localhost:8080/info/ballon-dor-male-players-votes-2013/</guid>
         <pubDate>Mon, 13 Jan 2014 21:50:20 </pubDate>
     </item>
     
     <item>
-        <title>Who Voted for Whom at Ballon d'Or 2013</title>
-        <link>http://exploringdata.github.io/info/ballon-dor-male-players-votes-2013/</link>
+        <title>Falcao and Iniesta the top players in 2013 according to Ronaldo and Messi</title>
+        <link>http://localhost:8080/info/ballon-dor-male-players-votes-2013/</link>
         <description>The Ballon d'Or 2013 visualization shows an interactive network graph of voters and voted football players related based on votes cast for the male FIFA Ballon d'Or award in 2013.</description>
-        <guid>http://exploringdata.github.io/info/ballon-dor-male-players-votes-2013/</guid>
+        <guid>http://localhost:8080/info/ballon-dor-male-players-votes-2013/</guid>
         <pubDate>Mon, 13 Jan 2014 21:50:20 </pubDate>
     </item>
     
     <item>
-        <title>Who Voted for Whom at Ballon d'Or 2013</title>
-        <link>http://exploringdata.github.io/info/ballon-dor-male-players-votes-2013/</link>
+        <title>Falcao and Iniesta the top players in 2013 according to Ronaldo and Messi</title>
+        <link>http://localhost:8080/info/ballon-dor-male-players-votes-2013/</link>
         <description>The Ballon d'Or 2013 visualization shows an interactive network graph of voters and voted football players related based on votes cast for the male FIFA Ballon d'Or award in 2013.</description>
-        <guid>http://exploringdata.github.io/info/ballon-dor-male-players-votes-2013/</guid>
+        <guid>http://localhost:8080/info/ballon-dor-male-players-votes-2013/</guid>
         <pubDate>Mon, 13 Jan 2014 21:50:20 </pubDate>
     </item>
     
     <item>
         <title>Where in the World Happen Most Murders</title>
-        <link>http://exploringdata.github.io/info/intentional-homicides/</link>
+        <link>http://localhost:8080/info/intentional-homicides/</link>
         <description>A series of maps of the world showing where in the world the least and the most murders happen for the years 1995 to 2011.</description>
-        <guid>http://exploringdata.github.io/info/intentional-homicides/</guid>
+        <guid>http://localhost:8080/info/intentional-homicides/</guid>
         <pubDate>Fri, 20 Sep 2013 00:03:53 </pubDate>
     </item>
     
     <item>
         <title>Where in the World Happen Most Murders</title>
-        <link>http://exploringdata.github.io/info/intentional-homicides/</link>
+        <link>http://localhost:8080/info/intentional-homicides/</link>
         <description>A series of maps of the world showing where in the world the least and the most murders happen for the years 1995 to 2011.</description>
-        <guid>http://exploringdata.github.io/info/intentional-homicides/</guid>
+        <guid>http://localhost:8080/info/intentional-homicides/</guid>
         <pubDate>Fri, 20 Sep 2013 00:03:53 </pubDate>
     </item>
     
     <item>
         <title>Where in the World Happen Most Murders</title>
-        <link>http://exploringdata.github.io/info/intentional-homicides/</link>
+        <link>http://localhost:8080/info/intentional-homicides/</link>
         <description>A series of maps of the world showing where in the world the least and the most murders happen for the years 1995 to 2011.</description>
-        <guid>http://exploringdata.github.io/info/intentional-homicides/</guid>
+        <guid>http://localhost:8080/info/intentional-homicides/</guid>
         <pubDate>Fri, 20 Sep 2013 00:03:53 </pubDate>
     </item>
     
     <item>
         <title>Where in the World Happen Most Murders</title>
-        <link>http://exploringdata.github.io/info/intentional-homicides/</link>
+        <link>http://localhost:8080/info/intentional-homicides/</link>
         <description>A series of maps of the world showing where in the world the least and the most murders happen for the years 1995 to 2011.</description>
-        <guid>http://exploringdata.github.io/info/intentional-homicides/</guid>
+        <guid>http://localhost:8080/info/intentional-homicides/</guid>
         <pubDate>Fri, 20 Sep 2013 00:03:53 </pubDate>
     </item>
     

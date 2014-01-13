@@ -3,15 +3,15 @@
 <channel><title>Tags - History</title>
     <link>http://exploringdata.github.io</link>
     <description>tags/history</description>
-    <lastBuildDate>Mon, 13 Jan 2014 21:54:58 </lastBuildDate>
+    <lastBuildDate>Tue, 14 Jan 2014 00:09:36 </lastBuildDate>
     <generator>Logya</generator>
     <docs>http://blogs.law.harvard.edu/tech/rss</docs>
     
     <item>
         <title>Evolution of Internet Users from 1990 - 2011</title>
-        <link>http://exploringdata.github.io/vis/evolution-internet-users/</link>
+        <link>http://localhost:8080/vis/evolution-internet-users/</link>
         <description>An animated evolution of Internet users across the worlds countries created with the D3 JavaScript library.</description>
-        <guid>http://exploringdata.github.io/vis/evolution-internet-users/</guid>
+        <guid>http://localhost:8080/vis/evolution-internet-users/</guid>
         <pubDate>Sun, 23 Dec 2012 22:27:39 </pubDate>
     </item>
     
