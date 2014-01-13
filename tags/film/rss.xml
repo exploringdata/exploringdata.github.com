@@ -3,15 +3,15 @@
 <channel><title>Tags - Film</title>
     <link>http://exploringdata.github.io</link>
     <description>tags/film</description>
-    <lastBuildDate>Tue, 14 Jan 2014 00:09:36 </lastBuildDate>
+    <lastBuildDate>Tue, 14 Jan 2014 00:15:47 </lastBuildDate>
     <generator>Logya</generator>
     <docs>http://blogs.law.harvard.edu/tech/rss</docs>
     
     <item>
         <title>Relations of James Bond Film Actors based on Common Appearance</title>
-        <link>http://localhost:8080/info/james-bond-actors-network/</link>
+        <link>http://exploringdata.github.io/info/james-bond-actors-network/</link>
         <description>The James Bond Actors visualization is an interactive network graph showing the connections of actors who appeared together in 23 James Bond movies including the latest in the series called Skyfall.</description>
-        <guid>http://localhost:8080/info/james-bond-actors-network/</guid>
+        <guid>http://exploringdata.github.io/info/james-bond-actors-network/</guid>
         <pubDate>Tue, 16 Oct 2012 14:45:20 </pubDate>
     </item>
     

@@ -3,15 +3,15 @@
 <channel><title>Tags - Software</title>
     <link>http://exploringdata.github.io</link>
     <description>tags/software</description>
-    <lastBuildDate>Tue, 14 Jan 2014 00:09:36 </lastBuildDate>
+    <lastBuildDate>Tue, 14 Jan 2014 00:15:47 </lastBuildDate>
     <generator>Logya</generator>
     <docs>http://blogs.law.harvard.edu/tech/rss</docs>
     
     <item>
         <title>Exploit Database Platforms Spiral</title>
-        <link>http://localhost:8080/vis/exploit-database-platforms-spiral/</link>
+        <link>http://exploringdata.github.io/vis/exploit-database-platforms-spiral/</link>
         <description>A pack layout visualization of platforms sized by the number of exploits created with the JavaScript library D3 and data from the Exploit Database.</description>
-        <guid>http://localhost:8080/vis/exploit-database-platforms-spiral/</guid>
+        <guid>http://exploringdata.github.io/vis/exploit-database-platforms-spiral/</guid>
         <pubDate>Mon, 29 Oct 2012 16:41:22 </pubDate>
     </item>
     
