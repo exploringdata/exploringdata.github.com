@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
+<url><loc><![CDATA[http://exploringdata.github.io/info/ballon-dor-male-players-votes-2013/]]></loc><lastmod>2014-01-13</lastmod></url>
+
+<url><loc><![CDATA[http://exploringdata.github.io/vis/ballon-dor-male-players-votes-2013/]]></loc><lastmod>2014-01-13</lastmod></url>
+
 <url><loc><![CDATA[http://exploringdata.github.io/info/intentional-homicides/]]></loc><lastmod>2013-09-20</lastmod></url>
 
 <url><loc><![CDATA[http://exploringdata.github.io/map/world/intentional-homicides/]]></loc><lastmod>2013-09-19</lastmod></url>

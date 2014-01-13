@@ -3,88 +3,88 @@
 <channel><title>Info</title>
     <link>http://exploringdata.github.io</link>
     <description>info</description>
-    <lastBuildDate>Mon, 13 Jan 2014 21:45:31 </lastBuildDate>
+    <lastBuildDate>Mon, 13 Jan 2014 21:54:58 </lastBuildDate>
     <generator>Logya</generator>
     <docs>http://blogs.law.harvard.edu/tech/rss</docs>
     
     <item>
+        <title>Who Voted for Whom at Ballon d'Or 2013</title>
+        <link>http://exploringdata.github.io/info/ballon-dor-male-players-votes-2013/</link>
+        <description>The Ballon d'Or 2013 visualization shows an interactive network graph of voters and voted football players related based on votes cast for the male FIFA Ballon d'Or award in 2013.</description>
+        <guid>http://exploringdata.github.io/info/ballon-dor-male-players-votes-2013/</guid>
+        <pubDate>Mon, 13 Jan 2014 21:50:20 </pubDate>
+    </item>
+    
+    <item>
         <title>Where in the World Happen Most Murders</title>
-        <link>http://localhost:8080/info/intentional-homicides/</link>
+        <link>http://exploringdata.github.io/info/intentional-homicides/</link>
         <description>A series of maps of the world showing where in the world the least and the most murders happen for the years 1995 to 2011.</description>
-        <guid>http://localhost:8080/info/intentional-homicides/</guid>
+        <guid>http://exploringdata.github.io/info/intentional-homicides/</guid>
         <pubDate>Fri, 20 Sep 2013 00:03:53 </pubDate>
     </item>
     
     <item>
         <title>How npm Packages are Linked by Dependencies</title>
-        <link>http://localhost:8080/info/npm-packages-dependencies/</link>
+        <link>http://exploringdata.github.io/info/npm-packages-dependencies/</link>
         <description>2 Interactive graph visualizations that show how npm packages are linked by dependency relations, the smaller one is limited to packages with at least 10 dependent packages. Graphs were pre-processed with Gephi and are rendered with sigma.js.</description>
-        <guid>http://localhost:8080/info/npm-packages-dependencies/</guid>
+        <guid>http://exploringdata.github.io/info/npm-packages-dependencies/</guid>
         <pubDate>Mon, 15 Jul 2013 16:03:34 </pubDate>
     </item>
     
     <item>
         <title>How Participants of the Visualisingdata Census are Connected on Twitter</title>
-        <link>http://localhost:8080/info/visualisingdata-census-twitter-network/</link>
+        <link>http://exploringdata.github.io/info/visualisingdata-census-twitter-network/</link>
         <description>The visualisingdata census network graph shows the Twitter connections of the participants of the 1st data visualization census initiated by Andy Kirk.</description>
-        <guid>http://localhost:8080/info/visualisingdata-census-twitter-network/</guid>
+        <guid>http://exploringdata.github.io/info/visualisingdata-census-twitter-network/</guid>
         <pubDate>Tue, 09 Apr 2013 23:41:18 </pubDate>
     </item>
     
     <item>
         <title>How Footballers Relate based on Google Searches</title>
-        <link>http://localhost:8080/info/footballers-search-relations/</link>
+        <link>http://exploringdata.github.io/info/footballers-search-relations/</link>
         <description>The footballers search relations visualization shows a network graph of former and current football players and managers related by Google searches with results containing knowledge graph information.</description>
-        <guid>http://localhost:8080/info/footballers-search-relations/</guid>
+        <guid>http://exploringdata.github.io/info/footballers-search-relations/</guid>
         <pubDate>Wed, 13 Mar 2013 01:28:01 </pubDate>
     </item>
     
     <item>
         <title>How Programmers Relate based on Google Searches</title>
-        <link>http://localhost:8080/info/programmers-search-relations/</link>
+        <link>http://exploringdata.github.io/info/programmers-search-relations/</link>
         <description>The programmers search relations visualization shows a network graph of programmers related by Google searches with results containing knowledge graph information.</description>
-        <guid>http://localhost:8080/info/programmers-search-relations/</guid>
+        <guid>http://exploringdata.github.io/info/programmers-search-relations/</guid>
         <pubDate>Wed, 06 Mar 2013 15:25:03 </pubDate>
     </item>
     
     <item>
         <title>A Map of Bike Routes in Berlin, Germany</title>
-        <link>http://localhost:8080/info/berlin-bike-routes/</link>
+        <link>http://exploringdata.github.io/info/berlin-bike-routes/</link>
         <description>The bike routes map for Berlin, Germany shows 14 different biking routes through and around the city. Created with OpenLayers, Open Street Map and data from Senatsverwaltung für Stadtentwicklung und Umwelt.</description>
-        <guid>http://localhost:8080/info/berlin-bike-routes/</guid>
+        <guid>http://exploringdata.github.io/info/berlin-bike-routes/</guid>
         <pubDate>Tue, 19 Feb 2013 02:02:03 </pubDate>
     </item>
     
     <item>
         <title>Who Voted for Whom at Ballon d'Or 2012</title>
-        <link>http://localhost:8080/info/ballon-dor-votes-2012/</link>
+        <link>http://exploringdata.github.io/info/ballon-dor-votes-2012/</link>
         <description>The Ballon d'Or 2012 visualization shows an interactive network graph of voters and voted players related based on votes cast for the male FIFA Ballon d'Or award in 2012.</description>
-        <guid>http://localhost:8080/info/ballon-dor-votes-2012/</guid>
+        <guid>http://exploringdata.github.io/info/ballon-dor-votes-2012/</guid>
         <pubDate>Wed, 09 Jan 2013 15:00:20 </pubDate>
     </item>
     
     <item>
         <title>Relations of James Bond Film Actors based on Common Appearance</title>
-        <link>http://localhost:8080/info/james-bond-actors-network/</link>
+        <link>http://exploringdata.github.io/info/james-bond-actors-network/</link>
         <description>The James Bond Actors visualization is an interactive network graph showing the connections of actors who appeared together in 23 James Bond movies including the latest in the series called Skyfall.</description>
-        <guid>http://localhost:8080/info/james-bond-actors-network/</guid>
+        <guid>http://exploringdata.github.io/info/james-bond-actors-network/</guid>
         <pubDate>Tue, 16 Oct 2012 14:45:20 </pubDate>
     </item>
     
     <item>
         <title>A Network Graph of Human Diseases</title>
-        <link>http://localhost:8080/info/human-disease-network/</link>
+        <link>http://exploringdata.github.io/info/human-disease-network/</link>
         <description>The human disease network graph is a visualization based on a study that explored relations of diseases and human genes by Goh K-I, Cusick ME, Valle D, Childs B, Vidal M, Barabási A-L (2007).</description>
-        <guid>http://localhost:8080/info/human-disease-network/</guid>
+        <guid>http://exploringdata.github.io/info/human-disease-network/</guid>
         <pubDate>Thu, 27 Sep 2012 16:45:57 </pubDate>
-    </item>
-    
-    <item>
-        <title>How Programming Languages Influenced Each Other</title>
-        <link>http://localhost:8080/info/programming-languages-influence-network/</link>
-        <description>The programming languages influence network is an interactive graph visualization where languages are connected by influence relations based on data from Freebase.</description>
-        <guid>http://localhost:8080/info/programming-languages-influence-network/</guid>
-        <pubDate>Fri, 07 Sep 2012 18:57:46 </pubDate>
     </item>
     
 </channel></rss>

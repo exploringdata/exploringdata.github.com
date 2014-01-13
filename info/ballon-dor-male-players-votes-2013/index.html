@@ -3,14 +3,16 @@
 <html xmlns:fb="http://ogp.me/ns/fb#" lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Tags:   Programming | Exploring Data</title>
+    <title>Who Voted for Whom at Ballon d'Or 2013 | Exploring Data</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-      <meta name="description" content="tags/europe">
+      <meta name="description" content="The Ballon d'Or 2013 visualization shows an interactive network graph of voters and voted football players related based on votes cast for the male FIFA Ballon d'Or award in 2013.">
     
+    
+      <meta property="og:image" content="http://exploringdata.github.io/img/preview/ballon-dor-male-players-2013.jpg">
     
     <meta name="author" content="Ramiro Gómez">
-    <link rel="canonical" href="http://exploringdata.github.io/tags/programming/">
+    <link rel="canonical" href="http://exploringdata.github.io/info/ballon-dor-male-players-votes-2013/">
     <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="/vendor/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
     <link href="/vendor/fontawesome/css/font-awesome.min.css" rel="stylesheet">
@@ -23,9 +25,8 @@
     <link rel="shortcut icon" href="/favicon.ico">
     
       
-    <link rel="alternate" type="application/rss+xml" title="Exploring Data main RSS feed" href="/rss.xml" />
-    <link rel="alternate" type="application/rss+xml" title="Exploring Data tags/programming RSS feed" href="http://exploringdata.github.io/tags/programming/rss.xml" />
-  
+        <link rel="alternate" type="application/rss+xml" title="Exploring Data main RSS feed" href="http://exploringdata.github.io/rss.xml">
+      
     
   </head>
   <body class="">
@@ -48,11 +49,11 @@
   <a href="#" class="btn btn-success dropdown-toggle" data-toggle="dropdown"><i class="icon-share"></i></a>
   <ul class="share dropdown-menu">
     <li><a class="btn" href="/rss.xml"><i class="icon-rss"></i> RSS Feed</a></li>
-    <li><a class="btn" href="https://twitter.com/share?url=http%3A%2F%2Fexploringdata.github.io%2Ftags%2Fprogramming%2F"><i class="icon-twitter"></i> Tweet this</a></li>
-    <li><a class="btn" href="https://flattr.com/submit/auto?user_id=rg&url=http%3A%2F%2Fexploringdata.github.io%2Ftags%2Fprogramming%2F&title=Tags+-+Programming&language=en_GB&category=software"><i class="icon-sign-blank"></i> Flattr this</a></li>
-    <li><a class="btn" href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fexploringdata.github.io%2Ftags%2Fprogramming%2F&t=Tags+-+Programming"><i class="icon-facebook"></i> Facebook</a></li>
-    <li><a class="btn" href="https://plus.google.com/share?url=http%3A%2F%2Fexploringdata.github.io%2Ftags%2Fprogramming%2F"><i class="icon-google-plus"></i> Google+</a></li>
-    <li><a class="btn" href="http://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Fexploringdata.github.io%2Ftags%2Fprogramming%2F&title=Tags+-+Programming"><i class="icon-linkedin"></i> LinkedIn</a></li>
+    <li><a class="btn" href="https://twitter.com/share?url=http%3A%2F%2Fexploringdata.github.io%2Finfo%2Fballon-dor-male-players-votes-2013%2F"><i class="icon-twitter"></i> Tweet this</a></li>
+    <li><a class="btn" href="https://flattr.com/submit/auto?user_id=rg&url=http%3A%2F%2Fexploringdata.github.io%2Finfo%2Fballon-dor-male-players-votes-2013%2F&title=Who+Voted+for+Whom+at+Ballon+d%27Or+2013&language=en_GB&category=software"><i class="icon-sign-blank"></i> Flattr this</a></li>
+    <li><a class="btn" href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fexploringdata.github.io%2Finfo%2Fballon-dor-male-players-votes-2013%2F&t=Who+Voted+for+Whom+at+Ballon+d%27Or+2013"><i class="icon-facebook"></i> Facebook</a></li>
+    <li><a class="btn" href="https://plus.google.com/share?url=http%3A%2F%2Fexploringdata.github.io%2Finfo%2Fballon-dor-male-players-votes-2013%2F"><i class="icon-google-plus"></i> Google+</a></li>
+    <li><a class="btn" href="http://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Fexploringdata.github.io%2Finfo%2Fballon-dor-male-players-votes-2013%2F&title=Who+Voted+for+Whom+at+Ballon+d%27Or+2013"><i class="icon-linkedin"></i> LinkedIn</a></li>
   </ul>
 </div>
 </div>
@@ -65,20 +66,44 @@
     
     
     
-<div id="info" class="container"><div class="row">
-  <div class="span8">
-    <h1 class="index_title">Tags:   Programming</h1>
-    <ul class="unstyled index_list flatlist">
+<div id="info" class="container">
+<div class="row">
+  <div class="span8"><h1>Who Voted for Whom at Ballon d'Or 2013</h1>
+  <p>This post will be updated with more info soon.</p>
+<p>The voting data is retrieved from this <a href="http://www.fifa.com/mm/document/ballond%27or/playeroftheyear%28men%29/02/26/02/68/fboaward_menplayer2013_neutral.pdf">PDF document</a>. The graph file was created with a Python script and preprocessed using the <a href="https://gephi.org/">Gephi visualization platform</a> to apply a Force Atlas layout as well as node sizing and coloring. The interactive version is rendered with the <a href="http://sigmajs.org/">JavaScript library sigma.js</a>.</p>
+  
     
-      <li class="index_item"><h2><a href="/info/npm-packages-dependencies/">How npm Packages are Linked by Dependencies</a></h2><p>2 Interactive graph visualizations that show how npm packages are linked by dependency relations, the smaller one is limited to packages with at least 10 dependent packages. Graphs were pre-processed with Gephi and are rendered with sigma.js.</p></li>
-    
-      <li class="index_item"><h2><a href="/info/programmers-search-relations/">How Programmers Relate based on Google Searches</a></h2><p>The programmers search relations visualization shows a network graph of programmers related by Google searches with results containing knowledge graph information.</p></li>
-    
-      <li class="index_item"><h2><a href="/info/programming-languages-influence-network/">How Programming Languages Influenced Each Other</a></h2><p>The programming languages influence network is an interactive graph visualization where languages are connected by influence relations based on data from Freebase.</p></li>
-    
-    </ul>
+<div class="postinfo">
+<hr>
+<p><i class="icon-calendar"></i> January 13, 2014 by <a href="http://ramiro.org/">Ramiro Gómez</a>.</p>
+
+<div class="tags">
+
+<span class="label label-info"><a href="/tags/network-graph/">network graph</a></span>
+
+<span class="label label-info"><a href="/tags/football/">football</a></span>
+
+<span class="label label-info"><a href="/tags/sigmajs/">sigmajs</a></span>
+
+<span class="label label-info"><a href="/tags/gephi/">gephi</a></span>
+
+<span class="label label-info"><a href="/tags/networkx/">networkx</a></span>
+
+<span class="label label-info"><a href="/tags/interactive/">interactive</a></span>
+
+</div>
+
+</div>
+
+  
   </div>
   <div class="span4">
+    
+      <h3>Visualization</h3>
+      <a href="/vis/ballon-dor-male-players-votes-2013/"><img src="/img/preview/ballon-dor-male-players-2013.jpg" alt="visualization preview"></a>
+    
+    
+    
     <h3>Keep Exploring</h3>
 <div class="btn-group">
 <a href="/rss.xml" class="btn btn-warning"><i class="icon-rss"> News feed</i></a>
@@ -98,9 +123,26 @@
 <p>See a sample <a href="http://eepurl.com/Fi1kz">newsletter issue</a> in your browser.</p>
 </div>
   </div>
-</div></div>
+</div>
+</div>
 
     
+<div id="comments" class="container">
+<div class="row"><div class="span12">
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+var disqus_shortname = 'exploringdata';
+var disqus_url = 'http://exploringdata.github.io/info/ballon-dor-male-players-votes-2013/';
+(function() {
+var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div></div>
+</div>
+
     
     <div id="footer" class="container">
       <div class="row"><div class="span12">
