@@ -3,15 +3,15 @@
 <channel><title>Tags » Matplotlib</title>
     <link>http://exploringdata.github.io</link>
     <description>tags/matplotlib</description>
-    <lastBuildDate>Mon, 24 Mar 2014 13:09:53 </lastBuildDate>
+    <lastBuildDate>Wed, 23 Apr 2014 14:24:02 </lastBuildDate>
     <generator>Logya</generator>
     <docs>http://blogs.law.harvard.edu/tech/rss</docs>
     
     <item>
         <title>Geo Maps Drawn from IP Locations</title>
-        <link>http://exploringdata.github.io/vis/ip-location-maps/</link>
+        <link>http://localhost:8080/vis/ip-location-maps/</link>
         <description>Geographic maps of the world and most continents drawn based on an IP location dataset with 419433 records.</description>
-        <guid>http://exploringdata.github.io/vis/ip-location-maps/</guid>
+        <guid>http://localhost:8080/vis/ip-location-maps/</guid>
         <pubDate>Tue, 11 Jun 2013 00:00:00 </pubDate>
     </item>
     

@@ -3,15 +3,15 @@
 <channel><title>Tags » Earthquakes</title>
     <link>http://exploringdata.github.io</link>
     <description>tags/earthquakes</description>
-    <lastBuildDate>Mon, 24 Mar 2014 13:09:53 </lastBuildDate>
+    <lastBuildDate>Wed, 23 Apr 2014 14:24:02 </lastBuildDate>
     <generator>Logya</generator>
     <docs>http://blogs.law.harvard.edu/tech/rss</docs>
     
     <item>
         <title>Real-Time World Map of Earthquakes</title>
-        <link>http://exploringdata.github.io/vis/earthquakes/</link>
+        <link>http://localhost:8080/vis/earthquakes/</link>
         <description>A geographic map of the world showing real-time data for recent earthquakes rendered with the D3 JavaScript library.</description>
-        <guid>http://exploringdata.github.io/vis/earthquakes/</guid>
+        <guid>http://localhost:8080/vis/earthquakes/</guid>
         <pubDate>Wed, 05 Dec 2012 23:37:53 </pubDate>
     </item>
     

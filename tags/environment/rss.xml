@@ -3,15 +3,15 @@
 <channel><title>Tags » Environment</title>
     <link>http://exploringdata.github.io</link>
     <description>tags/environment</description>
-    <lastBuildDate>Mon, 24 Mar 2014 13:09:53 </lastBuildDate>
+    <lastBuildDate>Wed, 23 Apr 2014 14:24:02 </lastBuildDate>
     <generator>Logya</generator>
     <docs>http://blogs.law.harvard.edu/tech/rss</docs>
     
     <item>
         <title>A Decade of Climate Change in the Guardian</title>
-        <link>http://exploringdata.github.io/vis/climate-changes-decade/</link>
+        <link>http://localhost:8080/vis/climate-changes-decade/</link>
         <description>Explore a decade of climate change, global warming, natural disaster, extreme weather, pollution and deforestation in the articles published by the Guardian.</description>
-        <guid>http://exploringdata.github.io/vis/climate-changes-decade/</guid>
+        <guid>http://localhost:8080/vis/climate-changes-decade/</guid>
         <pubDate>Fri, 05 Apr 2013 00:56:02 </pubDate>
     </item>
     
