@@ -3,15 +3,15 @@
 <channel><title>Tags » Notebook</title>
     <link>http://exploringdata.github.io</link>
     <description>tags/notebook</description>
-    <lastBuildDate>Wed, 23 Apr 2014 14:24:02 </lastBuildDate>
+    <lastBuildDate>Wed, 23 Apr 2014 14:35:52 </lastBuildDate>
     <generator>Logya</generator>
     <docs>http://blogs.law.harvard.edu/tech/rss</docs>
     
     <item>
         <title>Top 1% Income Share in Different Countries</title>
-        <link>http://localhost:8080/notebook/top-incomes-share/</link>
-        <description>A look at rail suicides data for Europe from 2008 to 2011 highlighting the importance of relating numbers.</description>
-        <guid>http://localhost:8080/notebook/top-incomes-share/</guid>
+        <link>http://exploringdata.github.io/notebook/top-incomes-share/</link>
+        <description>A quick dive into the World Top Incomes Database compiled and maintained by Facundo Alvaredo, Tony Atkinson, Thomas Piketty and Emmanuel Saez.</description>
+        <guid>http://exploringdata.github.io/notebook/top-incomes-share/</guid>
         <pubDate>Wed, 23 Apr 2014 14:23:47 </pubDate>
     </item>
     

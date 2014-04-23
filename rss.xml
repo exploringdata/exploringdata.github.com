@@ -3,87 +3,87 @@
 <channel><title>Exploring Data News Feed</title>
     <link>http://exploringdata.github.io</link>
     <description></description>
-    <lastBuildDate>Wed, 23 Apr 2014 14:24:02 </lastBuildDate>
+    <lastBuildDate>Wed, 23 Apr 2014 14:35:52 </lastBuildDate>
     <generator>Logya</generator>
     <docs>http://blogs.law.harvard.edu/tech/rss</docs>
     
     <item>
         <title>Top 1% Income Share in Different Countries</title>
-        <link>http://localhost:8080/notebook/top-incomes-share/</link>
-        <description>A look at rail suicides data for Europe from 2008 to 2011 highlighting the importance of relating numbers.</description>
-        <guid>http://localhost:8080/notebook/top-incomes-share/</guid>
+        <link>http://exploringdata.github.io/notebook/top-incomes-share/</link>
+        <description>A quick dive into the World Top Incomes Database compiled and maintained by Facundo Alvaredo, Tony Atkinson, Thomas Piketty and Emmanuel Saez.</description>
+        <guid>http://exploringdata.github.io/notebook/top-incomes-share/</guid>
         <pubDate>Wed, 23 Apr 2014 14:23:47 </pubDate>
     </item>
     
     <item>
         <title>Falcao and Iniesta the top players in 2013 according to Ronaldo and Messi</title>
-        <link>http://localhost:8080/info/ballon-dor-male-players-votes-2013/</link>
+        <link>http://exploringdata.github.io/info/ballon-dor-male-players-votes-2013/</link>
         <description>The Ballon d'Or 2013 visualization shows an interactive network graph of voters and voted football players related based on votes cast for the male FIFA Ballon d'Or award in 2013.</description>
-        <guid>http://localhost:8080/info/ballon-dor-male-players-votes-2013/</guid>
+        <guid>http://exploringdata.github.io/info/ballon-dor-male-players-votes-2013/</guid>
         <pubDate>Mon, 13 Jan 2014 21:50:20 </pubDate>
     </item>
     
     <item>
         <title>Ballon d'Or 2013 Male Players Votes Network</title>
-        <link>http://localhost:8080/vis/ballon-dor-male-players-votes-2013/</link>
+        <link>http://exploringdata.github.io/vis/ballon-dor-male-players-votes-2013/</link>
         <description>An interactive network graph showing the connections between voters and voted male football players from the male FIFA Ballon d'Or vote 2013.</description>
-        <guid>http://localhost:8080/vis/ballon-dor-male-players-votes-2013/</guid>
+        <guid>http://exploringdata.github.io/vis/ballon-dor-male-players-votes-2013/</guid>
         <pubDate>Mon, 13 Jan 2014 21:34:20 </pubDate>
     </item>
     
     <item>
         <title>Where in the World Happen Most Murders</title>
-        <link>http://localhost:8080/info/intentional-homicides/</link>
+        <link>http://exploringdata.github.io/info/intentional-homicides/</link>
         <description>A series of maps of the world showing where in the world the least and the most murders happen for the years 1995 to 2011.</description>
-        <guid>http://localhost:8080/info/intentional-homicides/</guid>
+        <guid>http://exploringdata.github.io/info/intentional-homicides/</guid>
         <pubDate>Fri, 20 Sep 2013 00:03:53 </pubDate>
     </item>
     
     <item>
         <title>World Map of Intentional Homicides</title>
-        <link>http://localhost:8080/map/world/intentional-homicides/</link>
+        <link>http://exploringdata.github.io/map/world/intentional-homicides/</link>
         <description>A series of geographic Choropleth maps showing the number of intentional homicides by country per 100,000 people. Created using World Bank data and D3.js.</description>
-        <guid>http://localhost:8080/map/world/intentional-homicides/</guid>
+        <guid>http://exploringdata.github.io/map/world/intentional-homicides/</guid>
         <pubDate>Thu, 19 Sep 2013 23:37:53 </pubDate>
     </item>
     
     <item>
         <title>Rail Suicides in Europe: Absolute vs. Relative</title>
-        <link>http://localhost:8080/story/rail-suicides-europe/</link>
+        <link>http://exploringdata.github.io/story/rail-suicides-europe/</link>
         <description>A look at rail suicides data for Europe from 2008 to 2011 highlighting the importance of relating numbers.</description>
-        <guid>http://localhost:8080/story/rail-suicides-europe/</guid>
+        <guid>http://exploringdata.github.io/story/rail-suicides-europe/</guid>
         <pubDate>Thu, 12 Sep 2013 11:39:40 </pubDate>
     </item>
     
     <item>
         <title>How npm Packages are Linked by Dependencies</title>
-        <link>http://localhost:8080/info/npm-packages-dependencies/</link>
+        <link>http://exploringdata.github.io/info/npm-packages-dependencies/</link>
         <description>2 Interactive graph visualizations that show how npm packages are linked by dependency relations, the smaller one is limited to packages with at least 10 dependent packages. Graphs were pre-processed with Gephi and are rendered with sigma.js.</description>
-        <guid>http://localhost:8080/info/npm-packages-dependencies/</guid>
+        <guid>http://exploringdata.github.io/info/npm-packages-dependencies/</guid>
         <pubDate>Mon, 15 Jul 2013 16:03:34 </pubDate>
     </item>
     
     <item>
         <title>npm Top Packages Dependencies Graph</title>
-        <link>http://localhost:8080/vis/npm-top-packages-dependencies/</link>
+        <link>http://exploringdata.github.io/vis/npm-top-packages-dependencies/</link>
         <description>An interactive network graph showing the dependencies between npm packages, with at least 10 dependent packages, as of July 12, 2013 rendered with sigma.js and preprocessed with Gephi.</description>
-        <guid>http://localhost:8080/vis/npm-top-packages-dependencies/</guid>
+        <guid>http://exploringdata.github.io/vis/npm-top-packages-dependencies/</guid>
         <pubDate>Mon, 15 Jul 2013 13:58:31 </pubDate>
     </item>
     
     <item>
         <title>npm Packages Dependencies Graph</title>
-        <link>http://localhost:8080/vis/npm-packages-dependencies/</link>
+        <link>http://exploringdata.github.io/vis/npm-packages-dependencies/</link>
         <description>An interactive network graph showing the dependencies between npm packages as of July 12, 2013 rendered with sigma.js and preprocessed with Gephi.</description>
-        <guid>http://localhost:8080/vis/npm-packages-dependencies/</guid>
+        <guid>http://exploringdata.github.io/vis/npm-packages-dependencies/</guid>
         <pubDate>Mon, 15 Jul 2013 13:58:21 </pubDate>
     </item>
     
     <item>
         <title>Geo Maps Drawn from IP Locations</title>
-        <link>http://localhost:8080/vis/ip-location-maps/</link>
+        <link>http://exploringdata.github.io/vis/ip-location-maps/</link>
         <description>Geographic maps of the world and most continents drawn based on an IP location dataset with 419433 records.</description>
-        <guid>http://localhost:8080/vis/ip-location-maps/</guid>
+        <guid>http://exploringdata.github.io/vis/ip-location-maps/</guid>
         <pubDate>Tue, 11 Jun 2013 00:00:00 </pubDate>
     </item>
     

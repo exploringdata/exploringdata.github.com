@@ -3,63 +3,63 @@
 <channel><title>Tags » D3</title>
     <link>http://exploringdata.github.io</link>
     <description>tags/d3</description>
-    <lastBuildDate>Wed, 23 Apr 2014 14:24:02 </lastBuildDate>
+    <lastBuildDate>Wed, 23 Apr 2014 14:35:52 </lastBuildDate>
     <generator>Logya</generator>
     <docs>http://blogs.law.harvard.edu/tech/rss</docs>
     
     <item>
         <title>Where in the World Happen Most Murders</title>
-        <link>http://localhost:8080/info/intentional-homicides/</link>
+        <link>http://exploringdata.github.io/info/intentional-homicides/</link>
         <description>A series of maps of the world showing where in the world the least and the most murders happen for the years 1995 to 2011.</description>
-        <guid>http://localhost:8080/info/intentional-homicides/</guid>
+        <guid>http://exploringdata.github.io/info/intentional-homicides/</guid>
         <pubDate>Fri, 20 Sep 2013 00:03:53 </pubDate>
     </item>
     
     <item>
         <title>A Decade of Climate Change in the Guardian</title>
-        <link>http://localhost:8080/vis/climate-changes-decade/</link>
+        <link>http://exploringdata.github.io/vis/climate-changes-decade/</link>
         <description>Explore a decade of climate change, global warming, natural disaster, extreme weather, pollution and deforestation in the articles published by the Guardian.</description>
-        <guid>http://localhost:8080/vis/climate-changes-decade/</guid>
+        <guid>http://exploringdata.github.io/vis/climate-changes-decade/</guid>
         <pubDate>Fri, 05 Apr 2013 00:56:02 </pubDate>
     </item>
     
     <item>
         <title>Evolution of Internet Users from 1990 - 2011</title>
-        <link>http://localhost:8080/vis/evolution-internet-users/</link>
+        <link>http://exploringdata.github.io/vis/evolution-internet-users/</link>
         <description>An animated evolution of Internet users across the worlds countries created with the D3 JavaScript library.</description>
-        <guid>http://localhost:8080/vis/evolution-internet-users/</guid>
+        <guid>http://exploringdata.github.io/vis/evolution-internet-users/</guid>
         <pubDate>Sun, 23 Dec 2012 22:27:39 </pubDate>
     </item>
     
     <item>
         <title>Real-Time World Map of Earthquakes</title>
-        <link>http://localhost:8080/vis/earthquakes/</link>
+        <link>http://exploringdata.github.io/vis/earthquakes/</link>
         <description>A geographic map of the world showing real-time data for recent earthquakes rendered with the D3 JavaScript library.</description>
-        <guid>http://localhost:8080/vis/earthquakes/</guid>
+        <guid>http://exploringdata.github.io/vis/earthquakes/</guid>
         <pubDate>Wed, 05 Dec 2012 23:37:53 </pubDate>
     </item>
     
     <item>
         <title>World Aid Flow, Transparency, Development</title>
-        <link>http://localhost:8080/vis/world-aid-transparency/</link>
+        <link>http://exploringdata.github.io/vis/world-aid-transparency/</link>
         <description>An interactive visualization looking at world aid flow, aid transparency, and development in receiving countries created with the D3 JavaScript library.</description>
-        <guid>http://localhost:8080/vis/world-aid-transparency/</guid>
+        <guid>http://exploringdata.github.io/vis/world-aid-transparency/</guid>
         <pubDate>Fri, 23 Nov 2012 13:46:48 </pubDate>
     </item>
     
     <item>
         <title>Exploit Database Platforms Spiral</title>
-        <link>http://localhost:8080/vis/exploit-database-platforms-spiral/</link>
+        <link>http://exploringdata.github.io/vis/exploit-database-platforms-spiral/</link>
         <description>A pack layout visualization of platforms sized by the number of exploits created with the JavaScript library D3 and data from the Exploit Database.</description>
-        <guid>http://localhost:8080/vis/exploit-database-platforms-spiral/</guid>
+        <guid>http://exploringdata.github.io/vis/exploit-database-platforms-spiral/</guid>
         <pubDate>Mon, 29 Oct 2012 16:41:22 </pubDate>
     </item>
     
     <item>
         <title>Programming Languages Influence Network D3</title>
-        <link>http://localhost:8080/vis/programming-languages-influence-network-d3/</link>
+        <link>http://exploringdata.github.io/vis/programming-languages-influence-network-d3/</link>
         <description>An network graph showing the connections of programming languages based on their influences created with the JavaScript library D3.</description>
-        <guid>http://localhost:8080/vis/programming-languages-influence-network-d3/</guid>
+        <guid>http://exploringdata.github.io/vis/programming-languages-influence-network-d3/</guid>
         <pubDate>Tue, 04 Sep 2012 22:16:04 </pubDate>
     </item>
     
