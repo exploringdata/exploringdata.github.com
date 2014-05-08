@@ -3,20 +3,20 @@
 <html xmlns:fb="http://ogp.me/ns/fb#" lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Evolution of Internet Users from 1990 - 2011 | Exploring Data</title>
+    <title>Evolution of Internet Users from 1990 - 2012 | Exploring Data</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-      <meta name="description" content="An animated evolution of Internet users across the worlds countries created with the D3 JavaScript library.">
+      <meta name="description" content="An animated scatterplot showing the evolution of Internet users across the worlds countries from 1990 to 2012 created with the D3.js.">
     
     
-      <meta property="og:image" content="http://exploringdata.github.io/img/preview/evolution-internet-users.jpg">
+      <meta property="og:image" content="http://exploringdata.github.io/img/preview/evolution-of-internet-users-from-1990-2012.jpg">
     
     
 <meta name="twitter:card" content="summary">
 <meta name="twitter:creator" content="@yaph">
-<meta name="twitter:title" content="Evolution of Internet Users from 1990 - 2011">
-<meta name="twitter:description" content="An animated evolution of Internet users across the worlds countries created with the D3 JavaScript library.">
-<meta name="twitter:image:src" content="http://exploringdata.github.io/img/preview/evolution-internet-users.jpg">
+<meta name="twitter:title" content="Evolution of Internet Users from 1990 - 2012">
+<meta name="twitter:description" content="An animated scatterplot showing the evolution of Internet users across the worlds countries from 1990 to 2012 created with the D3.js.">
+<meta name="twitter:image:src" content="http://exploringdata.github.io/img/preview/evolution-of-internet-users-from-1990-2012.jpg">
 
     <meta name="author" content="Ramiro Gómez">
     <link rel="canonical" href="http://exploringdata.github.io/vis/evolution-internet-users/">
@@ -58,11 +58,11 @@
   <a href="#" class="btn btn-success dropdown-toggle" data-toggle="dropdown"><i class="icon-share"></i></a>
   <ul class="share dropdown-menu">
     <li><a class="btn" href="/rss.xml"><i class="icon-rss"></i> RSS Feed</a></li>
-    <li><a class="btn" href="https://twitter.com/share?url=http%3A%2F%2Fexploringdata.github.io%2Fvis%2Fevolution-internet-users%2F&text=Evolution+of+Internet+Users+from+1990+-+2011"><i class="icon-twitter"></i> Tweet this</a></li>
-    <li><a class="btn" href="https://flattr.com/submit/auto?user_id=rg&url=http%3A%2F%2Fexploringdata.github.io%2Fvis%2Fevolution-internet-users%2F&title=Evolution+of+Internet+Users+from+1990+-+2011&language=en_GB&category=software"><i class="icon-sign-blank"></i> Flattr this</a></li>
-    <li><a class="btn" href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fexploringdata.github.io%2Fvis%2Fevolution-internet-users%2F&t=Evolution+of+Internet+Users+from+1990+-+2011"><i class="icon-facebook"></i> Facebook</a></li>
+    <li><a class="btn" href="https://twitter.com/share?url=http%3A%2F%2Fexploringdata.github.io%2Fvis%2Fevolution-internet-users%2F&text=Evolution+of+Internet+Users+from+1990+-+2012"><i class="icon-twitter"></i> Tweet this</a></li>
+    <li><a class="btn" href="https://flattr.com/submit/auto?user_id=rg&url=http%3A%2F%2Fexploringdata.github.io%2Fvis%2Fevolution-internet-users%2F&title=Evolution+of+Internet+Users+from+1990+-+2012&language=en_GB&category=software"><i class="icon-sign-blank"></i> Flattr this</a></li>
+    <li><a class="btn" href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fexploringdata.github.io%2Fvis%2Fevolution-internet-users%2F&t=Evolution+of+Internet+Users+from+1990+-+2012"><i class="icon-facebook"></i> Facebook</a></li>
     <li><a class="btn" href="https://plus.google.com/share?url=http%3A%2F%2Fexploringdata.github.io%2Fvis%2Fevolution-internet-users%2F"><i class="icon-google-plus"></i> Google+</a></li>
-    <li><a class="btn" href="http://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Fexploringdata.github.io%2Fvis%2Fevolution-internet-users%2F&title=Evolution+of+Internet+Users+from+1990+-+2011"><i class="icon-linkedin"></i> LinkedIn</a></li>
+    <li><a class="btn" href="http://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Fexploringdata.github.io%2Fvis%2Fevolution-internet-users%2F&title=Evolution+of+Internet+Users+from+1990+-+2012"><i class="icon-linkedin"></i> LinkedIn</a></li>
   </ul>
 </div>
 </div>
@@ -81,10 +81,12 @@
     
 <div id="info" class="container">
 <div class="row">
-  <div class="span8"><h1>Evolution of Internet Users from 1990 - 2011</h1>
-  <p>An animated data visualization showing the percentage of Internet users in relation to the Gross Domestic Product (GDP) per capita for the worlds countries from 1990 to 2011.</p>
-<p>This visualization is based on <a href="http://bost.ocks.org/mike/nations/">Mike Bostock's recreation</a> of Gapminder's <a href="http://gapminder.org/world/">The Wealth and Health of Nations</a> made famous by Hans Rosling in his <a href="http://www.ted.com/talks/hans_rosling_shows_the_best_stats_you_ve_ever_seen.html">inspiring TED talk</a>.</p>
+  <div class="span8"><h1>Evolution of Internet Users from 1990 - 2012</h1>
+  <p>An animated scatterplot showing the percentage of Internet users in relation to the Gross Domestic Product (GDP) per capita for the worlds countries from 1990 to 2012. Each country is represented as a bubble, whose size is determined by the countries' population. Countries are grouped by the continents they belong to using different colors.</p>
+<p>You can navigate through the years after the animation finishes by moving the mouse over the year number in the bottom right corner.</p>
+<p>This data visualization is based on <a href="http://bost.ocks.org/mike/nations/">Mike Bostock's recreation</a> of Gapminder's <a href="http://gapminder.org/world/">The Wealth and Health of Nations</a> made famous by Hans Rosling in his <a href="http://www.ted.com/talks/hans_rosling_shows_the_best_stats_you_ve_ever_seen.html">inspiring TED talk</a>.</p>
 <p>The data is retrieved from the <a href="http://data.worldbank.org/data-catalog/world-development-indicators">World Bank's World Development Indicators</a> and rendered using the <a href="http://d3js.org/">JavaScript library D3</a>.</p>
+<p>This visualization was last updated May 8, 2014.</p>
   
     
 <div class="postinfo">

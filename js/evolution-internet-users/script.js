@@ -1,4 +1,6 @@
-var continent = null;
+var continent = null,
+    min_year = 1990,
+    max_year = 2012;
 
 // Various accessors that specify the four dimensions of data to visualize.
 function x(d) { return d['NY.GDP.PCAP.CD'] }
@@ -63,7 +65,7 @@ var label = svg.append('text')
     .attr('text-anchor', 'end')
     .attr('y', height - 24)
     .attr('x', width)
-    .text(1990);
+    .text(min_year);
 
 // clipPath to hide part of circles outside of chart area
 svg.append('clipPath')
@@ -86,7 +88,7 @@ d3.json('/json/evolution-internet-users.json', function(errors, nations) {
       .attr('class', 'dots')
       .attr('clip-path', 'url(#chart-area)')
     .selectAll('.dot')
-      .data(interpolateData(1990))
+      .data(interpolateData(min_year))
     .enter().append('circle')
       .attr('class', 'dot')
       .style('fill', function(d) { return colorScale(color(d)); })
@@ -135,7 +137,7 @@ d3.json('/json/evolution-internet-users.json', function(errors, nations) {
   // After the transition finishes, you can mouseover to change the year.
   function enableInteraction() {
     var yearScale = d3.scale.linear()
-        .domain([1990, 2011])
+        .domain([min_year, max_year])
         .range([box.x + 10, box.x + box.width - 10])
         .clamp(true);
 
@@ -164,7 +166,7 @@ d3.json('/json/evolution-internet-users.json', function(errors, nations) {
   // Tweens the entire chart by first tweening the year, and then the data.
   // For the interpolated data, the dots and label are redrawn.
   function tweenYear() {
-    var year = d3.interpolateNumber(1990, 2011);
+    var year = d3.interpolateNumber(min_year, max_year);
     return function(t) { displayYear(year(t)); };
   }
 

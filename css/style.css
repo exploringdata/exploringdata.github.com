@@ -82,6 +82,9 @@ width:90%;
 height: 1.4em;
 overflow: hidden;
 }
+.gallery img {
+height: 260px;
+}
 /* info pages */
 .vis-preview {
 margin-bottom:1em;
