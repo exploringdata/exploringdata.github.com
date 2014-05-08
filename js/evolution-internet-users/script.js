@@ -1,6 +1,8 @@
 var continent = null,
     min_year = 1990,
-    max_year = 2012;
+    max_year = 2012
+    ff = d3.format('.2f,'),
+    fd = d3.format('d');
 
 // Various accessors that specify the four dimensions of data to visualize.
 function x(d) { return d['NY.GDP.PCAP.CD'] }
@@ -15,9 +17,9 @@ var margin = {top: 19.5, right: 19.5, bottom: 39.5, left: 39.5},
     height = width / 1.6;
 
 // Various scales. These domains make assumptions of data, naturally.
-var xScale = d3.scale.log().domain([100, 2e5]).range([0, width]),
+var xScale = d3.scale.log().domain([100, 1.7e5]).range([0, width]),
     yScale = d3.scale.linear().domain([0, 100]).range([height, 0]),
-    radiusScale = d3.scale.sqrt().domain([0, 1500000000]).range([1, 40]),
+    radiusScale = d3.scale.sqrt().domain([0, 1360000000]).range([2, 48]),
     colorScale = d3.scale.category10();
 
 // The x & y axes.
@@ -97,7 +99,7 @@ d3.json('/json/evolution-internet-users.json', function(errors, nations) {
 
   // Add a title.
   dot.append('title')
-      .text(function(d) { return d.name; });
+      .text(function(d) { return d.name });
 
   // Add an overlay for the year label.
   var box = label.node().getBBox();
