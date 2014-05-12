@@ -145,9 +145,9 @@ d3.json('/json/evolution-internet-users.json', function(errors, nations) {
                 return d
             }
         })
-      .attr('cx', function(d) { return xScale(x(d)) })
-      .attr('cy', function(d) { return yScale(y(d)) })
-      .attr('r', function(d) { return radiusScale(radius(d)) });
+        .attr('cx', function(d) { return xScale(x(d)) })
+        .attr('cy', function(d) { return yScale(y(d)) })
+        .attr('r', function(d) { return radiusScale(radius(d)) });
     }
 
   // Defines a sort order so that the smallest dots are drawn on top.
@@ -193,7 +193,9 @@ d3.json('/json/evolution-internet-users.json', function(errors, nations) {
 
   // Updates the display to show the specified year.
   function displayYear(year) {
-    dot.data(interpolateData(Math.round(year)), key).call(position).sort(order);
+    dot.data(interpolateData(Math.round(year)), key)
+        .call(position)
+        .sort(order);
     label.text(Math.round(year));
   }
 
