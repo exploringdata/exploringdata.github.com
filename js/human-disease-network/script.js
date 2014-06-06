@@ -11,8 +11,8 @@ $(function(){
     graph: {
       minNodeSize: .5,
       maxNodeSize: 15,
-      minEdgeSize: 1,
-      maxEdgeSize: 1
+      minEdgeSize: .3,
+      maxEdgeSize: 1.5
     },
     forceLabel: 0,
     type: 'directed'
