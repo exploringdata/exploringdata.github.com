@@ -3,15 +3,15 @@
 <channel><title>Tags » Programming Languages</title>
     <link>http://exploringdata.github.io</link>
     <description>tags/programming-languages</description>
-    <lastBuildDate>Thu, 12 Jun 2014 15:03:42 </lastBuildDate>
+    <lastBuildDate>Thu, 12 Jun 2014 15:08:07 </lastBuildDate>
     <generator>Logya</generator>
     <docs>http://blogs.law.harvard.edu/tech/rss</docs>
     
     <item>
         <title>Programming Languages Influence Network D3</title>
-        <link>http://exploringdata.github.io/vis/programming-languages-influence-network-d3/</link>
+        <link>http://localhost:8080/vis/programming-languages-influence-network-d3/</link>
         <description>An network graph showing the connections of programming languages based on their influences created with the JavaScript library D3.</description>
-        <guid>http://exploringdata.github.io/vis/programming-languages-influence-network-d3/</guid>
+        <guid>http://localhost:8080/vis/programming-languages-influence-network-d3/</guid>
         <pubDate>Tue, 04 Sep 2012 22:16:04 </pubDate>
     </item>
     

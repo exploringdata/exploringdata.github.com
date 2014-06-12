@@ -3,15 +3,15 @@
 <channel><title>Tags » Europe</title>
     <link>http://exploringdata.github.io</link>
     <description>tags/europe</description>
-    <lastBuildDate>Thu, 12 Jun 2014 15:03:42 </lastBuildDate>
+    <lastBuildDate>Thu, 12 Jun 2014 15:08:07 </lastBuildDate>
     <generator>Logya</generator>
     <docs>http://blogs.law.harvard.edu/tech/rss</docs>
     
     <item>
         <title>Rail Suicides in Europe: Absolute vs. Relative</title>
-        <link>http://exploringdata.github.io/story/rail-suicides-europe/</link>
+        <link>http://localhost:8080/story/rail-suicides-europe/</link>
         <description>A look at rail suicides data for Europe from 2008 to 2011 highlighting the importance of relating numbers.</description>
-        <guid>http://exploringdata.github.io/story/rail-suicides-europe/</guid>
+        <guid>http://localhost:8080/story/rail-suicides-europe/</guid>
         <pubDate>Thu, 12 Sep 2013 11:39:40 </pubDate>
     </item>
     
