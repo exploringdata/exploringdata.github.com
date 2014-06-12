@@ -14,22 +14,8 @@ cite {font-style:italic;}
 .centered {text-align:center;}
 .clearfix {clear:both;}
 .voffset {margin:.5em 0;}
+.roffset {margin-right: .5em;}
 
-/* navbar */
-#navbar .btn-group {
-margin:5px;
-}
-#navbar .btn {
-padding: 4px 12px;
-font-size:18px;
-}
-#navbar .nav .typeahead {
-margin:.4em 0 0 0;
-}
-#navbar .share .btn {
-margin:.3em .5em .3em;
-font-size:1.2em;
-}
 .caret {
 opacity:.8;
 }
@@ -48,18 +34,15 @@ color:#fff;
 background: url('../img/exploring-data.png') no-repeat center left;
 padding-left:40px;
 font-size:1.6em;
-font-family:Impact, fantasy;
 color:#8ce;
 margin-left:0;
 }
-body.full #navbar .navbar-inner {
-padding:0 10px;
+.share a {
+font-size: 20px;
 }
 /* wrappers */
-#footer, #comments {
-border-top:2px solid #EAEEF0;
-}
 #comments {
+border-top:2px solid #EAEEF0;
 padding-top:10px;
 }
 body.full #footer {display:none;}
@@ -68,22 +51,24 @@ body.full #footer {display:none;}
 width:76%;
 margin-left:-38%;
 }
-/* share menu to the left */
-#sharemenu .dropdown-menu {
-right:0;
-left:auto;
-}
 /* newsletter */
 #mce-EMAIL {
 width:90%;
 }
 /* front gallery */
-.span4 h5 {
+.col-md-4 h5 {
 height: 1.4em;
 overflow: hidden;
 }
+.gallery h5 {
+height: 30px;
+overflow:hidden;
+}
 .gallery img {
-height: 260px;
+height: 200px;
+}
+.gallery-lg img {
+height: 400px;
 }
 /* info pages */
 .vis-preview {

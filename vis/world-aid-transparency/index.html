@@ -1,33 +1,34 @@
 
 <!DOCTYPE html>
 <html xmlns:fb="http://ogp.me/ns/fb#" lang="en">
-  <head>
+<head>
     <meta charset="utf-8">
     <title>World Aid Flow, Transparency, Development | Exploring Data</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-      <meta name="description" content="An interactive visualization looking at world aid flow, aid transparency, and development in receiving countries created with the D3 JavaScript library.">
+        <meta name="description" content="An interactive visualization looking at world aid flow, aid transparency, and development in receiving countries created with the D3 JavaScript library.">
     
     
-      <meta property="og:image" content="http://exploringdata.github.io/img/preview/world-aid-transparency.jpg">
+        <meta property="og:image" content="http://localhost:8080/img/preview/world-aid-transparency.jpg">
     
     
 <meta name="twitter:card" content="summary">
 <meta name="twitter:creator" content="@yaph">
 <meta name="twitter:title" content="World Aid Flow, Transparency, Development">
 <meta name="twitter:description" content="An interactive visualization looking at world aid flow, aid transparency, and development in receiving countries created with the D3 JavaScript library.">
-<meta name="twitter:image:src" content="http://exploringdata.github.io/img/preview/world-aid-transparency.jpg">
+<meta name="twitter:image:src" content="http://localhost:8080/img/preview/world-aid-transparency.jpg">
 
     <meta name="author" content="Ramiro Gómez">
-    <link rel="canonical" href="http://exploringdata.github.io/vis/world-aid-transparency/">
-    <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/vendor/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
-    <link href="/vendor/fontawesome/css/font-awesome.min.css" rel="stylesheet">
-    <link href="/css/style.css#v=11" rel="stylesheet">
+    <link rel="canonical" href="http://localhost:8080/vis/world-aid-transparency/">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/css/style.css#v=12" rel="stylesheet">
     
-      <link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    
-      <link href="/css/world-aid-transparency.css#v=11" rel="stylesheet">
+        
+            <link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+        
+            <link href="/css/world-aid-transparency.css#v=12" rel="stylesheet">
+        
     
     
     <!--[if lt IE 9]>
@@ -35,55 +36,66 @@
     <![endif]-->
     <link rel="shortcut icon" href="/favicon.ico">
     
-      
-        <link rel="alternate" type="application/rss+xml" title="Exploring Data main RSS feed" href="http://exploringdata.github.io/rss.xml">
-      
+        
+            <link rel="alternate" type="application/rss+xml" title="Exploring Data main RSS feed" href="http://localhost:8080/rss.xml">
+        
     
-  </head>
-  <body class="">
+</head>
+
+<body class="">
+
     
-    <div id="navbar" class="navbar navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
-          <a id="site-name" class="brand" href="/">Exploring Data</a>
-          <div class="nav-collapse">
+    <nav id="navbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a id="site-name" class="navbar-brand" href="/">Exploring Data</a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="main-navbar">
             
-<ul class="nav">
+<ul class="nav navbar-nav">
   <li class="active"><a href="" id="norelate" class="relate">Total Amounts</a></li>
   <li><a href="" id="SP.POP.TOTL" class="relate" title="Population, total">By Population</a></li>
   <li><a href="" id="NY.GDP.MKTP.CD" class="relate" title="GDP (current US$)">By GDP</a></li>
 </ul>
-<a id="expand" class="btn menulimit" title="Expand bar charts and show more countries in scatterplot"><i class="icon-plus"></i></a>
-<a id="reduce" class="btn menulimit disabled" title="Reduce bar charts and show fewer countries in scatterplot"><i class="icon-minus"></i></a>
+<a id="expand" class="btn navbar-btn menulimit" title="Expand bar charts and show more countries in scatterplot"><i class="fa fa-plus"></i></a>
+<a id="reduce" class="btn navbar-btn menulimit disabled" title="Reduce bar charts and show fewer countries in scatterplot"><i class="fa fa-minus"></i></a>
 
             <div id="sharemenu" class="nav pull-right">
-<div class="btn-group">
-  <a href="#" class="btn btn-success dropdown-toggle" data-toggle="dropdown"><i class="icon-share"></i></a>
-  <ul class="share dropdown-menu">
-    <li><a class="btn" href="/rss.xml"><i class="icon-rss"></i> RSS Feed</a></li>
-    <li><a class="btn" href="https://twitter.com/share?url=http%3A%2F%2Fexploringdata.github.io%2Fvis%2Fworld-aid-transparency%2F&text=World+Aid+Flow%2C+Transparency%2C+Development"><i class="icon-twitter"></i> Tweet this</a></li>
-    <li><a class="btn" href="https://flattr.com/submit/auto?user_id=rg&url=http%3A%2F%2Fexploringdata.github.io%2Fvis%2Fworld-aid-transparency%2F&title=World+Aid+Flow%2C+Transparency%2C+Development&language=en_GB&category=software"><i class="icon-sign-blank"></i> Flattr this</a></li>
-    <li><a class="btn" href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fexploringdata.github.io%2Fvis%2Fworld-aid-transparency%2F&t=World+Aid+Flow%2C+Transparency%2C+Development"><i class="icon-facebook"></i> Facebook</a></li>
-    <li><a class="btn" href="https://plus.google.com/share?url=http%3A%2F%2Fexploringdata.github.io%2Fvis%2Fworld-aid-transparency%2F"><i class="icon-google-plus"></i> Google+</a></li>
-    <li><a class="btn" href="http://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Fexploringdata.github.io%2Fvis%2Fworld-aid-transparency%2F&title=World+Aid+Flow%2C+Transparency%2C+Development"><i class="icon-linkedin"></i> LinkedIn</a></li>
-  </ul>
-</div>
+    <div class="btn-group">
+        <a href="#" class="btn navbar-btn btn-success dropdown-toggle" data-toggle="dropdown"><i class="fa fa-share"></i></a>
+        <ul class="share dropdown-menu pull-right">
+            <li><a href="/rss.xml"><i class="fa fa-rss"></i> RSS Feed</a></li>
+            <li><a href="https://twitter.com/share?url=http%3A%2F%2Flocalhost%3A8080%2Fvis%2Fworld-aid-transparency%2F&text=World+Aid+Flow%2C+Transparency%2C+Development"><i class="fa fa-twitter"></i> Tweet this</a></li>
+            <li><a href="https://flattr.com/submit/auto?user_id=rg&url=http%3A%2F%2Flocalhost%3A8080%2Fvis%2Fworld-aid-transparency%2F&title=World+Aid+Flow%2C+Transparency%2C+Development&language=en_GB&category=software"><i class="fa fa-plus"></i> Flattr this</a></li>
+            <li><a href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Fvis%2Fworld-aid-transparency%2F&t=World+Aid+Flow%2C+Transparency%2C+Development"><i class="fa fa-facebook"></i> Facebook</a></li>
+            <li><a href="https://plus.google.com/share?url=http%3A%2F%2Flocalhost%3A8080%2Fvis%2Fworld-aid-transparency%2F"><i class="fa fa-google-plus"></i> Google+</a></li>
+            <li><a href="http://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A8080%2Fvis%2Fworld-aid-transparency%2F&title=World+Aid+Flow%2C+Transparency%2C+Development"><i class="fa fa-linkedin"></i> LinkedIn</a></li>
+        </ul>
+    </div>
 </div>
             
-          </div>
-        </div>
-      </div>
-    </div>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+    
+
     
     
-    
-<div class="container">
+<div class="container-fluid">
 <div class="row">
-  <div class="span7">
+  <div class="col-md-6">
     <h4>World aid flow</h4>
     <div id="map" class="RdBu"></div>
   </div>
-  <div class="span5 sidebar">
+  <div class="col-md-6 sidebar">
     <div class="bar donors">
       <h4>Donors by aid sums</h4>
       <div id="aiddonors"></div>
@@ -98,7 +110,7 @@
 </div>
 
 <div id="aidcharts" class="row">
-  <div class="span7">
+  <div class="col-md-6">
     <div class="bar">
       <h4>How aid received compares to
         <select id="indicators" class="headingselect"></select>
@@ -107,7 +119,7 @@
       <div class="legend">Aid donations compared to selected world development indicators.</div>
     </div>
   </div>
-  <div class="span5 sidebar">
+  <div class="col-md-6 sidebar">
     <div class="bar recipients">
       <h4>Recipients by aid sums</h4>
       <div id="aidrecipients"></div>
@@ -122,21 +134,25 @@
 </div>
 </div>
 
-<div class="modal hide fade" id="country-aid">
-  <div class="modal-header">
-    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-    <h3></h3>
-  </div>
-  <div class="modal-body" id="country-aid-chart" style="width:480px;"></div>
-  <div class="modal-footer">
-    <a href="#" class="btn" data-dismiss="modal">Close</a>
-  </div>
-</div>
+<div id="country-aid" class="modal fade">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h3 class="modal-title"></h3>
+      </div>
+      <div class="modal-body" id="country-aid-chart" style="width:500px;"></div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
 
     
-<div id="info" class="container">
+<div id="info" class="container-fluid">
 <div class="row">
-  <div class="span8"><h1>World Aid Flow, Transparency, Development</h1>
+  <div class="col-md-9"><h1>World Aid Flow, Transparency, Development</h1>
   <p>Which countries give or receive bilateral aid donations, how transparent are aid organizations, does aid received relate to spending on health or education, does it affect the flow of information? Questions like these arise when asked to visualize world aid flow and aid transparency.</p>
 <p>To tackle these questions I looked at data from the <a href="http://data.worldbank.org/">World Bank</a>, <a href="http://www.publishwhatyoufund.org/">Publish What You Fund</a>, and <a href="http://www.google.com/transparencyreport/userdatarequests/data/">Google's Transparency Report</a> and created this interactive visualization. The numbers shown are from the year 2010, which is the most recent year with data available on both bilateral aid and aid transparency at the time of creation.</p>
 <p>The aid donations data is comprised of <em>Net bilateral aid flows from <abbr title="Development Assistance Committee">DAC</abbr> donors</em> numbers available from the World Bank. For example, the total for the United States is the sum of all donations given to <abbr title="Official Development Assistance">ODA</abbr> recipients in 2010.</p>
@@ -174,13 +190,13 @@
     
 <div class="postinfo">
 <hr>
-<p><i class="icon-calendar"></i> November 23, 2012 by <a href="http://ramiro.org/">Ramiro Gómez</a> (<a href="https://twitter.com/yaph">@yaph</a>).</p>
+<p><i class="fa fa-calendar"></i> November 23, 2012 by <a href="http://ramiro.org/">Ramiro Gómez</a> (<a href="https://twitter.com/yaph">@yaph</a>).</p>
 
 </div>
 
   
   </div>
-  <div class="span4">
+  <div class="col-md-3">
     
     
     
@@ -190,15 +206,15 @@
     
     <h3>Keep Exploring</h3>
 <div class="btn-group">
-<a href="/rss.xml" class="btn btn-warning"><i class="icon-rss"> News feed</i></a>
-<a href="https://twitter.com/yaph" class="btn btn-info"><i class="icon-twitter"></i> Follow on Twitter</a>
+<a href="/rss.xml" class="btn btn-warning"><i class="fa fa-rss"> News feed</i></a>
+<a href="https://twitter.com/yaph" class="btn btn-info"><i class="fa fa-twitter"></i> Follow on Twitter</a>
 </div>
 
 <div id="mc_embed_signup" class="clearfix well voffset">
-<form action="http://github.us6.list-manage.com/subscribe/post?u=6e91c5ec6f31498a21bc80826&amp;id=bb7db2c23d" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="form validate" target="_blank" novalidate>
+<form action="http://github.us6.list-manage.com/subscribe/post?u=6e91c5ec6f31498a21bc80826&amp;id=bb7db2c23d" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="form validate" target="_blank" role="form" novalidate>
 <label for="mce-EMAIL">Subscribe to the <strong>Datavis Weekly Newsletter</strong></label>
-<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
-<div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-success"></div>
+<input type="email" value="" name="EMAIL" class="email form-control" id="mce-EMAIL" placeholder="email address" required>
+<div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-success voffset"></div>
 <div id="mce-responses" class="clear">
 <div class="response" id="mce-error-response" style="display:none"></div>
 <div class="response" id="mce-success-response" style="display:none"></div>
@@ -211,12 +227,12 @@
 </div>
 
     
-<div id="comments" class="container">
-<div class="row"><div class="span12">
+<div id="comments" class="container-fluid">
+<div class="row"><div class="col-md-12">
 <div id="disqus_thread"></div>
 <script type="text/javascript">
 var disqus_shortname = 'exploringdata';
-var disqus_url = 'http://exploringdata.github.io/vis/world-aid-transparency/';
+var disqus_url = 'http://localhost:8080/vis/world-aid-transparency/';
 (function() {
 var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
 dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
@@ -228,11 +244,11 @@ dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
 </div>
 
     
-    <div id="footer" class="container">
-      <div class="row"><div class="span12">
+    <div id="footer" class="container-fluid">
+      <div class="row"><div class="col-md-12">
         <footer>
-          <p>Exploring Data is a showcase of interactive data visualizations created by <a href="http://ramiro.org/">Ramiro Gómez</a> (<a href="https://twitter.com/yaph">@yaph</a>) using open data and open source technologies, <a href="/about/">learn more</a>.<br>
-          Except where otherwise noted, the works on this site are licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US">Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a>.</p>
+            <hr>
+            <p>Exploring Data is a showcase of interactive data visualizations created with open data and open source tools, <a href="/about/">learn more</a>. CC BY-NC-SA 2014 <a href="http://ramiro.org/">Ramiro Gómez</a> (<a href="https://twitter.com/yaph">@yaph</a>).</p>
         </footer>
       </div></div>
     </div>
@@ -249,23 +265,25 @@ dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
 
 (function(c,a){function d(){var e=a.getElementsByTagName("a");var f=[];for(var g=0;g<e.length;++g){var h=e[g];if(h.host!=c.location.host){f.push(h)}}return f}function b(f){var e=f.srcElement||f.target;while(e&&(typeof e.tagName=="undefined"||e.tagName.toLowerCase()!="a"||!e.href)){e=e.parentNode}if(!e||!e.href){return}if(c.ga){ga("send","event","Outbound link","Click",e.href)}if(!e.target||e.target.match(/^_(self|parent|top)$/i)){setTimeout(function(){a.location.href=e.href},150);if(f.preventDefault){f.preventDefault()}else{f.returnValue=false}}}c.addEventListener("load",function(){var e=d();for(var f in e){e[f].addEventListener("click",b)}})}(window,document));
 </script>
-    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-    <script src="/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 
     
 
-    <script src="/js/script.js#v=11"></script>
+    <script src="/js/script.js#v=12"></script>
     
       
-          <script src="/vendor/d3/d3.v3.min.js#v=11"></script>
+          <script src="/vendor/d3/d3.v3.min.js#v=12"></script>
       
-          <script src="/js/world-aid-transparency/countryinfo.js#v=11"></script>
+          <script src="/vendor/d3/d3.geo.projection.v0.min.js#v=12"></script>
       
-          <script src="/js/world-aid-transparency/countrystats.js#v=11"></script>
+          <script src="/js/world-aid-transparency/countryinfo.js#v=12"></script>
       
-          <script src="/js/world-aid-transparency/graphs.js#v=11"></script>
+          <script src="/js/world-aid-transparency/countrystats.js#v=12"></script>
       
-          <script src="/js/world-aid-transparency/script.js#v=11"></script>
+          <script src="/js/world-aid-transparency/graphs.js#v=12"></script>
+      
+          <script src="/js/world-aid-transparency/script.js#v=12"></script>
       
     
 

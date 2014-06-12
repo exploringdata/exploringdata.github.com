@@ -5,6 +5,7 @@ var map,
     routes = [{"name":"Wannsee-Route RR1","gpx":"/gpx/wannseeroute_rr1.gpx"},{"name":"Gatow-Route RR2","gpx":"/gpx/gatow_route_rr2.gpx"},{"name":"Spandau-Route RR3","gpx":"/gpx/spandau_route_rr3.gpx"},{"name":"Hellersdorf-Route RR8","gpx":"/gpx/hellersdorf_route_rr8.gpx"},{"name":"Teltow-Route RR12","gpx":"/gpx/teltow_route_rr12.gpx"},{"name":"Nordspange TR2","gpx":"/gpx/nordspange_tr2.gpx"},{"name":"Südspange TR4","gpx":"/gpx/suedspange_tr4.gpx"},{"name":"Berliner Mauerweg 1 (Stadtroute) ","gpx":"/gpx/mauerweg_1.gpx"},{"name":"Berliner Mauerweg 2 (Südroute)","gpx":"/gpx/mauerweg_2.gpx"},{"name":"Berliner Mauerweg 3 (Westroute)","gpx":"/gpx/mauerweg_3.gpx"},{"name":"Europaradweg R1 (West)","gpx":"/gpx/europaradweg_r1_west.gpx"},{"name":"Europaradweg R1 (Ost)","gpx":"/gpx/europaradweg_r1_ost.gpx"},{"name":"Radfernweg Berlin-Kopenhagen","gpx":"/gpx/radfernweg_berlin_kopenhagen.gpx"},{"name":"Radfernweg Berlin-Usedom","gpx":"/gpx/radfernweg_berlin_usedom.gpx"}];
 
 function init() {
+    $('#vis').height($(window).height() - $('#navbar').height());
     map = new OpenLayers.Map ("vis", {controls:[
         new OpenLayers.Control.Navigation(),
         new OpenLayers.Control.PanZoomBar(),

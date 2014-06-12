@@ -18,9 +18,9 @@ var nodeinfo = function(data) {
   sl.find('h3').text(data.name);
   var desc = '<div><img src="' + data.profile_image_url + '" class="img-polaroid pull-right" alt="Photo of ' + hnode.name + '">';
   desc += '<blockquote><p>' + data.description + '</p></blockquote><div>';
-  desc += '<p><i class="icon-twitter"></i> <a href="https://twitter.com/' + data.screen_name + '">Twitter Profile</a>';
+  desc += '<p><i class="fa fa-twitter"></i> <a href="https://twitter.com/' + data.screen_name + '">Twitter Profile</a>';
   if (data.url.length > 0)
-    desc += ' | <i class="icon-home"></i> <a href="' + data.url + '">Homepage</a>';
+    desc += ' | <i class="fa fa-home"></i> <a href="' + data.url + '">Homepage</a>';
   desc += '</p>';
   desc += twitter_list('Twitter Friends from Census', data.friends_census);
   desc += twitter_list('Twitter Followers from Census', data.followers_census);

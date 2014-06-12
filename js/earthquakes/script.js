@@ -8,7 +8,7 @@ var eqradius = function(feature, index) {
 var mapselect = '#map',
   width = containerwidth(mapselect),
   height = width/1.5,
-  projection = d3.geo.mercator().scale(width/1.05).translate([0, 0]),
+  projection = d3.geo.mercator().scale(width/1.2).translate([0, 0]),
   path = d3.geo.path().projection(projection).pointRadius(eqradius),
   eqtitle = function(d) {
     return 'Magnitude: ' + d.properties.mag + ' Place: ' + d.properties.place

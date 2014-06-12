@@ -1,2 +1,2 @@
-.thumbnails h3 {height:38px;overflow:hidden;font-size:14px;}
-.thumbnails img {height:340px;width:260px}
+.thumbnail h3 {height:46px;overflow:hidden;font-size:14px;}
+.thumbnail a>img {max-height:250px;}

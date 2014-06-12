@@ -3,39 +3,39 @@
 <channel><title>Tags » Football</title>
     <link>http://exploringdata.github.io</link>
     <description>tags/football</description>
-    <lastBuildDate>Fri, 06 Jun 2014 20:11:35 </lastBuildDate>
+    <lastBuildDate>Thu, 12 Jun 2014 13:34:38 </lastBuildDate>
     <generator>Logya</generator>
     <docs>http://blogs.law.harvard.edu/tech/rss</docs>
     
     <item>
         <title>Falcao and Iniesta the top players in 2013 according to Ronaldo and Messi</title>
-        <link>http://exploringdata.github.io/info/ballon-dor-male-players-votes-2013/</link>
+        <link>http://localhost:8080/info/ballon-dor-male-players-votes-2013/</link>
         <description>The Ballon d'Or 2013 visualization shows an interactive network graph of voters and voted football players related based on votes cast for the male FIFA Ballon d'Or award in 2013.</description>
-        <guid>http://exploringdata.github.io/info/ballon-dor-male-players-votes-2013/</guid>
+        <guid>http://localhost:8080/info/ballon-dor-male-players-votes-2013/</guid>
         <pubDate>Mon, 13 Jan 2014 21:50:20 </pubDate>
     </item>
     
     <item>
         <title>How Footballers Relate based on Google Searches</title>
-        <link>http://exploringdata.github.io/info/footballers-search-relations/</link>
+        <link>http://localhost:8080/info/footballers-search-relations/</link>
         <description>The footballers search relations visualization shows a network graph of former and current football players and managers related by Google searches with results containing knowledge graph information.</description>
-        <guid>http://exploringdata.github.io/info/footballers-search-relations/</guid>
+        <guid>http://localhost:8080/info/footballers-search-relations/</guid>
         <pubDate>Wed, 13 Mar 2013 01:28:01 </pubDate>
     </item>
     
     <item>
         <title>Who Voted for Whom at Ballon d'Or 2012</title>
-        <link>http://exploringdata.github.io/info/ballon-dor-votes-2012/</link>
+        <link>http://localhost:8080/info/ballon-dor-votes-2012/</link>
         <description>The Ballon d'Or 2012 visualization shows an interactive network graph of voters and voted players related based on votes cast for the male FIFA Ballon d'Or award in 2012.</description>
-        <guid>http://exploringdata.github.io/info/ballon-dor-votes-2012/</guid>
+        <guid>http://localhost:8080/info/ballon-dor-votes-2012/</guid>
         <pubDate>Wed, 09 Jan 2013 15:00:20 </pubDate>
     </item>
     
     <item>
         <title>See Why Spain Won Euro 2012</title>
-        <link>http://exploringdata.github.io/story/see-why-spain-won-euro-2012/</link>
+        <link>http://localhost:8080/story/see-why-spain-won-euro-2012/</link>
         <description>A data story about Spain's performance at the UEFA Euro 2012 including charts created with the Datawrapper visualization tool.</description>
-        <guid>http://exploringdata.github.io/story/see-why-spain-won-euro-2012/</guid>
+        <guid>http://localhost:8080/story/see-why-spain-won-euro-2012/</guid>
         <pubDate>Mon, 10 Dec 2012 21:04:40 </pubDate>
     </item>
     

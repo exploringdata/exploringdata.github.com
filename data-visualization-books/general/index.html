@@ -1,12 +1,12 @@
 
 <!DOCTYPE html>
 <html xmlns:fb="http://ogp.me/ns/fb#" lang="en">
-  <head>
+<head>
     <meta charset="utf-8">
     <title>Data Visualization Books | Exploring Data</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-      <meta name="description" content="Books about data visualization in general, covering theory and practice of creating data visualizations in association with Amazon.com.">
+        <meta name="description" content="Books about data visualization in general, covering theory and practice of creating data visualizations in association with Amazon.com.">
     
     
     
@@ -14,16 +14,17 @@
 <meta name="twitter:creator" content="@yaph">
 <meta name="twitter:title" content="Data Visualization Books">
 <meta name="twitter:description" content="Books about data visualization in general, covering theory and practice of creating data visualizations in association with Amazon.com.">
-<meta name="twitter:image:src" content="http://exploringdata.github.io">
+<meta name="twitter:image:src" content="http://localhost:8080">
 
     <meta name="author" content="Ramiro Gómez">
-    <link rel="canonical" href="http://exploringdata.github.io/data-visualization-books/general/">
-    <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/vendor/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
-    <link href="/vendor/fontawesome/css/font-awesome.min.css" rel="stylesheet">
-    <link href="/css/style.css#v=11" rel="stylesheet">
+    <link rel="canonical" href="http://localhost:8080/data-visualization-books/general/">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/css/style.css#v=12" rel="stylesheet">
     
-      <link href="/css/book_gallery.css#v=11" rel="stylesheet">
+        
+            <link href="/css/book_gallery.css#v=12" rel="stylesheet">
+        
     
     
     <!--[if lt IE 9]>
@@ -31,56 +32,172 @@
     <![endif]-->
     <link rel="shortcut icon" href="/favicon.ico">
     
-      
-        <link rel="alternate" type="application/rss+xml" title="Exploring Data main RSS feed" href="http://exploringdata.github.io/rss.xml">
-      
+        
+            <link rel="alternate" type="application/rss+xml" title="Exploring Data main RSS feed" href="http://localhost:8080/rss.xml">
+        
     
-  </head>
-  <body class="">
+</head>
+
+<body class="">
+
     
-    <div id="navbar" class="navbar navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
-          <a id="site-name" class="brand" href="/">Exploring Data</a>
-          <div class="nav-collapse">
+    <nav id="navbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a id="site-name" class="navbar-brand" href="/">Exploring Data</a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="main-navbar">
             
-<ul class="nav">
-  <li><a href="/story/"><i class="icon-edit"></i> Data Stories</a></li>
-  <li><a href="/datasearch/"><i class="icon-search"></i> Data Search</a></li>
-  <li><a href="/data-visualization-books/"><i class="icon-book"></i> Data Books</a></li>
-  <li><a href="/sitemap/"><i class="icon-sitemap"></i> Sitemap</a></li>
+<ul class="nav navbar-nav">
+  <li><a href="/story/"><i class="fa fa-edit"></i> Data Stories</a></li>
+  <li><a href="/datasearch/"><i class="fa fa-search"></i> Data Search</a></li>
+  <li><a href="/data-visualization-books/"><i class="fa fa-book"></i> Data Books</a></li>
+  <li><a href="/sitemap/"><i class="fa fa-sitemap"></i> Sitemap</a></li>
 </ul>
 
             <div id="sharemenu" class="nav pull-right">
-<div class="btn-group">
-  <a href="#" class="btn btn-success dropdown-toggle" data-toggle="dropdown"><i class="icon-share"></i></a>
-  <ul class="share dropdown-menu">
-    <li><a class="btn" href="/rss.xml"><i class="icon-rss"></i> RSS Feed</a></li>
-    <li><a class="btn" href="https://twitter.com/share?url=http%3A%2F%2Fexploringdata.github.io%2Fdata-visualization-books%2Fgeneral%2F&text=Data+Visualization+Books"><i class="icon-twitter"></i> Tweet this</a></li>
-    <li><a class="btn" href="https://flattr.com/submit/auto?user_id=rg&url=http%3A%2F%2Fexploringdata.github.io%2Fdata-visualization-books%2Fgeneral%2F&title=Data+Visualization+Books&language=en_GB&category=software"><i class="icon-sign-blank"></i> Flattr this</a></li>
-    <li><a class="btn" href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fexploringdata.github.io%2Fdata-visualization-books%2Fgeneral%2F&t=Data+Visualization+Books"><i class="icon-facebook"></i> Facebook</a></li>
-    <li><a class="btn" href="https://plus.google.com/share?url=http%3A%2F%2Fexploringdata.github.io%2Fdata-visualization-books%2Fgeneral%2F"><i class="icon-google-plus"></i> Google+</a></li>
-    <li><a class="btn" href="http://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Fexploringdata.github.io%2Fdata-visualization-books%2Fgeneral%2F&title=Data+Visualization+Books"><i class="icon-linkedin"></i> LinkedIn</a></li>
-  </ul>
-</div>
+    <div class="btn-group">
+        <a href="#" class="btn navbar-btn btn-success dropdown-toggle" data-toggle="dropdown"><i class="fa fa-share"></i></a>
+        <ul class="share dropdown-menu pull-right">
+            <li><a href="/rss.xml"><i class="fa fa-rss"></i> RSS Feed</a></li>
+            <li><a href="https://twitter.com/share?url=http%3A%2F%2Flocalhost%3A8080%2Fdata-visualization-books%2Fgeneral%2F&text=Data+Visualization+Books"><i class="fa fa-twitter"></i> Tweet this</a></li>
+            <li><a href="https://flattr.com/submit/auto?user_id=rg&url=http%3A%2F%2Flocalhost%3A8080%2Fdata-visualization-books%2Fgeneral%2F&title=Data+Visualization+Books&language=en_GB&category=software"><i class="fa fa-plus"></i> Flattr this</a></li>
+            <li><a href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Fdata-visualization-books%2Fgeneral%2F&t=Data+Visualization+Books"><i class="fa fa-facebook"></i> Facebook</a></li>
+            <li><a href="https://plus.google.com/share?url=http%3A%2F%2Flocalhost%3A8080%2Fdata-visualization-books%2Fgeneral%2F"><i class="fa fa-google-plus"></i> Google+</a></li>
+            <li><a href="http://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A8080%2Fdata-visualization-books%2Fgeneral%2F&title=Data+Visualization+Books"><i class="fa fa-linkedin"></i> LinkedIn</a></li>
+        </ul>
+    </div>
 </div>
             
-          </div>
-        </div>
-      </div>
-    </div>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+    
+
     
     
     
-    
-<div id="info" class="container">
+<div id="info" class="container-fluid">
 <div class="row">
-  <div class="span9"><h1>Data Visualization Books</h1><ul class="thumbnails">
-<li class="span3"><a href="http://www.amazon.com/dp/111846219X/?tag=xpdt-20" class="thumbnail"><img src="/img/books/data-points-visualization-that-means-something.jpg" alt="Cover: Data Points: Visualization That Means Something"><h3>Data Points: Visualization That Means Something</h3></a></li><li class="span3"><a href="http://www.amazon.com/dp/0321834739/?tag=xpdt-20" class="thumbnail"><img src="/img/books/the-functional-art-an-introduction-to-information-graphics-and-visualization-voices-that-matter-.jpg" alt="Cover: The Functional Art: An introduction to information graphics and visualization (Voices That Matter)"><h3>The Functional Art: An introduction to information graphics and visualization (Voices That Matter)</h3></a></li><li class="span3"><a href="http://www.amazon.com/dp/1849693463/?tag=xpdt-20" class="thumbnail"><img src="/img/books/data-visualization-a-successful-design-process.jpg" alt="Cover: Data Visualization: a successful design process"><h3>Data Visualization: a successful design process</h3></a></li><li class="span3"><a href="http://www.amazon.com/dp/0970601972/?tag=xpdt-20" class="thumbnail"><img src="/img/books/show-me-the-numbers-designing-tables-and-graphs-to-enlighten.jpg" alt="Cover: Show Me the Numbers: Designing Tables and Graphs to Enlighten"><h3>Show Me the Numbers: Designing Tables and Graphs to Enlighten</h3></a></li><li class="span3"><a href="http://www.amazon.com/dp/0470944889/?tag=xpdt-20" class="thumbnail"><img src="/img/books/visualize-this-the-flowingdata-guide-to-design-visualization-and-statistics.jpg" alt="Cover: Visualize This: The FlowingData Guide to Design, Visualization, and Statistics"><h3>Visualize This: The FlowingData Guide to Design, Visualization, and Statistics</h3></a></li><li class="span3"><a href="http://www.amazon.com/dp/0970601980/?tag=xpdt-20" class="thumbnail"><img src="/img/books/now-you-see-it-simple-visualization-techniques-for-quantitative-analysis.jpg" alt="Cover: Now You See It: Simple Visualization Techniques for Quantitative Analysis"><h3>Now You See It: Simple Visualization Techniques for Quantitative Analysis</h3></a></li><li class="span3"><a href="http://www.amazon.com/dp/0393072959/?tag=xpdt-20" class="thumbnail"><img src="/img/books/the-wall-street-journal-guide-to-information-graphics-the-dos-and-don-ts-of-presenting-data-facts-and-figures.jpg" alt="Cover: The Wall Street Journal Guide to Information Graphics: The Dos and Don'ts of Presenting Data, Facts, and Figures"><h3>The Wall Street Journal Guide to Information Graphics: The Dos and Don'ts of Presenting Data, Facts, and Figures</h3></a></li><li class="span3"><a href="http://www.amazon.com/dp/1449379869/?tag=xpdt-20" class="thumbnail"><img src="/img/books/beautiful-visualization-looking-at-data-through-the-eyes-of-experts-theory-in-practice-.jpg" alt="Cover: Beautiful Visualization: Looking at Data through the Eyes of Experts (Theory in Practice)"><h3>Beautiful Visualization: Looking at Data through the Eyes of Experts (Theory in Practice)</h3></a></li><li class="span3"><a href="http://www.amazon.com/dp/0061748366/?tag=xpdt-20" class="thumbnail"><img src="/img/books/the-visual-miscellaneum-a-colorful-guide-to-the-world-s-most-consequential-trivia.jpg" alt="Cover: The Visual Miscellaneum: A Colorful Guide to the World's Most Consequential Trivia"><h3>The Visual Miscellaneum: A Colorful Guide to the World's Most Consequential Trivia</h3></a></li><li class="span3"><a href="http://www.amazon.com/dp/0961392118/?tag=xpdt-20" class="thumbnail"><img src="/img/books/envisioning-information.jpg" alt="Cover: Envisioning Information"><h3>Envisioning Information</h3></a></li><li class="span3"><a href="http://www.amazon.com/dp/0007294662/?tag=xpdt-20" class="thumbnail"><img src="/img/books/information-is-beautiful.jpg" alt="Cover: Information is Beautiful"><h3>Information is Beautiful</h3></a></li><li class="span3"><a href="http://www.amazon.com/dp/0961392142/?tag=xpdt-20" class="thumbnail"><img src="/img/books/the-visual-display-of-quantitative-information.jpg" alt="Cover: The Visual Display of Quantitative Information"><h3>The Visual Display of Quantitative Information</h3></a></li><li class="span3"><a href="http://www.amazon.com/dp/1568989369/?tag=xpdt-20" class="thumbnail"><img src="/img/books/visual-complexity-mapping-patterns-of-information.jpg" alt="Cover: Visual Complexity: Mapping Patterns of Information"><h3>Visual Complexity: Mapping Patterns of Information</h3></a></li><li class="span3"><a href="http://www.amazon.com/dp/0596157118/?tag=xpdt-20" class="thumbnail"><img src="/img/books/beautiful-data-the-stories-behind-elegant-data-solutions.jpg" alt="Cover: Beautiful Data: The Stories Behind Elegant Data Solutions"><h3>Beautiful Data: The Stories Behind Elegant Data Solutions</h3></a></li><li class="span3"><a href="http://www.amazon.com/dp/0123708966/?tag=xpdt-20" class="thumbnail"><img src="/img/books/visual-thinking-for-design-morgan-kaufmann-series-in-interactive-technologies-.jpg" alt="Cover: Visual Thinking: for Design (Morgan Kaufmann Series in Interactive Technologies)"><h3>Visual Thinking: for Design (Morgan Kaufmann Series in Interactive Technologies)</h3></a></li>
-</ul></div>
-  <div class="span3">
+  <div class="col-md-9"><h1>Data Visualization Books</h1><div class="row">
+
+    <div class="col-sm-4 col-md-3">
+        <div class="thumbnail">
+            <a href="http://www.amazon.com/dp/111846219X/?tag=xpdt-20"><img src="/img/books/data-points-visualization-that-means-something.jpg" alt="Cover: Data Points: Visualization That Means Something"></a>
+            <div class="caption"><h3><a href="http://www.amazon.com/dp/111846219X/?tag=xpdt-20">Data Points: Visualization That Means Something</a></h3></div>
+        </div>
+    </div>
+
+    <div class="col-sm-4 col-md-3">
+        <div class="thumbnail">
+            <a href="http://www.amazon.com/dp/0321834739/?tag=xpdt-20"><img src="/img/books/the-functional-art-an-introduction-to-information-graphics-and-visualization-voices-that-matter-.jpg" alt="Cover: The Functional Art: An introduction to information graphics and visualization (Voices That Matter)"></a>
+            <div class="caption"><h3><a href="http://www.amazon.com/dp/0321834739/?tag=xpdt-20">The Functional Art: An introduction to information graphics and visualization (Voices That Matter)</a></h3></div>
+        </div>
+    </div>
+
+    <div class="col-sm-4 col-md-3">
+        <div class="thumbnail">
+            <a href="http://www.amazon.com/dp/1849693463/?tag=xpdt-20"><img src="/img/books/data-visualization-a-successful-design-process.jpg" alt="Cover: Data Visualization: a successful design process"></a>
+            <div class="caption"><h3><a href="http://www.amazon.com/dp/1849693463/?tag=xpdt-20">Data Visualization: a successful design process</a></h3></div>
+        </div>
+    </div>
+
+    <div class="col-sm-4 col-md-3">
+        <div class="thumbnail">
+            <a href="http://www.amazon.com/dp/0970601972/?tag=xpdt-20"><img src="/img/books/show-me-the-numbers-designing-tables-and-graphs-to-enlighten.jpg" alt="Cover: Show Me the Numbers: Designing Tables and Graphs to Enlighten"></a>
+            <div class="caption"><h3><a href="http://www.amazon.com/dp/0970601972/?tag=xpdt-20">Show Me the Numbers: Designing Tables and Graphs to Enlighten</a></h3></div>
+        </div>
+    </div>
+
+    <div class="col-sm-4 col-md-3">
+        <div class="thumbnail">
+            <a href="http://www.amazon.com/dp/0470944889/?tag=xpdt-20"><img src="/img/books/visualize-this-the-flowingdata-guide-to-design-visualization-and-statistics.jpg" alt="Cover: Visualize This: The FlowingData Guide to Design, Visualization, and Statistics"></a>
+            <div class="caption"><h3><a href="http://www.amazon.com/dp/0470944889/?tag=xpdt-20">Visualize This: The FlowingData Guide to Design, Visualization, and Statistics</a></h3></div>
+        </div>
+    </div>
+
+    <div class="col-sm-4 col-md-3">
+        <div class="thumbnail">
+            <a href="http://www.amazon.com/dp/0970601980/?tag=xpdt-20"><img src="/img/books/now-you-see-it-simple-visualization-techniques-for-quantitative-analysis.jpg" alt="Cover: Now You See It: Simple Visualization Techniques for Quantitative Analysis"></a>
+            <div class="caption"><h3><a href="http://www.amazon.com/dp/0970601980/?tag=xpdt-20">Now You See It: Simple Visualization Techniques for Quantitative Analysis</a></h3></div>
+        </div>
+    </div>
+
+    <div class="col-sm-4 col-md-3">
+        <div class="thumbnail">
+            <a href="http://www.amazon.com/dp/0393072959/?tag=xpdt-20"><img src="/img/books/the-wall-street-journal-guide-to-information-graphics-the-dos-and-don-ts-of-presenting-data-facts-and-figures.jpg" alt="Cover: The Wall Street Journal Guide to Information Graphics: The Dos and Don'ts of Presenting Data, Facts, and Figures"></a>
+            <div class="caption"><h3><a href="http://www.amazon.com/dp/0393072959/?tag=xpdt-20">The Wall Street Journal Guide to Information Graphics: The Dos and Don'ts of Presenting Data, Facts, and Figures</a></h3></div>
+        </div>
+    </div>
+
+    <div class="col-sm-4 col-md-3">
+        <div class="thumbnail">
+            <a href="http://www.amazon.com/dp/1449379869/?tag=xpdt-20"><img src="/img/books/beautiful-visualization-looking-at-data-through-the-eyes-of-experts-theory-in-practice-.jpg" alt="Cover: Beautiful Visualization: Looking at Data through the Eyes of Experts (Theory in Practice)"></a>
+            <div class="caption"><h3><a href="http://www.amazon.com/dp/1449379869/?tag=xpdt-20">Beautiful Visualization: Looking at Data through the Eyes of Experts (Theory in Practice)</a></h3></div>
+        </div>
+    </div>
+
+    <div class="col-sm-4 col-md-3">
+        <div class="thumbnail">
+            <a href="http://www.amazon.com/dp/0061748366/?tag=xpdt-20"><img src="/img/books/the-visual-miscellaneum-a-colorful-guide-to-the-world-s-most-consequential-trivia.jpg" alt="Cover: The Visual Miscellaneum: A Colorful Guide to the World's Most Consequential Trivia"></a>
+            <div class="caption"><h3><a href="http://www.amazon.com/dp/0061748366/?tag=xpdt-20">The Visual Miscellaneum: A Colorful Guide to the World's Most Consequential Trivia</a></h3></div>
+        </div>
+    </div>
+
+    <div class="col-sm-4 col-md-3">
+        <div class="thumbnail">
+            <a href="http://www.amazon.com/dp/0961392118/?tag=xpdt-20"><img src="/img/books/envisioning-information.jpg" alt="Cover: Envisioning Information"></a>
+            <div class="caption"><h3><a href="http://www.amazon.com/dp/0961392118/?tag=xpdt-20">Envisioning Information</a></h3></div>
+        </div>
+    </div>
+
+    <div class="col-sm-4 col-md-3">
+        <div class="thumbnail">
+            <a href="http://www.amazon.com/dp/0007294662/?tag=xpdt-20"><img src="/img/books/information-is-beautiful.jpg" alt="Cover: Information is Beautiful"></a>
+            <div class="caption"><h3><a href="http://www.amazon.com/dp/0007294662/?tag=xpdt-20">Information is Beautiful</a></h3></div>
+        </div>
+    </div>
+
+    <div class="col-sm-4 col-md-3">
+        <div class="thumbnail">
+            <a href="http://www.amazon.com/dp/0961392142/?tag=xpdt-20"><img src="/img/books/the-visual-display-of-quantitative-information.jpg" alt="Cover: The Visual Display of Quantitative Information"></a>
+            <div class="caption"><h3><a href="http://www.amazon.com/dp/0961392142/?tag=xpdt-20">The Visual Display of Quantitative Information</a></h3></div>
+        </div>
+    </div>
+
+    <div class="col-sm-4 col-md-3">
+        <div class="thumbnail">
+            <a href="http://www.amazon.com/dp/1568989369/?tag=xpdt-20"><img src="/img/books/visual-complexity-mapping-patterns-of-information.jpg" alt="Cover: Visual Complexity: Mapping Patterns of Information"></a>
+            <div class="caption"><h3><a href="http://www.amazon.com/dp/1568989369/?tag=xpdt-20">Visual Complexity: Mapping Patterns of Information</a></h3></div>
+        </div>
+    </div>
+
+    <div class="col-sm-4 col-md-3">
+        <div class="thumbnail">
+            <a href="http://www.amazon.com/dp/0596157118/?tag=xpdt-20"><img src="/img/books/beautiful-data-the-stories-behind-elegant-data-solutions.jpg" alt="Cover: Beautiful Data: The Stories Behind Elegant Data Solutions"></a>
+            <div class="caption"><h3><a href="http://www.amazon.com/dp/0596157118/?tag=xpdt-20">Beautiful Data: The Stories Behind Elegant Data Solutions</a></h3></div>
+        </div>
+    </div>
+
+    <div class="col-sm-4 col-md-3">
+        <div class="thumbnail">
+            <a href="http://www.amazon.com/dp/0123708966/?tag=xpdt-20"><img src="/img/books/visual-thinking-for-design-morgan-kaufmann-series-in-interactive-technologies-.jpg" alt="Cover: Visual Thinking: for Design (Morgan Kaufmann Series in Interactive Technologies)"></a>
+            <div class="caption"><h3><a href="http://www.amazon.com/dp/0123708966/?tag=xpdt-20">Visual Thinking: for Design (Morgan Kaufmann Series in Interactive Technologies)</a></h3></div>
+        </div>
+    </div>
+
+</div></div>
+  <div class="col-md-3">
     <h3>Book Categories</h3>
-    <ul class="unstyled">
+    <ul class="list-unstyled">
       <li><a href="/data-visualization-books/general/">Data Visualization</a></li>
       <li><a href="/data-visualization-books/maps/">Maps &amp; Cartography</a></li>
       <li><a href="/data-visualization-books/analysis/">Data Mining &amp; Analysis</a></li>
@@ -89,15 +206,15 @@
     </ul>
     <h3>Keep Exploring</h3>
 <div class="btn-group">
-<a href="/rss.xml" class="btn btn-warning"><i class="icon-rss"> News feed</i></a>
-<a href="https://twitter.com/yaph" class="btn btn-info"><i class="icon-twitter"></i> Follow on Twitter</a>
+<a href="/rss.xml" class="btn btn-warning"><i class="fa fa-rss"> News feed</i></a>
+<a href="https://twitter.com/yaph" class="btn btn-info"><i class="fa fa-twitter"></i> Follow on Twitter</a>
 </div>
 
 <div id="mc_embed_signup" class="clearfix well voffset">
-<form action="http://github.us6.list-manage.com/subscribe/post?u=6e91c5ec6f31498a21bc80826&amp;id=bb7db2c23d" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="form validate" target="_blank" novalidate>
+<form action="http://github.us6.list-manage.com/subscribe/post?u=6e91c5ec6f31498a21bc80826&amp;id=bb7db2c23d" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="form validate" target="_blank" role="form" novalidate>
 <label for="mce-EMAIL">Subscribe to the <strong>Datavis Weekly Newsletter</strong></label>
-<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
-<div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-success"></div>
+<input type="email" value="" name="EMAIL" class="email form-control" id="mce-EMAIL" placeholder="email address" required>
+<div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-success voffset"></div>
 <div id="mce-responses" class="clear">
 <div class="response" id="mce-error-response" style="display:none"></div>
 <div class="response" id="mce-success-response" style="display:none"></div>
@@ -107,16 +224,17 @@
 </div>
   </div>
 </div>
-<div class="row"><div class="span12">Books about data visualization in general, covering theory and practice of creating data visualizations in association with Amazon.com.</div></div>
+<div class="row"><div class="col-md-12">Books about data visualization in general, covering theory and practice of creating data visualizations in association with Amazon.com.</div></div>
 </div>
 
     
     
-    <div id="footer" class="container">
-      <div class="row"><div class="span12">
+    <div id="footer" class="container-fluid">
+      <div class="row"><div class="col-md-12">
         <footer>
-          <p>Exploring Data is a showcase of interactive data visualizations created by <a href="http://ramiro.org/">Ramiro Gómez</a> (<a href="https://twitter.com/yaph">@yaph</a>) using open data and open source technologies, <a href="/about/">learn more</a>.<br>
-          Except where otherwise noted, the works on this site are licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US">Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a>.</p>
+            <hr>
+            <p>Exploring Data is a showcase of interactive data visualizations created by <a href="http://ramiro.org/">Ramiro Gómez</a> (<a href="https://twitter.com/yaph">@yaph</a>) using open data and open source technologies, <a href="/about/">learn more</a>.<br>
+            Except where otherwise noted, the works on this site are licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US">Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a>.</p>
         </footer>
       </div></div>
     </div>
@@ -133,12 +251,12 @@
 
 (function(c,a){function d(){var e=a.getElementsByTagName("a");var f=[];for(var g=0;g<e.length;++g){var h=e[g];if(h.host!=c.location.host){f.push(h)}}return f}function b(f){var e=f.srcElement||f.target;while(e&&(typeof e.tagName=="undefined"||e.tagName.toLowerCase()!="a"||!e.href)){e=e.parentNode}if(!e||!e.href){return}if(c.ga){ga("send","event","Outbound link","Click",e.href)}if(!e.target||e.target.match(/^_(self|parent|top)$/i)){setTimeout(function(){a.location.href=e.href},150);if(f.preventDefault){f.preventDefault()}else{f.returnValue=false}}}c.addEventListener("load",function(){var e=d();for(var f in e){e[f].addEventListener("click",b)}})}(window,document));
 </script>
-    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-    <script src="/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 
     
 
-    <script src="/js/script.js#v=11"></script>
+    <script src="/js/script.js#v=12"></script>
     
 
     

@@ -1,31 +1,32 @@
 
 <!DOCTYPE html>
 <html xmlns:fb="http://ogp.me/ns/fb#" lang="en">
-  <head>
+<head>
     <meta charset="utf-8">
     <title>Real-Time World Map of Earthquakes | Exploring Data</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-      <meta name="description" content="A geographic map of the world showing real-time data for recent earthquakes rendered with the D3 JavaScript library.">
+        <meta name="description" content="A geographic map of the world showing real-time data for recent earthquakes rendered with the D3 JavaScript library.">
     
     
-      <meta property="og:image" content="http://exploringdata.github.io/img/preview/earthquakes.jpg">
+        <meta property="og:image" content="http://localhost:8080/img/preview/earthquakes.jpg">
     
     
 <meta name="twitter:card" content="summary">
 <meta name="twitter:creator" content="@yaph">
 <meta name="twitter:title" content="Real-Time World Map of Earthquakes">
 <meta name="twitter:description" content="A geographic map of the world showing real-time data for recent earthquakes rendered with the D3 JavaScript library.">
-<meta name="twitter:image:src" content="http://exploringdata.github.io/img/preview/earthquakes.jpg">
+<meta name="twitter:image:src" content="http://localhost:8080/img/preview/earthquakes.jpg">
 
     <meta name="author" content="Ramiro Gómez">
-    <link rel="canonical" href="http://exploringdata.github.io/vis/earthquakes/">
-    <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/vendor/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
-    <link href="/vendor/fontawesome/css/font-awesome.min.css" rel="stylesheet">
-    <link href="/css/style.css#v=11" rel="stylesheet">
+    <link rel="canonical" href="http://localhost:8080/vis/earthquakes/">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/css/style.css#v=12" rel="stylesheet">
     
-      <link href="/css/earthquakes.css#v=11" rel="stylesheet">
+        
+            <link href="/css/earthquakes.css#v=12" rel="stylesheet">
+        
     
     
     <!--[if lt IE 9]>
@@ -33,20 +34,31 @@
     <![endif]-->
     <link rel="shortcut icon" href="/favicon.ico">
     
-      
-        <link rel="alternate" type="application/rss+xml" title="Exploring Data main RSS feed" href="http://exploringdata.github.io/rss.xml">
-      
+        
+            <link rel="alternate" type="application/rss+xml" title="Exploring Data main RSS feed" href="http://localhost:8080/rss.xml">
+        
     
-  </head>
-  <body class="">
+</head>
+
+<body class="">
+
     
-    <div id="navbar" class="navbar navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
-          <a id="site-name" class="brand" href="/">Exploring Data</a>
-          <div class="nav-collapse">
+    <nav id="navbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a id="site-name" class="navbar-brand" href="/">Exploring Data</a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="main-navbar">
             
-<ul class="nav">
+<ul class="nav navbar-nav">
   <li class="dropdown">
     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Choose time and magnitude range <b class="caret"></b></a>
     <ul class="dropdown-menu" id="eqranges">
@@ -65,41 +77,41 @@
       <li><a href="http://earthquake.usgs.gov/earthquakes/feed/geojsonp/2.5/month">Past 30 days M2.5+ earthquakes</a></li>
     </ul>
   </li>
-  <li><label id="refresh" class="checkbox"><input type="checkbox" style="width:2em;">Auto update data</label></li>
+  <li><label id="refresh" class="navbar-text checkbox"><input type="checkbox">Auto update data</label></li>
 </ul>
 
             <div id="sharemenu" class="nav pull-right">
-<div class="btn-group">
-  <a href="#" class="btn btn-success dropdown-toggle" data-toggle="dropdown"><i class="icon-share"></i></a>
-  <ul class="share dropdown-menu">
-    <li><a class="btn" href="/rss.xml"><i class="icon-rss"></i> RSS Feed</a></li>
-    <li><a class="btn" href="https://twitter.com/share?url=http%3A%2F%2Fexploringdata.github.io%2Fvis%2Fearthquakes%2F&text=Real-Time+World+Map+of+Earthquakes"><i class="icon-twitter"></i> Tweet this</a></li>
-    <li><a class="btn" href="https://flattr.com/submit/auto?user_id=rg&url=http%3A%2F%2Fexploringdata.github.io%2Fvis%2Fearthquakes%2F&title=Real-Time+World+Map+of+Earthquakes&language=en_GB&category=software"><i class="icon-sign-blank"></i> Flattr this</a></li>
-    <li><a class="btn" href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fexploringdata.github.io%2Fvis%2Fearthquakes%2F&t=Real-Time+World+Map+of+Earthquakes"><i class="icon-facebook"></i> Facebook</a></li>
-    <li><a class="btn" href="https://plus.google.com/share?url=http%3A%2F%2Fexploringdata.github.io%2Fvis%2Fearthquakes%2F"><i class="icon-google-plus"></i> Google+</a></li>
-    <li><a class="btn" href="http://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Fexploringdata.github.io%2Fvis%2Fearthquakes%2F&title=Real-Time+World+Map+of+Earthquakes"><i class="icon-linkedin"></i> LinkedIn</a></li>
-  </ul>
-</div>
+    <div class="btn-group">
+        <a href="#" class="btn navbar-btn btn-success dropdown-toggle" data-toggle="dropdown"><i class="fa fa-share"></i></a>
+        <ul class="share dropdown-menu pull-right">
+            <li><a href="/rss.xml"><i class="fa fa-rss"></i> RSS Feed</a></li>
+            <li><a href="https://twitter.com/share?url=http%3A%2F%2Flocalhost%3A8080%2Fvis%2Fearthquakes%2F&text=Real-Time+World+Map+of+Earthquakes"><i class="fa fa-twitter"></i> Tweet this</a></li>
+            <li><a href="https://flattr.com/submit/auto?user_id=rg&url=http%3A%2F%2Flocalhost%3A8080%2Fvis%2Fearthquakes%2F&title=Real-Time+World+Map+of+Earthquakes&language=en_GB&category=software"><i class="fa fa-plus"></i> Flattr this</a></li>
+            <li><a href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Fvis%2Fearthquakes%2F&t=Real-Time+World+Map+of+Earthquakes"><i class="fa fa-facebook"></i> Facebook</a></li>
+            <li><a href="https://plus.google.com/share?url=http%3A%2F%2Flocalhost%3A8080%2Fvis%2Fearthquakes%2F"><i class="fa fa-google-plus"></i> Google+</a></li>
+            <li><a href="http://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A8080%2Fvis%2Fearthquakes%2F&title=Real-Time+World+Map+of+Earthquakes"><i class="fa fa-linkedin"></i> LinkedIn</a></li>
+        </ul>
+    </div>
 </div>
             
-          </div>
-        </div>
-      </div>
-    </div>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+    
+
     
     
-    
-<div class="container">
-<div class="row"><div class="span12">
+<div class="container-fluid">
+<div class="row"><div class="col-md-12">
 <h2 id="eqtitle"></h2>
 <div id="map"></div>
 </div></div>
 </div>
 
     
-<div id="info" class="container">
+<div id="info" class="container-fluid">
 <div class="row">
-  <div class="span8"><h1>Real-Time World Map of Earthquakes</h1>
+  <div class="col-md-9"><h1>Real-Time World Map of Earthquakes</h1>
   <p>This map of the world displays recent earthquakes as red circles. The circle sizes correspond to the magnitudes of the earthquakes taking into account that the <a href="https://en.wikipedia.org/wiki/Richter_magnitude_scale">Richter magnitude scale</a> is a logarithmic scale, where an earthquake that measures 5.0 has a shaking amplitude 10 times larger than one that measures 4.0.</p>
 <p>Earthquake data is retrieved via <a href="http://earthquake.usgs.gov/earthquakes/feed/">real-time feeds</a> from the U.S. Geological Survey (USGS). By default data is loaded once. When Auto update data in the top menu is checked, data will be refreshed every minute. Moreover, you can choose different time and earthquake magnitude ranges from the select list in the top menu.</p>
 <p>You can zoom in and out the map with the mouse wheel and drag it around with the mouse button clicked. When you move the mouse over a circle a tooltip with magnitude and location information is displayed, when you click on a circle you are sent to the earthquake's corresponding detail page on the USGS Web site.</p>
@@ -108,27 +120,27 @@
     
 <div class="postinfo">
 <hr>
-<p><i class="icon-calendar"></i> December 05, 2012 by <a href="http://ramiro.org/">Ramiro Gómez</a> (<a href="https://twitter.com/yaph">@yaph</a>).</p>
+<p><i class="fa fa-calendar"></i> December 05, 2012 by <a href="http://ramiro.org/">Ramiro Gómez</a> (<a href="https://twitter.com/yaph">@yaph</a>).</p>
 
 </div>
 
   
   </div>
-  <div class="span4">
+  <div class="col-md-3">
     
     
     
     <h3>Keep Exploring</h3>
 <div class="btn-group">
-<a href="/rss.xml" class="btn btn-warning"><i class="icon-rss"> News feed</i></a>
-<a href="https://twitter.com/yaph" class="btn btn-info"><i class="icon-twitter"></i> Follow on Twitter</a>
+<a href="/rss.xml" class="btn btn-warning"><i class="fa fa-rss"> News feed</i></a>
+<a href="https://twitter.com/yaph" class="btn btn-info"><i class="fa fa-twitter"></i> Follow on Twitter</a>
 </div>
 
 <div id="mc_embed_signup" class="clearfix well voffset">
-<form action="http://github.us6.list-manage.com/subscribe/post?u=6e91c5ec6f31498a21bc80826&amp;id=bb7db2c23d" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="form validate" target="_blank" novalidate>
+<form action="http://github.us6.list-manage.com/subscribe/post?u=6e91c5ec6f31498a21bc80826&amp;id=bb7db2c23d" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="form validate" target="_blank" role="form" novalidate>
 <label for="mce-EMAIL">Subscribe to the <strong>Datavis Weekly Newsletter</strong></label>
-<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
-<div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-success"></div>
+<input type="email" value="" name="EMAIL" class="email form-control" id="mce-EMAIL" placeholder="email address" required>
+<div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-success voffset"></div>
 <div id="mce-responses" class="clear">
 <div class="response" id="mce-error-response" style="display:none"></div>
 <div class="response" id="mce-success-response" style="display:none"></div>
@@ -141,12 +153,12 @@
 </div>
 
     
-<div id="comments" class="container">
-<div class="row"><div class="span12">
+<div id="comments" class="container-fluid">
+<div class="row"><div class="col-md-12">
 <div id="disqus_thread"></div>
 <script type="text/javascript">
 var disqus_shortname = 'exploringdata';
-var disqus_url = 'http://exploringdata.github.io/vis/earthquakes/';
+var disqus_url = 'http://localhost:8080/vis/earthquakes/';
 (function() {
 var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
 dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
@@ -158,11 +170,11 @@ dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
 </div>
 
     
-    <div id="footer" class="container">
-      <div class="row"><div class="span12">
+    <div id="footer" class="container-fluid">
+      <div class="row"><div class="col-md-12">
         <footer>
-          <p>Exploring Data is a showcase of interactive data visualizations created by <a href="http://ramiro.org/">Ramiro Gómez</a> (<a href="https://twitter.com/yaph">@yaph</a>) using open data and open source technologies, <a href="/about/">learn more</a>.<br>
-          Except where otherwise noted, the works on this site are licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US">Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a>.</p>
+            <hr>
+            <p>Exploring Data is a showcase of interactive data visualizations created with open data and open source tools, <a href="/about/">learn more</a>. CC BY-NC-SA 2014 <a href="http://ramiro.org/">Ramiro Gómez</a> (<a href="https://twitter.com/yaph">@yaph</a>).</p>
         </footer>
       </div></div>
     </div>
@@ -179,19 +191,19 @@ dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
 
 (function(c,a){function d(){var e=a.getElementsByTagName("a");var f=[];for(var g=0;g<e.length;++g){var h=e[g];if(h.host!=c.location.host){f.push(h)}}return f}function b(f){var e=f.srcElement||f.target;while(e&&(typeof e.tagName=="undefined"||e.tagName.toLowerCase()!="a"||!e.href)){e=e.parentNode}if(!e||!e.href){return}if(c.ga){ga("send","event","Outbound link","Click",e.href)}if(!e.target||e.target.match(/^_(self|parent|top)$/i)){setTimeout(function(){a.location.href=e.href},150);if(f.preventDefault){f.preventDefault()}else{f.returnValue=false}}}c.addEventListener("load",function(){var e=d();for(var f in e){e[f].addEventListener("click",b)}})}(window,document));
 </script>
-    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-    <script src="/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 
     
 
-    <script src="/js/script.js#v=11"></script>
+    <script src="/js/script.js#v=12"></script>
     
       
-          <script src="/vendor/d3/d3.v2.min.js#v=11"></script>
+          <script src="/vendor/d3/d3.v2.min.js#v=12"></script>
       
-          <script src="/vendor/d3/queue.v1.min.js#v=11"></script>
+          <script src="/vendor/d3/queue.v1.min.js#v=12"></script>
       
-          <script src="/js/earthquakes/script.js#v=11"></script>
+          <script src="/js/earthquakes/script.js#v=12"></script>
       
     
 

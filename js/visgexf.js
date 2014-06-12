@@ -193,10 +193,27 @@ var visgexf = {
   },
 
   initSearch: function() {
-    visgexf.searchInput.typeahead({
-      'source': visgexf.nodelabels,
-      'updater': visgexf.redirectHash
+    var labels = new Bloodhound({
+      datumTokenizer: Bloodhound.tokenizers.obj.whitespace('value'),
+      queryTokenizer: Bloodhound.tokenizers.whitespace,
+      local: $.map(visgexf.nodelabels, function(label) { return { value: label }; })
     });
+    labels.initialize();
+    var updater = function(event) {
+      event.preventDefault();
+      visgexf.redirectHash(visgexf.searchInput.val());
+    };
+
+    visgexf.searchInput.typeahead({
+        hint: true,
+        highlight: true
+      }, {
+        name: 'languages',
+        displayKey: 'value',
+        source: labels.ttAdapter()
+    }).on('typeahead:selected', updater);
+    $('#highlight-node').on('submit', updater);
+
     if (document.location.hash) {
       visgexf.redirectHash();
     }

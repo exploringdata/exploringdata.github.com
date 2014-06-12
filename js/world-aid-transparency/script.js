@@ -61,6 +61,7 @@ var showCountry = function(d) {
       title: countryinfo[label].name + ' (' + label + '): ' + format(item.usd),
     })
   });
+
   bar('#country-aid-chart', ranking);
   modal.modal('show');
 }

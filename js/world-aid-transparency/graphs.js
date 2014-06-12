@@ -1,16 +1,19 @@
 var mapselect = '#map',
-  width = containerwidth(mapselect),
-  height = width * .6,
+  width = containerwidth(mapselect);
+
+// map shouldn exceed certain width so it works on different screen sizes
+if (width > 600) width = 600;
+
+var height = width / 1.6,
   legendh = 30,
-  proj = d3.geo.equirectangular().scale(1).translate([0, 0]),
   arc = d3.geo.greatArc().precision(1),
   format = d3.format(',r'),
   formatpercentage = d3.format(".1%"),
-  projection = d3.geo.mercator().scale(width).translate([0, 0]),
+  projection = d3.geo.naturalEarth().scale(width*1.3).translate([0, -width/4]),
   path = d3.geo.path().projection(projection);
 
 var tf = function() {
-  return 'translate(' + width / 2 + ',' + height / 1.8 + ')scale(' + 100 / width + ')'
+  return 'translate(' + width / 2 + ',' + height / 1.7 + ')scale(' + 100 / width + ')'
 };
 
 var rescale = function() {

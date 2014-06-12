@@ -1,12 +1,12 @@
 
 <!DOCTYPE html>
 <html xmlns:fb="http://ogp.me/ns/fb#" lang="en">
-  <head>
+<head>
     <meta charset="utf-8">
     <title>Search for Public Data on the Web | Exploring Data</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-      <meta name="description" content="A Google custom search engine, that searches sites that host public data.">
+        <meta name="description" content="A Google custom search engine, that searches sites that host public data.">
     
     
     
@@ -14,16 +14,17 @@
 <meta name="twitter:creator" content="@yaph">
 <meta name="twitter:title" content="Search for Public Data on the Web">
 <meta name="twitter:description" content="A Google custom search engine, that searches sites that host public data.">
-<meta name="twitter:image:src" content="http://exploringdata.github.io">
+<meta name="twitter:image:src" content="http://localhost:8080">
 
     <meta name="author" content="Ramiro Gómez">
-    <link rel="canonical" href="http://exploringdata.github.io/datasearch/">
-    <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/vendor/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
-    <link href="/vendor/fontawesome/css/font-awesome.min.css" rel="stylesheet">
-    <link href="/css/style.css#v=11" rel="stylesheet">
+    <link rel="canonical" href="http://localhost:8080/datasearch/">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/css/style.css#v=12" rel="stylesheet">
     
-      <link href="/css/customsearch.css#v=11" rel="stylesheet">
+        
+            <link href="/css/customsearch.css#v=12" rel="stylesheet">
+        
     
     
     <!--[if lt IE 9]>
@@ -31,73 +32,84 @@
     <![endif]-->
     <link rel="shortcut icon" href="/favicon.ico">
     
-      
-        <link rel="alternate" type="application/rss+xml" title="Exploring Data main RSS feed" href="http://exploringdata.github.io/rss.xml">
-      
+        
+            <link rel="alternate" type="application/rss+xml" title="Exploring Data main RSS feed" href="http://localhost:8080/rss.xml">
+        
     
-  </head>
-  <body class="">
+</head>
+
+<body class="">
+
     
-    <div id="navbar" class="navbar navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
-          <a id="site-name" class="brand" href="/">Exploring Data</a>
-          <div class="nav-collapse">
+    <nav id="navbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a id="site-name" class="navbar-brand" href="/">Exploring Data</a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="main-navbar">
             
-<ul class="nav">
-  <li><a href="/story/"><i class="icon-edit"></i> Data Stories</a></li>
-  <li><a href="/datasearch/"><i class="icon-search"></i> Data Search</a></li>
-  <li><a href="/data-visualization-books/"><i class="icon-book"></i> Data Books</a></li>
-  <li><a href="/sitemap/"><i class="icon-sitemap"></i> Sitemap</a></li>
+<ul class="nav navbar-nav">
+  <li><a href="/story/"><i class="fa fa-edit"></i> Data Stories</a></li>
+  <li><a href="/datasearch/"><i class="fa fa-search"></i> Data Search</a></li>
+  <li><a href="/data-visualization-books/"><i class="fa fa-book"></i> Data Books</a></li>
+  <li><a href="/sitemap/"><i class="fa fa-sitemap"></i> Sitemap</a></li>
 </ul>
 
             <div id="sharemenu" class="nav pull-right">
-<div class="btn-group">
-  <a href="#" class="btn btn-success dropdown-toggle" data-toggle="dropdown"><i class="icon-share"></i></a>
-  <ul class="share dropdown-menu">
-    <li><a class="btn" href="/rss.xml"><i class="icon-rss"></i> RSS Feed</a></li>
-    <li><a class="btn" href="https://twitter.com/share?url=http%3A%2F%2Fexploringdata.github.io%2Fdatasearch%2F&text=Search+for+Public+Data+on+the+Web"><i class="icon-twitter"></i> Tweet this</a></li>
-    <li><a class="btn" href="https://flattr.com/submit/auto?user_id=rg&url=http%3A%2F%2Fexploringdata.github.io%2Fdatasearch%2F&title=Search+for+Public+Data+on+the+Web&language=en_GB&category=software"><i class="icon-sign-blank"></i> Flattr this</a></li>
-    <li><a class="btn" href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fexploringdata.github.io%2Fdatasearch%2F&t=Search+for+Public+Data+on+the+Web"><i class="icon-facebook"></i> Facebook</a></li>
-    <li><a class="btn" href="https://plus.google.com/share?url=http%3A%2F%2Fexploringdata.github.io%2Fdatasearch%2F"><i class="icon-google-plus"></i> Google+</a></li>
-    <li><a class="btn" href="http://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Fexploringdata.github.io%2Fdatasearch%2F&title=Search+for+Public+Data+on+the+Web"><i class="icon-linkedin"></i> LinkedIn</a></li>
-  </ul>
-</div>
+    <div class="btn-group">
+        <a href="#" class="btn navbar-btn btn-success dropdown-toggle" data-toggle="dropdown"><i class="fa fa-share"></i></a>
+        <ul class="share dropdown-menu pull-right">
+            <li><a href="/rss.xml"><i class="fa fa-rss"></i> RSS Feed</a></li>
+            <li><a href="https://twitter.com/share?url=http%3A%2F%2Flocalhost%3A8080%2Fdatasearch%2F&text=Search+for+Public+Data+on+the+Web"><i class="fa fa-twitter"></i> Tweet this</a></li>
+            <li><a href="https://flattr.com/submit/auto?user_id=rg&url=http%3A%2F%2Flocalhost%3A8080%2Fdatasearch%2F&title=Search+for+Public+Data+on+the+Web&language=en_GB&category=software"><i class="fa fa-plus"></i> Flattr this</a></li>
+            <li><a href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Fdatasearch%2F&t=Search+for+Public+Data+on+the+Web"><i class="fa fa-facebook"></i> Facebook</a></li>
+            <li><a href="https://plus.google.com/share?url=http%3A%2F%2Flocalhost%3A8080%2Fdatasearch%2F"><i class="fa fa-google-plus"></i> Google+</a></li>
+            <li><a href="http://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A8080%2Fdatasearch%2F&title=Search+for+Public+Data+on+the+Web"><i class="fa fa-linkedin"></i> LinkedIn</a></li>
+        </ul>
+    </div>
 </div>
             
-          </div>
-        </div>
-      </div>
-    </div>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
     
+
     
     
     
 <div id="info" class="container">
 <div class="row">
-  <div class="span8"><h1>Search for Public Data on the Web</h1>
-  <form class="form-search">
-  <input type="text" id="q" name="q" class="input-large search-query">
+  <div class="col-md-8"><h1>Search for Public Data on the Web</h1>
+  <form role="form">
+  <input type="search" id="q" name="q" class="input-lg">
   <button type="submit" class="btn btn-primary">Data Search</button>
 </form>
 <div id="gsc-search" class="hidden"><gcse:searchresults-only>Loading...</gcse:searchresults-only></div>
   
   </div>
-  <div class="span4">
+  <div class="col-md-4">
     
     
     
     <h3>Keep Exploring</h3>
 <div class="btn-group">
-<a href="/rss.xml" class="btn btn-warning"><i class="icon-rss"> News feed</i></a>
-<a href="https://twitter.com/yaph" class="btn btn-info"><i class="icon-twitter"></i> Follow on Twitter</a>
+<a href="/rss.xml" class="btn btn-warning"><i class="fa fa-rss"> News feed</i></a>
+<a href="https://twitter.com/yaph" class="btn btn-info"><i class="fa fa-twitter"></i> Follow on Twitter</a>
 </div>
 
 <div id="mc_embed_signup" class="clearfix well voffset">
-<form action="http://github.us6.list-manage.com/subscribe/post?u=6e91c5ec6f31498a21bc80826&amp;id=bb7db2c23d" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="form validate" target="_blank" novalidate>
+<form action="http://github.us6.list-manage.com/subscribe/post?u=6e91c5ec6f31498a21bc80826&amp;id=bb7db2c23d" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="form validate" target="_blank" role="form" novalidate>
 <label for="mce-EMAIL">Subscribe to the <strong>Datavis Weekly Newsletter</strong></label>
-<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
-<div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-success"></div>
+<input type="email" value="" name="EMAIL" class="email form-control" id="mce-EMAIL" placeholder="email address" required>
+<div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-success voffset"></div>
 <div id="mce-responses" class="clear">
 <div class="response" id="mce-error-response" style="display:none"></div>
 <div class="response" id="mce-success-response" style="display:none"></div>
@@ -112,7 +124,7 @@
     
     
     <div id="footer" class="container">
-      <div class="row"><div class="span12">
+      <div class="row"><div class="col-md-12">
         <footer>
           <p>Exploring Data is a showcase of interactive data visualizations created by <a href="http://ramiro.org/">Ramiro Gómez</a> (<a href="https://twitter.com/yaph">@yaph</a>) using open data and open source technologies, <a href="/about/">learn more</a>.<br>
           Except where otherwise noted, the works on this site are licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US">Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a>.</p>
@@ -132,15 +144,15 @@
 
 (function(c,a){function d(){var e=a.getElementsByTagName("a");var f=[];for(var g=0;g<e.length;++g){var h=e[g];if(h.host!=c.location.host){f.push(h)}}return f}function b(f){var e=f.srcElement||f.target;while(e&&(typeof e.tagName=="undefined"||e.tagName.toLowerCase()!="a"||!e.href)){e=e.parentNode}if(!e||!e.href){return}if(c.ga){ga("send","event","Outbound link","Click",e.href)}if(!e.target||e.target.match(/^_(self|parent|top)$/i)){setTimeout(function(){a.location.href=e.href},150);if(f.preventDefault){f.preventDefault()}else{f.returnValue=false}}}c.addEventListener("load",function(){var e=d();for(var f in e){e[f].addEventListener("click",b)}})}(window,document));
 </script>
-    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-    <script src="/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 
     
 
-    <script src="/js/script.js#v=11"></script>
+    <script src="/js/script.js#v=12"></script>
     
       
-          <script src="/js/customsearch.js#v=11"></script>
+          <script src="/js/customsearch.js#v=12"></script>
       
     
 

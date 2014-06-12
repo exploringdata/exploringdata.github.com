@@ -1,31 +1,30 @@
 
 <!DOCTYPE html>
 <html xmlns:fb="http://ogp.me/ns/fb#" lang="en">
-  <head>
+<head>
     <meta charset="utf-8">
     <title>npm Top Packages Dependencies Graph | Exploring Data</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-      <meta name="description" content="An interactive network graph showing the dependencies between npm packages, with at least 10 dependent packages, as of July 12, 2013 rendered with sigma.js and preprocessed with Gephi.">
+        <meta name="description" content="An interactive network graph showing the dependencies between npm packages, with at least 10 dependent packages, as of July 12, 2013 rendered with sigma.js and preprocessed with Gephi.">
     
     
-      <meta property="og:image" content="http://exploringdata.github.io/img/preview/npm-packages-dependencies.min10.jpg">
+        <meta property="og:image" content="http://localhost:8080/img/preview/npm-packages-dependencies.min10.jpg">
     
     
 <meta name="twitter:card" content="summary">
 <meta name="twitter:creator" content="@yaph">
 <meta name="twitter:title" content="npm Top Packages Dependencies Graph">
 <meta name="twitter:description" content="An interactive network graph showing the dependencies between npm packages, with at least 10 dependent packages, as of July 12, 2013 rendered with sigma.js and preprocessed with Gephi.">
-<meta name="twitter:image:src" content="http://exploringdata.github.io/img/preview/npm-packages-dependencies.min10.jpg">
+<meta name="twitter:image:src" content="http://localhost:8080/img/preview/npm-packages-dependencies.min10.jpg">
 
     <meta name="author" content="Ramiro Gómez">
-    <link rel="canonical" href="http://exploringdata.github.io/vis/npm-top-packages-dependencies/">
-    <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/vendor/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
-    <link href="/vendor/fontawesome/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="canonical" href="http://localhost:8080/vis/npm-top-packages-dependencies/">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="/css/style.css#v=11" rel="stylesheet">
     
-      <link href="/css/sigmagraphdark.css#v=11" rel="stylesheet">
+        <link href="/css/sigmagraphdark.css#v=11" rel="stylesheet">
     
     
     <!--[if lt IE 9]>
@@ -33,48 +32,52 @@
     <![endif]-->
     <link rel="shortcut icon" href="/favicon.ico">
     
-      
-        <link rel="alternate" type="application/rss+xml" title="Exploring Data main RSS feed" href="http://exploringdata.github.io/rss.xml">
-      
+        
+            <link rel="alternate" type="application/rss+xml" title="Exploring Data main RSS feed" href="http://localhost:8080/rss.xml">
+        
     
-  </head>
-  <body class="full">
+</head>
+
+<body class="full">
+
     
-<div id="navbar" class="navbar navbar-inverse navbar-fixed-top">
-  <div class="navbar-inner">
-    <a id="site-name" class="brand" href="/">Exploring Data</a>
-    <div class="nav-collapse">
-      
-<ul class="nav">
-  <li><input class="typeahead" type="text" data-provide="typeahead" placeholder="Highlight node"><i id="search-reset" class="icon-remove"></i></li>
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a id="site-name" class="navbar-brand" href="/">Exploring Data</a>
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="main-navbar">
+        
+<ul class="nav navbar-nav">
+  <li><form id="highlight-node" class="navbar-form navbar-left" role="search">
+    <div class="form-group">
+         <input class="form-control typeahead" type="text" placeholder="Highlight node"><i id="search-reset" class="fa fa-times-circle"></i>
+    </div>
+</form></li>
 </ul>
 
-      <div id="sharemenu" class="nav pull-right">
-<div class="btn-group">
-  <a href="#" class="btn btn-success dropdown-toggle" data-toggle="dropdown"><i class="icon-share"></i></a>
-  <ul class="share dropdown-menu">
-    <li><a class="btn" href="/rss.xml"><i class="icon-rss"></i> RSS Feed</a></li>
-    <li><a class="btn" href="https://twitter.com/share?url=http%3A%2F%2Fexploringdata.github.io%2Fvis%2Fnpm-top-packages-dependencies%2F&text=npm+Top+Packages+Dependencies+Graph"><i class="icon-twitter"></i> Tweet this</a></li>
-    <li><a class="btn" href="https://flattr.com/submit/auto?user_id=rg&url=http%3A%2F%2Fexploringdata.github.io%2Fvis%2Fnpm-top-packages-dependencies%2F&title=npm+Top+Packages+Dependencies+Graph&language=en_GB&category=software"><i class="icon-sign-blank"></i> Flattr this</a></li>
-    <li><a class="btn" href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fexploringdata.github.io%2Fvis%2Fnpm-top-packages-dependencies%2F&t=npm+Top+Packages+Dependencies+Graph"><i class="icon-facebook"></i> Facebook</a></li>
-    <li><a class="btn" href="https://plus.google.com/share?url=http%3A%2F%2Fexploringdata.github.io%2Fvis%2Fnpm-top-packages-dependencies%2F"><i class="icon-google-plus"></i> Google+</a></li>
-    <li><a class="btn" href="http://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Fexploringdata.github.io%2Fvis%2Fnpm-top-packages-dependencies%2F&title=npm+Top+Packages+Dependencies+Graph"><i class="icon-linkedin"></i> LinkedIn</a></li>
-  </ul>
-</div>
-</div>
-      <div class="pull-right">
-        <a href="/info/npm-packages-dependencies/" class="btn btn-info"><i class="icon-info-sign"></i> </a>
-      </div>
-      
+        <div class="pull-right">
+          <a href="/info/npm-packages-dependencies/" class="btn navbar-btn btn-info"><i class="fa fa-info"></i> </a>
+        </div>
+        
   
-  <ul class="nav pull-right">
-    <li><div class="btn-group"><a class="btn btn-primary showposter" href="http://www.zazzle.com/graph_of_top_npm_packages_dependencies_poster-228741805451295536?rf=238355915198956003">Get the Poster</a></div></li>
+  <ul class="nav navbar-nav pull-right">
+    <li><div class="btn-group"><a class="roffset btn navbar-btn btn-primary showposter" href="http://www.zazzle.com/graph_of_top_npm_packages_dependencies_poster-228741805451295536?rf=238355915198956003">Get the Poster</a></div></li>
   </ul>
   
 
-    </div>
-  </div>
-</div>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
 
     
     
@@ -84,7 +87,7 @@
     
     
     <div id="footer" class="container">
-      <div class="row"><div class="span12">
+      <div class="row"><div class="col-md-12">
         <footer>
           <p>Exploring Data is a showcase of interactive data visualizations created by <a href="http://ramiro.org/">Ramiro Gómez</a> (<a href="https://twitter.com/yaph">@yaph</a>) using open data and open source technologies, <a href="/about/">learn more</a>.<br>
           Except where otherwise noted, the works on this site are licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US">Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a>.</p>
@@ -131,8 +134,8 @@
 
 (function(c,a){function d(){var e=a.getElementsByTagName("a");var f=[];for(var g=0;g<e.length;++g){var h=e[g];if(h.host!=c.location.host){f.push(h)}}return f}function b(f){var e=f.srcElement||f.target;while(e&&(typeof e.tagName=="undefined"||e.tagName.toLowerCase()!="a"||!e.href)){e=e.parentNode}if(!e||!e.href){return}if(c.ga){ga("send","event","Outbound link","Click",e.href)}if(!e.target||e.target.match(/^_(self|parent|top)$/i)){setTimeout(function(){a.location.href=e.href},150);if(f.preventDefault){f.preventDefault()}else{f.returnValue=false}}}c.addEventListener("load",function(){var e=d();for(var f in e){e[f].addEventListener("click",b)}})}(window,document));
 </script>
-    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-    <script src="/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 
     
 
@@ -142,6 +145,8 @@
           <script src="/vendor/sigma/sigma.min.js#v=11"></script>
       
           <script src="/vendor/sigma/sigma.parseJson.js#v=11"></script>
+      
+          <script src="/vendor/twitter/typeahead.bundle.min.js#v=11"></script>
       
           <script src="/js/visgexf.js#v=11"></script>
       

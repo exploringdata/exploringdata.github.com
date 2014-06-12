@@ -35,8 +35,8 @@ d3.json('/json/evolution-internet-users.json', function(errors, nations) {
 
     // Chart dimensions.
     var margin = {top: 19.5, right: 19.5, bottom: 39.5, left: 39.5},
-        width = containerwidth('#vis') - margin.right,
-        height = width / 1.6;
+        width = containerwidth('#vis') - margin.right - margin.left,
+        height = width / 2.2;
 
     // Various scales. These domains make assumptions of data, naturally.
     var xScale = d3.scale.log().domain([100, max_gdp * 1.01]).range([0, width]),
