@@ -6,6 +6,7 @@ function containerDim(selector, dim) {
     return parseInt(d3.select(selector).style(dim))
 }
 $(function(){
+  $('a[href*="http"]').attr('target', '_top');
   $('.nav a[href="'+document.location.pathname+'"]').parent('li').attr('class', 'active');
   $('.share a').click(function(e){
     e.preventDefault();
@@ -18,5 +19,4 @@ $(function(){
     e.preventDefault();
     $('#help').modal();
   });
-  $('a[href*="http"]').attr('target', '_top');
 });
