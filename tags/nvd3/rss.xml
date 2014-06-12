@@ -3,15 +3,15 @@
 <channel><title>Tags » Nvd3</title>
     <link>http://exploringdata.github.io</link>
     <description>tags/nvd3</description>
-    <lastBuildDate>Thu, 12 Jun 2014 15:08:07 </lastBuildDate>
+    <lastBuildDate>Thu, 12 Jun 2014 15:14:22 </lastBuildDate>
     <generator>Logya</generator>
     <docs>http://blogs.law.harvard.edu/tech/rss</docs>
     
     <item>
         <title>A Decade of Climate Change in the Guardian</title>
-        <link>http://localhost:8080/vis/climate-changes-decade/</link>
+        <link>http://exploringdata.github.io/vis/climate-changes-decade/</link>
         <description>Explore a decade of climate change, global warming, natural disaster, extreme weather, pollution and deforestation in the articles published by the Guardian.</description>
-        <guid>http://localhost:8080/vis/climate-changes-decade/</guid>
+        <guid>http://exploringdata.github.io/vis/climate-changes-decade/</guid>
         <pubDate>Fri, 05 Apr 2013 00:56:02 </pubDate>
     </item>
     

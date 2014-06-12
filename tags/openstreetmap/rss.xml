@@ -3,15 +3,15 @@
 <channel><title>Tags » Openstreetmap</title>
     <link>http://exploringdata.github.io</link>
     <description>tags/openstreetmap</description>
-    <lastBuildDate>Thu, 12 Jun 2014 15:08:07 </lastBuildDate>
+    <lastBuildDate>Thu, 12 Jun 2014 15:14:22 </lastBuildDate>
     <generator>Logya</generator>
     <docs>http://blogs.law.harvard.edu/tech/rss</docs>
     
     <item>
         <title>A Map of Bike Routes in Berlin, Germany</title>
-        <link>http://localhost:8080/info/berlin-bike-routes/</link>
+        <link>http://exploringdata.github.io/info/berlin-bike-routes/</link>
         <description>The bike routes map for Berlin, Germany shows 14 different biking routes through and around the city. Created with OpenLayers, Open Street Map and data from Senatsverwaltung für Stadtentwicklung und Umwelt.</description>
-        <guid>http://localhost:8080/info/berlin-bike-routes/</guid>
+        <guid>http://exploringdata.github.io/info/berlin-bike-routes/</guid>
         <pubDate>Tue, 19 Feb 2013 02:02:03 </pubDate>
     </item>
     
