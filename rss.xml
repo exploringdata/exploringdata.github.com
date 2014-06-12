@@ -3,9 +3,17 @@
 <channel><title>Exploring Data News Feed</title>
     <link>http://exploringdata.github.io</link>
     <description></description>
-    <lastBuildDate>Thu, 12 Jun 2014 15:14:22 </lastBuildDate>
+    <lastBuildDate>Fri, 13 Jun 2014 01:14:54 </lastBuildDate>
     <generator>Logya</generator>
     <docs>http://blogs.law.harvard.edu/tech/rss</docs>
+    
+    <item>
+        <title>Exploring Movie Body Counts</title>
+        <link>http://exploringdata.github.io/notebook/movie-body-counts/</link>
+        <description>A look at movie body counts based on information from the Website Movie Body Counts, a forum where users collect on-screen body counts for a selection of films and the characters and actors who appear in these films.</description>
+        <guid>http://exploringdata.github.io/notebook/movie-body-counts/</guid>
+        <pubDate>Thu, 12 Jun 2014 23:06:47 </pubDate>
+    </item>
     
     <item>
         <title>Top 1% Income Share in Different Countries</title>
@@ -77,14 +85,6 @@
         <description>An interactive network graph showing the dependencies between npm packages as of July 12, 2013 rendered with sigma.js and preprocessed with Gephi.</description>
         <guid>http://exploringdata.github.io/vis/npm-packages-dependencies/</guid>
         <pubDate>Mon, 15 Jul 2013 13:58:21 </pubDate>
-    </item>
-    
-    <item>
-        <title>Geo Maps Drawn from IP Locations</title>
-        <link>http://exploringdata.github.io/vis/ip-location-maps/</link>
-        <description>Geographic maps of the world and most continents drawn based on an IP location dataset with 419433 records.</description>
-        <guid>http://exploringdata.github.io/vis/ip-location-maps/</guid>
-        <pubDate>Tue, 11 Jun 2013 00:00:00 </pubDate>
     </item>
     
 </channel></rss>

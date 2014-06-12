@@ -3,9 +3,17 @@
 <channel><title>Tags » Film</title>
     <link>http://exploringdata.github.io</link>
     <description>tags/film</description>
-    <lastBuildDate>Thu, 12 Jun 2014 15:14:22 </lastBuildDate>
+    <lastBuildDate>Fri, 13 Jun 2014 01:14:54 </lastBuildDate>
     <generator>Logya</generator>
     <docs>http://blogs.law.harvard.edu/tech/rss</docs>
+    
+    <item>
+        <title>Exploring Movie Body Counts</title>
+        <link>http://exploringdata.github.io/notebook/movie-body-counts/</link>
+        <description>A look at movie body counts based on information from the Website Movie Body Counts, a forum where users collect on-screen body counts for a selection of films and the characters and actors who appear in these films.</description>
+        <guid>http://exploringdata.github.io/notebook/movie-body-counts/</guid>
+        <pubDate>Thu, 12 Jun 2014 23:06:47 </pubDate>
+    </item>
     
     <item>
         <title>Relations of James Bond Film Actors based on Common Appearance</title>
