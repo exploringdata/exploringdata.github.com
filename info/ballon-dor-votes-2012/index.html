@@ -9,20 +9,22 @@
         <meta name="description" content="The Ballon d'Or 2012 visualization shows an interactive network graph of voters and voted players related based on votes cast for the male FIFA Ballon d'Or award in 2012.">
     
     
-        <meta property="og:image" content="http://localhost:8080/img/preview/ballon-dor-votes-2012.jpg">
+        <meta property="og:image" content="http://exploringdata.github.io/img/preview/ballon-dor-votes-2012.jpg">
     
     
 <meta name="twitter:card" content="summary">
 <meta name="twitter:creator" content="@yaph">
 <meta name="twitter:title" content="Who Voted for Whom at Ballon d'Or 2012">
 <meta name="twitter:description" content="The Ballon d'Or 2012 visualization shows an interactive network graph of voters and voted players related based on votes cast for the male FIFA Ballon d'Or award in 2012.">
-<meta name="twitter:image:src" content="http://localhost:8080/img/preview/ballon-dor-votes-2012.jpg">
+<meta name="twitter:image:src" content="http://exploringdata.github.io/img/preview/ballon-dor-votes-2012.jpg">
 
     <meta name="author" content="Ramiro Gómez">
-    <link rel="canonical" href="http://localhost:8080/info/ballon-dor-votes-2012/">
+    <link rel="canonical" href="http://exploringdata.github.io/info/ballon-dor-votes-2012/">
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-    <link href="/css/style.css#v=11" rel="stylesheet">
+    <link href="/css/style.css#v=12" rel="stylesheet">
+    
+        
     
     
     <!--[if lt IE 9]>
@@ -31,7 +33,7 @@
     <link rel="shortcut icon" href="/favicon.ico">
     
         
-            <link rel="alternate" type="application/rss+xml" title="Exploring Data main RSS feed" href="http://localhost:8080/rss.xml">
+            <link rel="alternate" type="application/rss+xml" title="Exploring Data main RSS feed" href="http://exploringdata.github.io/rss.xml">
         
     
 </head>
@@ -39,7 +41,7 @@
 <body class="">
 
     
-    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <nav id="navbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
       <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
@@ -64,13 +66,13 @@
             <div id="sharemenu" class="nav pull-right">
     <div class="btn-group">
         <a href="#" class="btn navbar-btn btn-success dropdown-toggle" data-toggle="dropdown"><i class="fa fa-share"></i></a>
-        <ul class="share dropdown-menu">
-            <li><a class="btn" href="/rss.xml"><i class="fa fa-rss"></i> RSS Feed</a></li>
-            <li><a class="btn" href="https://twitter.com/share?url=http%3A%2F%2Flocalhost%3A8080%2Finfo%2Fballon-dor-votes-2012%2F&text=Who+Voted+for+Whom+at+Ballon+d%27Or+2012"><i class="fa fa-twitter"></i> Tweet this</a></li>
-            <li><a class="btn" href="https://flattr.com/submit/auto?user_id=rg&url=http%3A%2F%2Flocalhost%3A8080%2Finfo%2Fballon-dor-votes-2012%2F&title=Who+Voted+for+Whom+at+Ballon+d%27Or+2012&language=en_GB&category=software"><i class="icon-sign-blank"></i> Flattr this</a></li>
-            <li><a class="btn" href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Finfo%2Fballon-dor-votes-2012%2F&t=Who+Voted+for+Whom+at+Ballon+d%27Or+2012"><i class="fa fa-facebook"></i> Facebook</a></li>
-            <li><a class="btn" href="https://plus.google.com/share?url=http%3A%2F%2Flocalhost%3A8080%2Finfo%2Fballon-dor-votes-2012%2F"><i class="icon-google-plus"></i> Google+</a></li>
-            <li><a class="btn" href="http://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A8080%2Finfo%2Fballon-dor-votes-2012%2F&title=Who+Voted+for+Whom+at+Ballon+d%27Or+2012"><i class="fa fa-linkedin"></i> LinkedIn</a></li>
+        <ul class="share dropdown-menu pull-right">
+            <li><a href="/rss.xml"><i class="fa fa-rss"></i> RSS Feed</a></li>
+            <li><a href="https://twitter.com/share?url=http%3A%2F%2Fexploringdata.github.io%2Finfo%2Fballon-dor-votes-2012%2F&text=Who+Voted+for+Whom+at+Ballon+d%27Or+2012"><i class="fa fa-twitter"></i> Tweet this</a></li>
+            <li><a href="https://flattr.com/submit/auto?user_id=rg&url=http%3A%2F%2Fexploringdata.github.io%2Finfo%2Fballon-dor-votes-2012%2F&title=Who+Voted+for+Whom+at+Ballon+d%27Or+2012&language=en_GB&category=software"><i class="fa fa-plus"></i> Flattr this</a></li>
+            <li><a href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fexploringdata.github.io%2Finfo%2Fballon-dor-votes-2012%2F&t=Who+Voted+for+Whom+at+Ballon+d%27Or+2012"><i class="fa fa-facebook"></i> Facebook</a></li>
+            <li><a href="https://plus.google.com/share?url=http%3A%2F%2Fexploringdata.github.io%2Finfo%2Fballon-dor-votes-2012%2F"><i class="fa fa-google-plus"></i> Google+</a></li>
+            <li><a href="http://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Fexploringdata.github.io%2Finfo%2Fballon-dor-votes-2012%2F&title=Who+Voted+for+Whom+at+Ballon+d%27Or+2012"><i class="fa fa-linkedin"></i> LinkedIn</a></li>
         </ul>
     </div>
 </div>
@@ -83,9 +85,9 @@
     
     
     
-<div id="info" class="container">
+<div id="info" class="container-fluid">
 <div class="row">
-  <div class="col-md-8"><h1>Who Voted for Whom at Ballon d'Or 2012</h1>
+  <div class="col-md-9"><h1>Who Voted for Whom at Ballon d'Or 2012</h1>
   <p>With 91 goals scored in 2012 <a href="/vis/ballon-dor-votes-2012/#Messi Lionel">Lionel Messi</a> set a record, that only Messi himself seems to be able to break. Being honored as FIFA's world player of the year for the 4th time in a row &mdash; of course this is a record too &mdash; was inevitable. Messi was elected by 170 coaches and 170 captains of national teams in the FIFA Member Association and a selected group of 165 journalists.</p>
 <p>Messi received 41.60% of the voters' points followed by <a href="/vis/ballon-dor-votes-2012/#Cristiano Ronaldo">Cristiano Ronaldo</a> (23.68%), who <a href="http://sports.yahoo.com/blogs/soccer-dirty-tackle/cristiano-ronaldo-congratulates-lionel-messi-winning-fourth-ballon-231316746--sow.html">did not seem to enjoy</a> the ceremony that much, being 2nd for the 2nd time in a row and <a href="/vis/ballon-dor-votes-2012/#Iniesta Andrés">Andrés Iniesta</a> (10.91%), who came in 3rd.</p>
 <p>The <a href="/vis/ballon-dor-votes-2012/">Ballon d'Or 2012 visualization</a> shows the network of votes cast to award the footballer of the year 2012. Voters and voted for players make up the 524 nodes of the graph. Node size is based on indegree. The 1513 edges are based on the given votes, with each of the voters having three votes: 1st place 5 points (thickest line), 2nd place 3 points, and 3rd place 1 point (thinnest line). Node color indicates either biseing a captain (red), coach (violet), journalist (blue), or player who did not vote (green).</p>
@@ -102,7 +104,7 @@
 
   
   </div>
-  <div class="col-md-4">
+  <div class="col-md-3">
     
       <h3>Visualization</h3>
       <a href="/vis/ballon-dor-votes-2012/"><img src="/img/preview/ballon-dor-votes-2012.jpg" alt="visualization preview"></a>
@@ -116,10 +118,10 @@
 </div>
 
 <div id="mc_embed_signup" class="clearfix well voffset">
-<form action="http://github.us6.list-manage.com/subscribe/post?u=6e91c5ec6f31498a21bc80826&amp;id=bb7db2c23d" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="form validate" target="_blank" novalidate>
+<form action="http://github.us6.list-manage.com/subscribe/post?u=6e91c5ec6f31498a21bc80826&amp;id=bb7db2c23d" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="form validate" target="_blank" role="form" novalidate>
 <label for="mce-EMAIL">Subscribe to the <strong>Datavis Weekly Newsletter</strong></label>
-<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
-<div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-success"></div>
+<input type="email" value="" name="EMAIL" class="email form-control" id="mce-EMAIL" placeholder="email address" required>
+<div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-success voffset"></div>
 <div id="mce-responses" class="clear">
 <div class="response" id="mce-error-response" style="display:none"></div>
 <div class="response" id="mce-success-response" style="display:none"></div>
@@ -132,12 +134,12 @@
 </div>
 
     
-<div id="comments" class="container">
+<div id="comments" class="container-fluid">
 <div class="row"><div class="col-md-12">
 <div id="disqus_thread"></div>
 <script type="text/javascript">
 var disqus_shortname = 'exploringdata';
-var disqus_url = 'http://localhost:8080/info/ballon-dor-votes-2012/';
+var disqus_url = 'http://exploringdata.github.io/info/ballon-dor-votes-2012/';
 (function() {
 var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
 dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
@@ -149,11 +151,11 @@ dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
 </div>
 
     
-    <div id="footer" class="container">
+    <div id="footer" class="container-fluid">
       <div class="row"><div class="col-md-12">
         <footer>
-          <p>Exploring Data is a showcase of interactive data visualizations created by <a href="http://ramiro.org/">Ramiro Gómez</a> (<a href="https://twitter.com/yaph">@yaph</a>) using open data and open source technologies, <a href="/about/">learn more</a>.<br>
-          Except where otherwise noted, the works on this site are licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US">Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a>.</p>
+            <hr>
+            <p>Exploring Data is a showcase of interactive data visualizations created with open data and open source tools, <a href="/about/">learn more</a>. CC BY-NC-SA 2014 <a href="http://ramiro.org/">Ramiro Gómez</a> (<a href="https://twitter.com/yaph">@yaph</a>).</p>
         </footer>
       </div></div>
     </div>
@@ -175,7 +177,7 @@ dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
 
     
 
-    <script src="/js/script.js#v=11"></script>
+    <script src="/js/script.js#v=12"></script>
     
 
     

@@ -9,20 +9,22 @@
         <meta name="description" content="The footballers search relations visualization shows a network graph of former and current football players and managers related by Google searches with results containing knowledge graph information.">
     
     
-        <meta property="og:image" content="http://localhost:8080/img/preview/footballers-search-relations.jpg">
+        <meta property="og:image" content="http://exploringdata.github.io/img/preview/footballers-search-relations.jpg">
     
     
 <meta name="twitter:card" content="summary">
 <meta name="twitter:creator" content="@yaph">
 <meta name="twitter:title" content="How Footballers Relate based on Google Searches">
 <meta name="twitter:description" content="The footballers search relations visualization shows a network graph of former and current football players and managers related by Google searches with results containing knowledge graph information.">
-<meta name="twitter:image:src" content="http://localhost:8080/img/preview/footballers-search-relations.jpg">
+<meta name="twitter:image:src" content="http://exploringdata.github.io/img/preview/footballers-search-relations.jpg">
 
     <meta name="author" content="Ramiro Gómez">
-    <link rel="canonical" href="http://localhost:8080/info/footballers-search-relations/">
+    <link rel="canonical" href="http://exploringdata.github.io/info/footballers-search-relations/">
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-    <link href="/css/style.css#v=11" rel="stylesheet">
+    <link href="/css/style.css#v=12" rel="stylesheet">
+    
+        
     
     
     <!--[if lt IE 9]>
@@ -31,7 +33,7 @@
     <link rel="shortcut icon" href="/favicon.ico">
     
         
-            <link rel="alternate" type="application/rss+xml" title="Exploring Data main RSS feed" href="http://localhost:8080/rss.xml">
+            <link rel="alternate" type="application/rss+xml" title="Exploring Data main RSS feed" href="http://exploringdata.github.io/rss.xml">
         
     
 </head>
@@ -39,7 +41,7 @@
 <body class="">
 
     
-    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <nav id="navbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
       <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
@@ -64,13 +66,13 @@
             <div id="sharemenu" class="nav pull-right">
     <div class="btn-group">
         <a href="#" class="btn navbar-btn btn-success dropdown-toggle" data-toggle="dropdown"><i class="fa fa-share"></i></a>
-        <ul class="share dropdown-menu">
-            <li><a class="btn" href="/rss.xml"><i class="fa fa-rss"></i> RSS Feed</a></li>
-            <li><a class="btn" href="https://twitter.com/share?url=http%3A%2F%2Flocalhost%3A8080%2Finfo%2Ffootballers-search-relations%2F&text=How+Footballers+Relate+based+on+Google+Searches"><i class="fa fa-twitter"></i> Tweet this</a></li>
-            <li><a class="btn" href="https://flattr.com/submit/auto?user_id=rg&url=http%3A%2F%2Flocalhost%3A8080%2Finfo%2Ffootballers-search-relations%2F&title=How+Footballers+Relate+based+on+Google+Searches&language=en_GB&category=software"><i class="icon-sign-blank"></i> Flattr this</a></li>
-            <li><a class="btn" href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Finfo%2Ffootballers-search-relations%2F&t=How+Footballers+Relate+based+on+Google+Searches"><i class="fa fa-facebook"></i> Facebook</a></li>
-            <li><a class="btn" href="https://plus.google.com/share?url=http%3A%2F%2Flocalhost%3A8080%2Finfo%2Ffootballers-search-relations%2F"><i class="icon-google-plus"></i> Google+</a></li>
-            <li><a class="btn" href="http://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A8080%2Finfo%2Ffootballers-search-relations%2F&title=How+Footballers+Relate+based+on+Google+Searches"><i class="fa fa-linkedin"></i> LinkedIn</a></li>
+        <ul class="share dropdown-menu pull-right">
+            <li><a href="/rss.xml"><i class="fa fa-rss"></i> RSS Feed</a></li>
+            <li><a href="https://twitter.com/share?url=http%3A%2F%2Fexploringdata.github.io%2Finfo%2Ffootballers-search-relations%2F&text=How+Footballers+Relate+based+on+Google+Searches"><i class="fa fa-twitter"></i> Tweet this</a></li>
+            <li><a href="https://flattr.com/submit/auto?user_id=rg&url=http%3A%2F%2Fexploringdata.github.io%2Finfo%2Ffootballers-search-relations%2F&title=How+Footballers+Relate+based+on+Google+Searches&language=en_GB&category=software"><i class="fa fa-plus"></i> Flattr this</a></li>
+            <li><a href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fexploringdata.github.io%2Finfo%2Ffootballers-search-relations%2F&t=How+Footballers+Relate+based+on+Google+Searches"><i class="fa fa-facebook"></i> Facebook</a></li>
+            <li><a href="https://plus.google.com/share?url=http%3A%2F%2Fexploringdata.github.io%2Finfo%2Ffootballers-search-relations%2F"><i class="fa fa-google-plus"></i> Google+</a></li>
+            <li><a href="http://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Fexploringdata.github.io%2Finfo%2Ffootballers-search-relations%2F&title=How+Footballers+Relate+based+on+Google+Searches"><i class="fa fa-linkedin"></i> LinkedIn</a></li>
         </ul>
     </div>
 </div>
@@ -83,9 +85,9 @@
     
     
     
-<div id="info" class="container">
+<div id="info" class="container-fluid">
 <div class="row">
-  <div class="col-md-8"><h1>How Footballers Relate based on Google Searches</h1>
+  <div class="col-md-9"><h1>How Footballers Relate based on Google Searches</h1>
   <p>The <a href="/vis/footballers-search-relations/">footballers search relations visualization</a> is an interactive network graph showing the connections of former and current football players and managers based on searches performed on Google. The graph consists of 1106 nodes and 2880 edges.</p>
 <h2>Methodology</h2>
 <p>As a starting point I took the player names from the <a href="http://www.guardian.co.uk/football/datablog/2012/dec/24/world-best-footballers-top-100-list">Guardian's Top 100 footballers</a> list as seed queries and crawled Google's search results 5 levels deep. To be included in the graph the search query's result page needs to show knowledge graph information. If a result contains related searches up to 5 of them were also performed until the maximum depth level was reached.</p>
@@ -107,7 +109,7 @@
 
   
   </div>
-  <div class="col-md-4">
+  <div class="col-md-3">
     
       <h3>Visualization</h3>
       <a href="/vis/footballers-search-relations/"><img src="/img/preview/footballers-search-relations.jpg" alt="visualization preview"></a>
@@ -121,10 +123,10 @@
 </div>
 
 <div id="mc_embed_signup" class="clearfix well voffset">
-<form action="http://github.us6.list-manage.com/subscribe/post?u=6e91c5ec6f31498a21bc80826&amp;id=bb7db2c23d" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="form validate" target="_blank" novalidate>
+<form action="http://github.us6.list-manage.com/subscribe/post?u=6e91c5ec6f31498a21bc80826&amp;id=bb7db2c23d" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="form validate" target="_blank" role="form" novalidate>
 <label for="mce-EMAIL">Subscribe to the <strong>Datavis Weekly Newsletter</strong></label>
-<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
-<div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-success"></div>
+<input type="email" value="" name="EMAIL" class="email form-control" id="mce-EMAIL" placeholder="email address" required>
+<div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-success voffset"></div>
 <div id="mce-responses" class="clear">
 <div class="response" id="mce-error-response" style="display:none"></div>
 <div class="response" id="mce-success-response" style="display:none"></div>
@@ -137,12 +139,12 @@
 </div>
 
     
-<div id="comments" class="container">
+<div id="comments" class="container-fluid">
 <div class="row"><div class="col-md-12">
 <div id="disqus_thread"></div>
 <script type="text/javascript">
 var disqus_shortname = 'exploringdata';
-var disqus_url = 'http://localhost:8080/info/footballers-search-relations/';
+var disqus_url = 'http://exploringdata.github.io/info/footballers-search-relations/';
 (function() {
 var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
 dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
@@ -154,11 +156,11 @@ dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
 </div>
 
     
-    <div id="footer" class="container">
+    <div id="footer" class="container-fluid">
       <div class="row"><div class="col-md-12">
         <footer>
-          <p>Exploring Data is a showcase of interactive data visualizations created by <a href="http://ramiro.org/">Ramiro Gómez</a> (<a href="https://twitter.com/yaph">@yaph</a>) using open data and open source technologies, <a href="/about/">learn more</a>.<br>
-          Except where otherwise noted, the works on this site are licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US">Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a>.</p>
+            <hr>
+            <p>Exploring Data is a showcase of interactive data visualizations created with open data and open source tools, <a href="/about/">learn more</a>. CC BY-NC-SA 2014 <a href="http://ramiro.org/">Ramiro Gómez</a> (<a href="https://twitter.com/yaph">@yaph</a>).</p>
         </footer>
       </div></div>
     </div>
@@ -180,7 +182,7 @@ dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
 
     
 
-    <script src="/js/script.js#v=11"></script>
+    <script src="/js/script.js#v=12"></script>
     
 
     
