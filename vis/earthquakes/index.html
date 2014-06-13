@@ -25,6 +25,8 @@
     <link href="/css/style.css#v=12" rel="stylesheet">
     
         
+            <link href="/vendor/d3-geomap/d3.geomap.css#v=12" rel="stylesheet">
+        
             <link href="/css/earthquakes.css#v=12" rel="stylesheet">
         
     
@@ -62,19 +64,19 @@
   <li class="dropdown">
     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Choose time and magnitude range <b class="caret"></b></a>
     <ul class="dropdown-menu" id="eqranges">
-      <li><a href="http://earthquake.usgs.gov/earthquakes/feed/geojsonp/1.0/hour">Past hour M1+ earthquakes</a></li>
-      <li><a href="http://earthquake.usgs.gov/earthquakes/feed/geojsonp/all/hour">Past hour all earthquakes</a></li>
-      <li><a href="http://earthquake.usgs.gov/earthquakes/feed/geojsonp/significant/day">Past day significant earthquakes</a></li>
-      <li><a href="http://earthquake.usgs.gov/earthquakes/feed/geojsonp/2.5/day">Past day M2.5+ earthquakes</a></li>
-      <li><a href="http://earthquake.usgs.gov/earthquakes/feed/geojsonp/1.0/day">Past day M1+ earthquakes</a></li>
-      <li><a href="http://earthquake.usgs.gov/earthquakes/feed/geojsonp/all/day">Past day all earthquakes</a></li>
-      <li><a href="http://earthquake.usgs.gov/earthquakes/feed/geojsonp/significant/week">Past 7 days significant earthquakes</a></li>
-      <li><a href="http://earthquake.usgs.gov/earthquakes/feed/geojsonp/4.5/week">Past 7 days M4.5+ earthquakes</a></li>
-      <li><a href="http://earthquake.usgs.gov/earthquakes/feed/geojsonp/2.5/week">Past 7 days M2.5+ earthquakes</a></li>
-      <li><a href="http://earthquake.usgs.gov/earthquakes/feed/geojsonp/1.0/week">Past 7 days M1+ earthquakes</a></li>
-      <li><a href="http://earthquake.usgs.gov/earthquakes/feed/geojsonp/significant/month">Past 30 days significant earthquakes</a></li>
-      <li><a href="http://earthquake.usgs.gov/earthquakes/feed/geojsonp/4.5/month">Past 30 days M4.5+ earthquakes</a></li>
-      <li><a href="http://earthquake.usgs.gov/earthquakes/feed/geojsonp/2.5/month">Past 30 days M2.5+ earthquakes</a></li>
+      <li><a href="#" url="http://earthquake.usgs.gov/earthquakes/feed/geojsonp/1.0/hour">Past hour M1+ earthquakes</a></li>
+      <li><a href="#" url="http://earthquake.usgs.gov/earthquakes/feed/geojsonp/all/hour">Past hour all earthquakes</a></li>
+      <li><a href="#" url="http://earthquake.usgs.gov/earthquakes/feed/geojsonp/significant/day">Past day significant earthquakes</a></li>
+      <li><a href="#" url="http://earthquake.usgs.gov/earthquakes/feed/geojsonp/2.5/day">Past day M2.5+ earthquakes</a></li>
+      <li><a href="#" url="http://earthquake.usgs.gov/earthquakes/feed/geojsonp/1.0/day">Past day M1+ earthquakes</a></li>
+      <li><a href="#" url="http://earthquake.usgs.gov/earthquakes/feed/geojsonp/all/day">Past day all earthquakes</a></li>
+      <li><a href="#" url="http://earthquake.usgs.gov/earthquakes/feed/geojsonp/significant/week">Past 7 days significant earthquakes</a></li>
+      <li><a href="#" url="http://earthquake.usgs.gov/earthquakes/feed/geojsonp/4.5/week">Past 7 days M4.5+ earthquakes</a></li>
+      <li><a href="#" url="http://earthquake.usgs.gov/earthquakes/feed/geojsonp/2.5/week">Past 7 days M2.5+ earthquakes</a></li>
+      <li><a href="#" url="http://earthquake.usgs.gov/earthquakes/feed/geojsonp/1.0/week">Past 7 days M1+ earthquakes</a></li>
+      <li><a href="#" url="http://earthquake.usgs.gov/earthquakes/feed/geojsonp/significant/month">Past 30 days significant earthquakes</a></li>
+      <li><a href="#" url="http://earthquake.usgs.gov/earthquakes/feed/geojsonp/4.5/month">Past 30 days M4.5+ earthquakes</a></li>
+      <li><a href="#" url="http://earthquake.usgs.gov/earthquakes/feed/geojsonp/2.5/month">Past 30 days M2.5+ earthquakes</a></li>
     </ul>
   </li>
   <li><label id="refresh" class="navbar-text checkbox"><input type="checkbox">Auto update data</label></li>
@@ -192,7 +194,7 @@ dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
 
 (function(c,a){function d(){var e=a.getElementsByTagName("a");var f=[];for(var g=0;g<e.length;++g){var h=e[g];if(h.host!=c.location.host){f.push(h)}}return f}function b(f){var e=f.srcElement||f.target;while(e&&(typeof e.tagName=="undefined"||e.tagName.toLowerCase()!="a"||!e.href)){e=e.parentNode}if(!e||!e.href){return}if(c.ga){ga("send","event","Outbound link","Click",e.href)}if(!e.target||e.target.match(/^_(self|parent|top)$/i)){setTimeout(function(){a.location.href=e.href},150);if(f.preventDefault){f.preventDefault()}else{f.returnValue=false}}}c.addEventListener("load",function(){var e=d();for(var f in e){e[f].addEventListener("click",b)}})}(window,document));
 </script>
-    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 
     
@@ -200,9 +202,9 @@ dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
     <script src="/js/script.js#v=12"></script>
     
       
-          <script src="/vendor/d3/d3.v2.min.js#v=12"></script>
+          <script src="/vendor/d3-geomap/d3.geomap.dependencies.min.js#v=12"></script>
       
-          <script src="/vendor/d3/queue.v1.min.js#v=12"></script>
+          <script src="/vendor/d3-geomap/d3.geomap.min.js#v=12"></script>
       
           <script src="/js/earthquakes/script.js#v=12"></script>
       

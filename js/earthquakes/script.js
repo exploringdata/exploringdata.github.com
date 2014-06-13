@@ -1,70 +1,59 @@
 var current_feed = null,
-  timer = null;
+    timer = null,
+    scaleradius = d3.scale.pow().exponent(10).domain([0, 10]).range([1.2, 360])
+    mapselect = '#map',
+    width = containerwidth(mapselect),
+    height = width * .48,
+    eqtitle = function(d) {
+      return 'Magnitude: ' + d.properties.mag + ' ◦ Place: ' + d.properties.place
+    };
 
-var eqradius = function(feature, index) {
-  return d3.scale.pow().exponent(10).domain([0, 10]).range([.8, 300])(feature.properties.mag)
-}
+var worldmap = d3.geomap()
+    .geofile('/topojson/world/countries.json')
+    .width(width)
+    .height(height)
+    .scale(width/6.2)
+    .translate([width/2, height/2.1])
+    // fix eq locations on zoom before activating click to zoom
+    .postUpdate(postUpdate);
 
-var mapselect = '#map',
-  width = containerwidth(mapselect),
-  height = width/1.5,
-  projection = d3.geo.mercator().scale(width/1.2).translate([0, 0]),
-  path = d3.geo.path().projection(projection).pointRadius(eqradius),
-  eqtitle = function(d) {
-    return 'Magnitude: ' + d.properties.mag + ' Place: ' + d.properties.place
-  };
+d3.select(mapselect)
+    .call(worldmap.draw, worldmap);
 
-var tf = function() {
-  return 'translate(' + width / 2 + ',' + height / 2 + ')'
-};
-
-var rescale = function() {
-  svg.attr('transform', 'translate(' + d3.event.translate + ')'
-    + ' scale(' + d3.event.scale + ')')
-}
-
-var svg = d3.select(mapselect).append('svg')
-  .attr('width', width)
-  .attr('height', height)
-  .call(d3.behavior.zoom().on('zoom', function() {rescale()}))
-    .append('svg:g');
-
-var contriesgroup = svg.append('g')
-  .attr('transform', tf)
-  .attr('class', 'countries');
-
-var eqgroup = svg.append('g')
-  .attr('transform', tf)
+var eqgroup = worldmap.svg().append('g')
   .attr('class', 'earthquake');
+
+function postUpdate() {
+    worldmap.selection.units.on('click', null);
+}
 
 // earthquake data
 function set_eqs(url, title) {
   current_feed = url;
   if (title) d3.select('#eqtitle').text(title);
-
-  d3.selectAll('.eqsrc').remove(); // cleanup existing scripts
-  var script = document.createElement('script');
-  script.src = url;
-  script.className = 'eqsrc';
-  document.getElementsByTagName('head')[0].appendChild(script);
+  $.ajax({
+    url: url,
+    jsonp: 'eqfeed_callback',
+    dataType: 'jsonp'
+  });
 }
 
 function eqfeed_callback(data) {
-  eqgroup.selectAll('path').remove();
-  eqgroup.selectAll('path')
-    .data(data.features)
-  .enter().append('path')
-    .attr('d', path)
-    .on('click', function(d) {document.location.href = d.properties.url})
-  .append('title')
-    .text(eqtitle);
+  eqgroup.selectAll('circle').remove();
+  eqgroup.selectAll('circle')
+      .data(data.features)
+    .enter().append('circle')
+      .attr('transform', function(d) { return 'translate(' + worldmap.properties.path.centroid(d) + ')'; })
+      .attr('r', function(d) { return scaleradius(d.properties.mag); })
+    .append('title')
+      .text(eqtitle);
 }
 
 function select_eq(element) {
   d3.selectAll('#eqranges li').classed('active', false);
   var t = d3.select(element);
-  d3.select(t[0][0].parentNode).classed('active', true);
-  set_eqs(t.attr('href'), t.text());
+  d3.select(t.node().parentNode).classed('active', true);
+  set_eqs(t.attr('url'), t.text());
 }
 
 // set refresh intervall
@@ -75,23 +64,10 @@ function refresh() {
 // load eq data for last menu item by default
 select_eq(d3.selectAll('#eqranges a')[0].slice(-1)[0]);
 
-// local data
-queue()
-  .defer(d3.json, '/json/countries.geo.json')
-  .await(ready);
-
-function ready(countries) {
-  contriesgroup.selectAll('path')
-    .data(countries.features)
-  .enter().append('path')
-    .attr('class', 'country')
-    .attr('d', path);
-}
-
 /***** events *****/
 // range menu selection
 d3.selectAll('#eqranges a').on('click', function() {
-  window.event.preventDefault();
+  d3.event.preventDefault();
   select_eq(this);
 });
 
