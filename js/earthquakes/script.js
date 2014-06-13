@@ -45,6 +45,7 @@ function eqfeed_callback(data) {
     .enter().append('circle')
       .attr('transform', function(d) { return 'translate(' + worldmap.properties.path.centroid(d) + ')'; })
       .attr('r', function(d) { return scaleradius(d.properties.mag); })
+      .on('click', function(d) { window.open(d.properties.url); })
     .append('title')
       .text(eqtitle);
 }
