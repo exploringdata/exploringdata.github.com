@@ -16,8 +16,7 @@ var twitter_list = function(heading, screen_names) {
 var nodeinfo = function(data) {
   var sl = $('#shownode');
   sl.find('h3').text(data.name);
-  var desc = '<div><img src="' + data.profile_image_url + '" class="img-polaroid pull-right" alt="Photo of ' + hnode.name + '">';
-  desc += '<blockquote><p>' + data.description + '</p></blockquote><div>';
+  var desc = '<blockquote><p>' + data.description + '</p></blockquote>';
   desc += '<p><i class="fa fa-twitter"></i> <a href="https://twitter.com/' + data.screen_name + '">Twitter Profile</a>';
   if (data.url.length > 0)
     desc += ' | <i class="fa fa-home"></i> <a href="' + data.url + '">Homepage</a>';
