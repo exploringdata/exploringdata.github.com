@@ -20,7 +20,7 @@
 
     <meta name="author" content="Ramiro Gómez">
     <link rel="canonical" href="http://exploringdata.github.io/info/ballon-dor-votes-2012/">
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="/css/style.css#v=12" rel="stylesheet">
     
@@ -94,7 +94,9 @@
 <p>The <a href="/vis/ballon-dor-votes-2012/">Ballon d'Or 2012 visualization</a> shows the network of votes cast to award the footballer of the year 2012. Voters and voted for players make up the 524 nodes of the graph. Node size is based on indegree. The 1513 edges are based on the given votes, with each of the voters having three votes: 1st place 5 points (thickest line), 2nd place 3 points, and 3rd place 1 point (thinnest line). Node color indicates either biseing a captain (red), coach (violet), journalist (blue), or player who did not vote (green).</p>
 <p>The voting data is retrieved from this <a href="http://www.fifa.com/mm/document/ballond'or/playeroftheyear(men)/01/98/07/84/fboawardmenplayer2012-bycountry.pdf">PDF document</a> &mdash; I can hardly imagine a worse format to publish data. The graph file was created with a <a href="https://github.com/exploringdata/ballon-dor-votes-2012">Python script</a> and preprocessed using the <a href="https://gephi.org/">Gephi visualization platform</a> to apply a Fruchterman-Reingold layout with some manual adjustments as well as node sizing and coloring. The interactive version is rendered with the <a href="http://sigmajs.org/">JavaScript library sigma.js</a>.</p>
 <p>Below you can watch the tribute video created by illustrator Richard Swarbrick to celebrate Lionel Messi's 4th Ballon d'Or in a row. Congratulations Lionel Messi for being such a great footballer and keep on amazing football fans in the years to come.</p>
-<iframe width="700" height="394" src="http://www.youtube.com/embed/ma4AkKgxzxc" frameborder="0" allowfullscreen></iframe>
+<div class="embed-responsive embed-responsive-16by9">
+  <iframe class="embed-responsive-item" src="http://www.youtube.com/embed/ma4AkKgxzxc"></iframe>
+</div>
   
     
 <div class="postinfo">
@@ -175,7 +177,7 @@ dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
 (function(c,a){function d(){var e=a.getElementsByTagName("a");var f=[];for(var g=0;g<e.length;++g){var h=e[g];if(h.host!=c.location.host){f.push(h)}}return f}function b(f){var e=f.srcElement||f.target;while(e&&(typeof e.tagName=="undefined"||e.tagName.toLowerCase()!="a"||!e.href)){e=e.parentNode}if(!e||!e.href){return}if(c.ga){ga("send","event","Outbound link","Click",e.href)}if(!e.target||e.target.match(/^_(self|parent|top)$/i)){setTimeout(function(){a.location.href=e.href},150);if(f.preventDefault){f.preventDefault()}else{f.returnValue=false}}}c.addEventListener("load",function(){var e=d();for(var f in e){e[f].addEventListener("click",b)}})}(window,document));
 </script>
     <script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 
     
 
