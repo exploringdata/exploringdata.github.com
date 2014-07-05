@@ -17,6 +17,5 @@ $(function(){
   }
 
   var G = visgexf.init('sig', '/gexf/programmers_forceatlas2.json', props);
-  nodeClick(G, 'programmers');
   $('.showposter').click(function(e){e.preventDefault();$('#showposter').modal();});
 });
