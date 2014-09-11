@@ -3,15 +3,15 @@
 <channel><title>Tags » Economy</title>
     <link>http://exploringdata.github.io</link>
     <description>tags/economy</description>
-    <lastBuildDate>Thu, 11 Sep 2014 10:06:55 </lastBuildDate>
+    <lastBuildDate>Thu, 11 Sep 2014 10:53:23 </lastBuildDate>
     <generator>Logya</generator>
     <docs>http://blogs.law.harvard.edu/tech/rss</docs>
     
     <item>
         <title>Top 1% Income Share in Different Countries</title>
-        <link>http://exploringdata.github.io/notebook/top-incomes-share/</link>
+        <link>http://localhost:8080/notebook/top-incomes-share/</link>
         <description>A quick dive into the World Top Incomes Database compiled and maintained by Facundo Alvaredo, Tony Atkinson, Thomas Piketty and Emmanuel Saez.</description>
-        <guid>http://exploringdata.github.io/notebook/top-incomes-share/</guid>
+        <guid>http://localhost:8080/notebook/top-incomes-share/</guid>
         <pubDate>Wed, 23 Apr 2014 14:23:47 </pubDate>
     </item>
     

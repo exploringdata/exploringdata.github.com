@@ -3,15 +3,15 @@
 <channel><title>Tags » World</title>
     <link>http://exploringdata.github.io</link>
     <description>tags/world</description>
-    <lastBuildDate>Thu, 11 Sep 2014 10:06:55 </lastBuildDate>
+    <lastBuildDate>Thu, 11 Sep 2014 10:53:23 </lastBuildDate>
     <generator>Logya</generator>
     <docs>http://blogs.law.harvard.edu/tech/rss</docs>
     
     <item>
         <title>Where in the World Happen Most Murders</title>
-        <link>http://exploringdata.github.io/info/intentional-homicides/</link>
+        <link>http://localhost:8080/info/intentional-homicides/</link>
         <description>A series of maps of the world showing where in the world the least and the most murders happen for the years 1995 to 2011.</description>
-        <guid>http://exploringdata.github.io/info/intentional-homicides/</guid>
+        <guid>http://localhost:8080/info/intentional-homicides/</guid>
         <pubDate>Fri, 20 Sep 2013 00:03:53 </pubDate>
     </item>
     
