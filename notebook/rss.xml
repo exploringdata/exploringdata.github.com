@@ -3,23 +3,23 @@
 <channel><title>Notebook</title>
     <link>http://exploringdata.github.io</link>
     <description>notebook</description>
-    <lastBuildDate>Thu, 11 Sep 2014 10:54:55 </lastBuildDate>
+    <lastBuildDate>Thu, 11 Sep 2014 11:02:11 </lastBuildDate>
     <generator>Logya</generator>
     <docs>http://blogs.law.harvard.edu/tech/rss</docs>
     
     <item>
         <title>Exploring Movie Body Counts</title>
-        <link>http://localhost:8080/notebook/movie-body-counts/</link>
+        <link>http://exploringdata.github.io/notebook/movie-body-counts/</link>
         <description>A look at movie body counts based on information from the Website Movie Body Counts, a forum where users collect on-screen body counts for a selection of films and the characters and actors who appear in these films.</description>
-        <guid>http://localhost:8080/notebook/movie-body-counts/</guid>
+        <guid>http://exploringdata.github.io/notebook/movie-body-counts/</guid>
         <pubDate>Thu, 12 Jun 2014 23:06:47 </pubDate>
     </item>
     
     <item>
         <title>Top 1% Income Share in Different Countries</title>
-        <link>http://localhost:8080/notebook/top-incomes-share/</link>
+        <link>http://exploringdata.github.io/notebook/top-incomes-share/</link>
         <description>A quick dive into the World Top Incomes Database compiled and maintained by Facundo Alvaredo, Tony Atkinson, Thomas Piketty and Emmanuel Saez.</description>
-        <guid>http://localhost:8080/notebook/top-incomes-share/</guid>
+        <guid>http://exploringdata.github.io/notebook/top-incomes-share/</guid>
         <pubDate>Wed, 23 Apr 2014 14:23:47 </pubDate>
     </item>
     

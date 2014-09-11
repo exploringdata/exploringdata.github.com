@@ -3,23 +3,23 @@
 <channel><title>Story</title>
     <link>http://exploringdata.github.io</link>
     <description>story</description>
-    <lastBuildDate>Thu, 11 Sep 2014 10:54:55 </lastBuildDate>
+    <lastBuildDate>Thu, 11 Sep 2014 11:02:11 </lastBuildDate>
     <generator>Logya</generator>
     <docs>http://blogs.law.harvard.edu/tech/rss</docs>
     
     <item>
         <title>Rail Suicides in Europe: Absolute vs. Relative</title>
-        <link>http://localhost:8080/story/rail-suicides-europe/</link>
+        <link>http://exploringdata.github.io/story/rail-suicides-europe/</link>
         <description>A look at rail suicides data for Europe from 2008 to 2011 highlighting the importance of relating numbers.</description>
-        <guid>http://localhost:8080/story/rail-suicides-europe/</guid>
+        <guid>http://exploringdata.github.io/story/rail-suicides-europe/</guid>
         <pubDate>Thu, 12 Sep 2013 11:39:40 </pubDate>
     </item>
     
     <item>
         <title>See Why Spain Won Euro 2012</title>
-        <link>http://localhost:8080/story/see-why-spain-won-euro-2012/</link>
+        <link>http://exploringdata.github.io/story/see-why-spain-won-euro-2012/</link>
         <description>A data story about Spain's performance at the UEFA Euro 2012 including charts created with the Datawrapper visualization tool.</description>
-        <guid>http://localhost:8080/story/see-why-spain-won-euro-2012/</guid>
+        <guid>http://exploringdata.github.io/story/see-why-spain-won-euro-2012/</guid>
         <pubDate>Mon, 10 Dec 2012 21:04:40 </pubDate>
     </item>
     
