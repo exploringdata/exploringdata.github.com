@@ -3,7 +3,7 @@
 <channel><title>Tags » Sigmajs</title>
     <link>http://exploringdata.github.io</link>
     <description>tags/sigmajs</description>
-    <lastBuildDate>Sat, 05 Jul 2014 14:00:21 </lastBuildDate>
+    <lastBuildDate>Thu, 11 Sep 2014 10:06:55 </lastBuildDate>
     <generator>Logya</generator>
     <docs>http://blogs.law.harvard.edu/tech/rss</docs>
     
@@ -72,7 +72,7 @@
     </item>
     
     <item>
-        <title>How Programming Languages Influenced Each Other</title>
+        <title>Visualizing Influence Relations of Programming Languages</title>
         <link>http://exploringdata.github.io/info/programming-languages-influence-network/</link>
         <description>The programming languages influence network is an interactive graph visualization where languages are connected by influence relations based on data from Freebase.</description>
         <guid>http://exploringdata.github.io/info/programming-languages-influence-network/</guid>

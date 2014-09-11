@@ -12,7 +12,7 @@
     <link rel="canonical" href="http://exploringdata.github.io/vis/github-repository-popularity-compared-activity/">
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-    <link href="/css/style.css#v=12" rel="stylesheet">
+    <link href="/css/style.css#v=13" rel="stylesheet">
     
         
     
@@ -76,7 +76,7 @@
     
     
     
-<div id="info" class="container-fluid">
+<div id="info" class="container">
 <div class="row">
   <div class="col-md-9"><h1>Github Repository Popularity Compared to Activity</h1>
   SELECT repository_url, repository_forks, repository_watchers , COUNT(payload_commit_id) as cnt
@@ -86,9 +86,11 @@ GROUP BY repository_url, repository_forks, repository_watchers
 ORDER BY cnt DESC
   
     
+
   
   </div>
   <div class="col-md-3">
+    
     
     
     
@@ -117,7 +119,7 @@ ORDER BY cnt DESC
 
     
     
-    <div id="footer" class="container-fluid">
+    <div id="footer" class="container">
       <div class="row"><div class="col-md-12">
         <footer>
             <hr>
@@ -144,7 +146,7 @@ ORDER BY cnt DESC
 
     
 
-    <script src="/js/script.js#v=12"></script>
+    <script src="/js/script.js#v=13"></script>
     
 
     

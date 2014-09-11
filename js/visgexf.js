@@ -196,7 +196,8 @@ var visgexf = {
     var labels = new Bloodhound({
       datumTokenizer: Bloodhound.tokenizers.obj.whitespace('value'),
       queryTokenizer: Bloodhound.tokenizers.whitespace,
-      local: $.map(visgexf.nodelabels, function(label) { return { value: label }; })
+      local: $.map(visgexf.nodelabels, function(label) { return { value: label }; }),
+      limit: 20
     });
     labels.initialize();
     var updater = function(event) {

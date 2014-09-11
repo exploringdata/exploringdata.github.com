@@ -1,11 +1,21 @@
-var gexf = '/gexf/plin_forceatlas2.json';
-
 // langinfo must be accessible from the external freebase text service script
 var langinfo = function(data) {
-  var sl = $('#shownode');
+  var sl = $('#shownode'),
+    influenced = [],
+    influencedby = [];
+
   sl.find('h3').text(hlang.label);
-  var influenced = 'undefined' !== typeof hlang.attr.attributes.influenced ? hlang.attr.attributes.influenced.split('|').sort().join(', ') : false;
-  var influencedby = 'undefined' !== typeof hlang.attr.attributes.influencedby ? hlang.attr.attributes.influencedby.split('|').sort().join(', ') : false;
+
+  if ('undefined' !== typeof hlang.attr.attributes.influenced) {
+    hlang.attr.attributes.influenced.split('|').forEach(function(i){
+      influenced.push('<a href="#' + i + '">' + i + '</a>');
+    });
+  }
+  if ('undefined' !== typeof hlang.attr.attributes.influencedby) {
+    hlang.attr.attributes.influencedby.split('|').forEach(function(i){
+      influencedby.push('<a href="#' + i + '">' + i + '</a>');
+    });
+  }
   var desc = data.result + '... <a href="http://www.freebase.com/view' + hlang.id + '">view on Freebase</a>';
 
   // in case of Ruby include Matz tweet
@@ -13,10 +23,10 @@ var langinfo = function(data) {
     desc = '<blockquote class="twitter-tweet"><p>NowBrowsing: Programming Languages Influence Network <a href="http://t.co/kzdSlrpt" title="http://exploringdata.github.com/vis/programming-languages-influence-network/">exploringdata.github.com/vis/programmin…</a></p>&mdash; Yukihiro Matsumoto (@yukihiro_matz) <a href="https://twitter.com/yukihiro_matz/status/251612155470823425" data-datetime="2012-09-28T09:19:47+00:00">September 28, 2012</a></blockquote><script src="//platform.twitter.com/widgets.js" charset="utf-8"></script>' + desc;
   }
 
-  if (influenced)
-    desc += '<h4>Languages Influenced</h4><p>' + influenced + '</p>';
-  if (influencedby)
-    desc += '<h4>Influenced by</h4><p>' + influencedby + '</p>';
+  if (influenced.length)
+    desc += '<h4>Languages Influenced</h4><p>' + influenced.join(', ') + '</p>';
+  if (influencedby.length)
+    desc += '<h4>Influenced by</h4><p>' + influencedby.join(', ') + '</p>';
 
   desc += '<hr><h4>Search for ' + hlang.label + ' books on</h4>';
 

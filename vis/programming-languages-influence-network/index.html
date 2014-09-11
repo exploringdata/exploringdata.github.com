@@ -22,13 +22,13 @@
     <link rel="canonical" href="http://exploringdata.github.io/vis/programming-languages-influence-network/">
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-    <link href="/css/style.css#v=12" rel="stylesheet">
+    <link href="/css/style.css#v=13" rel="stylesheet">
     
     
         
     
-    <link href="/css/typeahead.css#v=12" rel="stylesheet">
-    <link href="/css/sigmagraphdark.css#v=12" rel="stylesheet">
+    <link href="/css/typeahead.css#v=13" rel="stylesheet">
+    <link href="/css/sigmagraphdark.css#v=13" rel="stylesheet">
 
     
     <!--[if lt IE 9]>
@@ -73,7 +73,7 @@
   <li class="dropdown">
     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Choose Layout <b class="caret"></b></a>
     <ul class="dropdown-menu" id="layout">
-      <li class="active"><a href="#forceatlas2">Force Atlas 2</a></li>
+      <li class="active"><a href="#forceatlas">Force Atlas</a></li>
       <li><a href="#random">Random</a></li>
     </ul>
   </li>
@@ -102,7 +102,7 @@
     
     
     
-    <div id="footer" class="container-fluid">
+    <div id="footer" class="container">
       <div class="row"><div class="col-md-12">
         <footer>
             <hr>
@@ -126,7 +126,7 @@
         <h4>Language Information</h4>
         <p>When you click on a language node in the graph a modal window with information about the language will be displayed.</p>
         <h4>Language Search</h4>
-        <p>Search for a language name from the top menu to highlight its connections. Languages in red influenced the highlighted language and blue ones were influenced by it.</p>
+        <p>Search for a language name from the top menu to highlight its connections. Languages in orange influenced the highlighted language and blue ones were influenced by it.</p>
         <h4>Paradigm Highlighting</h4>
         <p>Choose and click on a paradigm from the <strong>Language Paradigm</strong> menu to only show languages within this paradigm.</p>
         <h4>Graph Layout</h4>
@@ -188,16 +188,21 @@
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 
     
+<script>
+var gexf = '/gexf/plin_forceatlas2.json';
+</script>
+
 <script src="/vendor/sigma/sigma.min.js"></script>
 <script src="/vendor/sigma/sigma.parseJson.js"></script>
 <script src="/vendor/twitter/typeahead.bundle.min.js"></script>
 <script src="/js/visgexf.js"></script>
 
 
-    <script src="/js/script.js#v=12"></script>
+
+    <script src="/js/script.js#v=13"></script>
     
       
-          <script src="/js/programming-languages-influence-network/script.js#v=12"></script>
+          <script src="/js/programming-languages-influence-network/script.js#v=13"></script>
       
     
 
