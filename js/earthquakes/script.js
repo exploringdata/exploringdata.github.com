@@ -13,9 +13,7 @@ var worldmap = d3.geomap()
     .width(width)
     .height(height)
     .scale(width/6.2)
-    .translate([width/2, height/2.1])
-    // fix eq locations on zoom before activating click to zoom
-    .postUpdate(postUpdate);
+    .translate([width/2, height/2.1]);
 
 d3.select(mapselect)
     .call(worldmap.draw, worldmap);
