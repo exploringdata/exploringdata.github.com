@@ -21,11 +21,7 @@ d3.select(mapselect)
     .call(worldmap.draw, worldmap);
 
 var eqgroup = worldmap.svg().append('g')
-  .attr('class', 'earthquake');
-
-function postUpdate() {
-    worldmap.selection.units.on('click', null);
-}
+  .attr('class', 'earthquake zoom');
 
 // earthquake data
 function set_eqs(url, title) {
