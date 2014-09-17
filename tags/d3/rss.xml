@@ -3,7 +3,7 @@
 <channel><title>Tags » D3</title>
     <link>http://exploringdata.github.io</link>
     <description>tags/d3</description>
-    <lastBuildDate>Wed, 17 Sep 2014 15:29:05 </lastBuildDate>
+    <lastBuildDate>Wed, 17 Sep 2014 15:30:59 </lastBuildDate>
     <generator>Logya</generator>
     <docs>http://blogs.law.harvard.edu/tech/rss</docs>
     
@@ -48,7 +48,7 @@
     </item>
     
     <item>
-        <title>Which Software Plaforms are Exploited the Most</title>
+        <title>Which Software Platforms are Exploited the Most</title>
         <link>http://exploringdata.github.io/vis/exploit-database-platforms-spiral/</link>
         <description>A pack layout visualization of platforms sized by the number of exploits created with the JavaScript library D3 and data from the Exploit Database.</description>
         <guid>http://exploringdata.github.io/vis/exploit-database-platforms-spiral/</guid>
