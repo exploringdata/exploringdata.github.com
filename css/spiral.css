@@ -3,7 +3,8 @@ font: 13px sans-serif;
 fill:#333;
 }
 .node text {
-cursor:pointer;
+cursor: pointer;
+fill:#222;
 }
 .rule {
 font-size:11px;
