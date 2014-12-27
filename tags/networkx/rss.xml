@@ -3,63 +3,63 @@
 <channel><title>Tags » Networkx</title>
     <link>http://exploringdata.github.io</link>
     <description>tags/networkx</description>
-    <lastBuildDate>Sat, 27 Dec 2014 00:07:02 </lastBuildDate>
+    <lastBuildDate>Sat, 27 Dec 2014 22:15:50 </lastBuildDate>
     <generator>Logya</generator>
     <docs>http://blogs.law.harvard.edu/tech/rss</docs>
     
     <item>
         <title>Falcao and Iniesta the top players in 2013 according to Ronaldo and Messi</title>
-        <link>http://localhost:8080/info/ballon-dor-male-players-votes-2013/</link>
+        <link>http://exploringdata.github.io/info/ballon-dor-male-players-votes-2013/</link>
         <description>The Ballon d'Or 2013 visualization shows an interactive network graph of voters and voted football players related based on votes cast for the male FIFA Ballon d'Or award in 2013.</description>
-        <guid>http://localhost:8080/info/ballon-dor-male-players-votes-2013/</guid>
+        <guid>http://exploringdata.github.io/info/ballon-dor-male-players-votes-2013/</guid>
         <pubDate>Mon, 13 Jan 2014 21:50:20 </pubDate>
     </item>
     
     <item>
         <title>How Participants of the Visualisingdata Census are Connected on Twitter</title>
-        <link>http://localhost:8080/info/visualisingdata-census-twitter-network/</link>
+        <link>http://exploringdata.github.io/info/visualisingdata-census-twitter-network/</link>
         <description>The visualisingdata census network graph shows the Twitter connections of the participants of the 1st data visualization census initiated by Andy Kirk.</description>
-        <guid>http://localhost:8080/info/visualisingdata-census-twitter-network/</guid>
+        <guid>http://exploringdata.github.io/info/visualisingdata-census-twitter-network/</guid>
         <pubDate>Tue, 09 Apr 2013 23:41:18 </pubDate>
     </item>
     
     <item>
         <title>How Footballers Relate based on Google Searches</title>
-        <link>http://localhost:8080/info/footballers-search-relations/</link>
+        <link>http://exploringdata.github.io/info/footballers-search-relations/</link>
         <description>The footballers search relations visualization shows a network graph of former and current football players and managers related by Google searches with results containing knowledge graph information.</description>
-        <guid>http://localhost:8080/info/footballers-search-relations/</guid>
+        <guid>http://exploringdata.github.io/info/footballers-search-relations/</guid>
         <pubDate>Wed, 13 Mar 2013 01:28:01 </pubDate>
     </item>
     
     <item>
         <title>How Programmers Relate based on Google Searches</title>
-        <link>http://localhost:8080/info/programmers-search-relations/</link>
+        <link>http://exploringdata.github.io/info/programmers-search-relations/</link>
         <description>The programmers search relations visualization shows a network graph of programmers related by Google searches with results containing knowledge graph information.</description>
-        <guid>http://localhost:8080/info/programmers-search-relations/</guid>
+        <guid>http://exploringdata.github.io/info/programmers-search-relations/</guid>
         <pubDate>Wed, 06 Mar 2013 15:25:03 </pubDate>
     </item>
     
     <item>
         <title>Who Voted for Whom at Ballon d'Or 2012</title>
-        <link>http://localhost:8080/info/ballon-dor-votes-2012/</link>
+        <link>http://exploringdata.github.io/info/ballon-dor-votes-2012/</link>
         <description>The Ballon d'Or 2012 visualization shows an interactive network graph of voters and voted players related based on votes cast for the male FIFA Ballon d'Or award in 2012.</description>
-        <guid>http://localhost:8080/info/ballon-dor-votes-2012/</guid>
+        <guid>http://exploringdata.github.io/info/ballon-dor-votes-2012/</guid>
         <pubDate>Wed, 09 Jan 2013 15:00:20 </pubDate>
     </item>
     
     <item>
         <title>Relations of James Bond Film Actors based on Common Appearance</title>
-        <link>http://localhost:8080/info/james-bond-actors-network/</link>
+        <link>http://exploringdata.github.io/info/james-bond-actors-network/</link>
         <description>The James Bond Actors visualization is an interactive network graph showing the connections of actors who appeared together in 23 James Bond movies including the latest in the series called Skyfall.</description>
-        <guid>http://localhost:8080/info/james-bond-actors-network/</guid>
+        <guid>http://exploringdata.github.io/info/james-bond-actors-network/</guid>
         <pubDate>Tue, 16 Oct 2012 14:45:20 </pubDate>
     </item>
     
     <item>
         <title>Visualizing Influence Relations of Programming Languages</title>
-        <link>http://localhost:8080/info/programming-languages-influence-network/</link>
+        <link>http://exploringdata.github.io/info/programming-languages-influence-network/</link>
         <description>The programming languages influence network is an interactive graph visualization where languages are connected by influence relations based on data from Freebase.</description>
-        <guid>http://localhost:8080/info/programming-languages-influence-network/</guid>
+        <guid>http://exploringdata.github.io/info/programming-languages-influence-network/</guid>
         <pubDate>Fri, 07 Sep 2012 18:57:46 </pubDate>
     </item>
     

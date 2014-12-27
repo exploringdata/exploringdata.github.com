@@ -3,15 +3,15 @@
 <channel><title>Tags » Animation</title>
     <link>http://exploringdata.github.io</link>
     <description>tags/animation</description>
-    <lastBuildDate>Sat, 27 Dec 2014 00:07:02 </lastBuildDate>
+    <lastBuildDate>Sat, 27 Dec 2014 22:15:50 </lastBuildDate>
     <generator>Logya</generator>
     <docs>http://blogs.law.harvard.edu/tech/rss</docs>
     
     <item>
         <title>Evolution of Internet Users from 1990 - 2012</title>
-        <link>http://localhost:8080/vis/evolution-internet-users/</link>
+        <link>http://exploringdata.github.io/vis/evolution-internet-users/</link>
         <description>An animated scatterplot showing the evolution of Internet users across the worlds countries from 1990 to 2012 created with the D3.js.</description>
-        <guid>http://localhost:8080/vis/evolution-internet-users/</guid>
+        <guid>http://exploringdata.github.io/vis/evolution-internet-users/</guid>
         <pubDate>Sun, 23 Dec 2012 22:27:39 </pubDate>
     </item>
     

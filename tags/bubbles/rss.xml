@@ -3,15 +3,15 @@
 <channel><title>Tags » Bubbles</title>
     <link>http://exploringdata.github.io</link>
     <description>tags/bubbles</description>
-    <lastBuildDate>Sat, 27 Dec 2014 00:07:02 </lastBuildDate>
+    <lastBuildDate>Sat, 27 Dec 2014 22:15:50 </lastBuildDate>
     <generator>Logya</generator>
     <docs>http://blogs.law.harvard.edu/tech/rss</docs>
     
     <item>
         <title>Which Software Platforms are Exploited the Most</title>
-        <link>http://localhost:8080/vis/exploit-database-platforms-spiral/</link>
+        <link>http://exploringdata.github.io/vis/exploit-database-platforms-spiral/</link>
         <description>A pack layout visualization of platforms sized by the number of exploits created with the JavaScript library D3 and data from the Exploit Database.</description>
-        <guid>http://localhost:8080/vis/exploit-database-platforms-spiral/</guid>
+        <guid>http://exploringdata.github.io/vis/exploit-database-platforms-spiral/</guid>
         <pubDate>Mon, 29 Oct 2012 16:41:22 </pubDate>
     </item>
     
