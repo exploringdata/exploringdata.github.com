@@ -13,27 +13,20 @@ var twitter_list = function(heading, screen_names) {
   return html;
 };
 
-var nodeinfo = function(data) {
-  var sl = $('#shownode');
-  sl.find('h3').text(data.name);
-  var desc = '<blockquote><p>' + data.description + '</p></blockquote>';
-  desc += '<p><i class="fa fa-twitter"></i> <a href="https://twitter.com/' + data.screen_name + '">Twitter Profile</a>';
-  if (data.url.length > 0)
-    desc += ' | <i class="fa fa-home"></i> <a href="' + data.url + '">Homepage</a>';
-  desc += '</p>';
-  desc += twitter_list('Twitter Friends from Census', data.friends_census);
-  desc += twitter_list('Twitter Followers from Census', data.followers_census);
-  sl.find('.modal-body').html(desc);
-  sl.modal();
-};
-
 var nodeClick = function(Graph) {
-  Graph.sig.bind('upnodes', function(event){
-    hnode = Graph.sig.getNodes(event.content)[0];
-    $.getJSON('/json/visualisingdata-census-twitter/' + hnode.id + '.json', function(data){
-      nodeinfo(data);
+    Graph.sig.bind('upnodes', function(event){
+        hnode = Graph.sig.getNodes(event.content)[0];
+        $.getJSON('/json/visualisingdata-census-twitter/' + hnode.id + '.json', function(data){
+            var desc = '<blockquote><p>' + data.description + '</p></blockquote>';
+            desc += '<p><i class="fa fa-twitter"></i> <a href="https://twitter.com/' + data.screen_name + '">Twitter Profile</a>';
+            if (data.url.length > 0)
+              desc += ' | <i class="fa fa-home"></i> <a href="' + data.url + '">Homepage</a>';
+            desc += '</p>';
+            desc += twitter_list('Twitter Friends from Census', data.friends_census);
+            desc += twitter_list('Twitter Followers from Census', data.followers_census);
+            nodeinfo(data.name, desc);
+        });
     });
-  });
 };
 
 $(function(){

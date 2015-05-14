@@ -1,3 +1,5 @@
+var dialog = $('#nodeinfo');
+
 var visgexf = {
   visid: null,
   filename: null,
@@ -12,6 +14,7 @@ var visgexf = {
   activeFilterVal: null,
   sourceColor: '#67A9CF',
   targetColor: '#EF8A62',
+
   init: function(visid, filename, props, callback) {
     $('#loading').show();
     visgexf.visid = visid;
@@ -233,7 +236,6 @@ var visgexf = {
       return;
     }
     var h = decodeURIComponent(document.location.hash.replace(/^#/, ''));
-    $('.modal').modal('hide');
     visgexf.nodeSearch(h);
   },
 
@@ -287,5 +289,18 @@ var visgexf = {
     visgexf.searchInput.val('');
     $('.graphfilter li').removeClass('active');
     visgexf.resetNodes();
+    dialog.hide();
   }
 };
+
+// Node info dialog
+
+function nodeinfo(heading, body) {
+    dialog.find('.panel-heading h2').html(heading);
+    dialog.find('.panel-body').html(body);
+    dialog.show();
+}
+
+dialog.find('button').click(function() {
+    dialog.hide();
+});

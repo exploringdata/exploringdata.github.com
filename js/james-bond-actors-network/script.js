@@ -1,14 +1,3 @@
-// nodeinfo must be accessible from the external freebase text service script
-var nodeinfo = function(data) {
-  var sl = $('#shownode');
-  sl.find('h3').text(hnode.label);
-  var desc = '<img src="https://usercontent.googleapis.com/freebase/v1/image' + hnode.id + '?maxwidth=200&maxheight=150" class="img-polaroid pull-right" alt="Photo of ' + hnode.label + '">';
-  desc += '<h4>James Bond films starred</h4><p>' + hnode.attr.attributes.films.split('|').sort().join(', ') + '</p>';
-  desc += '<h4>Bio</h4>' + data.result + '... <a href="http://www.freebase.com/view' + hnode.id + '">view on Freebase</a>';
-  sl.find('.modal-body').html(desc);
-  sl.modal();
-};
-
 var menuclick = function(menu, event) {
   event.preventDefault();
   if ('a' == event.target.nodeName.toLowerCase()) {
@@ -23,11 +12,8 @@ var menuclick = function(menu, event) {
 var nodeClick = function(Graph) {
   Graph.sig.bind('upnodes', function(event){
     hnode = Graph.sig.getNodes(event.content)[0];
-    // add script with callback to avoid cross-origin request issues
-    var script = document.createElement('script');
-    script.src = 'https://usercontent.googleapis.com/freebase/v1/text' + hnode.id + '?callback=nodeinfo';
-    script.type = 'text/javascript';
-    document.getElementsByTagName('head')[0].appendChild(script);
+    desc = '<h4>James Bond films starred</h4><p>' + hnode.attr.attributes.films.split('|').sort().join('<br>') + '</p>';
+    nodeinfo(hnode.label, desc);
   });
 };
 

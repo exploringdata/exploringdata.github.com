@@ -1,10 +1,7 @@
-// langinfo must be accessible from the external freebase text service script
-var langinfo = function(data) {
-  var sl = $('#shownode'),
-    influenced = [],
-    influencedby = [];
-
-  sl.find('h3').text(hlang.label);
+var langinfo = function(hlang) {
+  var influenced = [],
+    influencedby = [],
+    desc = '';
 
   if ('undefined' !== typeof hlang.attr.attributes.influenced) {
     hlang.attr.attributes.influenced.split('|').forEach(function(i){
@@ -16,7 +13,6 @@ var langinfo = function(data) {
       influencedby.push('<a href="#' + i + '">' + i + '</a>');
     });
   }
-  var desc = data.result + '... <a href="http://www.freebase.com/view' + hlang.id + '">view on Freebase</a>';
 
   // in case of Ruby include Matz tweet
   if ('Ruby' === hlang.label) {
@@ -31,13 +27,12 @@ var langinfo = function(data) {
   desc += '<hr><h4>Search for ' + hlang.label + ' books on</h4>';
 
   var s = encodeURIComponent(hlang.label);
-  desc += '<a href="http://www.amazon.com/gp/search?ie=UTF8&camp=1789&creative=9325&index=books&keywords=' + s + '&linkCode=ur2&tag=xpdt-20">Amazon.com</a> | ';
-  desc += '<a href="http://www.amazon.co.uk/gp/search?ie=UTF8&camp=1634&creative=6738&index=books&keywords=' + s + '&linkCode=ur2&tag=xpdt-21">Amazon.co.uk</a> | ';
-  desc += '<a href="http://www.amazon.de/gp/search?ie=UTF8&camp=1638&creative=6742&index=english-books&keywords=' + s + '&linkCode=ur2&tag=xpdt0b-21">Amazon.de</a> | ';
-  desc += '<a href="http://www.amazon.ca/gp/search?ie=UTF8&camp=15121&creative=330641&index=books-ca&keywords=' + s + '&linkCode=ur2&tag=xpdt0b-20">Amazon.ca</a>';
+  desc += '<a class="small" href="http://www.amazon.com/gp/search?ie=UTF8&camp=1789&creative=9325&index=books&keywords=' + s + '&linkCode=ur2&tag=xpdt-20">Amazon.com</a> • ';
+  desc += '<a class="small" href="http://www.amazon.co.uk/gp/search?ie=UTF8&camp=1634&creative=6738&index=books&keywords=' + s + '&linkCode=ur2&tag=xpdt-21">Amazon.co.uk</a> • ';
+  desc += '<a class="small" href="http://www.amazon.de/gp/search?ie=UTF8&camp=1638&creative=6742&index=english-books&keywords=' + s + '&linkCode=ur2&tag=xpdt0b-21">Amazon.de</a> • ';
+  desc += '<a class="small" href="http://www.amazon.ca/gp/search?ie=UTF8&camp=15121&creative=330641&index=books-ca&keywords=' + s + '&linkCode=ur2&tag=xpdt0b-20">Amazon.ca</a>';
 
-  sl.find('.modal-body').html(desc);
-  sl.modal();
+  nodeinfo(hlang.label, desc);
 };
 
 var menuclick = function(menu, event) {
@@ -63,11 +58,7 @@ var randomNodeColor = function(num) {
 var nodeClick = function(Graph) {
   Graph.sig.bind('upnodes', function(event){
     hlang = Graph.sig.getNodes(event.content)[0];
-    // add script with callback to avoid cross-origin request issues
-    var script = document.createElement('script');
-    script.src = 'https://usercontent.googleapis.com/freebase/v1/text' + hlang.id + '?callback=langinfo';
-    script.type = 'text/javascript';
-    document.getElementsByTagName('head')[0].appendChild(script);
+    langinfo(hlang);
   });
 };
 

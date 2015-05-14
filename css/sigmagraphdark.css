@@ -40,3 +40,11 @@ color:#fff;
 font-size:2em;
 display:none;
 }
+#nodeinfo {
+display: none;
+position: absolute;
+right: 5px;
+top: 58px;
+max-width: 340px;
+opacity: .8;
+}
