@@ -3,7 +3,7 @@
 <channel><title>__Index__</title>
     <link>http://exploringdata.github.io</link>
     <description>__index__</description>
-    <lastBuildDate>Sun, 25 Jan 2015 19:16:33 </lastBuildDate>
+    <lastBuildDate>Thu, 14 May 2015 20:51:44 </lastBuildDate>
     <generator>Logya</generator>
     <docs>http://blogs.law.harvard.edu/tech/rss</docs>
     
@@ -85,6 +85,270 @@
         <description>An interactive network graph showing the dependencies between npm packages, with at least 10 dependent packages, as of July 12, 2013 rendered with sigma.js and preprocessed with Gephi.</description>
         <guid>http://exploringdata.github.io/vis/npm-top-packages-dependencies/</guid>
         <pubDate>Mon, 15 Jul 2013 13:58:31 </pubDate>
+    </item>
+    
+    <item>
+        <title>npm Packages Dependencies Graph</title>
+        <link>http://exploringdata.github.io/vis/npm-packages-dependencies/</link>
+        <description>An interactive network graph showing the dependencies between npm packages as of July 12, 2013 rendered with sigma.js and preprocessed with Gephi.</description>
+        <guid>http://exploringdata.github.io/vis/npm-packages-dependencies/</guid>
+        <pubDate>Mon, 15 Jul 2013 13:58:21 </pubDate>
+    </item>
+    
+    <item>
+        <title>Geo Maps Drawn from IP Locations</title>
+        <link>http://exploringdata.github.io/vis/ip-location-maps/</link>
+        <description>Geographic maps of the world and most continents drawn based on an IP location dataset with 419433 records.</description>
+        <guid>http://exploringdata.github.io/vis/ip-location-maps/</guid>
+        <pubDate>Tue, 11 Jun 2013 00:00:00 </pubDate>
+    </item>
+    
+    <item>
+        <title>How Participants of the Visualisingdata Census are Connected on Twitter</title>
+        <link>http://exploringdata.github.io/info/visualisingdata-census-twitter-network/</link>
+        <description>The visualisingdata census network graph shows the Twitter connections of the participants of the 1st data visualization census initiated by Andy Kirk.</description>
+        <guid>http://exploringdata.github.io/info/visualisingdata-census-twitter-network/</guid>
+        <pubDate>Tue, 09 Apr 2013 23:41:18 </pubDate>
+    </item>
+    
+    <item>
+        <title>Visualisingdata Census Twitter Network</title>
+        <link>http://exploringdata.github.io/vis/visualisingdata-census-twitter-network/</link>
+        <description>An interactive network graph showing the connections of Twitter users who participated in the 1st data visualization census initiated by Andy Kirk, rendered with sigma.js and preprocessed with Gephi.</description>
+        <guid>http://exploringdata.github.io/vis/visualisingdata-census-twitter-network/</guid>
+        <pubDate>Tue, 09 Apr 2013 20:28:39 </pubDate>
+    </item>
+    
+    <item>
+        <title>A Decade of Climate Change in the Guardian</title>
+        <link>http://exploringdata.github.io/vis/climate-changes-decade/</link>
+        <description>Explore a decade of climate change, global warming, natural disaster, extreme weather, pollution and deforestation in the articles published by the Guardian.</description>
+        <guid>http://exploringdata.github.io/vis/climate-changes-decade/</guid>
+        <pubDate>Fri, 05 Apr 2013 00:56:02 </pubDate>
+    </item>
+    
+    <item>
+        <title>Footballers Search Relations Network</title>
+        <link>http://exploringdata.github.io/vis/footballers-search-relations/</link>
+        <description>An interactive network graph showing the relations of footballers based on Google searches as shown in knowledge graph information.</description>
+        <guid>http://exploringdata.github.io/vis/footballers-search-relations/</guid>
+        <pubDate>Wed, 13 Mar 2013 01:28:01 </pubDate>
+    </item>
+    
+    <item>
+        <title>How Footballers Relate based on Google Searches</title>
+        <link>http://exploringdata.github.io/info/footballers-search-relations/</link>
+        <description>The footballers search relations visualization shows a network graph of former and current football players and managers related by Google searches with results containing knowledge graph information.</description>
+        <guid>http://exploringdata.github.io/info/footballers-search-relations/</guid>
+        <pubDate>Wed, 13 Mar 2013 01:28:01 </pubDate>
+    </item>
+    
+    <item>
+        <title>Programmers Search Relations Network</title>
+        <link>http://exploringdata.github.io/vis/programmers-search-relations/</link>
+        <description>An interactive network graph showing the relations of programmers based on Google searches as shown in knowledge graph information.</description>
+        <guid>http://exploringdata.github.io/vis/programmers-search-relations/</guid>
+        <pubDate>Wed, 06 Mar 2013 15:25:03 </pubDate>
+    </item>
+    
+    <item>
+        <title>How Programmers Relate based on Google Searches</title>
+        <link>http://exploringdata.github.io/info/programmers-search-relations/</link>
+        <description>The programmers search relations visualization shows a network graph of programmers related by Google searches with results containing knowledge graph information.</description>
+        <guid>http://exploringdata.github.io/info/programmers-search-relations/</guid>
+        <pubDate>Wed, 06 Mar 2013 15:25:03 </pubDate>
+    </item>
+    
+    <item>
+        <title>Data Driven Journalism Books</title>
+        <link>http://exploringdata.github.io/data-visualization-books/ddj/</link>
+        <description>Books about data journalism in association with Amazon.com.</description>
+        <guid>http://exploringdata.github.io/data-visualization-books/ddj/</guid>
+        <pubDate>Tue, 26 Feb 2013 21:22:09 </pubDate>
+    </item>
+    
+    <item>
+        <title>Creative Coding Books</title>
+        <link>http://exploringdata.github.io/data-visualization-books/coding/</link>
+        <description>Books about programmatic creation of data visualizations with D3, Python, Processing and SVG in association with Amazon.com.</description>
+        <guid>http://exploringdata.github.io/data-visualization-books/coding/</guid>
+        <pubDate>Tue, 26 Feb 2013 21:08:09 </pubDate>
+    </item>
+    
+    <item>
+        <title>Data Mining and Analysis Books</title>
+        <link>http://exploringdata.github.io/data-visualization-books/analysis/</link>
+        <description>Books about mining and analyzing data using statistics and programming tools in association with Amazon.com.</description>
+        <guid>http://exploringdata.github.io/data-visualization-books/analysis/</guid>
+        <pubDate>Tue, 26 Feb 2013 20:59:08 </pubDate>
+    </item>
+    
+    <item>
+        <title>Maps and Cartography Books</title>
+        <link>http://exploringdata.github.io/data-visualization-books/maps/</link>
+        <description>Books about maps and cartography in association with Amazon.com.</description>
+        <guid>http://exploringdata.github.io/data-visualization-books/maps/</guid>
+        <pubDate>Tue, 26 Feb 2013 20:47:08 </pubDate>
+    </item>
+    
+    <item>
+        <title>Data Visualization Books</title>
+        <link>http://exploringdata.github.io/data-visualization-books/general/</link>
+        <description>Books about data visualization in general, covering theory and practice of creating data visualizations in association with Amazon.com.</description>
+        <guid>http://exploringdata.github.io/data-visualization-books/general/</guid>
+        <pubDate>Tue, 26 Feb 2013 20:42:08 </pubDate>
+    </item>
+    
+    <item>
+        <title>Berlin Bike Routes Map</title>
+        <link>http://exploringdata.github.io/vis/berlin-bike-routes/</link>
+        <description>A map of Berlin, Germany showing 14 different biking routes through and around the city. Created with OpenLayers, Open Street Map and data from Senatsverwaltung für Stadtentwicklung und Umwelt.</description>
+        <guid>http://exploringdata.github.io/vis/berlin-bike-routes/</guid>
+        <pubDate>Tue, 19 Feb 2013 02:02:03 </pubDate>
+    </item>
+    
+    <item>
+        <title>A Map of Bike Routes in Berlin, Germany</title>
+        <link>http://exploringdata.github.io/info/berlin-bike-routes/</link>
+        <description>The bike routes map for Berlin, Germany shows 14 different biking routes through and around the city. Created with OpenLayers, Open Street Map and data from Senatsverwaltung für Stadtentwicklung und Umwelt.</description>
+        <guid>http://exploringdata.github.io/info/berlin-bike-routes/</guid>
+        <pubDate>Tue, 19 Feb 2013 02:02:03 </pubDate>
+    </item>
+    
+    <item>
+        <title>What Others Say</title>
+        <link>http://exploringdata.github.io/what-others-say/</link>
+        <description>A selection of Tweets from people referring to Exploring Data on Twitter ordered by date of publication.</description>
+        <guid>http://exploringdata.github.io/what-others-say/</guid>
+        <pubDate>Thu, 07 Feb 2013 14:24:19 </pubDate>
+    </item>
+    
+    <item>
+        <title>Search for Public Data on the Web</title>
+        <link>http://exploringdata.github.io/datasearch/</link>
+        <description>A Google custom search engine, that searches sites that host public data.</description>
+        <guid>http://exploringdata.github.io/datasearch/</guid>
+        <pubDate>Tue, 15 Jan 2013 18:48:28 </pubDate>
+    </item>
+    
+    <item>
+        <title>Ballon d'Or 2012 Votes Network</title>
+        <link>http://exploringdata.github.io/vis/ballon-dor-votes-2012/</link>
+        <description>An interactive network graph showing the connections between voters and voted players from the male FIFA Ballon d'Or vote 2012.</description>
+        <guid>http://exploringdata.github.io/vis/ballon-dor-votes-2012/</guid>
+        <pubDate>Wed, 09 Jan 2013 15:00:20 </pubDate>
+    </item>
+    
+    <item>
+        <title>Who Voted for Whom at Ballon d'Or 2012</title>
+        <link>http://exploringdata.github.io/info/ballon-dor-votes-2012/</link>
+        <description>The Ballon d'Or 2012 visualization shows an interactive network graph of voters and voted players related based on votes cast for the male FIFA Ballon d'Or award in 2012.</description>
+        <guid>http://exploringdata.github.io/info/ballon-dor-votes-2012/</guid>
+        <pubDate>Wed, 09 Jan 2013 15:00:20 </pubDate>
+    </item>
+    
+    <item>
+        <title>Evolution of Internet Users from 1990 - 2012</title>
+        <link>http://exploringdata.github.io/vis/evolution-internet-users/</link>
+        <description>An animated scatterplot showing the evolution of Internet users across the worlds countries from 1990 to 2012 created with the D3.js.</description>
+        <guid>http://exploringdata.github.io/vis/evolution-internet-users/</guid>
+        <pubDate>Sun, 23 Dec 2012 22:27:39 </pubDate>
+    </item>
+    
+    <item>
+        <title>See Why Spain Won Euro 2012</title>
+        <link>http://exploringdata.github.io/story/see-why-spain-won-euro-2012/</link>
+        <description>A data story about Spain's performance at the UEFA Euro 2012 including charts created with the Datawrapper visualization tool.</description>
+        <guid>http://exploringdata.github.io/story/see-why-spain-won-euro-2012/</guid>
+        <pubDate>Mon, 10 Dec 2012 21:04:40 </pubDate>
+    </item>
+    
+    <item>
+        <title>Real-Time World Map of Earthquakes</title>
+        <link>http://exploringdata.github.io/vis/earthquakes/</link>
+        <description>A geographic map of the world showing real-time data for recent earthquakes rendered with the D3 JavaScript library.</description>
+        <guid>http://exploringdata.github.io/vis/earthquakes/</guid>
+        <pubDate>Wed, 05 Dec 2012 23:37:53 </pubDate>
+    </item>
+    
+    <item>
+        <title>World Aid Flow, Transparency, Development</title>
+        <link>http://exploringdata.github.io/vis/world-aid-transparency/</link>
+        <description>An interactive visualization looking at world aid flow, aid transparency, and development in receiving countries created with the D3 JavaScript library.</description>
+        <guid>http://exploringdata.github.io/vis/world-aid-transparency/</guid>
+        <pubDate>Fri, 23 Nov 2012 13:46:48 </pubDate>
+    </item>
+    
+    <item>
+        <title>Which Software Platforms are Exploited the Most</title>
+        <link>http://exploringdata.github.io/vis/exploit-database-platforms-spiral/</link>
+        <description>A pack layout visualization of platforms sized by the number of exploits created with the JavaScript library D3 and data from the Exploit Database.</description>
+        <guid>http://exploringdata.github.io/vis/exploit-database-platforms-spiral/</guid>
+        <pubDate>Mon, 29 Oct 2012 16:41:22 </pubDate>
+    </item>
+    
+    <item>
+        <title>James Bond Actors Network</title>
+        <link>http://exploringdata.github.io/vis/james-bond-actors-network/</link>
+        <description>An interactive network graph showing the connections of actors that appeared together in 23 James Bond movies including the latest in the series called Skyfall.</description>
+        <guid>http://exploringdata.github.io/vis/james-bond-actors-network/</guid>
+        <pubDate>Tue, 16 Oct 2012 14:45:20 </pubDate>
+    </item>
+    
+    <item>
+        <title>Relations of James Bond Film Actors based on Common Appearance</title>
+        <link>http://exploringdata.github.io/info/james-bond-actors-network/</link>
+        <description>The James Bond Actors visualization is an interactive network graph showing the connections of actors who appeared together in 23 James Bond movies including the latest in the series called Skyfall.</description>
+        <guid>http://exploringdata.github.io/info/james-bond-actors-network/</guid>
+        <pubDate>Tue, 16 Oct 2012 14:45:20 </pubDate>
+    </item>
+    
+    <item>
+        <title>Human Disease Network</title>
+        <link>http://exploringdata.github.io/vis/human-disease-network/</link>
+        <description>An interactive network of disorders and disease genes linked by known disorder–gene associations based on the study The Human Disease Network, Goh K-I, Cusick ME, Valle D, Childs B, Vidal M, Barabási A-L (2007), Proc Natl Acad Sci USA 104:8685-8690.</description>
+        <guid>http://exploringdata.github.io/vis/human-disease-network/</guid>
+        <pubDate>Thu, 27 Sep 2012 16:45:57 </pubDate>
+    </item>
+    
+    <item>
+        <title>A Network Graph of Human Diseases</title>
+        <link>http://exploringdata.github.io/info/human-disease-network/</link>
+        <description>The human disease network graph is a visualization based on a study that explored relations of diseases and human genes by Goh K-I, Cusick ME, Valle D, Childs B, Vidal M, Barabási A-L (2007).</description>
+        <guid>http://exploringdata.github.io/info/human-disease-network/</guid>
+        <pubDate>Thu, 27 Sep 2012 16:45:57 </pubDate>
+    </item>
+    
+    <item>
+        <title>Programming Languages Influence Network</title>
+        <link>http://exploringdata.github.io/vis/programming-languages-influence-network/</link>
+        <description>An interactive network graph showing the connections of programming languages based on their influences with language and language paradigm highlighting rendered with sigma.js and preprocessed with Gephi.</description>
+        <guid>http://exploringdata.github.io/vis/programming-languages-influence-network/</guid>
+        <pubDate>Fri, 07 Sep 2012 18:57:46 </pubDate>
+    </item>
+    
+    <item>
+        <title>Visualizing Influence Relations of Programming Languages</title>
+        <link>http://exploringdata.github.io/info/programming-languages-influence-network/</link>
+        <description>The programming languages influence network is an interactive graph visualization where languages are connected by influence relations based on data from Freebase.</description>
+        <guid>http://exploringdata.github.io/info/programming-languages-influence-network/</guid>
+        <pubDate>Fri, 07 Sep 2012 18:57:46 </pubDate>
+    </item>
+    
+    <item>
+        <title>Data Mining and Data Visualization</title>
+        <link>http://exploringdata.github.io/</link>
+        <description>Exploring Data is a showcase of interactive data visualizations comprising topics like world aid flow, climate change, programming languages, football, Google knowledge graph relations, and Twitter networks.</description>
+        <guid>http://exploringdata.github.io/</guid>
+        <pubDate>Fri, 07 Sep 2012 18:35:00 </pubDate>
+    </item>
+    
+    <item>
+        <title>Programming Languages Influence Network D3</title>
+        <link>http://exploringdata.github.io/vis/programming-languages-influence-network-d3/</link>
+        <description>An network graph showing the connections of programming languages based on their influences created with the JavaScript library D3.</description>
+        <guid>http://exploringdata.github.io/vis/programming-languages-influence-network-d3/</guid>
+        <pubDate>Tue, 04 Sep 2012 22:16:04 </pubDate>
     </item>
     
 </channel></rss>

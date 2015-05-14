@@ -3,7 +3,7 @@
 <channel><title>Info</title>
     <link>http://exploringdata.github.io</link>
     <description>info</description>
-    <lastBuildDate>Sun, 25 Jan 2015 19:16:33 </lastBuildDate>
+    <lastBuildDate>Thu, 14 May 2015 20:51:44 </lastBuildDate>
     <generator>Logya</generator>
     <docs>http://blogs.law.harvard.edu/tech/rss</docs>
     
@@ -85,6 +85,14 @@
         <description>The human disease network graph is a visualization based on a study that explored relations of diseases and human genes by Goh K-I, Cusick ME, Valle D, Childs B, Vidal M, Barabási A-L (2007).</description>
         <guid>http://exploringdata.github.io/info/human-disease-network/</guid>
         <pubDate>Thu, 27 Sep 2012 16:45:57 </pubDate>
+    </item>
+    
+    <item>
+        <title>Visualizing Influence Relations of Programming Languages</title>
+        <link>http://exploringdata.github.io/info/programming-languages-influence-network/</link>
+        <description>The programming languages influence network is an interactive graph visualization where languages are connected by influence relations based on data from Freebase.</description>
+        <guid>http://exploringdata.github.io/info/programming-languages-influence-network/</guid>
+        <pubDate>Fri, 07 Sep 2012 18:57:46 </pubDate>
     </item>
     
 </channel></rss>

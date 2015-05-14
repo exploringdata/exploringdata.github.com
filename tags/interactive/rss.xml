@@ -3,7 +3,7 @@
 <channel><title>Tags » Interactive</title>
     <link>http://exploringdata.github.io</link>
     <description>tags/interactive</description>
-    <lastBuildDate>Sun, 25 Jan 2015 19:16:33 </lastBuildDate>
+    <lastBuildDate>Thu, 14 May 2015 20:51:44 </lastBuildDate>
     <generator>Logya</generator>
     <docs>http://blogs.law.harvard.edu/tech/rss</docs>
     
@@ -85,6 +85,54 @@
         <description>A geographic map of the world showing real-time data for recent earthquakes rendered with the D3 JavaScript library.</description>
         <guid>http://exploringdata.github.io/vis/earthquakes/</guid>
         <pubDate>Wed, 05 Dec 2012 23:37:53 </pubDate>
+    </item>
+    
+    <item>
+        <title>World Aid Flow, Transparency, Development</title>
+        <link>http://exploringdata.github.io/vis/world-aid-transparency/</link>
+        <description>An interactive visualization looking at world aid flow, aid transparency, and development in receiving countries created with the D3 JavaScript library.</description>
+        <guid>http://exploringdata.github.io/vis/world-aid-transparency/</guid>
+        <pubDate>Fri, 23 Nov 2012 13:46:48 </pubDate>
+    </item>
+    
+    <item>
+        <title>Which Software Platforms are Exploited the Most</title>
+        <link>http://exploringdata.github.io/vis/exploit-database-platforms-spiral/</link>
+        <description>A pack layout visualization of platforms sized by the number of exploits created with the JavaScript library D3 and data from the Exploit Database.</description>
+        <guid>http://exploringdata.github.io/vis/exploit-database-platforms-spiral/</guid>
+        <pubDate>Mon, 29 Oct 2012 16:41:22 </pubDate>
+    </item>
+    
+    <item>
+        <title>Relations of James Bond Film Actors based on Common Appearance</title>
+        <link>http://exploringdata.github.io/info/james-bond-actors-network/</link>
+        <description>The James Bond Actors visualization is an interactive network graph showing the connections of actors who appeared together in 23 James Bond movies including the latest in the series called Skyfall.</description>
+        <guid>http://exploringdata.github.io/info/james-bond-actors-network/</guid>
+        <pubDate>Tue, 16 Oct 2012 14:45:20 </pubDate>
+    </item>
+    
+    <item>
+        <title>A Network Graph of Human Diseases</title>
+        <link>http://exploringdata.github.io/info/human-disease-network/</link>
+        <description>The human disease network graph is a visualization based on a study that explored relations of diseases and human genes by Goh K-I, Cusick ME, Valle D, Childs B, Vidal M, Barabási A-L (2007).</description>
+        <guid>http://exploringdata.github.io/info/human-disease-network/</guid>
+        <pubDate>Thu, 27 Sep 2012 16:45:57 </pubDate>
+    </item>
+    
+    <item>
+        <title>Visualizing Influence Relations of Programming Languages</title>
+        <link>http://exploringdata.github.io/info/programming-languages-influence-network/</link>
+        <description>The programming languages influence network is an interactive graph visualization where languages are connected by influence relations based on data from Freebase.</description>
+        <guid>http://exploringdata.github.io/info/programming-languages-influence-network/</guid>
+        <pubDate>Fri, 07 Sep 2012 18:57:46 </pubDate>
+    </item>
+    
+    <item>
+        <title>Programming Languages Influence Network D3</title>
+        <link>http://exploringdata.github.io/vis/programming-languages-influence-network-d3/</link>
+        <description>An network graph showing the connections of programming languages based on their influences created with the JavaScript library D3.</description>
+        <guid>http://exploringdata.github.io/vis/programming-languages-influence-network-d3/</guid>
+        <pubDate>Tue, 04 Sep 2012 22:16:04 </pubDate>
     </item>
     
 </channel></rss>
