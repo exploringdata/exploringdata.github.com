@@ -96,29 +96,6 @@ $(function(){
       if (t = menuclick(pmenu, event))
         visgexf.setFilter(filterid, t.attr('href').replace('#', ''));
     });
-
-    var lmenu = $('#layout');
-    lmenu.click(function(event){
-      if (t = menuclick(lmenu, event)) {
-        // reset paradigm menu
-        var lis = pmenu.find('li');
-        lis.removeClass('active');
-        lis.first().addClass('active');
-
-        var action = t.attr('href').replace('#', '');
-        if ('random' == action) {
-          visgexf.reset();
-          visgexf.sig.iterNodes(function(n){
-            n.x = Math.random();
-            n.y = Math.random();
-            n.color = randomNodeColor(n.outDegree);
-          }).draw(2,2,2);
-        } else {
-          visgexf.clear();
-          nodeClick(visgexf.init('sig', gexf, props));
-        }
-      }
-    });
   });
 
   $('.showposter').click(function(e){e.preventDefault();$('#showposter').modal();});
