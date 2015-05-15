@@ -1,2 +1,12 @@
 .thumbnail h3 {height:46px;overflow:hidden;font-size:14px;}
-.thumbnail a>img {max-height:250px;}
+.book-categories li {font-size: 1.4em;}
+
+@media (min-width: 768px) {
+    .thumbnail a>img {height:150px;}
+}
+@media (min-width: 992px) {
+    .thumbnail a>img {height:200px;}
+}
+@media (min-width: 1200px) {
+    .thumbnail a>img {height:300px;}
+}
