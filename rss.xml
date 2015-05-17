@@ -3,7 +3,7 @@
 <channel><title>Exploring Data News Feed</title>
     <link>http://exploringdata.github.io</link>
     <description></description>
-    <lastBuildDate>Sun, 17 May 2015 19:45:46 </lastBuildDate>
+    <lastBuildDate>Sun, 17 May 2015 22:01:34 </lastBuildDate>
     <generator>Logya</generator>
     <docs>http://blogs.law.harvard.edu/tech/rss</docs>
     
@@ -261,14 +261,6 @@
         <description>A data story about Spain's performance at the UEFA Euro 2012 including charts created with the Datawrapper visualization tool.</description>
         <guid>http://exploringdata.github.io/story/see-why-spain-won-euro-2012/</guid>
         <pubDate>Mon, 10 Dec 2012 21:04:40 </pubDate>
-    </item>
-    
-    <item>
-        <title>Real-Time World Map of Earthquakes</title>
-        <link>http://exploringdata.github.io/vis/earthquakes/</link>
-        <description>A geographic map of the world showing real-time data for recent earthquakes rendered with the D3 JavaScript library.</description>
-        <guid>http://exploringdata.github.io/vis/earthquakes/</guid>
-        <pubDate>Wed, 05 Dec 2012 23:37:53 </pubDate>
     </item>
     
     <item>
