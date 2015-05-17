@@ -11,7 +11,8 @@ var histselector = '#history',
         'page': 1,
         'order-by':'relevance',
         'format':'json',
-        'show-fields': 'headline,thumbnail'
+        'show-fields': 'headline,thumbnail',
+        'api-key': 'makz4y2wt4gw6td522wknwky'
     },
     currSeries = null,
     scrollOffset = selectiondetails.offsetTop - ($('#navbar').height + 10);
@@ -95,7 +96,7 @@ function getGuardianArticles(query, date) {
         guParams['from-date'] = from;
         guParams['to-date'] = to;
     }
-    $.getJSON('http://content.guardianapis.com/search?callback=?', guParams)
+    $.getJSON('https://content.guardianapis.com/search?callback=?', guParams)
         .done(function(data) {
             var html = '';
             for (i in data.response.results) {
