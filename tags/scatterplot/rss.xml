@@ -2,25 +2,9 @@
 <rss version="2.0">
 <channel><title>Tags » Scatterplot</title>
     <link>http://exploringdata.github.io</link>
-    <description>tags/scatterplot</description>
-    <lastBuildDate>Sun, 17 May 2015 22:01:34 </lastBuildDate>
+    <description>Tags » Scatterplot</description>
+    <lastBuildDate>Thu, 21 May 2015 17:48:49 </lastBuildDate>
     <generator>Logya</generator>
     <docs>http://blogs.law.harvard.edu/tech/rss</docs>
-    
-    <item>
-        <title>Exploring Movie Body Counts</title>
-        <link>http://exploringdata.github.io/notebook/movie-body-counts/</link>
-        <description>A look at movie body counts based on information from the Website Movie Body Counts, a forum where users collect on-screen body counts for a selection of films and the characters and actors who appear in these films.</description>
-        <guid>http://exploringdata.github.io/notebook/movie-body-counts/</guid>
-        <pubDate>Thu, 12 Jun 2014 23:06:47 </pubDate>
-    </item>
-    
-    <item>
-        <title>Evolution of Internet Users from 1990 - 2012</title>
-        <link>http://exploringdata.github.io/vis/evolution-internet-users/</link>
-        <description>An animated scatterplot showing the evolution of Internet users across the worlds countries from 1990 to 2012 created with the D3.js.</description>
-        <guid>http://exploringdata.github.io/vis/evolution-internet-users/</guid>
-        <pubDate>Sun, 23 Dec 2012 22:27:39 </pubDate>
-    </item>
     
 </channel></rss>

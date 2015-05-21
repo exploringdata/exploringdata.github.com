@@ -2,17 +2,9 @@
 <rss version="2.0">
 <channel><title>Tags » Twitter</title>
     <link>http://exploringdata.github.io</link>
-    <description>tags/twitter</description>
-    <lastBuildDate>Sun, 17 May 2015 22:01:34 </lastBuildDate>
+    <description>Tags » Twitter</description>
+    <lastBuildDate>Thu, 21 May 2015 17:48:48 </lastBuildDate>
     <generator>Logya</generator>
     <docs>http://blogs.law.harvard.edu/tech/rss</docs>
-    
-    <item>
-        <title>How Participants of the Visualisingdata Census are Connected on Twitter</title>
-        <link>http://exploringdata.github.io/info/visualisingdata-census-twitter-network/</link>
-        <description>The visualisingdata census network graph shows the Twitter connections of the participants of the 1st data visualization census initiated by Andy Kirk.</description>
-        <guid>http://exploringdata.github.io/info/visualisingdata-census-twitter-network/</guid>
-        <pubDate>Tue, 09 Apr 2013 23:41:18 </pubDate>
-    </item>
     
 </channel></rss>

@@ -2,17 +2,9 @@
 <rss version="2.0">
 <channel><title>Tags » Scatter Plot</title>
     <link>http://exploringdata.github.io</link>
-    <description>tags/scatter-plot</description>
-    <lastBuildDate>Sun, 17 May 2015 22:01:34 </lastBuildDate>
+    <description>Tags » Scatter Plot</description>
+    <lastBuildDate>Thu, 21 May 2015 17:48:49 </lastBuildDate>
     <generator>Logya</generator>
     <docs>http://blogs.law.harvard.edu/tech/rss</docs>
-    
-    <item>
-        <title>World Aid Flow, Transparency, Development</title>
-        <link>http://exploringdata.github.io/vis/world-aid-transparency/</link>
-        <description>An interactive visualization looking at world aid flow, aid transparency, and development in receiving countries created with the D3 JavaScript library.</description>
-        <guid>http://exploringdata.github.io/vis/world-aid-transparency/</guid>
-        <pubDate>Fri, 23 Nov 2012 13:46:48 </pubDate>
-    </item>
     
 </channel></rss>
