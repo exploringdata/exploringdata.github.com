@@ -3,8 +3,16 @@
 <channel><title>Tags » Line Chart</title>
     <link>http://exploringdata.github.io</link>
     <description>Tags » Line Chart</description>
-    <lastBuildDate>Thu, 21 May 2015 17:55:54 </lastBuildDate>
+    <lastBuildDate>Thu, 28 May 2015 11:57:12 </lastBuildDate>
     <generator>Logya</generator>
     <docs>http://blogs.law.harvard.edu/tech/rss</docs>
+    
+    <item>
+        <title><![CDATA[Top 1% Income Share in Different Countries]]></title>
+        <link><![CDATA[http://exploringdata.github.io/notebook/top-incomes-share/]]></link>
+        <description><![CDATA[A quick dive into the World Top Incomes Database compiled and maintained by Facundo Alvaredo, Tony Atkinson, Thomas Piketty and Emmanuel Saez.]]></description>
+        <guid><![CDATA[http://exploringdata.github.io/notebook/top-incomes-share/]]></guid>
+        <pubDate>Wed, 23 Apr 2014 14:23:47 </pubDate>
+    </item>
     
 </channel></rss>

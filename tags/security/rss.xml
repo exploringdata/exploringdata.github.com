@@ -3,8 +3,16 @@
 <channel><title>Tags » Security</title>
     <link>http://exploringdata.github.io</link>
     <description>Tags » Security</description>
-    <lastBuildDate>Thu, 21 May 2015 17:55:54 </lastBuildDate>
+    <lastBuildDate>Thu, 28 May 2015 11:57:12 </lastBuildDate>
     <generator>Logya</generator>
     <docs>http://blogs.law.harvard.edu/tech/rss</docs>
+    
+    <item>
+        <title><![CDATA[Which Software Platforms are Exploited the Most]]></title>
+        <link><![CDATA[http://exploringdata.github.io/vis/exploit-database-platforms-spiral/]]></link>
+        <description><![CDATA[A pack layout visualization of platforms sized by the number of exploits created with the JavaScript library D3 and data from the Exploit Database.]]></description>
+        <guid><![CDATA[http://exploringdata.github.io/vis/exploit-database-platforms-spiral/]]></guid>
+        <pubDate>Mon, 29 Oct 2012 16:41:22 </pubDate>
+    </item>
     
 </channel></rss>

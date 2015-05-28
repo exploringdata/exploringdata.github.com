@@ -3,8 +3,16 @@
 <channel><title>Tags » Graphics</title>
     <link>http://exploringdata.github.io</link>
     <description>Tags » Graphics</description>
-    <lastBuildDate>Thu, 21 May 2015 17:55:54 </lastBuildDate>
+    <lastBuildDate>Thu, 28 May 2015 11:57:12 </lastBuildDate>
     <generator>Logya</generator>
     <docs>http://blogs.law.harvard.edu/tech/rss</docs>
+    
+    <item>
+        <title><![CDATA[Geo Maps Drawn from IP Locations]]></title>
+        <link><![CDATA[http://exploringdata.github.io/vis/ip-location-maps/]]></link>
+        <description><![CDATA[Geographic maps of the world and most continents drawn based on an IP location dataset with 419433 records.]]></description>
+        <guid><![CDATA[http://exploringdata.github.io/vis/ip-location-maps/]]></guid>
+        <pubDate>Tue, 11 Jun 2013 00:00:00 </pubDate>
+    </item>
     
 </channel></rss>

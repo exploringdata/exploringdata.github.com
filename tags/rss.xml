@@ -3,8 +3,88 @@
 <channel><title>Tags</title>
     <link>http://exploringdata.github.io</link>
     <description>Tags</description>
-    <lastBuildDate>Thu, 21 May 2015 17:55:54 </lastBuildDate>
+    <lastBuildDate>Thu, 28 May 2015 11:57:12 </lastBuildDate>
     <generator>Logya</generator>
     <docs>http://blogs.law.harvard.edu/tech/rss</docs>
+    
+    <item>
+        <title><![CDATA[Exploring Movie Body Counts]]></title>
+        <link><![CDATA[http://exploringdata.github.io/notebook/movie-body-counts/]]></link>
+        <description><![CDATA[A look at movie body counts based on information from the Website Movie Body Counts, a forum where users collect on-screen body counts for a selection of films and the characters and actors who appear in these films.]]></description>
+        <guid><![CDATA[http://exploringdata.github.io/notebook/movie-body-counts/]]></guid>
+        <pubDate>Thu, 12 Jun 2014 23:06:47 </pubDate>
+    </item>
+    
+    <item>
+        <title><![CDATA[Exploring Movie Body Counts]]></title>
+        <link><![CDATA[http://exploringdata.github.io/notebook/movie-body-counts/]]></link>
+        <description><![CDATA[A look at movie body counts based on information from the Website Movie Body Counts, a forum where users collect on-screen body counts for a selection of films and the characters and actors who appear in these films.]]></description>
+        <guid><![CDATA[http://exploringdata.github.io/notebook/movie-body-counts/]]></guid>
+        <pubDate>Thu, 12 Jun 2014 23:06:47 </pubDate>
+    </item>
+    
+    <item>
+        <title><![CDATA[Exploring Movie Body Counts]]></title>
+        <link><![CDATA[http://exploringdata.github.io/notebook/movie-body-counts/]]></link>
+        <description><![CDATA[A look at movie body counts based on information from the Website Movie Body Counts, a forum where users collect on-screen body counts for a selection of films and the characters and actors who appear in these films.]]></description>
+        <guid><![CDATA[http://exploringdata.github.io/notebook/movie-body-counts/]]></guid>
+        <pubDate>Thu, 12 Jun 2014 23:06:47 </pubDate>
+    </item>
+    
+    <item>
+        <title><![CDATA[Exploring Movie Body Counts]]></title>
+        <link><![CDATA[http://exploringdata.github.io/notebook/movie-body-counts/]]></link>
+        <description><![CDATA[A look at movie body counts based on information from the Website Movie Body Counts, a forum where users collect on-screen body counts for a selection of films and the characters and actors who appear in these films.]]></description>
+        <guid><![CDATA[http://exploringdata.github.io/notebook/movie-body-counts/]]></guid>
+        <pubDate>Thu, 12 Jun 2014 23:06:47 </pubDate>
+    </item>
+    
+    <item>
+        <title><![CDATA[Top 1% Income Share in Different Countries]]></title>
+        <link><![CDATA[http://exploringdata.github.io/notebook/top-incomes-share/]]></link>
+        <description><![CDATA[A quick dive into the World Top Incomes Database compiled and maintained by Facundo Alvaredo, Tony Atkinson, Thomas Piketty and Emmanuel Saez.]]></description>
+        <guid><![CDATA[http://exploringdata.github.io/notebook/top-incomes-share/]]></guid>
+        <pubDate>Wed, 23 Apr 2014 14:23:47 </pubDate>
+    </item>
+    
+    <item>
+        <title><![CDATA[Top 1% Income Share in Different Countries]]></title>
+        <link><![CDATA[http://exploringdata.github.io/notebook/top-incomes-share/]]></link>
+        <description><![CDATA[A quick dive into the World Top Incomes Database compiled and maintained by Facundo Alvaredo, Tony Atkinson, Thomas Piketty and Emmanuel Saez.]]></description>
+        <guid><![CDATA[http://exploringdata.github.io/notebook/top-incomes-share/]]></guid>
+        <pubDate>Wed, 23 Apr 2014 14:23:47 </pubDate>
+    </item>
+    
+    <item>
+        <title><![CDATA[Top 1% Income Share in Different Countries]]></title>
+        <link><![CDATA[http://exploringdata.github.io/notebook/top-incomes-share/]]></link>
+        <description><![CDATA[A quick dive into the World Top Incomes Database compiled and maintained by Facundo Alvaredo, Tony Atkinson, Thomas Piketty and Emmanuel Saez.]]></description>
+        <guid><![CDATA[http://exploringdata.github.io/notebook/top-incomes-share/]]></guid>
+        <pubDate>Wed, 23 Apr 2014 14:23:47 </pubDate>
+    </item>
+    
+    <item>
+        <title><![CDATA[Top 1% Income Share in Different Countries]]></title>
+        <link><![CDATA[http://exploringdata.github.io/notebook/top-incomes-share/]]></link>
+        <description><![CDATA[A quick dive into the World Top Incomes Database compiled and maintained by Facundo Alvaredo, Tony Atkinson, Thomas Piketty and Emmanuel Saez.]]></description>
+        <guid><![CDATA[http://exploringdata.github.io/notebook/top-incomes-share/]]></guid>
+        <pubDate>Wed, 23 Apr 2014 14:23:47 </pubDate>
+    </item>
+    
+    <item>
+        <title><![CDATA[Falcao and Iniesta the top players in 2013 according to Ronaldo and Messi]]></title>
+        <link><![CDATA[http://exploringdata.github.io/info/ballon-dor-male-players-votes-2013/]]></link>
+        <description><![CDATA[The Ballon d'Or 2013 visualization shows an interactive network graph of voters and voted football players related based on votes cast for the male FIFA Ballon d'Or award in 2013.]]></description>
+        <guid><![CDATA[http://exploringdata.github.io/info/ballon-dor-male-players-votes-2013/]]></guid>
+        <pubDate>Mon, 13 Jan 2014 21:50:20 </pubDate>
+    </item>
+    
+    <item>
+        <title><![CDATA[Falcao and Iniesta the top players in 2013 according to Ronaldo and Messi]]></title>
+        <link><![CDATA[http://exploringdata.github.io/info/ballon-dor-male-players-votes-2013/]]></link>
+        <description><![CDATA[The Ballon d'Or 2013 visualization shows an interactive network graph of voters and voted football players related based on votes cast for the male FIFA Ballon d'Or award in 2013.]]></description>
+        <guid><![CDATA[http://exploringdata.github.io/info/ballon-dor-male-players-votes-2013/]]></guid>
+        <pubDate>Mon, 13 Jan 2014 21:50:20 </pubDate>
+    </item>
     
 </channel></rss>

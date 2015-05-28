@@ -3,8 +3,16 @@
 <channel><title>Tags » Pandas</title>
     <link>http://exploringdata.github.io</link>
     <description>Tags » Pandas</description>
-    <lastBuildDate>Thu, 21 May 2015 17:55:54 </lastBuildDate>
+    <lastBuildDate>Thu, 28 May 2015 11:57:12 </lastBuildDate>
     <generator>Logya</generator>
     <docs>http://blogs.law.harvard.edu/tech/rss</docs>
+    
+    <item>
+        <title><![CDATA[Rail Suicides in Europe: Absolute vs. Relative]]></title>
+        <link><![CDATA[http://exploringdata.github.io/story/rail-suicides-europe/]]></link>
+        <description><![CDATA[A look at rail suicides data for Europe from 2008 to 2011 highlighting the importance of relating numbers.]]></description>
+        <guid><![CDATA[http://exploringdata.github.io/story/rail-suicides-europe/]]></guid>
+        <pubDate>Thu, 12 Sep 2013 11:39:40 </pubDate>
+    </item>
     
 </channel></rss>

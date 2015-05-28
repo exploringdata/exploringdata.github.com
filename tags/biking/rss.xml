@@ -3,8 +3,16 @@
 <channel><title>Tags » Biking</title>
     <link>http://exploringdata.github.io</link>
     <description>Tags » Biking</description>
-    <lastBuildDate>Thu, 21 May 2015 17:55:54 </lastBuildDate>
+    <lastBuildDate>Thu, 28 May 2015 11:57:12 </lastBuildDate>
     <generator>Logya</generator>
     <docs>http://blogs.law.harvard.edu/tech/rss</docs>
+    
+    <item>
+        <title><![CDATA[A Map of Bike Routes in Berlin, Germany]]></title>
+        <link><![CDATA[http://exploringdata.github.io/info/berlin-bike-routes/]]></link>
+        <description><![CDATA[The bike routes map for Berlin, Germany shows 14 different biking routes through and around the city. Created with OpenLayers, Open Street Map and data from Senatsverwaltung für Stadtentwicklung und Umwelt.]]></description>
+        <guid><![CDATA[http://exploringdata.github.io/info/berlin-bike-routes/]]></guid>
+        <pubDate>Tue, 19 Feb 2013 02:02:03 </pubDate>
+    </item>
     
 </channel></rss>

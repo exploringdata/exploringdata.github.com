@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
+<url><loc><![CDATA[http://exploringdata.github.io/data-visualization-posters/]]></loc><lastmod>2015-05-28</lastmod></url>
+
 <url><loc><![CDATA[http://exploringdata.github.io/vis/programming-languages-influence-network-2014/]]></loc><lastmod>2015-05-21</lastmod></url>
 
 <url><loc><![CDATA[http://exploringdata.github.io/notebook/movie-body-counts/]]></loc><lastmod>2015-05-21</lastmod></url>
