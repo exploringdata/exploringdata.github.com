@@ -3,7 +3,7 @@
 <channel><title>Data Visualization Books</title>
     <link>http://exploringdata.github.io</link>
     <description>Data Visualization Books</description>
-    <lastBuildDate>Thu, 28 May 2015 12:45:20 </lastBuildDate>
+    <lastBuildDate>Mon, 15 Jun 2015 11:38:48 </lastBuildDate>
     <generator>Logya</generator>
     <docs>http://blogs.law.harvard.edu/tech/rss</docs>
     
@@ -18,7 +18,7 @@
     <item>
         <title><![CDATA[Creative Coding Books]]></title>
         <link><![CDATA[http://exploringdata.github.io/data-visualization-books/coding/]]></link>
-        <description><![CDATA[Books about programmatic creation of data visualizations with D3, Python, Processing and SVG in association with Amazon.com.]]></description>
+        <description><![CDATA[Books about programmatic creation of data visualizations with D3.js, JavaScript, Python, Processing and SVG in association with Amazon.com.]]></description>
         <guid><![CDATA[http://exploringdata.github.io/data-visualization-books/coding/]]></guid>
         <pubDate>Tue, 26 Feb 2013 21:08:09 </pubDate>
     </item>
@@ -26,7 +26,7 @@
     <item>
         <title><![CDATA[Data Mining and Analysis Books]]></title>
         <link><![CDATA[http://exploringdata.github.io/data-visualization-books/analysis/]]></link>
-        <description><![CDATA[Books about mining and analyzing data using statistics and programming tools in association with Amazon.com.]]></description>
+        <description><![CDATA[Books about mining and analyzing data, a.k.a. data science, using statistics and programming tools in association with Amazon.com.]]></description>
         <guid><![CDATA[http://exploringdata.github.io/data-visualization-books/analysis/]]></guid>
         <pubDate>Tue, 26 Feb 2013 20:59:08 </pubDate>
     </item>
