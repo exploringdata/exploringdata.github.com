@@ -24,14 +24,6 @@ var langinfo = function(hlang) {
   if (influencedby.length)
     desc += '<h4>Influenced by</h4><p>' + influencedby.join(', ') + '</p>';
 
-  desc += '<hr><h4>Search for ' + hlang.label + ' books on</h4>';
-
-  var s = encodeURIComponent(hlang.label);
-  desc += '<a class="small" href="http://www.amazon.com/gp/search?ie=UTF8&camp=1789&creative=9325&index=books&keywords=' + s + '&linkCode=ur2&tag=xpdt-20">Amazon.com</a> • ';
-  desc += '<a class="small" href="http://www.amazon.co.uk/gp/search?ie=UTF8&camp=1634&creative=6738&index=books&keywords=' + s + '&linkCode=ur2&tag=xpdt-21">Amazon.co.uk</a> • ';
-  desc += '<a class="small" href="http://www.amazon.de/gp/search?ie=UTF8&camp=1638&creative=6742&index=english-books&keywords=' + s + '&linkCode=ur2&tag=xpdt0b-21">Amazon.de</a> • ';
-  desc += '<a class="small" href="http://www.amazon.ca/gp/search?ie=UTF8&camp=15121&creative=330641&index=books-ca&keywords=' + s + '&linkCode=ur2&tag=xpdt0b-20">Amazon.ca</a>';
-
   nodeinfo(hlang.label, desc);
 };
 
