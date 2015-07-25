@@ -15,6 +15,7 @@ cite {font-style:italic;}
 .clearfix {clear:both;}
 .voffset {margin:.5em 0;}
 .roffset {margin-right: .5em;}
+.huge {font-size: 2em;}
 
 .caret {
 opacity:.8;

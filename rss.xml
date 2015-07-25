@@ -3,7 +3,7 @@
 <channel><title>Exploring Data News Feed</title>
     <link>http://exploringdata.github.io</link>
     <description>Exploring Data News Feed</description>
-    <lastBuildDate>Sat, 25 Jul 2015 13:04:19 </lastBuildDate>
+    <lastBuildDate>Sat, 25 Jul 2015 18:41:02 </lastBuildDate>
     <generator>Logya</generator>
     <docs>http://blogs.law.harvard.edu/tech/rss</docs>
     
@@ -21,14 +21,6 @@
         <description><![CDATA[An interactive network graph showing the connections of programming languages based on their influences with language and language paradigm highlighting rendered with sigma.js and preprocessed with Gephi.]]></description>
         <guid><![CDATA[http://exploringdata.github.io/vis/programming-languages-influence-network-2014/]]></guid>
         <pubDate>Tue, 09 Sep 2014 16:29:46 </pubDate>
-    </item>
-    
-    <item>
-        <title><![CDATA[Exploring Movie Body Counts]]></title>
-        <link><![CDATA[http://exploringdata.github.io/notebook/movie-body-counts/]]></link>
-        <description><![CDATA[A look at movie body counts based on information from the Website Movie Body Counts, a forum where users collect on-screen body counts for a selection of films and the characters and actors who appear in these films.]]></description>
-        <guid><![CDATA[http://exploringdata.github.io/notebook/movie-body-counts/]]></guid>
-        <pubDate>Thu, 12 Jun 2014 23:06:47 </pubDate>
     </item>
     
     <item>
@@ -85,6 +77,14 @@
         <description><![CDATA[2 Interactive graph visualizations that show how npm packages are linked by dependency relations, the smaller one is limited to packages with at least 10 dependent packages. Graphs were pre-processed with Gephi and are rendered with sigma.js.]]></description>
         <guid><![CDATA[http://exploringdata.github.io/info/npm-packages-dependencies/]]></guid>
         <pubDate>Mon, 15 Jul 2013 16:03:34 </pubDate>
+    </item>
+    
+    <item>
+        <title><![CDATA[npm Top Packages Dependencies Graph]]></title>
+        <link><![CDATA[http://exploringdata.github.io/vis/npm-top-packages-dependencies/]]></link>
+        <description><![CDATA[An interactive network graph showing the dependencies between npm packages, with at least 10 dependent packages, as of July 12, 2013 rendered with sigma.js and preprocessed with Gephi.]]></description>
+        <guid><![CDATA[http://exploringdata.github.io/vis/npm-top-packages-dependencies/]]></guid>
+        <pubDate>Mon, 15 Jul 2013 13:58:31 </pubDate>
     </item>
     
 </channel></rss>

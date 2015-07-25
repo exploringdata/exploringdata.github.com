@@ -3,17 +3,9 @@
 <channel><title>Notebook</title>
     <link>http://exploringdata.github.io</link>
     <description>Notebook</description>
-    <lastBuildDate>Sat, 25 Jul 2015 13:04:19 </lastBuildDate>
+    <lastBuildDate>Sat, 25 Jul 2015 18:41:02 </lastBuildDate>
     <generator>Logya</generator>
     <docs>http://blogs.law.harvard.edu/tech/rss</docs>
-    
-    <item>
-        <title><![CDATA[Exploring Movie Body Counts]]></title>
-        <link><![CDATA[http://exploringdata.github.io/notebook/movie-body-counts/]]></link>
-        <description><![CDATA[A look at movie body counts based on information from the Website Movie Body Counts, a forum where users collect on-screen body counts for a selection of films and the characters and actors who appear in these films.]]></description>
-        <guid><![CDATA[http://exploringdata.github.io/notebook/movie-body-counts/]]></guid>
-        <pubDate>Thu, 12 Jun 2014 23:06:47 </pubDate>
-    </item>
     
     <item>
         <title><![CDATA[Top 1% Income Share in Different Countries]]></title>
