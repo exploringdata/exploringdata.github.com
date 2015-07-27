@@ -3,7 +3,7 @@
 <channel><title>__Index__</title>
     <link>http://exploringdata.github.io</link>
     <description>__Index__</description>
-    <lastBuildDate>Sat, 25 Jul 2015 18:57:51 </lastBuildDate>
+    <lastBuildDate>Mon, 27 Jul 2015 23:21:50 </lastBuildDate>
     <generator>Logya</generator>
     <docs>http://blogs.law.harvard.edu/tech/rss</docs>
     
@@ -21,14 +21,6 @@
         <description><![CDATA[An interactive network graph showing the connections of programming languages based on their influences with language and language paradigm highlighting rendered with sigma.js and preprocessed with Gephi.]]></description>
         <guid><![CDATA[http://exploringdata.github.io/vis/programming-languages-influence-network-2014/]]></guid>
         <pubDate>Tue, 09 Sep 2014 16:29:46 </pubDate>
-    </item>
-    
-    <item>
-        <title><![CDATA[Top 1% Income Share in Different Countries]]></title>
-        <link><![CDATA[http://exploringdata.github.io/notebook/top-incomes-share/]]></link>
-        <description><![CDATA[A quick dive into the World Top Incomes Database compiled and maintained by Facundo Alvaredo, Tony Atkinson, Thomas Piketty and Emmanuel Saez.]]></description>
-        <guid><![CDATA[http://exploringdata.github.io/notebook/top-incomes-share/]]></guid>
-        <pubDate>Wed, 23 Apr 2014 14:23:47 </pubDate>
     </item>
     
     <item>
@@ -85,6 +77,14 @@
         <description><![CDATA[An interactive network graph showing the dependencies between npm packages, with at least 10 dependent packages, as of July 12, 2013 rendered with sigma.js and preprocessed with Gephi.]]></description>
         <guid><![CDATA[http://exploringdata.github.io/vis/npm-top-packages-dependencies/]]></guid>
         <pubDate>Mon, 15 Jul 2013 13:58:31 </pubDate>
+    </item>
+    
+    <item>
+        <title><![CDATA[npm Packages Dependencies Graph]]></title>
+        <link><![CDATA[http://exploringdata.github.io/vis/npm-packages-dependencies/]]></link>
+        <description><![CDATA[An interactive network graph showing the dependencies between npm packages as of July 12, 2013 rendered with sigma.js and preprocessed with Gephi.]]></description>
+        <guid><![CDATA[http://exploringdata.github.io/vis/npm-packages-dependencies/]]></guid>
+        <pubDate>Mon, 15 Jul 2013 13:58:21 </pubDate>
     </item>
     
 </channel></rss>

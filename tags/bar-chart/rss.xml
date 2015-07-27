@@ -3,17 +3,9 @@
 <channel><title>Tags » Bar Chart</title>
     <link>http://exploringdata.github.io</link>
     <description>Tags » Bar Chart</description>
-    <lastBuildDate>Sat, 25 Jul 2015 18:57:51 </lastBuildDate>
+    <lastBuildDate>Mon, 27 Jul 2015 23:21:51 </lastBuildDate>
     <generator>Logya</generator>
     <docs>http://blogs.law.harvard.edu/tech/rss</docs>
-    
-    <item>
-        <title><![CDATA[Top 1% Income Share in Different Countries]]></title>
-        <link><![CDATA[http://exploringdata.github.io/notebook/top-incomes-share/]]></link>
-        <description><![CDATA[A quick dive into the World Top Incomes Database compiled and maintained by Facundo Alvaredo, Tony Atkinson, Thomas Piketty and Emmanuel Saez.]]></description>
-        <guid><![CDATA[http://exploringdata.github.io/notebook/top-incomes-share/]]></guid>
-        <pubDate>Wed, 23 Apr 2014 14:23:47 </pubDate>
-    </item>
     
     <item>
         <title><![CDATA[Rail Suicides in Europe: Absolute vs. Relative]]></title>
