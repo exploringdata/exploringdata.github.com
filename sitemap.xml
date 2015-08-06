@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
+<url><loc><![CDATA[http://exploringdata.github.io/vis/spaghetti-western-actors-dbpedia/]]></loc><lastmod>2015-08-06</lastmod></url>
+
+<url><loc><![CDATA[http://exploringdata.github.io/info/spaghetti-western-actors-dbpedia/]]></loc><lastmod>2015-08-06</lastmod></url>
+
 <url><loc><![CDATA[http://exploringdata.github.io/data-visualization-posters/]]></loc><lastmod>2015-07-25</lastmod></url>
 
 <url><loc><![CDATA[http://exploringdata.github.io/vis/programming-languages-influence-network-2014/]]></loc><lastmod>2015-07-25</lastmod></url>
@@ -57,7 +61,7 @@
 
 <url><loc><![CDATA[http://exploringdata.github.io/vis/ballon-dor-votes-2012/]]></loc><lastmod>2015-07-25</lastmod></url>
 
-<url><loc><![CDATA[http://exploringdata.github.io/info/ballon-dor-votes-2012/]]></loc><lastmod>2015-07-25</lastmod></url>
+<url><loc><![CDATA[http://exploringdata.github.io/info/ballon-dor-votes-2012/]]></loc><lastmod>2015-08-06</lastmod></url>
 
 <url><loc><![CDATA[http://exploringdata.github.io/vis/evolution-internet-users/]]></loc><lastmod>2015-05-21</lastmod></url>
 

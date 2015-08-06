@@ -3,9 +3,17 @@
 <channel><title>Tags » Interactive</title>
     <link>http://exploringdata.github.io</link>
     <description>Tags » Interactive</description>
-    <lastBuildDate>Mon, 27 Jul 2015 23:24:08 </lastBuildDate>
+    <lastBuildDate>Thu, 06 Aug 2015 14:16:51 </lastBuildDate>
     <generator>Logya</generator>
     <docs>http://blogs.law.harvard.edu/tech/rss</docs>
+    
+    <item>
+        <title><![CDATA[Which Actors Appeared together in Spaghetti Western Films]]></title>
+        <link><![CDATA[http://exploringdata.github.io/info/spaghetti-western-actors-dbpedia/]]></link>
+        <description><![CDATA[This is an undirected graph of co-occurrences of actors who appeared in one or more Spaghetti Western films based on data from DBpedia retrieved on August 4, 2015.]]></description>
+        <guid><![CDATA[http://exploringdata.github.io/info/spaghetti-western-actors-dbpedia/]]></guid>
+        <pubDate>Thu, 06 Aug 2015 14:14:54 </pubDate>
+    </item>
     
     <item>
         <title><![CDATA[Falcao and Iniesta the top players in 2013 according to Ronaldo and Messi]]></title>
@@ -77,14 +85,6 @@
         <description><![CDATA[An animated scatterplot showing the evolution of Internet users across the worlds countries from 1990 to 2012 created with the D3.js.]]></description>
         <guid><![CDATA[http://exploringdata.github.io/vis/evolution-internet-users/]]></guid>
         <pubDate>Sun, 23 Dec 2012 22:27:39 </pubDate>
-    </item>
-    
-    <item>
-        <title><![CDATA[World Aid Flow, Transparency, Development]]></title>
-        <link><![CDATA[http://exploringdata.github.io/vis/world-aid-transparency/]]></link>
-        <description><![CDATA[An interactive visualization looking at world aid flow, aid transparency, and development in receiving countries created with the D3 JavaScript library.]]></description>
-        <guid><![CDATA[http://exploringdata.github.io/vis/world-aid-transparency/]]></guid>
-        <pubDate>Fri, 23 Nov 2012 13:46:48 </pubDate>
     </item>
     
 </channel></rss>

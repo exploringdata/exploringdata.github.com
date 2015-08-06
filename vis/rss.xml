@@ -3,9 +3,17 @@
 <channel><title>Vis</title>
     <link>http://exploringdata.github.io</link>
     <description>Vis</description>
-    <lastBuildDate>Mon, 27 Jul 2015 23:24:08 </lastBuildDate>
+    <lastBuildDate>Thu, 06 Aug 2015 14:16:51 </lastBuildDate>
     <generator>Logya</generator>
     <docs>http://blogs.law.harvard.edu/tech/rss</docs>
+    
+    <item>
+        <title><![CDATA[Spaghetti Western Actors Network Graph DBpedia]]></title>
+        <link><![CDATA[http://exploringdata.github.io/vis/spaghetti-western-actors-dbpedia/]]></link>
+        <description><![CDATA[This is an undirected graph of co-occurrences of actors who appeared in one or more Spaghetti Western films based on data from DBpedia retrieved on August 4, 2015.]]></description>
+        <guid><![CDATA[http://exploringdata.github.io/vis/spaghetti-western-actors-dbpedia/]]></guid>
+        <pubDate>Thu, 06 Aug 2015 14:15:01 </pubDate>
+    </item>
     
     <item>
         <title><![CDATA[Programming Languages Influence Network 2014]]></title>
@@ -77,14 +85,6 @@
         <description><![CDATA[An interactive network graph showing the relations of programmers based on Google searches as shown in knowledge graph information.]]></description>
         <guid><![CDATA[http://exploringdata.github.io/vis/programmers-search-relations/]]></guid>
         <pubDate>Wed, 06 Mar 2013 15:25:03 </pubDate>
-    </item>
-    
-    <item>
-        <title><![CDATA[Berlin Bike Routes Map]]></title>
-        <link><![CDATA[http://exploringdata.github.io/vis/berlin-bike-routes/]]></link>
-        <description><![CDATA[A map of Berlin, Germany showing 14 different biking routes through and around the city. Created with OpenLayers, Open Street Map and data from Senatsverwaltung für Stadtentwicklung und Umwelt.]]></description>
-        <guid><![CDATA[http://exploringdata.github.io/vis/berlin-bike-routes/]]></guid>
-        <pubDate>Tue, 19 Feb 2013 02:02:03 </pubDate>
     </item>
     
 </channel></rss>

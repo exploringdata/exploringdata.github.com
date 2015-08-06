@@ -3,9 +3,17 @@
 <channel><title>Tags » Network Graph</title>
     <link>http://exploringdata.github.io</link>
     <description>Tags » Network Graph</description>
-    <lastBuildDate>Mon, 27 Jul 2015 23:24:08 </lastBuildDate>
+    <lastBuildDate>Thu, 06 Aug 2015 14:16:51 </lastBuildDate>
     <generator>Logya</generator>
     <docs>http://blogs.law.harvard.edu/tech/rss</docs>
+    
+    <item>
+        <title><![CDATA[Which Actors Appeared together in Spaghetti Western Films]]></title>
+        <link><![CDATA[http://exploringdata.github.io/info/spaghetti-western-actors-dbpedia/]]></link>
+        <description><![CDATA[This is an undirected graph of co-occurrences of actors who appeared in one or more Spaghetti Western films based on data from DBpedia retrieved on August 4, 2015.]]></description>
+        <guid><![CDATA[http://exploringdata.github.io/info/spaghetti-western-actors-dbpedia/]]></guid>
+        <pubDate>Thu, 06 Aug 2015 14:14:54 </pubDate>
+    </item>
     
     <item>
         <title><![CDATA[Falcao and Iniesta the top players in 2013 according to Ronaldo and Messi]]></title>
@@ -77,14 +85,6 @@
         <description><![CDATA[The programming languages influence network is an interactive graph visualization where languages are connected by influence relations based on data from Freebase.]]></description>
         <guid><![CDATA[http://exploringdata.github.io/info/programming-languages-influence-network/]]></guid>
         <pubDate>Fri, 07 Sep 2012 18:57:46 </pubDate>
-    </item>
-    
-    <item>
-        <title><![CDATA[Programming Languages Influence Network D3]]></title>
-        <link><![CDATA[http://exploringdata.github.io/vis/programming-languages-influence-network-d3/]]></link>
-        <description><![CDATA[An network graph showing the connections of programming languages based on their influences created with the JavaScript library D3.]]></description>
-        <guid><![CDATA[http://exploringdata.github.io/vis/programming-languages-influence-network-d3/]]></guid>
-        <pubDate>Tue, 04 Sep 2012 22:16:04 </pubDate>
     </item>
     
 </channel></rss>

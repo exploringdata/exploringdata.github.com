@@ -1,0 +1,221 @@
+
+<!DOCTYPE html>
+<html xmlns:fb="http://ogp.me/ns/fb#" lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Which Actors Appeared together in Spaghetti Western Films | Exploring Data</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <meta name="description" content="This is an undirected graph of co-occurrences of actors who appeared in one or more Spaghetti Western films based on data from DBpedia retrieved on August 4, 2015.">
+    
+    
+        <meta property="og:image" content="http://exploringdata.github.io/img/preview/spaghetti-western-actors-dbpedia-graph.png">
+    
+    
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:creator" content="@yaph">
+<meta name="twitter:site" content="@yaph">
+<meta name="twitter:title" content="Which Actors Appeared together in Spaghetti Western Films">
+<meta name="twitter:description" content="This is an undirected graph of co-occurrences of actors who appeared in one or more Spaghetti Western films based on data from DBpedia retrieved on August 4, 2015.">
+<meta name="twitter:image:src" content="http://exploringdata.github.io/img/preview/spaghetti-western-actors-dbpedia-graph.png">
+
+    <meta name="author" content="Ramiro Gómez">
+    
+    <link rel="canonical" href="http://exploringdata.github.io/info/spaghetti-western-actors-dbpedia/">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/css/style.css#v=14" rel="stylesheet">
+    
+        
+    
+    
+    <!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link rel="shortcut icon" href="/favicon.ico">
+    
+        
+            <link rel="alternate" type="application/rss+xml" title="Exploring Data main RSS feed" href="http://exploringdata.github.io/rss.xml">
+        
+    
+</head>
+
+<body class="">
+
+    
+    <nav id="navbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a id="site-name" class="navbar-brand" href="/">Exploring Data</a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="main-navbar">
+            
+<ul class="nav navbar-nav">
+    <li><a href="/story/"><i class="fa fa-pencil-square-o"></i> Data Stories</a></li>
+    <li><a href="/data-visualization-books/"><i class="fa fa-book"></i> Data Books</a></li>
+    <li><a href="/data-visualization-posters/"><i class="fa fa-shopping-cart"></i> Posters</a></li>
+    <li><a href="/datasearch/"><i class="fa fa-search"></i> Search for Data</a></li>
+    <li><a href="/sitemap/"><i class="fa fa-sitemap"></i> Sitemap</a></li>
+</ul>
+
+            <div id="sharemenu" class="nav pull-right">
+    <div class="btn-group">
+        <a href="#" class="btn navbar-btn btn-success dropdown-toggle" data-toggle="dropdown"><i class="fa fa-share"></i></a>
+        <ul class="share dropdown-menu pull-right">
+            <li><a href="/rss.xml"><i class="fa fa-rss"></i> RSS Feed</a></li>
+            <li><a href="https://twitter.com/share?url=http%3A//exploringdata.github.io/info/spaghetti-western-actors-dbpedia/&text=Which%20Actors%20Appeared%20together%20in%20Spaghetti%20Western%20Films"><i class="fa fa-twitter"></i> Tweet this</a></li>
+            <li><a href="https://flattr.com/submit/auto?user_id=rg&url=http%3A//exploringdata.github.io/info/spaghetti-western-actors-dbpedia/&title=Which%20Actors%20Appeared%20together%20in%20Spaghetti%20Western%20Films&language=en_GB&category=software"><i class="fa fa-plus"></i> Flattr this</a></li>
+            <li><a href="http://www.facebook.com/sharer.php?u=http%3A//exploringdata.github.io/info/spaghetti-western-actors-dbpedia/&t=Which%20Actors%20Appeared%20together%20in%20Spaghetti%20Western%20Films"><i class="fa fa-facebook"></i> Facebook</a></li>
+            <li><a href="https://plus.google.com/share?url=http%3A//exploringdata.github.io/info/spaghetti-western-actors-dbpedia/"><i class="fa fa-google-plus"></i> Google+</a></li>
+            <li><a href="http://www.linkedin.com/shareArticle?mini=true&url=http%3A//exploringdata.github.io/info/spaghetti-western-actors-dbpedia/&title=Which%20Actors%20Appeared%20together%20in%20Spaghetti%20Western%20Films"><i class="fa fa-linkedin"></i> LinkedIn</a></li>
+        </ul>
+    </div>
+</div>
+            
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+    
+
+    
+    
+    
+<div id="info" class="container">
+<div class="row">
+  <div class="col-md-9"><h1>Which Actors Appeared together in Spaghetti Western Films</h1>
+  <p>This <a href="/vis/spaghetti-western-actors-dbpedia/">interactive network visualization</a> shows an undirected graph of co-occurrences of actors who appeared in one or more Spaghetti Western films based on data from <a href="http://wiki.dbpedia.org/">DBpedia</a> retrieved on August 4, 2015.</p>
+<p>I used DBpedia as a source because of the creative commons license as opposed to IMDB for example. DBpedia's coverage of actors who appeared in the films is very incomprehensive though and while DBpedia is better structured than Wikipedia it still has a lot of inconsistencies. I may revisit this topic using either Wikipedia or yet another data source, that allows for re-use.</p>
+<p>Despite, these limitations we get an idea which actors appeared together most often indicated by edge size, i. e. Bud Spencer and Terence Hill and which actors have the highest degree, i. e. Terence Hill and Giuliano Gemma within this dataset.</p>
+  
+    
+
+<div class="postinfo">
+<hr class="clearfix">
+<div class="well">
+<p>Published on August 06, 2015 by <a href="http://ramiro.org/">Ramiro Gómez</a> (<a href="https://twitter.com/yaph">@yaph</a>).<br>
+Tags: <a href="/tags/network-graph/">network graph</a>, <a href="/tags/film/">film</a>, <a href="/tags/sigmajs/">sigmajs</a>, <a href="/tags/gephi/">gephi</a>, <a href="/tags/networkx/">networkx</a>, <a href="/tags/interactive/">interactive</a>.<br>
+To be informed of new posts, subscribe to the <a href="/rss.xml">RSS feed</a>.</p>
+
+</div>
+</div>
+
+  
+  
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+var disqus_shortname = 'exploringdata';
+var disqus_url = 'http://exploringdata.github.io/info/spaghetti-western-actors-dbpedia/';
+(function() {
+var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+  
+  </div>
+  <div class="col-md-3">
+    
+      <h3>Visualization</h3>
+      <a href="/vis/spaghetti-western-actors-dbpedia/"><img class="vis-preview img-responsive" src="/img/preview/spaghetti-western-actors-dbpedia-graph.png" alt="visualization preview"></a>
+      <a href="/vis/spaghetti-western-actors-dbpedia/" class="btn btn-primary voffset">View Visualization</a>
+      <hr>
+    
+    
+    
+      <h3>Visualization Poster</h3>
+      <a href="http://www.zazzle.com/spaghetti_western_actors_dbpedia_network_poster-228454665382167754?rf=238355915198956003&tc=xpdt"><img class="img-thumbnail img-responsive" src="http://rlv.zcache.com/spaghetti_western_actors_dbpedia_network_poster-r22250723c0d64938a128aa691c6890f9_wvu_8byvr_325.jpg" alt="Spaghetti Western Actors Poster"></a>
+      <a href="http://www.zazzle.com/spaghetti_western_actors_dbpedia_network_poster-228454665382167754?rf=238355915198956003&tc=xpdt" class="btn btn-primary voffset">Buy Print</a>
+      <hr>
+    
+    
+    
+    <h3>Keep Exploring</h3>
+<a href="/rss.xml" class="btn btn-lg btn-warning"><i class="fa fa-rss"></i> Subscribe to News feed</a>
+
+<div id="mc_embed_signup" class="clearfix well voffset">
+<form action="http://github.us6.list-manage.com/subscribe/post?u=6e91c5ec6f31498a21bc80826&amp;id=bb7db2c23d" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="form validate" target="_blank" role="form" novalidate>
+<label for="mce-EMAIL">Subscribe to the <strong>Datavis Weekly Newsletter</strong></label>
+<input type="email" value="" name="EMAIL" class="email form-control" id="mce-EMAIL" placeholder="email address" required>
+<div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-success voffset"></div>
+<div id="mce-responses" class="clear">
+<div class="response" id="mce-error-response" style="display:none"></div>
+<div class="response" id="mce-success-response" style="display:none"></div>
+</div>
+</form>
+<p>See a sample <a href="http://eepurl.com/Fi1kz">newsletter issue</a> in your browser.</p>
+</div>
+
+<h3>Recent Visualizations</h3>
+<ul class="list-unstyled">
+
+<li><a href="/vis/spaghetti-western-actors-dbpedia/">Spaghetti Western Actors Network Graph DBpedia</a></li>
+
+<li><a href="/vis/programming-languages-influence-network-2014/">Programming Languages Influence Network 2014</a></li>
+
+<li><a href="/vis/ballon-dor-male-players-votes-2013/">Ballon d'Or 2013 Male Players Votes Network</a></li>
+
+<li><a href="/vis/npm-top-packages-dependencies/">npm Top Packages Dependencies Graph</a></li>
+
+<li><a href="/vis/npm-packages-dependencies/">npm Packages Dependencies Graph</a></li>
+
+</ul>
+  </div>
+</div>
+</div>
+
+    
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+var disqus_shortname = 'exploringdata';
+var disqus_url = 'http://exploringdata.github.io/info/spaghetti-western-actors-dbpedia/';
+(function() {
+var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+    
+    <div id="footer" class="container">
+      <div class="row"><div class="col-md-12">
+        <footer>
+            <hr>
+            <p>Exploring Data is a showcase of interactive data visualizations created with open data and open source tools, <a href="/about/">learn more</a>.<br>
+            CC BY-SA 2015 <a href="http://ramiro.org/">Ramiro Gómez</a> (<a href="https://twitter.com/yaph">@yaph</a>).</p>
+        </footer>
+      </div></div>
+    </div>
+    
+    
+
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-5102014-13', 'exploringdata.github.io');
+  ga('send', 'pageview');
+
+(function(c,a){function d(){var e=a.getElementsByTagName("a");var f=[];for(var g=0;g<e.length;++g){var h=e[g];if(h.host!=c.location.host){f.push(h)}}return f}function b(f){var e=f.srcElement||f.target;while(e&&(typeof e.tagName=="undefined"||e.tagName.toLowerCase()!="a"||!e.href)){e=e.parentNode}if(!e||!e.href){return}if(c.ga){ga("send","event","Outbound link","Click",e.href)}if(!e.target||e.target.match(/^_(self|parent|top)$/i)){setTimeout(function(){a.location.href=e.href},150);if(f.preventDefault){f.preventDefault()}else{f.returnValue=false}}}c.addEventListener("load",function(){var e=d();for(var f in e){e[f].addEventListener("click",b)}})}(window,document));
+</script>
+    <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    
+
+    <script src="/js/script.js#v=14"></script>
+    
+
+    
+  </body>
+</html>
