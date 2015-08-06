@@ -5,12 +5,12 @@ $(function(){
       defaultLabelSize: 12,
       defaultLabelBGColor: '#fff',
       defaultLabelHoverColor: '#000',
-      labelThreshold: 10,
+      labelThreshold: 8,
       defaultEdgeType: 'curve'
     },
     graph: {
       minNodeSize: 1,
-      maxNodeSize: 40,
+      maxNodeSize: 28,
       minEdgeSize: 0.1,
       maxEdgeSize: 10
     },
