@@ -20,7 +20,5 @@ $(function(){
     type: 'directed'
   }
 
-  visgexf.init('sig', gexf, props, function() {
-    $('.showposter').click(function(e){e.preventDefault();$('#showposter').modal();});
-  });
+  visgexf.init('sig', gexf, props);
 });

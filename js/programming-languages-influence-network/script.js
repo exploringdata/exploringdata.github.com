@@ -89,6 +89,4 @@ $(function(){
         visgexf.setFilter(filterid, t.attr('href').replace('#', ''));
     });
   });
-
-  $('.showposter').click(function(e){e.preventDefault();$('#showposter').modal();});
 });

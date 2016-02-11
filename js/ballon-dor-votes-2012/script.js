@@ -63,5 +63,4 @@ $(function(){
   visgexf
     .init('sig', '/gexf/ballon-dor-2012-votes-fruchterman.json', props)
     .sig.bind('overnodes', showNodeInfo).bind('outnodes', hideNodeInfo).draw();
-  $('.showposter').click(function(e){e.preventDefault();$('#showposter').modal();});
 });

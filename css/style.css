@@ -10,6 +10,9 @@ margin-top:1em;
 }
 cite {font-style:italic;}
 
+.nav > li > a.navbar-btn {padding: 6px 12px;}
+.nav > li > a.navbar-btn:hover {background-color: #ec971f;}
+
 .spacer5 {clear:both;height:5px;}
 .centered {text-align:center;}
 .clearfix {clear:both;}

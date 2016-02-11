@@ -18,5 +18,4 @@ $(function(){
     type: 'undirected'
   }
   visgexf.init('sig', '/gexf/spaghetti-western-actors-dbpedia.json', props);
-  $('.showposter').click(function(e){e.preventDefault();$('#showposter').modal();});
 });
