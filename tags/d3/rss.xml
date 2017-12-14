@@ -1,57 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0">
 <channel><title>Tags » D3</title>
-    <link>http://exploringdata.github.io</link>
+    <link>http://exploring-data.com</link>
     <description>Tags » D3</description>
-    <lastBuildDate>Tue, 12 Dec 2017 21:40:12 </lastBuildDate>
+    <lastBuildDate>Thu, 14 Dec 2017 21:37:55 </lastBuildDate>
     <generator>Logya</generator>
     <docs>http://blogs.law.harvard.edu/tech/rss</docs>
     
     <item>
         <title><![CDATA[Where in the World Happen Most Murders]]></title>
-        <link><![CDATA[http://exploringdata.github.io/info/intentional-homicides/]]></link>
+        <link><![CDATA[http://exploring-data.com/info/intentional-homicides/]]></link>
         <description><![CDATA[A series of maps of the world showing where in the world the least and the most murders happen for the years 1995 to 2011.]]></description>
-        <guid><![CDATA[http://exploringdata.github.io/info/intentional-homicides/]]></guid>
+        <guid><![CDATA[http://exploring-data.com/info/intentional-homicides/]]></guid>
         <pubDate>Fri, 20 Sep 2013 00:03:53 </pubDate>
     </item>
     
     <item>
         <title><![CDATA[A Decade of Climate Change in the Guardian]]></title>
-        <link><![CDATA[http://exploringdata.github.io/vis/climate-changes-decade/]]></link>
+        <link><![CDATA[http://exploring-data.com/vis/climate-changes-decade/]]></link>
         <description><![CDATA[Explore a decade of climate change, global warming, natural disaster, extreme weather, pollution and deforestation in the articles published by the Guardian.]]></description>
-        <guid><![CDATA[http://exploringdata.github.io/vis/climate-changes-decade/]]></guid>
+        <guid><![CDATA[http://exploring-data.com/vis/climate-changes-decade/]]></guid>
         <pubDate>Fri, 05 Apr 2013 00:56:02 </pubDate>
     </item>
     
     <item>
         <title><![CDATA[Evolution of Internet Users from 1990 - 2012]]></title>
-        <link><![CDATA[http://exploringdata.github.io/vis/evolution-internet-users/]]></link>
+        <link><![CDATA[http://exploring-data.com/vis/evolution-internet-users/]]></link>
         <description><![CDATA[An animated scatterplot showing the evolution of Internet users across the worlds countries from 1990 to 2012 created with the D3.js.]]></description>
-        <guid><![CDATA[http://exploringdata.github.io/vis/evolution-internet-users/]]></guid>
+        <guid><![CDATA[http://exploring-data.com/vis/evolution-internet-users/]]></guid>
         <pubDate>Sun, 23 Dec 2012 22:27:39 </pubDate>
     </item>
     
     <item>
         <title><![CDATA[World Aid Flow, Transparency, Development]]></title>
-        <link><![CDATA[http://exploringdata.github.io/vis/world-aid-transparency/]]></link>
+        <link><![CDATA[http://exploring-data.com/vis/world-aid-transparency/]]></link>
         <description><![CDATA[An interactive visualization looking at world aid flow, aid transparency, and development in receiving countries created with the D3 JavaScript library.]]></description>
-        <guid><![CDATA[http://exploringdata.github.io/vis/world-aid-transparency/]]></guid>
+        <guid><![CDATA[http://exploring-data.com/vis/world-aid-transparency/]]></guid>
         <pubDate>Fri, 23 Nov 2012 13:46:48 </pubDate>
     </item>
     
     <item>
         <title><![CDATA[Which Software Platforms are Exploited the Most]]></title>
-        <link><![CDATA[http://exploringdata.github.io/vis/exploit-database-platforms-spiral/]]></link>
+        <link><![CDATA[http://exploring-data.com/vis/exploit-database-platforms-spiral/]]></link>
         <description><![CDATA[A pack layout visualization of platforms sized by the number of exploits created with the JavaScript library D3 and data from the Exploit Database.]]></description>
-        <guid><![CDATA[http://exploringdata.github.io/vis/exploit-database-platforms-spiral/]]></guid>
+        <guid><![CDATA[http://exploring-data.com/vis/exploit-database-platforms-spiral/]]></guid>
         <pubDate>Mon, 29 Oct 2012 16:41:22 </pubDate>
     </item>
     
     <item>
         <title><![CDATA[Programming Languages Influence Network D3]]></title>
-        <link><![CDATA[http://exploringdata.github.io/vis/programming-languages-influence-network-d3/]]></link>
+        <link><![CDATA[http://exploring-data.com/vis/programming-languages-influence-network-d3/]]></link>
         <description><![CDATA[An network graph showing the connections of programming languages based on their influences created with the JavaScript library D3.]]></description>
-        <guid><![CDATA[http://exploringdata.github.io/vis/programming-languages-influence-network-d3/]]></guid>
+        <guid><![CDATA[http://exploring-data.com/vis/programming-languages-influence-network-d3/]]></guid>
         <pubDate>Tue, 04 Sep 2012 22:16:04 </pubDate>
     </item>
     

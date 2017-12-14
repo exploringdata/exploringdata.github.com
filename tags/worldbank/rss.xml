@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0">
 <channel><title>Tags » Worldbank</title>
-    <link>http://exploringdata.github.io</link>
+    <link>http://exploring-data.com</link>
     <description>Tags » Worldbank</description>
-    <lastBuildDate>Tue, 12 Dec 2017 21:40:12 </lastBuildDate>
+    <lastBuildDate>Thu, 14 Dec 2017 21:37:55 </lastBuildDate>
     <generator>Logya</generator>
     <docs>http://blogs.law.harvard.edu/tech/rss</docs>
     
     <item>
         <title><![CDATA[Where in the World Happen Most Murders]]></title>
-        <link><![CDATA[http://exploringdata.github.io/info/intentional-homicides/]]></link>
+        <link><![CDATA[http://exploring-data.com/info/intentional-homicides/]]></link>
         <description><![CDATA[A series of maps of the world showing where in the world the least and the most murders happen for the years 1995 to 2011.]]></description>
-        <guid><![CDATA[http://exploringdata.github.io/info/intentional-homicides/]]></guid>
+        <guid><![CDATA[http://exploring-data.com/info/intentional-homicides/]]></guid>
         <pubDate>Fri, 20 Sep 2013 00:03:53 </pubDate>
     </item>
     

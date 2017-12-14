@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0">
 <channel><title>Tags » Animation</title>
-    <link>http://exploringdata.github.io</link>
+    <link>http://exploring-data.com</link>
     <description>Tags » Animation</description>
-    <lastBuildDate>Tue, 12 Dec 2017 21:40:12 </lastBuildDate>
+    <lastBuildDate>Thu, 14 Dec 2017 21:37:55 </lastBuildDate>
     <generator>Logya</generator>
     <docs>http://blogs.law.harvard.edu/tech/rss</docs>
     
     <item>
         <title><![CDATA[Evolution of Internet Users from 1990 - 2012]]></title>
-        <link><![CDATA[http://exploringdata.github.io/vis/evolution-internet-users/]]></link>
+        <link><![CDATA[http://exploring-data.com/vis/evolution-internet-users/]]></link>
         <description><![CDATA[An animated scatterplot showing the evolution of Internet users across the worlds countries from 1990 to 2012 created with the D3.js.]]></description>
-        <guid><![CDATA[http://exploringdata.github.io/vis/evolution-internet-users/]]></guid>
+        <guid><![CDATA[http://exploring-data.com/vis/evolution-internet-users/]]></guid>
         <pubDate>Sun, 23 Dec 2012 22:27:39 </pubDate>
     </item>
     

@@ -1,89 +1,89 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0">
 <channel><title>Exploring Data News Feed</title>
-    <link>http://exploringdata.github.io</link>
+    <link>http://exploring-data.com</link>
     <description>Exploring Data News Feed</description>
-    <lastBuildDate>Tue, 12 Dec 2017 21:40:13 </lastBuildDate>
+    <lastBuildDate>Thu, 14 Dec 2017 21:37:55 </lastBuildDate>
     <generator>Logya</generator>
     <docs>http://blogs.law.harvard.edu/tech/rss</docs>
     
     <item>
         <title><![CDATA[Spaghetti Western Actors Network Graph DBpedia]]></title>
-        <link><![CDATA[http://exploringdata.github.io/vis/spaghetti-western-actors-dbpedia/]]></link>
+        <link><![CDATA[http://exploring-data.com/vis/spaghetti-western-actors-dbpedia/]]></link>
         <description><![CDATA[This is an undirected graph of co-occurrences of actors who appeared in one or more Spaghetti Western films based on data from DBpedia retrieved on August 4, 2015.]]></description>
-        <guid><![CDATA[http://exploringdata.github.io/vis/spaghetti-western-actors-dbpedia/]]></guid>
+        <guid><![CDATA[http://exploring-data.com/vis/spaghetti-western-actors-dbpedia/]]></guid>
         <pubDate>Thu, 06 Aug 2015 14:15:01 </pubDate>
     </item>
     
     <item>
         <title><![CDATA[Which Actors Appeared together in Spaghetti Western Films]]></title>
-        <link><![CDATA[http://exploringdata.github.io/info/spaghetti-western-actors-dbpedia/]]></link>
+        <link><![CDATA[http://exploring-data.com/info/spaghetti-western-actors-dbpedia/]]></link>
         <description><![CDATA[This is an undirected graph of co-occurrences of actors who appeared in one or more Spaghetti Western films based on data from DBpedia retrieved on August 4, 2015.]]></description>
-        <guid><![CDATA[http://exploringdata.github.io/info/spaghetti-western-actors-dbpedia/]]></guid>
+        <guid><![CDATA[http://exploring-data.com/info/spaghetti-western-actors-dbpedia/]]></guid>
         <pubDate>Thu, 06 Aug 2015 14:14:54 </pubDate>
     </item>
     
     <item>
         <title><![CDATA[Data Visualization Posters]]></title>
-        <link><![CDATA[http://exploringdata.github.io/data-visualization-posters/]]></link>
+        <link><![CDATA[http://exploring-data.com/data-visualization-posters/]]></link>
         <description><![CDATA[These data visualization posters are available for purchase from Zazzle. You can choose between different sizes, print canvas and optionally add a frame to your visualization print.]]></description>
-        <guid><![CDATA[http://exploringdata.github.io/data-visualization-posters/]]></guid>
+        <guid><![CDATA[http://exploring-data.com/data-visualization-posters/]]></guid>
         <pubDate>Thu, 28 May 2015 12:30:46 </pubDate>
     </item>
     
     <item>
         <title><![CDATA[Programming Languages Influence Network 2014]]></title>
-        <link><![CDATA[http://exploringdata.github.io/vis/programming-languages-influence-network-2014/]]></link>
+        <link><![CDATA[http://exploring-data.com/vis/programming-languages-influence-network-2014/]]></link>
         <description><![CDATA[An interactive network graph showing the connections of programming languages based on their influences with language and language paradigm highlighting rendered with sigma.js and preprocessed with Gephi.]]></description>
-        <guid><![CDATA[http://exploringdata.github.io/vis/programming-languages-influence-network-2014/]]></guid>
+        <guid><![CDATA[http://exploring-data.com/vis/programming-languages-influence-network-2014/]]></guid>
         <pubDate>Tue, 09 Sep 2014 16:29:46 </pubDate>
     </item>
     
     <item>
         <title><![CDATA[Falcao and Iniesta the top players in 2013 according to Ronaldo and Messi]]></title>
-        <link><![CDATA[http://exploringdata.github.io/info/ballon-dor-male-players-votes-2013/]]></link>
+        <link><![CDATA[http://exploring-data.com/info/ballon-dor-male-players-votes-2013/]]></link>
         <description><![CDATA[The Ballon d'Or 2013 visualization shows an interactive network graph of voters and voted football players related based on votes cast for the male FIFA Ballon d'Or award in 2013.]]></description>
-        <guid><![CDATA[http://exploringdata.github.io/info/ballon-dor-male-players-votes-2013/]]></guid>
+        <guid><![CDATA[http://exploring-data.com/info/ballon-dor-male-players-votes-2013/]]></guid>
         <pubDate>Mon, 13 Jan 2014 21:50:20 </pubDate>
     </item>
     
     <item>
         <title><![CDATA[Ballon d'Or 2013 Male Players Votes Network]]></title>
-        <link><![CDATA[http://exploringdata.github.io/vis/ballon-dor-male-players-votes-2013/]]></link>
+        <link><![CDATA[http://exploring-data.com/vis/ballon-dor-male-players-votes-2013/]]></link>
         <description><![CDATA[An interactive network graph showing the connections between voters and voted male football players from the male FIFA Ballon d'Or vote 2013.]]></description>
-        <guid><![CDATA[http://exploringdata.github.io/vis/ballon-dor-male-players-votes-2013/]]></guid>
+        <guid><![CDATA[http://exploring-data.com/vis/ballon-dor-male-players-votes-2013/]]></guid>
         <pubDate>Mon, 13 Jan 2014 21:34:20 </pubDate>
     </item>
     
     <item>
         <title><![CDATA[Where in the World Happen Most Murders]]></title>
-        <link><![CDATA[http://exploringdata.github.io/info/intentional-homicides/]]></link>
+        <link><![CDATA[http://exploring-data.com/info/intentional-homicides/]]></link>
         <description><![CDATA[A series of maps of the world showing where in the world the least and the most murders happen for the years 1995 to 2011.]]></description>
-        <guid><![CDATA[http://exploringdata.github.io/info/intentional-homicides/]]></guid>
+        <guid><![CDATA[http://exploring-data.com/info/intentional-homicides/]]></guid>
         <pubDate>Fri, 20 Sep 2013 00:03:53 </pubDate>
     </item>
     
     <item>
         <title><![CDATA[World Map of Intentional Homicides]]></title>
-        <link><![CDATA[http://exploringdata.github.io/map/world/intentional-homicides/]]></link>
+        <link><![CDATA[http://exploring-data.com/map/world/intentional-homicides/]]></link>
         <description><![CDATA[A series of geographic Choropleth maps showing the number of intentional homicides by country per 100,000 people. Created using World Bank data and D3.js.]]></description>
-        <guid><![CDATA[http://exploringdata.github.io/map/world/intentional-homicides/]]></guid>
+        <guid><![CDATA[http://exploring-data.com/map/world/intentional-homicides/]]></guid>
         <pubDate>Thu, 19 Sep 2013 23:37:53 </pubDate>
     </item>
     
     <item>
         <title><![CDATA[Rail Suicides in Europe: Absolute vs. Relative]]></title>
-        <link><![CDATA[http://exploringdata.github.io/story/rail-suicides-europe/]]></link>
+        <link><![CDATA[http://exploring-data.com/story/rail-suicides-europe/]]></link>
         <description><![CDATA[A look at rail suicides data for Europe from 2008 to 2011 highlighting the importance of relating numbers.]]></description>
-        <guid><![CDATA[http://exploringdata.github.io/story/rail-suicides-europe/]]></guid>
+        <guid><![CDATA[http://exploring-data.com/story/rail-suicides-europe/]]></guid>
         <pubDate>Thu, 12 Sep 2013 11:39:40 </pubDate>
     </item>
     
     <item>
         <title><![CDATA[How npm Packages are Linked by Dependencies]]></title>
-        <link><![CDATA[http://exploringdata.github.io/info/npm-packages-dependencies/]]></link>
+        <link><![CDATA[http://exploring-data.com/info/npm-packages-dependencies/]]></link>
         <description><![CDATA[2 Interactive graph visualizations that show how npm packages are linked by dependency relations, the smaller one is limited to packages with at least 10 dependent packages. Graphs were pre-processed with Gephi and are rendered with sigma.js.]]></description>
-        <guid><![CDATA[http://exploringdata.github.io/info/npm-packages-dependencies/]]></guid>
+        <guid><![CDATA[http://exploring-data.com/info/npm-packages-dependencies/]]></guid>
         <pubDate>Mon, 15 Jul 2013 16:03:34 </pubDate>
     </item>
     
