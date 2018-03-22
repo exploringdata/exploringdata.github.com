@@ -102,7 +102,7 @@ function getGuardianArticles(query, date) {
             for (i in data.response.results) {
                 var r = data.response.results[i];
                 var src = 'undefined' !== typeof r.fields.thumbnail ? r.fields.thumbnail : '/img/no-image.70x42.png';
-                html += '<div class="article row"><div class="image col-md-3"><a href="' + r.webUrl + '"><img src="' + src + '" class="img-thumbnail"></a></div><div class="col-md-9"><div title="' + r.webTitle + '"><a href="' + r.webUrl + '">' + r.fields.headline + '</a></div><span class="meta"><i class="fa fa-calendar"></i> ' + new Date(r.webPublicationDate).toGMTString() + ' in ' + r.sectionName + '</span></div></div><hr>';
+                html += '<div class="article row"><div class="image col-md-3"><a href="' + r.webUrl + '"><img src="' + src + '" class="img-thumbnail"></a></div><div class="col-md-9"><div title="' + r.webTitle + '"><a href="' + r.webUrl + '">' + r.fields.headline + '</a></div><span class="meta">📅</i> ' + new Date(r.webPublicationDate).toGMTString() + ' in ' + r.sectionName + '</span></div></div><hr>';
             }
             html += getArticlePager(data);
             d3.select('#articles').html(html);

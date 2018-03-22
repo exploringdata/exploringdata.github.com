@@ -4,11 +4,11 @@ var nodeinfo = function(dataid, data, name) {
   var desc = '<div><img src="/img/' + name + '/' + dataid + '.jpg" class="img-polaroid pull-right" alt="Photo of ' + hnode.label + '">';
   desc += data.abstract + ' <a href="' + data.wikipedia_url + '">Wikipedia</a><div>';
   if (data.twitter_url)
-    desc += '<a class="btn" href="' + data.twitter_url + '"><i class="fa fa-twitter"></i></a> ';
+    desc += '<a class="btn" href="' + data.twitter_url + '"></a> ';
   if (data.facebook_url)
-    desc += '<a class="btn" href="' + data.facebook_url + '"><i class="fa fa-facebook"></i></a> ';
+    desc += '<a class="btn" href="' + data.facebook_url + '"></a> ';
   if (data.gplus_url)
-    desc += '<a class="btn" href="' + data.gplus_url + '"><i class="icon-google-plus"></i></a> ';
+    desc += '<a class="btn" href="' + data.gplus_url + '"></a> ';
   if (data.related_searches) {
     desc += '<h4>Related Searches</h4><ul>';
     for(i in data.related_searches) {
