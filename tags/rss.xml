@@ -3,9 +3,17 @@
 <channel><title>Tags</title>
     <link>http://exploring-data.com</link>
     <description>Tags</description>
-    <lastBuildDate>Fri, 23 Mar 2018 00:07:03 </lastBuildDate>
+    <lastBuildDate>Thu, 26 Apr 2018 01:23:44 </lastBuildDate>
     <generator>Logya</generator>
     <docs>http://blogs.law.harvard.edu/tech/rss</docs>
+    
+    <item>
+        <title><![CDATA[Big Sister Cities: How They Are Related]]></title>
+        <link><![CDATA[http://exploring-data.com/info/big-sister-cities/]]></link>
+        <description><![CDATA[Big Sister Cities is an interactive network graph showing 279 cities with more than 1 million inhabitants and how they are connected to their sister cities within this set.]]></description>
+        <guid><![CDATA[http://exploring-data.com/info/big-sister-cities/]]></guid>
+        <pubDate>Thu, 26 Apr 2018 00:32:29 </pubDate>
+    </item>
     
     <item>
         <title><![CDATA[Which Actors Appeared together in Spaghetti Western Films]]></title>
@@ -77,14 +85,6 @@
         <description><![CDATA[The footballers search relations visualization shows a network graph of former and current football players and managers related by Google searches with results containing knowledge graph information.]]></description>
         <guid><![CDATA[http://exploring-data.com/info/footballers-search-relations/]]></guid>
         <pubDate>Wed, 13 Mar 2013 01:28:01 </pubDate>
-    </item>
-    
-    <item>
-        <title><![CDATA[How Programmers Relate based on Google Searches]]></title>
-        <link><![CDATA[http://exploring-data.com/info/programmers-search-relations/]]></link>
-        <description><![CDATA[The programmers search relations visualization shows a network graph of programmers related by Google searches with results containing knowledge graph information.]]></description>
-        <guid><![CDATA[http://exploring-data.com/info/programmers-search-relations/]]></guid>
-        <pubDate>Wed, 06 Mar 2013 15:25:03 </pubDate>
     </item>
     
 </channel></rss>

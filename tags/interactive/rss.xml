@@ -3,9 +3,17 @@
 <channel><title>Tags » Interactive</title>
     <link>http://exploring-data.com</link>
     <description>Tags » Interactive</description>
-    <lastBuildDate>Fri, 23 Mar 2018 00:07:03 </lastBuildDate>
+    <lastBuildDate>Thu, 26 Apr 2018 01:23:44 </lastBuildDate>
     <generator>Logya</generator>
     <docs>http://blogs.law.harvard.edu/tech/rss</docs>
+    
+    <item>
+        <title><![CDATA[Big Sister Cities: How They Are Related]]></title>
+        <link><![CDATA[http://exploring-data.com/info/big-sister-cities/]]></link>
+        <description><![CDATA[Big Sister Cities is an interactive network graph showing 279 cities with more than 1 million inhabitants and how they are connected to their sister cities within this set.]]></description>
+        <guid><![CDATA[http://exploring-data.com/info/big-sister-cities/]]></guid>
+        <pubDate>Thu, 26 Apr 2018 00:32:29 </pubDate>
+    </item>
     
     <item>
         <title><![CDATA[Which Actors Appeared together in Spaghetti Western Films]]></title>
@@ -77,14 +85,6 @@
         <description><![CDATA[The Ballon d'Or 2012 visualization shows an interactive network graph of voters and voted players related based on votes cast for the male FIFA Ballon d'Or award in 2012.]]></description>
         <guid><![CDATA[http://exploring-data.com/info/ballon-dor-votes-2012/]]></guid>
         <pubDate>Wed, 09 Jan 2013 15:00:20 </pubDate>
-    </item>
-    
-    <item>
-        <title><![CDATA[Evolution of Internet Users from 1990 - 2012]]></title>
-        <link><![CDATA[http://exploring-data.com/vis/evolution-internet-users/]]></link>
-        <description><![CDATA[An animated scatterplot showing the evolution of Internet users across the worlds countries from 1990 to 2012 created with the D3.js.]]></description>
-        <guid><![CDATA[http://exploring-data.com/vis/evolution-internet-users/]]></guid>
-        <pubDate>Sun, 23 Dec 2012 22:27:39 </pubDate>
     </item>
     
 </channel></rss>

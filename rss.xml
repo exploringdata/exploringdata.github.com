@@ -3,9 +3,25 @@
 <channel><title>Exploring Data News Feed</title>
     <link>http://exploring-data.com</link>
     <description>Exploring Data News Feed</description>
-    <lastBuildDate>Fri, 23 Mar 2018 00:07:03 </lastBuildDate>
+    <lastBuildDate>Thu, 26 Apr 2018 01:23:44 </lastBuildDate>
     <generator>Logya</generator>
     <docs>http://blogs.law.harvard.edu/tech/rss</docs>
+    
+    <item>
+        <title><![CDATA[Big Sister Cities: How They Are Related]]></title>
+        <link><![CDATA[http://exploring-data.com/info/big-sister-cities/]]></link>
+        <description><![CDATA[Big Sister Cities is an interactive network graph showing 279 cities with more than 1 million inhabitants and how they are connected to their sister cities within this set.]]></description>
+        <guid><![CDATA[http://exploring-data.com/info/big-sister-cities/]]></guid>
+        <pubDate>Thu, 26 Apr 2018 00:32:29 </pubDate>
+    </item>
+    
+    <item>
+        <title><![CDATA[Graph of Big Sister Cities With +1 Million Inhabitants]]></title>
+        <link><![CDATA[http://exploring-data.com/vis/big-sister-cities/]]></link>
+        <description><![CDATA[An interactive network graph showing 279 cities with more than 1 million inhabitants and how they are connected to their sister cities within this set.]]></description>
+        <guid><![CDATA[http://exploring-data.com/vis/big-sister-cities/]]></guid>
+        <pubDate>Wed, 25 Apr 2018 20:58:21 </pubDate>
+    </item>
     
     <item>
         <title><![CDATA[Spaghetti Western Actors Network Graph DBpedia]]></title>
@@ -69,22 +85,6 @@
         <description><![CDATA[A series of geographic Choropleth maps showing the number of intentional homicides by country per 100,000 people. Created using World Bank data and D3.js.]]></description>
         <guid><![CDATA[http://exploring-data.com/map/world/intentional-homicides/]]></guid>
         <pubDate>Thu, 19 Sep 2013 23:37:53 </pubDate>
-    </item>
-    
-    <item>
-        <title><![CDATA[Rail Suicides in Europe: Absolute vs. Relative]]></title>
-        <link><![CDATA[http://exploring-data.com/story/rail-suicides-europe/]]></link>
-        <description><![CDATA[A look at rail suicides data for Europe from 2008 to 2011 highlighting the importance of relating numbers.]]></description>
-        <guid><![CDATA[http://exploring-data.com/story/rail-suicides-europe/]]></guid>
-        <pubDate>Thu, 12 Sep 2013 11:39:40 </pubDate>
-    </item>
-    
-    <item>
-        <title><![CDATA[How npm Packages are Linked by Dependencies]]></title>
-        <link><![CDATA[http://exploring-data.com/info/npm-packages-dependencies/]]></link>
-        <description><![CDATA[2 Interactive graph visualizations that show how npm packages are linked by dependency relations, the smaller one is limited to packages with at least 10 dependent packages. Graphs were pre-processed with Gephi and are rendered with sigma.js.]]></description>
-        <guid><![CDATA[http://exploring-data.com/info/npm-packages-dependencies/]]></guid>
-        <pubDate>Mon, 15 Jul 2013 16:03:34 </pubDate>
     </item>
     
 </channel></rss>

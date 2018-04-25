@@ -3,9 +3,17 @@
 <channel><title>Tags » Gephi</title>
     <link>http://exploring-data.com</link>
     <description>Tags » Gephi</description>
-    <lastBuildDate>Fri, 23 Mar 2018 00:07:03 </lastBuildDate>
+    <lastBuildDate>Thu, 26 Apr 2018 01:23:44 </lastBuildDate>
     <generator>Logya</generator>
     <docs>http://blogs.law.harvard.edu/tech/rss</docs>
+    
+    <item>
+        <title><![CDATA[Big Sister Cities: How They Are Related]]></title>
+        <link><![CDATA[http://exploring-data.com/info/big-sister-cities/]]></link>
+        <description><![CDATA[Big Sister Cities is an interactive network graph showing 279 cities with more than 1 million inhabitants and how they are connected to their sister cities within this set.]]></description>
+        <guid><![CDATA[http://exploring-data.com/info/big-sister-cities/]]></guid>
+        <pubDate>Thu, 26 Apr 2018 00:32:29 </pubDate>
+    </item>
     
     <item>
         <title><![CDATA[Which Actors Appeared together in Spaghetti Western Films]]></title>
@@ -77,14 +85,6 @@
         <description><![CDATA[The human disease network graph is a visualization based on a study that explored relations of diseases and human genes by Goh K-I, Cusick ME, Valle D, Childs B, Vidal M, Barabási A-L (2007).]]></description>
         <guid><![CDATA[http://exploring-data.com/info/human-disease-network/]]></guid>
         <pubDate>Thu, 27 Sep 2012 16:45:57 </pubDate>
-    </item>
-    
-    <item>
-        <title><![CDATA[Visualizing Influence Relations of Programming Languages]]></title>
-        <link><![CDATA[http://exploring-data.com/info/programming-languages-influence-network/]]></link>
-        <description><![CDATA[The programming languages influence network is an interactive graph visualization where languages are connected by influence relations based on data from Freebase.]]></description>
-        <guid><![CDATA[http://exploring-data.com/info/programming-languages-influence-network/]]></guid>
-        <pubDate>Fri, 07 Sep 2012 18:57:46 </pubDate>
     </item>
     
 </channel></rss>
