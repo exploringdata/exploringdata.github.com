@@ -1,49 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0">
 <channel><title>Tags » Bar Chart</title>
-    <link>http://exploring-data.com</link>
+    <link>https://exploring-data.com</link>
     <description>Tags » Bar Chart</description>
-    <lastBuildDate>Thu, 26 Apr 2018 14:08:51 </lastBuildDate>
+    <lastBuildDate>Mon, 14 May 2018 22:12:31 </lastBuildDate>
     <generator>Logya</generator>
     <docs>http://blogs.law.harvard.edu/tech/rss</docs>
     
     <item>
         <title><![CDATA[Rail Suicides in Europe: Absolute vs. Relative]]></title>
-        <link><![CDATA[http://exploring-data.com/story/rail-suicides-europe/]]></link>
+        <link><![CDATA[https://exploring-data.com/story/rail-suicides-europe/]]></link>
         <description><![CDATA[A look at rail suicides data for Europe from 2008 to 2011 highlighting the importance of relating numbers.]]></description>
-        <guid><![CDATA[http://exploring-data.com/story/rail-suicides-europe/]]></guid>
+        <guid><![CDATA[https://exploring-data.com/story/rail-suicides-europe/]]></guid>
         <pubDate>Thu, 12 Sep 2013 11:39:40 </pubDate>
     </item>
     
     <item>
         <title><![CDATA[A Decade of Climate Change in the Guardian]]></title>
-        <link><![CDATA[http://exploring-data.com/vis/climate-changes-decade/]]></link>
+        <link><![CDATA[https://exploring-data.com/vis/climate-changes-decade/]]></link>
         <description><![CDATA[Explore a decade of climate change, global warming, natural disaster, extreme weather, pollution and deforestation in the articles published by the Guardian.]]></description>
-        <guid><![CDATA[http://exploring-data.com/vis/climate-changes-decade/]]></guid>
+        <guid><![CDATA[https://exploring-data.com/vis/climate-changes-decade/]]></guid>
         <pubDate>Fri, 05 Apr 2013 00:56:02 </pubDate>
     </item>
     
     <item>
         <title><![CDATA[See Why Spain Won Euro 2012]]></title>
-        <link><![CDATA[http://exploring-data.com/story/see-why-spain-won-euro-2012/]]></link>
+        <link><![CDATA[https://exploring-data.com/story/see-why-spain-won-euro-2012/]]></link>
         <description><![CDATA[A data story about Spain's performance at the UEFA Euro 2012 including charts created with the Datawrapper visualization tool.]]></description>
-        <guid><![CDATA[http://exploring-data.com/story/see-why-spain-won-euro-2012/]]></guid>
+        <guid><![CDATA[https://exploring-data.com/story/see-why-spain-won-euro-2012/]]></guid>
         <pubDate>Mon, 10 Dec 2012 21:04:40 </pubDate>
     </item>
     
     <item>
         <title><![CDATA[World Aid Flow, Transparency, Development]]></title>
-        <link><![CDATA[http://exploring-data.com/vis/world-aid-transparency/]]></link>
+        <link><![CDATA[https://exploring-data.com/vis/world-aid-transparency/]]></link>
         <description><![CDATA[An interactive visualization looking at world aid flow, aid transparency, and development in receiving countries created with the D3 JavaScript library.]]></description>
-        <guid><![CDATA[http://exploring-data.com/vis/world-aid-transparency/]]></guid>
+        <guid><![CDATA[https://exploring-data.com/vis/world-aid-transparency/]]></guid>
         <pubDate>Fri, 23 Nov 2012 13:46:48 </pubDate>
     </item>
     
     <item>
         <title><![CDATA[Which Software Platforms are Exploited the Most]]></title>
-        <link><![CDATA[http://exploring-data.com/vis/exploit-database-platforms-spiral/]]></link>
+        <link><![CDATA[https://exploring-data.com/vis/exploit-database-platforms-spiral/]]></link>
         <description><![CDATA[A pack layout visualization of platforms sized by the number of exploits created with the JavaScript library D3 and data from the Exploit Database.]]></description>
-        <guid><![CDATA[http://exploring-data.com/vis/exploit-database-platforms-spiral/]]></guid>
+        <guid><![CDATA[https://exploring-data.com/vis/exploit-database-platforms-spiral/]]></guid>
         <pubDate>Mon, 29 Oct 2012 16:41:22 </pubDate>
     </item>
     

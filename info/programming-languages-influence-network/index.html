@@ -21,12 +21,12 @@
 <meta name="twitter:site" content="@yaph">
 <meta name="twitter:title" content="Visualizing Influence Relations of Programming Languages">
 <meta name="twitter:description" content="The programming languages influence network is an interactive graph visualization where languages are connected by influence relations based on data from Freebase.">
-<meta name="twitter:image:src" content="http://exploring-data.com/img/preview/programming-languages-influence-network.jpg">
+<meta name="twitter:image:src" content="https://exploring-data.com/img/preview/programming-languages-influence-network.jpg">
 
     <meta name="author" content="Ramiro Gómez">
     
     <meta name="flattr:id" content="4pzdyq">
-    <link rel="canonical" href="http://exploring-data.com/info/programming-languages-influence-network/">
+    <link rel="canonical" href="https://exploring-data.com/info/programming-languages-influence-network/">
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
     <link href="/css/style.css" rel="stylesheet">
     
@@ -36,7 +36,7 @@
     <link rel="shortcut icon" href="/favicon.ico">
     
         
-            <link rel="alternate" type="application/rss+xml" title="Exploring Data main RSS feed" href="http://exploring-data.com/rss.xml">
+            <link rel="alternate" type="application/rss+xml" title="Exploring Data main RSS feed" href="https://exploring-data.com/rss.xml">
         
     
 </head>
@@ -73,11 +73,11 @@
         <a href="#" class="btn navbar-btn btn-success dropdown-toggle" data-toggle="dropdown">+</a>
         <ul class="share dropdown-menu pull-right">
             <li><a href="/rss.xml">RSS Feed</a></li>
-            <li><a href="https://twitter.com/share?url=http%3A//exploring-data.com/info/programming-languages-influence-network/&text=Visualizing%20Influence%20Relations%20of%20Programming%20Languages">Tweet this</a></li>
-            <li><a href="https://flattr.com/submit/auto?user_id=rg&url=http%3A//exploring-data.com/info/programming-languages-influence-network/&title=Visualizing%20Influence%20Relations%20of%20Programming%20Languages&language=en_GB&category=software">Flattr this</a></li>
-            <li><a href="http://www.facebook.com/sharer.php?u=http%3A//exploring-data.com/info/programming-languages-influence-network/&t=Visualizing%20Influence%20Relations%20of%20Programming%20Languages">Facebook</a></li>
-            <li><a href="https://plus.google.com/share?url=http%3A//exploring-data.com/info/programming-languages-influence-network/">Google+</a></li>
-            <li><a href="http://www.linkedin.com/shareArticle?mini=true&url=http%3A//exploring-data.com/info/programming-languages-influence-network/&title=Visualizing%20Influence%20Relations%20of%20Programming%20Languages">LinkedIn</a></li>
+            <li><a href="https://twitter.com/share?url=https%3A//exploring-data.com/info/programming-languages-influence-network/&text=Visualizing%20Influence%20Relations%20of%20Programming%20Languages">Tweet this</a></li>
+            <li><a href="https://flattr.com/submit/auto?user_id=rg&url=https%3A//exploring-data.com/info/programming-languages-influence-network/&title=Visualizing%20Influence%20Relations%20of%20Programming%20Languages&language=en_GB&category=software">Flattr this</a></li>
+            <li><a href="https://www.facebook.com/sharer.php?u=https%3A//exploring-data.com/info/programming-languages-influence-network/&t=Visualizing%20Influence%20Relations%20of%20Programming%20Languages">Facebook</a></li>
+            <li><a href="https://plus.google.com/share?url=https%3A//exploring-data.com/info/programming-languages-influence-network/">Google+</a></li>
+            <li><a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A//exploring-data.com/info/programming-languages-influence-network/&title=Visualizing%20Influence%20Relations%20of%20Programming%20Languages">LinkedIn</a></li>
         </ul>
     </div>
 </div>
@@ -106,8 +106,8 @@
 </ul>
 
 <h2>Programming Languages Influence Visualizations</h2>
-<p>My first attempt in October 2011 to visualize programming language influence resulted in <a href="http://geeksta.net/visualizations/programming-language-influence-by-paradigm-gallery/">these static graphics</a> created with the <a href="https://networkx.github.io/">NetworkX</a> and <a href="http://matplotlib.org/">matplotlib</a> Python libraries. Each graphic shows the influence relations of programming languages that pertain to a specific programming paradigm, e. g. object-oriented programming, procedural programming or functional programming to name a few. The languages are arranged in circular layouts.</p>
-<p>In August/September 2012 I gave another go at this topic resulting in this <a href="/vis/programming-languages-influence-network-d3/">browser based visualization</a> created using <a href="http://d3js.org/">D3.js</a>. This graph consists of 1170 nodes and 908 edges with a force layout being applied as you browse. There is not much more to say about it except that I wasn't really satisfied and looked for alternative tools, which I found in the <a href="http://sigmajs.org/">JavaScript library sigma.js</a> and the <a href="https://gephi.org/">Gephi visualization platform</a>. Both these tools were fundamental for creating the interactive visualizations described in more detail below.</p>
+<p>My first attempt in October 2011 to visualize programming language influence resulted in <a href="http://geeksta.net/visualizations/programming-language-influence-by-paradigm-gallery/">these static graphics</a> created with the <a href="https://networkx.github.io/">NetworkX</a> and <a href="https://matplotlib.org/">matplotlib</a> Python libraries. Each graphic shows the influence relations of programming languages that pertain to a specific programming paradigm, e. g. object-oriented programming, procedural programming or functional programming to name a few. The languages are arranged in circular layouts.</p>
+<p>In August/September 2012 I gave another go at this topic resulting in this <a href="/vis/programming-languages-influence-network-d3/">browser based visualization</a> created using <a href="https://d3js.org/">D3.js</a>. This graph consists of 1170 nodes and 908 edges with a force layout being applied as you browse. There is not much more to say about it except that I wasn't really satisfied and looked for alternative tools, which I found in the <a href="https://sigmajs.org/">JavaScript library sigma.js</a> and the <a href="https://gephi.org/">Gephi visualization platform</a>. Both these tools were fundamental for creating the interactive visualizations described in more detail below.</p>
 
 <h3>Interactive Visualizations Created with Sigma.js and Gephi</h3>
 <p>I retrieved the data for these visualizations with a Python script you find in <a href="https://github.com/exploringdata/programming-languages-influence">this repository</a>. This script also creates a <a href="http://gexf.net/format/">gexf file</a>, which I then manually edited using Gephi.</p>
@@ -137,7 +137,7 @@
 <p>Lisp was originally specified in 1958 and the development of C began in 1969. So 2 fairly old languages within the period we are looking at are the most influential ones. But age alone does not account for that, as languages like <a href="/vis/programming-languages-influence-network/#COBOL">COBOL</a> and <a href="/vis/programming-languages-influence-network/#Fortran">Fortran</a>, which also appeared in the 1950s, are considerably less influential and Java, which was released in 1995, is highly influential.</p>
 <p>Adoption of a language is certainly a major factor for its influence, which can be driven by marketing (Java), coincidence, e. g. being hastily created as the language for Web browsers (<a href="/vis/programming-languages-influence-network/#JavaScript">JavaScript</a>), ease of use (Python) or usage as a teaching language (Pascal).</p>
 <p>I created the graph layout applying ForceAtlas2 and an algorithm to prevent label overlap and also manually placed nodes. The nodes are colored based on the group of programming paradigms they belong to.</p>
-<p>A print version of the whole network can be ordered from <a href="https://teespring.com/plin2013-print">Teespring</a> and <a href="http://www.zazzle.com/programming_languages_influence_network_poster-228176637617418204?size=%5B24.0000%2C18.0000%5D&ratio=1.33333333333333&rf=238355915198956003&tc=xpdt">Zazzle</a>.</p>
+<p>A print version of the whole network can be ordered from <a href="https://teespring.com/plin2013-print">Teespring</a> and <a href="https://www.zazzle.com/programming_languages_influence_network_poster-228176637617418204?size=%5B24.0000%2C18.0000%5D&ratio=1.33333333333333&rf=238355915198956003&tc=xpdt">Zazzle</a>.</p>
 
 <h4><a href="/vis/programming-languages-influence-network-2014/">Programming Languages Influence 2014</a></h4>
 <p>The data for the 2014 version was downloaded on September 8, 2014 and contains information on 1220 programming languages connected by 1137 edges. The 10 most influential languages are as follows:</p>
@@ -156,7 +156,7 @@
 <p>The ranking hardly changed only ALGOL was surpassed by ML and the numbers of influenced languages increased as did the overall number of languages in the network.</p>
 <p>For this graph I applied a ForceAtlas layout with high repulsion strength and the attractive force distributed along outbound links so hubs are pushed outside and authorities to the center. Additionally, I ran algorithms to prevent label and node overlap in Gephi.</p>
 <p>In contrast to the previous version language nodes are colored based on their <em>Modularity Classes</em> , which were calculated using an algorithm devised by Vincent D Blondel, Jean-Loup Guillaume, Renaud Lambiotte, Etienne Lefebvre in the paper <a href="http://arxiv.org/abs/0803.0476">Fast unfolding of communities in large networks</a>. Thus coloring reflects properties of the network rather than properties of the languages.</p>
-<p>There are two posters for the 2014 graph, one that shows <a href="http://www.zazzle.com/programming_languages_influence_network_2014_poster-228756590438836612?rf=238355915198956003&tc=xpdt">only influential languages</a>, i. e. those that have influenced at least one other language, and one <a href="http://www.zazzle.com/programming_languages_influence_network_2014_full-228027646918166802?design.areas=%5Bdynamic%5D&rf=238355915198956003&tc=xpdt">poster of the full graph</a>.</p>
+<p>There are two posters for the 2014 graph, one that shows <a href="https://www.zazzle.com/programming_languages_influence_network_2014_poster-228756590438836612?rf=238355915198956003&tc=xpdt">only influential languages</a>, i. e. those that have influenced at least one other language, and one <a href="https://www.zazzle.com/programming_languages_influence_network_2014_full-228027646918166802?design.areas=%5Bdynamic%5D&rf=238355915198956003&tc=xpdt">poster of the full graph</a>.</p>
 <h2>tl;dr</h2>
 <p>I created visualizations to show influence relations across hundreds of programming languages. There are two browser versions you can interact with: <a href="/vis/programming-languages-influence-network/">one with data from 2013</a> and a newer <a href="/vis/programming-languages-influence-network-2014/">one with data from 2014</a>.</p>
 <p>Feel free to leave feedback in the comments and share this visualization with your friends.</p>
@@ -204,11 +204,11 @@ To be informed of new posts, subscribe to the <a href="/rss.xml">RSS feed</a>.</
       
         <div class="col-md-6"><a href="https://teespring.com/plin2013-print" title="Graph of Programming Languages Influence"><img class="img-responsive" src="/img/products/teespring-plin2013-print.jpg" alt="Graph of Programming Languages Influence"></a></div>
       
-        <div class="col-md-6"><a href="http://www.zazzle.com/programming_languages_influence_network_poster-228176637617418204?size=%5B24.0000%2C18.0000%5D&ratio=1.33333333333333&rf=238355915198956003&tc=xpdt" title="Programming Languages Influence 2013"><img class="img-responsive" src="https://www.zazzle.com/rlv/programming_languages_influence_network_poster-r442d0e74f4944fe49bf93873b229a972_805r_125.jpg" alt="Programming Languages Influence 2013"></a></div>
+        <div class="col-md-6"><a href="https://www.zazzle.com/programming_languages_influence_network_poster-228176637617418204?size=%5B24.0000%2C18.0000%5D&ratio=1.33333333333333&rf=238355915198956003&tc=xpdt" title="Programming Languages Influence 2013"><img class="img-responsive" src="https://www.zazzle.com/rlv/programming_languages_influence_network_poster-r442d0e74f4944fe49bf93873b229a972_805r_125.jpg" alt="Programming Languages Influence 2013"></a></div>
       
-        <div class="col-md-6"><a href="http://www.zazzle.com/programming_languages_influence_network_2014_poster-228756590438836612?rf=238355915198956003&tc=xpdt" title="Programming Languages Influence 2014"><img class="img-responsive" src="https://www.zazzle.com/rlv/programming_languages_influence_network_2014_poster-rba8de641deee4bd2a339178aaa87b679_wvo_8byvr_125.jpg" alt="Programming Languages Influence 2014"></a></div>
+        <div class="col-md-6"><a href="https://www.zazzle.com/programming_languages_influence_network_2014_poster-228756590438836612?rf=238355915198956003&tc=xpdt" title="Programming Languages Influence 2014"><img class="img-responsive" src="https://www.zazzle.com/rlv/programming_languages_influence_network_2014_poster-rba8de641deee4bd2a339178aaa87b679_wvo_8byvr_125.jpg" alt="Programming Languages Influence 2014"></a></div>
       
-        <div class="col-md-6"><a href="http://www.zazzle.com/programming_languages_influence_network_2014_full-228027646918166802?design.areas=%5Bdynamic%5D&rf=238355915198956003&tc=xpdt" title="Programming Languages 2014 Full Poster"><img class="img-responsive" src="https://www.zazzle.com/rlv/programming_languages_influence_network_2014_full-r6946987ab19440a7a402765a176b5498_wvo_8byvr_325.jpg" alt="Programming Languages 2014 Full Poster"></a></div>
+        <div class="col-md-6"><a href="https://www.zazzle.com/programming_languages_influence_network_2014_full-228027646918166802?design.areas=%5Bdynamic%5D&rf=238355915198956003&tc=xpdt" title="Programming Languages 2014 Full Poster"><img class="img-responsive" src="https://www.zazzle.com/rlv/programming_languages_influence_network_2014_full-r6946987ab19440a7a402765a176b5498_wvo_8byvr_325.jpg" alt="Programming Languages 2014 Full Poster"></a></div>
       
       </div>
       <hr>
@@ -246,7 +246,7 @@ To be informed of new posts, subscribe to the <a href="/rss.xml">RSS feed</a>.</
 <div id="disqus_thread"></div>
 <script type="text/javascript">
 var disqus_shortname = 'exploringdata';
-var disqus_url = 'http://exploring-data.com/info/programming-languages-influence-network/';
+var disqus_url = 'https://exploring-data.com/info/programming-languages-influence-network/';
 (function() {
 var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
 dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';

@@ -21,12 +21,12 @@
 <meta name="twitter:site" content="@yaph">
 <meta name="twitter:title" content="How Programmers Relate based on Google Searches">
 <meta name="twitter:description" content="The programmers search relations visualization shows a network graph of programmers related by Google searches with results containing knowledge graph information.">
-<meta name="twitter:image:src" content="http://exploring-data.com/img/preview/programmers-search-relations.jpg">
+<meta name="twitter:image:src" content="https://exploring-data.com/img/preview/programmers-search-relations.jpg">
 
     <meta name="author" content="Ramiro Gómez">
     
     <meta name="flattr:id" content="4pzdyq">
-    <link rel="canonical" href="http://exploring-data.com/info/programmers-search-relations/">
+    <link rel="canonical" href="https://exploring-data.com/info/programmers-search-relations/">
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
     <link href="/css/style.css" rel="stylesheet">
     
@@ -36,7 +36,7 @@
     <link rel="shortcut icon" href="/favicon.ico">
     
         
-            <link rel="alternate" type="application/rss+xml" title="Exploring Data main RSS feed" href="http://exploring-data.com/rss.xml">
+            <link rel="alternate" type="application/rss+xml" title="Exploring Data main RSS feed" href="https://exploring-data.com/rss.xml">
         
     
 </head>
@@ -73,11 +73,11 @@
         <a href="#" class="btn navbar-btn btn-success dropdown-toggle" data-toggle="dropdown">+</a>
         <ul class="share dropdown-menu pull-right">
             <li><a href="/rss.xml">RSS Feed</a></li>
-            <li><a href="https://twitter.com/share?url=http%3A//exploring-data.com/info/programmers-search-relations/&text=How%20Programmers%20Relate%20based%20on%20Google%20Searches">Tweet this</a></li>
-            <li><a href="https://flattr.com/submit/auto?user_id=rg&url=http%3A//exploring-data.com/info/programmers-search-relations/&title=How%20Programmers%20Relate%20based%20on%20Google%20Searches&language=en_GB&category=software">Flattr this</a></li>
-            <li><a href="http://www.facebook.com/sharer.php?u=http%3A//exploring-data.com/info/programmers-search-relations/&t=How%20Programmers%20Relate%20based%20on%20Google%20Searches">Facebook</a></li>
-            <li><a href="https://plus.google.com/share?url=http%3A//exploring-data.com/info/programmers-search-relations/">Google+</a></li>
-            <li><a href="http://www.linkedin.com/shareArticle?mini=true&url=http%3A//exploring-data.com/info/programmers-search-relations/&title=How%20Programmers%20Relate%20based%20on%20Google%20Searches">LinkedIn</a></li>
+            <li><a href="https://twitter.com/share?url=https%3A//exploring-data.com/info/programmers-search-relations/&text=How%20Programmers%20Relate%20based%20on%20Google%20Searches">Tweet this</a></li>
+            <li><a href="https://flattr.com/submit/auto?user_id=rg&url=https%3A//exploring-data.com/info/programmers-search-relations/&title=How%20Programmers%20Relate%20based%20on%20Google%20Searches&language=en_GB&category=software">Flattr this</a></li>
+            <li><a href="https://www.facebook.com/sharer.php?u=https%3A//exploring-data.com/info/programmers-search-relations/&t=How%20Programmers%20Relate%20based%20on%20Google%20Searches">Facebook</a></li>
+            <li><a href="https://plus.google.com/share?url=https%3A//exploring-data.com/info/programmers-search-relations/">Google+</a></li>
+            <li><a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A//exploring-data.com/info/programmers-search-relations/&title=How%20Programmers%20Relate%20based%20on%20Google%20Searches">LinkedIn</a></li>
         </ul>
     </div>
 </div>
@@ -99,7 +99,7 @@
 <p>About 10 months ago <a href="http://googleblog.blogspot.com/2012/05/introducing-knowledge-graph-things-not.html">Google introduced</a> the knowledge graph to enrich their search results for a subset of search queries they receive. If you look for a person with knowledge graph information you may also see a <em>People also search for</em> box with related searches.</p>
 <p>For this programmer network graph, the creators of the top programming languages according to GitHub served as seed values, i. e. <a href="/vis/programmers-search-relations/#Brendan Eich">Brendan Eich</a> (JavaScript), <a href="/vis/programmers-search-relations/#Yukihiro Matsumoto">Yukihiro Matsumoto</a> (Ruby), <a href="/vis/programmers-search-relations/#James Gosling">James Gosling</a> (Java), <a href="/vis/programmers-search-relations/#Guido van Rossum">Guido van Rossum</a> (Python), <a href="/vis/programmers-search-relations/#Stephen R. Bourne">Stephen R. Bourne</a> (Bourne shell), <a href="/vis/programmers-search-relations/#William Nelson Joy">William Nelson Joy</a> (C shell), <a href="/vis/programmers-search-relations/#Rasmus Lerdorf">Rasmus Lerdorf</a> (PHP), <a href="/vis/programmers-search-relations/#Dennis Ritchie">Dennis Ritchie</a> (C), <a href="/vis/programmers-search-relations/#Bjarne Stroustrup">Bjarne Stroustrup</a> (C++), <a href="/vis/programmers-search-relations/#Larry Wall">Larry Wall</a> (Perl), and <a href="/vis/programmers-search-relations/#Brad Cox">Brad Cox</a> (Objective-C).</p>
 <p>If a search result included knowledge graph information indicating the person is a programmer (or hacker or computer scientist) it was included as a node. Information on related searches is the basis for connections in this graph. A link between the current and a related search query was established if both of them were recognized as programmers.</p>
-<p>After collecting the data, I generated a gexf file for further processing with the <a href="https://gephi.org/">Gephi visualization platform</a>. I applied Force Atlas 2 and label adjust layouts and sized the nodes based on their calculated Page Ranks &mdash; what else to use as a metric when looking at Google search data. To colorize nodes and edges I had Gephi calculate modularity and assign colors based on modularity classes. The <a href="/vis/programmers-search-relations/">interactive version</a> is rendered with the <a href="http://sigmajs.org/">JavaScript library sigma.js</a>.</p>
+<p>After collecting the data, I generated a gexf file for further processing with the <a href="https://gephi.org/">Gephi visualization platform</a>. I applied Force Atlas 2 and label adjust layouts and sized the nodes based on their calculated Page Ranks &mdash; what else to use as a metric when looking at Google search data. To colorize nodes and edges I had Gephi calculate modularity and assign colors based on modularity classes. The <a href="/vis/programmers-search-relations/">interactive version</a> is rendered with the <a href="https://sigmajs.org/">JavaScript library sigma.js</a>.</p>
 <h2>Interpretation of Results</h2>
 <p>First of all this graph certainly does not contain all programmers Google shows knowledge graph information for. Thus, no claim to completeness. Moreover, only the up to 5 related searches on the 1st search result page for a query where considered, even though there may be more related searches for a term.</p>
 <p>When 1st looking at the data in Gephi I was surprised by the highest connected node, <a href="/vis/programmers-search-relations/#Shafi Goldwasser">Shafi Goldwasser</a> (degree 18), an MIT computer science professor I honestly never heard of before. Without wanting to play down her importance in the field I doubt that she is searched for far more frequently than <a href="/vis/programmers-search-relations/#Guido van Rossum">Guido van Rossum</a> (degree 6) for example. Thus, I conclude that neither degree nor PageRank in this graph are indicators for search frequency.</p>
@@ -115,7 +115,7 @@
 <div class="postinfo">
 <hr class="clearfix">
 <div class="well">
-<p>Published on March 06, 2013 (updated on July 25, 2015) by <a href="http://ramiro.org/">Ramiro Gómez</a> (<a href="https://twitter.com/yaph">@yaph</a>).<br>
+<p>Published on March 06, 2013 (updated on May 14, 2018) by <a href="http://ramiro.org/">Ramiro Gómez</a> (<a href="https://twitter.com/yaph">@yaph</a>).<br>
 Tags: <a href="/tags/network-graph/">network graph</a>, <a href="/tags/programming/">programming</a>, <a href="/tags/sigmajs/">sigmajs</a>, <a href="/tags/gephi/">gephi</a>, <a href="/tags/networkx/">networkx</a>, <a href="/tags/interactive/">interactive</a>.<br>
 To be informed of new posts, subscribe to the <a href="/rss.xml">RSS feed</a>.</p>
 
@@ -138,8 +138,8 @@ To be informed of new posts, subscribe to the <a href="/rss.xml">RSS feed</a>.</
     
     
       <h3>Visualization Poster</h3>
-      <a href="http://www.zazzle.com/programmers_search_relations_network-228503413374727207?gl=geeksta&rf=238355915198956003&tc=xpdt"><img class="img-thumbnail img-responsive" src="https://www.zazzle.com/rlv/programmers_search_relations_network-r7614d870ea2e401d9fe2ce54fa02cc6a_1sv_325.jpg" alt="Programmers Search Relations Poster"></a>
-      <a href="http://www.zazzle.com/programmers_search_relations_network-228503413374727207?gl=geeksta&rf=238355915198956003&tc=xpdt" class="btn btn-primary voffset">Buy Print</a>
+      <a href="https://www.zazzle.com/programmers_search_relations_network-228503413374727207?gl=geeksta&rf=238355915198956003&tc=xpdt"><img class="img-thumbnail img-responsive" src="https://www.zazzle.com/rlv/programmers_search_relations_network-r7614d870ea2e401d9fe2ce54fa02cc6a_1sv_325.jpg" alt="Programmers Search Relations Poster"></a>
+      <a href="https://www.zazzle.com/programmers_search_relations_network-228503413374727207?gl=geeksta&rf=238355915198956003&tc=xpdt" class="btn btn-primary voffset">Buy Print</a>
       <hr>
     
     
@@ -171,7 +171,7 @@ To be informed of new posts, subscribe to the <a href="/rss.xml">RSS feed</a>.</
 <div id="disqus_thread"></div>
 <script type="text/javascript">
 var disqus_shortname = 'exploringdata';
-var disqus_url = 'http://exploring-data.com/info/programmers-search-relations/';
+var disqus_url = 'https://exploring-data.com/info/programmers-search-relations/';
 (function() {
 var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
 dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';

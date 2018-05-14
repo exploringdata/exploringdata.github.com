@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0">
 <channel><title>Tags » Twitter</title>
-    <link>http://exploring-data.com</link>
+    <link>https://exploring-data.com</link>
     <description>Tags » Twitter</description>
-    <lastBuildDate>Thu, 26 Apr 2018 14:08:51 </lastBuildDate>
+    <lastBuildDate>Mon, 14 May 2018 22:12:31 </lastBuildDate>
     <generator>Logya</generator>
     <docs>http://blogs.law.harvard.edu/tech/rss</docs>
     
     <item>
         <title><![CDATA[How Participants of the Visualisingdata Census are Connected on Twitter]]></title>
-        <link><![CDATA[http://exploring-data.com/info/visualisingdata-census-twitter-network/]]></link>
+        <link><![CDATA[https://exploring-data.com/info/visualisingdata-census-twitter-network/]]></link>
         <description><![CDATA[The visualisingdata census network graph shows the Twitter connections of the participants of the 1st data visualization census initiated by Andy Kirk.]]></description>
-        <guid><![CDATA[http://exploring-data.com/info/visualisingdata-census-twitter-network/]]></guid>
+        <guid><![CDATA[https://exploring-data.com/info/visualisingdata-census-twitter-network/]]></guid>
         <pubDate>Tue, 09 Apr 2013 23:41:18 </pubDate>
     </item>
     

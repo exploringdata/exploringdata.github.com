@@ -1,41 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0">
 <channel><title>Tags » Map</title>
-    <link>http://exploring-data.com</link>
+    <link>https://exploring-data.com</link>
     <description>Tags » Map</description>
-    <lastBuildDate>Thu, 26 Apr 2018 14:08:51 </lastBuildDate>
+    <lastBuildDate>Mon, 14 May 2018 22:12:31 </lastBuildDate>
     <generator>Logya</generator>
     <docs>http://blogs.law.harvard.edu/tech/rss</docs>
     
     <item>
         <title><![CDATA[Where in the World Happen Most Murders]]></title>
-        <link><![CDATA[http://exploring-data.com/info/intentional-homicides/]]></link>
+        <link><![CDATA[https://exploring-data.com/info/intentional-homicides/]]></link>
         <description><![CDATA[A series of maps of the world showing where in the world the least and the most murders happen for the years 1995 to 2011.]]></description>
-        <guid><![CDATA[http://exploring-data.com/info/intentional-homicides/]]></guid>
+        <guid><![CDATA[https://exploring-data.com/info/intentional-homicides/]]></guid>
         <pubDate>Fri, 20 Sep 2013 00:03:53 </pubDate>
     </item>
     
     <item>
         <title><![CDATA[Geo Maps Drawn from IP Locations]]></title>
-        <link><![CDATA[http://exploring-data.com/vis/ip-location-maps/]]></link>
+        <link><![CDATA[https://exploring-data.com/vis/ip-location-maps/]]></link>
         <description><![CDATA[Geographic maps of the world and most continents drawn based on an IP location dataset with 419433 records.]]></description>
-        <guid><![CDATA[http://exploring-data.com/vis/ip-location-maps/]]></guid>
+        <guid><![CDATA[https://exploring-data.com/vis/ip-location-maps/]]></guid>
         <pubDate>Tue, 11 Jun 2013 00:00:00 </pubDate>
     </item>
     
     <item>
         <title><![CDATA[A Map of Bike Routes in Berlin, Germany]]></title>
-        <link><![CDATA[http://exploring-data.com/info/berlin-bike-routes/]]></link>
+        <link><![CDATA[https://exploring-data.com/info/berlin-bike-routes/]]></link>
         <description><![CDATA[The bike routes map for Berlin, Germany shows 14 different biking routes through and around the city. Created with OpenLayers, Open Street Map and data from Senatsverwaltung für Stadtentwicklung und Umwelt.]]></description>
-        <guid><![CDATA[http://exploring-data.com/info/berlin-bike-routes/]]></guid>
+        <guid><![CDATA[https://exploring-data.com/info/berlin-bike-routes/]]></guid>
         <pubDate>Tue, 19 Feb 2013 02:02:03 </pubDate>
     </item>
     
     <item>
         <title><![CDATA[World Aid Flow, Transparency, Development]]></title>
-        <link><![CDATA[http://exploring-data.com/vis/world-aid-transparency/]]></link>
+        <link><![CDATA[https://exploring-data.com/vis/world-aid-transparency/]]></link>
         <description><![CDATA[An interactive visualization looking at world aid flow, aid transparency, and development in receiving countries created with the D3 JavaScript library.]]></description>
-        <guid><![CDATA[http://exploring-data.com/vis/world-aid-transparency/]]></guid>
+        <guid><![CDATA[https://exploring-data.com/vis/world-aid-transparency/]]></guid>
         <pubDate>Fri, 23 Nov 2012 13:46:48 </pubDate>
     </item>
     

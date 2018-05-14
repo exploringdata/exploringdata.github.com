@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0">
 <channel><title>Tags » Openstreetmap</title>
-    <link>http://exploring-data.com</link>
+    <link>https://exploring-data.com</link>
     <description>Tags » Openstreetmap</description>
-    <lastBuildDate>Thu, 26 Apr 2018 14:08:51 </lastBuildDate>
+    <lastBuildDate>Mon, 14 May 2018 22:12:31 </lastBuildDate>
     <generator>Logya</generator>
     <docs>http://blogs.law.harvard.edu/tech/rss</docs>
     
     <item>
         <title><![CDATA[A Map of Bike Routes in Berlin, Germany]]></title>
-        <link><![CDATA[http://exploring-data.com/info/berlin-bike-routes/]]></link>
+        <link><![CDATA[https://exploring-data.com/info/berlin-bike-routes/]]></link>
         <description><![CDATA[The bike routes map for Berlin, Germany shows 14 different biking routes through and around the city. Created with OpenLayers, Open Street Map and data from Senatsverwaltung für Stadtentwicklung und Umwelt.]]></description>
-        <guid><![CDATA[http://exploring-data.com/info/berlin-bike-routes/]]></guid>
+        <guid><![CDATA[https://exploring-data.com/info/berlin-bike-routes/]]></guid>
         <pubDate>Tue, 19 Feb 2013 02:02:03 </pubDate>
     </item>
     

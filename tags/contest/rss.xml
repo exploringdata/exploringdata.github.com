@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0">
 <channel><title>Tags » Contest</title>
-    <link>http://exploring-data.com</link>
+    <link>https://exploring-data.com</link>
     <description>Tags » Contest</description>
-    <lastBuildDate>Thu, 26 Apr 2018 14:08:51 </lastBuildDate>
+    <lastBuildDate>Mon, 14 May 2018 22:12:31 </lastBuildDate>
     <generator>Logya</generator>
     <docs>http://blogs.law.harvard.edu/tech/rss</docs>
     
     <item>
         <title><![CDATA[World Aid Flow, Transparency, Development]]></title>
-        <link><![CDATA[http://exploring-data.com/vis/world-aid-transparency/]]></link>
+        <link><![CDATA[https://exploring-data.com/vis/world-aid-transparency/]]></link>
         <description><![CDATA[An interactive visualization looking at world aid flow, aid transparency, and development in receiving countries created with the D3 JavaScript library.]]></description>
-        <guid><![CDATA[http://exploring-data.com/vis/world-aid-transparency/]]></guid>
+        <guid><![CDATA[https://exploring-data.com/vis/world-aid-transparency/]]></guid>
         <pubDate>Fri, 23 Nov 2012 13:46:48 </pubDate>
     </item>
     

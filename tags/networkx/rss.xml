@@ -1,81 +1,81 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0">
 <channel><title>Tags » Networkx</title>
-    <link>http://exploring-data.com</link>
+    <link>https://exploring-data.com</link>
     <description>Tags » Networkx</description>
-    <lastBuildDate>Thu, 26 Apr 2018 14:08:51 </lastBuildDate>
+    <lastBuildDate>Mon, 14 May 2018 22:12:31 </lastBuildDate>
     <generator>Logya</generator>
     <docs>http://blogs.law.harvard.edu/tech/rss</docs>
     
     <item>
         <title><![CDATA[Big Sister Cities: How They Are Related]]></title>
-        <link><![CDATA[http://exploring-data.com/info/big-sister-cities/]]></link>
+        <link><![CDATA[https://exploring-data.com/info/big-sister-cities/]]></link>
         <description><![CDATA[Big Sister Cities is an interactive network graph showing 279 cities with more than 1 million inhabitants and how they are connected to their sister cities within this set.]]></description>
-        <guid><![CDATA[http://exploring-data.com/info/big-sister-cities/]]></guid>
+        <guid><![CDATA[https://exploring-data.com/info/big-sister-cities/]]></guid>
         <pubDate>Thu, 26 Apr 2018 00:32:29 </pubDate>
     </item>
     
     <item>
         <title><![CDATA[Which Actors Appeared together in Spaghetti Western Films]]></title>
-        <link><![CDATA[http://exploring-data.com/info/spaghetti-western-actors-dbpedia/]]></link>
+        <link><![CDATA[https://exploring-data.com/info/spaghetti-western-actors-dbpedia/]]></link>
         <description><![CDATA[This is an undirected graph of co-occurrences of actors who appeared in one or more Spaghetti Western films based on data from DBpedia retrieved on August 4, 2015.]]></description>
-        <guid><![CDATA[http://exploring-data.com/info/spaghetti-western-actors-dbpedia/]]></guid>
+        <guid><![CDATA[https://exploring-data.com/info/spaghetti-western-actors-dbpedia/]]></guid>
         <pubDate>Thu, 06 Aug 2015 14:14:54 </pubDate>
     </item>
     
     <item>
         <title><![CDATA[Falcao and Iniesta the top players in 2013 according to Ronaldo and Messi]]></title>
-        <link><![CDATA[http://exploring-data.com/info/ballon-dor-male-players-votes-2013/]]></link>
+        <link><![CDATA[https://exploring-data.com/info/ballon-dor-male-players-votes-2013/]]></link>
         <description><![CDATA[The Ballon d'Or 2013 visualization shows an interactive network graph of voters and voted football players related based on votes cast for the male FIFA Ballon d'Or award in 2013.]]></description>
-        <guid><![CDATA[http://exploring-data.com/info/ballon-dor-male-players-votes-2013/]]></guid>
+        <guid><![CDATA[https://exploring-data.com/info/ballon-dor-male-players-votes-2013/]]></guid>
         <pubDate>Mon, 13 Jan 2014 21:50:20 </pubDate>
     </item>
     
     <item>
         <title><![CDATA[How Participants of the Visualisingdata Census are Connected on Twitter]]></title>
-        <link><![CDATA[http://exploring-data.com/info/visualisingdata-census-twitter-network/]]></link>
+        <link><![CDATA[https://exploring-data.com/info/visualisingdata-census-twitter-network/]]></link>
         <description><![CDATA[The visualisingdata census network graph shows the Twitter connections of the participants of the 1st data visualization census initiated by Andy Kirk.]]></description>
-        <guid><![CDATA[http://exploring-data.com/info/visualisingdata-census-twitter-network/]]></guid>
+        <guid><![CDATA[https://exploring-data.com/info/visualisingdata-census-twitter-network/]]></guid>
         <pubDate>Tue, 09 Apr 2013 23:41:18 </pubDate>
     </item>
     
     <item>
         <title><![CDATA[How Footballers Relate based on Google Searches]]></title>
-        <link><![CDATA[http://exploring-data.com/info/footballers-search-relations/]]></link>
+        <link><![CDATA[https://exploring-data.com/info/footballers-search-relations/]]></link>
         <description><![CDATA[The footballers search relations visualization shows a network graph of former and current football players and managers related by Google searches with results containing knowledge graph information.]]></description>
-        <guid><![CDATA[http://exploring-data.com/info/footballers-search-relations/]]></guid>
+        <guid><![CDATA[https://exploring-data.com/info/footballers-search-relations/]]></guid>
         <pubDate>Wed, 13 Mar 2013 01:28:01 </pubDate>
     </item>
     
     <item>
         <title><![CDATA[How Programmers Relate based on Google Searches]]></title>
-        <link><![CDATA[http://exploring-data.com/info/programmers-search-relations/]]></link>
+        <link><![CDATA[https://exploring-data.com/info/programmers-search-relations/]]></link>
         <description><![CDATA[The programmers search relations visualization shows a network graph of programmers related by Google searches with results containing knowledge graph information.]]></description>
-        <guid><![CDATA[http://exploring-data.com/info/programmers-search-relations/]]></guid>
+        <guid><![CDATA[https://exploring-data.com/info/programmers-search-relations/]]></guid>
         <pubDate>Wed, 06 Mar 2013 15:25:03 </pubDate>
     </item>
     
     <item>
         <title><![CDATA[Who Voted for Whom at Ballon d'Or 2012]]></title>
-        <link><![CDATA[http://exploring-data.com/info/ballon-dor-votes-2012/]]></link>
+        <link><![CDATA[https://exploring-data.com/info/ballon-dor-votes-2012/]]></link>
         <description><![CDATA[The Ballon d'Or 2012 visualization shows an interactive network graph of voters and voted players related based on votes cast for the male FIFA Ballon d'Or award in 2012.]]></description>
-        <guid><![CDATA[http://exploring-data.com/info/ballon-dor-votes-2012/]]></guid>
+        <guid><![CDATA[https://exploring-data.com/info/ballon-dor-votes-2012/]]></guid>
         <pubDate>Wed, 09 Jan 2013 15:00:20 </pubDate>
     </item>
     
     <item>
         <title><![CDATA[Relations of James Bond Film Actors based on Common Appearance]]></title>
-        <link><![CDATA[http://exploring-data.com/info/james-bond-actors-network/]]></link>
+        <link><![CDATA[https://exploring-data.com/info/james-bond-actors-network/]]></link>
         <description><![CDATA[The James Bond Actors visualization is an interactive network graph showing the connections of actors who appeared together in 23 James Bond movies including the latest in the series called Skyfall.]]></description>
-        <guid><![CDATA[http://exploring-data.com/info/james-bond-actors-network/]]></guid>
+        <guid><![CDATA[https://exploring-data.com/info/james-bond-actors-network/]]></guid>
         <pubDate>Tue, 16 Oct 2012 14:45:20 </pubDate>
     </item>
     
     <item>
         <title><![CDATA[Visualizing Influence Relations of Programming Languages]]></title>
-        <link><![CDATA[http://exploring-data.com/info/programming-languages-influence-network/]]></link>
+        <link><![CDATA[https://exploring-data.com/info/programming-languages-influence-network/]]></link>
         <description><![CDATA[The programming languages influence network is an interactive graph visualization where languages are connected by influence relations based on data from Freebase.]]></description>
-        <guid><![CDATA[http://exploring-data.com/info/programming-languages-influence-network/]]></guid>
+        <guid><![CDATA[https://exploring-data.com/info/programming-languages-influence-network/]]></guid>
         <pubDate>Fri, 07 Sep 2012 18:57:46 </pubDate>
     </item>
     

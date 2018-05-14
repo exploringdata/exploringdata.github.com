@@ -21,12 +21,12 @@
 <meta name="twitter:site" content="@yaph">
 <meta name="twitter:title" content="How npm Packages are Linked by Dependencies">
 <meta name="twitter:description" content="2 Interactive graph visualizations that show how npm packages are linked by dependency relations, the smaller one is limited to packages with at least 10 dependent packages. Graphs were pre-processed with Gephi and are rendered with sigma.js.">
-<meta name="twitter:image:src" content="http://exploring-data.com/img/preview/npm-packages-dependencies.jpg">
+<meta name="twitter:image:src" content="https://exploring-data.com/img/preview/npm-packages-dependencies.jpg">
 
     <meta name="author" content="Ramiro Gómez">
     
     <meta name="flattr:id" content="4pzdyq">
-    <link rel="canonical" href="http://exploring-data.com/info/npm-packages-dependencies/">
+    <link rel="canonical" href="https://exploring-data.com/info/npm-packages-dependencies/">
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
     <link href="/css/style.css" rel="stylesheet">
     
@@ -36,7 +36,7 @@
     <link rel="shortcut icon" href="/favicon.ico">
     
         
-            <link rel="alternate" type="application/rss+xml" title="Exploring Data main RSS feed" href="http://exploring-data.com/rss.xml">
+            <link rel="alternate" type="application/rss+xml" title="Exploring Data main RSS feed" href="https://exploring-data.com/rss.xml">
         
     
 </head>
@@ -73,11 +73,11 @@
         <a href="#" class="btn navbar-btn btn-success dropdown-toggle" data-toggle="dropdown">+</a>
         <ul class="share dropdown-menu pull-right">
             <li><a href="/rss.xml">RSS Feed</a></li>
-            <li><a href="https://twitter.com/share?url=http%3A//exploring-data.com/info/npm-packages-dependencies/&text=How%20npm%20Packages%20are%20Linked%20by%20Dependencies">Tweet this</a></li>
-            <li><a href="https://flattr.com/submit/auto?user_id=rg&url=http%3A//exploring-data.com/info/npm-packages-dependencies/&title=How%20npm%20Packages%20are%20Linked%20by%20Dependencies&language=en_GB&category=software">Flattr this</a></li>
-            <li><a href="http://www.facebook.com/sharer.php?u=http%3A//exploring-data.com/info/npm-packages-dependencies/&t=How%20npm%20Packages%20are%20Linked%20by%20Dependencies">Facebook</a></li>
-            <li><a href="https://plus.google.com/share?url=http%3A//exploring-data.com/info/npm-packages-dependencies/">Google+</a></li>
-            <li><a href="http://www.linkedin.com/shareArticle?mini=true&url=http%3A//exploring-data.com/info/npm-packages-dependencies/&title=How%20npm%20Packages%20are%20Linked%20by%20Dependencies">LinkedIn</a></li>
+            <li><a href="https://twitter.com/share?url=https%3A//exploring-data.com/info/npm-packages-dependencies/&text=How%20npm%20Packages%20are%20Linked%20by%20Dependencies">Tweet this</a></li>
+            <li><a href="https://flattr.com/submit/auto?user_id=rg&url=https%3A//exploring-data.com/info/npm-packages-dependencies/&title=How%20npm%20Packages%20are%20Linked%20by%20Dependencies&language=en_GB&category=software">Flattr this</a></li>
+            <li><a href="https://www.facebook.com/sharer.php?u=https%3A//exploring-data.com/info/npm-packages-dependencies/&t=How%20npm%20Packages%20are%20Linked%20by%20Dependencies">Facebook</a></li>
+            <li><a href="https://plus.google.com/share?url=https%3A//exploring-data.com/info/npm-packages-dependencies/">Google+</a></li>
+            <li><a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A//exploring-data.com/info/npm-packages-dependencies/&title=How%20npm%20Packages%20are%20Linked%20by%20Dependencies">LinkedIn</a></li>
         </ul>
     </div>
 </div>
@@ -94,12 +94,12 @@
 <div id="info" class="container">
 <div class="row">
   <div class="col-md-9"><h1>How npm Packages are Linked by Dependencies</h1>
-  <p>I created 2 graph visualizations based on data from the <a href="https://npmjs.org/">npm registry</a> for Node Packaged Modules. A graph with <a href="http://exploring-data.com/vis/npm-packages-dependencies/">all retrievable packages</a> (WARNING: slow and may crash your browser) and <a href="http://exploring-data.com/vis/npm-top-packages-dependencies/">one with packages</a>, that have at least 10 dependent packages. Data for both graphs was collected on July 12, 2013.</p>
+  <p>I created 2 graph visualizations based on data from the <a href="https://npmjs.org/">npm registry</a> for Node Packaged Modules. A graph with <a href="/vis/npm-packages-dependencies/">all retrievable packages</a> (WARNING: slow and may crash your browser) and <a href="/vis/npm-top-packages-dependencies/">one with packages</a>, that have at least 10 dependent packages. Data for both graphs was collected on July 12, 2013.</p>
 <p>Packages that can be installed via npm often rely on other packages, that need to be installed as well. Information about the registered packages and their dependencies can be queried using the <a href="https://npmjs.org/package/npm">npm package</a>. <a href="https://github.com/yaph/npmdepgraph">See the code</a> I used to gather the data.</p>
-<p>Nodes are sized by their in-degree, i.e. the number of packages dependent on them. A small number of libraries clearly stand out, most prominently <a href="http://exploring-data.com/vis/npm-top-packages-dependencies/#underscore">underscore</a> with 3,283 dependent packages followed by the <a href="http://exploring-data.com/vis/npm-top-packages-dependencies/#async">async</a> (2,401) and <a href="http://exploring-data.com/vis/npm-top-packages-dependencies/#request">request</a> (2,106) packages.</p>
-<p>The <a href="http://exploring-data.com/vis/npm-packages-dependencies/">full graph</a> contains 35,000 nodes and 66,551 edges and the graph showing <a href="http://exploring-data.com/vis/npm-top-packages-dependencies/">the top packages</a> 717 nodes and 942 edges.</p>
+<p>Nodes are sized by their in-degree, i.e. the number of packages dependent on them. A small number of libraries clearly stand out, most prominently <a href="/vis/npm-top-packages-dependencies/#underscore">underscore</a> with 3,283 dependent packages followed by the <a href="/vis/npm-top-packages-dependencies/#async">async</a> (2,401) and <a href="/vis/npm-top-packages-dependencies/#request">request</a> (2,106) packages.</p>
+<p>The <a href="/vis/npm-packages-dependencies/">full graph</a> contains 35,000 nodes and 66,551 edges and the graph showing <a href="/vis/npm-top-packages-dependencies/">the top packages</a> 717 nodes and 942 edges.</p>
 <p>Unfortunately, navigating the large graph doesn't really work and other browsers than Chrome are likely to freeze when trying to zoom or highlight individual nodes, which is why I created the version with the limited set of nodes as well.</p>
-<p>Both graphs are rendered with the <a href="http://sigmajs.org/">JavaScript library sigma.js</a> and were pre-processed with the <a href="https://gephi.org/">Gephi visualization platform</a>.</p>
+<p>Both graphs are rendered with the <a href="https://sigmajs.org/">JavaScript library sigma.js</a> and were pre-processed with the <a href="https://gephi.org/">Gephi visualization platform</a>.</p>
 <p>Feel free to post feedback and questions in the comments below.</p>
   
     
@@ -107,7 +107,7 @@
 <div class="postinfo">
 <hr class="clearfix">
 <div class="well">
-<p>Published on July 15, 2013 (updated on November 25, 2017) by <a href="http://ramiro.org/">Ramiro Gómez</a> (<a href="https://twitter.com/yaph">@yaph</a>).<br>
+<p>Published on July 15, 2013 (updated on May 14, 2018) by <a href="http://ramiro.org/">Ramiro Gómez</a> (<a href="https://twitter.com/yaph">@yaph</a>).<br>
 Tags: <a href="/tags/network-graph/">network graph</a>, <a href="/tags/programming/">programming</a>, <a href="/tags/sigmajs/">sigmajs</a>, <a href="/tags/gephi/">gephi</a>, <a href="/tags/nodejs/">nodejs</a>, <a href="/tags/interactive/">interactive</a>.<br>
 To be informed of new posts, subscribe to the <a href="/rss.xml">RSS feed</a>.</p>
 
@@ -143,9 +143,9 @@ To be informed of new posts, subscribe to the <a href="/rss.xml">RSS feed</a>.</
       <h3>Visualization Posters</h3>
       <div class="row">
       
-        <div class="col-md-6"><a href="http://www.zazzle.com/graph_of_top_npm_packages_dependencies_poster-228741805451295536?rf=238355915198956003&tc=xpdt" title="npm Top Packages Dependencies Poster"><img class="img-responsive" src="https://www.zazzle.com/rlv/graph_of_top_npm_packages_dependencies_poster-r019469bb87904f8ba2a35300412da815_wao_8byvr_325.jpg?bg=0xffffff" alt="npm Top Packages Dependencies Poster"></a></div>
+        <div class="col-md-6"><a href="https://www.zazzle.com/graph_of_top_npm_packages_dependencies_poster-228741805451295536?rf=238355915198956003&tc=xpdt" title="npm Top Packages Dependencies Poster"><img class="img-responsive" src="https://www.zazzle.com/rlv/graph_of_top_npm_packages_dependencies_poster-r019469bb87904f8ba2a35300412da815_wao_8byvr_325.jpg?bg=0xffffff" alt="npm Top Packages Dependencies Poster"></a></div>
       
-        <div class="col-md-6"><a href="http://www.zazzle.com/graph_of_npm_packages_dependencies_poster-228483208232302752?rf=238355915198956003&tc=xpdt" title="npm Top Packages Dependencies Poster"><img class="img-responsive" src="https://www.zazzle.com/rlv/isapi/designall.dll?rlvnet=1&realview=113381087925757000&design=baabc0e8-cd0b-4958-a9d2-df341fcf4fdc&size=%5B24.0000%2C20.0000%5D&media=value_posterpaper_matte&max_dim=325&rvtype=product" alt="npm Top Packages Dependencies Poster"></a></div>
+        <div class="col-md-6"><a href="https://www.zazzle.com/graph_of_npm_packages_dependencies_poster-228483208232302752?rf=238355915198956003&tc=xpdt" title="npm Top Packages Dependencies Poster"><img class="img-responsive" src="https://www.zazzle.com/rlv/isapi/designall.dll?rlvnet=1&realview=113381087925757000&design=baabc0e8-cd0b-4958-a9d2-df341fcf4fdc&size=%5B24.0000%2C20.0000%5D&media=value_posterpaper_matte&max_dim=325&rvtype=product" alt="npm Top Packages Dependencies Poster"></a></div>
       
       </div>
       <hr>
@@ -178,7 +178,7 @@ To be informed of new posts, subscribe to the <a href="/rss.xml">RSS feed</a>.</
 <div id="disqus_thread"></div>
 <script type="text/javascript">
 var disqus_shortname = 'exploringdata';
-var disqus_url = 'http://exploring-data.com/info/npm-packages-dependencies/';
+var disqus_url = 'https://exploring-data.com/info/npm-packages-dependencies/';
 (function() {
 var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
 dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';

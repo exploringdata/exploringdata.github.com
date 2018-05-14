@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0">
 <channel><title>Tags » Nvd3</title>
-    <link>http://exploring-data.com</link>
+    <link>https://exploring-data.com</link>
     <description>Tags » Nvd3</description>
-    <lastBuildDate>Thu, 26 Apr 2018 14:08:51 </lastBuildDate>
+    <lastBuildDate>Mon, 14 May 2018 22:12:31 </lastBuildDate>
     <generator>Logya</generator>
     <docs>http://blogs.law.harvard.edu/tech/rss</docs>
     
     <item>
         <title><![CDATA[A Decade of Climate Change in the Guardian]]></title>
-        <link><![CDATA[http://exploring-data.com/vis/climate-changes-decade/]]></link>
+        <link><![CDATA[https://exploring-data.com/vis/climate-changes-decade/]]></link>
         <description><![CDATA[Explore a decade of climate change, global warming, natural disaster, extreme weather, pollution and deforestation in the articles published by the Guardian.]]></description>
-        <guid><![CDATA[http://exploring-data.com/vis/climate-changes-decade/]]></guid>
+        <guid><![CDATA[https://exploring-data.com/vis/climate-changes-decade/]]></guid>
         <pubDate>Fri, 05 Apr 2013 00:56:02 </pubDate>
     </item>
     
