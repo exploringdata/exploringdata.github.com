@@ -65,7 +65,7 @@ $(function(){
       defaultEdgeType: 'curve'
     },
     graph: {
-      minNodeSize: .5,
+      minNodeSize: 1,
       maxNodeSize: 25,
       minEdgeSize: 1,
       maxEdgeSize: 1

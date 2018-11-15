@@ -3,9 +3,17 @@
 <channel><title>Tags » Gephi</title>
     <link>https://exploring-data.com</link>
     <description>Tags » Gephi</description>
-    <lastBuildDate>Tue, 02 Oct 2018 12:16:47 </lastBuildDate>
+    <lastBuildDate>Thu, 15 Nov 2018 14:46:17 </lastBuildDate>
     <generator>Logya</generator>
     <docs>http://blogs.law.harvard.edu/tech/rss</docs>
+    
+    <item>
+        <title><![CDATA[Network Graph of Book Recommendations from Tribe of Mentors]]></title>
+        <link><![CDATA[https://exploring-data.com/info/mentor-author-graph/]]></link>
+        <description><![CDATA[The Graph of Mentors, Books and Authors visualizes book recommendations from the book Tribe Of Mentors by Tim Ferriss and his interviewees.]]></description>
+        <guid><![CDATA[https://exploring-data.com/info/mentor-author-graph/]]></guid>
+        <pubDate>Thu, 15 Nov 2018 14:44:59 </pubDate>
+    </item>
     
     <item>
         <title><![CDATA[Big Sister Cities: How They Are Related]]></title>
@@ -77,14 +85,6 @@
         <description><![CDATA[The James Bond Actors visualization is an interactive network graph showing the connections of actors who appeared together in 23 James Bond movies including the latest in the series called Skyfall.]]></description>
         <guid><![CDATA[https://exploring-data.com/info/james-bond-actors-network/]]></guid>
         <pubDate>Tue, 16 Oct 2012 14:45:20 </pubDate>
-    </item>
-    
-    <item>
-        <title><![CDATA[A Network Graph of Human Diseases]]></title>
-        <link><![CDATA[https://exploring-data.com/info/human-disease-network/]]></link>
-        <description><![CDATA[The human disease network graph is a visualization based on a study that explored relations of diseases and human genes by Goh K-I, Cusick ME, Valle D, Childs B, Vidal M, Barabási A-L (2007).]]></description>
-        <guid><![CDATA[https://exploring-data.com/info/human-disease-network/]]></guid>
-        <pubDate>Thu, 27 Sep 2012 16:45:57 </pubDate>
     </item>
     
 </channel></rss>

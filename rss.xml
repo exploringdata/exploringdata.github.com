@@ -3,9 +3,25 @@
 <channel><title>Exploring Data News Feed</title>
     <link>https://exploring-data.com</link>
     <description>Exploring Data News Feed</description>
-    <lastBuildDate>Tue, 02 Oct 2018 12:16:47 </lastBuildDate>
+    <lastBuildDate>Thu, 15 Nov 2018 14:46:17 </lastBuildDate>
     <generator>Logya</generator>
     <docs>http://blogs.law.harvard.edu/tech/rss</docs>
+    
+    <item>
+        <title><![CDATA[Network Graph of Book Recommendations from Tribe of Mentors]]></title>
+        <link><![CDATA[https://exploring-data.com/info/mentor-author-graph/]]></link>
+        <description><![CDATA[The Graph of Mentors, Books and Authors visualizes book recommendations from the book Tribe Of Mentors by Tim Ferriss and his interviewees.]]></description>
+        <guid><![CDATA[https://exploring-data.com/info/mentor-author-graph/]]></guid>
+        <pubDate>Thu, 15 Nov 2018 14:44:59 </pubDate>
+    </item>
+    
+    <item>
+        <title><![CDATA[Graph of Mentors, Books and Authors]]></title>
+        <link><![CDATA[https://exploring-data.com/vis/mentor-author-graph/]]></link>
+        <description><![CDATA[An interactive network graph consisting of authors, books and mentors based on recommendations in the book Tribe Of Mentors by Tim Ferriss and his interviewees.]]></description>
+        <guid><![CDATA[https://exploring-data.com/vis/mentor-author-graph/]]></guid>
+        <pubDate>Thu, 15 Nov 2018 14:44:44 </pubDate>
+    </item>
     
     <item>
         <title><![CDATA[Big Sister Cities: How They Are Related]]></title>
@@ -69,22 +85,6 @@
         <description><![CDATA[An interactive network graph showing the connections between voters and voted male football players from the male FIFA Ballon d'Or vote 2013.]]></description>
         <guid><![CDATA[https://exploring-data.com/vis/ballon-dor-male-players-votes-2013/]]></guid>
         <pubDate>Mon, 13 Jan 2014 21:34:20 </pubDate>
-    </item>
-    
-    <item>
-        <title><![CDATA[Where in the World Happen Most Murders]]></title>
-        <link><![CDATA[https://exploring-data.com/info/intentional-homicides/]]></link>
-        <description><![CDATA[A series of maps of the world showing where in the world the least and the most murders happen for the years 1995 to 2011.]]></description>
-        <guid><![CDATA[https://exploring-data.com/info/intentional-homicides/]]></guid>
-        <pubDate>Fri, 20 Sep 2013 00:03:53 </pubDate>
-    </item>
-    
-    <item>
-        <title><![CDATA[World Map of Intentional Homicides]]></title>
-        <link><![CDATA[https://exploring-data.com/map/world/intentional-homicides/]]></link>
-        <description><![CDATA[A series of geographic Choropleth maps showing the number of intentional homicides by country per 100,000 people. Created using World Bank data and D3.js.]]></description>
-        <guid><![CDATA[https://exploring-data.com/map/world/intentional-homicides/]]></guid>
-        <pubDate>Thu, 19 Sep 2013 23:37:53 </pubDate>
     </item>
     
 </channel></rss>

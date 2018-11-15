@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel><title>Tags » Books</title>
+    <link>https://exploring-data.com</link>
+    <description>Tags » Books</description>
+    <lastBuildDate>Thu, 15 Nov 2018 14:46:17 </lastBuildDate>
+    <generator>Logya</generator>
+    <docs>http://blogs.law.harvard.edu/tech/rss</docs>
+    
+    <item>
+        <title><![CDATA[Network Graph of Book Recommendations from Tribe of Mentors]]></title>
+        <link><![CDATA[https://exploring-data.com/info/mentor-author-graph/]]></link>
+        <description><![CDATA[The Graph of Mentors, Books and Authors visualizes book recommendations from the book Tribe Of Mentors by Tim Ferriss and his interviewees.]]></description>
+        <guid><![CDATA[https://exploring-data.com/info/mentor-author-graph/]]></guid>
+        <pubDate>Thu, 15 Nov 2018 14:44:59 </pubDate>
+    </item>
+    
+</channel></rss>

@@ -3,9 +3,17 @@
 <channel><title>Tags</title>
     <link>https://exploring-data.com</link>
     <description>Tags</description>
-    <lastBuildDate>Tue, 02 Oct 2018 12:16:47 </lastBuildDate>
+    <lastBuildDate>Thu, 15 Nov 2018 14:46:17 </lastBuildDate>
     <generator>Logya</generator>
     <docs>http://blogs.law.harvard.edu/tech/rss</docs>
+    
+    <item>
+        <title><![CDATA[Network Graph of Book Recommendations from Tribe of Mentors]]></title>
+        <link><![CDATA[https://exploring-data.com/info/mentor-author-graph/]]></link>
+        <description><![CDATA[The Graph of Mentors, Books and Authors visualizes book recommendations from the book Tribe Of Mentors by Tim Ferriss and his interviewees.]]></description>
+        <guid><![CDATA[https://exploring-data.com/info/mentor-author-graph/]]></guid>
+        <pubDate>Thu, 15 Nov 2018 14:44:59 </pubDate>
+    </item>
     
     <item>
         <title><![CDATA[Big Sister Cities: How They Are Related]]></title>
@@ -77,14 +85,6 @@
         <description><![CDATA[Explore a decade of climate change, global warming, natural disaster, extreme weather, pollution and deforestation in the articles published by the Guardian.]]></description>
         <guid><![CDATA[https://exploring-data.com/vis/climate-changes-decade/]]></guid>
         <pubDate>Fri, 05 Apr 2013 00:56:02 </pubDate>
-    </item>
-    
-    <item>
-        <title><![CDATA[How Footballers Relate based on Google Searches]]></title>
-        <link><![CDATA[https://exploring-data.com/info/footballers-search-relations/]]></link>
-        <description><![CDATA[The footballers search relations visualization shows a network graph of former and current football players and managers related by Google searches with results containing knowledge graph information.]]></description>
-        <guid><![CDATA[https://exploring-data.com/info/footballers-search-relations/]]></guid>
-        <pubDate>Wed, 13 Mar 2013 01:28:01 </pubDate>
     </item>
     
 </channel></rss>

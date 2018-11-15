@@ -1,0 +1,172 @@
+
+<!DOCTYPE html>
+<html xmlns:fb="http://ogp.me/ns/fb#" lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Network Graph of Book Recommendations from Tribe of Mentors | Exploring Data</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <meta name="description" content="The Graph of Mentors, Books and Authors visualizes book recommendations from the book Tribe Of Mentors by Tim Ferriss and his interviewees.">
+    
+    
+        <meta property="og:image" content="
+https://exploring-data.com/img/large/mentor-author-graph.png
+
+">
+    
+    
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:creator" content="@yaph">
+<meta name="twitter:site" content="@yaph">
+<meta name="twitter:title" content="Network Graph of Book Recommendations from Tribe of Mentors">
+<meta name="twitter:description" content="The Graph of Mentors, Books and Authors visualizes book recommendations from the book Tribe Of Mentors by Tim Ferriss and his interviewees.">
+<meta name="twitter:image:src" content="
+https://exploring-data.com/img/large/mentor-author-graph.png
+
+">
+
+    <meta name="author" content="Ramiro Gómez">
+    
+    <meta name="flattr:id" content="4pzdyq">
+    <link rel="canonical" href="https://exploring-data.com/info/mentor-author-graph/">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet">
+    
+        
+            <link href="//cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css" rel="stylesheet">
+        
+    
+    
+    <link rel="shortcut icon" href="/favicon.ico">
+    
+        
+            <link rel="alternate" type="application/rss+xml" title="Exploring Data main RSS feed" href="https://exploring-data.com/rss.xml">
+        
+    
+</head>
+
+<body class="">
+
+    
+    <nav id="navbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a id="site-name" class="navbar-brand" href="/">Exploring Data</a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="main-navbar">
+            
+<ul class="nav navbar-nav">
+    
+    <li><a href="/data-visualization-books/">📕 Data Books</a></li>
+    <li><a href="/data-visualization-posters/">🛒 Posters</a></li>
+    <li><a href="https://www.amazon.com/s/ref=w_bl_sl_s_ap_web_7141123011?ie=UTF8&node=7141123011&field-brandtextbin=Exploring+Data+Apparel&_encoding=UTF8&tag=xpdt-20&linkCode=ur2&linkId=9e857f784277104a21c9a5542c76b9a5&camp=1789&creative=9325">👕 Shirts</a></li>
+    <li><a href="/datasearch/">🔍 Search for Data</a></li>
+    <li><a href="/sitemap/">🖧 Sitemap</a></li>
+</ul>
+
+            <div id="sharemenu" class="nav pull-right">
+    <div class="btn-group">
+        <a href="#" class="btn navbar-btn btn-success dropdown-toggle" data-toggle="dropdown">+</a>
+        <ul class="share dropdown-menu pull-right">
+            <li><a href="/rss.xml">RSS Feed</a></li>
+            <li><a href="https://twitter.com/share?url=https%3A//exploring-data.com/info/mentor-author-graph/&text=Network%20Graph%20of%20Book%20Recommendations%20from%20Tribe%20of%20Mentors">Tweet this</a></li>
+            <li><a href="https://flattr.com/submit/auto?user_id=rg&url=https%3A//exploring-data.com/info/mentor-author-graph/&title=Network%20Graph%20of%20Book%20Recommendations%20from%20Tribe%20of%20Mentors&language=en_GB&category=software">Flattr this</a></li>
+            <li><a href="https://www.facebook.com/sharer.php?u=https%3A//exploring-data.com/info/mentor-author-graph/&t=Network%20Graph%20of%20Book%20Recommendations%20from%20Tribe%20of%20Mentors">Facebook</a></li>
+            <li><a href="https://plus.google.com/share?url=https%3A//exploring-data.com/info/mentor-author-graph/">Google+</a></li>
+            <li><a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A//exploring-data.com/info/mentor-author-graph/&title=Network%20Graph%20of%20Book%20Recommendations%20from%20Tribe%20of%20Mentors">LinkedIn</a></li>
+        </ul>
+    </div>
+</div>
+            
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+    
+
+    
+    
+    
+<div id="info" class="container-fluid">
+    <h1>Network Graph of Book Recommendations from Tribe of Mentors</h1>
+    <p>The interactive <a href="/vis/mentor-author-graph/">Graph of Mentors, Books and Authors</a> visualizes book recommendations from the book <a href="https://tribeofmentors.com/">Tribe Of Mentors</a> by Tim Ferriss and his interviewees. The book is a collection of 130+ interviews with people who are exceptional at what they do. Tim asked them a set of 11 questions including one about which book they gave away the most as a gift or which books had greatly influenced their lives.</p>
+<p>Taking all these recommendations I created a graph, that has 4 kinds of nodes: authors, books, mentors, and mentors who are also recommended authors. I assigned a weight of 1 to each mentor, which is distributed equally among their recommended books, i.e. if a mentor recommended 4 books, each edge connecting them gets a weight of 0.25. The size of a book node is then calculated as the sum of its incoming edges multiplied by its in-degree, i.e. the number of mentors recommending it. The weight of an author in turn is the sum of all edge weights with their books as targets multiplied by the number of mentors who recommended at least one of their books.</p>
+<p>The people interviewed in Tribe of Mentors come from different backgrounds, are good at different things and recommend different books. The 100 mentors in the graph named 224 different books by 205 different authors adding up to 522 nodes (some are both authors and mentors) and 474 edges. The resulting disconnected graph has just a few nodes which stand out, most notable <a href="/vis/mentor-author-graph/#Viktor E. Frankl">Viktor E. Frankl</a> and his book Man' Search for Meaning. The 2nd largest author node is <a href="/vis/mentor-author-graph/#Timothy Ferriss">Timothy Ferriss</a> himself, who authored 2 books that were recommended by several mentors.</p>
+<p>A handful of other books were recommended multiple times, but the vast majority are named just once. You can see the details in the table below, that lists all the books mentioned.</p>
+<table id="books" class="display">
+<thead>
+<tr>
+    <th>Author</th><th>Title</th><th>Recommended by</th><th>Book links</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+
+<h2>How the graph was created</h2>
+<p>The graph was created with the Python library <a href="https://networkx.github.io/">Networkx</a> and laid out in <a href="https://gephi.org/">Gephi</a> using the Force Atlas layout. The browser version is rendered with the JavaScript library <a href="http://sigmajs.org/">sigma.js</a>.</p>
+    
+
+<div class="postinfo">
+<hr class="clearfix">
+<div class="well">
+<p>Published on November 15, 2018 by <a href="http://ramiro.org/">Ramiro Gómez</a> (<a href="https://twitter.com/yaph">@yaph</a>).<br>
+Tags: <a href="/tags/network-graph/">network graph</a>, <a href="/tags/books/">books</a>, <a href="/tags/authors/">authors</a>, <a href="/tags/sigmajs/">sigmajs</a>, <a href="/tags/gephi/">gephi</a>, <a href="/tags/networkx/">networkx</a>, <a href="/tags/interactive/">interactive</a>.<br>
+To be informed of new posts, subscribe to the <a href="/rss.xml">RSS feed</a>.</p>
+
+
+<p>External links to Amazon on this website contain affiliate IDs, which means that I earn a commission if you make a purchase using these links. This allows me to offer hopefully valuable content for free while keeping this website sustainable. For more information, please see the <a href="/about/">about page</a>.</p>
+</div>
+</div>
+
+</div>
+
+    
+    
+    <div id="footer" class="container">
+      <div class="row"><div class="col-md-12">
+        <footer>
+            <hr>
+            <p>Exploring Data is a showcase of interactive data visualizations created with open data and open source tools, <a href="/about/">learn more</a>.<br>
+            © <script>document.write(new Date().getFullYear())</script> <a href="http://ramiro.org/">Ramiro Gómez</a>.</p>
+        </footer>
+      </div></div>
+    </div>
+    
+    
+
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-5102014-13', 'exploring-data.com');
+  ga('send', 'pageview');
+
+(function(c,a){function d(){var e=a.getElementsByTagName("a");var f=[];for(var g=0;g<e.length;++g){var h=e[g];if(h.host!=c.location.host){f.push(h)}}return f}function b(f){var e=f.srcElement||f.target;while(e&&(typeof e.tagName=="undefined"||e.tagName.toLowerCase()!="a"||!e.href)){e=e.parentNode}if(!e||!e.href){return}if(c.ga){ga("send","event","Outbound link","Click",e.href)}if(!e.target||e.target.match(/^_(self|parent|top)$/i)){setTimeout(function(){a.location.href=e.href},150);if(f.preventDefault){f.preventDefault()}else{f.returnValue=false}}}c.addEventListener("load",function(){var e=d();for(var f in e){e[f].addEventListener("click",b)}})}(window,document));
+</script>
+    <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    
+
+    <script src="/js/script.js"></script>
+    
+      
+          <script src="/vendor/npm/jquery.dataTables.min.js"></script>
+      
+          <script src="/compiled/mentor-author-graph-info.js"></script>
+      
+    
+
+    
+  </body>
+</html>
