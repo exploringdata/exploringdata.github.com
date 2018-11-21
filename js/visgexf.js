@@ -291,7 +291,6 @@ var visgexf = {
 };
 
 // Node info dialog
-
 function nodeinfo(heading, body) {
     dialog.find('.panel-heading h2').html(heading);
     dialog.find('.panel-body').html(body);
