@@ -1,20 +1,8 @@
-body {
-background:#222;
-padding-top:41px;
-}
-#vis {
-height:600px;
+.navbar {
+margin-bottom: 0;
 }
 .sigma-parent {
-position:relative;
 background:#222;
-}
-.sigma-expand {
-position:absolute;
-width:100%;
-height:100%;
-top:0;
-left:0;
 }
 #showlang {
 left:37%;
