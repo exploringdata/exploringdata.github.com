@@ -1,0 +1,22 @@
+#map {
+max-width: 1600px;
+margin: 0 auto;
+}
+text {
+color: #222;
+font-size: 12px;
+font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+text.title {
+font-size: 20px;
+}
+text.link {
+fill: #333;
+}
+rect.footer {
+fill-opacity: .8;
+fill: #fff;
+}
+nav a {
+cursor: pointer;
+}

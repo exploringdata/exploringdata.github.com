@@ -1,0 +1,193 @@
+
+<!DOCTYPE html>
+<html xmlns:fb="http://ogp.me/ns/fb#" lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Countries by Forest Area Percentage of Land Area | Exploring Data</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <meta name="description" content="A series of choropleth maps showing the forest area percentage of land area for the world's countries from 1990 to 2016 based on data from the Food and Agriculture Organization.">
+    
+    
+        <meta property="og:image" content="
+
+    /img/preview/forest-area-map.png
+
+">
+    
+    
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:creator" content="@yaph">
+<meta name="twitter:site" content="@yaph">
+<meta name="twitter:title" content="Countries by Forest Area Percentage of Land Area">
+<meta name="twitter:description" content="A series of choropleth maps showing the forest area percentage of land area for the world's countries from 1990 to 2016 based on data from the Food and Agriculture Organization.">
+<meta name="twitter:image:src" content="
+
+    /img/preview/forest-area-map.png
+
+">
+
+    <meta name="author" content="Ramiro Gómez">
+    
+    <link rel="canonical" href="https://exploring-data.com/info/forest-area/">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="//stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="/css/style.css" rel="stylesheet">
+    
+        
+    
+    <link rel="shortcut icon" href="/favicon.ico">
+    
+        
+            <link rel="alternate" type="application/rss+xml" title="Exploring Data main RSS feed" href="https://exploring-data.com/rss.xml">
+        
+    
+</head>
+
+<body class="">
+
+    
+    <nav id="navbar" class="navbar navbar-default" role="navigation">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a id="site-name" class="navbar-brand" href="/">Exploring Data</a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="main-navbar">
+            
+<ul class="nav navbar-nav">
+    
+    <li><a href="/data-visualization-books/">📕 Data Books</a></li>
+    <li><a href="/data-visualization-posters/">🛒 Posters</a></li>
+    <li><a href="/datasearch/">🔍 Search for Data</a></li>
+    <li><a href="/sitemap/">🖧 Sitemap</a></li>
+</ul>
+
+            <div id="sharemenu" class="nav pull-right">
+    <div class="btn-group">
+        <a href="#" class="btn navbar-btn btn-success dropdown-toggle" data-toggle="dropdown">+</a>
+        <ul class="share dropdown-menu pull-right">
+            <li><a href="/rss.xml"><span class="icon"><i class="fa fa-rss"></i> RSS Feed</a></li>
+            <li><a rel="nofollow" href="https://reddit.com/submit?url=https%3A//exploring-data.com/info/forest-area/&title=Countries%20by%20Forest%20Area%20Percentage%20of%20Land%20Area"><span class="icon"><i class="fa fa-reddit-alien"></i></span> Reddit</a></li>
+            <li><a rel="nofollow" href="https://news.ycombinator.com/submitlink?u=https%3A//exploring-data.com/info/forest-area/&t=Countries%20by%20Forest%20Area%20Percentage%20of%20Land%20Area"><span class="icon"><i class="fa fa-hacker-news"></i></span> Hacker News</a></li>
+            <li><a rel="nofollow" href="https://twitter.com/share?url=https%3A//exploring-data.com/info/forest-area/&text=Countries%20by%20Forest%20Area%20Percentage%20of%20Land%20Area"><span class="icon"><i class="fa fa-twitter"></i></span> Twitter</a></li>
+            <li><a rel="nofollow" href="https://www.facebook.com/sharer.php?u=https%3A//exploring-data.com/info/forest-area/&t=Countries%20by%20Forest%20Area%20Percentage%20of%20Land%20Area"><span class="icon"><i class="fa fa-facebook"></i></span> Facebook</a></li>
+            <li><a rel="nofollow" href="https://www.stumbleupon.com/submit?url=https%3A//exploring-data.com/info/forest-area/&title=Countries%20by%20Forest%20Area%20Percentage%20of%20Land%20Area"><span class="icon"><i class="fa fa-stumbleupon"></i></span> StumbleUpon</a></li>
+            <li><a rel="nofollow" href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A//exploring-data.com/info/forest-area/&title=Countries%20by%20Forest%20Area%20Percentage%20of%20Land%20Area"><span class="icon"><i class="fa fa-linkedin"></i></span> LinkedIn</a></li>
+        </ul>
+    </div>
+</div>
+            
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+    
+
+    
+    
+    
+
+<div id="info" class="container">
+<div class="row">
+  <div class="col-md-9"><h1>Countries by Forest Area Percentage of Land Area</h1>
+  <p>A series of maps shows the forest area percentage of land area for most of the world's countries from 1990 to 2016. See the video below for an animation showing the changes through the years and check out the <a href="/map/world/forest-area/">interactive version</a> to explore the data in more detail.</p>
+<p>The data comes from the Food and Agriculture Organization and is available from the <a href="https://data.worldbank.org/indicator/AG.LND.FRST.ZS">World Bank website</a>, where it is described as:</p>
+<blockquote>
+<p>Statistical Concept and Methodology: Forest is determined both by the presence of trees and the absence of other predominant land uses. The trees should reach a minimum height of 5 meters in situ. Areas under reforestation that have not yet reached but are expected to reach a canopy cover of 10 percent and a tree height of 5 meters are included, as are temporarily unstocked areas, resulting from human intervention or natural causes, which are expected to regenerate. The Food and Agriculture Organization (FAO) provides detail information on forest cover, and adjusted estimates of forest cover. The survey uses a uniform definition of forest. Although FAO provides a breakdown of forest cover between natural forest and plantation for developing countries, forest data used to derive this indictor data does not reflect that breakdown. Total land area does not include inland water bodies such as major rivers and lakes. Variations from year to year may be due to updated or revised data rather than to change in area. The indictor is derived by dividing total area under forest of a country by country's total land area, and multiplying by 100.</p>
+</blockquote>
+<p>Development Relevance: As threats to biodiversity mount, the international community is increasingly focusing on conserving diversity. Deforestation is a major cause of loss of biodiversity, and habitat conservation is vital for stemming this loss. Conservation efforts have focused on protecting areas of high biodiversity. On a global average, more than one-third of all forest is primary forest, i.e. forest of native species where there are no clearly visible indications of human activities and the ecological processes have not been significantly disturbed. Primary forests, in particular tropical moist forests, include the most species-rich, diverse terrestrial ecosystems. The decrease of forest area, .11 percent over a ten-year period, is largely due to reclassification of primary forest to "other naturally regenerated forest" because of selective logging and other human interventions. Destruction of rainforests remains a significant environmental problem Much of what remains of the world's rainforests is in the Amazon basin, where the Amazon Rainforest covers approximately 4 million square kilometers. The regions with the highest tropical deforestation rate are in Central America and tropical Asia. FAO estimates that the decrease of primary forest area, 0.4 percent over a ten-year period, is largely due to reclassification of primary forest to "other naturally regenerated forest" because of selective logging and other human interventions. Large-scale planting of trees is significantly reducing the net loss of forest area globally, and afforestation and natural expansion of forests in some countries and regions have reduced the net loss of forest area significantly at the global level. Forests cover about 31 percent of total land area of the world; the world's total forest area is just over 4 billion hectares. On a global average, more than one-third of all forest is primary forest, i.e. forest of native species where there are no clearly visible indications of human activities and the ecological processes have not been significantly disturbed. Primary forests, in particular tropical moist forests, include the most species-rich, diverse terrestrial ecosystems. National parks, game reserves, wilderness areas and other legally established protected areas cover more than 10 percent of the total forest area in most countries and regions. FAO estimates that around 10 million people are employed in forest management and conservation - but many more are directly dependent on forests for their livelihoods. Close to 1.2 billion hectares of forest are managed primarily for the production of wood and non-wood forest products. An additional 25 percent of forest area is designated for multiple uses - in most cases including the production of wood and non-wood forest products. The area designated primarily for productive purposes has decreased by more than 50 million hectares since 1990 as forests have been designated for other purposes.</p>
+<p>Limitations and Exceptions: FAO has been collecting and analyzing data on forest area since 1946. This is done at intervals of 5-10 years as part of the Global Forest Resources Assessment (FRA). FAO reports data for 229 countries and territories; for the remaining 56 small island states and territories where no information is provided, a report is prepared by FAO using existing information and a literature search. The data are aggregated at sub-regional, regional and global levels by the FRA team at FAO, and estimates are produced by straight summation. The lag between the reference year and the actual production of data series as well as the frequency of data production varies between countries. Deforested areas do not include areas logged but intended for regeneration or areas degraded by fuelwood gathering, acid precipitation, or forest fires. Negative numbers indicate an increase in forest area. Data includes areas with bamboo and palms; forest roads, firebreaks and other small open areas; forest in national parks, nature reserves and other protected areas such as those of specific scientific, historical, cultural or spiritual interest; windbreaks, shelterbelts and corridors of trees with an area of more than 0.5 hectares and width of more than 20 meters; plantations primarily used for forestry or protective purposes, such as rubber-wood plantations and cork oak stands. Data excludes tree stands in agricultural production systems, such as fruit plantations and agroforestry systems. Forest area also excludes trees in urban parks and gardens. The proportion of forest area to total land area is calculated and changes in the proportion are computed to identify trends.</p>
+  
+    
+
+<div class="postinfo">
+<hr class="clearfix">
+<div class="well">
+<p>Published on September 16, 2019 (updated on September 19, 2019) by <a href="https://ramiro.org/">Ramiro Gómez</a> (<a href="https://twitter.com/yaph">@yaph</a>). To be informed of new posts, subscribe to the <a href="/rss.xml">RSS feed</a>.<br>
+Tags: .</p>
+
+
+</div>
+</div>
+
+  
+  </div>
+  <div class="col-md-3">
+    
+      <h3>Visualization</h3>
+      <a href="/map/world/forest-area/"><img src="
+
+    /img/preview/forest-area-map.png
+
+" alt="visualization preview" class="vis-preview img-responsive">
+      <a href="/map/world/forest-area/" class="btn btn-primary voffset">View Visualization</a>
+      <hr>
+    
+    
+    
+    
+    
+    <h3>Keep Exploring</h3>
+<a href="/rss.xml" class="btn btn-lg btn-warning">Subscribe to News feed</a>
+
+<h3>Recent Visualizations</h3>
+<ul class="list-unstyled">
+
+<li><a href="/vis/mentor-author-graph/">Graph of Mentors, Books and Authors</a></li>
+
+<li><a href="/vis/big-sister-cities/">Graph of Big Sister Cities With +1 Million Inhabitants</a></li>
+
+<li><a href="/vis/spaghetti-western-actors-dbpedia/">Spaghetti Western Actors Network Graph DBpedia</a></li>
+
+<li><a href="/vis/programming-languages-influence-network-2014/">Programming Languages Influence Network 2014</a></li>
+
+<li><a href="/vis/ballon-dor-male-players-votes-2013/">Ballon d'Or 2013 Male Players Votes Network</a></li>
+
+</ul>
+  </div>
+</div>
+</div>
+
+    
+    
+    <div id="footer" class="container">
+      <div class="row"><div class="col-md-12">
+        <footer>
+            <hr>
+            <p>Exploring Data is a showcase of interactive data visualizations created with open data and open source tools, <a href="/about/">learn more</a>.<br>
+            © <script>document.write(new Date().getFullYear())</script> <a href="https://ramiro.org/">Ramiro Gómez</a>.</p>
+        </footer>
+      </div></div>
+    </div>
+    
+    
+
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-5102014-13', 'exploring-data.com');
+  ga('send', 'pageview');
+
+(function(c,a){function d(){var e=a.getElementsByTagName("a");var f=[];for(var g=0;g<e.length;++g){var h=e[g];if(h.host!=c.location.host){f.push(h)}}return f}function b(f){var e=f.srcElement||f.target;while(e&&(typeof e.tagName=="undefined"||e.tagName.toLowerCase()!="a"||!e.href)){e=e.parentNode}if(!e||!e.href){return}if(c.ga){ga("send","event","Outbound link","Click",e.href)}if(!e.target||e.target.match(/^_(self|parent|top)$/i)){setTimeout(function(){a.location.href=e.href},150);if(f.preventDefault){f.preventDefault()}else{f.returnValue=false}}}c.addEventListener("load",function(){var e=d();for(var f in e){e[f].addEventListener("click",b)}})}(window,document));
+</script>
+    <script src="//code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    
+
+    <script src="/js/script.js"></script>
+    
+
+    
+  </body>
+</html>

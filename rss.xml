@@ -3,9 +3,17 @@
 <channel><title>Exploring Data News Feed</title>
     <link>https://exploring-data.com</link>
     <description>Exploring Data News Feed</description>
-    <lastBuildDate>Fri, 30 Aug 2019 04:41:46 </lastBuildDate>
+    <lastBuildDate>Thu, 19 Sep 2019 14:14:54 </lastBuildDate>
     <generator>Logya</generator>
     <docs>http://blogs.law.harvard.edu/tech/rss</docs>
+    
+    <item>
+        <title><![CDATA[World Map of Countries by Forest Area Percentage of Land Area]]></title>
+        <link><![CDATA[https://exploring-data.com/map/world/forest-area/]]></link>
+        <description><![CDATA[These choropleth maps show the forest area percentage of land area for the world's countries from 1990 to 2016 based on data from the Food and Agriculture Organization.]]></description>
+        <guid><![CDATA[https://exploring-data.com/map/world/forest-area/]]></guid>
+        <pubDate>Thu, 19 Sep 2019 14:14:10 </pubDate>
+    </item>
     
     <item>
         <title><![CDATA[Network Graph of Book Recommendations from Tribe of Mentors]]></title>
@@ -77,14 +85,6 @@
         <description><![CDATA[The Ballon d'Or 2013 visualization shows an interactive network graph of voters and voted football players related based on votes cast for the male FIFA Ballon d'Or award in 2013.]]></description>
         <guid><![CDATA[https://exploring-data.com/info/ballon-dor-male-players-votes-2013/]]></guid>
         <pubDate>Mon, 13 Jan 2014 21:50:20 </pubDate>
-    </item>
-    
-    <item>
-        <title><![CDATA[Ballon d'Or 2013 Male Players Votes Network]]></title>
-        <link><![CDATA[https://exploring-data.com/vis/ballon-dor-male-players-votes-2013/]]></link>
-        <description><![CDATA[An interactive network graph showing the connections between voters and voted male football players from the male FIFA Ballon d'Or vote 2013.]]></description>
-        <guid><![CDATA[https://exploring-data.com/vis/ballon-dor-male-players-votes-2013/]]></guid>
-        <pubDate>Mon, 13 Jan 2014 21:34:20 </pubDate>
     </item>
     
 </channel></rss>

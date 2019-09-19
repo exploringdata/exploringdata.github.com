@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel><title>Tags » Forest</title>
+    <link>https://exploring-data.com</link>
+    <description>Tags » Forest</description>
+    <lastBuildDate>Tue, 17 Sep 2019 02:04:31 </lastBuildDate>
+    <generator>Logya</generator>
+    <docs>http://blogs.law.harvard.edu/tech/rss</docs>
+    
+    <item>
+        <title><![CDATA[Forest Area]]></title>
+        <link><![CDATA[http://localhost:8080/map/world/forest-area/]]></link>
+        <description><![CDATA[Choropleth maps showing for the world's countries based on data from.]]></description>
+        <guid><![CDATA[http://localhost:8080/map/world/forest-area/]]></guid>
+        <pubDate>Mon, 16 Sep 2019 00:29:54 </pubDate>
+    </item>
+    
+</channel></rss>
