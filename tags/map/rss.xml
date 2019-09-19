@@ -3,9 +3,17 @@
 <channel><title>Tags » Map</title>
     <link>https://exploring-data.com</link>
     <description>Tags » Map</description>
-    <lastBuildDate>Thu, 19 Sep 2019 14:14:54 </lastBuildDate>
+    <lastBuildDate>Thu, 19 Sep 2019 14:53:28 </lastBuildDate>
     <generator>Logya</generator>
     <docs>http://blogs.law.harvard.edu/tech/rss</docs>
+    
+    <item>
+        <title><![CDATA[Forest Area Percentage of Land Area]]></title>
+        <link><![CDATA[https://exploring-data.com/info/forest-area/]]></link>
+        <description><![CDATA[Information on choropleth maps showing the forest area percentage of land area for the world's countries from 1990 to 2016 based on data from the Food and Agriculture Organization.]]></description>
+        <guid><![CDATA[https://exploring-data.com/info/forest-area/]]></guid>
+        <pubDate>Thu, 19 Sep 2019 14:52:18 </pubDate>
+    </item>
     
     <item>
         <title><![CDATA[Where in the World Happen Most Murders]]></title>

@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
+<url><loc><![CDATA[https://exploring-data.com/info/forest-area/]]></loc><lastmod>2019-09-19</lastmod></url>
+
 <url><loc><![CDATA[https://exploring-data.com/map/world/forest-area/]]></loc><lastmod>2019-09-19</lastmod></url>
 
 <url><loc><![CDATA[https://exploring-data.com/info/mentor-author-graph/]]></loc><lastmod>2019-09-16</lastmod></url>

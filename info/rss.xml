@@ -3,9 +3,17 @@
 <channel><title>Info</title>
     <link>https://exploring-data.com</link>
     <description>Info</description>
-    <lastBuildDate>Thu, 19 Sep 2019 14:14:54 </lastBuildDate>
+    <lastBuildDate>Thu, 19 Sep 2019 14:53:28 </lastBuildDate>
     <generator>Logya</generator>
     <docs>http://blogs.law.harvard.edu/tech/rss</docs>
+    
+    <item>
+        <title><![CDATA[Forest Area Percentage of Land Area]]></title>
+        <link><![CDATA[https://exploring-data.com/info/forest-area/]]></link>
+        <description><![CDATA[Information on choropleth maps showing the forest area percentage of land area for the world's countries from 1990 to 2016 based on data from the Food and Agriculture Organization.]]></description>
+        <guid><![CDATA[https://exploring-data.com/info/forest-area/]]></guid>
+        <pubDate>Thu, 19 Sep 2019 14:52:18 </pubDate>
+    </item>
     
     <item>
         <title><![CDATA[Network Graph of Book Recommendations from Tribe of Mentors]]></title>
@@ -77,14 +85,6 @@
         <description><![CDATA[The programmers search relations visualization shows a network graph of programmers related by Google searches with results containing knowledge graph information.]]></description>
         <guid><![CDATA[https://exploring-data.com/info/programmers-search-relations/]]></guid>
         <pubDate>Wed, 06 Mar 2013 15:25:03 </pubDate>
-    </item>
-    
-    <item>
-        <title><![CDATA[A Map of Bike Routes in Berlin, Germany]]></title>
-        <link><![CDATA[https://exploring-data.com/info/berlin-bike-routes/]]></link>
-        <description><![CDATA[The bike routes map for Berlin, Germany shows 14 different biking routes through and around the city. Created with OpenLayers, Open Street Map and data from Senatsverwaltung für Stadtentwicklung und Umwelt.]]></description>
-        <guid><![CDATA[https://exploring-data.com/info/berlin-bike-routes/]]></guid>
-        <pubDate>Tue, 19 Feb 2013 02:02:03 </pubDate>
     </item>
     
 </channel></rss>

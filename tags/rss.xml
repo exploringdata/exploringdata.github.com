@@ -3,9 +3,17 @@
 <channel><title>Tags</title>
     <link>https://exploring-data.com</link>
     <description>Tags</description>
-    <lastBuildDate>Thu, 19 Sep 2019 14:14:54 </lastBuildDate>
+    <lastBuildDate>Thu, 19 Sep 2019 14:53:28 </lastBuildDate>
     <generator>Logya</generator>
     <docs>http://blogs.law.harvard.edu/tech/rss</docs>
+    
+    <item>
+        <title><![CDATA[Forest Area Percentage of Land Area]]></title>
+        <link><![CDATA[https://exploring-data.com/info/forest-area/]]></link>
+        <description><![CDATA[Information on choropleth maps showing the forest area percentage of land area for the world's countries from 1990 to 2016 based on data from the Food and Agriculture Organization.]]></description>
+        <guid><![CDATA[https://exploring-data.com/info/forest-area/]]></guid>
+        <pubDate>Thu, 19 Sep 2019 14:52:18 </pubDate>
+    </item>
     
     <item>
         <title><![CDATA[Network Graph of Book Recommendations from Tribe of Mentors]]></title>
@@ -77,14 +85,6 @@
         <description><![CDATA[The visualisingdata census network graph shows the Twitter connections of the participants of the 1st data visualization census initiated by Andy Kirk.]]></description>
         <guid><![CDATA[https://exploring-data.com/info/visualisingdata-census-twitter-network/]]></guid>
         <pubDate>Tue, 09 Apr 2013 23:41:18 </pubDate>
-    </item>
-    
-    <item>
-        <title><![CDATA[A Decade of Climate Change in the Guardian]]></title>
-        <link><![CDATA[https://exploring-data.com/vis/climate-changes-decade/]]></link>
-        <description><![CDATA[Explore a decade of climate change, global warming, natural disaster, extreme weather, pollution and deforestation in the articles published by the Guardian.]]></description>
-        <guid><![CDATA[https://exploring-data.com/vis/climate-changes-decade/]]></guid>
-        <pubDate>Fri, 05 Apr 2013 00:56:02 </pubDate>
     </item>
     
 </channel></rss>
