@@ -1,6 +1,13 @@
 #map {
-max-width: 1600px;
-margin: 0 auto;
+max-width: 1700px;
+margin: 0px auto;
+}
+#map svg {
+margin-top: -2vh;
+}
+#col-select {
+max-height: 50vh;
+overflow: scroll;
 }
 text {
 color: #222;

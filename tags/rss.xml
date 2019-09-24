@@ -3,9 +3,17 @@
 <channel><title>Tags</title>
     <link>https://exploring-data.com</link>
     <description>Tags</description>
-    <lastBuildDate>Thu, 19 Sep 2019 14:53:28 </lastBuildDate>
+    <lastBuildDate>Tue, 24 Sep 2019 21:16:35 </lastBuildDate>
     <generator>Logya</generator>
     <docs>http://blogs.law.harvard.edu/tech/rss</docs>
+    
+    <item>
+        <title><![CDATA[CO2 emissions (metric tons per capita)]]></title>
+        <link><![CDATA[https://exploring-data.com/info/co2-emissions/]]></link>
+        <description><![CDATA[Information on choropleth maps showing the Carbon dioxide emissions in metric tons per capita for the world's countries from 1960 to 2014.]]></description>
+        <guid><![CDATA[https://exploring-data.com/info/co2-emissions/]]></guid>
+        <pubDate>Tue, 24 Sep 2019 21:14:15 </pubDate>
+    </item>
     
     <item>
         <title><![CDATA[Forest Area Percentage of Land Area]]></title>
@@ -77,14 +85,6 @@
         <description><![CDATA[Geographic maps of the world and most continents drawn based on an IP location dataset with 419433 records.]]></description>
         <guid><![CDATA[https://exploring-data.com/vis/ip-location-maps/]]></guid>
         <pubDate>Tue, 11 Jun 2013 00:00:00 </pubDate>
-    </item>
-    
-    <item>
-        <title><![CDATA[How Participants of the Visualisingdata Census are Connected on Twitter]]></title>
-        <link><![CDATA[https://exploring-data.com/info/visualisingdata-census-twitter-network/]]></link>
-        <description><![CDATA[The visualisingdata census network graph shows the Twitter connections of the participants of the 1st data visualization census initiated by Andy Kirk.]]></description>
-        <guid><![CDATA[https://exploring-data.com/info/visualisingdata-census-twitter-network/]]></guid>
-        <pubDate>Tue, 09 Apr 2013 23:41:18 </pubDate>
     </item>
     
 </channel></rss>

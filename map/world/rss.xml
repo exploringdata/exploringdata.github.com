@@ -3,9 +3,17 @@
 <channel><title>Map » World</title>
     <link>https://exploring-data.com</link>
     <description>Map » World</description>
-    <lastBuildDate>Thu, 19 Sep 2019 14:53:28 </lastBuildDate>
+    <lastBuildDate>Tue, 24 Sep 2019 21:16:36 </lastBuildDate>
     <generator>Logya</generator>
     <docs>http://blogs.law.harvard.edu/tech/rss</docs>
+    
+    <item>
+        <title><![CDATA[World Map of Countries by CO2 Emissions per Capita from 1960 to 2014]]></title>
+        <link><![CDATA[https://exploring-data.com/map/world/co2-emissions/]]></link>
+        <description><![CDATA[These choropleth maps show CO2 emissions in metric tons per capita from 1960 to 2014 based on data from the Carbon Dioxide Information Analysis Center and Oak Ridge National Laboratory.]]></description>
+        <guid><![CDATA[https://exploring-data.com/map/world/co2-emissions/]]></guid>
+        <pubDate>Tue, 24 Sep 2019 20:30:21 </pubDate>
+    </item>
     
     <item>
         <title><![CDATA[World Map of Countries by Forest Area Percentage of Land Area]]></title>
