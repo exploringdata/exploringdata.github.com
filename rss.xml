@@ -3,9 +3,25 @@
 <channel><title>Exploring Data News Feed</title>
     <link>https://exploring-data.com</link>
     <description>Exploring Data News Feed</description>
-    <lastBuildDate>Sat, 02 Nov 2019 18:52:54 </lastBuildDate>
+    <lastBuildDate>Tue, 11 Aug 2020 14:26:21 </lastBuildDate>
     <generator>Logya</generator>
     <docs>http://blogs.law.harvard.edu/tech/rss</docs>
+    
+    <item>
+        <title><![CDATA[Programming Languages Influence Network 2019 - Dark Background]]></title>
+        <link><![CDATA[https://exploring-data.com/print/programming-languages-influence-network-2019/]]></link>
+        <description><![CDATA[A network graph showing 454 programming languages connected by 761 influence relations. Highly influential languages like Lisp, Smalltalk, C, Java, C++, Haskell and Python are shown as larger circles as compared to languages with less influence on others like PHP, Rust and Go. The influence relation data was retrieved from Wikidata December 30, 2019. A great gift for programmers who are into digital art.]]></description>
+        <guid><![CDATA[https://exploring-data.com/print/programming-languages-influence-network-2019/]]></guid>
+        <pubDate>Mon, 30 Dec 2019 00:00:00 </pubDate>
+    </item>
+    
+    <item>
+        <title><![CDATA[Programming Languages Influence Network 2019 - Light Background]]></title>
+        <link><![CDATA[https://exploring-data.com/print/programming-languages-influence-network-2019-black/]]></link>
+        <description><![CDATA[A network graph showing 454 programming languages connected by 761 influence relations. Highly influential languages like Lisp, Smalltalk, C, Java, C++, Haskell and Python are shown as larger circles as compared to languages with less influence on others like PHP, Rust and Go. The influence relation data was retrieved from Wikidata December 30, 2019. A great gift for programmers who are into digital art.]]></description>
+        <guid><![CDATA[https://exploring-data.com/print/programming-languages-influence-network-2019-black/]]></guid>
+        <pubDate>Mon, 30 Dec 2019 00:00:00 </pubDate>
+    </item>
     
     <item>
         <title><![CDATA[CO2 emissions (metric tons per capita)]]></title>
@@ -40,51 +56,35 @@
     </item>
     
     <item>
-        <title><![CDATA[Network Graph of Book Recommendations from Tribe of Mentors]]></title>
-        <link><![CDATA[https://exploring-data.com/info/mentor-author-graph/]]></link>
-        <description><![CDATA[The Graph of Mentors, Books and Authors visualizes book recommendations from the book Tribe Of Mentors by Tim Ferriss and his interviewees.]]></description>
-        <guid><![CDATA[https://exploring-data.com/info/mentor-author-graph/]]></guid>
-        <pubDate>Thu, 15 Nov 2018 14:44:59 </pubDate>
+        <title><![CDATA[Rust Programming Language Influence Network]]></title>
+        <link><![CDATA[https://exploring-data.com/print/rust-influence-network/]]></link>
+        <description><![CDATA[A network graph showing 24 programming languages connected by 47 influence relations. It includes languages the were influenced by Rust or influenced Rust and Rust itself. More influential languages are shown as larger circles as compared to languages with less influence on others. The influence relation data was retrieved from Wikidata in 2019. A great gift for programmers who are into digital art.]]></description>
+        <guid><![CDATA[https://exploring-data.com/print/rust-influence-network/]]></guid>
+        <pubDate>Wed, 14 Aug 2019 00:00:00 </pubDate>
     </item>
     
     <item>
-        <title><![CDATA[Graph of Mentors, Books and Authors]]></title>
-        <link><![CDATA[https://exploring-data.com/vis/mentor-author-graph/]]></link>
-        <description><![CDATA[An interactive network graph consisting of authors, books and mentors based on recommendations in the book Tribe Of Mentors by Tim Ferriss and his interviewees.]]></description>
-        <guid><![CDATA[https://exploring-data.com/vis/mentor-author-graph/]]></guid>
-        <pubDate>Thu, 15 Nov 2018 14:44:44 </pubDate>
+        <title><![CDATA[C Programming Language Influence Network]]></title>
+        <link><![CDATA[https://exploring-data.com/print/c-influence-network/]]></link>
+        <description><![CDATA[A network graph showing 64 programming languages connected by 122 influence relations. It includes languages the were influenced by C or influenced C and C itself. More influential languages are shown as larger circles as compared to languages with less influence on others. The influence relation data was retrieved from Wikidata in 2019. A great gift for programmers who are into digital art.]]></description>
+        <guid><![CDATA[https://exploring-data.com/print/c-influence-network/]]></guid>
+        <pubDate>Thu, 25 Jul 2019 00:00:00 </pubDate>
     </item>
     
     <item>
-        <title><![CDATA[Big Sister Cities: How They Are Related]]></title>
-        <link><![CDATA[https://exploring-data.com/info/big-sister-cities/]]></link>
-        <description><![CDATA[Big Sister Cities is an interactive network graph showing 279 cities with more than 1 million inhabitants and how they are connected to their sister cities within this set.]]></description>
-        <guid><![CDATA[https://exploring-data.com/info/big-sister-cities/]]></guid>
-        <pubDate>Thu, 26 Apr 2018 00:32:29 </pubDate>
+        <title><![CDATA[World Map Made of Hexagons - Geographic Pattern Map Design]]></title>
+        <link><![CDATA[https://exploring-data.com/print/pattern-world-map-winkel-hexagons-white/]]></link>
+        <description><![CDATA[A map of the world with the landmasses made up of hexagons rendered in the Winkel tripel projection.]]></description>
+        <guid><![CDATA[https://exploring-data.com/print/pattern-world-map-winkel-hexagons-white/]]></guid>
+        <pubDate>Wed, 08 May 2019 00:00:00 </pubDate>
     </item>
     
     <item>
-        <title><![CDATA[Graph of Big Sister Cities With +1 Million Inhabitants]]></title>
-        <link><![CDATA[https://exploring-data.com/vis/big-sister-cities/]]></link>
-        <description><![CDATA[An interactive network graph showing 279 cities with more than 1 million inhabitants and how they are connected to their sister cities within this set.]]></description>
-        <guid><![CDATA[https://exploring-data.com/vis/big-sister-cities/]]></guid>
-        <pubDate>Wed, 25 Apr 2018 20:58:21 </pubDate>
-    </item>
-    
-    <item>
-        <title><![CDATA[Spaghetti Western Actors Network Graph DBpedia]]></title>
-        <link><![CDATA[https://exploring-data.com/vis/spaghetti-western-actors-dbpedia/]]></link>
-        <description><![CDATA[This is an undirected graph of co-occurrences of actors who appeared in one or more Spaghetti Western films based on data from DBpedia retrieved on August 4, 2015.]]></description>
-        <guid><![CDATA[https://exploring-data.com/vis/spaghetti-western-actors-dbpedia/]]></guid>
-        <pubDate>Thu, 06 Aug 2015 14:15:01 </pubDate>
-    </item>
-    
-    <item>
-        <title><![CDATA[Which Actors Appeared together in Spaghetti Western Films]]></title>
-        <link><![CDATA[https://exploring-data.com/info/spaghetti-western-actors-dbpedia/]]></link>
-        <description><![CDATA[This is an undirected graph of co-occurrences of actors who appeared in one or more Spaghetti Western films based on data from DBpedia retrieved on August 4, 2015.]]></description>
-        <guid><![CDATA[https://exploring-data.com/info/spaghetti-western-actors-dbpedia/]]></guid>
-        <pubDate>Thu, 06 Aug 2015 14:14:54 </pubDate>
+        <title><![CDATA[Berlin Rails, Roads and Water - Dark Geographic Map Design]]></title>
+        <link><![CDATA[https://exploring-data.com/print/berlin-rails-roads-water/]]></link>
+        <description><![CDATA[A map of the city of Berlin, Germany and surroundings showing railways and roads in light gray and water in blue on a dark background created with data from OpenStreetMap.]]></description>
+        <guid><![CDATA[https://exploring-data.com/print/berlin-rails-roads-water/]]></guid>
+        <pubDate>Sat, 04 May 2019 00:00:00 </pubDate>
     </item>
     
 </channel></rss>

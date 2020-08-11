@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel><title>Prints » Maps</title>
+    <link>https://exploring-data.com</link>
+    <description>Prints » Maps</description>
+    <lastBuildDate>Tue, 11 Aug 2020 14:26:21 </lastBuildDate>
+    <generator>Logya</generator>
+    <docs>http://blogs.law.harvard.edu/tech/rss</docs>
+    
+    <item>
+        <title><![CDATA[World Map Made of Hexagons - Geographic Pattern Map Design]]></title>
+        <link><![CDATA[https://exploring-data.com/print/pattern-world-map-winkel-hexagons-white/]]></link>
+        <description><![CDATA[A map of the world with the landmasses made up of hexagons rendered in the Winkel tripel projection.]]></description>
+        <guid><![CDATA[https://exploring-data.com/print/pattern-world-map-winkel-hexagons-white/]]></guid>
+        <pubDate>Wed, 08 May 2019 00:00:00 </pubDate>
+    </item>
+    
+    <item>
+        <title><![CDATA[Berlin Rails, Roads and Water - Dark Geographic Map Design]]></title>
+        <link><![CDATA[https://exploring-data.com/print/berlin-rails-roads-water/]]></link>
+        <description><![CDATA[A map of the city of Berlin, Germany and surroundings showing railways and roads in light gray and water in blue on a dark background created with data from OpenStreetMap.]]></description>
+        <guid><![CDATA[https://exploring-data.com/print/berlin-rails-roads-water/]]></guid>
+        <pubDate>Sat, 04 May 2019 00:00:00 </pubDate>
+    </item>
+    
+    <item>
+        <title><![CDATA[World Map of Large Rivers, Lakes and Coast Lines - Dark Background]]></title>
+        <link><![CDATA[https://exploring-data.com/print/world-rivers-lakes-coasts-transparent/]]></link>
+        <description><![CDATA[This design shows a map of the world with large rivers, lakes and coast lines drawn in a blue color and a dark background using the robinson map projection.]]></description>
+        <guid><![CDATA[https://exploring-data.com/print/world-rivers-lakes-coasts-transparent/]]></guid>
+        <pubDate>Mon, 15 Apr 2019 00:00:00 </pubDate>
+    </item>
+    
+    <item>
+        <title><![CDATA[Vintage Style Map of the Caribbean/Central America]]></title>
+        <link><![CDATA[https://exploring-data.com/print/vintage-map-caribbean/]]></link>
+        <description><![CDATA[The Caribbean consists of the Caribbean Sea, its islands and some bordering ones as well as the surrounding coasts. The region is southeast of the Gulf of Mexico and the North American mainland, east of Central America, and north of South America. This vintage style map shows the Caribbean in brown and orange colors with current country names displayed in a script font along with illustrations of ships, sword fish and a compass.]]></description>
+        <guid><![CDATA[https://exploring-data.com/print/vintage-map-caribbean/]]></guid>
+        <pubDate>Sun, 11 Mar 2018 00:00:00 </pubDate>
+    </item>
+    
+    <item>
+        <title><![CDATA[Grid of World Land Area Maps in 48 Projections with Graticule]]></title>
+        <link><![CDATA[https://exploring-data.com/print/world-projections-grid-graticule/]]></link>
+        <description><![CDATA[This design consists of a 8x6 grid of 48 different map projections of earth's landmass printed in black with a gray graticule overlay. The included map projections are listed below: * Azimuthal Equidistant * Airy * Aitoff * Boggs Eumorphic * Bonne (Werner lat_1=90) * Cassini * Equal Area Cylindrical * Eckert I * Eckert II * Eckert III * Eckert IV * Eckert V * Eckert VI * Equidistant Cylindrical (Plate Caree) * Gall (Gall Stereographic) * Geocentric * Gilbert Two World Perspective * General Sinusoidal Series * Kavraisky VII * Lambert Azimuthal Equal Area * Lambert Equal Area Conic * Lat/long (Geodetic) * Loximuthal * McBryde-Thomas Flat-Polar Sinusoidal * Mercator * Miller Cylindrical * Mollweide * Natural Earth * Natural Earth 2 * Nell-Hammer * Oblique Cylindrical Equal Area * Polyconic (American) * Putnins P1 * Robinson * Sinusoidal (Sanson-Flamsteed) * Transverse Cylindrical Equal Area * Times * van der Grinten III * Wagner I (Kavraisky VI) * Wagner II * Wagner III * Wagner IV * Wagner V * Wagner VI * Wagner VII * Winkel I * Winkel II * Winkel Tripel The full design is displayed on posters. The design is clipped on some products such as mugs, phone wallets or throw pillows so it fits them well, but doesn't show all 48 projections. The maps were created from the Land polygons with major islands shapefile from "Natural Earth":http://www.naturalearthdata.com/.]]></description>
+        <guid><![CDATA[https://exploring-data.com/print/world-projections-grid-graticule/]]></guid>
+        <pubDate>Mon, 24 Oct 2016 00:00:00 </pubDate>
+    </item>
+    
+    <item>
+        <title><![CDATA[New York Roads and Railways Map]]></title>
+        <link><![CDATA[https://exploring-data.com/print/new-york-roads-and-railways-poster/]]></link>
+        <description><![CDATA[This map is drawn from roads and railways of the New York metropolitan area as of October 10, 2016. The road and railway location data was extracted from "OpenStreetMap":http://www.openstreetmap.org/ and provided by "Mapzen":https://mapzen.com/.]]></description>
+        <guid><![CDATA[https://exploring-data.com/print/new-york-roads-and-railways-poster/]]></guid>
+        <pubDate>Mon, 10 Oct 2016 00:00:00 </pubDate>
+    </item>
+    
+    <item>
+        <title><![CDATA[World map in brown on a scratched green/brownish background]]></title>
+        <link><![CDATA[https://exploring-data.com/print/world-map-brown-scratched-green-brown-bg/]]></link>
+        <description><![CDATA[This design is available exclusively on phone cases. It consists of a world map in the Robinson projection printed in a semi-transparent brown on a scratched green/brownish background.]]></description>
+        <guid><![CDATA[https://exploring-data.com/print/world-map-brown-scratched-green-brown-bg/]]></guid>
+        <pubDate>Tue, 22 Dec 2015 00:00:00 </pubDate>
+    </item>
+    
+    <item>
+        <title><![CDATA[Orange/Red World Map on Blue/Black Backround in Waterman Projection]]></title>
+        <link><![CDATA[https://exploring-data.com/print/orange-red-world-waterman-projection/]]></link>
+        <description><![CDATA[A map of the world with the countries colored in different orange/red hues, the see in blue on a black canvas. The map is rendered in the Waterman "Butterfly" projection and was created with D3js and Inkscape.]]></description>
+        <guid><![CDATA[https://exploring-data.com/print/orange-red-world-waterman-projection/]]></guid>
+        <pubDate>Wed, 09 Dec 2015 00:00:00 </pubDate>
+    </item>
+    
+    <item>
+        <title><![CDATA[US Constitution Word Cloud Map on White Background]]></title>
+        <link><![CDATA[https://exploring-data.com/print/us-constitution-word-cloud-map/]]></link>
+        <description><![CDATA[This map of the United States is filled with a word cloud created from the words of 'The Constitution of the United States'. Words that appear more frequently in the constitution are printed bigger than less frequent words. The word cloud is based on the transcription available at http://www.archives.gov/exhibits/charters/constitution_transcript.html]]></description>
+        <guid><![CDATA[https://exploring-data.com/print/us-constitution-word-cloud-map/]]></guid>
+        <pubDate>Thu, 01 Oct 2015 00:00:00 </pubDate>
+    </item>
+    
+    <item>
+        <title><![CDATA[US Constitution Word Cloud Map on Black Background]]></title>
+        <link><![CDATA[https://exploring-data.com/print/us-constitution-word-cloud-map-black/]]></link>
+        <description><![CDATA[This map of the United States is filled with a word cloud created from the words of 'The Constitution of the United States'. Words that appear more frequently in the constitution are printed bigger than less frequent words. The word cloud is based on the transcription available at http://www.archives.gov/exhibits/charters/constitution_transcript.html]]></description>
+        <guid><![CDATA[https://exploring-data.com/print/us-constitution-word-cloud-map-black/]]></guid>
+        <pubDate>Thu, 01 Oct 2015 00:00:00 </pubDate>
+    </item>
+    
+</channel></rss>
