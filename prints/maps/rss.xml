@@ -3,7 +3,7 @@
 <channel><title>Prints » Maps</title>
     <link>https://exploring-data.com</link>
     <description>Prints » Maps</description>
-    <lastBuildDate>Sun, 06 Sep 2020 00:56:57 </lastBuildDate>
+    <lastBuildDate>Sat, 26 Sep 2020 00:12:20 </lastBuildDate>
     <generator>Logya</generator>
     <docs>http://blogs.law.harvard.edu/tech/rss</docs>
     
@@ -21,6 +21,14 @@
         <description><![CDATA[A map of the city of Berlin, Germany and surroundings showing railways and roads in light gray and water in blue on a dark background created with data from OpenStreetMap.]]></description>
         <guid><![CDATA[https://exploring-data.com/print/berlin-rails-roads-water/]]></guid>
         <pubDate>Sat, 04 May 2019 00:00:00 </pubDate>
+    </item>
+    
+    <item>
+        <title><![CDATA[World Map of Large Rivers, Lakes and Coast Lines - Dark Background]]></title>
+        <link><![CDATA[https://exploring-data.com/print/world-rivers-lakes-coasts/]]></link>
+        <description><![CDATA[This design shows a map of the world with large rivers, lakes and coast lines drawn in a blue color and a dark background using the robinson map projection.]]></description>
+        <guid><![CDATA[https://exploring-data.com/print/world-rivers-lakes-coasts/]]></guid>
+        <pubDate>Mon, 15 Apr 2019 00:00:00 </pubDate>
     </item>
     
     <item>
@@ -77,14 +85,6 @@
         <description><![CDATA[A map of the world with the countries colored in different orange/red hues, the see in blue on a black canvas. The map is rendered in the Waterman "Butterfly" projection and was created with D3js and Inkscape.]]></description>
         <guid><![CDATA[https://exploring-data.com/print/orange-red-world-waterman-projection/]]></guid>
         <pubDate>Wed, 09 Dec 2015 00:00:00 </pubDate>
-    </item>
-    
-    <item>
-        <title><![CDATA[US Constitution Word Cloud Map on White Background]]></title>
-        <link><![CDATA[https://exploring-data.com/print/us-constitution-word-cloud-map/]]></link>
-        <description><![CDATA[This map of the United States is filled with a word cloud created from the words of 'The Constitution of the United States'. Words that appear more frequently in the constitution are printed bigger than less frequent words. The word cloud is based on the transcription available at http://www.archives.gov/exhibits/charters/constitution_transcript.html]]></description>
-        <guid><![CDATA[https://exploring-data.com/print/us-constitution-word-cloud-map/]]></guid>
-        <pubDate>Thu, 01 Oct 2015 00:00:00 </pubDate>
     </item>
     
 </channel></rss>

@@ -3,7 +3,7 @@
 <channel><title>Print</title>
     <link>https://exploring-data.com</link>
     <description>Print</description>
-    <lastBuildDate>Sun, 06 Sep 2020 00:56:57 </lastBuildDate>
+    <lastBuildDate>Sat, 26 Sep 2020 00:12:20 </lastBuildDate>
     <generator>Logya</generator>
     <docs>http://blogs.law.harvard.edu/tech/rss</docs>
     
@@ -57,6 +57,14 @@
     
     <item>
         <title><![CDATA[World Map of Large Rivers, Lakes and Coast Lines - Dark Background]]></title>
+        <link><![CDATA[https://exploring-data.com/print/world-rivers-lakes-coasts/]]></link>
+        <description><![CDATA[This design shows a map of the world with large rivers, lakes and coast lines drawn in a blue color and a dark background using the robinson map projection.]]></description>
+        <guid><![CDATA[https://exploring-data.com/print/world-rivers-lakes-coasts/]]></guid>
+        <pubDate>Mon, 15 Apr 2019 00:00:00 </pubDate>
+    </item>
+    
+    <item>
+        <title><![CDATA[World Map of Large Rivers, Lakes and Coast Lines - Dark Background]]></title>
         <link><![CDATA[https://exploring-data.com/print/World-rivers-lakes-coasts/]]></link>
         <description><![CDATA[This design shows a map of the world with large rivers, lakes and coast lines drawn in a blue color and a dark background using the robinson map projection.]]></description>
         <guid><![CDATA[https://exploring-data.com/print/World-rivers-lakes-coasts/]]></guid>
@@ -77,14 +85,6 @@
         <description><![CDATA[A network graph showing 426 programming languages connected by 670 influence relations. Highly influential languages like Lisp, Smalltalk, C, Java, C++, Haskell and Python are shown as larger circles as compared to languages with less influence on others like PHP, Rust and Go. The influence relation data was retrieved from Wikidata in 2018. A great gift for programmers who are into digital art.]]></description>
         <guid><![CDATA[https://exploring-data.com/print/programming-languages-influence-network-2018-black/]]></guid>
         <pubDate>Wed, 13 Mar 2019 00:00:00 </pubDate>
-    </item>
-    
-    <item>
-        <title><![CDATA[Programming Languages Influence Network 2018 - Dark Background]]></title>
-        <link><![CDATA[https://exploring-data.com/print/programming-languages-influence-network-2018/]]></link>
-        <description><![CDATA[A network graph showing 426 programming languages connected by 670 influence relations. Highly influential languages like Lisp, Smalltalk, C, Java, C++, Haskell and Python are shown as larger circles as compared to languages with less influence on others like PHP, Rust and Go. The influence relation data was retrieved from Wikidata in 2018. A great gift for programmers who are into digital art.]]></description>
-        <guid><![CDATA[https://exploring-data.com/print/programming-languages-influence-network-2018/]]></guid>
-        <pubDate>Wed, 02 Jan 2019 00:00:00 </pubDate>
     </item>
     
 </channel></rss>
