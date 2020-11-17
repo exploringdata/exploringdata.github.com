@@ -1,55 +1,33 @@
-
 <!DOCTYPE html>
 <html xmlns:fb="http://ogp.me/ns/fb#" lang="en">
 <head>
     <meta charset="utf-8">
     <title>Graph of Big Sister Cities With +1 Million Inhabitants | Exploring Data</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
         <meta name="description" content="An interactive network graph showing 279 cities with more than 1 million inhabitants and how they are connected to their sister cities within this set.">
-    
-    
-        <meta property="og:image" content="
-https://exploring-data.com/img/large/big-sister-cities.png
-
+        <meta property="og:image" content="https://exploring-data.com/img/large/big-sister-cities.png
 ">
-    
-    
-
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:creator" content="@yaph">
 <meta name="twitter:site" content="@yaph">
 <meta name="twitter:title" content="Graph of Big Sister Cities With +1 Million Inhabitants">
 <meta name="twitter:description" content="An interactive network graph showing 279 cities with more than 1 million inhabitants and how they are connected to their sister cities within this set.">
-<meta name="twitter:image:src" content="
-https://exploring-data.com/img/large/big-sister-cities.png
-
+<meta name="twitter:image:src" content="https://exploring-data.com/img/large/big-sister-cities.png
 ">
-
     <meta name="author" content="Ramiro Gómez">
-    
-    <link rel="canonical" href="https://exploring-data.com/vis/big-sister-cities/">
+    <link rel="canonical" href="">
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">
     <link href="//stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link href="/css/style.css" rel="stylesheet">
     
-    
-        
-    
     <link href="/css/typeahead.css" rel="stylesheet">
     <link href="/css/sigmagraphdark.css" rel="stylesheet">
-
     <link rel="shortcut icon" href="/favicon.ico">
-    
-        
-            <link rel="alternate" type="application/rss+xml" title="Exploring Data main RSS feed" href="https://exploring-data.com/rss.xml">
-        
-    
+    <link rel="alternate" type="application/rss+xml" title="Exploring Data RSS feed" href="https://exploring-data.com/rss.xml">
 </head>
 
 <body class="full">
 
-    
 <nav id="navbar" class="navbar navbar-default" role="navigation">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
@@ -64,7 +42,6 @@ https://exploring-data.com/img/large/big-sister-cities.png
     </div>
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="main-navbar">
-        
 <ul class="nav navbar-nav">
   <li><form id="highlight-node" class="navbar-form navbar-left" role="search">
     <div class="form-group">
@@ -72,31 +49,17 @@ https://exploring-data.com/img/large/big-sister-cities.png
     </div>
 </form></li>
 </ul>
-
-        
         <div class="pull-right">
           <a href="/info/big-sister-cities/" class="btn navbar-btn btn-info">ℹ Info</a>
         </div>
-        
-        
-  
   <div class="pull-right">
       <a href="https://www.redbubble.com/people/ramiro/works/31442371" class="roffset btn navbar-btn btn-warning">🛒 <strong>Buy Print</strong></a>
   </div>
-  
-
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
 
-
-    
-    
 <div id="vis" class="sigma-parent"><div id="loading">Loading the data may take a while, please be patient...</div><div id="sig" class="sigma-expand"></div></div>
-
-    
-    
-    
     <div id="footer" class="container">
       <div class="row"><div class="col-md-12">
         <footer>
@@ -106,16 +69,12 @@ https://exploring-data.com/img/large/big-sister-cities.png
         </footer>
       </div></div>
     </div>
-    
-    
 <div id="nodeinfo" class="panel panel-info">
   <div class="panel-heading"><button type="button" class="close">&times;</button><h2></h2></div>
   <div class="panel-body"></div>
   <div class="panel-footer"><button type="button" class="btn btn-default">Close</button></div>
 </div>
-
-
-    <script>
+<script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -124,24 +83,16 @@ https://exploring-data.com/img/large/big-sister-cities.png
   ga('send', 'pageview');
 
 (function(c,a){function d(){var e=a.getElementsByTagName("a");var f=[];for(var g=0;g<e.length;++g){var h=e[g];if(h.host!=c.location.host){f.push(h)}}return f}function b(f){var e=f.srcElement||f.target;while(e&&(typeof e.tagName=="undefined"||e.tagName.toLowerCase()!="a"||!e.href)){e=e.parentNode}if(!e||!e.href){return}if(c.ga){ga("send","event","Outbound link","Click",e.href)}if(!e.target||e.target.match(/^_(self|parent|top)$/i)){setTimeout(function(){a.location.href=e.href},150);if(f.preventDefault){f.preventDefault()}else{f.returnValue=false}}}c.addEventListener("load",function(){var e=d();for(var f in e){e[f].addEventListener("click",b)}})}(window,document));
-</script>
-    <script src="//code.jquery.com/jquery-3.4.1.min.js"></script>
+</script>    <script src="//code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
-    
 <script src="/vendor/sigma/sigma.min.js"></script>
 <script src="/vendor/sigma/sigma.parseJson.js"></script>
 <script src="/vendor/twitter/typeahead.bundle.min.js"></script>
 <script src="/js/visgexf.js"></script>
 
-
     <script src="/js/script.js"></script>
-    
-      
           <script src="/js/big-sister-cities/script.js"></script>
-      
-    
 
-    
   </body>
 </html>

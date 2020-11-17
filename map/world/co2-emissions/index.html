@@ -1,57 +1,31 @@
-
 <!DOCTYPE html>
 <html xmlns:fb="http://ogp.me/ns/fb#" lang="en">
 <head>
     <meta charset="utf-8">
     <title>World Map of Countries by CO2 Emissions per Capita from 1960 to 2014 | Exploring Data</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
         <meta name="description" content="These choropleth maps show CO2 emissions in metric tons per capita from 1960 to 2014 based on data from the Carbon Dioxide Information Analysis Center and Oak Ridge National Laboratory.">
-    
-    
-        <meta property="og:image" content="
-
-    /img/preview/co2-emissions-2014.png
-
-">
-    
-    
-
+        <meta property="og:image" content="/img/preview/co2-emissions-2014.png">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:creator" content="@yaph">
 <meta name="twitter:site" content="@yaph">
 <meta name="twitter:title" content="World Map of Countries by CO2 Emissions per Capita from 1960 to 2014">
 <meta name="twitter:description" content="These choropleth maps show CO2 emissions in metric tons per capita from 1960 to 2014 based on data from the Carbon Dioxide Information Analysis Center and Oak Ridge National Laboratory.">
-<meta name="twitter:image:src" content="
-
-    /img/preview/co2-emissions-2014.png
-
-">
-
+<meta name="twitter:image:src" content="/img/preview/co2-emissions-2014.png">
     <meta name="author" content="Ramiro Gómez">
-    
-    <link rel="canonical" href="https://exploring-data.com/map/world/co2-emissions/">
+    <link rel="canonical" href="">
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">
     <link href="//stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link href="/css/style.css" rel="stylesheet">
-    
 
-        
-    
 <link href="/d3-geomap/d3-geomap.min.css" rel="stylesheet">
 <link href="/css/choropleth.css" rel="stylesheet">
-
     <link rel="shortcut icon" href="/favicon.ico">
-    
-        
-            <link rel="alternate" type="application/rss+xml" title="Exploring Data main RSS feed" href="https://exploring-data.com/rss.xml">
-        
-    
+    <link rel="alternate" type="application/rss+xml" title="Exploring Data RSS feed" href="https://exploring-data.com/rss.xml">
 </head>
 
 <body class="full">
 
-    
 <nav id="navbar" class="navbar navbar-default" role="navigation">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
@@ -66,7 +40,6 @@
     </div>
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="main-navbar">
-        
 <ul class="nav navbar-nav">
   <li class="dropdown">
     <a class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-table"></i> Choose Column <b class="caret"></b></a>
@@ -74,25 +47,14 @@
   </li>
   <li><a id="animate"><i class="fa fa-play"></i> Play Animation</a></li>
 </ul>
-
-        
         <div class="pull-right">
           <a href="/info/co2-emissions/" class="btn navbar-btn btn-info">ℹ Info</a>
         </div>
-        
-        
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
 
-
-    
-    
 <div class="d3-geomap" id="map"></div>
-
-    
-    
-    
     <div id="footer" class="container">
       <div class="row"><div class="col-md-12">
         <footer>
@@ -102,10 +64,8 @@
         </footer>
       </div></div>
     </div>
-    
-    
 
-    <script>
+<script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -114,24 +74,16 @@
   ga('send', 'pageview');
 
 (function(c,a){function d(){var e=a.getElementsByTagName("a");var f=[];for(var g=0;g<e.length;++g){var h=e[g];if(h.host!=c.location.host){f.push(h)}}return f}function b(f){var e=f.srcElement||f.target;while(e&&(typeof e.tagName=="undefined"||e.tagName.toLowerCase()!="a"||!e.href)){e=e.parentNode}if(!e||!e.href){return}if(c.ga){ga("send","event","Outbound link","Click",e.href)}if(!e.target||e.target.match(/^_(self|parent|top)$/i)){setTimeout(function(){a.location.href=e.href},150);if(f.preventDefault){f.preventDefault()}else{f.returnValue=false}}}c.addEventListener("load",function(){var e=d();for(var f in e){e[f].addEventListener("click",b)}})}(window,document));
-</script>
-    <script src="//code.jquery.com/jquery-3.4.1.min.js"></script>
+</script>    <script src="//code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
-    
 <script src="//unpkg.com/d3@5.9.2/dist/d3.min.js"></script>
 <script src="//unpkg.com/topojson@3.0.2/dist/topojson.min.js"></script>
 <script src="/d3-geomap/d3-geomap.min.js"></script>
 <script src="/compiled/map/choropleth.js"></script>
 
-
     <script src="/js/script.js"></script>
-    
-      
           <script src="/compiled/map/co2-emissions.js"></script>
-      
-    
 
-    
   </body>
 </html>
