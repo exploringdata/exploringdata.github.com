@@ -12,7 +12,7 @@ var histselector = '#history',
         'order-by':'relevance',
         'format':'json',
         'show-fields': 'headline,thumbnail',
-        'api-key': 'makz4y2wt4gw6td522wknwky'
+        'api-key': 'ead2a827-732b-4c59-82fd-b202d6f81f86'
     },
     currSeries = null,
     scrollOffset = selectiondetails.offsetTop - ($('#navbar').height + 10);
