@@ -2,8 +2,9 @@
 <html xmlns:fb="http://ogp.me/ns/fb#" lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Guardian | Exploring Data</title>
+    <title>Earth Volcanoes | Exploring Data</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="An">
     <meta name="author" content="Ramiro Gómez">
     <link rel="canonical" href="">
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">
@@ -29,37 +30,36 @@
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="main-navbar">
-<ul class="nav navbar-nav">
-    <li><a href="/data-visualization-books/">📕 Data Books</a></li>
-    <li><a href="/prints/">🛒 Prints</a></li>
-    <li><a href="/datasearch/">🔍 Search for Data</a></li>
-    <li><a href="/sitemap/">📄 Sitemap</a></li>
-</ul><div id="sharemenu" class="nav pull-right">
+<div id="sharemenu" class="nav pull-right">
     <div class="btn-group">
         <a href="#" class="btn navbar-btn btn-success dropdown-toggle" data-toggle="dropdown">+</a>
         <ul class="share dropdown-menu pull-right">
             <li><a href="/rss.xml"><span class="icon"><i class="fa fa-rss"></i> RSS Feed</a></li>
-            <li><a rel="nofollow" href="https://reddit.com/submit?url=&title=Guardian"><span class="icon"><i class="fa fa-reddit-alien"></i></span> Reddit</a></li>
-            <li><a rel="nofollow" href="https://news.ycombinator.com/submitlink?u=&t=Guardian"><span class="icon"><i class="fa fa-hacker-news"></i></span> Hacker News</a></li>
-            <li><a rel="nofollow" href="https://twitter.com/share?url=&text=Guardian"><span class="icon"><i class="fa fa-twitter"></i></span> Twitter</a></li>
-            <li><a rel="nofollow" href="https://www.facebook.com/sharer.php?u=&t=Guardian"><span class="icon"><i class="fa fa-facebook"></i></span> Facebook</a></li>
-            <li><a rel="nofollow" href="https://www.stumbleupon.com/submit?url=&title=Guardian"><span class="icon"><i class="fa fa-stumbleupon"></i></span> StumbleUpon</a></li>
-            <li><a rel="nofollow" href="https://www.linkedin.com/shareArticle?mini=true&url=&title=Guardian"><span class="icon"><i class="fa fa-linkedin"></i></span> LinkedIn</a></li>
+            <li><a rel="nofollow" href="https://reddit.com/submit?url=&title=Earth%20Volcanoes"><span class="icon"><i class="fa fa-reddit-alien"></i></span> Reddit</a></li>
+            <li><a rel="nofollow" href="https://news.ycombinator.com/submitlink?u=&t=Earth%20Volcanoes"><span class="icon"><i class="fa fa-hacker-news"></i></span> Hacker News</a></li>
+            <li><a rel="nofollow" href="https://twitter.com/share?url=&text=Earth%20Volcanoes"><span class="icon"><i class="fa fa-twitter"></i></span> Twitter</a></li>
+            <li><a rel="nofollow" href="https://www.facebook.com/sharer.php?u=&t=Earth%20Volcanoes"><span class="icon"><i class="fa fa-facebook"></i></span> Facebook</a></li>
+            <li><a rel="nofollow" href="https://www.stumbleupon.com/submit?url=&title=Earth%20Volcanoes"><span class="icon"><i class="fa fa-stumbleupon"></i></span> StumbleUpon</a></li>
+            <li><a rel="nofollow" href="https://www.linkedin.com/shareArticle?mini=true&url=&title=Earth%20Volcanoes"><span class="icon"><i class="fa fa-linkedin"></i></span> LinkedIn</a></li>
         </ul>
     </div>
 </div>        </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
     </nav>
 
-<div id="info" class="container"><div class="row">
-    <div class="col-md-9">
-        <h1 class="index_title">Guardian</h1>
-        <ul class="list-unstyled index_list flatlist">
-          <li class="index_item"><h2><a href="/story/rail-suicides-europe/">Rail Suicides in Europe: Absolute vs. Relative</a></h2><p>A look at rail suicides data for Europe from 2008 to 2011 highlighting the importance of relating numbers.</p></li>
-          <li class="index_item"><h2><a href="/vis/climate-changes-decade/">A Decade of Climate Change in the Guardian</a></h2><p>Explore a decade of climate change, global warming, natural disaster, extreme weather, pollution and deforestation in the articles published by the Guardian.</p></li>
-        </ul>
-    </div>
-    <div class="col-md-3">
+<div class="container-fluid" id="vis"></div>
+<div id="info" class="container">
+<div class="row">
+  <div class="col-md-9"><h1>Earth Volcanoes</h1>
+  <p>Source:</p>
+<ul>
+<li>https://volcano.oregonstate.edu/volcano_table</li>
+<li>https://www.ngdc.noaa.gov/hazel/view/hazards/volcano/loc-data</li>
+<li>https://visibleearth.nasa.gov/images/73909/december-blue-marble-next-generation-w-topography-and-bathymetry</li>
+<li>https://unpkg.com/three-globe@2.21.4/example/img/night-sky.png</li>
+</ul>
+  </div>
+  <div class="col-md-3">
 
 <h3>Keep Exploring</h3>
 <a href="/rss.xml" class="btn btn-lg btn-warning">Subscribe to News feed</a>
@@ -71,9 +71,9 @@
 <li><a href="/vis/big-sister-cities/">Graph of Big Sister Cities With +1 Million Inhabitants</a></li>
 <li><a href="/vis/spaghetti-western-actors-dbpedia/">Spaghetti Western Actors Network Graph DBpedia</a></li>
 <li><a href="/vis/programming-languages-influence-network-2014/">Programming Languages Influence Network 2014</a></li>
-</ul>    </div>
-</div></div>
-    <div id="footer" class="container">
+</ul>  </div>
+</div>
+</div>    <div id="footer" class="container">
       <div class="row"><div class="col-md-12">
         <footer>
             <hr>
@@ -97,6 +97,9 @@
 
 
     <script src="/js/script.js"></script>
+          <script src="https://unpkg.com/d3@7.3.0/dist/d3.min.js"></script>
+          <script src="https://unpkg.com/globe.gl@2.24.2/dist/globe.gl.min.js"></script>
+          <script src="/compiled/earth-volcanoes.js"></script>
 
   </body>
 </html>
