@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel><title>Exploring Data RSS Feed</title>
+    <link></link>
+    <description></description>
+    <lastBuildDate>Mon, 24 Apr 2023 00:48:27 </lastBuildDate>
+    <generator>Logya</generator>
+    <docs>http://blogs.law.harvard.edu/tech/rss</docs>
+    <item>
+        <title><![CDATA[Programming Languages Influence Network 2022 - Dark Background]]></title>
+        <link><![CDATA[https://exploring-data.com/print/programming-languages-influence-network-2022-white/]]></link>
+        <description><![CDATA[A network graph showing 497 programming languages connected by 953 influence relations. Highly influential languages like Lisp, Smalltalk, C, Java, C++, Haskell and Python are shown as larger circles as compared to languages with less influence on others l]]></description>
+        <guid><![CDATA[https://exploring-data.com/print/programming-languages-influence-network-2022-white/]]></guid>
+        <pubDate>Sat, 31 Dec 2022 00:00:00 </pubDate>
+    </item>
+    <item>
+        <title><![CDATA[Programming Languages Influence Network 2022 - Light Background]]></title>
+        <link><![CDATA[https://exploring-data.com/print/programming-languages-influence-network-2022-black/]]></link>
+        <description><![CDATA[A network graph showing 497 programming languages connected by 953 influence relations. Highly influential languages like Lisp, Smalltalk, C, Java, C++, Haskell and Python are shown as larger circles as compared to languages with less influence on others l]]></description>
+        <guid><![CDATA[https://exploring-data.com/print/programming-languages-influence-network-2022-black/]]></guid>
+        <pubDate>Sat, 31 Dec 2022 00:00:00 </pubDate>
+    </item>
+    <item>
+        <title><![CDATA[Java Programming Language Influence Network Graph]]></title>
+        <link><![CDATA[https://exploring-data.com/print/java-influence-network/]]></link>
+        <description><![CDATA[Java is a high-level, class-based, object-oriented programming language. This network graph shows languages connected with Java through influence relations, i.e. languages that were influenced by or influenced Java. More influential languages are shown]]></description>
+        <guid><![CDATA[https://exploring-data.com/print/java-influence-network/]]></guid>
+        <pubDate>Mon, 12 Dec 2022 00:00:00 </pubDate>
+    </item>
+    <item>
+        <title><![CDATA[Lisp Programming Language Influence Network Graph]]></title>
+        <link><![CDATA[https://exploring-data.com/print/lisp-influence-network/]]></link>
+        <description><![CDATA[Lisp, originally specified in 1958, is the 2nd oldest high-level programming language still in common use. This network graph shows languages connected with Lisp through influence relations, i.e. languages that were influenced by or influenced Lisp. Mor]]></description>
+        <guid><![CDATA[https://exploring-data.com/print/lisp-influence-network/]]></guid>
+        <pubDate>Fri, 09 Dec 2022 00:00:00 </pubDate>
+    </item>
+    <item>
+        <title><![CDATA[Python Programming Language Influence Network Graph]]></title>
+        <link><![CDATA[https://exploring-data.com/print/python-influence-network/]]></link>
+        <description><![CDATA[Python is a high-level programming language with a design philosophy that emphasizes code readability. This network graph shows languages connected with Python through influence relations, i.e. languages that were influenced by or influenced Python. Mor]]></description>
+        <guid><![CDATA[https://exploring-data.com/print/python-influence-network/]]></guid>
+        <pubDate>Thu, 08 Dec 2022 00:00:00 </pubDate>
+    </item>
+    <item>
+        <title><![CDATA[JavaScript Programming Language Influence Network Graph]]></title>
+        <link><![CDATA[https://exploring-data.com/print/javascript-influence-network/]]></link>
+        <description><![CDATA[JavaScript (JS) is the programming language of the World Wide Web. This network graph shows languages connected by influence relations, i.e. languages that were influenced by JavaScript or influenced JavaScript and JavaScript itself. More influential la]]></description>
+        <guid><![CDATA[https://exploring-data.com/print/javascript-influence-network/]]></guid>
+        <pubDate>Mon, 07 Nov 2022 00:00:00 </pubDate>
+    </item>
+    <item>
+        <title><![CDATA[Ada Programming Language Influence Network Graph]]></title>
+        <link><![CDATA[https://exploring-data.com/print/ada-influence-network/]]></link>
+        <description><![CDATA[Ada, named after Ada Lovelace, is a statically typed, imperative, and object-oriented programming language. This network graph shows 26 languages connected by influence relations, i.e. languages that were influenced by Ada or influenced Ada and Ada itself.]]></description>
+        <guid><![CDATA[https://exploring-data.com/print/ada-influence-network/]]></guid>
+        <pubDate>Tue, 11 Oct 2022 00:00:00 </pubDate>
+    </item>
+    <item>
+        <title><![CDATA[Earth Volcanoes]]></title>
+        <link><![CDATA[https://exploring-data.com/vis/3d-globe/]]></link>
+        <description><![CDATA[An]]></description>
+        <guid><![CDATA[https://exploring-data.com/vis/3d-globe/]]></guid>
+        <pubDate>Tue, 08 Feb 2022 22:54:07 </pubDate>
+    </item>
+    <item>
+        <title><![CDATA[Programming Languages Influence Network 2021 - Light Background Poster by ramiro]]></title>
+        <link><![CDATA[https://exploring-data.com/print/programming-languages-influence-network-2021-black/]]></link>
+        <description><![CDATA[A network graph showing 500 programming languages connected by 953 influence relations. Highly influential languages like Lisp, Smalltalk, C, Java, C++, Haskell and Python are shown as larger circles as compared to languages with less influence on others l]]></description>
+        <guid><![CDATA[https://exploring-data.com/print/programming-languages-influence-network-2021-black/]]></guid>
+        <pubDate>Thu, 30 Dec 2021 00:00:00 </pubDate>
+    </item>
+    <item>
+        <title><![CDATA[Programming Languages Influence Network 2021 - Dark Background Tapestry by ramiro]]></title>
+        <link><![CDATA[https://exploring-data.com/print/programming-languages-influence-network-2021-white/]]></link>
+        <description><![CDATA[A network graph showing 500 programming languages connected by 953 influence relations. Highly influential languages like Lisp, Smalltalk, C, Java, C++, Haskell and Python are shown as larger circles as compared to languages with less influence on others l]]></description>
+        <guid><![CDATA[https://exploring-data.com/print/programming-languages-influence-network-2021-white/]]></guid>
+        <pubDate>Thu, 30 Dec 2021 00:00:00 </pubDate>
+    </item>
+</channel></rss>
