@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0">
 <channel><title>Exploring Data RSS Feed</title>
-    <link></link>
+    <link>https://exploring-data.com/rss.xml</link>
     <description></description>
     <lastBuildDate>Mon, 24 Apr 2023 00:48:27 </lastBuildDate>
     <generator>Logya</generator>
