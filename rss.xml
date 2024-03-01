@@ -7,6 +7,15 @@
     <generator>Logya</generator>
     <docs>http://blogs.law.harvard.edu/tech/rss</docs>
     <item>
+        <title><![CDATA[Orange Brown Watercolor World Map Azimuthal Equal-Area Projection]]></title>
+        <link><![CDATA[https://exploring-data.com/print/orange-brown-watercolor-world-map-azimuthal-equal-area/]]></link>
+        <description><![CDATA[A map of the world in the Lambert azimuthal equal-area projection. The landmass has a warm and earthy orange brown color with a touch of rustic charm. Graticule and sphere are shown in a subtle almost white tone.
+
+A great gift for geography nerds, teache]]></description>
+        <guid><![CDATA[https://exploring-data.com/print/orange-brown-watercolor-world-map-azimuthal-equal-area/]]></guid>
+        <pubDate>Fri, 01 Mar 2024 00:00:00 </pubDate>
+    </item>
+    <item>
         <title><![CDATA[Programming Languages Influence Network 2022 - Dark Background]]></title>
         <link><![CDATA[https://exploring-data.com/print/programming-languages-influence-network-2022-white/]]></link>
         <description><![CDATA[A network graph showing 497 programming languages connected by 953 influence relations. Highly influential languages like Lisp, Smalltalk, C, Java, C++, Haskell and Python are shown as larger circles as compared to languages with less influence on others l]]></description>
@@ -67,13 +76,6 @@
         <link><![CDATA[https://exploring-data.com/print/programming-languages-influence-network-2021-black/]]></link>
         <description><![CDATA[A network graph showing 500 programming languages connected by 953 influence relations. Highly influential languages like Lisp, Smalltalk, C, Java, C++, Haskell and Python are shown as larger circles as compared to languages with less influence on others l]]></description>
         <guid><![CDATA[https://exploring-data.com/print/programming-languages-influence-network-2021-black/]]></guid>
-        <pubDate>Thu, 30 Dec 2021 00:00:00 </pubDate>
-    </item>
-    <item>
-        <title><![CDATA[Programming Languages Influence Network 2021 - Dark Background Tapestry by ramiro]]></title>
-        <link><![CDATA[https://exploring-data.com/print/programming-languages-influence-network-2021-white/]]></link>
-        <description><![CDATA[A network graph showing 500 programming languages connected by 953 influence relations. Highly influential languages like Lisp, Smalltalk, C, Java, C++, Haskell and Python are shown as larger circles as compared to languages with less influence on others l]]></description>
-        <guid><![CDATA[https://exploring-data.com/print/programming-languages-influence-network-2021-white/]]></guid>
         <pubDate>Thu, 30 Dec 2021 00:00:00 </pubDate>
     </item>
 </channel></rss>
