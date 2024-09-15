@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xmlns:fb="http://ogp.me/ns/fb#" lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Volcanoes of Planet Earth | Exploring Data</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="A 3D globe showing a selection of volcanoes on planet earth.">
+    <meta name="author" content="Ramiro Gómez">
+    <link rel="canonical" href="https://exploring-data.com/vis/volcanoes-globe/">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="//stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="/css/style.css" rel="stylesheet">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="alternate" type="application/rss+xml" title="Exploring Data RSS feed" href="https://exploring-data.com/rss.xml">
+</head>
+
+<body class="">
+
+
+<div><div id="vis"></div>
+<div id="controls" class="fixed-top">
+<button id="play-pause" type="button" class="btn btn-lg" title="Play or Pause Animation">⏯</button>
+</div>
+
+<div class="position-absolute top-0 end-0"><div id="info" class="bg-light m-3 opacity-75 p-2"></div></div></div>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-448ZHXENT0"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-448ZHXENT0');
+</script>    <script src="//code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+    <script src="/js/script.js"></script>
+          <script src="https://unpkg.com/d3@7"></script>
+          <script src="https://unpkg.com/globe.gl@2"></script>
+          <script src="/compiled/volcanoes-globe.js"></script>
+
+  </body>
+</html>

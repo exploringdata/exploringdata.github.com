@@ -7,6 +7,13 @@
     <generator>Logya</generator>
     <docs>http://blogs.law.harvard.edu/tech/rss</docs>
     <item>
+        <title><![CDATA[Volcanoes of Planet Earth]]></title>
+        <link><![CDATA[https://exploring-data.com/vis/volcanoes-globe/]]></link>
+        <description><![CDATA[A 3D globe showing a selection of volcanoes on planet earth.]]></description>
+        <guid><![CDATA[https://exploring-data.com/vis/volcanoes-globe/]]></guid>
+        <pubDate>Mon, 16 Sep 2024 01:18:15 </pubDate>
+    </item>
+    <item>
         <title><![CDATA[Orange Brown Watercolor World Map Azimuthal Equal-Area Projection]]></title>
         <link><![CDATA[https://exploring-data.com/print/orange-brown-watercolor-world-map-azimuthal-equal-area/]]></link>
         <description><![CDATA[A map of the world in the Lambert azimuthal equal-area projection. The landmass has a warm and earthy orange brown color with a touch of rustic charm. Graticule and sphere are shown in a subtle almost white tone.
@@ -63,13 +70,6 @@ A great gift for geography nerds, teache]]></description>
         <description><![CDATA[Ada, named after Ada Lovelace, is a statically typed, imperative, and object-oriented programming language. This network graph shows 26 languages connected by influence relations, i.e. languages that were influenced by Ada or influenced Ada and Ada itself.]]></description>
         <guid><![CDATA[https://exploring-data.com/print/ada-influence-network/]]></guid>
         <pubDate>Tue, 11 Oct 2022 00:00:00 </pubDate>
-    </item>
-    <item>
-        <title><![CDATA[Earth Volcanoes]]></title>
-        <link><![CDATA[https://exploring-data.com/vis/3d-globe/]]></link>
-        <description><![CDATA[An]]></description>
-        <guid><![CDATA[https://exploring-data.com/vis/3d-globe/]]></guid>
-        <pubDate>Tue, 08 Feb 2022 22:54:07 </pubDate>
     </item>
     <item>
         <title><![CDATA[Programming Languages Influence Network 2021 - Light Background Poster by ramiro]]></title>

@@ -7,8 +7,8 @@
         <meta name="description" content="An">
     <meta name="author" content="Ramiro Gómez">
     <link rel="canonical" href="https://exploring-data.com/vis/3d-globe/">
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">
-    <link href="//stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css" integrity="sha384-NvKbDTEnL+A8F/AA5Tc5kmMLSJHUO868P+lDtTpJIeQdGYaUIuLr4lVGOEA1OcMy" crossorigin="anonymous">
     <link href="/css/style.css" rel="stylesheet">
     <link rel="shortcut icon" href="/favicon.ico">
     <link rel="alternate" type="application/rss+xml" title="Exploring Data RSS feed" href="https://exploring-data.com/rss.xml">
@@ -19,21 +19,48 @@
 
 <div><div id="vis">></div>
 
-<hr />
-<p>Source:</p>
-<ul>
-<li>https://visibleearth.nasa.gov/images/73909/december-blue-marble-next-generation-w-topography-and-bathymetry</li>
-<li>https://unpkg.com/three-globe@2.21.4/example/img/night-sky.png</li>
-</ul></div>
-    <div id="footer" class="container">
-      <div class="row"><div class="col-md-12">
-        <footer>
-            <hr>
-            <p>Exploring Data is a showcase of interactive data visualizations created with open data and open source tools, <a href="/about/">learn more</a>.<br>
-            © <script>document.write(new Date().getFullYear())</script> <a href="https://ramiro.org/">Ramiro Gómez</a>.</p>
-        </footer>
-      </div></div>
+<script>
+
+const getAlt = d => d['Elevation (m)'] * 5e-5;
+
+const getTooltip = d => `
+    <div style="text-align: center">
+    <div><b>${d['Volcano Name']}</b>, ${d.Country}</div>
+    <div>(${d.Type})</div>
+    <div>Elevation: <em>${d['Elevation (m)']}</em>m</div>
     </div>
+`;
+
+window.onload = function() {
+    const catColor = d3.scaleOrdinal(d3.schemeCategory10);
+
+    const world = Globe()
+        .globeImageUrl('//unpkg.com/three-globe/example/img/earth-topology.png')
+        .backgroundImageUrl('//unpkg.com/three-globe/example/img/night-sky.png')
+        .hexBinPointWeight('Elevation (m)')
+        .pointLat('Latitude (dd)')
+        .pointLng('Longitude (dd)')
+        .pointAltitude(getAlt)
+        .pointColor(d => catColor(d['Type']))
+        .pointRadius(0.12)
+        .pointLabel(getTooltip)
+        .labelColor(d => catColor(d['Type']))
+        .labelLat('Latitude (dd)')
+        .labelLng('Longitude (dd)')
+        .labelAltitude(d => getAlt(d) + 1e-6)
+        .labelDotRadius(0.12)
+        .labelDotOrientation(() => 'bottom')
+        .labelText('Volcano Name')
+        .labelSize(0.15)
+        .labelResolution(1)
+        .labelLabel(getTooltip)
+        (document.getElementById('vis'));
+
+    fetch('/csv/volcanoes.csv').then(res => res.text())
+        .then(csv => d3.csvParse(csv))
+        .then(data => world.pointsData(data).labelsData(data));
+}
+</script></div>
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-448ZHXENT0"></script>
 <script>
@@ -41,14 +68,13 @@ window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 gtag('config', 'G-448ZHXENT0');
-</script>    <script src="//code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</script>    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
 
 
     <script src="/js/script.js"></script>
-          <script src="https://unpkg.com/d3@7.5.0/dist/d3.min.js"></script>
-          <script src="https://unpkg.com/globe.gl@2.26.2/dist/globe.gl.min.js"></script>
-          <script src="/compiled/around-the-world-in-eighty-days.js"></script>
+          <script src="https://unpkg.com/d3@7"></script>
+          <script src="https://unpkg.com/globe.gl@2"></script>
 
   </body>
 </html>
