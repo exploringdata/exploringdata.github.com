@@ -267,10 +267,6 @@ var visgexf = {
     }).draw(2,2,2);
   },
 
-  resetSearch: function() {
-    document.location.href = document.location.pathname;
-  },
-
   resetFilter: function() {
     visgexf.activeFilterId = null;
     visgexf.activeFilterVal = null;
@@ -278,14 +274,15 @@ var visgexf = {
     visgexf.resetNodes();
   },
 
-  // FIXME avoid code duplication
-  reset: function() {
-    visgexf.activeFilterId = null;
-    visgexf.activeFilterVal = null;
+  resetAll: function() {
+    visgexf.resetFilter();
     visgexf.searchInput.val('');
-    $('.graphfilter li').removeClass('active');
-    visgexf.resetNodes();
     dialog.hide();
+    document.location.hash = '';
+  },
+
+  resetSearch: function() {
+    visgexf.resetAll();
   }
 };
 
