@@ -1,15 +1,12 @@
 var mapselect = '#map',
   width = containerwidth(mapselect);
 
-// map shouldn exceed certain width so it works on different screen sizes
-if (width > 600) width = 600;
-
 var height = width / 1.6,
   legendh = 30,
   arc = d3.geo.greatArc().precision(1),
   format = d3.format(',r'),
   formatpercentage = d3.format(".1%"),
-  projection = d3.geo.naturalEarth().scale(width*1.3).translate([0, -width/4]),
+  projection = d3.geo.naturalEarth().scale(width*1.8).translate([0, -width/4]),
   path = d3.geo.path().projection(projection);
 
 var tf = function() {
@@ -80,7 +77,7 @@ var drawlinks = function(links, maxamount) {
 
 var drawlegend = function() {
   var linew = 25,
-    lineoff = 85,
+    lineoff = 110,
     yoff = -4;
 
   // add a rect to cover lines at the bottom of the map to not disturb legend
@@ -123,11 +120,11 @@ var drawlegend = function() {
 // render bar chart
 var bar = function(selector, data) {
   var maxval = d3.max(data, function(d) { return d.val });
-  var loff = 110,
+  var loff = 140,
     barw = containerwidth(selector) - loff,
     y = 17,
     barh = y * data.length,
-    xoff = 10,
+    xoff = 14,
     yoff = 16,
     wscale = d3.scale.linear().domain([0, maxval]).range(['0px', barw + 'px']),
     hscale = d3.scale.ordinal().domain(data).rangeBands([0, barh]);

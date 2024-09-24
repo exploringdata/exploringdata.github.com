@@ -14,60 +14,39 @@
 <meta name="twitter:image:src" content="/img/preview/climate-changes-decade.jpg">
     <meta name="author" content="Ramiro Gómez">
     <link rel="canonical" href="https://exploring-data.com/vis/climate-changes-decade/">
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">
-    <link href="//stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/solid.min.css" integrity="sha512-/r+0SvLvMMSIf41xiuy19aNkXxI+3zb/BN8K9lnDDWI09VM0dwgTMzK7Qi5vv5macJ3VH4XZXr60ip7v13QnmQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="/css/style.css" rel="stylesheet">
-            <link href="/vendor/nvd3/nv.d3.css" rel="stylesheet">
-            <link href="/css/climate-changes-decade.css" rel="stylesheet">
+            <link rel="stylesheet" href="/vendor/nvd3/nv.d3.css">
+            <link rel="stylesheet" href="/css/climate-changes-decade.css">
     <link rel="shortcut icon" href="/favicon.ico">
     <link rel="alternate" type="application/rss+xml" title="Exploring Data RSS feed" href="https://exploring-data.com/rss.xml">
 </head>
 
 <body class="">
 
-    <nav id="navbar" class="navbar navbar-default" role="navigation">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a id="site-name" class="navbar-brand" href="/">Exploring Data</a>
-        </div>
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="main-navbar">
-<ul class="nav navbar-nav">
-    <li><a href="/data-visualization-books/">📕 Data Books</a></li>
-    <li><a href="/prints/">🛒 Prints</a></li>
-    <li><a href="/datasearch/">🔍 Search for Data</a></li>
-    <li><a href="/sitemap/">📄 Sitemap</a></li>
-</ul><div id="sharemenu" class="nav pull-right">
-    <div class="btn-group">
-        <a href="#" class="btn navbar-btn btn-success dropdown-toggle" data-toggle="dropdown">+</a>
-        <ul class="share dropdown-menu pull-right">
-            <li><a href="/rss.xml"><span class="icon"><i class="fa fa-rss"></i> RSS Feed</a></li>
-            <li><a rel="nofollow" href="https://reddit.com/submit?url=https://exploring-data.com/vis/climate-changes-decade/&title=A%20Decade%20of%20Climate%20Change%20in%20the%20Guardian"><span class="icon"><i class="fa fa-reddit-alien"></i></span> Reddit</a></li>
-            <li><a rel="nofollow" href="https://news.ycombinator.com/submitlink?u=https://exploring-data.com/vis/climate-changes-decade/&t=A%20Decade%20of%20Climate%20Change%20in%20the%20Guardian"><span class="icon"><i class="fa fa-hacker-news"></i></span> Hacker News</a></li>
-            <li><a rel="nofollow" href="https://twitter.com/share?url=https://exploring-data.com/vis/climate-changes-decade/&text=A%20Decade%20of%20Climate%20Change%20in%20the%20Guardian"><span class="icon"><i class="fa fa-twitter"></i></span> Twitter</a></li>
-            <li><a rel="nofollow" href="https://www.facebook.com/sharer.php?u=https://exploring-data.com/vis/climate-changes-decade/&t=A%20Decade%20of%20Climate%20Change%20in%20the%20Guardian"><span class="icon"><i class="fa fa-facebook"></i></span> Facebook</a></li>
-            <li><a rel="nofollow" href="https://www.stumbleupon.com/submit?url=https://exploring-data.com/vis/climate-changes-decade/&title=A%20Decade%20of%20Climate%20Change%20in%20the%20Guardian"><span class="icon"><i class="fa fa-stumbleupon"></i></span> StumbleUpon</a></li>
-            <li><a rel="nofollow" href="https://www.linkedin.com/shareArticle?mini=true&url=https://exploring-data.com/vis/climate-changes-decade/&title=A%20Decade%20of%20Climate%20Change%20in%20the%20Guardian"><span class="icon"><i class="fa fa-linkedin"></i></span> LinkedIn</a></li>
-        </ul>
-    </div>
-</div>        </div><!-- /.navbar-collapse -->
-      </div><!-- /.container-fluid -->
+        <a class="navbar-brand" href="/">
+          <img src="/img/exploring-data.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+          Exploring Data
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-content">
+<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+    <li class="nav-item"><a class="nav-link" href="/data-visualization-books/">📕 Data Books</a></li>
+    <li class="nav-item"><a class="nav-link" href="/prints/">🛒 Prints</a></li>
+    <li class="nav-item"><a class="nav-link" href="/datasearch/">🔍 Search for Data</a></li>
+    <li class="nav-item"><a class="nav-link" href="/sitemap/">📄 Sitemap</a></li>
+</ul>        </div>
+      </div>
     </nav>
 
 <div id="vis" class="container-fluid">
-    <div class="row">
-      <div class="col-md-12">
-        <h2>Guardian Article Counts for the Past Decade <i class="fa fa-info" title="Bars show the counts of articles that contain the corresponding word or phrase in the full article text for the given month. Click on a bar to see details for the corresponding search phrase and date."></i></h2>
-        <div id="history"></div>
-      </div>
-    </div>
+    <h2>Guardian Article Counts for the Past Decade <i class="position-absolute end-0 fa fa-info" title="Bars show the counts of articles that contain the corresponding word or phrase in the full article text for the given month. Click on a bar to see details for the corresponding search phrase and date."></i></h2>
+    <div id="history"></div>
 
     <div id="selectiondetails"></div>
 
@@ -79,12 +58,10 @@
       <div class="col-md-6">
         <h2>Most Frequent Words in Headlines</h2>
         <div id="words"></div>
-        <h2>Most Frequent Article Sections</h2>
-        <div id="sections"></div>
       </div>
       <div class="col-md-6">
-        <h2>Browse Articles</h2>
-        <div id="articles"></div>
+        <h2>Most Frequent Article Sections</h2>
+        <div id="sections"></div>
       </div>
     </div>
     <hr>
@@ -92,24 +69,27 @@
 <div id="info" class="container">
 <div class="row">
   <div class="col-md-9"><h1>A Decade of Climate Change in the Guardian</h1>
-  <blockquote><p>The scientific opinion on climate change is that the Earth's climate system is unequivocally warming, and it is more than 90% certain that humans are causing a significant amount of it through activities that increase concentrations of greenhouse gases in the atmosphere, such as deforestation and burning fossil fuels. <a href="http://en.wikipedia.org/wiki/Scientific_opinion_on_climate_change">Wikipedia</a></p></blockquote>
+  <blockquote class="blockquote"><p>The scientific opinion on climate change is that the Earth's climate system is unequivocally warming, and it is more than 90% certain that humans are causing a significant amount of it through activities that increase concentrations of greenhouse gases in the atmosphere, such as deforestation and burning fossil fuels. <a href="http://en.wikipedia.org/wiki/Scientific_opinion_on_climate_change">Wikipedia</a></p></blockquote>
 <p>Climate change is a controversial topic. The mainstream scientific assessment above is <a href="http://en.wikipedia.org/wiki/Climate_change_denial">denied or downplayed</a> by several scientists and groups like the energy lobby, industry advocates and free market think tanks.</p>
-<p>While I do not doubt that climate change is happening and humans are the main driving force behind it, I wanted to see what media coverage may reveal about it. To do so I aggregated data on climate change, global warming, natural disaster, extreme weather, pollution and deforestation using the <a href="http://www.guardian.co.uk/open-platform">Guardian Open Platform</a>. Specifically, I queried the <a href="http://www.guardian.co.uk/open-platform/content-api-content-search-reference-guide">Content Search API</a> for each of these 6 phrases/words for the past decade (1 April 2003 until 31 March 2013).</p>
+<p>While I do not doubt that climate change is happening and humans are the main driving force behind it, I wanted to see what media coverage may reveal about it. To do so I aggregated data on climate change, global warming, natural disaster, extreme weather, pollution and deforestation using the <a href="https://open-platform.theguardian.com/">Guardian Open Platform</a>. Specifically, I searched article content for each of these 6 phrases/words for the past decade (1 April 2003 until 31 March 2013).</p>
+<div class="alert alert-info" role="alert">
+    Update September 23, 2024: Removed the browse articles section.
+</div>
 <h2>What You See</h2>
 <p>The first chart shows the aggregated counts of articles containing the phrases for each month within the last 10 years. By default, all 6 phrases are displayed in a stacked bar chart. You can deselect or select phrases by clicking on them in the legend on top of the chart and switch between the stacked and a grouped bar display.</p>
 <p>Moreover, you can click on a single bar to update the 2 charts and article listing below. By default, details for "climate change" articles published in March 2013 are displayed. The 1st bar chart shows the up to 20 most frequent words in article headlines, not counting stopwords, numbers and single character words. The 2nd bar chart shows the up to 20 most frequent article sections, articles were published in.</p>
 <p>The listing on the right shows all articles where the article content matches the given query in the given month. Click on the headline or thumbnail to go to the article page on the Guardian Web site.</p>
 <h2>Caveats</h2>
 <p>Notice, that a single article can contain more than one of the search phrases. Thus, the maximum value of 1078 articles in September 2009 does not necessarily mean that these are 1078 distinct articles, but that the total number of distinct articles containing at least one of the 6 phrases can be lower.</p>
-<p>All the charts show a snapshot of the data collected on 4 April 2013, while the article listings are queried live from the Guardian Web service. Hence, any changes made to the articles after 4 April 2013, that would affect aggregated counts, will not be reflected in the charts, but in the article listing. The live querying is done to comply with the <a href="http://www.guardian.co.uk/open-platform/terms-and-conditions">Guardian API Terms and Conditions</a>, which do not allow to store headlines for more than 24 hours.</p>
+<p>All the charts show a snapshot of the data collected on 4 April 2013, while the article listings are queried live from the Guardian Web service. Hence, any changes made to the articles after 4 April 2013, that would affect aggregated counts, will not be reflected in the charts, but in the article listing. The live querying is done to comply with the Guardian API Terms and Conditions, which do not allow to store headlines for more than 24 hours.</p>
 <p>Another thing to keep in mind is, that articles containing the search phrases do not necessarily relate to environment issues. One can easily imagine occurrences of the word pollution in other contexts, but the creative power of human language also allows for other somewhat deviant usages. See for example the article <a href="http://www.guardian.co.uk/football/blog/2011/apr/15/fernando-torres-goal-drought-football">Global warming to blame for Fernando Torres goal drought</a>, which may be a serious issue for Chelsea F.C. and its fans, but certainly not for the state of the planet we live on.</p>
 <h2>Closing Remarks</h2>
 <p>I regard this interactive visualization as an exploratory tool, which allows you to spot environmental events, that had a significant effect on media coverage. For example, you see spikes of increased coverage after the <a href="#natural disaster|1298934000000">2011 earthquake and tsunami</a> in Japan, around the <a href="#climate change|1259622000000">Copenhagen Climate Change Conference</a>, and after <a href="#natural disaster|1125525600000">Hurricane Katrina</a>.</p>
-<p>It certainly does not confirm or deny one or the other opinion, but hopefully serves as a means to dig deeper into these topics. One thing I'm sure about is that  our environment deserves more attention and better treatment.</p>
+<p>It certainly does not confirm or deny one or the other opinion, but hopefully serves as a means to dig deeper into these topics. One thing I'm sure about is that our environment deserves more attention and better treatment.</p>
 <div class="postinfo">
 <hr class="clearfix">
 <div class="well">
-<p>Published on April 05, 2013 (updated on November 18, 2020) by <a href="https://ramiro.org/">Ramiro Gómez</a> (<a href="https://twitter.com/yaph">@yaph</a>). To be informed of new posts, subscribe to the <a href="/rss.xml">RSS feed</a>.
+<p>Published on April 05, 2013 (updated on September 24, 2024) by <a href="https://ramiro.org/">Ramiro Gómez</a> (<a href="https://twitter.com/yaph">@yaph</a>). To be informed of new posts, subscribe to the <a href="/rss.xml">RSS feed</a>.
 <br>Tags: <a href="/tags/d3/">d3</a>, <a href="/tags/nvd3/">nvd3</a>, <a href="/tags/wikipedia/">wikipedia</a>, <a href="/tags/environment/">environment</a>, <a href="/tags/bar-chart/">bar chart</a>, <a href="/tags/guardian/">guardian</a>.</p>
 </div>
 </div>
@@ -117,10 +97,10 @@
   <div class="col-md-3">
 
 <h3>Keep Exploring</h3>
-<a href="/rss.xml" class="btn btn-lg btn-warning">Subscribe to News feed</a>
+<a href="/rss.xml" class="btn btn-lg btn-warning m-1 mb-2">Subscribe to News feed</a>
 
-<h3>Recent Visualizations</h3>
-<ul class="list-unstyled">
+<h3>Visualizations</h3>
+<ul>
 <li><a href="/vis/volcanoes-globe/">Volcanoes of Planet Earth</a></li>
 <li><a href="/vis/mentor-author-graph/">Graph of Mentors, Books and Authors</a></li>
 <li><a href="/vis/big-sister-cities/">Graph of Big Sister Cities With +1 Million Inhabitants</a></li>
@@ -128,14 +108,12 @@
 <li><a href="/vis/programming-languages-influence-network-2014/">Programming Languages Influence Network 2014</a></li>
 </ul>  </div>
 </div>
-</div>    <div id="footer" class="container">
-      <div class="row"><div class="col-md-12">
+</div>    <div id="footer" class="container-fluid">
         <footer>
             <hr>
             <p>Exploring Data is a showcase of interactive data visualizations created with open data and open source tools, <a href="/about/">learn more</a>.<br>
             © <script>document.write(new Date().getFullYear())</script> <a href="https://ramiro.org/">Ramiro Gómez</a>.</p>
         </footer>
-      </div></div>
     </div>
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-448ZHXENT0"></script>
@@ -144,8 +122,11 @@ window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 gtag('config', 'G-448ZHXENT0');
-</script>    <script src="//code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</script>    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/fontawesome.min.js" integrity="sha512-NeFv3hB6XGV+0y96NVxoWIkhrs1eC3KXBJ9OJiTFktvbzJ/0Kk7Rmm9hJ2/c2wJjy6wG0a0lIgehHjCTDLRwWw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/solid.min.js" integrity="sha512-L2znesU64H/rvdnaD4WBaRAmEcGvhBsVLXygPkhpgpUwcgjymD4amy68shdgZgLiIvyvV/vHRXAM4mTV8xqp+Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 
     <script src="/js/script.js"></script>

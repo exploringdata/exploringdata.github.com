@@ -14,56 +14,39 @@
 <meta name="twitter:image:src" content="/img/preview/world-aid-transparency.jpg">
     <meta name="author" content="Ramiro Gómez">
     <link rel="canonical" href="https://exploring-data.com/vis/world-aid-transparency/">
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">
-    <link href="//stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/solid.min.css" integrity="sha512-/r+0SvLvMMSIf41xiuy19aNkXxI+3zb/BN8K9lnDDWI09VM0dwgTMzK7Qi5vv5macJ3VH4XZXr60ip7v13QnmQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="/css/style.css" rel="stylesheet">
-            <link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-            <link href="/css/world-aid-transparency.css" rel="stylesheet">
+            <link rel="stylesheet" href="/css/world-aid-transparency.css">
     <link rel="shortcut icon" href="/favicon.ico">
     <link rel="alternate" type="application/rss+xml" title="Exploring Data RSS feed" href="https://exploring-data.com/rss.xml">
 </head>
 
 <body class="">
 
-    <nav id="navbar" class="navbar navbar-default" role="navigation">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a id="site-name" class="navbar-brand" href="/">Exploring Data</a>
-        </div>
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="main-navbar">
-<ul class="nav navbar-nav">
-  <li class="active"><a href="" id="norelate" class="relate">Total Amounts</a></li>
-  <li><a href="" id="SP.POP.TOTL" class="relate" title="Population, total">By Population</a></li>
-  <li><a href="" id="NY.GDP.MKTP.CD" class="relate" title="GDP (current US$)">By GDP</a></li>
+        <a class="navbar-brand" href="/">
+          <img src="/img/exploring-data.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+          Exploring Data
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-content">
+<ul class="navbar-nav">
+  <li class="nav-item"><a class="nav-link relate active" id="norelate">Total Amounts</a></li>
+  <li class="nav-item"><a class="nav-link relate" id="SP.POP.TOTL" title="Population, total">By Population</a></li>
+  <li class="nav-item"><a class="nav-link relate" id="NY.GDP.MKTP.CD" title="GDP (current US$)">By GDP</a></li>
 </ul>
-<a id="expand" class="btn navbar-btn menulimit" title="Expand bar charts and show more countries in scatterplot">+</a>
-<a id="reduce" class="btn navbar-btn menulimit disabled" title="Reduce bar charts and show fewer countries in scatterplot">-</a>
-<div id="sharemenu" class="nav pull-right">
-    <div class="btn-group">
-        <a href="#" class="btn navbar-btn btn-success dropdown-toggle" data-toggle="dropdown">+</a>
-        <ul class="share dropdown-menu pull-right">
-            <li><a href="/rss.xml"><span class="icon"><i class="fa fa-rss"></i> RSS Feed</a></li>
-            <li><a rel="nofollow" href="https://reddit.com/submit?url=https://exploring-data.com/vis/world-aid-transparency/&title=World%20Aid%20Flow%2C%20Transparency%2C%20Development"><span class="icon"><i class="fa fa-reddit-alien"></i></span> Reddit</a></li>
-            <li><a rel="nofollow" href="https://news.ycombinator.com/submitlink?u=https://exploring-data.com/vis/world-aid-transparency/&t=World%20Aid%20Flow%2C%20Transparency%2C%20Development"><span class="icon"><i class="fa fa-hacker-news"></i></span> Hacker News</a></li>
-            <li><a rel="nofollow" href="https://twitter.com/share?url=https://exploring-data.com/vis/world-aid-transparency/&text=World%20Aid%20Flow%2C%20Transparency%2C%20Development"><span class="icon"><i class="fa fa-twitter"></i></span> Twitter</a></li>
-            <li><a rel="nofollow" href="https://www.facebook.com/sharer.php?u=https://exploring-data.com/vis/world-aid-transparency/&t=World%20Aid%20Flow%2C%20Transparency%2C%20Development"><span class="icon"><i class="fa fa-facebook"></i></span> Facebook</a></li>
-            <li><a rel="nofollow" href="https://www.stumbleupon.com/submit?url=https://exploring-data.com/vis/world-aid-transparency/&title=World%20Aid%20Flow%2C%20Transparency%2C%20Development"><span class="icon"><i class="fa fa-stumbleupon"></i></span> StumbleUpon</a></li>
-            <li><a rel="nofollow" href="https://www.linkedin.com/shareArticle?mini=true&url=https://exploring-data.com/vis/world-aid-transparency/&title=World%20Aid%20Flow%2C%20Transparency%2C%20Development"><span class="icon"><i class="fa fa-linkedin"></i></span> LinkedIn</a></li>
-        </ul>
-    </div>
-</div>        </div><!-- /.navbar-collapse -->
-      </div><!-- /.container-fluid -->
+<button id="expand" class="btn btn-outline menulimit" title="Expand bar charts and show more countries in scatterplot">+</button>
+<button id="reduce" class="btn menulimit disabled" title="Reduce bar charts and show fewer countries in scatterplot">-</button>
+        </div>
+      </div>
     </nav>
 
 <div class="container-fluid">
+
 <div class="row">
   <div class="col-md-6">
     <h4>World aid flow</h4>
@@ -87,7 +70,7 @@
   <div class="col-md-6">
     <div class="bar">
       <h4>How aid received compares to
-        <select id="indicators" class="headingselect"></select>
+        <select id="indicators" class="form-select headingselect"></select>
       </h4>
       <div class="scatterplot" id="aidrelations"></div>
       <div class="legend">Aid donations compared to selected world development indicators.</div>
@@ -106,22 +89,9 @@
     </div>
   </div>
 </div>
-</div>
 
-<div id="country-aid" class="modal fade">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-        <h3 class="modal-title"></h3>
-      </div>
-      <div class="modal-body" id="country-aid-chart" style="width:500px;"></div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-      </div>
-    </div><!-- /.modal-content -->
-  </div><!-- /.modal-dialog -->
-</div><!-- /.modal -->
+<hr/>
+</div>
 <div id="info" class="container">
 <div class="row">
   <div class="col-md-9"><h1>World Aid Flow, Transparency, Development</h1>
@@ -161,7 +131,7 @@
 <div class="postinfo">
 <hr class="clearfix">
 <div class="well">
-<p>Published on November 23, 2012 (updated on November 18, 2020) by <a href="https://ramiro.org/">Ramiro Gómez</a> (<a href="https://twitter.com/yaph">@yaph</a>). To be informed of new posts, subscribe to the <a href="/rss.xml">RSS feed</a>.
+<p>Published on November 23, 2012 (updated on September 24, 2024) by <a href="https://ramiro.org/">Ramiro Gómez</a> (<a href="https://twitter.com/yaph">@yaph</a>). To be informed of new posts, subscribe to the <a href="/rss.xml">RSS feed</a>.
 <br>Tags: <a href="/tags/map/">map</a>, <a href="/tags/d3/">d3</a>, <a href="/tags/contest/">contest</a>, <a href="/tags/scatter-plot/">scatter plot</a>, <a href="/tags/bar-chart/">bar chart</a>, <a href="/tags/human-development/">human development</a>.</p>
 </div>
 </div>
@@ -173,10 +143,10 @@
       <hr>
 
 <h3>Keep Exploring</h3>
-<a href="/rss.xml" class="btn btn-lg btn-warning">Subscribe to News feed</a>
+<a href="/rss.xml" class="btn btn-lg btn-warning m-1 mb-2">Subscribe to News feed</a>
 
-<h3>Recent Visualizations</h3>
-<ul class="list-unstyled">
+<h3>Visualizations</h3>
+<ul>
 <li><a href="/vis/volcanoes-globe/">Volcanoes of Planet Earth</a></li>
 <li><a href="/vis/mentor-author-graph/">Graph of Mentors, Books and Authors</a></li>
 <li><a href="/vis/big-sister-cities/">Graph of Big Sister Cities With +1 Million Inhabitants</a></li>
@@ -184,15 +154,28 @@
 <li><a href="/vis/programming-languages-influence-network-2014/">Programming Languages Influence Network 2014</a></li>
 </ul>  </div>
 </div>
-</div>    <div id="footer" class="container">
-      <div class="row"><div class="col-md-12">
+</div>    <div id="footer" class="container-fluid">
         <footer>
             <hr>
             <p>Exploring Data is a showcase of interactive data visualizations created with open data and open source tools, <a href="/about/">learn more</a>.<br>
             © <script>document.write(new Date().getFullYear())</script> <a href="https://ramiro.org/">Ramiro Gómez</a>.</p>
         </footer>
-      </div></div>
     </div>
+<div class="modal fade" id="help" tabindex="-1" aria-labelledby="helpLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="helpLabel">Help</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+<div id="country-aid-chart" style="width:460px;"></div>      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-448ZHXENT0"></script>
 <script>
@@ -200,8 +183,11 @@ window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 gtag('config', 'G-448ZHXENT0');
-</script>    <script src="//code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</script>    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/fontawesome.min.js" integrity="sha512-NeFv3hB6XGV+0y96NVxoWIkhrs1eC3KXBJ9OJiTFktvbzJ/0Kk7Rmm9hJ2/c2wJjy6wG0a0lIgehHjCTDLRwWw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/solid.min.js" integrity="sha512-L2znesU64H/rvdnaD4WBaRAmEcGvhBsVLXygPkhpgpUwcgjymD4amy68shdgZgLiIvyvV/vHRXAM4mTV8xqp+Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 
     <script src="/js/script.js"></script>

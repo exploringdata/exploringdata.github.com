@@ -22,8 +22,7 @@ var visgexf = {
     visgexf.props = props;
     viscontainer = document.getElementById(visid);
     // adjust height of graph to screen
-    var h_win = $(window).height() - $('#navbar').height();
-    var h_vis = $(viscontainer).height();
+    var h_win = $(window).height() - $('nav.navbar').first().height();
     if (h_win > 400) {
       $(viscontainer).height(h_win);
     }
@@ -218,7 +217,7 @@ var visgexf = {
     if (document.location.hash) {
       visgexf.redirectHash();
     }
-    // search on hash change, unless it should trigger info or comments view
+    // search on hash change, unless it should trigger info view
     $(window).bind('hashchange', function(event) {
       visgexf.redirectHash();
     });
@@ -292,10 +291,28 @@ var visgexf = {
 
 // Node info dialog
 function nodeinfo(heading, body) {
-    dialog.find('.panel-heading h2').html(heading);
-    dialog.find('.panel-body').html(body);
+    dialog.find('#label').text(heading);
+    dialog.find('.card-body').html(body);
     dialog.show();
 }
+
+// Filter dropdown click
+menuClick = function(menu, event) {
+  event.preventDefault();
+  menu.find('li').removeClass('active');
+
+  const name = event.target.nodeName.toLowerCase();
+  let a = null;
+
+  if ('a' == name) {
+    a = $(event.target);
+  } else if ('li' == name) {
+    a = $(event.target).children('a:first-child');
+  }
+  a.parent().addClass('active');
+
+  return a;
+};
 
 dialog.find('button').click(function() {
     dialog.hide();

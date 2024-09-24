@@ -1,3 +1,2 @@
-#vis .olControlLayerSwitcher {width:300px;}
-#vis .olControlLayerSwitcher input.olButton {float:left;margin-right:10px;}
-#vis .baseLbl, #vis .baseLayersDiv, #vis .dataLbl {display:none;}
+#OpenLayers_Control_LayerSwitcher_4,
+#OpenLayers_Control_MaximizeDiv_innerImage {right: 1rem;}

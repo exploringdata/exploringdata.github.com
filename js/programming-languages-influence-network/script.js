@@ -27,26 +27,6 @@ var langinfo = function(hlang) {
   nodeinfo(hlang.label, desc);
 };
 
-var menuclick = function(menu, event) {
-  event.preventDefault();
-  if ('a' == event.target.nodeName.toLowerCase()) {
-    var t = $(event.target);
-    menu.find('li').removeClass('active');
-    t.parent('li').addClass('active');
-    return t;
-  }
-  return false;
-};
-
-var randomNodeColor = function(num) {
-  var color = '#bfbab7';
-  if (num > 40) color = '#006D2C';
-  else if (num > 30) color = '#31A354';
-  else if (num > 20) color = '#74C476';
-  else if (num > 0) color = '#BAE4B3';
-  return color;
-};
-
 var nodeClick = function(Graph) {
   Graph.sig.bind('upnodes', function(event){
     hlang = Graph.sig.getNodes(event.content)[0];
@@ -80,13 +60,13 @@ $(function(){
     nodeClick(visgexf);
 
     var pmenu = $('#paradigms');
-    pmenu.append('<li class="active"><a href="#">All languages (' + visgexf.sig.getNodesCount() + ')</a></li>');
+    pmenu.append(`<li class="dropdown-item active"><a>All languages (${visgexf.sig.getNodesCount()})</a></li>`);
     $.each(filters, function(idx, item) {
-      pmenu.append('<li><a href="#' + item[0] + '">' + item[0] + ' (' + item[1] + ')</a></li>');
+      pmenu.append(`<li class="dropdown-item"><a id="${item[0]}">${item[0]} (${item[1]})</a></li>`);
     });
     pmenu.click(function(event){
-      if (t = menuclick(pmenu, event))
-        visgexf.setFilter(filterid, t.attr('href').replace('#', ''));
+      if (t = menuClick(pmenu, event))
+        visgexf.setFilter(filterid, t.attr('id'));
     });
   });
 });

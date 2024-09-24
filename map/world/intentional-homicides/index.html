@@ -4,63 +4,56 @@
     <meta charset="utf-8">
     <title>World Map of Intentional Homicides | Exploring Data</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="A series of geographic Choropleth maps showing the number of intentional homicides by country per 100,000 people. Created using World Bank data and D3.js.">
-        <meta property="og:image" content="/img/preview/homicides-map.png">
+        <meta name="description" content="A series of geographic Choropleth maps showing the number of intentional homicides by country per 100,000 people. Created using World Bank data and d3.geomap.">
+        <meta property="og:image" content="/img/preview/intentional-homicides.png">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:creator" content="@yaph">
 <meta name="twitter:site" content="@yaph">
 <meta name="twitter:title" content="World Map of Intentional Homicides">
-<meta name="twitter:description" content="A series of geographic Choropleth maps showing the number of intentional homicides by country per 100,000 people. Created using World Bank data and D3.js.">
-<meta name="twitter:image:src" content="/img/preview/homicides-map.png">
+<meta name="twitter:description" content="A series of geographic Choropleth maps showing the number of intentional homicides by country per 100,000 people. Created using World Bank data and d3.geomap.">
+<meta name="twitter:image:src" content="/img/preview/intentional-homicides.png">
     <meta name="author" content="Ramiro Gómez">
     <link rel="canonical" href="https://exploring-data.com/map/world/intentional-homicides/">
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">
-    <link href="//stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/solid.min.css" integrity="sha512-/r+0SvLvMMSIf41xiuy19aNkXxI+3zb/BN8K9lnDDWI09VM0dwgTMzK7Qi5vv5macJ3VH4XZXr60ip7v13QnmQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="/css/style.css" rel="stylesheet">
-            <link href="/css/worldbank.css" rel="stylesheet">
+
+<link href="/d3-geomap/d3-geomap.min.css" rel="stylesheet">
+<link href="/css/choropleth.css" rel="stylesheet">
     <link rel="shortcut icon" href="/favicon.ico">
     <link rel="alternate" type="application/rss+xml" title="Exploring Data RSS feed" href="https://exploring-data.com/rss.xml">
 </head>
 
 <body class="full">
 
-<nav id="navbar" class="navbar navbar-default" role="navigation">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a id="site-name" class="navbar-brand" href="/">Exploring Data</a>
-    </div>
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="main-navbar">
-<ul class="nav navbar-nav">
-  <li class="dropdown">
-    <a href="#" class="dropdown-toggle" data-toggle="dropdown">📅 Choose Year <b class="caret"></b></a>
-        <ul class="dropdown-menu" id="year-select"></ul>
-  </li>
-  <li><a id="animate" href="#">⏵ Play Animation</a></li>
-</ul>
-        <div class="pull-right">
-          <a href="/info/intentional-homicides/" class="btn navbar-btn btn-info">ℹ Info</a>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/">
+          <img src="/img/exploring-data.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+          Exploring Data
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-content">
+<div class="navbar-nav dropdown">
+  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Choose Column
+  </a>
+  <ul class="dropdown-menu" id="col-select"></ul>
+</div>
+<a id="animate"><i class="fa-solid fa-play"></i> Play Animation</a>
         </div>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
+      </div>
+    </nav>
 
-<div id="map"></div>
-    <div id="footer" class="container">
-      <div class="row"><div class="col-md-12">
+<div class="d3-geomap" id="map"></div>
+    <div id="footer" class="container-fluid">
         <footer>
             <hr>
             <p>Exploring Data is a showcase of interactive data visualizations created with open data and open source tools, <a href="/about/">learn more</a>.<br>
             © <script>document.write(new Date().getFullYear())</script> <a href="https://ramiro.org/">Ramiro Gómez</a>.</p>
         </footer>
-      </div></div>
     </div>
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-448ZHXENT0"></script>
@@ -69,40 +62,19 @@ window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 gtag('config', 'G-448ZHXENT0');
-</script>    <script src="//code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</script>    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/fontawesome.min.js" integrity="sha512-NeFv3hB6XGV+0y96NVxoWIkhrs1eC3KXBJ9OJiTFktvbzJ/0Kk7Rmm9hJ2/c2wJjy6wG0a0lIgehHjCTDLRwWw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/solid.min.js" integrity="sha512-L2znesU64H/rvdnaD4WBaRAmEcGvhBsVLXygPkhpgpUwcgjymD4amy68shdgZgLiIvyvV/vHRXAM4mTV8xqp+Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-<script src="/vendor/d3/d3.v3.min.js"></script>
-<script src="/vendor/d3/queue.v1.min.js"></script>
-<script src="/vendor/d3/d3.geo.projection.v0.min.js"></script>
-<script src="/vendor/d3/topojson.v1.min.js"></script>
-<script src="/js/colors.js"></script>
+<script src="//unpkg.com/d3@5.9.2/dist/d3.min.js"></script>
+<script src="//unpkg.com/topojson@3.0.2/dist/topojson.min.js"></script>
+<script src="/d3-geomap/d3-geomap.min.js"></script>
+<script src="/compiled/map/choropleth.js"></script>
 
     <script src="/js/script.js"></script>
-          <script src="/js/worldbank.js"></script>
+          <script src="/compiled/map/intentional-homicides.js"></script>
 
-<script>
-var map = {
-    year: {
-        default: 2008,
-        min: 1995,
-        max: 2011,
-        selected: 2008
-    },
-    legend: {
-        title: 'Intentional Homicides by 100,000 People',
-        width: 500,
-        height: 75
-    },
-    source: {
-        url: 'http://data.worldbank.org/indicator/VC.IHR.PSRC.P5',
-        title: 'World Bank Intentional Homicides'
-    }
-};
-queue()
-    .defer(d3.json, '/json/topo/countries.topo.json')
-    .defer(d3.csv, '/csv/homicides.csv')
-    .await(initMap);
-</script>
   </body>
 </html>

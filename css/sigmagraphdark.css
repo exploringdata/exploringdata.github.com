@@ -12,13 +12,6 @@ width:70%;
 font-size:1.2em;
 margin:-.5em 0 0 0;
 }
-#search-reset{
-margin-left: -1.3em;
-position: absolute;
-top: 1.3em;
-cursor:pointer;
-opacity:.8;
-}
 #loading {
 position:absolute;
 left:30%;
@@ -31,8 +24,10 @@ display:none;
 #nodeinfo {
 display: none;
 position: absolute;
-right: 5px;
-top: 58px;
-max-width: 350px;
+right: 1rem;
+top: 4rem;
+max-width: 400px;
 opacity: .8;
+max-height: calc(100vh - 8rem);
+overflow: auto;
 }

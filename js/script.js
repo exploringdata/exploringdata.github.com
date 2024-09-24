@@ -7,8 +7,4 @@ function containerDim(selector, dim) {
 }
 $(function(){
     $('.nav a[href="'+document.location.pathname+'"]').parent('li').attr('class', 'active');
-    $('.showhelp').click(function(e){
-        e.preventDefault();
-        $('#help').modal();
-    });
 });

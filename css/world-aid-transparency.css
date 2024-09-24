@@ -36,7 +36,7 @@ font-size: 11px;
 }
 .legend,
 text {
-font-family: 'Open Sans', sans-serif;
+font-family: sans-serif;
 }
 /* bar charts */
 .bar text {
@@ -51,7 +51,11 @@ cursor:pointer;
 font-size:.7em;
 }
 .sidebar div.bar {
-width:50%;
+border: 1px solid rgb(227, 227, 227);
+border-radius: 1rem;
+padding: 2rem;
+width:48%;
+margin: 1% 1%;
 float:left;
 }
 /* map */

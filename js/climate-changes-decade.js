@@ -5,35 +5,13 @@ var histselector = '#history',
     sectionmap = null,
     colors = d3.scale.category20(),
     keyColor = function(d, i) {return colors(d.key)},
-    getQueryDate = d3.time.format("%Y-%m-%d"),
-    guParams = {
-        'page-size': 10,
-        'page': 1,
-        'order-by':'relevance',
-        'format':'json',
-        'show-fields': 'headline,thumbnail',
-        'api-key': 'ead2a827-732b-4c59-82fd-b202d6f81f86'
-    },
     currSeries = null,
-    scrollOffset = selectiondetails.offsetTop - ($('#navbar').height + 10);
+    scrollOffset = selectiondetails.offsetTop - ($('nav.navbar').first().height + 10);
 
-function getPrevDay(date) {
-    return new Date(date - 86400)
-}
-
-function pagerClick() {
-    $('.pager a').click(function(e) {
-        e.preventDefault();
-        guParams['page'] = $(this).attr('href').replace('#', '');
-        getGuardianArticles();
-    });
-}
 
 function historyClickHandler(currSeries, timestamp) {
-    guParams['page'] = 1; // reset Guardian page parameter
     currSeries = decodeURIComponent(currSeries);
 
-    var date = new Date(timestamp);
     // milliseconds need to be converted back to seconds
     var file = currSeries.replace(' ', '-') + '/' + timestamp / 1000 + '.json';
     d3.json('/json/climate-changes-decade/' + file, function(freqdata) {
@@ -46,9 +24,6 @@ function historyClickHandler(currSeries, timestamp) {
             values: barValues(freqdata.sections)
         }]);
     });
-    // enclose phrases in quotes
-    getGuardianArticles('"' + currSeries + '"', date);
-    window.scrollTo(0, selectiondetails.offsetTop - 50);
 }
 
 function historyClick() {
@@ -56,61 +31,6 @@ function historyClick() {
         currSeries = d.q;
         document.location.hash = currSeries+ '|' + d.x;
     });
-}
-
-function getArticlePager(response) {
-    var html = '',
-        prevCls = '',
-        nextCls = '',
-        prevHref = '',
-        nextHref = '',
-        currPage = 1,
-        page = guParams['page'];
-    if (response.response.pages > 1) {
-        currPage = response.response.currentPage;
-        if (currPage == 1) {
-            prevCls = ' class="disabled"';
-        } else {
-            prevHref = currPage - 1;
-        }
-        if (currPage == response.response.pages) {
-            nextCls = ' class="disabled"';
-        } else {
-            nextHref = currPage + 1;
-        }
-
-        var prevCls = currPage == 1 ? ' class="disabled"' : '';
-        var nextCls =  currPage == response.response.pages ? ' class="disabled"' : '';
-        html = '<ul class="pager"><li' + prevCls + '><a href="#' + prevHref+ '">Previous</a></li><li' + nextCls + '><a href="#' + nextHref + '">Next</a></li></ul>';
-    }
-    return html;
-}
-
-function getGuardianArticles(query, date) {
-    if ('undefined' !== typeof query) {
-        guParams['q'] = query;
-    }
-    if ('undefined' !== typeof date) {
-        // determine from and to date from given date
-        from = getQueryDate(date);
-        date.setMonth(date.getMonth() + 1);
-        to = getQueryDate(getPrevDay(date));
-        guParams['from-date'] = from;
-        guParams['to-date'] = to;
-    }
-    $.getJSON('https://content.guardianapis.com/search?callback=?', guParams)
-        .done(function(data) {
-            var html = '';
-            for (i in data.response.results) {
-                var r = data.response.results[i];
-                html += '<div class="article"><a href="' + r.webUrl + '" title="' + r.webTitle + '">' + r.fields.headline + '</a><br><span class="meta">📅</i> ' + new Date(r.webPublicationDate).toGMTString() + ' in ' + r.sectionName + '</span></div><hr>';
-            }
-            html += getArticlePager(data);
-            d3.select('#articles').html(html);
-            d3.select('#queryinfo').html(query + ' ' + d3.time.format('%Y-%m')(new Date(from)));
-            pagerClick();
-        }
-    );
 }
 
 function getHistoryData(json) {
@@ -137,7 +57,6 @@ function acronymizeBars(labels) {
     });
 }
 
-// Guardian API doesn't allow to search for words in titles, thus no further filtering.
 function barChart(selector, data) {
     nv.addGraph(function() {
         var chart = nv.models.multiBarHorizontalChart()

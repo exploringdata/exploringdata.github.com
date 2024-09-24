@@ -14,8 +14,8 @@
 <meta name="twitter:image:src" content="/img/large/james-bond-actors-network.png">
     <meta name="author" content="Ramiro Gómez">
     <link rel="canonical" href="https://exploring-data.com/vis/james-bond-actors-network/">
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">
-    <link href="//stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/solid.min.css" integrity="sha512-/r+0SvLvMMSIf41xiuy19aNkXxI+3zb/BN8K9lnDDWI09VM0dwgTMzK7Qi5vv5macJ3VH4XZXr60ip7v13QnmQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="/css/style.css" rel="stylesheet">
     
     <link href="/css/typeahead.css" rel="stylesheet">
@@ -26,80 +26,73 @@
 
 <body class="full">
 
-<nav id="navbar" class="navbar navbar-default" role="navigation">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a id="site-name" class="navbar-brand" href="/">Exploring Data</a>
-    </div>
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="main-navbar">
-<ul class="nav navbar-nav">
-  <li><form id="highlight-node" class="navbar-form navbar-left" role="search">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/">
+          <img src="/img/exploring-data.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+          Exploring Data
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-content">
+<div class="navbar-nav"><form id="highlight-node" class="navbar-form navbar-left" role="search">
     <div class="form-group">
          <input class="form-control typeahead" type="text" placeholder="Highlight node"><span id="search-reset">⊗</span>
     </div>
-</form></li>
-  <li class="dropdown">
-    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Choose Film <b class="caret"></b></a>
-    <ul class="dropdown-menu graphfilter" id="paradigms"></ul>
-  </li>
-  <li><a class="showhelp" href="">Help</a></li>
-</ul>
-        <div class="pull-right">
-          <a href="/info/james-bond-actors-network/" class="btn navbar-btn btn-info">ℹ Info</a>
+</form></div>
+<div class="navbar-nav dropdown">
+  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Choose Film
+  </a>
+  <ul class="dropdown-menu graphfilter" id="paradigms"></ul>
+</div>
+<a data-bs-toggle="modal" data-bs-target="#help">Help</a>
         </div>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
+      </div>
+    </nav>
 
 <div id="vis" class="sigma-parent"><div id="loading">Loading the data may take a while, please be patient...</div><div id="sig" class="sigma-expand"></div></div>
-    <div id="footer" class="container">
-      <div class="row"><div class="col-md-12">
+    <div id="footer" class="container-fluid">
         <footer>
             <hr>
             <p>Exploring Data is a showcase of interactive data visualizations created with open data and open source tools, <a href="/about/">learn more</a>.<br>
             © <script>document.write(new Date().getFullYear())</script> <a href="https://ramiro.org/">Ramiro Gómez</a>.</p>
         </footer>
-      </div></div>
     </div>
-<div id="help" class="modal fade">
+<div class="modal fade" id="help" tabindex="-1" aria-labelledby="helpLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-        <h3 class="modal-title">Help</h3>
+        <h1 class="modal-title fs-5" id="helpLabel">Help</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <h4>Graph Navigation</h4>
-        <p>You can zoom in and out the graph with the mouse wheel. You can move the graph by clicking and holding the left mouse button and moving the mouse.</p>
-        <h4>Actor Information</h4>
-        <p>When you click on an actor node in the graph a modal window with information about the actor will be displayed.</p>
-        <h4>Actor Search</h4>
-        <p>Search for actors from the top menu to highlight their connections.</p>
-        <h4>Film Highlighting</h4>
-        <p>Choose and click on a film from the <strong>Choose Film</strong> menu to only show actors that appeared in that film.</p>
-      </div>
+<h4>Graph Navigation</h4>
+<p>You can zoom in and out the graph with the mouse wheel. You can move the graph by clicking and holding the left mouse button and moving the mouse.</p>
+<h4>Actor Information</h4>
+<p>When you click on an actor node in the graph a modal window with information about the actor will be displayed.</p>
+<h4>Actor Search</h4>
+<p>Search for actors from the top menu to highlight their connections.</p>
+<h4>Film Highlighting</h4>
+<p>Choose and click on a film from the <strong>Choose Film</strong> menu to only show actors that appeared in that film.</p>      </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
       </div>
-    </div><!-- /.modal-content -->
-  </div><!-- /.modal-dialog -->
-</div><!-- /.modal -->
-<div id="nodeinfo" class="panel panel-info">
-  <div class="panel-heading"><button type="button" class="close">&times;</button><h2></h2></div>
-  <div class="panel-body"></div>
-  <div class="panel-footer"><button type="button" class="btn btn-default">Close</button></div>
-</div><div id="nodeinfo" class="panel panel-info">
-  <div class="panel-heading"><button type="button" class="close">&times;</button><h2></h2></div>
-  <div class="panel-body"></div>
-  <div class="panel-footer"><button type="button" class="btn btn-default">Close</button></div>
+    </div>
+  </div>
+</div><div id="nodeinfo" class="card text-bg-light">
+  <div class="card-header text-bg-secondary">
+    <button type="button" class="btn-close float-end" aria-label="Close"></button>
+    <h5 id="label"></h5>
+  </div>
+  <div class="card-body"></div>
+</div><div id="nodeinfo" class="card text-bg-light">
+  <div class="card-header text-bg-secondary">
+    <button type="button" class="btn-close float-end" aria-label="Close"></button>
+    <h5 id="label"></h5>
+  </div>
+  <div class="card-body"></div>
 </div>
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-448ZHXENT0"></script>
@@ -108,8 +101,11 @@ window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 gtag('config', 'G-448ZHXENT0');
-</script>    <script src="//code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</script>    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/fontawesome.min.js" integrity="sha512-NeFv3hB6XGV+0y96NVxoWIkhrs1eC3KXBJ9OJiTFktvbzJ/0Kk7Rmm9hJ2/c2wJjy6wG0a0lIgehHjCTDLRwWw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/solid.min.js" integrity="sha512-L2znesU64H/rvdnaD4WBaRAmEcGvhBsVLXygPkhpgpUwcgjymD4amy68shdgZgLiIvyvV/vHRXAM4mTV8xqp+Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 <script src="/vendor/sigma/sigma.min.js"></script>
 <script src="/vendor/sigma/sigma.parseJson.js"></script>
