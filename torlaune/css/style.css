@@ -1,0 +1,44 @@
+cite {
+font-style:italic;
+}
+
+a, a:hover, a:focus {
+color: #8ce;
+}
+
+#site-name {
+background: url('../img/torlaune-logo.png') no-repeat center left;
+background-size: 36px 36px;
+padding-left:40px;
+font-size:1.6em;
+color:#8ce;
+margin-left:0;
+}
+
+.voffset {margin:.5em 0;}
+.centered {text-align:center;}
+.clearfix {clear:both;}
+
+.caret {
+opacity:.8;
+}
+.small {
+font-size:.8em;
+}
+
+.navbar-collapse.collapse {
+padding-right:0;
+}
+.navbar ul.share a {
+width:90%;
+margin:2% 5% 5%;
+font-size:1.1em;
+}
+.col-2 {
+-moz-column-count: 2;
+-moz-column-gap: 10px;
+-webkit-column-count: 2;
+-webkit-column-gap: 10px;
+column-count: 2;
+column-gap: 10px;
+}

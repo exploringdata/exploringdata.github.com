@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html xmlns:fb="http://ogp.me/ns/fb#" lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Most Expensive Football Transfers: How the Money Flows | Exploring Data</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="World Cup 2014 Migrated Players">
+    <meta name="author" content="Ramiro Gómez">
+    <link rel="canonical" href="https://exploring-data.com/vis/transfer-records/">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/solid.min.css" integrity="sha512-/r+0SvLvMMSIf41xiuy19aNkXxI+3zb/BN8K9lnDDWI09VM0dwgTMzK7Qi5vv5macJ3VH4XZXr60ip7v13QnmQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="/css/style.css" rel="stylesheet">
+<link href="/torlaune/css/sankey.css" rel="stylesheet">
+
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="alternate" type="application/rss+xml" title="Exploring Data RSS feed" href="https://exploring-data.com/rss.xml">
+</head>
+
+<body class="">
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/">
+          <img src="/img/exploring-data.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+          Exploring Data
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-content">
+<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+    <li class="nav-item"><a class="nav-link" href="/data-visualization-books/">📕 Data Books</a></li>
+    <li class="nav-item"><a class="nav-link" href="/prints/">🛒 Prints</a></li>
+    <li class="nav-item"><a class="nav-link" href="/datasearch/">🔍 Search for Data</a></li>
+    <li class="nav-item"><a class="nav-link" href="/sitemap/">📄 Sitemap</a></li>
+</ul>        </div>
+      </div>
+    </nav>
+
+<div class="container">
+    <div class="row">
+    <div class="col-md-12"><h1>Most Expensive Football Transfers: How the Money Flows</h1></div>
+</div>
+<div class="row">
+    <div class="col-md-8">
+        <div class="sankey-legend">
+            <h5 class="left">From team</h5>
+            <h5 class="right">To team</h5>
+        </div>
+        <div id="vis"></div>
+        <p>This Sankey diagram was created by <a href="https://ramiro.org/">Ramiro Gómez</a> with data obtained from <del>https://www.transfermarkt.de/en/statistiken/transferrekorde/transfers.html</del> on December 1, 2013.</p>
+    </div>
+    <div class="col-md-4">
+        <div class="row">
+            <div class="col-md-1">
+                <button type="button" class="btn btn-xs btn-primary"><i class="glyphicon glyphicon-info-sign"></i></button>
+            </div>
+            <div class="col-md-11">
+                <p>This visualization shows the money flow between teams for the 50 most expensive transfers in football history.</p>
+                <p>The size of the team rectangles corresponds to the total amount of money for transfers from (left) or to the team (right) and the thickness of the lines between teams to the sum of transfers from one team to the other.</p>
+                <p>Click on a rectangle or line to see a breakdown of the corresponding transfers.</p>
+                <h3>Key Figures</h3>
+                <div>
+                    <p>Total amount of money spent in all transfers:<br>
+                    <button id="summary-total" type="button" class="btn btn-default disabled"></button>
+                    </p>
+                    <p>Team that spent the most money: <span class="text-success" id="summary-team-spent"></span><br>
+                    <button id="summary-team-spent-total" type="button" class="btn btn-default disabled"></button>
+                    </p>
+                    <p>Team that earned the most money: <span class="text-success" id="summary-team-earned"></span><br>
+                    <button id="summary-team-earned-total" type="button" class="btn btn-default disabled"></button>
+                    </p>
+                    <p>Highest valued player across all transfers: <span class="text-success" id="summary-player"></span><br>
+                    <button id="summary-player-total" type="button" class="btn btn-default disabled"></button>
+                    </p>
+                </div>
+                <h3>Money Flow between Teams</h3>
+                <table class="table table-striped small" id="team-money-flow">
+                    <thead>
+                        <tr><th>Seller</th><th>Buyer</th><th>Sum</th></tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="transfer-modal">
+    <div id="row"><div id="col-md-12"><div class="well">
+        <button type="button" class="close">&times;</button>
+        <h3>Transfer Breakdown: <span id="transfer-table-suffix"></span></h3>
+        <table id="transfer-table" class="table table-striped">
+            <thead>
+                <tr><th>#</th><th>Player</th><th>From team</th><th>To team</th><th>Season</th><th>Transfer fee</th></tr>
+            <thead>
+            <tbody></tbody>
+        </table>
+    </div></div></div>
+</div>
+</div>
+    <div id="footer" class="container-fluid">
+        <footer>
+            <hr>
+            <p>Exploring Data is a showcase of interactive data visualizations created with open data and open source tools, <a href="/about/">learn more</a>.<br>
+            © <script>document.write(new Date().getFullYear())</script> <a href="https://ramiro.org/">Ramiro Gómez</a>.</p>
+        </footer>
+    </div>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-448ZHXENT0"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-448ZHXENT0');
+</script>    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/fontawesome.min.js" integrity="sha512-NeFv3hB6XGV+0y96NVxoWIkhrs1eC3KXBJ9OJiTFktvbzJ/0Kk7Rmm9hJ2/c2wJjy6wG0a0lIgehHjCTDLRwWw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/solid.min.js" integrity="sha512-L2znesU64H/rvdnaD4WBaRAmEcGvhBsVLXygPkhpgpUwcgjymD4amy68shdgZgLiIvyvV/vHRXAM4mTV8xqp+Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="/torlaune/min/d3.sankey.js"></script>
+
+<script>
+var config = {'csv': '/torlaune/data/transfer-records.csv', 'from': {'key': 'From Team Name', 'name': 'From team'}, 'to': {'key': 'To Team Name', 'name': 'To team'}, 'link': {'key': 'Player Name'}, 'aggregate': {'key': 'Transfer Fee'}};
+d3.csv(config.csv, function(error, data) {
+    init_sankey(config, data)
+});
+</script>
+
+    <script src="/js/script.js"></script>
+          <script src="/torlaune/min/transfer-records.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html xmlns:fb="http://ogp.me/ns/fb#" lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>World Cup 2014 Player Migrations | Exploring Data</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="An interactive data visualization that shows the migration paths from players participating in the FIFA world cup 2014, who were born in another country than the one they are playing for.">
+        <meta property="og:image" content="https://exploring-data.com/img/large//torlaune/img/world-cup-2014-player-migrations-large.png
+">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:creator" content="@yaph">
+<meta name="twitter:site" content="@yaph">
+<meta name="twitter:title" content="World Cup 2014 Player Migrations">
+<meta name="twitter:description" content="An interactive data visualization that shows the migration paths from players participating in the FIFA world cup 2014, who were born in another country than the one they are playing for.">
+<meta name="twitter:image:src" content="https://exploring-data.com/img/large//torlaune/img/world-cup-2014-player-migrations-large.png
+">
+    <meta name="author" content="Ramiro Gómez">
+    <link rel="canonical" href="https://exploring-data.com/vis/wc2014-player-migrations/">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/solid.min.css" integrity="sha512-/r+0SvLvMMSIf41xiuy19aNkXxI+3zb/BN8K9lnDDWI09VM0dwgTMzK7Qi5vv5macJ3VH4XZXr60ip7v13QnmQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="/css/style.css" rel="stylesheet">
+<link href="/torlaune/css/sankey.css" rel="stylesheet">
+            <link rel="stylesheet" href="/torlaune/css/bar.css">
+            <link rel="stylesheet" href="/torlaune/css/wc2014-player-migrations.css">
+
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="alternate" type="application/rss+xml" title="Exploring Data RSS feed" href="https://exploring-data.com/rss.xml">
+</head>
+
+<body class="">
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/">
+          <img src="/img/exploring-data.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+          Exploring Data
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-content">
+<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+    <li class="nav-item"><a class="nav-link" href="/data-visualization-books/">📕 Data Books</a></li>
+    <li class="nav-item"><a class="nav-link" href="/prints/">🛒 Prints</a></li>
+    <li class="nav-item"><a class="nav-link" href="/datasearch/">🔍 Search for Data</a></li>
+    <li class="nav-item"><a class="nav-link" href="/sitemap/">📄 Sitemap</a></li>
+</ul>        </div>
+      </div>
+    </nav>
+
+<div class="container">
+    <div class="row">
+    <div class="col-md-8">
+        <h2>World Cup 2014 Player Migrations</h2>
+        <div class="sankey-legend">
+            <h5 class="left">Born in country</h5>
+            <h5 class="right">Plays for country</h5>
+        </div>
+        <div id="vis"></div>
+        <p>The flow diagram above shows the migration paths from players participating in the FIFA world cup 2014, who were born in another country than the one they are playing for. The more players migrated from one country to another the thicker the line that connects them. You can click on the countries and paths for detailed information of the players who migrated.</p>
+        <p>The use of the word migration in this context doesn't imply that the concerned players live in the countries they play for. In many cases they were actually raised in the countries they were born in and play for a club there. Often the migration is their best chance to take part in tournaments like the world cup, so it is a perfectly comprehensible move, even more so since they usually have ancestry from the country they play for.</p>
+        <p>Here are a few tidbits I learned through this visualization and the feedback I got:</p>
+        <ul>
+            <li>With 47 players France is the top birth country in this world cup, enough to equip 2 teams.</li>
+            <li>16 of Algeria's players were born in France.</li>
+            <li><a href="http://news.bbc.co.uk/sport2/hi/football/africa/3742472.stm">Rio Mavuba</a>, who plays for France, was born at sea off the coast of Angola.</li>
+            <li><a href="https://en.wikipedia.org/wiki/Peter_Odemwingie">Peter Odemwingie</a>, who plays for Nigeria, is the only world cup player born in Uzbekistan.</li>
+
+        </ul>
+        <p>This visualization was created by <a href="https://ramiro.org/">Ramiro Gómez</a> with data last obtained on June 23, 2014 from <del>kimonolabs.com</del>.</p>
+    </div>
+    <div class="col-md-4" id="sidebar">
+        <div id="rankings">
+            <h2>Top Migration Paths</h2>
+            <svg id="top-paths" class="bar"></svg>
+            <p>Most common migration paths between countries.</p>
+            <hr>
+            <h2>Most Emigrations</h2>
+            <svg id="most-emigrations" class="bar"></svg>
+            <p>Countries with most players born there, who play for a different country now.</p>
+            <hr>
+            <h2>Most Immigrations</h2>
+            <svg id="most-immigrations" class="bar"></svg>
+            <p>Countries with most players who were born in another country.</p>
+        </div>
+        <div id="overlay">
+            <button id="close-overlay" class="btn btn-default btn-sm pull-right"><i class="fa fa-times"></i></button>
+            <div id="detail-info"></div>
+        </div>
+    </div>
+</div>
+</div>
+    <div id="footer" class="container-fluid">
+        <footer>
+            <hr>
+            <p>Exploring Data is a showcase of interactive data visualizations created with open data and open source tools, <a href="/about/">learn more</a>.<br>
+            © <script>document.write(new Date().getFullYear())</script> <a href="https://ramiro.org/">Ramiro Gómez</a>.</p>
+        </footer>
+    </div>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-448ZHXENT0"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-448ZHXENT0');
+</script>    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/fontawesome.min.js" integrity="sha512-NeFv3hB6XGV+0y96NVxoWIkhrs1eC3KXBJ9OJiTFktvbzJ/0Kk7Rmm9hJ2/c2wJjy6wG0a0lIgehHjCTDLRwWw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/solid.min.js" integrity="sha512-L2znesU64H/rvdnaD4WBaRAmEcGvhBsVLXygPkhpgpUwcgjymD4amy68shdgZgLiIvyvV/vHRXAM4mTV8xqp+Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="/torlaune/min/d3.sankey.js"></script>
+
+<script>
+var config = {'csv': '/torlaune/data/world-cup-2014-migrated-players.csv', 'from': {'key': 'birthCountry', 'name': 'Born in'}, 'to': {'key': 'nationality', 'name': 'Plays for'}, 'aggregate': {'value': 1}};
+d3.csv(config.csv, function(error, data) {
+    init_sankey(config, data)
+});
+</script>
+
+    <script src="/js/script.js"></script>
+          <script src="/torlaune/min/bar.js"></script>
+          <script src="/torlaune/min/wc2014-player-migrations.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,17 @@
+.icons i {
+  font-size: 1.4em;
+  padding: 0.2em; }
+
+.icons .icon {
+  float: left;
+  width: 40px;
+  height: 40px;
+  background-size: 40px 40px; }
+
+.ronaldo {
+  background: url("/img/icons/cristiano-ronaldo-by-hazeljane.svg"); }
+
+.worker {
+  background: url("/img/icons/worker.svg"); }
+
+/*# sourceMappingURL=ronaldo-income.css.map */

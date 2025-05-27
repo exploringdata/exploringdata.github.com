@@ -1,0 +1,10 @@
+.bar rect {
+  fill: #4682B4;
+  opacity: 0.7; }
+
+.bar text {
+  fill: white;
+  font: 12px sans-serif;
+  text-anchor: start; }
+
+/*# sourceMappingURL=bar.css.map */
