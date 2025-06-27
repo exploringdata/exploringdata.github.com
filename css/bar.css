@@ -1,0 +1,8 @@
+.bar rect {
+  fill: #7ba0c0;
+  opacity: 0.7; }
+
+.bar text {
+  fill: #111111;
+  font: 12px sans-serif;
+  text-anchor: start; }
