@@ -7,6 +7,13 @@
     <generator>Logya</generator>
     <docs>http://blogs.law.harvard.edu/tech/rss</docs>
     <item>
+        <title><![CDATA[Elevation Diary: Nerja]]></title>
+        <link><![CDATA[https://exploring-data.com/map/3d/elevation-diary-nerja/]]></link>
+        <description><![CDATA[Interactive 3D elevation diary showing photos from a 2-week vacation in Nerja, Spain, displayed alongside their geographic locations on a terrain map.]]></description>
+        <guid><![CDATA[https://exploring-data.com/map/3d/elevation-diary-nerja/]]></guid>
+        <pubDate>Sat, 31 Jan 2026 23:57:12 </pubDate>
+    </item>
+    <item>
         <title><![CDATA[Volcanoes of Planet Earth]]></title>
         <link><![CDATA[https://exploring-data.com/vis/volcanoes-globe/]]></link>
         <description><![CDATA[A 3D globe showing a selection of volcanoes on planet earth.]]></description>
@@ -70,12 +77,5 @@ A great gift for geography nerds, teache]]></description>
         <description><![CDATA[Ada, named after Ada Lovelace, is a statically typed, imperative, and object-oriented programming language. This network graph shows 26 languages connected by influence relations, i.e. languages that were influenced by Ada or influenced Ada and Ada itself.]]></description>
         <guid><![CDATA[https://exploring-data.com/print/ada-influence-network/]]></guid>
         <pubDate>Tue, 11 Oct 2022 00:00:00 </pubDate>
-    </item>
-    <item>
-        <title><![CDATA[Programming Languages Influence Network 2021 - Light Background Poster by ramiro]]></title>
-        <link><![CDATA[https://exploring-data.com/print/programming-languages-influence-network-2021-black/]]></link>
-        <description><![CDATA[A network graph showing 500 programming languages connected by 953 influence relations. Highly influential languages like Lisp, Smalltalk, C, Java, C++, Haskell and Python are shown as larger circles as compared to languages with less influence on others l]]></description>
-        <guid><![CDATA[https://exploring-data.com/print/programming-languages-influence-network-2021-black/]]></guid>
-        <pubDate>Thu, 30 Dec 2021 00:00:00 </pubDate>
     </item>
 </channel></rss>

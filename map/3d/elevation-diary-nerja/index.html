@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Elevation Diary: Nerja | Exploring Data</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="Interactive 3D elevation diary showing photos from a 2-week vacation in Nerja, Spain, displayed alongside their geographic locations on a terrain map.">
+      <meta property="og:image" content="/img/preview/elevation-diary-nerja.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:creator" content="@yaph">
+<meta name="twitter:site" content="@yaph">
+<meta name="twitter:title" content="Elevation Diary: Nerja">
+<meta name="twitter:description" content="Interactive 3D elevation diary showing photos from a 2-week vacation in Nerja, Spain, displayed alongside their geographic locations on a terrain map.">
+<meta name="twitter:image:src" content="/img/preview/elevation-diary-nerja.png">
+  <meta name="author" content="Ramiro Gómez">
+  <link rel="canonical" href="https://exploring-data.com/map/3d/elevation-diary-nerja/">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/css/bootstrap.min.css" integrity="sha512-2bBQCjcnw658Lho4nlXJcc6WkV/UxpE/sAokbXPxQNGqmNdQrWqtw26Ns9kFF/yG792pKR1Sx8/Y1Lf1XN4GKA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/solid.min.css" integrity="sha512-EHa6vH03/Ty92WahM0/tet1Qicl76zihDCkBnFhN3kFGQkC+mc86d7V+6y2ypiLbk3h0beZAGdUpzfMcb06cMg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="/css/style.css" rel="stylesheet">
+          <link rel="stylesheet" href="/css/elevation-diary-nerja.css">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="alternate" type="application/rss+xml" title="Exploring Data RSS feed" href="https://exploring-data.com/rss.xml">
+</head>
+
+<body class="">
+
+<div><div id="app-container">
+    <div id="map-container">
+        <div id="loading">Loading journey...</div>
+        <canvas id="deck"></canvas>
+    </div>
+    <div id="info-container">
+        <div id="controls">
+            <div id="info-panel">
+                📷 <span id="current-photo">1</span>/<span id="total-photos">483</span>
+                • 🕐 <span id="timestamp">-</span>
+                <button id="info-btn" class="info-icon">ℹ️</button>
+            </div>
+            <img id="photo" src="" alt="Photo">
+            <div id="progress-container">
+                <div id="progress-bar"></div>
+            </div>
+            <div id="button-container">
+                <button id="first-btn">«</button>
+                <button id="prev-btn">‹</button>
+                <button id="play-btn">▶</button>
+                <button id="next-btn">›</button>
+                <button id="last-btn">»</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="info-modal" class="modal">
+    <div class="modal-content">
+        <span class="modal-close">&times;</span>
+        <h2>About This Project</h2>
+        <p>Interactive 3D elevation diary showing photos from a 2-week vacation in Nerja, Spain, displayed alongside their geographic locations on a terrain map.</p>
+        <h3>Keyboard Navigation</h3>
+        <ul>
+            <li><kbd>Arrow Left</kbd> – previous photo</li>
+            <li><kbd>Arrow Right</kbd> – next photo</li>
+            <li><kbd>Home</kbd> – first photo</li>
+            <li><kbd>End</kbd> – last photo</li>
+            <li><kbd>Space</kbd> – play/pause slideshow</li>
+        </ul>
+        </p>
+        <h3>Technical Details</h3>
+        <p><strong>GPS Accuracy:</strong> Location data may be inaccurate, particularly elevation measurements near sea level.</p>
+        <h3>Attributions</h3>
+        <ul>
+        <li><strong>Terrain Data:</strong> <a href="https://registry.opendata.aws/terrain-tiles/">Mapzen Terrarium Terrain Tiles</a></li>
+        <li><strong>Satellite Imagery:</strong> <a href="https://www.arcgis.com/home/item.html?id=10df2279f9684e4a9f6a7f08febac2a9">Esri World Imagery</a></li>
+        <li><strong>Processing/Visualization:</strong> <a href="https://github.com/yaph/wim">wim</a> • <a href="https://deck.gl/">deck.gl</a></li>
+        <li><strong>Created by:</strong> <a href="https://ramiro.org/">Ramiro Gómez</a></li>
+        </ul>
+    </div>
+</div></div>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.8/umd/popper.min.js" integrity="sha512-TPh2Oxlg1zp+kz3nFA0C5vVC6leG/6mm1z9+mA81MI5eaUVqasPLO8Cuk4gMF4gUfP5etR73rgU/8PNMsSesoQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/js/bootstrap.min.js" integrity="sha512-nKXmKvJyiGQy343jatQlzDprflyB5c+tKCzGP3Uq67v+lmzfnZUi/ZT+fc6ITZfSC5HhaBKUIvr/nTLCV+7F+Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/js/fontawesome.min.js" integrity="sha512-obFNtQ1JKCrxPBPLmYDUevlriATl5EhvwU3CFtdW/HKOkeAe0bbsyZfHO44/f1QyndrZJ464TQvrRP9ZjyXSSA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/js/solid.min.js" integrity="sha512-JqavQXK1jFoFcjU3kIvom9jdj3R76Ar8+ZcWezTLONsfi5Y3yibIqq0FyqP4R//K/G3ow84fIH0wBXKWpJf2EQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+<script src="/js/script.js"></script>
+      <script src="https://unpkg.com/deck.gl@9/dist.min.js"></script>
+      <script src="https://unpkg.com/@loaders.gl/csv@4/dist/dist.min.js"></script>
+      <script src="/compiled/map/elevation-diary-nerja.js"></script>
+
+<script async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+</body>
+</html>
