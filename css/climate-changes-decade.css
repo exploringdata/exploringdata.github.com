@@ -1,7 +1,1 @@
-.nvd3 .nv-axis line {stroke:#bbb;}
-.nv-legend text {font-size:1em;}
-.bar svg {height:480px;}
-#vis h2 {font-size:1.5em;}
-#queryinfo {font-size:1.1em;}
-#history svg {height:480px;}
-#history rect {cursor:pointer;}
+.nvd3 .nv-axis line{stroke:#bbb}.nv-legend text{font-size:1em}.bar svg{height:480px}#vis h2{font-size:1.5em}#queryinfo{font-size:1.1em}#history svg{height:480px}#history rect{cursor:pointer}
