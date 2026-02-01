@@ -1,11 +1,5 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-family: 'Segoe UI', Roboto, sans-serif;
   overflow: hidden;
 }
 
@@ -177,12 +171,11 @@ body {
 
 .modal-close {
   color: rgba(255, 255, 255, 0.6);
+  float: right;
   font-size: 28px;
   font-weight: bold;
   cursor: pointer;
   line-height: 20px;
-  position: absolute;
-  right: 1em;
   transition: color 0.2s;
 }
 
