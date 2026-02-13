@@ -7,6 +7,13 @@
     <generator>Logya</generator>
     <docs>http://blogs.law.harvard.edu/tech/rss</docs>
     <item>
+        <title><![CDATA[Coastal Mountain Walks: Exploring Google Fit Data]]></title>
+        <link><![CDATA[https://exploring-data.com/story/coastal-mountain-walks/]]></link>
+        <description><![CDATA[Analysis of Google Fit data from a hiking vacation in Nerja, Spain. Explore daily step counts, activity patterns, and visualization techniques.]]></description>
+        <guid><![CDATA[https://exploring-data.com/story/coastal-mountain-walks/]]></guid>
+        <pubDate>Fri, 13 Feb 2026 14:34:29 </pubDate>
+    </item>
+    <item>
         <title><![CDATA[Elevation Diary: Nerja]]></title>
         <link><![CDATA[https://exploring-data.com/map/3d/elevation-diary-nerja/]]></link>
         <description><![CDATA[Interactive 3D elevation diary showing photos from a 2-week vacation in Nerja, Spain, displayed alongside their geographic locations on a terrain map.]]></description>
@@ -70,12 +77,5 @@ A great gift for geography nerds, teache]]></description>
         <description><![CDATA[JavaScript (JS) is the programming language of the World Wide Web. This network graph shows languages connected by influence relations, i.e. languages that were influenced by JavaScript or influenced JavaScript and JavaScript itself. More influential la]]></description>
         <guid><![CDATA[https://exploring-data.com/print/javascript-influence-network/]]></guid>
         <pubDate>Mon, 07 Nov 2022 00:00:00 </pubDate>
-    </item>
-    <item>
-        <title><![CDATA[Ada Programming Language Influence Network Graph]]></title>
-        <link><![CDATA[https://exploring-data.com/print/ada-influence-network/]]></link>
-        <description><![CDATA[Ada, named after Ada Lovelace, is a statically typed, imperative, and object-oriented programming language. This network graph shows 26 languages connected by influence relations, i.e. languages that were influenced by Ada or influenced Ada and Ada itself.]]></description>
-        <guid><![CDATA[https://exploring-data.com/print/ada-influence-network/]]></guid>
-        <pubDate>Tue, 11 Oct 2022 00:00:00 </pubDate>
     </item>
 </channel></rss>
