@@ -4,42 +4,40 @@
   <meta charset="utf-8">
   <title>Visualizing Influence Relations of Programming Languages | Exploring Data</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="description" content="The programming languages influence network is an interactive graph visualization where languages are connected by influence relations based on data from Freebase.">
-      <meta property="og:image" content="/img/preview/programming-languages-influence-network.jpg">
+    <meta name="description" content="The programming languages influence network is an interactive graph visualization where languages are connected by influence relations based on data from Freebase.">
+    <meta property="og:image" content="/img/preview/programming-languages-influence-network.jpg">
   <meta name="author" content="Ramiro Gómez">
   <link rel="canonical" href="https://exploring-data.com/info/programming-languages-influence-network/">
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/css/bootstrap.min.css" integrity="sha512-2bBQCjcnw658Lho4nlXJcc6WkV/UxpE/sAokbXPxQNGqmNdQrWqtw26Ns9kFF/yG792pKR1Sx8/Y1Lf1XN4GKA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/solid.min.css" integrity="sha512-EHa6vH03/Ty92WahM0/tet1Qicl76zihDCkBnFhN3kFGQkC+mc86d7V+6y2ypiLbk3h0beZAGdUpzfMcb06cMg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link href="/css/style.css" rel="stylesheet">
+    <link href="/css/style2.css" rel="stylesheet">
 
   <link rel="shortcut icon" href="/favicon.ico">
   <link rel="alternate" type="application/rss+xml" title="Exploring Data RSS feed" href="https://exploring-data.com/rss.xml">
 </head>
 
-<body class="">
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="/">
-      <img src="/img/exploring-data.png" alt="Exploring Data Logo" class="d-inline-block align-text-top">
-    </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbar-content">
-<ul class="navbar-nav me-auto mb-2 mb-lg-0">
-    <li class="nav-item"><a class="nav-link" href="/data-visualization-books/">📕 Data Books</a></li>
-    <li class="nav-item"><a class="nav-link" href="/prints/">🛒 Prints</a></li>
-    <li class="nav-item"><a class="nav-link" href="/datasearch/">🔍 Search for Data</a></li>
-    <li class="nav-item"><a class="nav-link" href="/sitemap/">📄 Sitemap</a></li>
-</ul>    </div>
-  </div>
+<body>
+<nav class="navbar">
+  <ul>
+    <li class="logo"><a href="/"><img src="/img/exploring-data.png" alt="Exploring Data Logo"></a></li>
+    <li class="nav-links">
+      <a href="/vis/">📊 Visualizations</a>
+      <a href="/map/">🗺️ Maps</a>
+      <a href="/story">🗒️ Stories</a>
+      <a href="/prints/">🛒 Prints</a>
+      <a href="/data-visualization-books/">📕 Books</a>
+      <a href="/datasearch/">🔍 Search for Data</a>
+      <a href="/sitemap/">📄 Sitemap</a>
+    </li>
+    <li class="hamburger">
+      <button aria-label="Menu">&#9776;</button>
+    </li>
+  </ul>
 </nav>
 
-<div id="info" class="container">
-<div class="row">
-  <div class="col-md-9"><h1>Visualizing Influence Relations of Programming Languages</h1>
-  <p>The first programming languages were created before modern computers existed. Between 1842-1843 <a href="https://en.wikipedia.org/wiki/Ada_Lovelace">Ada Lovelace</a> specified a method for calculating Bernoulli numbers with the Analytical Engine, recognized by some historians as the world's first computer program. The first programming languages designed to communicate with a computer were written in the 1950s, since then hundreds of programming languages were created.</p>
+<div class="two-column">
+    <main class="main-content">
+        <h1>Visualizing Influence Relations of Programming Languages</h1>
+        <p>The first programming languages were created before modern computers existed. Between 1842-1843 <a href="https://en.wikipedia.org/wiki/Ada_Lovelace">Ada Lovelace</a> specified a method for calculating Bernoulli numbers with the Analytical Engine, recognized by some historians as the world's first computer program. The first programming languages designed to communicate with a computer were written in the 1950s, since then hundreds of programming languages were created.</p>
 <p>Naturally, some of those languages had a larger impact than others, Lisp and C for example were developed in the late 1950s and 1960s respectively and are still widely used, many newer programming languages are implemented in C. The impact of a language is not limited to its usage but is also manifested in its influence on other languages. To visualize these influence relations I created different network graphs described hereafter.</p>
 <p>The data on programming languages, their influence relations and the programming paradigms they are classified into comes from the <a href="http://www.freebase.com/view/computer/programming_language">Freebase Programming Language collection</a>, which is largely based on information from <a href="http://www.wikipedia.org/">Wikipedia</a>. Bear in mind that Freebase data is not necessarily correct or complete.</p>
 <p>All of the described visualizations have several features in common:</p>
@@ -107,34 +105,44 @@
 <p>Feel free to share this visualization with your friends.</p>
 <h2>Update 2019-01-24</h2>
 <p>I had plans to update this project for a while and eventually created a whole <a href="https://programminglanguages.info/">website about programming languages</a> and launched it in December 2018. Besides dedicated pages for each language with relevant information and resources, there is an <a href="https://programminglanguages.info/influence-network/">influence network graph</a> using <a href="https://www.wikidata.org/">Wikidata</a> as the data source. In this visualization the graph layout, node sizing and coloring is all done in JavaScript using <a href="https://d3js.org/">D3.js</a>, which makes it a lot easier to update. I intend to do data updates regularly and add more information to the language pages to make it a useful resource for programmers and everyone interested in programing languages. Hope you'll check it out and enjoy it.</p>
+
 <div class="postinfo">
-<hr class="clearfix">
-<div class="well">
 <p>Published on September 07, 2012 (updated on January 24, 2019) by <a href="https://ramiro.org/">Ramiro Gómez</a>. To be informed of new posts, subscribe to the <a href="/rss.xml">RSS feed</a>.
-<br>Tags: <a href="/tags/network-graph/">network graph</a>, <a href="/tags/sigmajs/">sigmajs</a>, <a href="/tags/networkx/">networkx</a>, <a href="/tags/gephi/">gephi</a>, <a href="/tags/programming/">programming</a>.</p>
+<br>Tags: <a href="/tags/networkx/">networkx</a>, <a href="/tags/sigmajs/">sigmajs</a>, <a href="/tags/gephi/">gephi</a>, <a href="/tags/programming/">programming</a>, <a href="/tags/network-graph/">network graph</a>.</p>
+</div>    </main>
+    <aside class="sidebar">
+
+
+<h3>Visualizations</h3>
+    <a href="/vis/programming-languages-influence-network/"><img src="/img/preview/programming-languages-influence-network.jpg" alt="visualization preview">
+    <a href="/vis/programming-languages-influence-network/">View Visualization</a>
+    <hr>
+    <a href="/vis/programming-languages-influence-network-2014/"><img src="/img/preview/programming-languages-influence-network-2014.png" alt="visualization preview">
+    <a href="/vis/programming-languages-influence-network-2014/">View Visualization</a>
+    <hr>
+
+
+<h3>Visualization Posters</h3>
+<div class="flex-columns">
+    <div class="column">
+        <a href="/print/plin-forceatlas2-2013-black/" title="Graph of Programming Languages Influence"><img src="/img/products/teespring-plin2013-print.jpg" alt="Graph of Programming Languages Influence"></a>
+    </div>
+    <div class="column">
+        <a href="https://www.zazzle.com/programming_languages_influence_network_poster-228176637617418204?size=%5B24.0000%2C18.0000%5D&ratio=1.33333333333333&rf=238355915198956003&tc=xpdt" title="Programming Languages Influence 2013"><img src="https://www.zazzle.com/rlv/programming_languages_influence_network_poster-r442d0e74f4944fe49bf93873b229a972_805r_125.jpg" alt="Programming Languages Influence 2013"></a>
+    </div>
+    <div class="column">
+        <a href="https://www.zazzle.com/programming_languages_influence_network_2014_poster-228756590438836612?rf=238355915198956003&tc=xpdt" title="Programming Languages Influence 2014"><img src="https://www.zazzle.com/rlv/programming_languages_influence_network_2014_poster-rba8de641deee4bd2a339178aaa87b679_wvo_8byvr_125.jpg" alt="Programming Languages Influence 2014"></a>
+    </div>
+    <div class="column">
+        <a href="https://www.zazzle.com/programming_languages_influence_network_2014_full-228027646918166802?design.areas=%5Bdynamic%5D&rf=238355915198956003&tc=xpdt" title="Programming Languages 2014 Full Poster"><img src="https://www.zazzle.com/rlv/programming_languages_influence_network_2014_full-r6946987ab19440a7a402765a176b5498_wvo_8byvr_325.jpg" alt="Programming Languages 2014 Full Poster"></a>
+    </div>
 </div>
-</div>
-  </div>
-  <div class="col-md-3">
-        <h3>Visualizations</h3>
-          <a href="/vis/programming-languages-influence-network/"><img class="img-thumbnail img-fluid" src="/img/preview/programming-languages-influence-network.jpg" alt="visualization preview">
-          <a href="/vis/programming-languages-influence-network/" class="btn btn-primary mt-2">View Visualization</a>
-          <hr>
-          <a href="/vis/programming-languages-influence-network-2014/"><img class="img-thumbnail img-fluid" src="/img/preview/programming-languages-influence-network-2014.png" alt="visualization preview">
-          <a href="/vis/programming-languages-influence-network-2014/" class="btn btn-primary mt-2">View Visualization</a>
-          <hr>
-      <h3>Visualization Posters</h3>
-      <div class="row">
-        <div class="col-md-6"><a href="/print/plin-forceatlas2-2013-black/" title="Graph of Programming Languages Influence"><img class="img-fluid" src="/img/products/teespring-plin2013-print.jpg" alt="Graph of Programming Languages Influence"></a></div>
-        <div class="col-md-6"><a href="https://www.zazzle.com/programming_languages_influence_network_poster-228176637617418204?size=%5B24.0000%2C18.0000%5D&ratio=1.33333333333333&rf=238355915198956003&tc=xpdt" title="Programming Languages Influence 2013"><img class="img-fluid" src="https://www.zazzle.com/rlv/programming_languages_influence_network_poster-r442d0e74f4944fe49bf93873b229a972_805r_125.jpg" alt="Programming Languages Influence 2013"></a></div>
-        <div class="col-md-6"><a href="https://www.zazzle.com/programming_languages_influence_network_2014_poster-228756590438836612?rf=238355915198956003&tc=xpdt" title="Programming Languages Influence 2014"><img class="img-fluid" src="https://www.zazzle.com/rlv/programming_languages_influence_network_2014_poster-rba8de641deee4bd2a339178aaa87b679_wvo_8byvr_125.jpg" alt="Programming Languages Influence 2014"></a></div>
-        <div class="col-md-6"><a href="https://www.zazzle.com/programming_languages_influence_network_2014_full-228027646918166802?design.areas=%5Bdynamic%5D&rf=238355915198956003&tc=xpdt" title="Programming Languages 2014 Full Poster"><img class="img-fluid" src="https://www.zazzle.com/rlv/programming_languages_influence_network_2014_full-r6946987ab19440a7a402765a176b5498_wvo_8byvr_325.jpg" alt="Programming Languages 2014 Full Poster"></a></div>
-      </div>
-      <hr>
-      <h3>Source Code</h3>
-      <p>Check out the source code used to process the data and create the visualizations.</p>
-      <a class="btn btn-primary" href="https://github.com/yaph/programming-languages-influence">Code Repository</a>
-      <hr>
+<hr>
+
+<h3>Source Code</h3>
+<p>Check out the source code used to process the data and create the visualizations.</p>
+<a class="btn btn-primary" href="https://github.com/yaph/programming-languages-influence">Code Repository</a>
+<hr>
 
 <h3>Keep Exploring</h3>
 <a href="/rss.xml" class="btn btn-lg btn-warning m-1 mb-2">Subscribe to News feed</a>
@@ -146,24 +154,17 @@
 <li><a href="/vis/big-sister-cities/">Graph of Big Sister Cities With +1 Million Inhabitants</a></li>
 <li><a href="/vis/spaghetti-western-actors-dbpedia/">Spaghetti Western Actors Network Graph DBpedia</a></li>
 <li><a href="/vis/ronaldo-income/">How Much Cristiano Ronaldo Earns Viewed from 2 Angles</a></li>
-</ul>  </div>
-</div>
-</div><div id="footer" class="container-fluid">
-    <footer>
-        <hr>
-        <p>Exploring Data is a showcase of interactive data visualizations created with open data and open source tools, <a href="/about/">learn more</a>.<br>
-        © <script>document.write(new Date().getFullYear())</script> <a href="https://ramiro.org/">Ramiro Gómez</a>.</p>
-    </footer>
+</ul>    </aside>
 </div>
 
-<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.8/umd/popper.min.js" integrity="sha512-TPh2Oxlg1zp+kz3nFA0C5vVC6leG/6mm1z9+mA81MI5eaUVqasPLO8Cuk4gMF4gUfP5etR73rgU/8PNMsSesoQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/js/bootstrap.min.js" integrity="sha512-nKXmKvJyiGQy343jatQlzDprflyB5c+tKCzGP3Uq67v+lmzfnZUi/ZT+fc6ITZfSC5HhaBKUIvr/nTLCV+7F+Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/js/fontawesome.min.js" integrity="sha512-obFNtQ1JKCrxPBPLmYDUevlriATl5EhvwU3CFtdW/HKOkeAe0bbsyZfHO44/f1QyndrZJ464TQvrRP9ZjyXSSA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/js/solid.min.js" integrity="sha512-JqavQXK1jFoFcjU3kIvom9jdj3R76Ar8+ZcWezTLONsfi5Y3yibIqq0FyqP4R//K/G3ow84fIH0wBXKWpJf2EQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<footer>
+  <p>Exploring Data is a showcase of interactive data visualizations created with open data and open source tools, <a href="/about/">learn more</a>.<br>
+  © 2026 </script> <a href="https://ramiro.org/">Ramiro Gómez</a>.</p>
+</footer>
 
 
-<script src="/js/script.js"></script>
+<script src="/compiled/script2.js"></script>
+
 
 <script async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
 </body>

@@ -4,193 +4,111 @@
   <meta charset="utf-8">
   <title>Data Mining and Data Visualization | Exploring Data</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="description" content="Exploring Data is a showcase of interactive data visualizations comprising topics like world aid flow, climate change, programming languages, football, knowledge graph relations, and networks.">
-      <meta property="og:image" content="/img/exploringdata.jpg">
+    <meta name="description" content="Exploring Data is a showcase of interactive data visualizations comprising topics like world aid flow, climate change, programming languages, football, knowledge graph relations, and networks.">
+    <meta property="og:image" content="/img/exploringdata.jpg">
   <meta name="author" content="Ramiro Gómez">
-  <link rel="canonical" href="http://localhost:8080/">
+  <link rel="canonical" href="https://exploring-data.com/">
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/css/bootstrap.min.css" integrity="sha512-2bBQCjcnw658Lho4nlXJcc6WkV/UxpE/sAokbXPxQNGqmNdQrWqtw26Ns9kFF/yG792pKR1Sx8/Y1Lf1XN4GKA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/solid.min.css" integrity="sha512-EHa6vH03/Ty92WahM0/tet1Qicl76zihDCkBnFhN3kFGQkC+mc86d7V+6y2ypiLbk3h0beZAGdUpzfMcb06cMg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link href="/css/style.css" rel="stylesheet">
+    <link href="/css/style2.css" rel="stylesheet">
 
   <link rel="shortcut icon" href="/favicon.ico">
-  <link rel="alternate" type="application/rss+xml" title="Exploring Data RSS feed" href="http://localhost:8080/rss.xml">
+  <link rel="alternate" type="application/rss+xml" title="Exploring Data RSS feed" href="https://exploring-data.com/rss.xml">
 </head>
 
-<body class="">
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="/">
-      <img src="/img/exploring-data.png" alt="Exploring Data Logo" class="d-inline-block align-text-top">
-    </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbar-content">
-<ul class="navbar-nav me-auto mb-2 mb-lg-0">
-    <li class="nav-item"><a class="nav-link" href="/data-visualization-books/">📕 Data Books</a></li>
-    <li class="nav-item"><a class="nav-link" href="/prints/">🛒 Prints</a></li>
-    <li class="nav-item"><a class="nav-link" href="/datasearch/">🔍 Search for Data</a></li>
-    <li class="nav-item"><a class="nav-link" href="/sitemap/">📄 Sitemap</a></li>
-</ul>    </div>
-  </div>
+<body>
+<nav class="navbar">
+  <ul>
+    <li class="logo"><a href="/"><img src="/img/exploring-data.png" alt="Exploring Data Logo"></a></li>
+    <li class="nav-links">
+      <a href="/vis/">📊 Visualizations</a>
+      <a href="/map/">🗺️ Maps</a>
+      <a href="/story">🗒️ Stories</a>
+      <a href="/prints/">🛒 Prints</a>
+      <a href="/data-visualization-books/">📕 Books</a>
+      <a href="/datasearch/">🔍 Search for Data</a>
+      <a href="/sitemap/">📄 Sitemap</a>
+    </li>
+    <li class="hamburger">
+      <button aria-label="Menu">&#9776;</button>
+    </li>
+  </ul>
 </nav>
 
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-md-6 col-lg-3">
-      <div class="card mt-2">
-    <a href="/map/3d/elevation-diary-nerja/" title="Read more">
-        <img class="card-img-top object-fit-scale" loading="lazy" src="/img/preview/elevation-diary-nerja.png" alt="Elevation Diary: Nerja">
-    </a>
-    <div class="card-body">
-        <h5 class="card-title">Elevation Diary: Nerja</h5>
-            <p class="card-text">Interactive 3D elevation diary showing photos from a 2-week vacation in Nerja, Spain, displayed alongside their geographic locations on a terrain map.</p>
-    </div>
+<p><div class="flex-columns">
+        <div class="column">
+            <div class="card">
+                <a href="/map/3d/elevation-diary-nerja/" title="Read more">
+                    <img loading="lazy" src="/img/preview/elevation-diary-nerja.png" alt="Elevation Diary: Nerja">
+                    <h3>Elevation Diary: Nerja</h3>
+                </a>
+<p>Interactive 3D elevation diary showing photos from a 2-week vacation in Nerja, Spain, displayed...</p>            </div>
+        </div>
+        <div class="column">
+            <div class="card">
+                <a href="/vis/volcanoes-globe/" title="Read more">
+                    <img loading="lazy" src="/img/preview/volcanoes-globe.png" alt="Volcanoes of Planet Earth">
+                    <h3>Volcanoes of Planet Earth</h3>
+                </a>
+<p>A 3D globe showing a selection of volcanoes on planet earth.</p>            </div>
+        </div>
+        <div class="column">
+            <div class="card">
+                <a href="/map/world/co2-emissions/" title="Read more">
+                    <img loading="lazy" src="/img/preview/co2-emissions-2014.png" alt="World Map of Countries by CO2 Emissions per Capita from 1960 to 2014">
+                    <h3>World Map of Countries by CO2 Emissions per Capita from...</h3>
+                </a>
+<p>These choropleth maps show CO2 emissions in metric tons per capita from 1960 to 2014 based on...</p>            </div>
+        </div>
+        <div class="column">
+            <div class="card">
+                <a href="/map/world/forest-area/" title="Read more">
+                    <img loading="lazy" src="/img/preview/forest-area-2016.png" alt="World Map of Countries by Forest Area Percentage of Land Area">
+                    <h3>World Map of Countries by Forest Area Percentage of Land Area</h3>
+                </a>
+<p>These choropleth maps show the forest area percentage of land area for the world's countries...</p>            </div>
+        </div>
+        <div class="column">
+            <div class="card">
+                <a href="/vis/mentor-author-graph/" title="Read more">
+                    <img loading="lazy" src="/img/preview/mentor-author-graph.png" alt="Graph of Mentors, Books and Authors">
+                    <h3>Graph of Mentors, Books and Authors</h3>
+                </a>
+<p>An interactive network graph consisting of authors, books and mentors based on recommendations...</p>            </div>
+        </div>
+        <div class="column">
+            <div class="card">
+                <a href="/vis/big-sister-cities/" title="Read more">
+                    <img loading="lazy" src="/img/preview/big-sister-cities.png" alt="Graph of Big Sister Cities With +1 Million Inhabitants">
+                    <h3>Graph of Big Sister Cities With +1 Million Inhabitants</h3>
+                </a>
+<p>An interactive network graph showing 279 cities with more than 1 million inhabitants and how...</p>            </div>
+        </div>
+        <div class="column">
+            <div class="card">
+                <a href="/vis/spaghetti-western-actors-dbpedia/" title="Read more">
+                    <img loading="lazy" src="/img/preview/spaghetti-western-actors-dbpedia-graph.png" alt="Spaghetti Western Actors Network Graph DBpedia">
+                    <h3>Spaghetti Western Actors Network Graph DBpedia</h3>
+                </a>
+<p>This is an undirected graph of co-occurrences of actors who appeared in one or more Spaghetti...</p>            </div>
+        </div>
+        <div class="column">
+            <div class="card">
+                <a href="/vis/programming-languages-influence-network-2014/" title="Read more">
+                    <img loading="lazy" src="/img/preview/programming-languages-influence-network-2014.png" alt="Programming Languages Influence Network 2014">
+                    <h3>Programming Languages Influence Network 2014</h3>
+                </a>
+<p>An interactive network graph showing the connections of programming languages based on their...</p>            </div>
+        </div>
 </div>
-    </div>
-    <div class="col-md-6 col-lg-3">
-      <div class="card mt-2">
-    <a href="/vis/volcanoes-globe/" title="Read more">
-        <img class="card-img-top object-fit-scale" loading="lazy" src="/img/preview/volcanoes-globe.png" alt="Volcanoes of Planet Earth">
-    </a>
-    <div class="card-body">
-        <h5 class="card-title">Volcanoes of Planet Earth</h5>
-            <p class="card-text">A 3D globe showing a selection of volcanoes on planet earth.</p>
-    </div>
-</div>
-    </div>
-    <div class="col-md-6 col-lg-3">
-      <div class="card mt-2">
-    <a href="/map/world/co2-emissions/" title="Read more">
-        <img class="card-img-top object-fit-scale" loading="lazy" src="/img/preview/co2-emissions-2014.png" alt="World Map of Countries by CO2 Emissions per Capita from 1960 to 2014">
-    </a>
-    <div class="card-body">
-        <h5 class="card-title">World Map of Countries by CO2 Emissions per Capita from 1960 to 2014</h5>
-            <p class="card-text">These choropleth maps show CO2 emissions in metric tons per capita from 1960 to 2014 based on data from the Carbon Dioxide Information Analysis Center and Oak Ridge National Laboratory.</p>
-    </div>
-</div>
-    </div>
-    <div class="col-md-6 col-lg-3">
-      <div class="card mt-2">
-    <a href="/map/world/forest-area/" title="Read more">
-        <img class="card-img-top object-fit-scale" loading="lazy" src="/img/preview/forest-area-2016.png" alt="World Map of Countries by Forest Area Percentage of Land Area">
-    </a>
-    <div class="card-body">
-        <h5 class="card-title">World Map of Countries by Forest Area Percentage of Land Area</h5>
-            <p class="card-text">These choropleth maps show the forest area percentage of land area for the world's countries from 1990 to 2016 based on data from the Food and Agriculture Organization.</p>
-    </div>
-</div>
-    </div>
-    <div class="col-md-6 col-lg-3">
-      <div class="card mt-2">
-    <a href="/vis/mentor-author-graph/" title="Read more">
-        <img class="card-img-top object-fit-scale" loading="lazy" src="http://localhost:8080/img/preview/mentor-author-graph.png
-" alt="Graph of Mentors, Books and Authors">
-    </a>
-    <div class="card-body">
-        <h5 class="card-title">Graph of Mentors, Books and Authors</h5>
-            <p class="card-text">An interactive network graph consisting of authors, books and mentors based on recommendations in the book Tribe Of Mentors by Tim Ferriss and his interviewees.</p>
-    </div>
-</div>
-    </div>
-    <div class="col-md-6 col-lg-3">
-      <div class="card mt-2">
-    <a href="/vis/big-sister-cities/" title="Read more">
-        <img class="card-img-top object-fit-scale" loading="lazy" src="http://localhost:8080/img/preview/big-sister-cities.png
-" alt="Graph of Big Sister Cities With +1 Million Inhabitants">
-    </a>
-    <div class="card-body">
-        <h5 class="card-title">Graph of Big Sister Cities With +1 Million Inhabitants</h5>
-            <p class="card-text">An interactive network graph showing 279 cities with more than 1 million inhabitants and how they are connected to their sister cities within this set.</p>
-    </div>
-</div>
-    </div>
-    <div class="col-md-6 col-lg-3">
-      <div class="card mt-2">
-    <a href="/vis/spaghetti-western-actors-dbpedia/" title="Read more">
-        <img class="card-img-top object-fit-scale" loading="lazy" src="http://localhost:8080/img/preview/spaghetti-western-actors-dbpedia-graph.png
-" alt="Spaghetti Western Actors Network Graph DBpedia">
-    </a>
-    <div class="card-body">
-        <h5 class="card-title">Spaghetti Western Actors Network Graph DBpedia</h5>
-            <p class="card-text">This is an undirected graph of co-occurrences of actors who appeared in one or more Spaghetti Western films based on data from DBpedia retrieved on August 4, 2015.</p>
-    </div>
-</div>
-    </div>
-    <div class="col-md-6 col-lg-3">
-      <div class="card mt-2">
-    <a href="/vis/programming-languages-influence-network-2014/" title="Read more">
-        <img class="card-img-top object-fit-scale" loading="lazy" src="/img/preview/programming-languages-influence-network-2014.png" alt="Programming Languages Influence Network 2014">
-    </a>
-    <div class="card-body">
-        <h5 class="card-title">Programming Languages Influence Network 2014</h5>
-            <p class="card-text">An interactive network graph showing the connections of programming languages based on their influences with language and language paradigm highlighting rendered with sigma.js and preprocessed with Gephi.</p>
-    </div>
-</div>
-    </div>
-    <div class="col-md-6 col-lg-3">
-      <div class="card mt-2">
-    <a href="/vis/wc2014-player-migrations/" title="Read more">
-        <img class="card-img-top object-fit-scale" loading="lazy" src="/img/torlaune/world-cup-2014-player-migrations-large.png" alt="World Cup 2014 Player Migrations">
-    </a>
-    <div class="card-body">
-        <h5 class="card-title">World Cup 2014 Player Migrations</h5>
-            <p class="card-text">An interactive data visualization that shows the migration paths from players participating in the FIFA world cup 2014, who were born in another country than the one they are playing for.</p>
-    </div>
-</div>
-    </div>
-    <div class="col-md-6 col-lg-3">
-      <div class="card mt-2">
-    <a href="/vis/ballon-dor-male-players-votes-2013/" title="Read more">
-        <img class="card-img-top object-fit-scale" loading="lazy" src="/img/preview/ballon-dor-male-players-2013.jpg" alt="Ballon d'Or 2013 Male Players Votes Network">
-    </a>
-    <div class="card-body">
-        <h5 class="card-title">Ballon d'Or 2013 Male Players Votes Network</h5>
-            <p class="card-text">An interactive network graph showing the connections between voters and voted male football players from the male FIFA Ballon d'Or vote 2013.</p>
-    </div>
-</div>
-    </div>
-    <div class="col-md-6 col-lg-3">
-      <div class="card mt-2">
-    <a href="/map/world/intentional-homicides/" title="Read more">
-        <img class="card-img-top object-fit-scale" loading="lazy" src="/img/preview/intentional-homicides.png" alt="World Map of Intentional Homicides">
-    </a>
-    <div class="card-body">
-        <h5 class="card-title">World Map of Intentional Homicides</h5>
-            <p class="card-text">A series of geographic Choropleth maps showing the number of intentional homicides by country per 100,000 people. Created using World Bank data and d3.geomap.</p>
-    </div>
-</div>
-    </div>
-    <div class="col-md-6 col-lg-3">
-      <div class="card mt-2">
-    <a href="/vis/npm-top-packages-dependencies/" title="Read more">
-        <img class="card-img-top object-fit-scale" loading="lazy" src="/img/preview/npm-packages-dependencies.min10.jpg" alt="npm Top Packages Dependencies Graph">
-    </a>
-    <div class="card-body">
-        <h5 class="card-title">npm Top Packages Dependencies Graph</h5>
-            <p class="card-text">An interactive network graph showing the dependencies between npm packages, with at least 10 dependent packages, as of July 12, 2013 rendered with sigma.js and preprocessed with Gephi.</p>
-    </div>
-</div>
-    </div>
-  </div>
-</div>
-<div id="footer" class="container-fluid">
-    <footer>
-        <hr>
-        <p>Exploring Data is a showcase of interactive data visualizations created with open data and open source tools, <a href="/about/">learn more</a>.<br>
-        © <script>document.write(new Date().getFullYear())</script> <a href="https://ramiro.org/">Ramiro Gómez</a>.</p>
-    </footer>
-</div>
-
-<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.8/umd/popper.min.js" integrity="sha512-TPh2Oxlg1zp+kz3nFA0C5vVC6leG/6mm1z9+mA81MI5eaUVqasPLO8Cuk4gMF4gUfP5etR73rgU/8PNMsSesoQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/js/bootstrap.min.js" integrity="sha512-nKXmKvJyiGQy343jatQlzDprflyB5c+tKCzGP3Uq67v+lmzfnZUi/ZT+fc6ITZfSC5HhaBKUIvr/nTLCV+7F+Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/js/fontawesome.min.js" integrity="sha512-obFNtQ1JKCrxPBPLmYDUevlriATl5EhvwU3CFtdW/HKOkeAe0bbsyZfHO44/f1QyndrZJ464TQvrRP9ZjyXSSA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/js/solid.min.js" integrity="sha512-JqavQXK1jFoFcjU3kIvom9jdj3R76Ar8+ZcWezTLONsfi5Y3yibIqq0FyqP4R//K/G3ow84fIH0wBXKWpJf2EQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</p>
+<footer>
+  <p>Exploring Data is a showcase of interactive data visualizations created with open data and open source tools, <a href="/about/">learn more</a>.<br>
+  © 2026 </script> <a href="https://ramiro.org/">Ramiro Gómez</a>.</p>
+</footer>
 
 
-<script src="/js/script.js"></script>
+<script src="/compiled/script2.js"></script>
+
 
 <script async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
 </body>

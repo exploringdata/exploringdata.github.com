@@ -4,42 +4,40 @@
   <meta charset="utf-8">
   <title>How Participants of the Visualisingdata Census are Connected on Twitter | Exploring Data</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="description" content="The visualisingdata census network graph shows the Twitter connections of the participants of the 1st data visualization census initiated by Andy Kirk.">
-      <meta property="og:image" content="/img/preview/visualisingdata-census-twitter-network.jpg">
+    <meta name="description" content="The visualisingdata census network graph shows the Twitter connections of the participants of the 1st data visualization census initiated by Andy Kirk.">
+    <meta property="og:image" content="/img/preview/visualisingdata-census-twitter-network.jpg">
   <meta name="author" content="Ramiro Gómez">
   <link rel="canonical" href="https://exploring-data.com/info/visualisingdata-census-twitter-network/">
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/css/bootstrap.min.css" integrity="sha512-2bBQCjcnw658Lho4nlXJcc6WkV/UxpE/sAokbXPxQNGqmNdQrWqtw26Ns9kFF/yG792pKR1Sx8/Y1Lf1XN4GKA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/solid.min.css" integrity="sha512-EHa6vH03/Ty92WahM0/tet1Qicl76zihDCkBnFhN3kFGQkC+mc86d7V+6y2ypiLbk3h0beZAGdUpzfMcb06cMg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link href="/css/style.css" rel="stylesheet">
+    <link href="/css/style2.css" rel="stylesheet">
 
   <link rel="shortcut icon" href="/favicon.ico">
   <link rel="alternate" type="application/rss+xml" title="Exploring Data RSS feed" href="https://exploring-data.com/rss.xml">
 </head>
 
-<body class="">
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="/">
-      <img src="/img/exploring-data.png" alt="Exploring Data Logo" class="d-inline-block align-text-top">
-    </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbar-content">
-<ul class="navbar-nav me-auto mb-2 mb-lg-0">
-    <li class="nav-item"><a class="nav-link" href="/data-visualization-books/">📕 Data Books</a></li>
-    <li class="nav-item"><a class="nav-link" href="/prints/">🛒 Prints</a></li>
-    <li class="nav-item"><a class="nav-link" href="/datasearch/">🔍 Search for Data</a></li>
-    <li class="nav-item"><a class="nav-link" href="/sitemap/">📄 Sitemap</a></li>
-</ul>    </div>
-  </div>
+<body>
+<nav class="navbar">
+  <ul>
+    <li class="logo"><a href="/"><img src="/img/exploring-data.png" alt="Exploring Data Logo"></a></li>
+    <li class="nav-links">
+      <a href="/vis/">📊 Visualizations</a>
+      <a href="/map/">🗺️ Maps</a>
+      <a href="/story">🗒️ Stories</a>
+      <a href="/prints/">🛒 Prints</a>
+      <a href="/data-visualization-books/">📕 Books</a>
+      <a href="/datasearch/">🔍 Search for Data</a>
+      <a href="/sitemap/">📄 Sitemap</a>
+    </li>
+    <li class="hamburger">
+      <button aria-label="Menu">&#9776;</button>
+    </li>
+  </ul>
 </nav>
 
-<div id="info" class="container">
-<div class="row">
-  <div class="col-md-9"><h1>How Participants of the Visualisingdata Census are Connected on Twitter</h1>
-  <p>3 weeks ago Andy Kirk started a <a href="http://www.visualisingdata.com/index.php/2013/03/are-you-interested-in-data-visualisation/">survey for the data visualization community</a>. More than 1500 people participated within one week. The results can be viewed in this <a href="https://docs.google.com/spreadsheet/ccc?key=0ArNsipRBvi69dGtjU0hKZ1ZZMEVsQVlqaURvX1ZTcFE">Google spreadsheet</a>. The survey contained 7 short questions, one of which asked for the participant's Twitter handle.</p>
+<div class="two-column">
+    <main class="main-content">
+        <h1>How Participants of the Visualisingdata Census are Connected on Twitter</h1>
+        <p>3 weeks ago Andy Kirk started a <a href="http://www.visualisingdata.com/index.php/2013/03/are-you-interested-in-data-visualisation/">survey for the data visualization community</a>. More than 1500 people participated within one week. The results can be viewed in this <a href="https://docs.google.com/spreadsheet/ccc?key=0ArNsipRBvi69dGtjU0hKZ1ZZMEVsQVlqaURvX1ZTcFE">Google spreadsheet</a>. The survey contained 7 short questions, one of which asked for the participant's Twitter handle.</p>
 <p>I took these Twitter handles, removed duplicates, and queried the Twitter API for each participant's friends (people they follow on Twitter) to construct the <a href="/vis/visualisingdata-census-twitter-network/">visualisingdata census network graph</a>. The graph only includes survey participants and consists of 1189 nodes and 11833 edges. The average degree in this network is 9.952 and the average path length 3.074. There are 182 weakly and 597 strongly connected components, and 191 communities detected using the <a href="https://sites.google.com/site/findcommunities/">Louvain method</a>.</p>
 <p>The node sizes are based on in-degree, so the Twitter user with the most followers is the largest node in the network. It shouldn't be a surprise that <a href="/vis/visualisingdata-census-twitter-network/#visualisingdata">Andy himself</a> has the highest in-degree (524), since he initiated this survey and called for participants on Twitter several times during the time it was open. <a href="/vis/visualisingdata-census-twitter-network/#flowingdata">Nathan Yau</a> comes pretty close (515) than there is gap between him and the following well-known people in the data visualization community: <a href="/vis/visualisingdata-census-twitter-network/#infosthetics">Andrew Vande Moere</a> (347), <a href="/vis/visualisingdata-census-twitter-network/#albertocairo">Alberto Cairo</a> (340), <a href="/vis/visualisingdata-census-twitter-network/#moritz_stefaner">Moritz Stefaner</a> (309), <a href="/vis/visualisingdata-census-twitter-network/#driven_by_data">Gregor Aisch</a> (293), <a href="/vis/visualisingdata-census-twitter-network/#eagereyes">Robert Kosara</a> (274), <a href="/vis/visualisingdata-census-twitter-network/#janwillemtulp">Jan Willem Tulp</a> (253), <a href="/vis/visualisingdata-census-twitter-network/#alignedleft">Scott Murray</a> (238), <a href="/vis/visualisingdata-census-twitter-network/#jcukier">Jérôme Cukier</a> (234).</p>
 <h2>Limitations</h2>
@@ -48,19 +46,21 @@
 <h2>Credits</h2>
 <p>First of all thanks to Andy for initiating this survey and making the results available and to all people who participated.</p>
 <p>The initial graph file was created with a Python script using the <a href="https://networkx.github.io/">networkx library</a>, the resulting gexf file was preprocessed with the <a href="https://gephi.org/">Gephi visualization platform</a> including calculations of network measures, coloring and applying a Force Atlas 2 layout. The <a href="/vis/visualisingdata-census-twitter-network/">interactive version</a> is rendered with the <a href="https://sigmajs.org/">JavaScript library sigma.js</a>.</p>
+
 <div class="postinfo">
-<hr class="clearfix">
-<div class="well">
-<p>Published on April 09, 2013 (updated on November 18, 2020) by <a href="https://ramiro.org/">Ramiro Gómez</a>. To be informed of new posts, subscribe to the <a href="/rss.xml">RSS feed</a>.
-<br>Tags: <a href="/tags/network-graph/">network graph</a>, <a href="/tags/sigmajs/">sigmajs</a>, <a href="/tags/networkx/">networkx</a>, <a href="/tags/twitter/">twitter</a>, <a href="/tags/gephi/">gephi</a>.</p>
-</div>
-</div>
-  </div>
-  <div class="col-md-3">
-      <h3>Visualization</h3>
-      <a href="/vis/visualisingdata-census-twitter-network/"><img class="img-thumbnail img-fluid" src="/img/preview/visualisingdata-census-twitter-network.jpg" alt="visualization preview">
-      <a href="/vis/visualisingdata-census-twitter-network/" class="btn btn-primary mt-2">View Visualization</a>
-      <hr>
+<p>Published on April 09, 2013 (updated on February 13, 2026) by <a href="https://ramiro.org/">Ramiro Gómez</a>. To be informed of new posts, subscribe to the <a href="/rss.xml">RSS feed</a>.
+<br>Tags: <a href="/tags/networkx/">networkx</a>, <a href="/tags/sigmajs/">sigmajs</a>, <a href="/tags/gephi/">gephi</a>, <a href="/tags/twitter/">twitter</a>, <a href="/tags/network-graph/">network graph</a>.</p>
+</div>    </main>
+    <aside class="sidebar">
+
+<h3>Visualization</h3>
+<a href="/vis/visualisingdata-census-twitter-network/"><img src="/img/preview/visualisingdata-census-twitter-network.jpg" alt="visualization preview">
+<a href="/vis/visualisingdata-census-twitter-network/">View Visualization</a>
+<hr>
+
+
+
+
 
 <h3>Keep Exploring</h3>
 <a href="/rss.xml" class="btn btn-lg btn-warning m-1 mb-2">Subscribe to News feed</a>
@@ -72,24 +72,17 @@
 <li><a href="/vis/big-sister-cities/">Graph of Big Sister Cities With +1 Million Inhabitants</a></li>
 <li><a href="/vis/spaghetti-western-actors-dbpedia/">Spaghetti Western Actors Network Graph DBpedia</a></li>
 <li><a href="/vis/ronaldo-income/">How Much Cristiano Ronaldo Earns Viewed from 2 Angles</a></li>
-</ul>  </div>
-</div>
-</div><div id="footer" class="container-fluid">
-    <footer>
-        <hr>
-        <p>Exploring Data is a showcase of interactive data visualizations created with open data and open source tools, <a href="/about/">learn more</a>.<br>
-        © <script>document.write(new Date().getFullYear())</script> <a href="https://ramiro.org/">Ramiro Gómez</a>.</p>
-    </footer>
+</ul>    </aside>
 </div>
 
-<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.8/umd/popper.min.js" integrity="sha512-TPh2Oxlg1zp+kz3nFA0C5vVC6leG/6mm1z9+mA81MI5eaUVqasPLO8Cuk4gMF4gUfP5etR73rgU/8PNMsSesoQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/js/bootstrap.min.js" integrity="sha512-nKXmKvJyiGQy343jatQlzDprflyB5c+tKCzGP3Uq67v+lmzfnZUi/ZT+fc6ITZfSC5HhaBKUIvr/nTLCV+7F+Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/js/fontawesome.min.js" integrity="sha512-obFNtQ1JKCrxPBPLmYDUevlriATl5EhvwU3CFtdW/HKOkeAe0bbsyZfHO44/f1QyndrZJ464TQvrRP9ZjyXSSA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/js/solid.min.js" integrity="sha512-JqavQXK1jFoFcjU3kIvom9jdj3R76Ar8+ZcWezTLONsfi5Y3yibIqq0FyqP4R//K/G3ow84fIH0wBXKWpJf2EQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<footer>
+  <p>Exploring Data is a showcase of interactive data visualizations created with open data and open source tools, <a href="/about/">learn more</a>.<br>
+  © 2026 </script> <a href="https://ramiro.org/">Ramiro Gómez</a>.</p>
+</footer>
 
 
-<script src="/js/script.js"></script>
+<script src="/compiled/script2.js"></script>
+
 
 <script async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
 </body>

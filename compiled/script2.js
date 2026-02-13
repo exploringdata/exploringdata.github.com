@@ -1,0 +1,1 @@
+const hamburger=document.querySelector('.hamburger button');const navLinks=document.querySelector('.nav-links');hamburger.addEventListener('click',()=>{navLinks.style.display=navLinks.style.display==='flex'?'none':'flex'});

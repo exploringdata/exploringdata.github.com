@@ -4,42 +4,40 @@
   <meta charset="utf-8">
   <title>CO2 emissions (metric tons per capita) | Exploring Data</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="description" content="Information on choropleth maps showing the Carbon dioxide emissions in metric tons per capita for the world's countries from 1960 to 2014.">
-      <meta property="og:image" content="/img/preview/co2-emissions-2014.png">
+    <meta name="description" content="Information on choropleth maps showing the Carbon dioxide emissions in metric tons per capita for the world's countries from 1960 to 2014.">
+    <meta property="og:image" content="/img/preview/co2-emissions-2014.png">
   <meta name="author" content="Ramiro Gómez">
   <link rel="canonical" href="https://exploring-data.com/info/co2-emissions/">
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/css/bootstrap.min.css" integrity="sha512-2bBQCjcnw658Lho4nlXJcc6WkV/UxpE/sAokbXPxQNGqmNdQrWqtw26Ns9kFF/yG792pKR1Sx8/Y1Lf1XN4GKA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/solid.min.css" integrity="sha512-EHa6vH03/Ty92WahM0/tet1Qicl76zihDCkBnFhN3kFGQkC+mc86d7V+6y2ypiLbk3h0beZAGdUpzfMcb06cMg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link href="/css/style.css" rel="stylesheet">
+    <link href="/css/style2.css" rel="stylesheet">
 
   <link rel="shortcut icon" href="/favicon.ico">
   <link rel="alternate" type="application/rss+xml" title="Exploring Data RSS feed" href="https://exploring-data.com/rss.xml">
 </head>
 
-<body class="">
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="/">
-      <img src="/img/exploring-data.png" alt="Exploring Data Logo" class="d-inline-block align-text-top">
-    </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbar-content">
-<ul class="navbar-nav me-auto mb-2 mb-lg-0">
-    <li class="nav-item"><a class="nav-link" href="/data-visualization-books/">📕 Data Books</a></li>
-    <li class="nav-item"><a class="nav-link" href="/prints/">🛒 Prints</a></li>
-    <li class="nav-item"><a class="nav-link" href="/datasearch/">🔍 Search for Data</a></li>
-    <li class="nav-item"><a class="nav-link" href="/sitemap/">📄 Sitemap</a></li>
-</ul>    </div>
-  </div>
+<body>
+<nav class="navbar">
+  <ul>
+    <li class="logo"><a href="/"><img src="/img/exploring-data.png" alt="Exploring Data Logo"></a></li>
+    <li class="nav-links">
+      <a href="/vis/">📊 Visualizations</a>
+      <a href="/map/">🗺️ Maps</a>
+      <a href="/story">🗒️ Stories</a>
+      <a href="/prints/">🛒 Prints</a>
+      <a href="/data-visualization-books/">📕 Books</a>
+      <a href="/datasearch/">🔍 Search for Data</a>
+      <a href="/sitemap/">📄 Sitemap</a>
+    </li>
+    <li class="hamburger">
+      <button aria-label="Menu">&#9776;</button>
+    </li>
+  </ul>
 </nav>
 
-<div id="info" class="container">
-<div class="row">
-  <div class="col-md-9"><h1>CO2 emissions (metric tons per capita)</h1>
-  <p>Carbon dioxide (CO2) is a colorless gas that occurs naturally in Earth's atmosphere as a trace gas. Natural sources include volcanoes, hot springs and geysers. It is also a byproduct of fossil fuel combustion, biomass burning, land use changes and other industrial processes. The Burning of carbon-based fuels has rapidly increased concentrations of atmospheric CO2, increasing the rate of global warming and causing anthropogenic climate change.</p>
+<div class="two-column">
+    <main class="main-content">
+        <h1>CO2 emissions (metric tons per capita)</h1>
+        <p>Carbon dioxide (CO2) is a colorless gas that occurs naturally in Earth's atmosphere as a trace gas. Natural sources include volcanoes, hot springs and geysers. It is also a byproduct of fossil fuel combustion, biomass burning, land use changes and other industrial processes. The Burning of carbon-based fuels has rapidly increased concentrations of atmospheric CO2, increasing the rate of global warming and causing anthropogenic climate change.</p>
 <p>This <a href="/map/world/co2-emissions/">interactive map</a> shows the CO2 emissions in metric tons per capita from 1960 to 2014. The data only include carbon dioxide emissions from the burning of fossil fuels and cement manufacture, but not emissions from land use. See the video below for an animation showing the changes through the years and check out the interactive version to explore the data in more detail.</p>
 <div class="ratio ratio-16x9 mb-2">
   <iframe src="https://www.youtube-nocookie.com/embed/y7mDE3rNbsM?rel=0" allowfullscreen></iframe>
@@ -49,19 +47,21 @@
 <blockquote>
 <p>Statistical Concept and Methodology: Carbon dioxide emissions, largely by-products of energy production and use, account for the largest share of greenhouse gases, which are associated with global warming. Anthropogenic carbon dioxide emissions result primarily from fossil fuel combustion and cement manufacturing. In combustion different fossil fuels release different amounts of carbon dioxide for the same level of energy use: oil releases about 50 percent more carbon dioxide than natural gas, and coal releases about twice as much. Cement manufacturing releases about half a metric ton of carbon dioxide for each metric ton of cement produced. Data for carbon dioxide emissions include gases from the burning of fossil fuels and cement manufacture, but excludes emissions from land use such as deforestation.</p>
 </blockquote>
+
 <div class="postinfo">
-<hr class="clearfix">
-<div class="well">
-<p>Published on September 24, 2019 (updated on January 31, 2026) by <a href="https://ramiro.org/">Ramiro Gómez</a>. To be informed of new posts, subscribe to the <a href="/rss.xml">RSS feed</a>.
-<br>Tags: <a href="/tags/world/">world</a>, <a href="/tags/d3/">d3</a>, <a href="/tags/climate-change/">climate change</a>, <a href="/tags/global-warming/">global warming</a>, <a href="/tags/map/">map</a>, <a href="/tags/worldbank/">worldbank</a>, <a href="/tags/environment/">environment</a>.</p>
-</div>
-</div>
-  </div>
-  <div class="col-md-3">
-      <h3>Visualization</h3>
-      <a href="/map/world/co2-emissions/"><img class="img-thumbnail img-fluid" src="/img/preview/co2-emissions-2014.png" alt="visualization preview">
-      <a href="/map/world/co2-emissions/" class="btn btn-primary mt-2">View Visualization</a>
-      <hr>
+<p>Published on September 24, 2019 (updated on February 13, 2026) by <a href="https://ramiro.org/">Ramiro Gómez</a>. To be informed of new posts, subscribe to the <a href="/rss.xml">RSS feed</a>.
+<br>Tags: <a href="/tags/worldbank/">worldbank</a>, <a href="/tags/environment/">environment</a>, <a href="/tags/climate-change/">climate change</a>, <a href="/tags/world/">world</a>, <a href="/tags/global-warming/">global warming</a>, <a href="/tags/map/">map</a>, <a href="/tags/d3/">d3</a>.</p>
+</div>    </main>
+    <aside class="sidebar">
+
+<h3>Visualization</h3>
+<a href="/map/world/co2-emissions/"><img src="/img/preview/co2-emissions-2014.png" alt="visualization preview">
+<a href="/map/world/co2-emissions/">View Visualization</a>
+<hr>
+
+
+
+
 
 <h3>Keep Exploring</h3>
 <a href="/rss.xml" class="btn btn-lg btn-warning m-1 mb-2">Subscribe to News feed</a>
@@ -73,24 +73,17 @@
 <li><a href="/vis/big-sister-cities/">Graph of Big Sister Cities With +1 Million Inhabitants</a></li>
 <li><a href="/vis/spaghetti-western-actors-dbpedia/">Spaghetti Western Actors Network Graph DBpedia</a></li>
 <li><a href="/vis/ronaldo-income/">How Much Cristiano Ronaldo Earns Viewed from 2 Angles</a></li>
-</ul>  </div>
-</div>
-</div><div id="footer" class="container-fluid">
-    <footer>
-        <hr>
-        <p>Exploring Data is a showcase of interactive data visualizations created with open data and open source tools, <a href="/about/">learn more</a>.<br>
-        © <script>document.write(new Date().getFullYear())</script> <a href="https://ramiro.org/">Ramiro Gómez</a>.</p>
-    </footer>
+</ul>    </aside>
 </div>
 
-<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.8/umd/popper.min.js" integrity="sha512-TPh2Oxlg1zp+kz3nFA0C5vVC6leG/6mm1z9+mA81MI5eaUVqasPLO8Cuk4gMF4gUfP5etR73rgU/8PNMsSesoQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/js/bootstrap.min.js" integrity="sha512-nKXmKvJyiGQy343jatQlzDprflyB5c+tKCzGP3Uq67v+lmzfnZUi/ZT+fc6ITZfSC5HhaBKUIvr/nTLCV+7F+Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/js/fontawesome.min.js" integrity="sha512-obFNtQ1JKCrxPBPLmYDUevlriATl5EhvwU3CFtdW/HKOkeAe0bbsyZfHO44/f1QyndrZJ464TQvrRP9ZjyXSSA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/js/solid.min.js" integrity="sha512-JqavQXK1jFoFcjU3kIvom9jdj3R76Ar8+ZcWezTLONsfi5Y3yibIqq0FyqP4R//K/G3ow84fIH0wBXKWpJf2EQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<footer>
+  <p>Exploring Data is a showcase of interactive data visualizations created with open data and open source tools, <a href="/about/">learn more</a>.<br>
+  © 2026 </script> <a href="https://ramiro.org/">Ramiro Gómez</a>.</p>
+</footer>
 
 
-<script src="/js/script.js"></script>
+<script src="/compiled/script2.js"></script>
+
 
 <script async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
 </body>

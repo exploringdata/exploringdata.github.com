@@ -4,60 +4,60 @@
   <meta charset="utf-8">
   <title>Relations of James Bond Film Actors based on Common Appearance | Exploring Data</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="description" content="The James Bond Actors visualization is an interactive network graph showing the connections of actors who appeared together in 23 James Bond movies including the latest in the series called Skyfall.">
-      <meta property="og:image" content="/img/preview/james-bond-actors-network.png">
+    <meta name="description" content="The James Bond Actors visualization is an interactive network graph showing the connections of actors who appeared together in 23 James Bond movies including the latest in the series called Skyfall.">
+    <meta property="og:image" content="/img/preview/james-bond-actors-network.png">
   <meta name="author" content="Ramiro Gómez">
   <link rel="canonical" href="https://exploring-data.com/info/james-bond-actors-network/">
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/css/bootstrap.min.css" integrity="sha512-2bBQCjcnw658Lho4nlXJcc6WkV/UxpE/sAokbXPxQNGqmNdQrWqtw26Ns9kFF/yG792pKR1Sx8/Y1Lf1XN4GKA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/solid.min.css" integrity="sha512-EHa6vH03/Ty92WahM0/tet1Qicl76zihDCkBnFhN3kFGQkC+mc86d7V+6y2ypiLbk3h0beZAGdUpzfMcb06cMg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link href="/css/style.css" rel="stylesheet">
+    <link href="/css/style2.css" rel="stylesheet">
 
   <link rel="shortcut icon" href="/favicon.ico">
   <link rel="alternate" type="application/rss+xml" title="Exploring Data RSS feed" href="https://exploring-data.com/rss.xml">
 </head>
 
-<body class="">
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="/">
-      <img src="/img/exploring-data.png" alt="Exploring Data Logo" class="d-inline-block align-text-top">
-    </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbar-content">
-<ul class="navbar-nav me-auto mb-2 mb-lg-0">
-    <li class="nav-item"><a class="nav-link" href="/data-visualization-books/">📕 Data Books</a></li>
-    <li class="nav-item"><a class="nav-link" href="/prints/">🛒 Prints</a></li>
-    <li class="nav-item"><a class="nav-link" href="/datasearch/">🔍 Search for Data</a></li>
-    <li class="nav-item"><a class="nav-link" href="/sitemap/">📄 Sitemap</a></li>
-</ul>    </div>
-  </div>
+<body>
+<nav class="navbar">
+  <ul>
+    <li class="logo"><a href="/"><img src="/img/exploring-data.png" alt="Exploring Data Logo"></a></li>
+    <li class="nav-links">
+      <a href="/vis/">📊 Visualizations</a>
+      <a href="/map/">🗺️ Maps</a>
+      <a href="/story">🗒️ Stories</a>
+      <a href="/prints/">🛒 Prints</a>
+      <a href="/data-visualization-books/">📕 Books</a>
+      <a href="/datasearch/">🔍 Search for Data</a>
+      <a href="/sitemap/">📄 Sitemap</a>
+    </li>
+    <li class="hamburger">
+      <button aria-label="Menu">&#9776;</button>
+    </li>
+  </ul>
 </nav>
 
-<div id="info" class="container">
-<div class="row">
-  <div class="col-md-9"><h1>Relations of James Bond Film Actors based on Common Appearance</h1>
-  <p>The <a href="/vis/james-bond-actors-network/">James Bond Actors visualization</a> is an interactive network graph showing the connections of actors that appeared together in 23 James Bond movies excluding the 2 Casino Royal films from 1954 and 1967 and Never Say Never Again from 1983. The latest not yet released James Bond film called Skyfall is included.</p>
+<div class="two-column">
+    <main class="main-content">
+        <h1>Relations of James Bond Film Actors based on Common Appearance</h1>
+        <p>The <a href="/vis/james-bond-actors-network/">James Bond Actors visualization</a> is an interactive network graph showing the connections of actors that appeared together in 23 James Bond movies excluding the 2 Casino Royal films from 1954 and 1967 and Never Say Never Again from 1983. The latest not yet released James Bond film called Skyfall is included.</p>
 <p>The graph consists of 300 nodes and 3319 edges. The size of a node in the graph is determined by the number of James Bond films an actor appeared in, the more appearances the bigger the circle. Two nodes are connected by an edge, if the 2 actors appeared together in at least 1 James Bond film.</p>
 <p>You can restrict the displayed network graph to a specific film by selecting one from the Choose Film menu and you can highlight the connections of a single actor by searching for the name in the top menu. For more details click on the help link in the top menu.</p>
 <p>This network graph visualization was created with data from the <a href="http://www.freebase.com/view/en/james_bond_film_series/-/film/film_series/films_in_series">James Bond Film Series collection</a>. The Freebase data is far from being complete regarding the actors that apeared in James Bond movies. There are more comprehensive data sources, but those I found either don't offer an API or employ too restrictive content policies.</p>
 <p>The graph is rendered with the <a href="https://sigmajs.org/">JavaScript library sigma.js</a>. The Fruchterman-Reingold layout was preprocessed using the <a href="https://gephi.org/">Gephi visualization platform</a>.</p>
 <p>You find the Python code to retrieve the data from Freebase and generate the gexf file in this <a href="https://github.com/exploringdata/james-bond-actors">GitHub repository</a>. The data was last updated October 16 2012. Feel free to share this visualization with your friends.</p>
+
 <div class="postinfo">
-<hr class="clearfix">
-<div class="well">
-<p>Published on October 16, 2012 (updated on January 31, 2026) by <a href="https://ramiro.org/">Ramiro Gómez</a>. To be informed of new posts, subscribe to the <a href="/rss.xml">RSS feed</a>.
-<br>Tags: <a href="/tags/network-graph/">network graph</a>, <a href="/tags/sigmajs/">sigmajs</a>, <a href="/tags/networkx/">networkx</a>, <a href="/tags/film/">film</a>, <a href="/tags/gephi/">gephi</a>.</p>
-</div>
-</div>
-  </div>
-  <div class="col-md-3">
-      <h3>Visualization</h3>
-      <a href="/vis/james-bond-actors-network/"><img class="img-thumbnail img-fluid" src="/img/preview/james-bond-actors-network.png" alt="visualization preview">
-      <a href="/vis/james-bond-actors-network/" class="btn btn-primary mt-2">View Visualization</a>
-      <hr>
+<p>Published on October 16, 2012 (updated on February 13, 2026) by <a href="https://ramiro.org/">Ramiro Gómez</a>. To be informed of new posts, subscribe to the <a href="/rss.xml">RSS feed</a>.
+<br>Tags: <a href="/tags/networkx/">networkx</a>, <a href="/tags/sigmajs/">sigmajs</a>, <a href="/tags/gephi/">gephi</a>, <a href="/tags/network-graph/">network graph</a>, <a href="/tags/film/">film</a>.</p>
+</div>    </main>
+    <aside class="sidebar">
+
+<h3>Visualization</h3>
+<a href="/vis/james-bond-actors-network/"><img src="/img/preview/james-bond-actors-network.png" alt="visualization preview">
+<a href="/vis/james-bond-actors-network/">View Visualization</a>
+<hr>
+
+
+
+
 
 <h3>Keep Exploring</h3>
 <a href="/rss.xml" class="btn btn-lg btn-warning m-1 mb-2">Subscribe to News feed</a>
@@ -69,24 +69,17 @@
 <li><a href="/vis/big-sister-cities/">Graph of Big Sister Cities With +1 Million Inhabitants</a></li>
 <li><a href="/vis/spaghetti-western-actors-dbpedia/">Spaghetti Western Actors Network Graph DBpedia</a></li>
 <li><a href="/vis/ronaldo-income/">How Much Cristiano Ronaldo Earns Viewed from 2 Angles</a></li>
-</ul>  </div>
-</div>
-</div><div id="footer" class="container-fluid">
-    <footer>
-        <hr>
-        <p>Exploring Data is a showcase of interactive data visualizations created with open data and open source tools, <a href="/about/">learn more</a>.<br>
-        © <script>document.write(new Date().getFullYear())</script> <a href="https://ramiro.org/">Ramiro Gómez</a>.</p>
-    </footer>
+</ul>    </aside>
 </div>
 
-<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.8/umd/popper.min.js" integrity="sha512-TPh2Oxlg1zp+kz3nFA0C5vVC6leG/6mm1z9+mA81MI5eaUVqasPLO8Cuk4gMF4gUfP5etR73rgU/8PNMsSesoQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/js/bootstrap.min.js" integrity="sha512-nKXmKvJyiGQy343jatQlzDprflyB5c+tKCzGP3Uq67v+lmzfnZUi/ZT+fc6ITZfSC5HhaBKUIvr/nTLCV+7F+Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/js/fontawesome.min.js" integrity="sha512-obFNtQ1JKCrxPBPLmYDUevlriATl5EhvwU3CFtdW/HKOkeAe0bbsyZfHO44/f1QyndrZJ464TQvrRP9ZjyXSSA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/js/solid.min.js" integrity="sha512-JqavQXK1jFoFcjU3kIvom9jdj3R76Ar8+ZcWezTLONsfi5Y3yibIqq0FyqP4R//K/G3ow84fIH0wBXKWpJf2EQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<footer>
+  <p>Exploring Data is a showcase of interactive data visualizations created with open data and open source tools, <a href="/about/">learn more</a>.<br>
+  © 2026 </script> <a href="https://ramiro.org/">Ramiro Gómez</a>.</p>
+</footer>
 
 
-<script src="/js/script.js"></script>
+<script src="/compiled/script2.js"></script>
+
 
 <script async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
 </body>

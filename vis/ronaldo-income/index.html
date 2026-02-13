@@ -4,89 +4,65 @@
   <meta charset="utf-8">
   <title>How Much Cristiano Ronaldo Earns Viewed from 2 Angles | Exploring Data</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="description" content="A look at how much Cristiano Ronaldo earned in 2013/14 compared to the average wage in Spain and the income of its richest citizen Amancio Ortega.">
-      <meta property="og:image" content="/img/torlaune/ronaldo-income.png">
+    <meta name="description" content="A look at how much Cristiano Ronaldo earned in 2013/14 compared to the average wage in Spain and the income of its richest citizen Amancio Ortega.">
+    <meta property="og:image" content="/img/preview/ronaldo-income.png">
   <meta name="author" content="Ramiro Gómez">
   <link rel="canonical" href="https://exploring-data.com/vis/ronaldo-income/">
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/css/bootstrap.min.css" integrity="sha512-2bBQCjcnw658Lho4nlXJcc6WkV/UxpE/sAokbXPxQNGqmNdQrWqtw26Ns9kFF/yG792pKR1Sx8/Y1Lf1XN4GKA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/solid.min.css" integrity="sha512-EHa6vH03/Ty92WahM0/tet1Qicl76zihDCkBnFhN3kFGQkC+mc86d7V+6y2ypiLbk3h0beZAGdUpzfMcb06cMg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link href="/css/style.css" rel="stylesheet">
+    <link href="/css/style2.css" rel="stylesheet">
 
           <link rel="stylesheet" href="/css/ronaldo-income.css">
   <link rel="shortcut icon" href="/favicon.ico">
   <link rel="alternate" type="application/rss+xml" title="Exploring Data RSS feed" href="https://exploring-data.com/rss.xml">
 </head>
 
-<body class="">
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="/">
-      <img src="/img/exploring-data.png" alt="Exploring Data Logo" class="d-inline-block align-text-top">
-    </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbar-content">
-<ul class="navbar-nav me-auto mb-2 mb-lg-0">
-    <li class="nav-item"><a class="nav-link" href="/data-visualization-books/">📕 Data Books</a></li>
-    <li class="nav-item"><a class="nav-link" href="/prints/">🛒 Prints</a></li>
-    <li class="nav-item"><a class="nav-link" href="/datasearch/">🔍 Search for Data</a></li>
-    <li class="nav-item"><a class="nav-link" href="/sitemap/">📄 Sitemap</a></li>
-</ul>    </div>
-  </div>
+<body>
+<nav class="navbar">
+  <ul>
+    <li class="logo"><a href="/"><img src="/img/exploring-data.png" alt="Exploring Data Logo"></a></li>
+    <li class="nav-links">
+      <a href="/vis/">📊 Visualizations</a>
+      <a href="/map/">🗺️ Maps</a>
+      <a href="/story">🗒️ Stories</a>
+      <a href="/prints/">🛒 Prints</a>
+      <a href="/data-visualization-books/">📕 Books</a>
+      <a href="/datasearch/">🔍 Search for Data</a>
+      <a href="/sitemap/">📄 Sitemap</a>
+    </li>
+    <li class="hamburger">
+      <button aria-label="Menu">&#9776;</button>
+    </li>
+  </ul>
 </nav>
 
-<div id="info" class="container">
-<div class="row">
-  <div class="col-md-9"><h1>How Much Cristiano Ronaldo Earns Viewed from 2 Angles</h1>
-  <p>Cristiano Ronaldo is viewed as one of the best football players at the moment. His main competitor is Lionel Messi not only in terms of footballing ability, scoring goals and winning titles, but also in earning money.</p>
-<p>In the past year Ronaldo has made a leap forward, he won the Ballon d'Or after Messi won it for 4 consecutive years and Ronaldo made an estimated $80 million compared to Messis' $64.7 million before taxes according to <a href="http://www.forbes.com/sites/kurtbadenhausen/2014/06/11/floyd-mayweather-heads-2014-list-of-the-worlds-highest-paid-athletes/">Forbes</a>.</p>
-<p>With his $80 million Ronaldo is the highest paid footballer during the 12 months between June 1, 2013 and June 1, 2014. But how much is $80 millions. For most people this is an inconceivable amount of money. So lets look at this figure by comparing it to two other incomes.</p>
-<h2>How many average yearly wages could Ronaldo pay in Spain? <span class="text-info answer-avg-wage"></span></h2>
-<p>According to <a href="https://en.wikipedia.org/wiki/List_of_European_countries_by_average_wage">Wikipedia</a> the average gross wage in Spain was €2019 per month by the end of 2012. Ronaldo's pre-tax income being approx. €65 million converted to Euro he could pay <span class="answer-avg-wage"></span> Spanish workers for a year or the lifetime gross incomes of <span class="workers-lives"></span> workers in Spain assuming 50 years of work on average.</p>
-<div id="avg-wage" class="icons clearfix"></div>
+<div class="single-column">
+    <h1>How Much Cristiano Ronaldo Earns Viewed from 2 Angles</h1>
+    <p>Cristiano Ronaldo is widely regarded as one of the best football players today. His main competitor, both on and off the pitch, is Lionel Messi, not only in terms of footballing skill, scoring goals, and winning titles, but also in earning money.</p>
+<p>Over the past year, Ronaldo made a notable leap forward. He won the Ballon d'Or after Messi had held it for four consecutive years, and he earned an estimated $80 million compared to Messi's $64.7 million before taxes, according to <a href="https://www.forbes.com/sites/kurtbadenhausen/2014/06/11/floyd-mayweather-heads-2014-list-of-the-worlds-highest-paid-athletes/">Forbes</a>.</p>
+<p>With $80 million, Ronaldo was the highest-paid footballer between June 1, 2013, and June 1, 2014. But what does $80 million actually mean? For most people, this is an almost inconceivable amount of money. Let's put it in perspective by comparing it to other incomes.</p>
+<h2 id="how-many-average-yearly-wages-could-ronaldo-pay-in-spain">How many average yearly wages could Ronaldo pay in Spain? <span class="text-info answer-avg-wage"></span></h2>
+<p>According to <a href="https://en.wikipedia.org/wiki/List_of_European_countries_by_average_wage">Wikipedia</a>, the average gross wage in Spain at the end of 2012 was €2,019 per month. Ronaldo's pre-tax income of approximately €65 million could pay <span class="answer-avg-wage"></span> Spanish workers for an entire year, or cover the lifetime gross incomes of <span class="workers-lives"></span> workers in Spain, assuming a 50-year working life on average.</p>
+<div id="avg-wage" class="icons"></div>
 
-<h2>How many Ronaldos could Amancio Ortega pay? <span class="text-info answer-ortega"></span></h2>
-<p>Ronaldo earns a lot compared to the average person in Spain, but Spain's richest citizen earns a lot more than Ronaldo. Forbes currently estimates <a href="http://www.forbes.com/profile/amancio-ortega/">Amancio Ortega's</a> net worth at $58.9 billion and states that his fortune grew by $7 billion (approx. €5.6 billion) in the past year. For those $7 billion Ortega could pay Ronaldo's pre-tax income <span class="answer-ortega"></span> times or the average yearly gross wage in Spain <span class="ortega-avg-wage"></span> times.</p>
-<div id="ortega" class="icons clearfix"></div>
+<h2 id="how-many-ronaldos-could-amancio-ortega-pay">How many Ronaldos could Amancio Ortega pay? <span class="text-info answer-ortega"></span></h2>
+<p>While Ronaldo earns far more than the average worker in Spain, Spain's richest citizen earns even more. Forbes currently estimates <a href="https://www.forbes.com/profile/amancio-ortega/">Amancio Ortega's</a> net worth at $58.9 billion and reports that his fortune grew by $7 billion, approximately €5.6 billion, in the past year. That $7 billion could pay Ronaldo's pre-tax income <span class="answer-ortega"></span> times, or cover the average yearly gross wage in Spain <span class="ortega-avg-wage"></span> times.</p>
+<div id="ortega" class="icons"></div>
 
-<h2>Summary</h2>
-<p>Ronaldo earns a lot of money. In a single year he makes more than dozens of average workers throughout their entire work lives combined. Still, Ronaldo's income is low compared to the world's super rich whose earnings are beyond conception.</p>
-<p>I do think Ronaldo deserves to earn a good money, he entertains and brings joy to a lot of people and also gives some of it back <a href="https://en.wikipedia.org/wiki/Cristiano_Ronaldo#Philanthropy">to people in need</a>. This applies to other football players as well, but I do feel that the income gaps between the average Joe and the rich and super-rich are pretty extreme and wonder where this is going in the future.</p>
-<h2>Credits</h2>
-<p>This visualization uses the <a href="http://thenounproject.com/term/worker/28128/">worker icon</a> designed by <a href="http://www.thenounproject.com/hadivoice">Hadi Davodpour</a> and the <a href="http://hazeljane.deviantart.com/art/cristiano-ronaldo-139583276">Cristiano Ronaldo icon</a> by <a href="http://hazeljane.deviantart.com/">hazeljane</a>.</p>
-  </div>
-  <div class="col-md-3">
-
-<h3>Keep Exploring</h3>
-<a href="/rss.xml" class="btn btn-lg btn-warning m-1 mb-2">Subscribe to News feed</a>
-
-<h3>Visualizations</h3>
-<ul>
-<li><a href="/vis/volcanoes-globe/">Volcanoes of Planet Earth</a></li>
-<li><a href="/vis/mentor-author-graph/">Graph of Mentors, Books and Authors</a></li>
-<li><a href="/vis/big-sister-cities/">Graph of Big Sister Cities With +1 Million Inhabitants</a></li>
-<li><a href="/vis/spaghetti-western-actors-dbpedia/">Spaghetti Western Actors Network Graph DBpedia</a></li>
-<li><a href="/vis/ronaldo-income/">How Much Cristiano Ronaldo Earns Viewed from 2 Angles</a></li>
-</ul>  </div>
-</div>
-</div><div id="footer" class="container-fluid">
-    <footer>
-        <hr>
-        <p>Exploring Data is a showcase of interactive data visualizations created with open data and open source tools, <a href="/about/">learn more</a>.<br>
-        © <script>document.write(new Date().getFullYear())</script> <a href="https://ramiro.org/">Ramiro Gómez</a>.</p>
-    </footer>
+<h2 id="summary">Summary</h2>
+<p>Ronaldo earns an extraordinary amount of money. In a single year, he makes more than dozens of average workers combined over their entire careers. Yet, compared to the world's super-rich, his income is relatively modest.</p>
+<p>Ronaldo deserves to earn a good salary because he entertains millions of fans and gives back to people in need, as noted in his <a href="https://en.wikipedia.org/wiki/Cristiano_Ronaldo#Philanthropy">philanthropy</a>. This is true for other top footballers as well. However, the income gaps between the average person and the ultra-rich remain extreme, raising questions about the future of wealth distribution.</p>
+<h2 id="credits">Credits</h2>
+<p>This visualization uses the <a href="https://thenounproject.com/icon/worker-28128/">worker icon</a> designed by <a href="https://thenounproject.com/creator/hadivoice/">Hadi Davodpour</a> and the <a href="https://hazeljane.deviantart.com/art/cristiano-ronaldo-139583276">Cristiano Ronaldo icon</a> by <a href="https://hazeljane.deviantart.com/">hazeljane</a>.</p>
 </div>
 
-<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.8/umd/popper.min.js" integrity="sha512-TPh2Oxlg1zp+kz3nFA0C5vVC6leG/6mm1z9+mA81MI5eaUVqasPLO8Cuk4gMF4gUfP5etR73rgU/8PNMsSesoQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/js/bootstrap.min.js" integrity="sha512-nKXmKvJyiGQy343jatQlzDprflyB5c+tKCzGP3Uq67v+lmzfnZUi/ZT+fc6ITZfSC5HhaBKUIvr/nTLCV+7F+Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/js/fontawesome.min.js" integrity="sha512-obFNtQ1JKCrxPBPLmYDUevlriATl5EhvwU3CFtdW/HKOkeAe0bbsyZfHO44/f1QyndrZJ464TQvrRP9ZjyXSSA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/js/solid.min.js" integrity="sha512-JqavQXK1jFoFcjU3kIvom9jdj3R76Ar8+ZcWezTLONsfi5Y3yibIqq0FyqP4R//K/G3ow84fIH0wBXKWpJf2EQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<footer>
+  <p>Exploring Data is a showcase of interactive data visualizations created with open data and open source tools, <a href="/about/">learn more</a>.<br>
+  © 2026 </script> <a href="https://ramiro.org/">Ramiro Gómez</a>.</p>
+</footer>
 
 
-<script src="/js/script.js"></script>
+<script src="/compiled/script2.js"></script>
+
       <script src="/compiled/ronaldo-income.js"></script>
 
 <script async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
