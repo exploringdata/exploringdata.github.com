@@ -4,21 +4,21 @@
   <meta charset="utf-8">
   <title>Elevation Diary: Nerja | Exploring Data</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="description" content="Interactive 3D elevation diary showing photos from a 2-week vacation in Nerja, Spain, displayed alongside their geographic locations on a terrain map.">
-      <meta property="og:image" content="/img/preview/elevation-diary-nerja.png">
+    <meta name="description" content="Interactive 3D elevation diary showing photos from a 2-week vacation in Nerja, Spain, displayed alongside their geographic locations on a terrain map.">
+    <meta property="og:image" content="/img/preview/elevation-diary-nerja.png">
   <meta name="author" content="Ramiro Gómez">
   <link rel="canonical" href="https://exploring-data.com/map/3d/elevation-diary-nerja/">
 
-<link rel="stylesheet" href="/css/base.css" />
+    <link href="/css/style2.css" rel="stylesheet">
 
-          <link rel="stylesheet" href="/css/elevation-diary-nerja.css"">
+          <link rel="stylesheet" href="/css/elevation-diary-nerja.css">
   <link rel="shortcut icon" href="/favicon.ico">
   <link rel="alternate" type="application/rss+xml" title="Exploring Data RSS feed" href="https://exploring-data.com/rss.xml">
 </head>
 
-<body class="">
+<body>
 
-<div><div id="app-container">
+<div id="app-container">
     <div id="map-container">
         <div id="loading">Loading journey...</div>
         <canvas id="deck"></canvas>
@@ -71,14 +71,14 @@
         <li><strong>Created by:</strong> <a href="https://ramiro.org/">Ramiro Gómez</a></li>
         </ul>
     </div>
-</div></div>
+</div>
 
 
 
-<script src="/js/script.js"></script>
-    <script src="https://unpkg.com/deck.gl@9/dist.min.js"></script>
-    <script src="https://unpkg.com/@loaders.gl/csv@4/dist/dist.min.js"></script>
-    <script src="/compiled/map/elevation-diary-nerja.js"></script>
+
+      <script src="https://unpkg.com/deck.gl@9/dist.min.js"></script>
+      <script src="https://unpkg.com/@loaders.gl/csv@4/dist/dist.min.js"></script>
+      <script src="/compiled/map/elevation-diary-nerja.js"></script>
 
 <script async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
 </body>

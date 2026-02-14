@@ -36,7 +36,7 @@
   </ul>
 </nav>
 
-<div class="single-column">
+<div class="container">
     <h1>Network Graph of Book Recommendations from Tribe of Mentors</h1>
     <p>The interactive <a href="/vis/mentor-author-graph/">Graph of Mentors, Books and Authors</a> visualizes book recommendations from the book <a href="https://tribeofmentors.com/">Tribe Of Mentors</a> by Tim Ferriss and his interviewees. The book is a collection of 130+ interviews with people who are exceptional at what they do. Tim asked them a set of 11 questions including one about which book they gave away the most as a gift or which books had greatly influenced their lives.</p>
 <p>Taking all these recommendations I created a graph, that has 4 kinds of nodes: authors, books, mentors, and mentors who are also recommended authors. I assigned a weight of 1 to each mentor, which is distributed equally among their recommended books, i.e. if a mentor recommended 4 books, each edge connecting them gets a weight of 0.25. The size of a book node is then calculated as the sum of its incoming edges multiplied by its in-degree, i.e. the number of mentors recommending it. The weight of an author in turn is the sum of all edge weights with their books as targets multiplied by the number of mentors who recommended at least one of their books.</p>
@@ -57,7 +57,7 @@
 
 <div class="postinfo">
 <p>Published on November 15, 2018 (updated on February 13, 2026) by <a href="https://ramiro.org/">Ramiro Gómez</a>. To be informed of new posts, subscribe to the <a href="/rss.xml">RSS feed</a>.
-<br>Tags: <a href="/tags/gephi/">gephi</a>, <a href="/tags/books/">books</a>, <a href="/tags/sigmajs/">sigmajs</a>, <a href="/tags/authors/">authors</a>, <a href="/tags/networkx/">networkx</a>, <a href="/tags/network-graph/">network graph</a>.</p>
+<br>Tags: <a href="/tags/network-graph/">network graph</a>, <a href="/tags/authors/">authors</a>, <a href="/tags/books/">books</a>, <a href="/tags/networkx/">networkx</a>, <a href="/tags/sigmajs/">sigmajs</a>, <a href="/tags/gephi/">gephi</a>.</p>
 <p>Disclosure: As an Amazon Associate I earn commissions from qualifying purchases made via links on this page. Please see the <a href="/about/">about page</a> for more information.</p></div></div>
 
 <footer>
