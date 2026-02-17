@@ -4,205 +4,128 @@
   <meta charset="utf-8">
   <title>Geo Maps Drawn from IP Locations | Exploring Data</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="description" content="Geographic maps of the world and most continents drawn based on an IP location dataset with 419433 records.">
-      <meta property="og:image" content="/img/preview/ip-locations-world.png">
+    <meta name="description" content="Geographic maps of the world and most continents drawn based on an IP location dataset with 419433 records.">
+    <meta property="og:image" content="/img/preview/ip-locations-world.png">
   <meta name="author" content="Ramiro Gómez">
   <link rel="canonical" href="https://exploring-data.com/vis/ip-location-maps/">
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/css/bootstrap.min.css" integrity="sha512-2bBQCjcnw658Lho4nlXJcc6WkV/UxpE/sAokbXPxQNGqmNdQrWqtw26Ns9kFF/yG792pKR1Sx8/Y1Lf1XN4GKA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/solid.min.css" integrity="sha512-EHa6vH03/Ty92WahM0/tet1Qicl76zihDCkBnFhN3kFGQkC+mc86d7V+6y2ypiLbk3h0beZAGdUpzfMcb06cMg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link href="/css/style.css" rel="stylesheet">
+    <link href="/css/style2.css" rel="stylesheet">
 
   <link rel="shortcut icon" href="/favicon.ico">
   <link rel="alternate" type="application/rss+xml" title="Exploring Data RSS feed" href="https://exploring-data.com/rss.xml">
 </head>
 
-<body class="">
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="/">
-      <img src="/img/exploring-data.png" alt="Exploring Data Logo" class="d-inline-block align-text-top">
-    </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbar-content">
-<ul class="navbar-nav me-auto mb-2 mb-lg-0">
-    <li class="nav-item"><a class="nav-link" href="/vis/">📊 Visualizations</a></li>
-    <li class="nav-item"><a class="nav-link" href="/map/">🗺️ Maps</a></li>
-    <li class="nav-item"><a class="nav-link" href="/prints/">🛒 Prints</a></li>
-    <li class="nav-item"><a class="nav-link" href="/data-visualization-books/">📕 Books</a></li>
-    <li class="nav-item"><a class="nav-link" href="/datasearch/">🔍 Search for Data</a></li>
-    <li class="nav-item"><a class="nav-link" href="/sitemap/">📄 Sitemap</a></li>
-</ul>    </div>
-  </div>
+<body>
+<nav class="navbar">
+  <ul>
+    <li class="logo"><a href="/"><img src="/img/exploring-data.png" alt="Exploring Data Logo"></a></li>
+    <li class="nav-links">
+      <a href="/vis/">📊 Visualizations</a>
+      <a href="/map/">🗺️ Maps</a>
+      <a href="/story">🗒️ Stories</a>
+      <a href="/prints/">🛒 Prints</a>
+      <a href="/data-visualization-books/">📕 Books</a>
+      <a href="/datasearch/">🔍 Search for Data</a>
+      <a href="/sitemap/">📄 Sitemap</a>
+    </li>
+    <li class="hamburger">
+      <button aria-label="Menu">&#9776;</button>
+    </li>
+  </ul>
 </nav>
 
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-md-6 col-lg-4">
-            <div class="card mt-2">
-    <a href="/img/ip-location-maps/world0.1.png" title="Read more">
-        <img class="card-img-top object-fit-scale" loading="lazy" src="/img/preview/ip-location-maps/world0.1.png" alt="World Map Dense">
+
+<div id="vis" class="container">
+    <div class="columns">
+        <div class="column">
+            <div class="card">
+    <a href="/img/ip-location-maps/world0.1.png">
+        <img loading="lazy" src="/img/preview/ip-location-maps/world0.1.png" alt="World Map Dense">
+        <h3>World Map Dense</h3>
     </a>
-    <div class="card-body">
-        <h5 class="card-title">World Map Dense</h5>
-    </div>
 </div>
         </div>
-        <div class="col-md-6 col-lg-4">
-            <div class="card mt-2">
-    <a href="/img/ip-location-maps/world0.01.png" title="Read more">
-        <img class="card-img-top object-fit-scale" loading="lazy" src="/img/preview/ip-location-maps/world0.01.png" alt="World Map Medium">
+        <div class="column">
+            <div class="card">
+    <a href="/img/ip-location-maps/world0.01.png">
+        <img loading="lazy" src="/img/preview/ip-location-maps/world0.01.png" alt="World Map Medium">
+        <h3>World Map Medium</h3>
     </a>
-    <div class="card-body">
-        <h5 class="card-title">World Map Medium</h5>
-    </div>
 </div>
         </div>
-        <div class="col-md-6 col-lg-4">
-            <div class="card mt-2">
-    <a href="/img/ip-location-maps/world0.005.png" title="Read more">
-        <img class="card-img-top object-fit-scale" loading="lazy" src="/img/preview/ip-location-maps/world0.005.png" alt="World Map Sparse">
+        <div class="column">
+            <div class="card">
+    <a href="/img/ip-location-maps/world0.005.png">
+        <img loading="lazy" src="/img/preview/ip-location-maps/world0.005.png" alt="World Map Sparse">
+        <h3>World Map Sparse</h3>
     </a>
-    <div class="card-body">
-        <h5 class="card-title">World Map Sparse</h5>
-    </div>
 </div>
         </div>
-        <div class="col-md-6 col-lg-4">
-            <div class="card mt-2">
-    <a href="/img/ip-location-maps/AF.png" title="Read more">
-        <img class="card-img-top object-fit-scale" loading="lazy" src="/img/preview/ip-location-maps/AF.png" alt="Africa">
+        <div class="column">
+            <div class="card">
+    <a href="/img/ip-location-maps/AF.png">
+        <img loading="lazy" src="/img/preview/ip-location-maps/AF.png" alt="Africa">
+        <h3>Africa</h3>
     </a>
-    <div class="card-body">
-        <h5 class="card-title">Africa</h5>
-    </div>
 </div>
         </div>
-        <div class="col-md-6 col-lg-4">
-            <div class="card mt-2">
-    <a href="/img/ip-location-maps/AS.png" title="Read more">
-        <img class="card-img-top object-fit-scale" loading="lazy" src="/img/preview/ip-location-maps/AS.png" alt="Asia">
+        <div class="column">
+            <div class="card">
+    <a href="/img/ip-location-maps/AS.png">
+        <img loading="lazy" src="/img/preview/ip-location-maps/AS.png" alt="Asia">
+        <h3>Asia</h3>
     </a>
-    <div class="card-body">
-        <h5 class="card-title">Asia</h5>
-    </div>
 </div>
         </div>
-        <div class="col-md-6 col-lg-4">
-            <div class="card mt-2">
-    <a href="/img/ip-location-maps/OC.png" title="Read more">
-        <img class="card-img-top object-fit-scale" loading="lazy" src="/img/preview/ip-location-maps/OC.png" alt="Australia">
+        <div class="column">
+            <div class="card">
+    <a href="/img/ip-location-maps/OC.png">
+        <img loading="lazy" src="/img/preview/ip-location-maps/OC.png" alt="Australia">
+        <h3>Australia</h3>
     </a>
-    <div class="card-body">
-        <h5 class="card-title">Australia</h5>
-    </div>
 </div>
         </div>
-        <div class="col-md-6 col-lg-4">
-            <div class="card mt-2">
-    <a href="/img/ip-location-maps/EU.png" title="Read more">
-        <img class="card-img-top object-fit-scale" loading="lazy" src="/img/preview/ip-location-maps/EU.png" alt="Europe">
+        <div class="column">
+            <div class="card">
+    <a href="/img/ip-location-maps/EU.png">
+        <img loading="lazy" src="/img/preview/ip-location-maps/EU.png" alt="Europe">
+        <h3>Europe</h3>
     </a>
-    <div class="card-body">
-        <h5 class="card-title">Europe</h5>
-    </div>
 </div>
         </div>
-        <div class="col-md-6 col-lg-4">
-            <div class="card mt-2">
-    <a href="/img/ip-location-maps/NA.png" title="Read more">
-        <img class="card-img-top object-fit-scale" loading="lazy" src="/img/preview/ip-location-maps/NA.png" alt="North America">
+        <div class="column">
+            <div class="card">
+    <a href="/img/ip-location-maps/NA.png">
+        <img loading="lazy" src="/img/preview/ip-location-maps/NA.png" alt="North America">
+        <h3>North America</h3>
     </a>
-    <div class="card-body">
-        <h5 class="card-title">North America</h5>
-    </div>
 </div>
         </div>
-        <div class="col-md-6 col-lg-4">
-            <div class="card mt-2">
-    <a href="/img/ip-location-maps/SA.png" title="Read more">
-        <img class="card-img-top object-fit-scale" loading="lazy" src="/img/preview/ip-location-maps/SA.png" alt="South America">
+        <div class="column">
+            <div class="card">
+    <a href="/img/ip-location-maps/SA.png">
+        <img loading="lazy" src="/img/preview/ip-location-maps/SA.png" alt="South America">
+        <h3>South America</h3>
     </a>
-    <div class="card-body">
-        <h5 class="card-title">South America</h5>
-    </div>
 </div>
         </div>
     </div>
     <hr>
 </div>
-<div id="info" class="container">
-<div class="row">
-  <div class="col-md-9"><h1>Geo Maps Drawn from IP Locations</h1>
-  <p>This is a collection of world and continent maps drawn from 419,433
-IP locations. Each point on a map corresponds to a single record in the
-dataset.</p>
-<p>The maps were created with the
-<a href="https://matplotlib.org/basemap/">Matplotlib Basemap Toolkit</a> using
-the <a href="https://matplotlib.org/basemap/users/mill.html">Miller Cylindrical
-projection</a>. You find the Python scripts for creating the images as well as
-some experimental stuff in the
-<a href="https://github.com/exploringdata/ip-location-maps">ip-location-maps</a>
-GitHub repo.</p>
-<p>The bounding boxes and centroids for the continent maps are based on
-information available from <a href="http://www.flickr.com/places/info/1">flickr
-places</a>. I partly adjusted the locations to reduce the amount of whitespace
-and in case of Australia/Oceania to show Australia, New Zealand and New Guinea.</p>
-<p>The idea to draw maps based on IP location data was inspired by projects
-like Foursquare's <a href="https://foursquare.com/infographics/500million">500
-million</a> and Twitter's <a href="https://blog.twitter.com/2013/geography-tweets-3">geography of Tweets</a>
-maps. The IP location data used to draw them is provided by
-<a href="http://www.maxmind.com">MaxMind</a> and available in the
-<a href="http://dev.maxmind.com/geoip/legacy/geolite">GeoLite City</a> dataset.</p>
-<div class="postinfo">
-<hr class="clearfix">
-<div class="well">
-<p>Published on June 11, 2013 (updated on November 18, 2020) by <a href="https://ramiro.org/">Ramiro Gómez</a>. To be informed of new posts, subscribe to the <a href="/rss.xml">RSS feed</a>.
-<br>Tags: <a href="/tags/graphics/">graphics</a>, <a href="/tags/ip-locations/">ip-locations</a>, <a href="/tags/map/">map</a>, <a href="/tags/matplotlib/">matplotlib</a>.</p>
+<div class="container">
+<p>This is a collection of world and continent maps drawn from 419,433 IP locations. Each point on a map corresponds to a single record in the dataset.</p>
+<p>The maps were created with the <a href="https://matplotlib.org/basemap/">Matplotlib Basemap Toolkit</a> using the <a href="https://matplotlib.org/basemap/users/mill.html">Miller Cylindrical projection</a>. You find the Python scripts for creating the images as well as some experimental stuff in the <a href="https://github.com/exploringdata/ip-location-maps">ip-location-maps</a> GitHub repo.</p>
+<p>The bounding boxes and centroids for the continent maps are based on information available from <a href="http://www.flickr.com/places/info/1">flickr places</a>. I partly adjusted the locations to reduce the amount of whitespace and in case of Australia/Oceania to show Australia, New Zealand and New Guinea.</p>
+<p>The idea to draw maps based on IP location data was inspired by projects like Foursquare's <a href="https://foursquare.com/infographics/500million">500 million</a> and Twitter's <a href="https://blog.twitter.com/2013/geography-tweets-3">geography of Tweets</a> maps. The IP location data used to draw them is provided by <a href="http://www.maxmind.com">MaxMind</a> and available in the <a href="http://dev.maxmind.com/geoip/legacy/geolite">GeoLite City</a> dataset.</p>
 </div>
-</div>
-  </div>
-  <div class="col-md-3">
+<footer>
+  <p>Exploring Data is a showcase of interactive data visualizations created with open data and open source tools, <a href="/about/">learn more</a>.<br>
+  © 2026 </script> <a href="https://ramiro.org/">Ramiro Gómez</a>.</p>
+</footer>
 
 
+<script src="/compiled/script2.js"></script>
 
-
-
-<h3>Source Code</h3>
-<p>Check out the source code used to process the data and create the visualizations.</p>
-<a class="btn btn-primary" href="https://github.com/yaph/ip-location-maps">Code Repository</a>
-<hr>
-
-<h3>Keep Exploring</h3>
-<a href="/rss.xml" class="btn btn-lg btn-warning m-1 mb-2">Subscribe to News feed</a>
-
-<h3>Visualizations</h3>
-<ul>
-<li><a href="/vis/volcanoes-globe/">Volcanoes of Planet Earth</a></li>
-<li><a href="/vis/mentor-author-graph/">Graph of Mentors, Books and Authors</a></li>
-<li><a href="/vis/big-sister-cities/">Graph of Big Sister Cities With +1 Million Inhabitants</a></li>
-<li><a href="/vis/spaghetti-western-actors-dbpedia/">Spaghetti Western Actors Network Graph DBpedia</a></li>
-<li><a href="/vis/ronaldo-income/">How Much Cristiano Ronaldo Earns Viewed from 2 Angles</a></li>
-</ul>  </div>
-</div>
-</div><div id="footer" class="container-fluid">
-    <footer>
-        <hr>
-        <p>Exploring Data is a showcase of interactive data visualizations created with open data and open source tools, <a href="/about/">learn more</a>.<br>
-        © <script>document.write(new Date().getFullYear())</script> <a href="https://ramiro.org/">Ramiro Gómez</a>.</p>
-    </footer>
-</div>
-
-<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.8/umd/popper.min.js" integrity="sha512-TPh2Oxlg1zp+kz3nFA0C5vVC6leG/6mm1z9+mA81MI5eaUVqasPLO8Cuk4gMF4gUfP5etR73rgU/8PNMsSesoQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/js/bootstrap.min.js" integrity="sha512-nKXmKvJyiGQy343jatQlzDprflyB5c+tKCzGP3Uq67v+lmzfnZUi/ZT+fc6ITZfSC5HhaBKUIvr/nTLCV+7F+Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/js/fontawesome.min.js" integrity="sha512-obFNtQ1JKCrxPBPLmYDUevlriATl5EhvwU3CFtdW/HKOkeAe0bbsyZfHO44/f1QyndrZJ464TQvrRP9ZjyXSSA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/js/solid.min.js" integrity="sha512-JqavQXK1jFoFcjU3kIvom9jdj3R76Ar8+ZcWezTLONsfi5Y3yibIqq0FyqP4R//K/G3ow84fIH0wBXKWpJf2EQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-
-<script src="/js/script.js"></script>
 
 <script async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
 </body>

@@ -4,95 +4,62 @@
   <meta charset="utf-8">
   <title>Evolution of Internet Users from 1990 - 2012 | Exploring Data</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="description" content="An animated scatterplot showing the evolution of Internet users across the worlds countries from 1990 to 2012 created with the D3.js.">
-      <meta property="og:image" content="/img/preview/evolution-of-internet-users-from-1990-2012.jpg">
+    <meta name="description" content="An animated scatterplot showing the evolution of Internet users across the worlds countries from 1990 to 2012 created with the D3.js.">
+    <meta property="og:image" content="/img/preview/evolution-of-internet-users-from-1990-2012.jpg">
   <meta name="author" content="Ramiro Gómez">
   <link rel="canonical" href="https://exploring-data.com/vis/evolution-internet-users/">
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/css/bootstrap.min.css" integrity="sha512-2bBQCjcnw658Lho4nlXJcc6WkV/UxpE/sAokbXPxQNGqmNdQrWqtw26Ns9kFF/yG792pKR1Sx8/Y1Lf1XN4GKA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/solid.min.css" integrity="sha512-EHa6vH03/Ty92WahM0/tet1Qicl76zihDCkBnFhN3kFGQkC+mc86d7V+6y2ypiLbk3h0beZAGdUpzfMcb06cMg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link href="/css/style.css" rel="stylesheet">
+    <link href="/css/style2.css" rel="stylesheet">
 
-          <link rel="stylesheet" href="/css/evolution-internet-users.css"">
+          <link rel="stylesheet" href="/css/evolution-internet-users.css">
   <link rel="shortcut icon" href="/favicon.ico">
   <link rel="alternate" type="application/rss+xml" title="Exploring Data RSS feed" href="https://exploring-data.com/rss.xml">
 </head>
 
-<body class="">
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="/">
-      <img src="/img/exploring-data.png" alt="Exploring Data Logo" class="d-inline-block align-text-top">
-    </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbar-content">
-<ul class="navbar-nav me-auto mb-2 mb-lg-0">
-    <li class="nav-item"><a class="nav-link" href="/vis/">📊 Visualizations</a></li>
-    <li class="nav-item"><a class="nav-link" href="/map/">🗺️ Maps</a></li>
-    <li class="nav-item"><a class="nav-link" href="/prints/">🛒 Prints</a></li>
-    <li class="nav-item"><a class="nav-link" href="/data-visualization-books/">📕 Books</a></li>
-    <li class="nav-item"><a class="nav-link" href="/datasearch/">🔍 Search for Data</a></li>
-    <li class="nav-item"><a class="nav-link" href="/sitemap/">📄 Sitemap</a></li>
-</ul>    </div>
-  </div>
+<body>
+<nav class="navbar">
+  <ul>
+    <li class="logo"><a href="/"><img src="/img/exploring-data.png" alt="Exploring Data Logo"></a></li>
+    <li class="nav-links">
+      <a href="/vis/">📊 Visualizations</a>
+      <a href="/map/">🗺️ Maps</a>
+      <a href="/story">🗒️ Stories</a>
+      <a href="/prints/">🛒 Prints</a>
+      <a href="/data-visualization-books/">📕 Books</a>
+      <a href="/datasearch/">🔍 Search for Data</a>
+      <a href="/sitemap/">📄 Sitemap</a>
+    </li>
+    <li class="hamburger">
+      <button aria-label="Menu">&#9776;</button>
+    </li>
+  </ul>
 </nav>
 
-<div class="container-fluid" id="vis"></div>
-<div id="info" class="container">
-<div class="row">
-  <div class="col-md-9"><h1>Evolution of Internet Users from 1990 - 2012</h1>
-  <p>An animated scatterplot showing the percentage of Internet users in relation to the Gross Domestic Product (GDP) per capita for the worlds countries from 1990 to 2012. Each country is represented as a bubble, whose size is determined by the countries' population. Countries are grouped by the continents they belong to using different colors.</p>
+<div id="vis"></div>
+
+<div class="container">
+    <h1>Evolution of Internet Users from 1990 - 2012</h1>
+    <p>An animated scatterplot showing the percentage of Internet users in relation to the Gross Domestic Product (GDP) per capita for the worlds countries from 1990 to 2012. Each country is represented as a bubble, whose size is determined by the countries' population. Countries are grouped by the continents they belong to using different colors.</p>
 <p>Move the mouse cursor over a circle to see the name of the corresponding country. You can navigate through the years after the animation finishes by moving the mouse over the year number in the bottom right corner.</p>
 <p>This data visualization is based on <a href="http://bost.ocks.org/mike/nations/">Mike Bostock's recreation</a> of Gapminder's <a href="http://gapminder.org/world/">The Wealth and Health of Nations</a> made famous by Hans Rosling in his <a href="http://www.ted.com/talks/hans_rosling_shows_the_best_stats_you_ve_ever_seen.html">inspiring TED talk</a>.</p>
 <p>The data is retrieved from the <a href="http://data.worldbank.org/data-catalog/world-development-indicators">World Bank's World Development Indicators</a> and rendered using the <a href="https://d3js.org/">JavaScript library D3</a>. You can access the code to pre-process the Worldbank data from this <a href="https://github.com/exploringdata/evolution-internet-users">GitHub repository</a>.</p>
 <p>This visualization was last updated May 8, 2014.</p>
+
 <div class="postinfo">
-<hr class="clearfix">
-<div class="well">
-<p>Published on December 23, 2012 (updated on November 18, 2020) by <a href="https://ramiro.org/">Ramiro Gómez</a>. To be informed of new posts, subscribe to the <a href="/rss.xml">RSS feed</a>.
-<br>Tags: <a href="/tags/history/">history</a>, <a href="/tags/scatterplot/">scatterplot</a>, <a href="/tags/animation/">animation</a>, <a href="/tags/d3/">d3</a>, <a href="/tags/interactive/">interactive</a>, <a href="/tags/internet/">internet</a>.</p>
-</div>
-</div>
-  </div>
-  <div class="col-md-3">
+<p>Published on December 23, 2012 (updated on February 16, 2026) by <a href="https://ramiro.org/">Ramiro Gómez</a>. To be informed of new posts, subscribe to the <a href="/rss.xml">RSS feed</a>.
+<br>Tags: <a href="/tags/interactive/">interactive</a>, <a href="/tags/scatterplot/">scatterplot</a>, <a href="/tags/internet/">internet</a>, <a href="/tags/d3/">d3</a>, <a href="/tags/history/">history</a>, <a href="/tags/animation/">animation</a>.</p>
+</div></div>
+
+<footer>
+  <p>Exploring Data is a showcase of interactive data visualizations created with open data and open source tools, <a href="/about/">learn more</a>.<br>
+  © 2026 </script> <a href="https://ramiro.org/">Ramiro Gómez</a>.</p>
+</footer>
 
 
+<script src="/compiled/script2.js"></script>
 
-
-
-
-<h3>Keep Exploring</h3>
-<a href="/rss.xml" class="btn btn-lg btn-warning m-1 mb-2">Subscribe to News feed</a>
-
-<h3>Visualizations</h3>
-<ul>
-<li><a href="/vis/volcanoes-globe/">Volcanoes of Planet Earth</a></li>
-<li><a href="/vis/mentor-author-graph/">Graph of Mentors, Books and Authors</a></li>
-<li><a href="/vis/big-sister-cities/">Graph of Big Sister Cities With +1 Million Inhabitants</a></li>
-<li><a href="/vis/spaghetti-western-actors-dbpedia/">Spaghetti Western Actors Network Graph DBpedia</a></li>
-<li><a href="/vis/ronaldo-income/">How Much Cristiano Ronaldo Earns Viewed from 2 Angles</a></li>
-</ul>  </div>
-</div>
-</div><div id="footer" class="container-fluid">
-    <footer>
-        <hr>
-        <p>Exploring Data is a showcase of interactive data visualizations created with open data and open source tools, <a href="/about/">learn more</a>.<br>
-        © <script>document.write(new Date().getFullYear())</script> <a href="https://ramiro.org/">Ramiro Gómez</a>.</p>
-    </footer>
-</div>
-
-<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.8/umd/popper.min.js" integrity="sha512-TPh2Oxlg1zp+kz3nFA0C5vVC6leG/6mm1z9+mA81MI5eaUVqasPLO8Cuk4gMF4gUfP5etR73rgU/8PNMsSesoQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/js/bootstrap.min.js" integrity="sha512-nKXmKvJyiGQy343jatQlzDprflyB5c+tKCzGP3Uq67v+lmzfnZUi/ZT+fc6ITZfSC5HhaBKUIvr/nTLCV+7F+Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/js/fontawesome.min.js" integrity="sha512-obFNtQ1JKCrxPBPLmYDUevlriATl5EhvwU3CFtdW/HKOkeAe0bbsyZfHO44/f1QyndrZJ464TQvrRP9ZjyXSSA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/js/solid.min.js" integrity="sha512-JqavQXK1jFoFcjU3kIvom9jdj3R76Ar8+ZcWezTLONsfi5Y3yibIqq0FyqP4R//K/G3ow84fIH0wBXKWpJf2EQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-
-<script src="/js/script.js"></script>
-    <script src="/vendor/d3/d3.v3.min.js"></script>
-    <script src="/js/evolution-internet-users/script.js"></script>
+      <script src="/vendor/d3/d3.v3.min.js"></script>
+      <script src="/js/evolution-internet-users/script.js"></script>
 
 <script async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
 </body>
