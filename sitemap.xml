@@ -20,10 +20,10 @@
 <url><loc><![CDATA[https://exploring-data.com/print/programming-languages-influence-network-2020-black/]]></loc><lastmod>2020-12-31</lastmod></url>
 <url><loc><![CDATA[https://exploring-data.com/print/programming-languages-influence-network-2019/]]></loc><lastmod>2020-12-31</lastmod></url>
 <url><loc><![CDATA[https://exploring-data.com/print/programming-languages-influence-network-2019-black/]]></loc><lastmod>2020-12-31</lastmod></url>
-<url><loc><![CDATA[https://exploring-data.com/info/co2-emissions/]]></loc><lastmod>2026-02-14</lastmod></url>
-<url><loc><![CDATA[https://exploring-data.com/map/world/co2-emissions/]]></loc><lastmod>2019-09-24</lastmod></url>
-<url><loc><![CDATA[https://exploring-data.com/info/forest-area/]]></loc><lastmod>2026-02-14</lastmod></url>
-<url><loc><![CDATA[https://exploring-data.com/map/world/forest-area/]]></loc><lastmod>2019-09-19</lastmod></url>
+<url><loc><![CDATA[https://exploring-data.com/info/co2-emissions/]]></loc><lastmod>2026-02-20</lastmod></url>
+<url><loc><![CDATA[https://exploring-data.com/map/world/co2-emissions/]]></loc><lastmod>2026-02-20</lastmod></url>
+<url><loc><![CDATA[https://exploring-data.com/info/forest-area/]]></loc><lastmod>2026-02-20</lastmod></url>
+<url><loc><![CDATA[https://exploring-data.com/map/world/forest-area/]]></loc><lastmod>2026-02-20</lastmod></url>
 <url><loc><![CDATA[https://exploring-data.com/print/rust-influence-network/]]></loc><lastmod>2020-12-31</lastmod></url>
 <url><loc><![CDATA[https://exploring-data.com/print/c-influence-network/]]></loc><lastmod>2020-12-31</lastmod></url>
 <url><loc><![CDATA[https://exploring-data.com/print/pattern-world-map-winkel-hexagons-white/]]></loc><lastmod>2020-12-31</lastmod></url>
@@ -89,7 +89,7 @@
 <url><loc><![CDATA[https://exploring-data.com/print/colored-world-painting/]]></loc><lastmod>2020-12-31</lastmod></url>
 <url><loc><![CDATA[https://exploring-data.com/print/colored-world-warhol/]]></loc><lastmod>2020-12-31</lastmod></url>
 <url><loc><![CDATA[https://exploring-data.com/print/colored-world-hope/]]></loc><lastmod>2020-12-31</lastmod></url>
-<url><loc><![CDATA[https://exploring-data.com/vis/spaghetti-western-actors-dbpedia/]]></loc><lastmod>2026-02-13</lastmod></url>
+<url><loc><![CDATA[https://exploring-data.com/vis/spaghetti-western-actors-dbpedia/]]></loc><lastmod>2026-02-20</lastmod></url>
 <url><loc><![CDATA[https://exploring-data.com/info/spaghetti-western-actors-dbpedia/]]></loc><lastmod>2026-02-14</lastmod></url>
 <url><loc><![CDATA[https://exploring-data.com/print/britain-ireland-drawn-from-pubs-no-sig/]]></loc><lastmod>2020-12-31</lastmod></url>
 <url><loc><![CDATA[https://exploring-data.com/print/everything-is-4-text/]]></loc><lastmod>2020-12-31</lastmod></url>
@@ -103,8 +103,8 @@
 <url><loc><![CDATA[https://exploring-data.com/vis/transfer-records/]]></loc><lastmod>2026-02-17</lastmod></url>
 <url><loc><![CDATA[https://exploring-data.com/info/ballon-dor-male-players-votes-2013/]]></loc><lastmod>2026-02-14</lastmod></url>
 <url><loc><![CDATA[https://exploring-data.com/vis/ballon-dor-male-players-votes-2013/]]></loc><lastmod>2020-11-18</lastmod></url>
-<url><loc><![CDATA[https://exploring-data.com/info/intentional-homicides/]]></loc><lastmod>2026-02-14</lastmod></url>
-<url><loc><![CDATA[https://exploring-data.com/map/world/intentional-homicides/]]></loc><lastmod>2026-01-31</lastmod></url>
+<url><loc><![CDATA[https://exploring-data.com/info/intentional-homicides/]]></loc><lastmod>2026-02-20</lastmod></url>
+<url><loc><![CDATA[https://exploring-data.com/map/world/intentional-homicides/]]></loc><lastmod>2026-02-20</lastmod></url>
 <url><loc><![CDATA[https://exploring-data.com/story/rail-suicides-europe/]]></loc><lastmod>2026-02-16</lastmod></url>
 <url><loc><![CDATA[https://exploring-data.com/info/npm-packages-dependencies/]]></loc><lastmod>2026-02-14</lastmod></url>
 <url><loc><![CDATA[https://exploring-data.com/vis/npm-top-packages-dependencies/]]></loc><lastmod>2020-11-18</lastmod></url>
@@ -138,6 +138,6 @@
 <url><loc><![CDATA[https://exploring-data.com/info/human-disease-network/]]></loc><lastmod>2026-02-14</lastmod></url>
 <url><loc><![CDATA[https://exploring-data.com/vis/programming-languages-influence-network/]]></loc><lastmod>2026-01-31</lastmod></url>
 <url><loc><![CDATA[https://exploring-data.com/info/programming-languages-influence-network/]]></loc><lastmod>2019-01-24</lastmod></url>
-<url><loc><![CDATA[https://exploring-data.com/]]></loc><lastmod>2026-02-14</lastmod></url>
+<url><loc><![CDATA[https://exploring-data.com/]]></loc><lastmod>2026-02-20</lastmod></url>
 <url><loc><![CDATA[https://exploring-data.com/vis/programming-languages-influence-network-d3/]]></loc><lastmod>2026-02-16</lastmod></url>
 </urlset>

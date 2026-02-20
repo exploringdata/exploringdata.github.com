@@ -1,0 +1,1 @@
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}html,body{width:100%;height:100dvh;overflow:hidden}#app{width:100%;height:100%}#logo-link{position:fixed;bottom:1rem;right:1rem;z-index:10}#logo-link img{width:120px;height:40px;object-fit:contain;display:block}
