@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>World Inflation Map - Annual Consumer Price Changes (%) | Exploring Data</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Interactive world map of annual inflation (%) from 1960 to 2024, showing consumer price changes per country in constant 2015 US dollars.">
+    <meta property="og:image" content="/img/preview/inflation-consumer-prices-annual.png">
+  <meta name="author" content="Ramiro Gómez">
+  <link rel="canonical" href="https://exploring-data.com/map/world/inflation-consumer-prices-annual/">
+
+<link rel="stylesheet" href="/css/fullpage.css">
+
+<link rel="stylesheet" href="/css/worldbank-map.css">
+
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="alternate" type="application/rss+xml" title="Exploring Data RSS feed" href="https://exploring-data.com/rss.xml">
+</head>
+
+<body>
+
+
+<div id="app"></div>
+<script type="module">
+  import { createMap } from '/compiled/worldbank-map.js';
+
+  createMap(document.getElementById('app'), {
+    indicator:   'FP.CPI.TOTL.ZG',
+    clampPercentile: 3,   // clip the most extreme % from each end
+    topoUrl:     '/topojson/world/countries.json',
+    topoObject:  'units',
+    title:       'Inflation, consumer prices',
+    emoji:       '💸',
+    unit:        'annual %',
+    colorScheme: 'Greens'
+  });
+</script>
+<a id="logo-link" href="/"><img src="/img/exploring-data.png" alt="Exploring Data"></a>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/topojson-client@3/dist/topojson-client.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@observablehq/plot@0.6/dist/plot.umd.min.js"></script>
+
+
+<script async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+</body>
+</html>

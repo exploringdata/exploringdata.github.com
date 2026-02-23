@@ -7,6 +7,13 @@
     <generator>Logya</generator>
     <docs>http://blogs.law.harvard.edu/tech/rss</docs>
     <item>
+        <title><![CDATA[World Inflation Map - Annual Consumer Price Changes (%)]]></title>
+        <link><![CDATA[https://exploring-data.com/map/world/inflation-consumer-prices-annual/]]></link>
+        <description><![CDATA[Interactive world map of annual inflation (%) from 1960 to 2024, showing consumer price changes per country in constant 2015 US dollars.]]></description>
+        <guid><![CDATA[https://exploring-data.com/map/world/inflation-consumer-prices-annual/]]></guid>
+        <pubDate>Tue, 24 Feb 2026 00:14:42 </pubDate>
+    </item>
+    <item>
         <title><![CDATA[Coastal Mountain Walks: Exploring Google Fit Data]]></title>
         <link><![CDATA[https://exploring-data.com/story/coastal-mountain-walks/]]></link>
         <description><![CDATA[Analysis of Google Fit data from a hiking vacation in Nerja, Spain. Explore daily step counts, activity patterns, and visualization techniques.]]></description>
@@ -70,12 +77,5 @@ A great gift for geography nerds, teache]]></description>
         <description><![CDATA[Python is a high-level programming language with a design philosophy that emphasizes code readability. This network graph shows languages connected with Python through influence relations, i.e. languages that were influenced by or influenced Python. Mor]]></description>
         <guid><![CDATA[https://exploring-data.com/print/python-influence-network/]]></guid>
         <pubDate>Thu, 08 Dec 2022 00:00:00 </pubDate>
-    </item>
-    <item>
-        <title><![CDATA[JavaScript Programming Language Influence Network Graph]]></title>
-        <link><![CDATA[https://exploring-data.com/print/javascript-influence-network/]]></link>
-        <description><![CDATA[JavaScript (JS) is the programming language of the World Wide Web. This network graph shows languages connected by influence relations, i.e. languages that were influenced by JavaScript or influenced JavaScript and JavaScript itself. More influential la]]></description>
-        <guid><![CDATA[https://exploring-data.com/print/javascript-influence-network/]]></guid>
-        <pubDate>Mon, 07 Nov 2022 00:00:00 </pubDate>
     </item>
 </channel></rss>
