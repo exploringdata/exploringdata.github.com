@@ -4,13 +4,14 @@
   <meta charset="utf-8">
   <title>Berlin Bike Routes Map | Exploring Data</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A map of Berlin, Germany showing 14 different biking routes through and around the city. Created with OpenLayers, Open Street Map and data from Senatsverwaltung für Stadtentwicklung und Umwelt.">
+    <meta name="description" content="A map of Berlin, Germany showing 14 different biking routes through and around the city. Created with Leaflet, Open Street Map and data from Senatsverwaltung für Stadtentwicklung und Umwelt.">
     <meta property="og:image" content="/img/preview/berlin-bike-routes.jpg">
   <meta name="author" content="Ramiro Gómez">
   <link rel="canonical" href="https://exploring-data.com/map/osm/berlin-bike-routes/">
 
 <link rel="stylesheet" href="/css/fullpage.css">
 
+          <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
           <link rel="stylesheet" href="/css/berlin-bike-routes.css">
   <link rel="shortcut icon" href="/favicon.ico">
   <link rel="alternate" type="application/rss+xml" title="Exploring Data RSS feed" href="https://exploring-data.com/rss.xml">
@@ -24,9 +25,8 @@
 
 
 
-      <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-      <script src="https://www.openlayers.org/api/OpenLayers.js"></script>
-      <script src="https://www.openstreetmap.org/openlayers/OpenStreetMap.js"></script>
+      <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-gpx/1.7.0/gpx.min.js"></script>
       <script src="/compiled/berlin-bike-routes.js"></script>
 
 <script async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
