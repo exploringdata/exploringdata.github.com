@@ -11,7 +11,7 @@
 
 <link rel="stylesheet" href="/css/fullpage.css">
 
-<link rel="stylesheet" href="/css/worldbank-map.css">
+<link rel="stylesheet" href="/vendor/npm/subject-mapper.css">
 
   <link rel="shortcut icon" href="/favicon.ico">
   <link rel="alternate" type="application/rss+xml" title="Exploring Data RSS feed" href="https://exploring-data.com/rss.xml">
@@ -22,26 +22,28 @@
 
 <div id="app"></div>
 <script type="module">
-  import { createMap } from '/compiled/worldbank-map.js';
+import { createMap, fetchWorldBank, worldBankUrl } from '/compiled/subjectmap.js';
 
-  createMap(document.getElementById('app'), {
-    indicator:   'EN.GHG.CO2.PC.CE.AR5',
-    clampPercentile: 1.5,   // clip the most extreme % from each end
-    topoUrl:     '/topojson/world/countries.json',
-    topoObject:  'units',
-    title:       'CO2 Emissions',
-    emoji:       '👣',
-    unit:        'Tonnes per Capita',
-    colorScheme: 'Blues'
-  });
+const INDICATOR = 'EN.GHG.CO2.PC.CE.AR5';
+const data = await fetchWorldBank(INDICATOR);
+
+createMap(document.getElementById('app'), {
+  data,
+  clampPercentile: 1.5,   // clip the most extreme % from each end
+  topoUrl:     '/topojson/world/countries.json',
+  topoObject:  'units',
+  title:       'CO2 Emissions',
+  emoji:       '👣',
+  unit:        'Tonnes per Capita',
+  colorScheme: 'Blues',
+  sourceUrl:   worldBankUrl(INDICATOR),
+  sourceLabel: `data.worldbank.org/indicator/${INDICATOR}`,
+});
 </script>
 <a id="logo-link" href="/"><img src="/img/exploring-data.png" alt="Exploring Data"></a>
 
 
 
-<script src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/topojson-client@3/dist/topojson-client.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@observablehq/plot@0.6/dist/plot.umd.min.js"></script>
 
 
 <script async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
