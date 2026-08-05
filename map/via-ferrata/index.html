@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Via Ferrata Explorer • Find Iron-Path Climbing Routes in Europe | Exploring Data</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore Via Ferrata climbing routes across Europe with this interactive map. View topo maps, difficulty ratings, and route info.">
+    <meta property="og:image" content="/img/preview/via-ferrata.png">
+  <meta name="author" content="Ramiro Gómez">
+  <link rel="canonical" href="https://exploring-data.com/map/via-ferrata/">
+
+<link rel="stylesheet" href="/css/fullpage.css">
+
+          <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+          <link rel="stylesheet" href="/compiled/map/via-ferrata.css">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="alternate" type="application/rss+xml" title="Exploring Data RSS feed" href="https://exploring-data.com/rss.xml">
+</head>
+
+<body>
+
+
+<div id="app">
+  <div id="map"></div>
+  <div id="sidebar">
+    <div id="sheet-handle"><div class="bar"></div></div>
+    <div id="sidebar-header">
+      <h1>Via Ferrata Explorer</h1>
+    </div>
+    <div id="controls">
+      <div class="search-wrap">
+        <svg class="search-icon" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="9" cy="9" r="6.5" stroke="currentColor" stroke-width="1.6"/>
+          <line x1="13.8" y1="13.8" x2="18" y2="18" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+        </svg>
+        <input id="search-input" class="text-input" type="text" placeholder="Filter by name…" />
+      </div>
+      <div class="control-row">
+        <select id="sort-select">
+          <option value="name">Sort: Name (A–Z)</option>
+          <option value="scale-asc">Sort: Easiest first</option>
+          <option value="scale-desc">Sort: Hardest first</option>
+        </select>
+      </div>
+      <div id="scale-filter">
+        <label>Scale from
+          <select id="scale-min">
+            <option value="0">0</option><option value="1">1</option><option value="2">2</option>
+            <option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option>
+          </select>
+        </label>
+        <label>to
+          <select id="scale-max">
+            <option value="0">0</option><option value="1">1</option><option value="2">2</option>
+            <option value="3">3</option><option value="4">4</option><option value="5">5</option>
+            <option value="6" selected>6</option>
+          </select>
+        </label>
+      </div>
+      <label id="show-unnamed-row"><input type="checkbox" id="show-unnamed-check" /> Show unnamed via ferratas</label>
+      <div style="display:flex; align-items:center; gap: var(--space-2);">
+        <button id="area-search-btn">
+          <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" width="15" height="15">
+            <circle cx="10" cy="10" r="7" stroke="currentColor" stroke-width="1.6"/>
+            <circle cx="10" cy="10" r="2" fill="currentColor"/>
+            <line x1="10" y1="1" x2="10" y2="4" stroke="currentColor" stroke-width="1.6"/>
+            <line x1="10" y1="16" x2="10" y2="19" stroke="currentColor" stroke-width="1.6"/>
+            <line x1="1" y1="10" x2="4" y2="10" stroke="currentColor" stroke-width="1.6"/>
+            <line x1="16" y1="10" x2="19" y2="10" stroke="currentColor" stroke-width="1.6"/>
+          </svg>
+          Search this area
+        </button>
+        <span id="area-filter-status" style="display:none; font-size:12px; color: var(--color-text-secondary);">
+          Filtered to view · <a href="#" id="area-filter-clear">clear</a>
+        </span>
+      </div>
+      <div id="data-freshness"></div>
+    </div>
+    <div id="legend"></div>
+    <div id="status"></div>
+    <div id="route-list">
+      <div class="empty-state">Loading cached data…</div>
+    </div>
+    <div id="detail-panel"></div>
+  </div>
+</div>
+
+
+
+
+      <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+      <script src="https://unpkg.com/topojson-client@3/dist/topojson-client.min.js"></script>
+      <script src="/compiled/map/via-ferrata.js"></script>
+
+<script async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+</body>
+</html>

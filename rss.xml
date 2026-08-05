@@ -7,6 +7,13 @@
     <generator>Logya</generator>
     <docs>http://blogs.law.harvard.edu/tech/rss</docs>
     <item>
+        <title><![CDATA[Via Ferrata Explorer • Find Iron-Path Climbing Routes in Europe]]></title>
+        <link><![CDATA[https://exploring-data.com/map/via-ferrata/]]></link>
+        <description><![CDATA[Explore Via Ferrata climbing routes across Europe with this interactive map. View topo maps, difficulty ratings, and route info.]]></description>
+        <guid><![CDATA[https://exploring-data.com/map/via-ferrata/]]></guid>
+        <pubDate>Wed, 05 Aug 2026 15:45:22 </pubDate>
+    </item>
+    <item>
         <title><![CDATA[World Inflation Map - Annual Consumer Price Changes (%)]]></title>
         <link><![CDATA[https://exploring-data.com/map/world/inflation-consumer-prices-annual/]]></link>
         <description><![CDATA[Interactive world map of annual inflation (%) from 1960 to 2024, showing consumer price changes per country in constant 2015 US dollars.]]></description>
@@ -70,12 +77,5 @@ A great gift for geography nerds, teache]]></description>
         <description><![CDATA[Lisp, originally specified in 1958, is the 2nd oldest high-level programming language still in common use. This network graph shows languages connected with Lisp through influence relations, i.e. languages that were influenced by or influenced Lisp. Mor]]></description>
         <guid><![CDATA[https://exploring-data.com/print/lisp-influence-network/]]></guid>
         <pubDate>Fri, 09 Dec 2022 00:00:00 </pubDate>
-    </item>
-    <item>
-        <title><![CDATA[Python Programming Language Influence Network Graph]]></title>
-        <link><![CDATA[https://exploring-data.com/print/python-influence-network/]]></link>
-        <description><![CDATA[Python is a high-level programming language with a design philosophy that emphasizes code readability. This network graph shows languages connected with Python through influence relations, i.e. languages that were influenced by or influenced Python. Mor]]></description>
-        <guid><![CDATA[https://exploring-data.com/print/python-influence-network/]]></guid>
-        <pubDate>Thu, 08 Dec 2022 00:00:00 </pubDate>
     </item>
 </channel></rss>
