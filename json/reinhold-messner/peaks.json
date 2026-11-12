@@ -1,0 +1,128 @@
+[
+  {
+    "name": "Nanga Parbat",
+    "height_m": 8125,
+    "first_ascent_year": 1970,
+    "lon": 74.5892,
+    "lat": 35.2375,
+    "range": "Himalaya",
+    "country": "Pakistan"
+  },
+  {
+    "name": "Manaslu",
+    "height_m": 8163,
+    "first_ascent_year": 1972,
+    "lon": 84.5619,
+    "lat": 28.5494,
+    "range": "Himalaya",
+    "country": "Nepal"
+  },
+  {
+    "name": "Gasherbrum I",
+    "height_m": 8080,
+    "first_ascent_year": 1975,
+    "lon": 76.6964,
+    "lat": 35.7243,
+    "range": "Karakoram",
+    "country": "Pakistan / China"
+  },
+  {
+    "name": "Mount Everest",
+    "height_m": 8848,
+    "first_ascent_year": 1978,
+    "lon": 86.925,
+    "lat": 27.9881,
+    "range": "Himalaya",
+    "country": "Nepal / China"
+  },
+  {
+    "name": "K2",
+    "height_m": 8611,
+    "first_ascent_year": 1979,
+    "lon": 76.5133,
+    "lat": 35.8814,
+    "range": "Karakoram",
+    "country": "Pakistan / China"
+  },
+  {
+    "name": "Shishapangma",
+    "height_m": 8027,
+    "first_ascent_year": 1981,
+    "lon": 85.779,
+    "lat": 28.3525,
+    "range": "Himalaya",
+    "country": "China"
+  },
+  {
+    "name": "Kangchenjunga",
+    "height_m": 8586,
+    "first_ascent_year": 1982,
+    "lon": 88.1475,
+    "lat": 27.7025,
+    "range": "Himalaya",
+    "country": "Nepal / India"
+  },
+  {
+    "name": "Gasherbrum II",
+    "height_m": 8034,
+    "first_ascent_year": 1982,
+    "lon": 76.653,
+    "lat": 35.758,
+    "range": "Karakoram",
+    "country": "Pakistan / China"
+  },
+  {
+    "name": "Broad Peak",
+    "height_m": 8051,
+    "first_ascent_year": 1982,
+    "lon": 76.565,
+    "lat": 35.811,
+    "range": "Karakoram",
+    "country": "Pakistan / China"
+  },
+  {
+    "name": "Cho Oyu",
+    "height_m": 8188,
+    "first_ascent_year": 1983,
+    "lon": 86.6608,
+    "lat": 28.0942,
+    "range": "Himalaya",
+    "country": "Nepal / China"
+  },
+  {
+    "name": "Annapurna I",
+    "height_m": 8091,
+    "first_ascent_year": 1985,
+    "lon": 83.8203,
+    "lat": 28.5958,
+    "range": "Himalaya",
+    "country": "Nepal"
+  },
+  {
+    "name": "Dhaulagiri I",
+    "height_m": 8167,
+    "first_ascent_year": 1985,
+    "lon": 83.4875,
+    "lat": 28.6967,
+    "range": "Himalaya",
+    "country": "Nepal"
+  },
+  {
+    "name": "Makalu",
+    "height_m": 8485,
+    "first_ascent_year": 1986,
+    "lon": 87.0881,
+    "lat": 27.8897,
+    "range": "Himalaya",
+    "country": "Nepal / China"
+  },
+  {
+    "name": "Lhotse",
+    "height_m": 8516,
+    "first_ascent_year": 1986,
+    "lon": 86.933,
+    "lat": 27.9617,
+    "range": "Himalaya",
+    "country": "Nepal / China"
+  }
+]

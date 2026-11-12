@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Beyond 8,000 Metres — Reinhold Messner | Exploring Data</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="How far can ambition take one person? An interactive story about Reinhold Messner: fourteen eight-thousanders, polar journeys and a lifetime of exploration.">
+  <meta name="author" content="Ramiro Gómez">
+  <link rel="canonical" href="https://exploring-data.com/story/reinhold-messner/">
+
+
+          <link rel="stylesheet" href="/css/reinhold-messner.css">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="alternate" type="application/rss+xml" title="Exploring Data RSS feed" href="https://exploring-data.com/rss.xml">
+</head>
+
+<body>
+
+
+<a class="skip-link" href="#opening">Skip to the story</a>
+<header class="topbar"><div>FIELD NOTES / 14 PEAKS</div><div aria-hidden="true" class="reading-progress"><span id="readingProgress"></span></div><nav aria-label="Section navigation"><a href="#opening">Overview</a><a href="#peaks">The peaks</a><a href="#sequence">The sequence</a><a href="#record-debate">The debate</a><a href="#cost">The cost</a><a href="#explorer">Beyond 8K</a><a href="#legacy">The legacy</a><a href="#sources">Sources</a></nav></header>
+<header class="hero"><div class="hero-inner"><div class="kicker">An interactive data story · Exploration / Endurance / Risk</div><h1>BEYOND<br>8,000 METRES</h1><p class="hero-question">How far can ambition take one person?</p><p class="hero-deck">From the Dolomites to the world’s highest summits, follow Reinhold Messner’s pursuit of the limits — and the legacy that reaches far beyond the mountains.</p><div class="scrollhint">↓ Scroll to explore</div></div></header>
+<section id="opening">
+<div class="intro"><div><div class="eyebrow">01 / The man behind the numbers</div><h2>A life measured in mountains.</h2></div><div><p class="lead">Born in South Tyrol in 1944, Reinhold Messner became one of the defining alpinists of his generation. By 1986, he had climbed all 14 eight-thousanders, without supplemental oxygen. He completed the Seven Summits, made first ascents on major faces, crossed remote polar and desert landscapes, wrote extensively and helped bring mountain cultures to a wider public.</p><p class="muted">Messner has said he never claimed records. The numbers help map the scale of his career, but they do not explain the curiosity, style and independence that drove it.</p></div></div>
+<div class="opening-question"><span class="eyebrow">The scale of the achievement</span><p>Fourteen distinct eight-thousanders. Eighteen individual peak ascents, including four repeats. And a lifetime of exploration beyond the summits.</p></div><div class="statrow">
+<div class="stat"><strong>5</strong><span>Age at first 3,000 m summit</span></div>
+<div class="stat"><strong>500</strong><span>Alpine ascents, 1950–1964</span></div>
+<div class="stat"><strong>7</strong><span>Summits completed</span></div>
+<div class="stat"><strong>14</strong><span>Distinct 8K peaks climbed</span></div>
+</div>
+
+
+
+
+<p class="muted statrow-intro">The fourteen are one part of a much wider career: first ascents on major faces, high-altitude peaks across several continents, polar crossings and desert journeys.</p>
+</section>
+<section class="dark" id="peaks">
+<div class="sectionhead"><div class="eyebrow">02 / The geography</div><h2>Fourteen summits. Two great mountain systems.</h2><p class="muted">The peaks cluster across the Himalaya and Karakoram, along the high spine of Asia. The maps show summit locations — not historical climbing routes.</p></div>
+<div class="mapgrid">
+<div class="mapcard wide"><h3>The Himalaya &amp; Karakoram</h3><p>Regional view · numbered summit markers · hover a summit marker or select its numbered key for details</p><div role="img" aria-label="Map of the fourteen eight-thousander summit locations in the Himalaya and Karakoram" class="plotbox" id="regionalMap"><span class="muted">Loading summit map…</span></div><div class="peak-interaction"><div class="peaklist" id="peakList"></div><aside aria-live="polite" class="peak-detail" id="peakDetail"><span class="eyebrow">Explore a summit</span><h3>Choose a numbered peak</h3><p>Select a peak to see its height, year and place in Messner’s sequence.</p></aside></div></div>
+</div>
+</section>
+<section id="sequence">
+<div class="sectionhead"><div class="eyebrow">03 / The record, year by year</div><h2>Fourteen different peaks. Eighteen ascents.</h2><p class="lead">Messner climbed 14 eight-thousanders and made 18 individual ascents. Four were return climbs: Nanga Parbat, Everest, Gasherbrum I and Gasherbrum II.</p></div>
+<div class="scrolly">
+<div class="scrolly-copy" id="storybeats">
+<article class="storybeat active" data-year="1970"><div class="eyebrow">1970 · The beginning</div><h3>Nanga Parbat</h3><p class="muted">Reinhold and his younger brother Günther reached the summit on 27 June 1970. Günther died during the descent; the exact circumstances remain disputed. Messner survived with severe frostbite.</p></article>
+<article class="storybeat" data-year="1978"><div class="eyebrow">1978 · A breakthrough</div><h3>Everest without supplemental oxygen</h3><p class="muted">With Peter Habeler, Messner makes the first ascent of Everest without supplemental oxygen.</p></article>
+<article class="storybeat" data-year="1982"><div class="eyebrow">1982 · Three in one year</div><h3>The pace accelerates</h3><p class="muted">Kangchenjunga, Gasherbrum II and Broad Peak brought the cumulative total to nine distinct eight-thousanders.</p></article>
+<article class="storybeat" data-year="1986"><div class="eyebrow">1986 · The set is complete</div><h3>Makalu. Lhotse. All fourteen.</h3><p class="muted">Makalu and Lhotse completed Messner’s sequence of ascents on all 14 eight-thousanders. The later debate over the exact summit point on Annapurna is addressed below.</p></article>
+</div>
+<div class="stickyviz"><div class="eyebrow">Summits accumulated</div><div class="plotbox chart" id="sequenceChart"><span class="muted">Loading chart…</span></div><p class="muted">Cumulative count of distinct mountains, not individual ascents. Repeat climbs appear in the register below.</p></div>
+</div>
+<div class="chartpanel chartpanel-spaced"><h3>How many new peaks each year?</h3><p class="sub">Distinct eight-thousanders added to the record, by year.</p><div class="plotbox chart" id="annualChart"><span class="muted">Loading chart…</span></div><p class="chartnote">Repeat ascents are excluded from this chart, but included in the ascent log below.</p></div>
+<div class="ascent-log">
+<h3>All 18 individual peak ascents</h3>
+<p class="muted">One row per recorded ascent. Four entries are repeat climbs; source heights are retained for consistency.</p>
+<div class="table-scroll"><table><thead><tr><th>Year</th><th>Mountain</th><th>Height</th><th>In the 14?</th><th>Ascent detail</th></tr></thead><tbody id="ascentRows"></tbody></table></div>
+</div>
+</section>
+<section id="record-debate">
+<div class="sectionhead"><div class="eyebrow">04 / A question of historical evidence</div><h2>One summit. Different readings.</h2><p class="lead">Messner and Hans Kammerlander reported reaching Annapurna’s main summit on 24 April 1985. Decades later, a photographic and topographic reassessment questioned their precise position. The disagreement is real; it does not erase the wider body of Messner’s work.</p></div>
+<div class="summit-explainer" id="annapurna-graphic">
+<svg aria-labelledby="summitTitle summitDesc" class="summit-graphic" id="summitProfile" role="img" viewbox="0 0 1000 390">
+<title id="summitTitle">Conceptual illustration of the Annapurna I summit ridge</title>
+<desc id="summitDesc">A not-to-scale illustration showing the 1985 climbers’ reported route to the highest point in orange and a later research hypothesis of a turnaround at the Ridge Junction in blue dashes.</desc>
+<defs><lineargradient id="ridgeSky" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#edf2ee"></stop><stop offset="1" stop-color="#f8f7f1"></stop></lineargradient></defs>
+<rect fill="url(#ridgeSky)" height="390" width="1000"></rect>
+<path class="ridge-fill" d="M45 330 L160 295 L265 250 L350 170 L430 145 L515 160 L600 125 L700 78 L790 55 L865 95 L955 205 L955 330 Z"></path>
+<path d="M45 330 L160 295 L265 250 L350 170 L430 145 L515 160 L600 125 L700 78 L790 55 L865 95 L955 205" fill="none" stroke="#50645f" stroke-width="2"></path>
+<path class="route-line" d="M90 315 L210 270 L310 210 L385 166 L515 160 L600 125 L700 78 L790 55"></path>
+<path class="research-line" d="M90 315 L210 270 L310 210 L385 166 L470 154 L555 145"></path>
+<circle class="ridge-junction" cx="555" cy="145" r="10"></circle><circle class="true-summit" cx="790" cy="55" r="11"></circle>
+<path d="M555 145 L555 205 L690 205" fill="none" stroke="#416d80" stroke-width="2"></path>
+<path d="M790 55 L790 28 L920 28" fill="none" stroke="#df7047" stroke-width="2"></path>
+<text class="label" x="700" y="210">Ridge Junction</text><text class="small-label" x="700" y="232">Proposed turnaround in later study</text>
+<text class="label" text-anchor="end" x="920" y="24">Highest point</text>
+<text class="small-label" x="75" y="365">North-west face and ridge · conceptual route illustration</text>
+<g transform="translate(70 55)"><rect fill="#fff" height="78" opacity=".94" rx="4" width="310"></rect>
+<path class="route-line" d="M18 26 H70"></path><text class="small-label" x="84" y="31">1985 account</text>
+<path class="research-line" d="M18 55 H70"></path><text class="small-label" x="84" y="60">Later research hypothesis</text>
+</g>
+<text class="small-label" text-anchor="middle" x="500" y="380">ILLUSTRATIVE PROFILE · NOT TO SCALE · NOT A SURVEY OR GPS TRACK</text>
+</svg>
+<div class="summit-caption">
+<p id="summitModeText"><strong>1985 account:</strong> Messner’s contemporary report says he and Kammerlander reached the main summit. The orange line represents that account conceptually, not as a measured route.</p>
+<p><strong>Later reconstruction:</strong> researchers interpreted available photographs and topographic information as suggesting a turnaround at the Ridge Junction. Messner disputed that conclusion.</p>
+</div>
+<p class="summit-source">Annapurna’s summit ridge includes snow and cornices whose shape can change. The study itself discusses incomplete imagery and uncertainty about historical summit positions. This drawing is a simplified explanation of the two interpretations, not a verdict.</p>
+</div>
+<div class="cards debate-cards">
+<article class="card"><strong>1985</strong><h3>The expedition account</h3><p>The American Alpine Journal and Himalayan Database record the ascent as successful on 24 April. These sources preserve the contemporary account and expedition record.</p></article>
+<article class="card"><strong>2019–23</strong><h3>A later reassessment</h3><p>The topographic study appeared more than three decades after the climb, using photographs and newer mapping. Messner challenged its conclusion and argued that snow and summit features change over time.</p></article>
+</div>
+<p class="callout">Messner said he had never claimed records. Guinness’s later true-summit classification is a record-keeping decision under revised criteria; it is not, by itself, a complete historical account of the 1985 expedition.</p>
+</section>
+<section class="dark" id="cost">
+<div class="sectionhead"><div class="eyebrow">05 / The human cost</div><h2>The mountain is not the whole story.</h2><p class="muted">The 1970 Nanga Parbat expedition shaped Messner's life in ways no summit statistic can capture.</p></div>
+<div class="human"><div><div class="big-num">1970</div><h3>Nanga Parbat</h3><p class="muted">Reinhold and his younger brother Günther reached the summit on 27 June 1970. Günther died during the descent. The exact circumstances became the subject of a long-running dispute among expedition members. The discovery of his remains on the Diamir Face in 2005 supported an important part of Reinhold’s account, but did not resolve every question.</p></div><div><div class="big-num">7</div><h3>Toes amputated after frostbite</h3><p class="muted">In a 2003 interview, Messner said he lost seven toes and parts of his fingertips to frostbite on Nanga Parbat. This is his own retrospective account.</p></div></div>
+</section>
+<section id="explorer">
+<div class="section-head"><div class="eyebrow">06 / Beyond the eight-thousanders</div><h2>A world of peaks, not just fourteen.</h2><p class="lead">Messner’s climbing life ranged far beyond the Himalaya and Karakoram. He made first ascents on major faces, climbed high peaks on several continents and continued exploring long after completing the Seven Summits.</p></div>
+<div class="cards">
+<article class="card"><strong>1965–69 · Alps</strong><h3>Early Alpine firsts</h3><p>New routes and first ascents on the Ortler, Civetta, Agnèr, Furchetta, Heiligkreuzkofel, Eiger and Marmolada, including winter and solo climbs.</p></article>
+<article class="card"><strong>1971 · 4,884 m</strong><h3>Carstensz Pyramid/Puncak Jaya</h3><p>Messner’s first Seven Summits ascent. The peak would later become the defining alternative in his version of the Seven Summits, replacing Mount Kosciuszko.</p></article>
+<article class="card"><strong>1972 · 7,492 m</strong><h3>Noshaq</h3><p>Summited with Claudio Bergamo, Sergio Bigarella and Renato Mamini during a large expedition for which Messner provided technical direction. This was not the mountain’s first ascent.</p></article>
+<article class="card"><strong>1974 · 6,959 m</strong><h3>Aconcagua South Face</h3><p>After the team abandoned a dangerous buttress, Messner continued alone to the summit, straightening the upper section of the pre-existing French route. The variation became known as the South Tyrolean Route.</p></article>
+<article class="card"><strong>1976 · 6,193 m</strong><h3>Denali</h3><p>With Oswald Oelz, made the first ascent of the Face of the Midnight Sun.</p></article>
+<article class="card"><strong>1978 · 5,895 m</strong><h3>Kilimanjaro</h3><p>First ascent of the Breach Wall.</p></article>
+<article class="card"><strong>1981 · 7,317 m</strong><h3>Chamlang</h3><p>With Douglas Scott, climbed the north face to a central summit at P7010, below the main summit. Scott’s 1982 expedition report describes the point reached.</p></article>
+<article class="card"><strong>1986 · 4,897 m</strong><h3>Mount Vinson</h3><p>Summited Antarctica’s highest peak on 3 December, completing his Seven Summits challenge. Different versions of the challenge include different peaks.</p></article>
+<article class="card"><strong>1989–90 · 2,800 km</strong><h3>Across Antarctica</h3><p>With Arved Fuchs, crossed the continent on foot via the South Pole over 92 days.</p></article>
+<article class="card"><strong>1993 · 2,200 km</strong><h3>Greenland</h3><p>Completed a diagonal traverse on foot.</p></article>
+<article class="card"><strong>1992 · 6,310 m</strong><h3>Chimborazo</h3><p>Ascent of the Ecuadorian volcano, alongside a crossing of the Taklamakan Desert.</p></article>
+<article class="card"><strong>2004 · ~2,000 km</strong><h3>Gobi Desert</h3><p>Crossed the desert longitudinally on foot through Mongolia.</p></article>
+</div>
+<p class="callout">These examples are a selection, not a complete expedition list. Heights and distances follow the project’s source chronology; reported expedition distances are not directly comparable.</p>
+</section>
+<section id="legacy">
+<div class="sectionhead"><div class="eyebrow">07 / A life beyond records</div><h2>Climber. Writer. Museum founder. Public figure.</h2><p class="lead">The mountains remained a point of reference, but Messner’s work expanded into culture, public life and the preservation of mountain knowledge.</p></div>
+<div class="cards">
+<article class="card"><strong>500</strong><h3>Early Alpine ascents</h3><p>Messner’s official chronology records 500 ascents in the Eastern Alps, mainly the Dolomites, between 1950 and 1964. His first 3,000-metre summit came at age five.</p></article>
+<article class="card"><strong>50+ / 80+</strong><h3>A prolific author</h3><p>His official biography says over 50 books; Wikipedia reports more than 80. Totals vary with how editions and co-authored works are counted.</p></article>
+<article class="card"><strong>1999–2004</strong><h3>European Parliament</h3><p>Served as a Member of the European Parliament, taking his environmental and mountain interests into public life.</p></article>
+<article class="card"><strong>2006</strong><h3>Messner Mountain Museum</h3><p>The central museum at Sigmundskron opened after five years of construction. The wider museum network explores the relationship between people and mountains.</p></article>
+<article class="card"><strong>1987 onward</strong><h3>Mountain Wilderness</h3><p>Messner took part in the organisation’s early actions and was among its first international guarantors, supporting the protection of mountain environments.</p></article>
+<article class="card"><strong>2010</strong><h3>Piolet d’Or Career Award</h3><p>Received the Piolet d’Or career recognition for a lifetime contribution to mountaineering.</p></article>
+<article class="card"><strong>2018</strong><h3>Princess of Asturias Award</h3><p>Received the Sports Award jointly with Polish mountaineer Krzysztof Wielicki.</p></article>
+<article class="card"><strong>Beyond the tally</strong><h3>An explorer’s philosophy</h3><p>In response to the dispute, Messner said he had never claimed records. His career can be understood through the journeys and ideas it produced, not only through a numerical title.</p></article>
+</div>
+</section>
+<footer><div class="eyebrow">The final measure</div><div class="footerbig">The summit was never the whole story.</div><p class="closing-reflection">The numbers mark the scale of the journeys. They do not contain the life: the routes chosen, the risks carried, the places crossed and the ideas brought back.</p><p class="footer-summary">Fourteen eight-thousanders and countless other ascents. A climbing philosophy that rejected supplemental oxygen. Messner’s legacy goes far beyond a list of records. It lies in his redefinition of what human ambition, preparation and endurance can achieve.</p>
+<p class="footnote"><b>Sources &amp; methodology.</b> The ascent register contains 18 individual ascents across 14 distinct peaks. Heights follow the cited baseline table; map markers are approximate summit locations. The Annapurna illustration is conceptual, not a measured profile or route reconstruction. Geographic boundaries use Natural Earth data via world-atlas. Source notes distinguish first-person accounts, expedition records, institutional positions and later research.</p>
+<details class="source-details" id="sources">
+<summary>Sources &amp; methodology</summary>
+<div class="footnote source-groups">
+<section aria-labelledby="sources-climbing">
+<h3 id="sources-climbing">1. Climbing chronology and achievements</h3>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Reinhold_Messner" rel="noopener" target="_blank">Wikipedia: Reinhold Messner</a> — baseline dataset for the 14-peak chronology, stated heights and selected biographical milestones. The ascent chronology is expanded here into one record per individual mountain ascent and cross-checked against specialist and institutional sources. Wikipedia is a starting point, not the final authority for every claim.</li>
+<li><a href="https://publications.americanalpineclub.org/articles/12199120402/Antarctica-Antarctica-Traverse-by-Messner-and-Fuchs-1989-1990" rel="noopener" target="_blank">American Alpine Journal, 1991: Antarctica traverse</a> — contemporary report on the 1989–1990 crossing by Messner and Arved Fuchs.</li>
+<li><a href="https://www.reinholdmessner.com/en/messner-vita/" rel="noopener" target="_blank">Messner’s official chronology</a> — early Alpine first ascents, 500 Eastern Alpine ascents, the 1970–1986 expedition sequence, and the Greenland, Antarctic and Gobi expeditions. This is a first-party biographical source.</li>
+<li><a href="https://publications.americanalpineclub.org/articles/12197349401/Asia-Hindu-Kush-Pakistani-Afghan-Frontier-Noshaq" rel="noopener" target="_blank">American Alpine Journal, 1973: Noshaq</a> — contemporary expedition report confirming Messner’s 11 August 1972 summit with Claudio Bergamo, Sergio Bigarella and Renato Mamini, on an expedition technically directed by Messner.</li>
+<li><a href="https://publications.americanalpineclub.org/articles/12197518104" rel="noopener" target="_blank">American Alpine Journal, 1975: Aconcagua, South Face Direct</a> — contemporary report describing the 1974 ascent, the existing French route and the Tirolean team’s attempt to straighten its upper section; it records Messner continuing alone to the summit.</li>
+<li><a href="https://publications.americanalpineclub.org/articles/12198713600" rel="noopener" target="_blank">American Alpine Journal, 1987: Aconcagua route descriptions</a> — identifies the 1974 South Tirolean Route as a variation of the pre-existing French route on the South Face.</li>
+<li><a href="https://publications.americanalpineclub.org/articles/12198220803/" rel="noopener" target="_blank">American Alpine Journal, 1982: Chamlang’s P 7010</a> — Douglas Scott’s contemporary report of the 1981 north-face climb to a central summit at P7010. It distinguishes that point from Chamlang’s main summit.</li>
+<li><a href="https://www.alpinejournal.org.uk/Contents/Contents_1991-92_files/AJ%201991-92%20173-178%20Oelz%207Summits.pdf" rel="noopener" target="_blank">Oswald Oelz, “The Seven Summits,” Alpine Journal, 1991</a> — explains the competing Bass and Carstensz/Messner lists, records Messner’s second ascent of Carstensz Pyramid in 1971, and describes the 1976 Face of the Midnight Sun ascent with Oswald Oelz.</li>
+<li><a href="https://7summits.com/climbers/reinhold-messner" rel="noopener" target="_blank">7summits.com: Reinhold Messner</a> — specialist list database recording Messner’s completion of the Kosciuszko and Carstensz variants on 3 December 1986. Used as a specialist chronology, not as the sole authority.</li>
+<li><a href="https://www.guinnessworldrecords.com/world-records/first-ascent-of-mt-everest-without-oxygen" rel="noopener" target="_blank">Guinness World Records: Everest without supplemental oxygen</a> — the 8 May 1978 ascent with Peter Habeler.</li>
+<li><a href="https://www.guinnessworldrecords.com/world-records/first-solo-summit-of-mt-everest" rel="noopener" target="_blank">Guinness World Records: first solo summit of Everest</a> — Messner’s solo ascent without supplemental oxygen in 1980.</li>
+<li><a href="https://www.guinnessworldrecords.com/world-records/first-person-to-climb-all-8000-m-peaks" rel="noopener" target="_blank">Guinness World Records: first person to climb all 8,000-m mountains (legacy record)</a> — records Messner’s completion on 16 October 1986 under the earlier criteria.</li>
+<li><a href="https://www.fpa.es/en/princess-of-asturias-awards/laureates/2018-reinhold-messner-and-krzysztof-wielicki/" rel="noopener" target="_blank">Fundación Princesa de Asturias: 2018 laureates</a> — confirms the Sports Award jointly awarded to Reinhold Messner and Krzysztof Wielicki.</li>
+<li><a href="https://www.europarl.europa.eu/meps/en/4419/REINHOLD_MESSNER/history/5" rel="noopener" target="_blank">European Parliament: Reinhold Messner, fifth parliamentary term</a> — confirms his Greens/EFA membership and dates of service, 20 July 1999 to 19 July 2004.</li>
+<li><a href="https://www.mountainwilderness.org/faces-voices/faces-of-mw/" rel="noopener" target="_blank">Mountain Wilderness: Reinhold Messner</a> — the organisation describes his role in its creation and early actions, and lists him among its first international guarantors.</li>
+<li><a href="https://www.pioletsdor.net/index.php/en/21-po-carriere/liste-po-carriere/22-2010-reinhold-messner" rel="noopener" target="_blank">Piolets d’Or: 2010 Reinhold Messner</a> — official record of the 2010 career award.</li>
+</ul>
+</section>
+<section aria-labelledby="sources-annapurna">
+<h3 id="sources-annapurna">2. The Annapurna summit debate</h3>
+<ul>
+<li><a href="https://aac-publications.s3.amazonaws.com/documents/aaj/1986/PDF/AAJ_1986_28_60_242d.pdf" rel="noopener" target="_blank">American Alpine Journal, 1986: downloadable expedition report</a> — PDF copy of the contemporary Annapurna and Dhaulagiri account.</li>
+<li><a href="https://publications.americanalpineclub.org/articles/12198624204/Asia-Nepal-Annapurna-Northwest-Face-and-Dhaulagiri" rel="noopener" target="_blank">American Alpine Journal, 1986: Annapurna Northwest Face and Dhaulagiri</a> — the climbers’ contemporary account of the 24 April 1985 ascent. It documents what the climbers reported; it is not an independent survey of their final position.</li>
+<li><a href="https://himalayan-database.climbing-history.org/expedition/ANN185101/1985" rel="noopener" target="_blank">Himalayan Database: 1985 Annapurna I NW Face expedition</a> — records the expedition as a successful summit ascent on 24 April 1985. The database entry does not resolve the later summit-location question.</li>
+<li><a href="https://www.8000ers.com/cms/en/download.html?func=fileinfo&amp;id=243" rel="noopener" target="_blank">8000ers.com: Annapurna I summit-topography study</a> — Eberhard Jurgalski’s photographic and topographic reconstruction, presented as a research interpretation. The report discusses cornices, incomplete imagery, changing snow conditions and uncertainty about the summit zone.</li>
+<li><a href="https://www.outsideonline.com/outdoor-adventure/exploration-survival/reinhold-messner-mountaineering-record/" rel="noopener" target="_blank"><em>Outside</em>, 29 May 2024</a> — independent long-form reporting on the controversy, the researchers’ interpretation and the reported 16-foot estimate. That estimate is not an independently measured fact about Messner’s exact position.</li>
+<li><a href="https://www.guinnessworldrecords.com/news/2023/9/reclassifying-the-8000ers-758542" rel="noopener" target="_blank">Guinness World Records: Reclassifying the 8000ers, September 2023</a> — explains the revised true-summit criteria and the creation of legacy records.</li>
+<li><a href="https://www.guinnessworldrecords.com/world-records/746531-first-true-summit-ascent-of-the-8-000ers" rel="noopener" target="_blank">Guinness World Records: first true-summit ascent of the 8,000ers</a> — recognises Ed Viesturs retroactively in 2023 under the revised criteria.</li>
+<li><a href="https://www.theuiaa.org/uiaa-statement-on-historic-8000m-achievements/" rel="noopener" target="_blank">UIAA statement, 29 September 2023</a> — the UIAA Mountaineering Commission’s institutional response defending Messner’s achievement. This is the UIAA’s position, not an independent adjudication.</li>
+<li><a href="https://www.ansa.it/amp/english/news/2023/10/13/messner-8000m-king-backtracks-jurgalski_651a27ac-3a81-4c8b-ab98-852e8a2f701f.html" rel="noopener" target="_blank">ANSA, 13 October 2023</a> — reports Messner’s response that he had never claimed records, his argument that summit features change, and a later change in Jurgalski’s position. This is journalistic reporting, not an official ruling.</li>
+</ul>
+</section>
+<section aria-labelledby="sources-nanga">
+<h3 id="sources-nanga">3. Nanga Parbat, 1970</h3>
+<ul>
+<li><a href="https://www.theguardian.com/world/2003/mar/30/everest.magazine" rel="noopener" target="_blank"><em>The Guardian</em>, 30 March 2003</a> — interview containing Messner’s own retrospective account of the expedition and his frostbite injuries. This is a first-person account, not an independent medical record.</li>
+<li><a href="https://www1.wdr.de/stichtag/stichtag1222.amp" rel="noopener" target="_blank">WDR, Stichtag</a> — German-language retrospective reporting on competing accounts of the descent and the identification and later burial of remains attributed to Günther Messner. The recovery and identification chronology is not reducible to a single “discovered in 2005” event.</li>
+</ul>
+</section>
+<section aria-labelledby="sources-beyond">
+<h3 id="sources-beyond">4. Life beyond mountaineering</h3>
+<ul>
+<li><a href="https://www.reinholdmessner.com/en/messner-vita/" rel="noopener" target="_blank">Messner’s official chronology</a> — Greenland and Antarctic expeditions and other milestones. As a first-party source, its expedition distances are attributed to Messner’s own chronology.</li>
+<li><a href="https://www.messner-mountain-museum.it/en/about-mmm/" rel="noopener" target="_blank">Messner Mountain Museum: official history</a> — the development of the museum network, including the Sigmundskron museum, which opened in 2006 after five years of construction.</li>
+<li><a href="https://www.fpa.es/en/princess-of-asturias-awards/laureates/2018-reinhold-messner-and-krzysztof-wielicki/" rel="noopener" target="_blank">Fundación Princesa de Asturias</a> — the 2018 Sports Award jointly awarded to Messner and Wielicki.</li>
+</ul>
+</section>
+<section aria-labelledby="sources-method">
+<h3 id="sources-method">5. Data and mapping methodology</h3>
+<ul>
+<li><b>Ascent count:</b> the source chronology groups some ascents by year. This project expands it into 18 individual mountain-ascent records: 14 distinct peaks plus four repeat ascents of Nanga Parbat, Everest, Gasherbrum I and Gasherbrum II. The cumulative chart counts only the first ascent of each distinct peak.</li>
+<li><b>Heights:</b> the values follow the baseline table in the cited Wikipedia article. Other sources and modern national surveys may use different elevation conventions; Everest is listed as 8,848 m in that baseline.</li>
+<li><b>Summit coordinates:</b> approximate point locations used to position markers on the regional map. They are not surveyed positions, GPS tracks or expedition routes. The map does not imply route connections between peaks.</li>
+<li><b>Annapurna graphic:</b> an editorial schematic, not to scale. It is not a measured elevation profile, surveyed cross-section, GPS track or exact reconstruction of the climbers’ route. The 305 m figure describes the approximate C0-to-Ridge-Junction segment discussed in the 8000ers.com study, not the entire summit ridge.</li>
+<li><b>Geographic boundaries:</b> country outlines are supplied by <a href="https://github.com/topojson/world-atlas" rel="noopener" target="_blank">world-atlas</a>, using <a href="https://www.naturalearthdata.com/" rel="noopener" target="_blank">Natural Earth</a> data.</li>
+<li><b>Image policy:</b> this project uses no Messner photographs. The absence of archival photographs is a deliberate image and rights choice, not evidence that photographs were unavailable.</li>
+<li><b>Selected expedition cards:</b> the Noshaq, Aconcagua and Chamlang descriptions are cross-checked against contemporary American Alpine Journal reports. In particular, the Chamlang card refers to the P7010 central summit described by Douglas Scott, not the mountain’s main summit.</li>
+<li><b>Seven Summits:</b> the Bass list includes Kosciuszko; the Carstensz/Messner list substitutes Carstensz Pyramid (Puncak Jaya). The story names the list distinction rather than claiming that there is only one definition.</li>
+</ul>
+</section>
+</div>
+</details>
+<p class="creator-credit"><a id="logo-link" href="/"><img src="/img/exploring-data.png" alt="Exploring Data"></a> Created by Ramiro Gómez and ChatGPT • First published November 13th, 2026.</p></footer>
+<script type="module" src="/compiled/reinhold-messner.js"></script>
+
+
+
+
+
+<script async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+</body>
+</html>

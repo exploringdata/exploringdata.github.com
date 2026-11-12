@@ -1,0 +1,185 @@
+{
+  "primary_requested_source": {
+    "title": "Reinhold Messner — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Reinhold_Messner",
+    "use": "User-supplied snapshot used as the baseline for the ascent chronology, heights and selected biographical details; claims are cross-checked against specialist expedition reports and institutional sources where available.",
+    "snapshot_date": "2026-11-10"
+  },
+  "cross_checks": [
+    {
+      "claim": "Early Alpine first ascents and winter/solo routes; 500 Eastern Alpine ascents; 1970–1986 expedition chronology; Greenland and Antarctic traverses",
+      "source": "Reinhold Messner official biography",
+      "url": "https://www.reinholdmessner.com/en/messner-vita/"
+    },
+    {
+      "claim": "First Everest ascent without supplemental oxygen, 8 May 1978",
+      "source": "Guinness World Records",
+      "url": "https://www.guinnessworldrecords.com/world-records/first-ascent-of-mt-everest-without-oxygen"
+    },
+    {
+      "claim": "First solo Everest ascent without supplemental oxygen, 20 August 1980",
+      "source": "Guinness World Records",
+      "url": "https://www.guinnessworldrecords.com/world-records/first-solo-summit-of-mt-everest"
+    },
+    {
+      "claim": "Antarctic crossing with Arved Fuchs: 2,800 km travelled, 1989–1990",
+      "source": "American Alpine Journal",
+      "url": "https://publications.americanalpineclub.org/articles/12199120402/Antarctica-Antarctica-Traverse-by-Messner-and-Fuchs-1989-1990"
+    },
+    {
+      "claim": "Annapurna north-west face ascent, 24 April 1985",
+      "source": "American Alpine Journal, 1986 expedition report",
+      "url": "https://aac-publications.s3.amazonaws.com/documents/aaj/1986/PDF/AAJ_1986_28_60_242d.pdf"
+    },
+    {
+      "claim": "2018 Princess of Asturias Award, jointly awarded to Messner and Krzysztof Wielicki",
+      "source": "Fundación Princesa de Asturias",
+      "url": "https://www.fpa.es/en/princess-of-asturias-awards/laureates/2018-reinhold-messner-and-krzysztof-wielicki/"
+    },
+    {
+      "claim": "Seven toes and parts of fingertips lost to frostbite; Günther's death; Messner's own reflections",
+      "source": "The Guardian interview, 30 March 2003",
+      "url": "https://www.theguardian.com/world/2003/mar/30/everest.magazine"
+    },
+    {
+      "claim": "UIAA statement defending Messner's 14-peak achievement amid 2023 controversy",
+      "source": "UIAA Mountaineering Commission statement, 29 September 2023",
+      "url": "https://www.theuiaa.org/uiaa-statement-on-historic-8000m-achievements/"
+    },
+    {
+      "claim": "2023 Guinness record dispute and reported later revision by Jurgalski",
+      "source": "ANSA English, 13 October 2023",
+      "url": "https://www.ansa.it/amp/english/news/2023/10/13/messner-8000m-king-backtracks-jurgalski_651a27ac-3a81-4c8b-ab98-852e8a2f701f.html"
+    },
+    {
+      "claim": "Contemporary account: Messner and Kammerlander reached the main summit by the NW face on 24 April 1985; route narrative and camps",
+      "source": "American Alpine Journal, 1986, Messner et al.",
+      "url": "https://publications.americanalpineclub.org/articles/12198624204/Asia-Nepal-Annapurna-Northwest-Face-and-Dhaulagiri"
+    },
+    {
+      "claim": "1985 Annapurna NW Face expedition recorded as a successful summit ascent; summit date 24 April; no supplemental oxygen",
+      "source": "Himalayan Database expedition record ANN185101",
+      "url": "https://himalayan-database.climbing-history.org/expedition/ANN185101/1985"
+    },
+    {
+      "claim": "Eberhard Jurgalski's photographic and topographic reconstruction of Annapurna I's summit ridge, including discussion of cornices, incomplete imagery and summit uncertainty",
+      "source": "8000ers.com, Annapurna I — an overview of the summit topography (2019)",
+      "url": "https://www.8000ers.com/cms/en/download.html?func=fileinfo&id=243"
+    },
+    {
+      "claim": "Jurgalski reconstruction, inferred Ridge Junction turnaround, reported 16 ft vertical shortfall, and Messner's public response",
+      "source": "Outside, The Man Who Took On Reinhold Messner's Mountaineering Record, updated 29 May 2024",
+      "url": "https://www.outsideonline.com/outdoor-adventure/exploration-survival/reinhold-messner-mountaineering-record/"
+    },
+    {
+      "claim": "Competing accounts of the 1970 Nanga Parbat descent and the 2005 discovery of Günther Messner's remains",
+      "source": "WDR, Stichtag",
+      "url": "https://www1.wdr.de/stichtag/stichtag1222.amp"
+    },
+    {
+      "claim": "History of the Messner Mountain Museum network and Sigmundskron museum",
+      "source": "Messner Mountain Museum, official history",
+      "url": "https://www.messner-mountain-museum.it/en/about-mmm/"
+    },
+    {
+      "claim": "Guinness recognition of first true-summit ascents of all 14 eight-thousanders",
+      "source": "Guinness World Records",
+      "url": "https://www.guinnessworldrecords.com/world-records/746531-first-true-summit-ascent-of-the-8-000ers"
+    },
+    {
+      "claim": "Guinness explanation of the 2023 true-summit criteria and legacy-record classification",
+      "source": "Guinness World Records, Reclassifying the 8000ers, September 2023",
+      "url": "https://www.guinnessworldrecords.com/news/2023/9/reclassifying-the-8000ers-758542"
+    },
+    {
+      "claim": "Ed Viesturs' retroactive recognition as first climber to reach the true summits of all 14 eight-thousanders",
+      "source": "Guinness World Records, First true-summit ascent of the 8,000ers",
+      "url": "https://www.guinnessworldrecords.com/world-records/746531-first-true-summit-ascent-of-the-8-000ers"
+    },
+    {
+      "claim": "Messner's legacy recognition as first person to climb all 14 eight-thousanders by the earlier criteria",
+      "source": "Guinness World Records, First person to climb all 8,000-m mountains (legacy)",
+      "url": "https://www.guinnessworldrecords.com/world-records/first-person-to-climb-all-8000-m-peaks"
+    },
+    {
+      "claim": "Natural Earth geographic boundary dataset used by world-atlas",
+      "source": "Natural Earth",
+      "url": "https://www.naturalearthdata.com/"
+    },
+    {
+      "claim": "TopoJSON world-atlas country-boundary data distribution",
+      "source": "world-atlas repository",
+      "url": "https://github.com/topojson/world-atlas"
+    },
+    {
+      "claim": "Messner's 11 August 1972 Noshaq summit with Claudio Bergamo, Sergio Bigarella and Renato Mamini; Messner's technical direction of the expedition",
+      "source": "American Alpine Journal, 1973, Noshaq expedition report",
+      "url": "https://publications.americanalpineclub.org/articles/12197349401/Asia-Hindu-Kush-Pakistani-Afghan-Frontier-Noshaq"
+    },
+    {
+      "claim": "1974 Aconcagua South Face ascent; route variation straightening the upper part of the pre-existing French route; Messner continued solo to the summit",
+      "source": "American Alpine Journal, 1975, Aconcagua South Face Direct",
+      "url": "https://publications.americanalpineclub.org/articles/12197518104"
+    },
+    {
+      "claim": "1981 Chamlang north-face climb with Douglas Scott to a central summit at P7010, distinct from the main summit",
+      "source": "American Alpine Journal, 1982, Douglas Scott, Chamlang's P 7010",
+      "url": "https://publications.americanalpineclub.org/articles/12198220803/"
+    },
+    {
+      "claim": "Contemporary explanation of the Seven Summits list variants and Messner's 1986 Vinson completion; Carstensz Pyramid versus Kosciuszko",
+      "source": "Oswald Oelz, The Seven Summits, Alpine Journal, 1991",
+      "url": "https://www.alpinejournal.org.uk/Contents/Contents_1991-92_files/AJ%201991-92%20173-178%20Oelz%207Summits.pdf"
+    },
+    {
+      "claim": "Specialist database chronology for Messner's completion of the Kosciuszko and Carstensz variants of the Seven Summits",
+      "source": "7summits.com, Reinhold Messner finisher profile",
+      "url": "https://7summits.com/climbers/reinhold-messner"
+    },
+    {
+      "claim": "Messner's role in Mountain Wilderness's creation and early actions; first international guarantors",
+      "source": "Mountain Wilderness, official profile",
+      "url": "https://www.mountainwilderness.org/faces-voices/faces-of-mw/"
+    },
+    {
+      "claim": "2010 Piolet d'Or career award",
+      "source": "Piolets d'Or, official 2010 recipient page",
+      "url": "https://www.pioletsdor.net/index.php/en/21-po-carriere/liste-po-carriere/22-2010-reinhold-messner"
+    },
+    {
+      "claim": "European Parliament group affiliation and dates of service, 20 July 1999 to 19 July 2004",
+      "source": "European Parliament, fifth parliamentary term profile",
+      "url": "https://www.europarl.europa.eu/meps/en/4419/REINHOLD_MESSNER/history/5"
+    },
+    {
+      "claim": "Aconcagua South Tirolean Route is a variation of the pre-existing French Route on the South Face",
+      "source": "American Alpine Journal, 1987, Aconcagua route descriptions",
+      "url": "https://publications.americanalpineclub.org/articles/12198713600"
+    }
+  ],
+  "data_caveats": [
+    "The 18 ascent records are individual mountain ascents expanded from the source chronology: 14 distinct peaks plus four repeat ascents of Nanga Parbat, Everest, Gasherbrum I and Gasherbrum II. The cumulative chart counts only the first ascent of each distinct peak.",
+    "The Annapurna summit position is disputed. The American Alpine Journal contemporary account and Himalayan Database record the 24 April 1985 ascent as successful; the later 8000ers.com analysis offers a competing interpretation based on photographs and topographic analysis, while acknowledging uncertainty around cornices, imagery and summit definition.",
+    "The 16 ft / 4.9 m vertical shortfall is attributed to the research interpretation as reported by Outside; it is not an independently established measurement of Messner's exact position.",
+    "The 305 m figure refers to the approximate segment from C0 to the Ridge Junction described in the 8000ers.com study, not the entire summit ridge.",
+    "The Annapurna ridge profile is an editorial schematic, not a measured elevation profile, surveyed cross-section, GPS track or exact route reconstruction.",
+    "In 2023, Guinness changed its recognition of the first climber to reach the true summits of all 14, naming Ed Viesturs retroactively; its earlier legacy record still recognises Messner's 1986 achievement. Messner and Kammerlander disputed the analysis, the UIAA defended Messner, and ANSA later reported a revision in Jurgalski's position. Do not collapse the record-keeping decision into a definitive historical verdict.",
+    "The 8000ers.com topography report discusses cornices, changing snow conditions, incomplete imagery and the possibility of a summit tolerance zone. The report cautions against simply dismissing all historical summit claims.",
+    "The Nanga Parbat account identifies Günther Messner's death during the descent as a defining tragedy. The exact circumstances became the subject of a long-running dispute among expedition members. The discovery and later burial of his remains on the Diamir Face in 2005 supported an important part of Reinhold's account but did not resolve every question.",
+    "Frostbite and amputation details are attributed to Reinhold Messner's own retrospective account, not presented as an independently audited medical record.",
+    "The central Messner Mountain Museum at Sigmundskron opened in 2006 after five years of construction; the wider museum project developed over a longer period.",
+    "Wikipedia says Messner wrote more than 80 books; his official biography says over 50. Avoid presenting one total as definitive without defining the bibliography.",
+    "Antarctica 2,800 km is supported by the American Alpine Journal; Greenland 2,200 km is listed in Messner's official chronology; Gobi about 2,000 km is listed by the user-supplied Wikipedia snapshot. These distances are not necessarily measured on comparable bases.",
+    "Peak heights follow the user-supplied Wikipedia snapshot's table; other sources may use differing measurements and conventions.",
+    "Summit coordinates are approximate map-placement points, not surveyed positions, GPS tracks or expedition routes. Geographic boundaries are supplied by world-atlas using Natural Earth data.",
+    "Noshaq: the 1973 American Alpine Journal report confirms Messner's summit with three companions on 11 August 1972 and describes his technical direction of the expedition. It does not support describing this as the first ascent of Noshaq.",
+    "Aconcagua: the 1975 American Alpine Journal report says the central South Face route had first been climbed by the French in 1954; the 1974 Tirolean team sought to straighten its upper section, and Messner continued alone to the summit. Do not call this the first ascent of the South Face.",
+    "Chamlang: Douglas Scott's 1982 American Alpine Journal report describes the 1981 north-face climb to P7010, one of the central summits, while identifying the main summit as P7319. The project card refers specifically to the P7010 point, not a summit of the main peak.",
+    "Seven Summits: there are competing list definitions. The Bass list includes Kosciuszko; the Carstensz/Messner list substitutes Carstensz Pyramid (Puncak Jaya). Avoid implying that the phrase has only one definition or that Messner was the first person to complete the challenge.",
+    "The 7summits.com page is a specialist list database and is used as a cross-check for list completion, while the 1991 Alpine Journal article by Oswald Oelz provides contemporary context for the two list variants.",
+    "The Mountain Wilderness organisation describes Messner as instrumental in its creation and involved in its early actions; its own history identifies him among the first international guarantors. The project uses this narrower description rather than simply calling him a founder.",
+    "The 2010 Piolet d'Or career award is confirmed by the award organisation's own recipient page.",
+    "The European Parliament profile confirms Messner's Greens/EFA membership from 20 July 1999 to 19 July 2004; this is the precise institutional service period used in the project.",
+    "The Seven Summits card distinguishes the Bass and Carstensz/Messner variants. It does not claim Messner invented the challenge or was the first person to complete every version."
+  ]
+}

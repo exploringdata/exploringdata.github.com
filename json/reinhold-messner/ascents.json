@@ -1,0 +1,128 @@
+[
+  {
+    "year": 1970,
+    "peak": "Nanga Parbat",
+    "height_m": 8125,
+    "counts_toward_14": true,
+    "note": "First ascent of the unclimbed Rupal Face, followed by the first traverse of the mountain via the previously unexplored Diamir Face with his brother Günther. It was Messner’s first visit to the Greater Ranges."
+  },
+  {
+    "year": 1972,
+    "peak": "Manaslu",
+    "height_m": 8163,
+    "counts_toward_14": true,
+    "note": "First ascent of the South-West Face and the first ascent of Manaslu without supplemental oxygen."
+  },
+  {
+    "year": 1975,
+    "peak": "Gasherbrum I",
+    "height_m": 8080,
+    "counts_toward_14": true,
+    "note": "First ascent without supplemental oxygen, with Peter Habeler."
+  },
+  {
+    "year": 1978,
+    "peak": "Mount Everest",
+    "height_m": 8848,
+    "counts_toward_14": true,
+    "note": "First ascent of Everest without supplemental oxygen, with Peter Habeler."
+  },
+  {
+    "year": 1978,
+    "peak": "Nanga Parbat",
+    "height_m": 8125,
+    "counts_toward_14": false,
+    "note": "Solo ascent from base camp: the first solo ascent of an eight-thousander from its base camp. Messner established a new route on the Diamir Face."
+  },
+  {
+    "year": 1979,
+    "peak": "K2",
+    "height_m": 8611,
+    "counts_toward_14": true,
+    "note": "Ascent on the Abruzzi Spur, partly in alpine style, with Michael Dacher."
+  },
+  {
+    "year": 1980,
+    "peak": "Mount Everest",
+    "height_m": 8848,
+    "counts_toward_14": false,
+    "note": "First solo ascent of Everest without supplemental oxygen, from base camp to summit, during the monsoon. Messner established a new route on the North Face."
+  },
+  {
+    "year": 1981,
+    "peak": "Shishapangma",
+    "height_m": 8027,
+    "counts_toward_14": true,
+    "note": "Ascent with Friedl Mutschlechner."
+  },
+  {
+    "year": 1982,
+    "peak": "Kangchenjunga",
+    "height_m": 8586,
+    "counts_toward_14": true,
+    "note": "New route on the North Face, partly in alpine style, with Friedl Mutschlechner. Together with Gasherbrum II and Broad Peak, it made Messner the first person to climb three eight-thousanders in one season."
+  },
+  {
+    "year": 1982,
+    "peak": "Gasherbrum II",
+    "height_m": 8034,
+    "counts_toward_14": true,
+    "note": "Ascent with Sher Khan and Nazir Sabir; one of three eight-thousanders Messner climbed in the 1982 season."
+  },
+  {
+    "year": 1982,
+    "peak": "Broad Peak",
+    "height_m": 8051,
+    "counts_toward_14": true,
+    "note": "Ascent with Sher Khan and Nazir Sabir; completed Messner’s three-eight-thousander season."
+  },
+  {
+    "year": 1983,
+    "peak": "Cho Oyu",
+    "height_m": 8188,
+    "counts_toward_14": true,
+    "note": "Ascent with Hans Kammerlander and Michael Dacher on a partly new route, following Messner’s failed winter summit attempt in 1982."
+  },
+  {
+    "year": 1984,
+    "peak": "Gasherbrum I",
+    "height_m": 8080,
+    "counts_toward_14": false,
+    "note": "With Hans Kammerlander, part of the first traverse of two eight-thousanders without returning to base camp."
+  },
+  {
+    "year": 1984,
+    "peak": "Gasherbrum II",
+    "height_m": 8034,
+    "counts_toward_14": false,
+    "note": "The second summit of the 1984 Gasherbrum I–II traverse with Hans Kammerlander, completed without returning to base camp."
+  },
+  {
+    "year": 1985,
+    "peak": "Annapurna I",
+    "height_m": 8091,
+    "counts_toward_14": true,
+    "note": "First ascent of Annapurna’s unclimbed North-West Face, with Hans Kammerlander. The exact summit position was later disputed."
+  },
+  {
+    "year": 1985,
+    "peak": "Dhaulagiri I",
+    "height_m": 8167,
+    "counts_toward_14": true,
+    "note": "Ascent with Hans Kammerlander."
+  },
+  {
+    "year": 1986,
+    "peak": "Makalu",
+    "height_m": 8485,
+    "counts_toward_14": true,
+    "note": "Ascent with Hans Kammerlander and Friedl Mutschlechner."
+  },
+  {
+    "year": 1986,
+    "peak": "Lhotse",
+    "height_m": 8516,
+    "counts_toward_14": true,
+    "note": "Ascent with Hans Kammerlander; completed Messner’s sequence of all 14 distinct eight-thousanders."
+  }
+]
