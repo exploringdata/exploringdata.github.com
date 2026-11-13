@@ -7,6 +7,13 @@
     <generator>Logya</generator>
     <docs>http://blogs.law.harvard.edu/tech/rss</docs>
     <item>
+        <title><![CDATA[Reinhold Messner: Mountaineer, Explorer and Pioneer of High-Altitude Climbing]]></title>
+        <link><![CDATA[https://exploring-data.com/story/reinhold-messner/]]></link>
+        <description><![CDATA[How far can ambition take one person? An interactive story about Reinhold Messner: fourteen eight-thousanders, polar journeys and a lifetime of exploration.]]></description>
+        <guid><![CDATA[https://exploring-data.com/story/reinhold-messner/]]></guid>
+        <pubDate>Fri, 13 Nov 2026 11:38:29 </pubDate>
+    </item>
+    <item>
         <title><![CDATA[Via Ferrata Explorer • Find Iron-Path Climbing Routes in Europe]]></title>
         <link><![CDATA[https://exploring-data.com/map/via-ferrata/]]></link>
         <description><![CDATA[Find European Via Ferrata climbing routes on an interactive map featuring topography and difficulty ratings.]]></description>
@@ -70,12 +77,5 @@ A great gift for geography nerds, teache]]></description>
         <description><![CDATA[Java is a high-level, class-based, object-oriented programming language. This network graph shows languages connected with Java through influence relations, i.e. languages that were influenced by or influenced Java. More influential languages are shown]]></description>
         <guid><![CDATA[https://exploring-data.com/print/java-influence-network/]]></guid>
         <pubDate>Mon, 12 Dec 2022 00:00:00 </pubDate>
-    </item>
-    <item>
-        <title><![CDATA[Lisp Programming Language Influence Network Graph]]></title>
-        <link><![CDATA[https://exploring-data.com/print/lisp-influence-network/]]></link>
-        <description><![CDATA[Lisp, originally specified in 1958, is the 2nd oldest high-level programming language still in common use. This network graph shows languages connected with Lisp through influence relations, i.e. languages that were influenced by or influenced Lisp. Mor]]></description>
-        <guid><![CDATA[https://exploring-data.com/print/lisp-influence-network/]]></guid>
-        <pubDate>Fri, 09 Dec 2022 00:00:00 </pubDate>
     </item>
 </channel></rss>
