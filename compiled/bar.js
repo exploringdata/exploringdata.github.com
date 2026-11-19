@@ -1,16 +1,1 @@
-function barh(selector, data, options) {
-    const width = options && options.width ? options.width : 400;
-    const bar_height = 26;
-
-    const x = d3.scaleLinear().domain([0, d3.max(data, d => d.value)]).range([0, width]);
-
-    const chart = d3.select(selector).attr('width', width).attr('height', bar_height * data.length);
-
-    const bar = chart.selectAll('g').data(data).enter().append('g').attr('transform', (d, i) => 'translate(0,' + i * bar_height + ')');
-
-    bar.append('rect').attr('width', d => x(d.value)).attr('height', bar_height - 4);
-
-    bar.append('text').attr('x', 3).attr('y', bar_height / 2).attr('dy', bar_height / 16).text(d => d.name);
-}
-
-(typeof exports !== 'undefined' ? exports : this).barh = barh;
+function barh(e,t,n){const o=n&&n.width?n.width:400,s=26,a=d3.scaleLinear().domain([0,d3.max(t,e=>e.value)]).range([0,o]),r=d3.select(e).attr("width",o).attr("height",s*t.length),i=r.selectAll("g").data(t).enter().append("g").attr("transform",(e,t)=>"translate(0,"+t*s+")");i.append("rect").attr("width",e=>a(e.value)).attr("height",s-4),i.append("text").attr("x",3).attr("y",s/2).attr("dy",s/16).text(e=>e.name)}(typeof exports!="undefined"?exports:this).barh=barh

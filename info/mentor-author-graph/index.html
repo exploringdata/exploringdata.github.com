@@ -1,78 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Network Graph of Book Recommendations from Tribe of Mentors | Exploring Data</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="The Graph of Mentors, Books and Authors visualizes book recommendations from the book Tribe Of Mentors by Tim Ferriss and his interviewees.">
-    <meta property="og:image" content="https://exploring-data.com/img/large/mentor-author-graph.png
-">
-  <meta name="author" content="Ramiro Gómez">
-  <link rel="canonical" href="https://exploring-data.com/info/mentor-author-graph/">
-
-    <link href="/css/style2.css" rel="stylesheet">
-
-          <link rel="stylesheet" href="//cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
-  <link rel="shortcut icon" href="/favicon.ico">
-  <link rel="alternate" type="application/rss+xml" title="Exploring Data RSS feed" href="https://exploring-data.com/rss.xml">
-</head>
-
-<body>
-<nav class="navbar">
-  <ul>
-    <li class="logo"><a href="/"><img src="/img/exploring-data.png" alt="Exploring Data Logo"></a></li>
-    <li class="nav-links">
-      <a href="/vis/">📊 Visualizations</a>
-      <a href="/map/">🗺️ Maps</a>
-      <a href="/story">🗒️ Stories</a>
-      <a href="/prints/">🛒 Prints</a>
-      <a href="/data-visualization-books/">📕 Books</a>
-      <a href="/datasearch/">🔍 Search for Data</a>
-      <a href="/sitemap/">📄 Sitemap</a>
-    </li>
-    <li class="hamburger">
-      <button aria-label="Menu">&#9776;</button>
-    </li>
-  </ul>
-</nav>
-
-
-<div class="container">
-    <h1>Network Graph of Book Recommendations from Tribe of Mentors</h1>
-    <p>The interactive <a href="/vis/mentor-author-graph/">Graph of Mentors, Books and Authors</a> visualizes book recommendations from the book <a href="https://tribeofmentors.com/">Tribe Of Mentors</a> by Tim Ferriss and his interviewees. The book is a collection of 130+ interviews with people who are exceptional at what they do. Tim asked them a set of 11 questions including one about which book they gave away the most as a gift or which books had greatly influenced their lives.</p>
-<p>Taking all these recommendations I created a graph, that has 4 kinds of nodes: authors, books, mentors, and mentors who are also recommended authors. I assigned a weight of 1 to each mentor, which is distributed equally among their recommended books, i.e. if a mentor recommended 4 books, each edge connecting them gets a weight of 0.25. The size of a book node is then calculated as the sum of its incoming edges multiplied by its in-degree, i.e. the number of mentors recommending it. The weight of an author in turn is the sum of all edge weights with their books as targets multiplied by the number of mentors who recommended at least one of their books.</p>
-<p>The people interviewed in Tribe of Mentors come from different backgrounds, are good at different things and recommend different books. The 100 mentors in the graph named 224 different books by 205 different authors adding up to 522 nodes (some are both authors and mentors) and 474 edges. The resulting disconnected graph has just a few nodes which stand out, most notable <a href="/vis/mentor-author-graph/#Viktor E. Frankl">Viktor E. Frankl</a> and his book Man' Search for Meaning. The 2nd largest author node is <a href="/vis/mentor-author-graph/#Timothy Ferriss">Timothy Ferriss</a> himself, who authored 2 books that were recommended by several mentors.</p>
-<p>A handful of other books were recommended multiple times, but the vast majority are named just once. You can see the details in the table below, that lists all the books mentioned.</p>
-<table id="books" class="display">
-<thead>
-<tr>
-    <th>Author</th><th>Title</th><th>Recommended by</th><th>Book links</th>
-</tr>
-</thead>
-<tbody>
-</tbody>
-</table>
-
-<h2 id="how-the-graph-was-created">How the graph was created</h2>
-<p>The graph was created with the Python library <a href="https://networkx.github.io/">Networkx</a> and laid out in <a href="https://gephi.org/">Gephi</a> using the Force Atlas layout. The browser version is rendered with the JavaScript library <a href="http://sigmajs.org/">sigma.js</a>.</p>
-
-<div class="postinfo">
-<p>Published on November 15, 2018 (updated on February 16, 2026) by <a href="https://ramiro.org/">Ramiro Gómez</a>. To be informed of new posts, subscribe to the <a href="/rss.xml">RSS feed</a>.
-<br>Tags: <a href="/tags/network-graph/">network graph</a>, <a href="/tags/authors/">authors</a>, <a href="/tags/networkx/">networkx</a>, <a href="/tags/books/">books</a>, <a href="/tags/sigmajs/">sigmajs</a>, <a href="/tags/gephi/">gephi</a>.</p>
-<p>Disclosure: As an Amazon Associate I earn commissions from qualifying purchases made via links on this page. Please see the <a href="/about/">about page</a> for more information.</p></div></div>
-
-<footer>
-  <p>Exploring Data is a showcase of interactive data visualizations created with open data and open source tools, <a href="/about/">learn more</a>.<br>
-  © 2026 </script> <a href="https://ramiro.org/">Ramiro Gómez</a>.</p>
-</footer>
-
-
-<script src="/compiled/script2.js"></script>
-
-      <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-      <script src="/vendor/npm/jquery.dataTables.min.js"></script>
-      <script src="/compiled/mentor-author-graph/common.js"></script>
-      <script src="/compiled/mentor-author-graph/info.js"></script>
-
-</body>
-</html>
+<!doctype html><html lang=en><meta charset=utf-8><title>Network Graph of Book Recommendations from Tribe of Mentors | Exploring Data</title><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="The Graph of Mentors, Books and Authors visualizes book recommendations from the book Tribe Of Mentors by Tim Ferriss and his interviewees."><meta property="og:image" content="https://exploring-data.com/img/large/mentor-author-graph.png
+"><meta name=author content="Ramiro Gómez"><link rel=canonical href=https://exploring-data.com/info/mentor-author-graph/><link href=/css/style2.css rel=stylesheet><link rel=stylesheet href=//cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css><link rel="shortcut icon" href=/favicon.ico><link rel=alternate type=application/rss+xml title="Exploring Data RSS feed" href=https://exploring-data.com/rss.xml><nav class=navbar><ul><li class=logo><a href=/><img src=/img/exploring-data.png alt="Exploring Data Logo"></a><li class=nav-links><a href=/vis/>📊 Visualizations</a>
+<a href=/map/>🗺️ Maps</a>
+<a href=/story>🗒️ Stories</a>
+<a href=/prints/>🛒 Prints</a>
+<a href=/data-visualization-books/>📕 Books</a>
+<a href=/datasearch/>🔍 Search for Data</a>
+<a href=/sitemap/>📄 Sitemap</a><li class=hamburger><button aria-label=Menu>&#9776;</button></ul></nav><div class=container><h1>Network Graph of Book Recommendations from Tribe of Mentors</h1><p>The interactive <a href=/vis/mentor-author-graph/>Graph of Mentors, Books and Authors</a> visualizes book recommendations from the book <a href=https://tribeofmentors.com/>Tribe Of Mentors</a> by Tim Ferriss and his interviewees. The book is a collection of 130+ interviews with people who are exceptional at what they do. Tim asked them a set of 11 questions including one about which book they gave away the most as a gift or which books had greatly influenced their lives.<p>Taking all these recommendations I created a graph, that has 4 kinds of nodes: authors, books, mentors, and mentors who are also recommended authors. I assigned a weight of 1 to each mentor, which is distributed equally among their recommended books, i.e. if a mentor recommended 4 books, each edge connecting them gets a weight of 0.25. The size of a book node is then calculated as the sum of its incoming edges multiplied by its in-degree, i.e. the number of mentors recommending it. The weight of an author in turn is the sum of all edge weights with their books as targets multiplied by the number of mentors who recommended at least one of their books.<p>The people interviewed in Tribe of Mentors come from different backgrounds, are good at different things and recommend different books. The 100 mentors in the graph named 224 different books by 205 different authors adding up to 522 nodes (some are both authors and mentors) and 474 edges. The resulting disconnected graph has just a few nodes which stand out, most notable <a href="/vis/mentor-author-graph/#Viktor E. Frankl">Viktor E. Frankl</a> and his book Man' Search for Meaning. The 2nd largest author node is <a href="/vis/mentor-author-graph/#Timothy Ferriss">Timothy Ferriss</a> himself, who authored 2 books that were recommended by several mentors.<p>A handful of other books were recommended multiple times, but the vast majority are named just once. You can see the details in the table below, that lists all the books mentioned.<table id=books class=display><thead><tr><th>Author<th>Title<th>Recommended by<th>Book links<tbody></table><h2 id=how-the-graph-was-created>How the graph was created</h2><p>The graph was created with the Python library <a href=https://networkx.github.io/>Networkx</a> and laid out in <a href=https://gephi.org/>Gephi</a> using the Force Atlas layout. The browser version is rendered with the JavaScript library <a href=http://sigmajs.org/>sigma.js</a>.<div class=postinfo><p>Published on November 15, 2018 (updated on February 16, 2026) by <a href=https://ramiro.org/>Ramiro Gómez</a>. To be informed of new posts, subscribe to the <a href=/rss.xml>RSS feed</a>.<br>Tags: <a href=/tags/network-graph/>network graph</a>, <a href=/tags/authors/>authors</a>, <a href=/tags/networkx/>networkx</a>, <a href=/tags/books/>books</a>, <a href=/tags/sigmajs/>sigmajs</a>, <a href=/tags/gephi/>gephi</a>.<p>Disclosure: As an Amazon Associate I earn commissions from qualifying purchases made via links on this page. Please see the <a href=/about/>about page</a> for more information.</div></div><footer><p>Exploring Data is a showcase of interactive data visualizations created with open data and open source tools, <a href=/about/>learn more</a>.<br>© 2026 </script><a href=https://ramiro.org/>Ramiro Gómez</a>.</footer><script src=/compiled/script2.js></script><script src=https://code.jquery.com/jquery-3.7.1.min.js></script><script src=/vendor/npm/jquery.dataTables.min.js></script><script src=/compiled/mentor-author-graph/common.js></script><script src=/compiled/mentor-author-graph/info.js></script>

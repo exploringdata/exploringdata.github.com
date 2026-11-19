@@ -1,31 +1,6 @@
-jQuery.getJSON('/gexf/mentor-author-graph.json', data => {
-    let table = jQuery('#books');
-    for (let node of data.nodes) {
-        if (node.attributes.hasOwnProperty('book')) {
-            let author = '';
-            let mentors = [];
-            for (let edge of data.edges) {
-                if (node.id == edge.sourceID) {
-                    author = edge.targetID;
-                } else if (node.id == edge.targetID) {
-                    mentors.push(edge.sourceID);
-                }
-            }
-            let mentor_links = mentors.map(d => `<a href="/vis/mentor-author-graph/#${d}">${d}</a>`);
-            let book_links = bookLinks(node.attributes);
-
-            table.append(`<tr>
-                <td data-order="${author}"><a href="/vis/mentor-author-graph/#${author}">${author}</a></td>
-                <td data-order="${node.attributes.title}"><a href="/vis/mentor-author-graph/#${node.attributes.title}">${node.attributes.title}</a></td>
-                <td data-order="${mentors.length},${mentors}">${mentor_links.join(' - ')}</td>
-                <td>${book_links.join(' - ')}</td>
-            </tr>`);
-        }
-    }
-    table.DataTable({
-        columnDefs: [{ 'orderable': false, 'targets': 3 }],
-        info: false,
-        order: [[2, 'desc']],
-        paging: false
-    });
-});
+jQuery.getJSON("/gexf/mentor-author-graph.json",e=>{let t=jQuery("#books");for(let n of e.nodes)if(n.attributes.hasOwnProperty("book")){let s="",o=[];for(let t of e.edges)n.id==t.sourceID?s=t.targetID:n.id==t.targetID&&o.push(t.sourceID);let i=o.map(e=>`<a href="/vis/mentor-author-graph/#${e}">${e}</a>`),a=bookLinks(n.attributes);t.append(`<tr>
+                <td data-order="${s}"><a href="/vis/mentor-author-graph/#${s}">${s}</a></td>
+                <td data-order="${n.attributes.title}"><a href="/vis/mentor-author-graph/#${n.attributes.title}">${n.attributes.title}</a></td>
+                <td data-order="${o.length},${o}">${i.join(" - ")}</td>
+                <td>${a.join(" - ")}</td>
+            </tr>`)}t.DataTable({columnDefs:[{orderable:!1,targets:3}],info:!1,order:[[2,"desc"]],paging:!1})})

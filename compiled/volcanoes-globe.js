@@ -1,71 +1,7 @@
-let index = 0;
-
-let intervalId = null;
-
-const eltInfo = document.getElementById('info');
-eltInfo.style.visibility = 'hidden';
-
-const catColor = d3.scaleOrdinal(d3.schemeCategory10);
-
-const getAlt = d => d.elevation * 6e-5;
-
-const synth = window.speechSynthesis;
-
-const ANIMATION_CYCLE = 4000;
-const ANIMATION_TIME = 2000;
-
-const ALTITUDE = 0.75;
-
-const getTooltip = d => `<div>
-        <strong>${d.name}</strong><br>
-        Elevation: ${d.elevation}m<br>
-        Location: ${d.country}<br>
-        Type: ${d.type}
+let index=0,intervalId=null;const eltInfo=document.getElementById("info");eltInfo.style.visibility="hidden";const catColor=d3.scaleOrdinal(d3.schemeCategory10),getAlt=e=>e.elevation*6e-5,synth=window.speechSynthesis,ANIMATION_CYCLE=4e3,ANIMATION_TIME=2e3,ALTITUDE=.75,getTooltip=e=>`<div>
+        <strong>${e.name}</strong><br>
+        Elevation: ${e.elevation}m<br>
+        Location: ${e.country}<br>
+        Type: ${e.type}
     </div>
-`;
-
-const G = Globe().globeImageUrl('/img/public/earth-topology.png').backgroundImageUrl('/img/public/night-sky.png').pointLat('lat').pointLng('lon').pointAltitude(getAlt).pointRadius(.12).pointColor(d => catColor(d.type)).pointLabel(getTooltip)(document.getElementById('vis'));
-
-fetch('/csv/volcanoes.csv').then(res => res.text()).then(csv => d3.csvParse(csv, d => {
-    return {
-        name: d['Volcano Name'],
-        country: d['Country'],
-        type: d['Type'],
-        lat: d['Latitude (dd)'],
-        lon: d['Longitude (dd)'],
-        elevation: d['Elevation (m)']
-    };
-})).then(data => G.pointsData(data));
-
-function animation() {
-    if (intervalId) {
-        clearInterval(intervalId);
-        intervalId = null;
-        eltInfo.style.visibility = 'hidden';
-    } else {
-        const data = G.pointsData();
-
-        setPoint();
-
-        intervalId = setInterval(setPoint, ANIMATION_CYCLE);
-    }
-}
-
-function setPoint() {
-    const data = G.pointsData();
-    G.pointOfView({ lat: data[index].lat, lng: data[index].lon, altitude: ALTITUDE }, ANIMATION_TIME);
-    eltInfo.innerHTML = getTooltip(data[index]);
-    eltInfo.style.visibility = 'visible';
-    const text = `${data[index].name} ${data[index].country}`;
-    const utterance = new SpeechSynthesisUtterance(text);
-    synth.speak(utterance);
-    index++;
-}
-
-document.getElementById('play-pause').addEventListener('click', animation);
-
-document.addEventListener('keydown', event => {
-    if (event.key === 'p') {
-        animation();
-    }
-});
+`,G=Globe().globeImageUrl("/img/public/earth-topology.png").backgroundImageUrl("/img/public/night-sky.png").pointLat("lat").pointLng("lon").pointAltitude(getAlt).pointRadius(.12).pointColor(e=>catColor(e.type)).pointLabel(getTooltip)(document.getElementById("vis"));fetch("/csv/volcanoes.csv").then(e=>e.text()).then(e=>d3.csvParse(e,e=>({name:e["Volcano Name"],country:e.Country,type:e.Type,lat:e["Latitude (dd)"],lon:e["Longitude (dd)"],elevation:e["Elevation (m)"]}))).then(e=>G.pointsData(e));function animation(){if(intervalId)clearInterval(intervalId),intervalId=null,eltInfo.style.visibility="hidden";else{const e=G.pointsData();setPoint(),intervalId=setInterval(setPoint,ANIMATION_CYCLE)}}function setPoint(){const e=G.pointsData();G.pointOfView({lat:e[index].lat,lng:e[index].lon,altitude:ALTITUDE},ANIMATION_TIME),eltInfo.innerHTML=getTooltip(e[index]),eltInfo.style.visibility="visible";const t=`${e[index].name} ${e[index].country}`,n=new SpeechSynthesisUtterance(t);synth.speak(n),index++}document.getElementById("play-pause").addEventListener("click",animation),document.addEventListener("keydown",e=>{e.key==="p"&&animation()})
